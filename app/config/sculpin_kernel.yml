@@ -11,6 +11,12 @@ sculpin_content_types:
     path: _pages
     layout: single
     permalink: :title.html
+  microposts:
+    singular_name: micropost
+    type: path
+    path: _microposts
+    layout: posts
+    permalink: micro/:year-:month-:day-:slug_title.html
 
 jb_tag_cloud:
     tag_permalink: /tags/:taxon/index.html
