@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[timbroder.com]]></title>
+    <link href="https://www.timbroder.com/blog/tags/GWT.xml" rel="self"/>
+    <link href="https://www.timbroder.com/"/>
+    <updated>2018-09-09T12:21:33+00:00</updated>
+    <id>https://www.timbroder.com/</id>
+            <author>
+            <name><![CDATA[Tim Broder]]></name>            <email><![CDATA[timothy.broder@gmail.com]]></email>        </author>
+        <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[GWTPHP = Google Web Toolkit + PHP 5]]></title>
+            <link href="https://www.timbroder.com/2008/10/gwtphp-google-web-toolkit-php-5.html"/>
+            <updated>2008-10-09T20:28:00+00:00</updated>
+            <id>https://www.timbroder.com/2008/10/gwtphp-google-web-toolkit-php-5.html</id>
+            <content type="html"><![CDATA[<p>I know there is a pretty high number of programmers who haven't tried to dable
+GWT yet because out of the box, the back end is java only.  PHP developers
+rejoice!</p>
+
+<p>_Unlike most of the other frameworks, <a href="http://www.gwtphp.com/">GwtPHP </a>is a
+framework for both client and server part. In GwtPHP you don’t need to hack
+JavaScript, you work with modern, object oriented languages. User interface
+(client) is programmed in Java, then compiled by Google Web Toolkit (GWT) to
+browser-dependent JavaScript. Server part uses PHP 5. _</p>
+
+<p>Not yet available to the public, but you can sign up to be <a href="http://www.gwtphp.com/download/">notified
+</a>when it is</p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Google I/O session videos posted with slides]]></title>
+            <link href="https://www.timbroder.com/2008/06/google-io-session-videos-posted-with.html"/>
+            <updated>2008-06-16T19:11:00+00:00</updated>
+            <id>https://www.timbroder.com/2008/06/google-io-session-videos-posted-with.html</id>
+            <content type="html"><![CDATA[<p>As I said <a href="http://blog.gpowered.net/2008/04/select-google-io-sessions-to-be-posted.html">earlier</a>, Quite a few presentations from Google I/O have
+been <a href="http://sites.google.com/site/io/">posted</a> for your viewing pleasure.
+I'll be glued to these this weekend while I'm on call.</p>
+
+<p>Topics include<br />
+Ajax<br />
+KML<br />
+Sketchup<br />
+Android<br />
+OpenSocial<br />
+Appengine<br />
+Data APIs<br />
+Theory Talks<br />
+Youtube<br />
+Gears<br />
+Mashups<br />
+Maps<br />
+and more!</p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Google Web Toolkit 1.4 Release Candidate 2]]></title>
+            <link href="https://www.timbroder.com/2007/08/google-web-toolkit-14-release-candidate.html"/>
+            <updated>2007-08-22T03:47:00+00:00</updated>
+            <id>https://www.timbroder.com/2007/08/google-web-toolkit-14-release-candidate.html</id>
+            <content type="html"><![CDATA[<p><a href="http://googlewebtoolkit.blogspot.com/2007/08/google-web-toolkit-14-release-candidate.html">Google Web Toolkit Blog: Google Web Toolkit 1.4 Release Candidate
+2</a> Short post I know, but its getting late and I'm off call at
+midnight so...</p>
+
+<p>The latest release candidate for GWT is available for
+<a href="http://code.google.com/webtoolkit/download.html#rc">download</a>. There are over
+100 bug fixes included in this RC. Some of the enhancements include:</p>
+
+<ul>
+<li>ArrayList toArray(SomeClass[]) is now implemented  </li>
+<li>SuggestBox value now gettable  </li>
+<li>DateTimeFormat parse defaults to 00:00:00 for dd-MM-yyyy format  </li>
+<li>The current browser event is globally accessible  </li>
+</ul>
+]]></content>
+        </entry>
+    </feed>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[timbroder.com]]></title>
+    <link href="https://www.timbroder.com/blog/tags/GME.xml" rel="self"/>
+    <link href="https://www.timbroder.com/"/>
+    <updated>2018-09-09T12:21:33+00:00</updated>
+    <id>https://www.timbroder.com/</id>
+            <author>
+            <name><![CDATA[Tim Broder]]></name>            <email><![CDATA[timothy.broder@gmail.com]]></email>        </author>
+        <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[October Speedlinking]]></title>
+            <link href="https://www.timbroder.com/2007/11/october-speedlinking.html"/>
+            <updated>2007-11-05T23:17:00+00:00</updated>
+            <id>https://www.timbroder.com/2007/11/october-speedlinking.html</id>
+            <content type="html"><![CDATA[<p>I haven't been able to post as often or as in depth as I'd like to have this
+past month. I chalk it up mostly to work, we all love 12 hour days right? But
+now that sign-off has passed and our last release of 2007 is calmly
+approaching (its on Friday), things have settled down a bit. Below are some
+great links from October, most of which I wanted to mention at some point and
+haven't gotten a chance to until now. Enjoy.</p>
+
+<ul>
+<li><p>The <a href="http://googlemashupeditor.blogspot.com/2007/09/authenticated-calendar-support-via-new.html">JavaScript Library</a> for Google Calendar was released. This allows for authenticated, cross domain access. Hopefully Picasa Web will follow suit.</p></li>
+<li><p><a href="http://googlewebtoolkit.blogspot.com/2007/09/gwt-application-development-for-iphone.html">GWT</a> goes to the iPhone</p></li>
+<li><p>The <a href="http://googledataapis.blogspot.com/2007/09/python-client-library-same-great-taste.html">Python Client Library</a> came out with version 1.0.8</p></li>
+<li><p>The <a href="http://gearsblog.blogspot.com/2007/09/digg-oracle-using-workerpool-as-well-as.html">Digg Oracle</a> demonstrates Gears' Worker Pool</p></li>
+<li><p>Google's <a href="http://googlified.com/2007google-stock-passes-600-mark/#comment-17313">Stock broke $600</a>. It is now well over $700</p></li>
+<li><p><a href="http://mashable.com/2007/10/08/orkut/">Orkut</a> ramps up for a US push</p></li>
+<li><p><a href="http://gearsblog.blogspot.com/2007/10/vortex-simple-new-offline-and-sync.html">Vortex</a> combines the know-how of Dojo and Gears</p></li>
+<li><p><a href="http://googlemapsapi.blogspot.com/2007/10/labeledmarker-v11-now-supporting-marker.html">LabeledMarker v1.1</a> in Google Maps comes out with Marker and Label toggling</p></li>
+<li><p>Google Reader comes out with <a href="http://googlesystem.blogspot.com/2007/10/find-number-of-google-subscribers-for.html">Subscriber stats</a>. Read about the controversy <a href="http://blog.gpowered.net/2007/10/google-reader-stats-out-of-wack.html">here</a>. Google responds <a href="http://googlereader.blogspot.com/2007/10/subscriber-stats-summed-up.html">here</a></p></li>
+<li><p><a href="http://googlesystem.blogspot.com/2007/10/google-maps-becomes-social.html">Google Maps Goes Social</a></p></li>
+<li><p>The <a href="http://googleajaxsearchapi.blogspot.com/2007/10/direct-access-to-youtube-channels.html">AJAX Search API</a> gives direct access to YouTube Channels</p></li>
+<li><p>Blogger GData JavaScript client library released with <a href="http://google-code-updates.blogspot.com/2007/10/blogger-gdata-javascript-client-library.html">offline Blogger client example</a></p></li>
+<li><p>Google Code Search <a href="http://google-code-updates.blogspot.com/2007/10/tell-us-about-code-on-your-site-with.html">goes to SiteMaps</a></p></li>
+<li><p>The Ajax API gets <a href="http://googleajaxsearchapi.blogspot.com/2007/10/ajax-feed-api-addition-dynamic-feed.html">Dynamic Feed Control</a></p></li>
+<li><p>You can now play <a href="http://google-latlong.blogspot.com/2007/10/now-playing-youtube-videos-in-google.html">Youtube videos in Google Earth</a></p></li>
+<li><p>Summer of code wrapped up with <a href="http://google-code-updates.blogspot.com/2007/10/wrapping-up-our-third-summer-of-code.html">Graduation</a></p></li>
+<li><p><a href="http://mashable.com/2007/10/24/google-finance-gadgets/">Google Finance adds new Gadgets and an API</a></p></li>
+<li><p>YouTubes player becomes <a href="http://googlesystem.blogspot.com/2007/10/customize-youtubes-player.html">Customizable</a></p></li>
+<li><p>A Greasemonkey script lets you have <a href="http://googlesystem.blogspot.com/2007/10/nested-folders-in-gmail.html">nested folders</a> in Gmail</p></li>
+<li><p>Blogger adds <a href="http://buzz.blogger.com/2007/10/subscribe-to-comments-by-email.html">Comment Notification</a></p></li>
+<li><p>Google <a href="http://www.entrepreneurs-journey.com/864/possible-explanations-for-the-pagerank-penalty-sweep/"> cracks down</a> on pages selling PageRank links</p></li>
+<li><p>Google contributes to <a href="http://mashable.com/2007/10/25/mysql-google/">MySQL</a></p></li>
+<li><p>Google Mac <a href="http://googlemac.blogspot.com/2007/10/google-desktop-update-for-leopard.html">updates Leopard</a></p></li>
+<li><p>Gmail <a href="http://gmailblog.blogspot.com/2007/10/sync-your-inbox-across-devices-with.html">enables IMAP</a></p></li>
+<li><p>Google Maps gets <a href="http://googlemapsapi.blogspot.com/2007/10/clickable-polys-old-school-image-maps.html">Clickable Polygons</a></p></li>
+<li><p>There is now a wizard for adding <a href="http://bloggerindraft.blogspot.com/2007/10/new-feature-gadgets-for-your-blog.html">Google Gadgets to your blog</a></p></li>
+<li><p>Webmaster central fixes the <a href="http://googlewebmastercentral.blogspot.com/2007/10/dealing-with-sitemap-cross-submissions.html">Cross Domain Sitemap errors</a></p></li>
+<li><p>Google maps <a href="http://feeds.feedburner.com/~r/OfficialGoogleMapsApiBlog/~3/174019883/make-your-kml-flash-y.html">adds Flash Content</a> into KLM</p></li>
+<li><p><a href="http://googlesystem.blogspot.com/2007/11/google-notebook-adds-labels-and.html">Google Notebook adds labels and bookmarks</a></p></li>
+<li><p>Blog Search is <a href="http://googlesystem.blogspot.com/2007/11/blog-search-included-in-google-history.html">now included</a> in Google History</p></li>
+<li><p>A cheap "<a href="http://googlesystem.blogspot.com/2007/11/tentative-google-pc.html">Google PC</a>" is on the market</p></li>
+<li><p>A new <a href="http://googlesystem.blogspot.com/2007/10/google-photo-picker.html">Photo Picker</a> for Gmail and Orkut pulls from Picasa</p></li>
+<li><p>GTalk may soon be able to <a href="http://googlesystem.blogspot.com/2007/10/google-to-connect-to-other-im-networks.html">connect to other networks</a> like AIM and Yahoo! Talk</p></li>
+<li><p>The <a href="http://googlesystem.blogspot.com/2007/10/gmails-new-version-is-now-available.html">new version</a> of Gmail comes out</p></li>
+<li><p>Google Code gets a <a href="http://googlified.com/2007new-google-code/">facelift</a></p></li>
+<li><p>Webmaster Tools gets <a href="http://googlified.com/2007set-geographic-target-in-webmaster-tools/">Geographic Targeting</a></p></li>
+<li><p>The Google Gadget Directory gets a <a href="http://blogoscoped.com/archive/2007-11-01-n78.html">facelift</a></p></li>
+<li><p>Microsoft is going to release the <a href="http://mashable.com/2007/11/04/microsoft-sync-framework/">Microsoft Sync Framework</a> to compete with Gears</p></li>
+<li><p>Picasa Web gets <a href="http://googlephotos.blogspot.com/2007/11/better-connections-with-picasa-web.html">opened</a>. (Flikr can transfer a picasa album to itself)</p></li>
+<li><p>Webmasters can now <a href="http://googlewebmastercentral.blogspot.com/2007/10/webmasters-can-now-provide-feedback-on.html">provide feedback</a> on sitelinks</p></li>
+<li><p><a href="http://gearsblog.blogspot.com/2007/10/bloggears-offline-blogger-client.html">Blog.gears</a> comes out</p></li>
+<li><p>Mapplets gets a documentation and example <a href="http://googlemapsapi.blogspot.com/2007/10/updated-documentation-examples-for.html">update</a></p></li>
+<li><p>New articles are posted for <a href="http://googlemapsapi.blogspot.com/2007/10/kml-articles-abound-its-about-time.html">KML</a></p></li>
+<li><p>The Ajax slideshow gets a full <a href="http://googleajaxsearchapi.blogspot.com/2007/10/slide-show-update-full-control-panel.html">Control Panel</a></p></li>
+<li><p><a href="http://googlemapsapi.blogspot.com/2007/10/map-of-dead-screen-overlayed-shoot-em_31.html">Map of the Dead!!</a> Google Maps overlay shooting game!</p></li>
+</ul>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Google Mashup Editor Blog: New Stuff - 10/4 Feature Release]]></title>
+            <link href="https://www.timbroder.com/2007/10/google-mashup-editor-blog-new-stuff-104.html"/>
+            <updated>2007-10-11T01:43:00+00:00</updated>
+            <id>https://www.timbroder.com/2007/10/google-mashup-editor-blog-new-stuff-104.html</id>
+            <content type="html"><![CDATA[<p><a href="http://googlemashupeditor.blogspot.com/2007/10/new-stuff-104-feature-release.html">Google Mashup Editor Blog: New Stuff - 10/4 Feature
+Release</a></p>
+
+<p>There was a feature release for the <a href="http://editor.googlemashups.com">Google Mashup
+Editor</a> and they also created a <a href="http://gmereleases.googlemashups.com">new
+blog</a> for all updates and notices.</p>
+
+<p>Features include</p>
+
+<ul>
+<li>Geo encoding of any element in feed</li>
+<li>XPath helper in Feed Browser</li>
+<li>In memory feed - ${tmp}</li>
+<li>google.mashups.isUserAuthenticated(): method that returns true if and only if the user is authenticated</li>
+<li><p>centerOnLocation(address) method added to map module: Takes a string and centers on the geo encoded location that is represented by the string
+Bug Fixes:</p></li>
+<li><p>Fixed IE6 error that causes fatal errors in some applications.</p></li>
+<li>Fixed Maps bugs and upgraded to Maps API version 2.88.</li>
+<li>Fixed the display of images in tabs.</li>
+<li>Performace improvements for syntax highlighting in the Editor.</li>
+</ul>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[GME 9/14 Feature Release]]></title>
+            <link href="https://www.timbroder.com/2007/09/gme-914-feature-release.html"/>
+            <updated>2007-09-16T17:21:00+00:00</updated>
+            <id>https://www.timbroder.com/2007/09/gme-914-feature-release.html</id>
+            <content type="html"><![CDATA[<p>A new version of the <a href="http://editor.googlemashups.com">Google Mashup Editor</a>
+was released on Friday. Highlights of new features include:<br />
+* Ratings and Labels for external feeds<br />
+* Now uses GWT 1.4 (newest version)<br />
+* New "Save" event. List and item modules throw a save event when new entries
+are added to a feed<br />
+* Smarter loading of external libraries<br />
+* Documentation and samples were updated to support new features</p>
+
+<p>Bug fix highlights:<br />
+* Auto-complete can now be used when entry has a coma<br />
+* "nowrap" style for blue-theme CSS class was removed<br />
+* Documentation links in the editor now point to the correct docs<br />
+* Source highlighting in the editor was fixed</p>
+
+<p>For the complete list, check out this
+<a href="http://googlemashupeditor.blogspot.com/2007/09/more-new-stuff-914-feature-release.html">post</a></p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Google Mashup Editor Blog: New Tutorial: Using Picasa Web Album Feeds in GME]]></title>
+            <link href="https://www.timbroder.com/2007/08/google-mashup-editor-blog-new-tutorial.html"/>
+            <updated>2007-08-22T03:34:00+00:00</updated>
+            <id>https://www.timbroder.com/2007/08/google-mashup-editor-blog-new-tutorial.html</id>
+            <content type="html"><![CDATA[<p>The guys over on the Mashup team have posted a <a href="http://code.google.com/support/bin/answer.py?answer=74728&amp;topic=12044">new tutorial</a> on how to use the
+Google Mashup Editor to mash Picasa Web Albums with a Google Map. The example
+is <a href="http://levsplaces.googlemashups.com/">here</a>. I started working on my own
+but I haven't really played with the GME before. Hopefully I'll have that
+tomorrow.</p>
+]]></content>
+        </entry>
+    </feed>

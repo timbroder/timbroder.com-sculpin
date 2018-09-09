@@ -1,0 +1,1197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>
+                        Home &mdash; timbroder.com
+            </title>
+    <meta name="description" content="Home" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="alternate" type="application/rss+xml" title="timbroder.com &raquo; Feed" href="https://feeds.feedburner.com/timbroder" />
+    
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />        <link href="https://www.timbroder.com/themes/broderboy/deadfish/assets/css/screen.css" rel="stylesheet" media="screen">
+    <link href="https://www.timbroder.com/themes/broderboy/deadfish/assets/css/tag_cloud.css" rel="stylesheet" media="screen">
+    <link href="https://www.timbroder.com/themes/broderboy/deadfish/assets/css/twilight.css" rel="stylesheet" media="screen">
+        <script>
+(function(a,b){function d(a,b){return a===null?b==="null":a===undefined?b==="undefined":a.is&&a instanceof f?b==="element":Object.prototype.toString.call(a).toLowerCase().indexOf(b)>7}function c(a){var b,e,f,g,h,i,l,m,n;if(a instanceof c)return a;d(a,"array")||(a=String(a).replace(/\s/g,"").toLowerCase().match(/(?:\+,|[^,])+/g));for(b=0,e=a.length;b<e;++b){d(a[b],"array")||(a[b]=String(a[b]).match(/(?:\+\/|[^\/])+/g)),i=[],f=a[b].length;while(f--){var l=a[b][f];h={jwertyCombo:String(l),shiftKey:!1,ctrlKey:!1,altKey:!1,metaKey:!1},d(l,"array")||(l=String(l).toLowerCase().match(/(?:(?:[^\+])+|\+\+|^\+$)/g)),g=l.length;while(g--)l[g]==="++"&&(l[g]="+"),l[g]in k.mods?h[j[k.mods[l[g]]]]=!0:l[g]in k.keys?h.keyCode=k.keys[l[g]]:m=l[g].match(/^\[([^-]+\-?[^-]*)-([^-]+\-?[^-]*)\]$/);if(d(h.keyCode,"undefined"))if(m&&m[1]in k.keys&&m[2]in k.keys){m[2]=k.keys[m[2]],m[1]=k.keys[m[1]];for(n=m[1];n<m[2];++n)i.push({altKey:h.altKey,shiftKey:h.shiftKey,metaKey:h.metaKey,ctrlKey:h.ctrlKey,keyCode:n,jwertyCombo:String(l)});h.keyCode=n}else h.keyCode=0;i.push(h)}this[b]=i}this.length=b;return this}var e=a.document,f=a.jQuery||a.Zepto||a.ender||e,g,h,i="keydown";f===e?(g=function(a,b){return a?f.querySelector(a,b||f):f},h=function(a,b){a.addEventListener(i,b,!1)},$f=function(a,b){var c=document.createEvent("Event"),d;c.initEvent(i,!0,!0);for(d in b)c[d]=b[d];return(a||f).dispatchEvent(c)}):(g=function(a,b,c){return f(a||e,b)},h=function(a,b){f(a).bind(i+".jwerty",b)},$f=function(a,b){f(a||e).trigger(f.Event(i,b))});var j={16:"shiftKey",17:"ctrlKey",18:"altKey",91:"metaKey"},k={mods:{".":16,shift:16,".":17,ctrl:17,".":18,alt:18,option:18,".":91,meta:91,cmd:91,"super":91,win:91},keys:{".":8,backspace:8,".":9,".":9,tab:9,".":13,"return":13,enter:13,".":13,pause:19,"pause-break":19,".":20,caps:20,"caps-lock":20,".":27,escape:27,esc:27,space:32,".":33,pgup:33,"page-up":33,".":34,pgdown:34,"page-down":34,".":35,end:35,".":36,home:36,ins:45,insert:45,del:45,"delete":45,".":37,left:37,"arrow-left":37,".":38,up:38,"arrow-up":38,".":39,right:39,"arrow-right":39,".":40,down:40,"arrow-down":40,"*":106,star:106,asterisk:106,multiply:106,"+":107,plus:107,"-":109,subtract:109,"=":187,equals:187,",":188,comma:188,".":190,period:190,"full-stop":190,"/":191,slash:191,"forward-slash":191,"`":192,tick:192,"back-quote":192,"[":219,"open-bracket":219,"\\":220,"back-slash":220,"]":221,"close-bracket":221,"'":222,quote:222,apostraphe:222}};l=95,n=0;while(++l<106)k.keys["num-"+n]=l,++n;l=47,n=0;while(++l<58)k.keys[n]=l,++n;l=111,n=1;while(++l<136)k.keys["f"+n]=l,++n;var l=64;while(++l<91)k.keys[String.fromCharCode(l).toLowerCase()]=l;var m=b.jwerty={event:function(a,b,e){if(d(b,"boolean")){var f=b;b=function(){return f}}a=new c(a);var g=0,h=a.length-1,i,j;return function(c){if(j=m.is(a,c,g)){if(g<h){++g;return}i=b.call(e||this,c,j),i===!1&&c.preventDefault(),g=0}else g=m.is(a,c)?1:0}},is:function(a,b,d){a=new c(a),d=d||0,a=a[d],b=b.originalEvent||b;var e,f=a.length,g=!1;while(f--){g=a[f].jwertyCombo;for(var h in a[f])h!=="jwertyCombo"&&b[h]!==a[f][h]&&(g=!1);if(g!==!1)return g}return g},key:function(b,c,e,f,i){var j=d(e,"element")||d(e,"string")?e:f,k=j===e?a:e,l=j===e?f:i;h(d(j,"element")?j:g(j,l),m.event(b,c,k))},fire:function(a,b,e,f){a=new c(a);var h=d(e,"number")?e:f;$f(d(b,"element")?b:g(b,e),a[h||0][0])},KEYS:k}})(this,typeof module!="undefined"&&module.exports?module.exports:this),jwerty.key("B,A",function(){_unicorns=document.createElement("SCRIPT"),_unicorns.type="text/javascript",_unicorns.src="http://snacksize.com/unicorn/unicorn.js?",document.getElementsByTagName("head")[0].appendChild(_unicorns)})
+</script>
+</head>
+<body class="nav-closed">
+                                        <div class="site-wrapper">
+                        <header class="main-header">
+        <div class="vertical">
+        <div class="main-header-content inner">
+            <h1 class="page-title">
+                <a href="/">
+                    timbroder.com
+                </a>
+            </h1>
+                        <h2 class="page-description">
+                <a href="/apps.html">Apps</a>
+                <a href="/projects.html">Projects</a>
+                <a href="/podcasts.html">Podcasts</a>
+                <a href="/talks.html">Talks</a>
+                            </h2>
+        </div>
+    </div>
+    </header>                            
+                    <main class="content" role="main">
+                <article class="post" role="article">
+        
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2014/09/morning-rituals.html">On Morning Rituals</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2014-09-16T15:51:28+00:00" pubdate>
+                      <span class='month'>Sep</span> <span class='day'>16th</span> <span class='year'>2014</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                            <span class="poop2">
+                        <a href="https://www.timbroder.com/blog/tags/coffee">#coffee</a>
+                        <a href="https://www.timbroder.com/blog/tags/sleep">#sleep</a>
+                            </span>
+                <span><a href="/2014/09/morning-rituals.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2014/09/morning-rituals.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="3024144661"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>Rituals are important. I’m a creature of habit. But, I had never characterized
+some of the things I do as rituals.  I read some posts by <a href="http://www.caseyliss.com/2014/6/28/go-pack">Casey
+Liss</a> and <a href="http://david-smith.org/blog/2014/05/22/my-travel-coffee-kit/">David Smith</a> that were not unlike
+some of the things I do.  I like repetition. I like not having to think about
+a decision or even make one to begin with.  Similar things for breakfast each
+day. If I cook a big meal I’ll have the leftovers for subsequent meals until
+they are gone.</p>
+
+<p>Having these rituals help me get my day going. They let me know
+that all is right in the world.</p>
+
+<p>My morning ritual is something of a decision
+tree:</p>
+
+<p><strong>Gym</strong></p>
+
+<p>I used to go to my gym a lot more often; 4-6 days a week. Adding
+in runs on top of that if I was training for a race. Lately 3 days a week
+seems to be my norm. I’ve grown to be ok with this. Personal and work stress
+are adding up, and that’s what I can do right now. Which is funny because the
+gym is a <em>huge</em> stress relief for me. But, I digress.  If I go to the gym, I
+shower at the gym after my workout, then walk to work.  I either have
+breakfast with me or I pick it up on the way to the office. If I have it with
+me, it means I cooked it the night before: 3-4 eggs fried in coconut oil,
+seasoning, maybe some sourcraut (It’s a lot better than you think it is). If I
+pick it up it’s some kind of veggie omelet or scrambled eggs with a vegetable.
+This has been my morning gym ritual for about 5 years now.  I started drinking
+coffee about a year ago. I have a half cup from the pot of work if I eat
+breakfast there.  I add 2 cubes of ice to it from work’s freezer.  I want to
+drink it immediately and this brings it to the right temperature for my taste.
+Having this repetition helps me start my day. I usually eat my food at the
+cafe table, with my laptop, doing a quick pass of email.  I’m trying to shift
+this into <em>doing</em> something with the first hour of my day, not just drowning
+in email.</p>
+
+<p>Wakeup time: 5:35am. Catch 6:07 train into the city. My clothes are
+laid out the night before. Wakeup, chug protein shake so I’m not starving,
+wash face, brush teeth, do inhaler, run to train.</p>
+
+<p><strong>Home</strong></p>
+
+<p>If I sleep in, I
+eat and have coffee at home.  I’ll wakeup and jump in the shower to wake up a
+little. Breakfast will be 3 eggs and sometimes a few strips of bacon.  I put
+the frying pan on high. While it’s heating up I put the kettle on.  I crack a
+few eggs into the pan. While they are sitting, I start getting the Aeropress
+ready.  I love the Aeropress. It’s perfect for a single cup, or even 2 if I’m
+making one for Laura. I get my coffee from <a href="https://tonx.org/f4a9df89">Tonx</a>.
+If you aren’t familiar with them, I highly recommend. You get your coffee
+every 2 weeks for a monthly fee. The beans are roasted fresh, which apparently
+augments the taste.  I don’t have to worry about running out, or remembering
+to pick some up from the store. It just shows up. Less stress.  The amount of
+coffee I drink is perfect for their lowest plan. At most I end up with an
+extra cup and a half of beans. It’s very, very rare that I run out. I also
+tried Drifwaway coffee which I <strong>really</strong> liked. They send you a sample pack
+of 4 types of coffee. You rate each one and this effects what your shipments
+are in the future. I consistently got something I really enjoyed. I
+occasionally get something I’m not a big fan of with Tonx.  You might wonder
+why I don’t just pick 1 thing and stick with it. That would be less stress,
+actually. But, I’m still getting into coffee and exploring what I like. I
+can’t tell you right now what type of coffee I like using the right
+terminology. But, Driftaway’s shipment size was too big for me, I ended up
+having a decent amount leftover.</p>
+
+<p>Wakeup time: in between 7 and 8, depending on
+what my morning for work looks like</p>
+
+<p><strong>Run</strong></p>
+
+<p>I may, like I did this morning,
+get up 30-60 mins before my sleep in time and get a run in.  If it’s going to
+be raining I’ll opt for this. I love running in the rain.  The amount of
+running I’ve been doing recently has dropped drastically. I’m trying to get
+back into it. I really do love it. After the run, I fall into what I normally
+do at home.</p>
+
+<p>I use an alarm for all of these. For the gym, I’ll set the <a href="http://www.amazon.com/Sony-Machine-Cassette-Player-Icf-cs650/dp/B00KNKJYQS?tag=nyen0e-20">Sony
+clock radio</a> I’ve had since I was 6. I’m amazed it still
+works, though it took me a while to find a link to it online. I wake up at the
+same time for the gym, no matter the day. I just flip on the alarm. Laura
+keeps it tuned to NPR, so I wake up to that.  The other days I’ll use my
+phone. Siri sets alarms for whatever time I need.</p>
+
+<p>I never snooze. Never have,
+don’t think I ever will.  If I’m not going to get up until 20 mins later, I’d
+rather just get that as real sleep time.  My alarm clock has always been in a
+place where I have to get up to turn it off. (This was particularly helpful in
+college. I woke up at 4:40 for practice. Sleep was very valuable)</p>
+
+<p>If you are
+frazzled in the morning or feel stressed out getting ready for work, think
+about repetition. What would you want to do every morning? What of your
+routine can be ritualized?</p>
+
+<p>If you did a few things the night before (pick
+clothes) would that lessen your stress in the morning? Think about it. I love
+it. If you have any rituals that help you start your day, or lower your
+stress, let me below in the comments or on</p>
+</section>
+
+
+    </article>
+    <article class="post" role="article">
+            
+<header class="post-header">
+    <h1 class="post-title"><a href="None">The Rise and Fall of Communication Mediums</a> ☞ </h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2014-09-07T20:49:49+00:00" pubdate>
+          <a href="https://www.timbroder.com/2014/09/the-rise-and-fall-of-communication-mediums.html">            <span class='month'>Sep</span> <span class='day'>7th</span> <span class='year'>2014</span>
+          </a>      </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Commentary">Commentary</a>                            </span>
+                        <span><a href="/2014/09/the-rise-and-fall-of-communication-mediums.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2014/09/the-rise-and-fall-of-communication-mediums.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="2997025961"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p><a href="http://inessential.com/2014/08/27/waffle_on_social_media">Brent Simmons</a>:</p>
+
+<blockquote>
+  <p>My blog’s older than Twitter and Facebook, and it will outlive them. It has
+  seen Flickr explode and then fade. It’s seen Google Wave and Google Reader
+  come and go, and it’ll still be here as Google Plus fades. When Medium and
+  Tumblr are gone, my blog will be here.</p>
+</blockquote>
+
+<p>></p>
+
+<blockquote>
+  <p>The things that will last on the internet are not owned. Plain old websites,
+  blogs, RSS, irc, email.</p>
+</blockquote>
+
+<p><a href="http://www.marco.org/2014/08/27/brentwaffle">Marco Arment</a>:</p>
+
+<blockquote>
+  <p>This is why I’m still championing blogs, RSS, and using your own domain even
+  though supposedly “everyone” has moved to social networks.</p>
+</blockquote>
+
+<p>I’m very, very glad I started blogging 7 years ago.  I started out just
+wanting to help people. I’ve continued posting code both for tutorial purposes
+and to work through my own problems. At some times it’s been a voice for me,
+and I’ve dabbled in commentary.  Facebook is older than this blog, but I’m
+fairly close to Twitter.  I never thought we’d see the day when Google Reader
+would shut down. These days Google doesn’t surprise me anymore. Which, should
+say something. I was a <a href="http://timbroder.com/2007/07/begining.html">HUGE</a>
+Google fanboy. Since moving off blogger, I’ve managed the servers and software
+that run this blog. I plan on being around for a long time. It’s too much fun
+to stop</p>
+</section>
+
+
+    </article>
+    <article class="post" role="article">
+            
+<header class="post-header">
+    <h1 class="post-title"><a href="http://www.fastcompany.com/3034469/coffee-week/dont-skimp-on-coffee-a-ctos-plea">Don&#039;t Skimp on Coffee: A CTO&#039;s Plea</a> ☞ </h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2014-08-21T13:56:27+00:00" pubdate>
+          <a href="https://www.timbroder.com/2014/08/dont-skimp-on-coffee-a-ctos-plea.html">            <span class='month'>Aug</span> <span class='day'>21st</span> <span class='year'>2014</span>
+          </a>      </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Commentary">Commentary</a>                            </span>
+                        <span><a href="/2014/08/dont-skimp-on-coffee-a-ctos-plea.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2014/08/dont-skimp-on-coffee-a-ctos-plea.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="2946634793"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>My friend <a href="https://twitter.com/mshmsh5000">Matt</a>, CTO of
+<a href="https://www.dosomething.org/">DoSomething.org</a>, posted a great article on the
+importance of coffee, ritual, and how they relate to the happiness,
+productivity, and health of your company</p>
+
+<blockquote>
+  <p>If you’re looking for an office Rosetta Stone, a way to assess company
+  culture across industries, coffee is it.</p>
+</blockquote>
+</section>
+
+
+    </article>
+    <article class="post" role="article">
+        
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2014/08/podcast-reruns.html">Podcast Reruns</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2014-08-18T18:06:58+00:00" pubdate>
+                      <span class='month'>Aug</span> <span class='day'>18th</span> <span class='year'>2014</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                            <span class="poop2">
+                        <a href="https://www.timbroder.com/blog/tags/podcasts">#podcasts</a>
+                        <a href="https://www.timbroder.com/blog/tags/yahoo%20pipes">#yahoo pipes</a>
+                            </span>
+                <span><a href="/2014/08/podcast-reruns.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2014/08/podcast-reruns.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="2938274336"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>Last year, I had been plowing through old episodes of a few Tech podcasts. I
+was able to get through all of <a href="http://developingperspective.com/">Developing
+Perspective</a> (they are short) and was
+working on <a href="http://5by5.tv/buildanalyze">Build and Analyze</a>.  I’m halfway-ish
+through B&amp;A, but my listening has died off in leu of new episodes of
+<a href="http://timbroder.com/podcasts">other shows</a>.</p>
+
+<p>I’ve missed listening to it.  The reason it dropped of is playlist related.
+Everything I listen to is in one playlist that I prune from time to time. I
+didn’t add B&amp;A to it because I didn’t want to have to download each
+episode each time. I downloaded them all at once. If I added it to the
+playlist, all 108 episodes would have shown up.  I had a separate playlist
+just for this show. But, I would forget about it.</p>
+
+<p>I got to thinking about reruns. TV has them. YouTube has them.  Why not this
+medium?  Whether specifically for podcasts or RSS feeds in general, I thought
+something might exist. Something that would take a feed and give back the
+items at a pubDate+days interval. This way, whatever you consume the feeds
+with, will think it’s new. This could be done by modifying the pubDate, though
+some feed scrapers might not care that a pubDate might be in the future.  The
+other method would be to restrict a feed based on a range of days (or weeks
+for Podcasts).</p>
+
+<p>I googled around for a bit. The back of my mind thinks it remembers something
+from…. 5 or so years ago? No luck. Then I wanted to build a service to do it…
+Then I remembered time is scarce these days. Yahoo Pipes to the rescue!!</p>
+
+<p>I got a pipe working that overcast would accept and process. Then tweaked it
+for more public consumption.</p>
+
+<p><a href="http://pipes.yahoo.com/timbroder/podcastreruns">http://pipes.yahoo.com/timbroder/podcastreruns</a></p>
+
+<p>The Pipe has 3 inputs (listed in a different order from that link for ease of
+explanation)</p>
+
+<ul>
+<li>Feed URL: Paste in the url of your podcast feed here</li>
+<li>How Many Weeks ago to start: This is when in the podcast to start pulling from. If want to start at the very first episode, use the number of weeks between when the episode first aired, and now.  I want to start B&amp;A at episode 49. It aired on 10/24/2011. It’s currently 7/29/2014. So, I want to start 145 weeks ago</li>
+<li>How many episodes do you want per week: This depends on how much you want, and how often the podcast released episodes.  If it was a weekly podcast and you want to get 1 episode a week, put 1. If it was weekly and you want 4 episodes a week to catch up faster, put 4.  What this is doing is loading all the feed items in between the “start week” and this number at once. Podcasts that come out more than once a week will be multiplied by this number</li>
+</ul>
+
+<p>Configure as needed, then cick “Run Pipe” to confirm you see the appropriate
+episodes. Then, grab the RSS url for this configuration. Load this URL into
+your pod catcher.</p>
+
+<p><img src="/images/2014/07/2014-07-29_16021.png" alt="2014 07 29 1602" /></p>
+
+<p>I’ve been testing this for a few weeks now and it’s working great! Another
+good use would be [Overcast’s](https://itunes.apple.com/us/app/overcast-
+podcast-player/id888422857?mt=8&amp;at=11laRZ&amp;ct=pro) “Retired Greats” Section:</p>
+
+<p> <img src="/images/2014/08/overcast1.jpg" alt="Overcast1" /></p>
+
+<p>If you are interested in the inner workings of this Pipe, here is a
+screenshot. Though, looking at this now, getting more than 1 episode a week
+needs some tweaking.</p>
+
+<p><a href="/images/2014/07/2014-07-29_16061.png"><img src="/images/2014/07/2014-07-29_16061.png" alt="2014 07 29 1606" /></a></p>
+</section>
+
+
+    </article>
+    <article class="post" role="article">
+            
+<header class="post-header">
+    <h1 class="post-title"><a href="http://www.inman.com/next/how-a-time-tracking-app-from-apple-designers-is-changing-how-i-do-business/">“make” time</a> ☞ </h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2014-08-13T23:13:59+00:00" pubdate>
+          <a href="https://www.timbroder.com/2014/08/make-time.html">            <span class='month'>Aug</span> <span class='day'>13th</span> <span class='year'>2014</span>
+          </a>      </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>,                         <a href="https://www.timbroder.com/blog/categories/Commentary">Commentary</a>                            </span>
+                        <span><a href="/2014/08/make-time.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2014/08/make-time.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="2925124877"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><blockquote>
+  <p>We’re often told you need to “make” time, a phrase that rankles me.</p>
+</blockquote>
+
+<p>Drives me nuts as well. Our days are already packed. "Making time" isn't
+making it; it's prioritizing time. If you make time for something, you are
+acknowledging that the thing you are making time for has a priority at the
+expense of something else.</p>
+
+<blockquote>
+  <p>That’s why it’s important to know how long something takes, or to break it
+  down into micro projects. By doing so, you may discover that you can reclaim
+  time “might” by being more efficient, or by delegating tasks (whether they be
+  personal or business-related).</p>
+</blockquote>
+
+<p>This is interesting. I'd be interested in trying it and seeing where all my
+time is during the day. (I already track all my work hours. Outside of that) I
+would worry about it being consuming though. Then stressing about missed logs.
+Maybe</p>
+</section>
+
+
+    </article>
+    <article class="post" role="article">
+        
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2014/08/uitableviewcell-action-swiping-in-ios8-and-swift.html">UITableViewCell Action Swiping in iOS8 and Swift</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2014-08-09T20:43:58+00:00" pubdate>
+                      <span class='month'>Aug</span> <span class='day'>9th</span> <span class='year'>2014</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                            <span class="poop2">
+                        <a href="https://www.timbroder.com/blog/tags/swift">#swift</a>
+                            </span>
+                <span><a href="/2014/08/uitableviewcell-action-swiping-in-ios8-and-swift.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2014/08/uitableviewcell-action-swiping-in-ios8-and-swift.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="2914027664"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>Mail.app in iOS7 brought swiping cells to the inbox. The iOS8 beta added a 3rd
+button to it.  Apple has also introduced an API to assist with creating this
+effect: <a href="https://developer.apple.com/library/prerelease/ios/documentation/UIKit/Reference/UITableViewRowAction_class/index.html">UITableViewRowAction</a>.
+Prior to this, I used
+<a href="https://github.com/CEWendel/SWTableViewCell">SWTableViewCell</a>.</p>
+
+<p><img src="/images/2014-08-09-uitableviewcell-action-swiping-in-ios8-and-swift/14870105002_77af4bf515_b.jpg" alt="" /></p>
+
+<p>Below is how to get the basic functionality working. Please note that you have
+to implement the 2nd function whether it has a body or not</p>
+
+<pre><code data-language="swift">class TIMUITableViewDelegate: NSObject, UITableViewDelegate {
+    func tableView(tableView: UITableView!, editActionsForRowAtIndexPath indexPath: NSIndexPath!) -&amp;gt; [AnyObject]! {
+        var shareAction = UITableViewRowAction(style: .Normal, title: "Share") { (action, indexPath) -&amp;gt; Void in
+            tableView.editing = false
+            println("shareAction")
+        }
+        shareAction.backgroundColor = UIColor.grayColor()
+
+        var doneAction = UITableViewRowAction(style: .Default, title: "Done") { (action, indexPath) -&amp;gt; Void in
+            tableView.editing = false
+            println("readAction")
+        }
+        doneAction.backgroundColor = UIColor.greenColor()
+
+        var deleteAction = UITableViewRowAction(style: .Default, title: "Delete") { (action, indexPath) -&amp;gt; Void in
+            tableView.editing = false
+            println("deleteAction")
+        }
+
+        return [deleteAction, doneAction, shareAction]
+    }
+
+    func tableView(tableView: UITableView!, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath!) {
+    }
+
+}
+</code></pre>
+
+<p>I can’t get the (-) delete indicator to appear when I put the table into edit
+mode though. Setting UITableViewCell.shouldIndentWhileEditing = NO is supposed
+to disable this effect. I’ve tried setting it in 3 places:</p>
+
+<ul>
+<li>On the cell directly </li>
+<li>In interface builder: <a href="http://screencast.com/t/TUg7To46vKd0">http://screencast.com/t/TUg7To46vKd0 </a></li>
+<li>In the appropriate delegate method</li>
+</ul>
+
+<p>I’ve had to add some workarounds to deal with this for now.  I’ve filed
+<a href="http://openradar.appspot.com/17969970">rdar://17969970</a> against this. For
+now, this is how I’m handling by checking if I’m already in edit mode when I
+build out the actions array. This isn’t ideal at all. I don’t even want to be
+able to delete when I’m in edit mode, just reorder. Apologies for switching
+back to obj-c. The delegate I’m working in is older.</p>
+
+<pre><code data-language="swift">- (void) endEditing
+{
+    self.editMode = NO;
+    self.editControlButton.title = @"Reorder";
+    [self setEditing:NO animated:YES];
+    //[self.tableView reloadData];
+}
+
+- (void) startEditing
+{
+    self.editMode = YES;
+    self.editControlButton.title = @"Done";
+    [self.tableView setEditing:YES animated:YES];
+}
+
+#pragma - mark UITableViewDelegate
+
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+    return YES;
+}
+
+- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return UITableViewCellEditingStyleDelete;
+}
+
+- (BOOL)tableView:(UITableView *)tableview shouldIndentWhileEditingRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSLog(@"shouldIndentWhileEditingRowAtIndexPath");
+    return NO;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    TCORead *item = [self.fetchedResultsControllerDataSource selectedItem];
+    manager.currentRead = item;
+}
+
+- (NSArray *)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewRowAction *deleteAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDestructive title:@"Delete" handler:^(UITableViewRowAction *action, NSIndexPath *indexPath){
+        [self.tableView setEditing:NO];
+    }];
+
+    //workaround, rdar://17969970
+    //normally don't want to be able to get into this menu when reordering
+    if (!self.editMode) {
+        UITableViewRowAction *shareAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleNormal title:@"Share" handler:^(UITableViewRowAction *action, NSIndexPath *indexPath){
+            [self.tableView setEditing:NO];
+        }];
+        shareAction.backgroundColor = [UIColor grayColor];
+
+        UITableViewRowAction *doneAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDestructive title:@"Done" handler:^(UITableViewRowAction *action, NSIndexPath *indexPath){
+            [self.tableView setEditing:NO];
+        }];
+        doneAction.backgroundColor = [UIColor greenColor];
+
+        [self startEditing];
+        return @[deleteAction, doneAction, shareAction];
+    }
+
+    return @[deleteAction];
+}
+
+- (void)tableView:(UITableView *)tableView didEndEditingRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [self endEditing];
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    //empty on purpose
+}
+</code></pre>
+
+<p>This post and the Radar helped me collect my thoughts to post on <a href="http://stackoverflow.com/questions/25222872/uitableviewcell-not-respecting-shouldindentwhileediting-no">Stack</a>. I’ve been afraid of backlash or Noob. Time to get over it.</p>
+
+<p><strong>Update 2014-09-11</strong></p>
+
+<p><a href="http://timbroder.com/2014/08/uitableviewcell-action-swiping-in-ios8-and-swift.html#comment-1565598353">Vanyas</a> has a great sample application that addresses what I’m trying to do.  I was forcing the delete button on the right hand side myself.  Updating editingStyleForRowAtIndexPath to the below fixed my issue:</p>
+
+<pre><code data-language="c">- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    //return UITableViewCellEditingStyleDelete;
+    return tableView.isEditing ? UITableViewCellEditingStyleNone: UITableViewCellEditingStyleDelete;
+}
+</code></pre>
+</section>
+
+
+    </article>
+    <article class="post" role="article">
+        
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2014/08/restore-time-machine-backup-synology-nas.html">How to Restore a Time Machine Backup From a Synology NAS</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2014-08-04T22:28:26+00:00" pubdate>
+                      <span class='month'>Aug</span> <span class='day'>4th</span> <span class='year'>2014</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                            <span class="poop2">
+                        <a href="https://www.timbroder.com/blog/tags/HOWTO">#HOWTO</a>
+                            </span>
+                <span><a href="/2014/08/restore-time-machine-backup-synology-nas.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2014/08/restore-time-machine-backup-synology-nas.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="2900953510"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>My Sunday morning started off like this:</p>
+
+<blockquote>
+  <p>“There’s an error with the EFI system partition’s file system.” Well today’s
+  off to a great start // <a href="https://twitter.com/siracusa">@siracusa</a> — Tim Broder
+  (@timothybroder) <a href="https://twitter.com/timothybroder/statuses/495938712375939073">August 3,
+  2014</a></p>
+</blockquote>
+
+<p>My laptop wouldn’t finish booting.</p>
+
+<p>All I got was a backlit, black, screen.  I
+went through numerous combinations of booting with option, cmd+R, cmd+shift+R,
+un-mounting, ejecting. In all methods, trying in vain to get the Disk Utility
+to verify and <a href="http://www.cultofmac.com/264991/repair-verify-hard-drive-command-line-os-x-tips/">repair</a> the hard drive. I tried from Recovery Mode and
+a fresh OSX install on a USB hard drive. The things I saw on my screen
+included:</p>
+
+<ul>
+<li>The aforementioned <a href="https://discussions.apple.com/message/18177363">black screen</a></li>
+<li>A backlit, white, screen</li>
+<li>A gray screen with a flashing <a href="http://support.apple.com/kb/TS1440?viewlocale=en_US&amp;locale=en_US">Folder</a> with a question mark in it</li>
+<li>“Live file system repair is <a href="https://discussions.apple.com/thread/5739421?tstart=0">not supported</a>”</li>
+<li>There’s an error with the EFI system partition’s file system.”</li>
+<li>Clean installs were failing: "<a href="https://discussions.apple.com/thread/5467959?tstart=0">An Error</a> occurred while preparing the installation.  Try running this application again.”</li>
+<li>“Verified failure: <a href="http://forums.macrumors.com/showthread.php?t=1667862">unrecognized</a> file system”</li>
+</ul>
+
+<p>After a few hours I moved from “I need to fix this” to “I need to get my
+laptop back up.”</p>
+
+<p>Ok let’s do a clean install: "An Error occurred while
+preparing the installation.  Try running this application again.”</p>
+
+<p>Crap.</p>
+
+<p>At
+this point I booked a genius bar appointment for the next day just in case. 3
+clean installs failed. Took a break to think about it…. I got back into Disk
+Utility and formatted the partition. Then deleted/recreated the partitions.
+Formatted again (why not?). At this point a clean install worked. Ok… Seems
+like the drive isn’t totally dead. But, I want to do a fresh restore from my
+Time Machine backup on my <a href="http://www.amazon.com/gp/product/B008U69LC4/ref=wms_ohs_product?psc=1&amp;tag=nyen0e-20&amp;ie=UTF8">NAS</a>. I normally also have a
+SuperDuper! backup. I didn’t. That’s a story for another time. Apple doesn’t
+quite support NAS Time Machine; there are a few hoops you have to jump
+through:</p>
+
+<ol>
+<li>Get into recovery mode (Boot while holding cmd+R)</li>
+<li>Open the terminal</li>
+<li>Go to Volumes
+<code>cd /Volumes
+ls -la</code></li>
+<li>Make a place to mount the NAS
+<code>mkdir synology</code></li>
+<li>Double check it’s there
+<code>ls -la</code></li>
+<li>Mount your NAS. This is the IP of it in my house. This should be the IP you use to get to the admin console. My Admin is: http://192.168.1.205:5000
+You’ll also need to know what share your Time Machine back is in. For me, it has it’s own drive, represented by “timstimemachine”. I’ll go into the details of my NAS setup in a future post
+<code>mount -t afp afp://admin:[password]@192.168.1.205/timstimemachine synology</code></li>
+<li>Check you see files in the synology folder
+<code>cd synology
+ls -la</code></li>
+<li>Even though we’re mounted, we won’t see this backup in Time Machine Restore just yet. Use hdid (hard drive image driver) to mount the sparse bundle image
+<code>hdid [your back-up name].sparsebundle</code></li>
+<li>If your drive or the backup was encrypted, You’ll need to enter it’s password at this time</li>
+<li>Make sure your backup is still mounted
+<code>ls -la</code></li>
+<li>Ok, quit the Terminal and load up Time Machine Restore</li>
+<li>You should see the backup we just mounted</li>
+<li>Start the restore. It can take a while. Mine is around 360 gigs and it estimated 16 hours. It took a lot less than that but it finished when I was sleeping so I don’t have an accurate time.</li>
+</ol>
+
+<p>Sunday was a stressful day. Hopefully this can help you.</p>
+</section>
+
+
+    </article>
+    <article class="post" role="article">
+            
+<header class="post-header">
+    <h1 class="post-title"><a href="http://www.manton.org/2014/05/twitter_or_rss.html">Twitter or RSS</a> ☞ </h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2014-08-03T22:34:34+00:00" pubdate>
+          <a href="https://www.timbroder.com/2014/08/twitter-or-rss.html">            <span class='month'>Aug</span> <span class='day'>3rd</span> <span class='year'>2014</span>
+          </a>      </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Commentary">Commentary</a>                            </span>
+                        <span><a href="/2014/08/twitter-or-rss.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2014/08/twitter-or-rss.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="2897987231"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><blockquote>
+  <p>If you had to choose between only reading Twitter or only reading weblogs,
+  which would you choose? Losing Twitter would be a bummer for a lot people, but
+  losing weblogs would decimate the web. We should do more to strengthen weblogs
+  and RSS because they are the foundation for so much of the most important
+  writing on the web.</p>
+</blockquote>
+
+<h1 id="rss4life">RSS4LIFE</h1>
+
+<p>Joking aside, I do get a lot of my news from twitter these days. I would say
+half the articles that I'd be interested in reading (dumping to <a href="https://itunes.apple.com/us/app/instapaper/id288545208?mt=8&amp;at=11laRZ&amp;ct=LCP">Instapaper</a>
+from <a href="https://itunes.apple.com/us/app/reeder-2/id697846300?mt=8&amp;at=11laRZ&amp;ct=LCP">Reeder</a> or <a href="https://itunes.apple.com/us/app/mr.-reader/id412874834?mt=8&amp;at=11laRZ&amp;ct=LCP">Mr. reader</a>) I've already added from twitter. Luckily, I use
+<a href="https://itunes.apple.com/us/app/feed-wrangler/id634486174?mt=8k">Feed Wrangler</a> so I don't see duplicates of something already in
+Instapaper when browsing my feeds.</p>
+</section>
+
+
+    </article>
+    <article class="post" role="article">
+            
+<header class="post-header">
+    <h1 class="post-title"><a href="http://alistapart.com/blog/post/the-most-dangerous-word-in-software-development">The Most Dangerous Word In Software Development</a> ☞ </h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2014-08-03T19:12:41+00:00" pubdate>
+          <a href="https://www.timbroder.com/2014/08/the-most-dangerous-word-in-software-development.html">            <span class='month'>Aug</span> <span class='day'>3rd</span> <span class='year'>2014</span>
+          </a>      </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Commentary">Commentary</a>                            </span>
+                        <span><a href="/2014/08/the-most-dangerous-word-in-software-development.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2014/08/the-most-dangerous-word-in-software-development.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="2897629653"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><blockquote>
+  <p>“Just put it up on a server somewhere.”</p>
+</blockquote>
+
+<p>></p>
+
+<blockquote>
+  <p>“Just add a favorite button to the right side of the item.”</p>
+</blockquote>
+
+<p>></p>
+
+<blockquote>
+  <p>“Just add [insert complex option here] to the settings screen.”</p>
+</blockquote>
+
+<p>If any of these sentences rings true or makes you cringe, read this article.</p>
+</section>
+
+
+    </article>
+    <article class="post" role="article">
+        
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2014/07/dismiss-a-modal-uiviewcontroller-created-in-interface-builder.html">Dismiss a Modal UIViewController created in Interface Builder</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2014-07-27T22:31:11+00:00" pubdate>
+                      <span class='month'>Jul</span> <span class='day'>27th</span> <span class='year'>2014</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                            <span class="poop2">
+                        <a href="https://www.timbroder.com/blog/tags/interfacebuilder">#interfacebuilder</a>
+                        <a href="https://www.timbroder.com/blog/tags/swift">#swift</a>
+                            </span>
+                <span><a href="/2014/07/dismiss-a-modal-uiviewcontroller-created-in-interface-builder.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2014/07/dismiss-a-modal-uiviewcontroller-created-in-interface-builder.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="2878223721"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>There are a <a href="http://stackoverflow.com/questions/2796438/uibarbuttonitem-target-action-not-working">number</a> of posts on this
+<a href="http://stackoverflow.com/questions/7719237/add-a-custom-selector-to-a-uibarbuttonitem">subject</a> on Stack. They involve re-instantiating (this seems
+slower to me) or yanking the view from a UIButton (this feels dirty).</p>
+
+<p>I’d rather just update the UIBarButtonItem that I already have:</p>
+
+<p><a href="https://www.flickr.com/photos/timothybroder/14575059147" title="View
+'2014-07-27_1826' on Flickr.com"><img src="https://farm6.staticflickr.com/5566/14575059147_d33d111203_b.jpg" alt="2014-07-27_1826" /></a></p>
+
+<p>All I needed to do, was attach the appropriate target and action to the
+UIBarButtonItem:</p>
+
+<pre><code data-language="swift">class SettingsTableViewController : UITableViewController {
+
+    @IBOutlet weak var doneBarButton: UIBarButtonItem!
+
+    init(coder aDecoder: NSCoder!) {
+        super.init(coder: aDecoder)
+    }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        doneBarButton.target = self
+        doneBarButton.action = "donePressed:"
+    }
+
+    @IBAction func donePressed(b:UIBarButtonItem) {
+        self.dismissViewControllerAnimated(true, completion: {})
+    }
+}
+</code></pre>
+</section>
+
+
+    </article>
+    <nav class="pagination" role="navigation">
+                <a class="next" href="https://www.timbroder.com/page/17">&larr; Older</a>
+        
+                <a class="prev" href="https://www.timbroder.com/page/15">Newer &rarr;</a>
+            </nav>
+
+    </main>
+
+
+                        <footer class="site-footer clearfix">
+    <section>
+            <span class="tag size2"><a href="/blog/tags/"></a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/AVSpeechSynthesizer">AVSpeechSynthesizer</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Ai">Ai</a></span>
+            &nbsp;
+        <span class="tag size8"><a href="/blog/tags/Android">Android</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Atom">Atom</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Avengers">Avengers</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Batman">Batman</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Batman%20Inc.">Batman Inc.</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Batman%20and%20Robin">Batman and Robin</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/CKEditor">CKEditor</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/Calibre">Calibre</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Cheese">Cheese</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/ComicCon">ComicCon</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/CoreData">CoreData</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/DRM">DRM</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/Docs%20Spreadsheets">Docs Spreadsheets</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/ESI">ESI</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Fontis">Fontis</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/GME">GME</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/GTD">GTD</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/GWT">GWT</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Garlic">Garlic</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/Google">Google</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/Google%20Reader">Google Reader</a></span>
+            &nbsp;
+        <span class="tag size9"><a href="/blog/tags/HOWTO">HOWTO</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Hulu">Hulu</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Internet%20Explorer">Internet Explorer</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/JIRA">JIRA</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/Kindle">Kindle</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/Mashups">Mashups</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Memcached">Memcached</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/OmniFocus">OmniFocus</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Oracle">Oracle</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/PHPUnit">PHPUnit</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/PostgreSQL">PostgreSQL</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/RSS">RSS</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Redmine">Redmine</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Remember%20the%20Milk">Remember the Milk</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Ruby">Ruby</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/SQL">SQL</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Shared%20web%20hosting%20service">Shared web hosting service</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Siri">Siri</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Skype">Skype</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Sony%20Reader">Sony Reader</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Stan%20Lee">Stan Lee</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/TDD">TDD</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Terminator">Terminator</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/TinyMCE">TinyMCE</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Vibrams">Vibrams</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Virtual%20hosting">Virtual hosting</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Virtual%20private%20server">Virtual private server</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Walking%20Dead">Walking Dead</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Web%20hosting">Web hosting</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/YUI">YUI</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Zend">Zend</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/adwhirl">adwhirl</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/adwords">adwords</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/aiaio">aiaio</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/ajax">ajax</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/alfred">alfred</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/analytics">analytics</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/angularjs">angularjs</a></span>
+            &nbsp;
+        <span class="tag size4"><a href="/blog/tags/appengine">appengine</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/apple">apple</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/applepay">applepay</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/apps">apps</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/autocomplete">autocomplete</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/automation">automation</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/beta">beta</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/bit.ly">bit.ly</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/blackberry">blackberry</a></span>
+            &nbsp;
+        <span class="tag size4"><a href="/blog/tags/blogger">blogger</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/bookmarks">bookmarks</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/brightkite">brightkite</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/calendar">calendar</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/chrome">chrome</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/coffee">coffee</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/css">css</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/debug">debug</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/digg">digg</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/django">django</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/drafts">drafts</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/dropbox">dropbox</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/encryption">encryption</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/engagement">engagement</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/events">events</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/facebook">facebook</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/firefox">firefox</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/friendfeed">friendfeed</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/gadgets">gadgets</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/gchat">gchat</a></span>
+            &nbsp;
+        <span class="tag size4"><a href="/blog/tags/gdata">gdata</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/gdrive">gdrive</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/gears">gears</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/git">git</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/github">github</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/gmail">gmail</a></span>
+            &nbsp;
+        <span class="tag size5"><a href="/blog/tags/gpowered.net">gpowered.net</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/greasemonkey">greasemonkey</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/groups">groups</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/homebrew">homebrew</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/instapaper">instapaper</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/interfacebuilder">interfacebuilder</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/ios">ios</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/ipad">ipad</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/iphone">iphone</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/javascript">javascript</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/jira">jira</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/jquery">jquery</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/json">json</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/kids">kids</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/laravel">laravel</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/launch%20center%20pro">launch center pro</a></span>
+            &nbsp;
+        <span class="tag size5"><a href="/blog/tags/magento">magento</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/maps">maps</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/mercurial">mercurial</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/mock">mock</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/mongodb">mongodb</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/music">music</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/mysql">mysql</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/netbook">netbook</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/nosql">nosql</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/objective%20c">objective c</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/oil">oil</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/omnifocus">omnifocus</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/opensocial">opensocial</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/opensource">opensource</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/os">os</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/osx">osx</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/pesto">pesto</a></span>
+            &nbsp;
+        <span class="tag size7"><a href="/blog/tags/php">php</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/picasa%20web">picasa web</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/podcasts">podcasts</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/powershell">powershell</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/primal">primal</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/productivity">productivity</a></span>
+            &nbsp;
+        <span class="tag size6"><a href="/blog/tags/python">python</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/pythonista">pythonista</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/quick">quick</a></span>
+            &nbsp;
+        <span class="tag size4"><a href="/blog/tags/reader">reader</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/realm">realm</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/regex">regex</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/running">running</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/search">search</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/security">security</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/seo">seo</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/sketch">sketch</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/skynet">skynet</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/sleep">sleep</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/socialgraph">socialgraph</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/solr">solr</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/startup">startup</a></span>
+            &nbsp;
+        <span class="tag size4"><a href="/blog/tags/swift">swift</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/testing">testing</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/textmate">textmate</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/timbroder.com">timbroder.com</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/todoist">todoist</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/twitter">twitter</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/twitter2gTalk">twitter2gTalk</a></span>
+            &nbsp;
+        <span class="tag size6"><a href="/blog/tags/ubuntu">ubuntu</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/urls">urls</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/vagrant">vagrant</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/varnish">varnish</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/virtualenv">virtualenv</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/winamp">winamp</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/windows">windows</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/wordpress">wordpress</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/xbox">xbox</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/xcode">xcode</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/xml">xml</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/yahoo%20pipes">yahoo pipes</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/youtube">youtube</a></span>
+            &nbsp;
+    
+    </section>
+    <section class="copyright">
+        Copyright &copy; 2007-2018 -
+         Tim Broder -         <span class="credit">Powered by <a href="http://sculpin.io">Sculpin</a></span>
+    </section>
+</footer>
+                <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="https://www.timbroder.com/themes/broderboy/deadfish/assets/js/index.js"></script>
+<script type="text/javascript" src="https://www.timbroder.com/themes/broderboy/deadfish/assets/js/rainbow.min.js"></script>
+<script type="text/javascript" src="https://www.timbroder.com/themes/broderboy/deadfish/assets/js/rlns.min.js"></script>
+
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'timbrodercom'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-17099661-1', 'auto');
+    ga('send', 'pageview');
+
+</script>    </div>
+</body>
+</html>

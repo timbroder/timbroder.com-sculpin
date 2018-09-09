@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[timbroder.com]]></title>
+    <link href="https://www.timbroder.com/blog/tags/mysql.xml" rel="self"/>
+    <link href="https://www.timbroder.com/"/>
+    <updated>2018-09-09T12:21:33+00:00</updated>
+    <id>https://www.timbroder.com/</id>
+            <author>
+            <name><![CDATA[Tim Broder]]></name>            <email><![CDATA[timothy.broder@gmail.com]]></email>        </author>
+        <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[How fuc**d is your database?]]></title>
+            <link href="https://www.timbroder.com/2010/08/how-fucd-is-your-database.html"/>
+            <updated>2010-08-26T20:53:42+00:00</updated>
+            <id>https://www.timbroder.com/2010/08/how-fucd-is-your-database.html</id>
+            <content type="html"><![CDATA[<p>Are you using PostgreSQL, MySQL, MSSQL, Oracle, SQLite, MS Access, or NoSQL?
+<a href="http://howfuckedismydatabase.com/">http://howfuckedismydatabase.com/</a></p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Set / Change / Reset the MySQL root password on Ubuntu Linux (Ubuntu)]]></title>
+            <link href="https://www.timbroder.com/2008/11/set-change-reset-mysql-root-password-on.html"/>
+            <updated>2008-11-24T23:53:00+00:00</updated>
+            <id>https://www.timbroder.com/2008/11/set-change-reset-mysql-root-password-on.html</id>
+            <content type="html"><![CDATA[<p>This came in veeeerrryyy handy just now...</p>
+
+<ol>
+<li><p>Stop the MySQL Server</p>
+
+<p>sudo /etc/init.d/mysql stop</p></li>
+<li><p>Start the mysqld config</p>
+
+<p>sudo mysqld --skip-grant-tables &amp;</p></li>
+<li><p>Login to the server as root</p>
+
+<p>mysql -u root mysql</p></li>
+<li><p>Ser your NEWPASSWORD</p>
+
+<p>UPDATE user SET Password=PASSWORD('NEWPASSWORD') WHERE</p>
+
+<p>User='root'; FLUSH</p>
+
+<p>PRIVILEGES; exit;</p></li>
+</ol>
+
+<p><a href="https://altezza.travel/groups.php">туры на майские праздники
+днепропетровск</a><a href="http://purmedispa.com/dengi-v-dolg-chastnoe-litso.php" title="потребительский
+кредит под залог недвижимости сбербанк">взять денег в долг
+срочно</a></p>
+]]></content>
+        </entry>
+    </feed>

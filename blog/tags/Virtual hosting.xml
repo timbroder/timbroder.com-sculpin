@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[timbroder.com]]></title>
+    <link href="https://www.timbroder.com/blog/tags/Virtual hosting.xml" rel="self"/>
+    <link href="https://www.timbroder.com/"/>
+    <updated>2018-09-09T12:21:33+00:00</updated>
+    <id>https://www.timbroder.com/</id>
+            <author>
+            <name><![CDATA[Tim Broder]]></name>            <email><![CDATA[timothy.broder@gmail.com]]></email>        </author>
+        <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[Why VPS?]]></title>
+            <link href="https://www.timbroder.com/2010/08/why-vps.html"/>
+            <updated>2010-08-19T15:16:43+00:00</updated>
+            <id>https://www.timbroder.com/2010/08/why-vps.html</id>
+            <content type="html"><![CDATA[<p>Lately the four main web hosting options are shared, VPS, dedicated, or a
+cloud based solution.  I'll follow up on this article at a later date with my
+experience with Amazon's cloud solution.  We are rolling out a magento install
+into the cloud in a few weeks and I'll be commenting on how that goes.  To
+start off, what is <a href="http://www.inmotionhosting.com/vps_hosting.html">VPS web
+hosting</a>? A Virtual Private
+Server (VPS) is a hosting environment that combines the benefits of both
+shared hosting and dedicated hosting. It does this by creating a virtual
+server that runs inside a hardware server via a specially designed partition.
+So why would you need one over shared hosting?</p>
+
+<ul>
+<li>Speed: Much faster then shared hosting.  There are fewer people sharing resources on the server and you have guaranteed resources.  If another site is hogging 100% of the cpu on its VPS, this will not effect your sites performance.  A VPS can handle might higher traffic loads then shared hosting.</li>
+<li>Security: Your files are isolated from other VPS instances</li>
+<li>Full root access to your instance</li>
+<li>Reboot: Reboot apache or your whole server instance without effecting the other servers</li>
+<li>Cost: Much cheaper then a dedicated instance with almost the same control/resources</li>
+<li>More space for files</li>
+<li>Custom Instances:  More control over what you get, and is not dependent on the other instances on the same physical server.  With shared hosting the provider usually picks the OS, with VPS there are usually dozens of options.</li>
+<li>Private email, IP, and domain: Shared hosts will have one email server for all the hosts</li>
+<li>Custom Security policies: From on server virus scanning to a customizable firewall</li>
+<li><p>Reseller: if you have extra resources available you can usually resell these
+The top VPS Hosting providers according to <a href="http://webhostinggeeks.com/vpshosting.html">Web Hosting
+Geeks</a> are:</p></li>
+<li><p><a href="http://www.inmotionhosting.com/vps_hosting.html">Inmotion</a></p></li>
+<li><a href="http://www.ultrahosting.com/">Ultrahosting</a></li>
+<li><a href="http://www.networksolutions.com/vps/index.jsp">Network Solutions</a></li>
+<li><a href="http://www.ace-host.net/index.html">Ace Host</a></li>
+<li><a href="http://www.hostican.com/">HostIcan</a></li>
+<li><a href="http://www.lpdedicated.com/index.php">Lunar Pages</a></li>
+<li><a href="http://order.1and1.com/xml/order/VirtualServer">1&amp;1</a></li>
+<li><a href="http://www.xlhost.com/">xlhost</a></li>
+</ul>
+]]></content>
+        </entry>
+    </feed>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[timbroder.com]]></title>
+    <link href="https://www.timbroder.com/blog/tags/YUI.xml" rel="self"/>
+    <link href="https://www.timbroder.com/"/>
+    <updated>2018-09-09T12:21:33+00:00</updated>
+    <id>https://www.timbroder.com/</id>
+            <author>
+            <name><![CDATA[Tim Broder]]></name>            <email><![CDATA[timothy.broder@gmail.com]]></email>        </author>
+        <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[Javascript pacman clone]]></title>
+            <link href="https://www.timbroder.com/2008/09/javascript-pacman-clone.html"/>
+            <updated>2008-09-02T15:40:00+00:00</updated>
+            <id>https://www.timbroder.com/2008/09/javascript-pacman-clone.html</id>
+            <content type="html"><![CDATA[<p>A <a href="http://www.digitalinsane.com/archives/2008/08/30/pacman/">great</a> example of
+javascript to create a pacman clone. (Uses
+<a href="http://developer.yahoo.com/yui/">YUI</a>)</p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[HOWTO: Use a Yahoo Pipe to filter feeds]]></title>
+            <link href="https://www.timbroder.com/2007/10/howto-use-yahoo-pipe-to-filter-feeds.html"/>
+            <updated>2007-10-03T22:59:00+00:00</updated>
+            <id>https://www.timbroder.com/2007/10/howto-use-yahoo-pipe-to-filter-feeds.html</id>
+            <content type="html"><![CDATA[<p>One of my friends at work asked me today how I sift through volumes of news to
+find articles and information on Google and specifically on Google Code for my
+articles. The answer is simple, I don't. Granted, I DO read a LOT, but there
+just aren't enough hours in the day to read everything I want to. So, I have a
+<a href="http://pipes.yahoo.com/pipes/">Yahoo Pipe</a> sift through the feeds for me.
+Pipes is "a powerful composition tool to aggregate, manipulate, and mashup
+content from around the web." Its fairly easy to use and doesn't require any
+code or coding experience, although understanding the basic layout of an RSS
+or Atom feed is a definite plus. The method I'm going to describe could work
+for any blogger or anyone who wants to filter a single or large group of feeds
+by keyword. I'm not going to go into the details of Yahoo Pipes, there are
+plenty of tutorials and examples for that. I'm just going to describe how I
+built the small pipe I use to filter for Google news.</p>
+
+<p>The first step is to log into or create a Yahoo account and go to
+<a href="http://pipes.yahoo.com/pipes/">http://pipes.yahoo.com/pipes/</a> and click on Create Pipe. The first node we're
+going to use is under sources and is called "Fetch Feed". Add as many of these
+as you want to pull in all the feeds you will need.</p>
+
+<p><img src="http://lh6.google.com/timothy.broder/RwQeq2uGXrI/AAAAAAAAMTE/_APNQgTsUMQ/s400/pipe1.jpg?imgdl=1" alt="" /></p>
+
+<p>Then use unions (located under Operators) to join these Fetches together. If
+you have more then 5 feeds, you will need multiple unions.</p>
+
+<p><img src="http://lh6.google.com/timothy.broder/RwQeq2uGXsI/AAAAAAAAMTM/uKp3MSfdtUg/s400/pipe2.jpg?imgdl=1" alt="" /></p>
+
+<p>Finally, add a filter, also located under Operators. Here, "Permit" items that
+match "any" of the following. Then, add rules where item.description >
+Contains and then the word or phrase you want to search for. This filter will
+allow any posts that have the words through, and block everything else. Send
+the output of the Filter to the Pipe Output and you are done.</p>
+
+<p><img src="http://lh6.google.com/timothy.broder/RwQeq2uGXtI/AAAAAAAAMTU/zrI8IloMhiw/s400/pipe3.jpg?imgdl=1" alt="" /></p>
+
+<p>You can then subscribe to the output of this pipe with the reader of your
+choice. When I subscribe to my pipe's [feed](http://pipes.yahoo.com/pipes/pipe
+.run?_id=vF35LapU3BG9UzFodbq02Q&amp;_render=rss) in Google Reader, I only see
+posts that contain the word Google or google. I also could have done that as
+one filter with a regular expression, or just with "oogle".</p>
+
+<p>Here is a full view of the
+<a href="http://pipes.yahoo.com/pipes/pipe.info?_id=vF35LapU3BG9UzFodbq02Q">pipe</a></p>
+
+<p><img src="http://lh6.google.com/timothy.broder/RwQeq2uGXuI/AAAAAAAAMTc/RAnjUutsd5A/s400/pipe4.jpg?imgdl=1" alt="" /></p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[HOWTO: YUI Tabview]]></title>
+            <link href="https://www.timbroder.com/2007/08/howto-yui-tabview.html"/>
+            <updated>2007-08-31T23:25:00+00:00</updated>
+            <id>https://www.timbroder.com/2007/08/howto-yui-tabview.html</id>
+            <content type="html"><![CDATA[<p>A few days ago I added the Digg counts to the bottom of the
+<a href="http://gpowered.net/g/postlist">Posts</a> page on gPowered.net. Although, the
+more posts that I add, the further down on the page this section will get, so
+I decided to play around with YUI's <a href="http://developer.yahoo.com/yui/tabview/">tabview
+control</a> and put the post list in one
+tab, and the diggs in another. It turned out to be really easy:</p>
+
+<p>First we need a few dependencies</p>
+
+<pre><code data-language="HTML">    &lt;!-- Dependencies --&gt;  
+    &lt;!-- core CSS --&gt;  
+    &lt;link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.3.0/build/tabview/assets/tabview.css"&gt;   
+
+    &lt;!-- optional skin for border tabs --&gt;  
+    &lt;link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.3.0/build/tabview/assets/border_tabs.css"&gt;   
+
+    &lt;script type="text/javascript" src="http://yui.yahooapis.com/2.3.0/build/yahoo-dom-event/yahoo-dom-event.js"&gt;&lt;/script&gt;  
+    &lt;script type="text/javascript" src="http://yui.yahooapis.com/2.3.0/build/element/element-beta-min.js"&gt;&lt;/script&gt;  
+
+    &lt;!-- Source file --&gt;  
+    &lt;script type="text/javascript" src="http://yui.yahooapis.com/2.3.0/build/tabview/tabview-min.js"&gt;&lt;/script&gt;  
+</code></pre>
+
+<p>And then we just need to organize some DIVs</p>
+
+<p><code>HTML
+    &lt;div id="demo" class="yui-navset"&gt;   
+     &lt;ul class="yui-nav"&gt;   
+      &lt;li class="selected"&gt;&lt;a href="#posts"&gt;&lt;em&gt;Posts&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;  
+      &lt;li&gt;&lt;a href="#diggs"&gt;&lt;em&gt;Diggs&lt;/em&gt;&lt;/a&gt;&lt;/li&gt; 
+      &lt;li&gt;&lt;a href="#HOWTOs"&gt;&lt;em&gt;HOWTO's&lt;/em&gt;&lt;/a&gt;&lt;/li&gt; 
+     &lt;/ul&gt;               
+     &lt;div class="yui-content"&gt;   
+      &lt;div id="posts" style="margin: 10px"&gt;
+       &lt;h3&gt;Posts&lt;/h3&gt;
+       content
+      &lt;/div&gt;
+      &lt;div id="diggs" style="margin: 10px"&gt; 
+       &lt;h3&gt;Diggs&lt;/h3&gt;
+       content
+      &lt;/div&gt;
+     &lt;/div&gt;
+    &lt;/div&gt;</code>HTML</p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[HOWTO: Pulling Google Bookmarks with Python]]></title>
+            <link href="https://www.timbroder.com/2007/08/howto-pulling-google-bookmarks-with.html"/>
+            <updated>2007-08-11T21:22:00+00:00</updated>
+            <id>https://www.timbroder.com/2007/08/howto-pulling-google-bookmarks-with.html</id>
+            <content type="html"><![CDATA[<p>I love using <a href="http://www.google.com/bookmarks/">Google Bookmarks</a> (usually
+with the <a href="http://toolbar.google.com">Google Toolbar</a>) because it lets me get
+to my bookmarks at home on my laptop or desktop, at work, or anywhere. It's
+great. Now I'm using those bookmarks to power the
+<a href="http://gpowered.net/g/links/">links</a> section of
+<a href="http://gpowered.net/g">gPowered.net</a><br />
+First we're going to need the
+<a href="http://code.google.com/p/httplib2/downloads/list">httplib2</a> library so we can
+authenticate against Google and grab the bookmark feed and then the
+<a href="http://effbot.org/zone/element-index.htm">ElementTree</a> to help process the
+rss feed.</p>
+
+<pre><code>import httplib2
+from elementtree import ElementTree
+</code></pre>
+
+<p>Then we'll setup the link to pull the rss from, authenticate against the
+request, and pull back the feed</p>
+
+<pre><code>login = "timothy.broder@gmail.com"  
+password = "*****"
+url = 'https://www.google.com/bookmarks/?output=rss&amp;num;=1000'  
+
+h = httplib2.Http()  
+h.add_credentials(login, password)  
+
+resp, content = h.request(url, "POST", body="nt", headers={'content-type':'text/plain'} )
+</code></pre>
+
+<p>I figured for this a hashmap (or dictionary) would work well using the tags on
+the bookmarks as keys, pointing to lists of bookmarks. Then when we display
+them, just iterate through the keys. I also kept a list of the keys to make
+sorting faster later on. So we define our objects and then loop through the
+rss object pulling out the tags for keys, the names of the links, and the
+urls. I define a small Bookmark class which holds a name and url which will go
+into the hashmap to make storing the bookmark's easier. When I try to add a
+bookmark to the dict's list I try to append it, if the key(tag) doesn't exist
+I know I have to start a new list.</p>
+
+<pre><code>class Bookmark:
+ def __init__(self, name, link):
+  self.name = name
+  self.link = link
+
+d = dict()
+sort_keys = []
+for item in tree.findall('item'):
+ key = item.findtext('{http://www.google.com/searchhistory}bkmk_label')
+ if (key != None) and (key != 'gpowered') and (key != 'BP') and (key != 'Quick Searches') and (key != 'Me'):
+  title = item.findtext('title')
+  link = item.findtext('link')
+  try:
+   d[key].append(Bookmark(title.encode('utf-8'), link))
+  except KeyError:
+   d[key] = [Bookmark(title.encode('utf-8'), link)]
+   sort_keys.append(key)
+</code></pre>
+
+<p>Then we'll sort the key list and the list of each key. To do this we need a
+small function that defines how to sort a bookmark</p>
+
+<pre><code>def bookmark_compare(a, b):
+ return cmp(a.name, b.name)
+
+sort_keys.sort() 
+for key in sort_keys:
+ d[key].sort(bookmark_compare)
+</code></pre>
+
+<p>Check out the static HTML version <a href="http://gpowered.net/g/links/simple">Here</a>.
+I also made a <a href="http://gpowered.net/g/links/">fancier version</a> using
+<a href="http://developer.yahoo.com/yui/">YUI</a>'s
+<a href="http://developer.yahoo.com/yui/treeview/">TreeView</a></p>
+]]></content>
+        </entry>
+    </feed>

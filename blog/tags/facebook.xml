@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[timbroder.com]]></title>
+    <link href="https://www.timbroder.com/blog/tags/facebook.xml" rel="self"/>
+    <link href="https://www.timbroder.com/"/>
+    <updated>2018-09-09T12:21:33+00:00</updated>
+    <id>https://www.timbroder.com/</id>
+            <author>
+            <name><![CDATA[Tim Broder]]></name>            <email><![CDATA[timothy.broder@gmail.com]]></email>        </author>
+        <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[Digg and Facebook Heading to the Future of Web Apps expo]]></title>
+            <link href="https://www.timbroder.com/2008/09/digg-and-facebook-heading-to-future-of.html"/>
+            <updated>2008-09-30T14:17:00+00:00</updated>
+            <id>https://www.timbroder.com/2008/09/digg-and-facebook-heading-to-future-of.html</id>
+            <content type="html"><![CDATA[<p><a href="http://developers.facebook.com/news.php?blog=1&amp;story=157">This </a>sounds like a
+lot of fun, some good presentations (interesting topics and good presenters),
+a live <a href="http://revision3.com/diggnation/">Diggnation</a>, and I LOVE London.
+Wish I could go</p>
+
+<p>Here's the lineup:</p>
+
+<ul>
+<li>Mark Zuckerberg - Fireside Chat  </li>
+<li>Kevin Rose - The future of social news  </li>
+<li>Dave Morin - A more social Web with <a href="http://developers.facebook.com/connect.php">Facebook
+Connect</a>  </li>
+<li>Joe Stump - Languages don't scale  </li>
+</ul>
+
+<p>To wrap up the conference there will be a live Diggnation on the main stage
+(Oct 10). Directly after that will be the wrap up party which is rumored to
+have an open bar, but you didn't hear that from me</p>
+]]></content>
+        </entry>
+    </feed>

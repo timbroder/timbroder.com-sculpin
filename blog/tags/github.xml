@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[timbroder.com]]></title>
+    <link href="https://www.timbroder.com/blog/tags/github.xml" rel="self"/>
+    <link href="https://www.timbroder.com/"/>
+    <updated>2018-09-09T12:21:33+00:00</updated>
+    <id>https://www.timbroder.com/</id>
+            <author>
+            <name><![CDATA[Tim Broder]]></name>            <email><![CDATA[timothy.broder@gmail.com]]></email>        </author>
+        <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[Github File and Link Tricks]]></title>
+            <link href="https://www.timbroder.com/2016/06/Github-File-and-Link-Tricks.html"/>
+            <updated>2016-06-09T10:25:00+00:00</updated>
+            <id>https://www.timbroder.com/2016/06/Github-File-and-Link-Tricks.html</id>
+            <content type="html"><![CDATA[<p>2 tricks I learned today that I'd like to share: reliably linking to a specific line and searching for files using fuzzy matching.</p>
+
+<h1 id="reliably-link-to-a-specific-line">Reliably link to a specific line</h1>
+
+<p>Say you are on the master branch, and you want to reference a line in a file. This could either be for a conversation you are having at that moment, answering a question in a PR, or adding information to a ticket. At that point in time, your link will work great. But, what about when that file gets changed tomorrow? More lines get added higher up, above the link, and the line that the link it pointing to, now points to something else!</p>
+
+<p>You can easily have github switch to the latest commit for the file you are viewing. Just press 'y'. Then, when you link to a line, you are linking to THAT version of the file. You reference will always be intact.</p>
+
+<h1 id="search-for-files-using-fuzzy-matching">Search for files using fuzzy matching</h1>
+
+<p>When you are browsing through files, there is a button in the upper right that says "Find file". I'm sure it's been there forever, but I just noticed it.</p>
+
+<p>This brings you to a full file tree that you can search using fuzzy matching. Just like if you were in your IDE quick-opening a file!</p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[How to Get Notified if someone stars, forks, or follows your Github]]></title>
+            <link href="https://www.timbroder.com/2016/03/How-to-Get-Notified-if-someone-stars,-forks,-or-follows-your-Github.html"/>
+            <updated>2016-03-25T15:41:00+00:00</updated>
+            <id>https://www.timbroder.com/2016/03/How-to-Get-Notified-if-someone-stars,-forks,-or-follows-your-Github.html</id>
+            <content type="html"><![CDATA[<p>I've been using <a href="https://gitnotifier.io/" title="GitNotifier">GitNotifier</a> for a few weeks now. I get a weekly report emailed to me of who has starred or forked any of my repositories, as well as follow/unfollows. It's a nice little touch to put on top of Github's already great service</p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Format JSON and save to gist with Alfred]]></title>
+            <link href="https://www.timbroder.com/2014/07/format-json-and-save-to-gist.html"/>
+            <updated>2014-07-08T21:02:32+00:00</updated>
+            <id>https://www.timbroder.com/2014/07/format-json-and-save-to-gist.html</id>
+            <content type="html"><![CDATA[<p>At work, we have an Angular app that deals with a lot of custom JSON. With a
+distributed dev team, we pass a LOT of JSON around.  Copying from Chrome’s net
+tab, formatting, adding to a Github <a href="https://gist.github.com/">gist</a> for easy
+transport is a PITA when you are doing it 20 times a day. I have 2 Alfred
+workflows to help with this.</p>
+
+<p>My Use:</p>
+
+<ol>
+<li>Copy unformatted JSON to clipboard</li>
+<li>Alfred “JsonLint”. Formatted JSON is now in my clipboard</li>
+<li>Alfred “gist”. URL to raw gist is now in my clipboard</li>
+<li>One of these days I’ll chain these together</li>
+</ol>
+
+<p>To get this working:</p>
+
+<ol>
+<li>You’ll need the Alfred <a href="http://www.alfredapp.com/powerpack/">PowerPack</a></li>
+<li>Install my JSON lint <a href="https://github.com/broderboy/AlfredJsonLint/blob/master/Json%20Lint.alfredworkflow?raw=true">workflow</a>. (It needs work, but gets the job done)</li>
+<li>Install <a href="https://github.com/phallstrom/AlfredGist">AlfredGist</a></li>
+</ol>
+
+<p>* Be sure to follow the setup <a href="https://github.com/phallstrom/AlfredGist">instructions</a>.
+  * I prefer to have the ‘raw’ url returned from AlfredGist. (in the clipboard and opened)<br />
+To enable this, open functions.sh<br />
+Look for this line: <code>gist_url=$(get_json_key “html_url" "$json")</code>
+Modify to: <code>gist_url=$(get_json_key “raw_url” "$json")</code></p>
+
+<ul>
+<li>In “gistconfig” set the gists to be private</li>
+</ul>
+
+<p>You should now be able to chain together as I listed above</p>
+
+<p>Let me know if you have any questions!</p>
+]]></content>
+        </entry>
+    </feed>

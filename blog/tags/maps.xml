@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[timbroder.com]]></title>
+    <link href="https://www.timbroder.com/blog/tags/maps.xml" rel="self"/>
+    <link href="https://www.timbroder.com/"/>
+    <updated>2018-09-09T12:21:33+00:00</updated>
+    <id>https://www.timbroder.com/</id>
+            <author>
+            <name><![CDATA[Tim Broder]]></name>            <email><![CDATA[timothy.broder@gmail.com]]></email>        </author>
+        <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[Google Maps F-Bombs street names!]]></title>
+            <link href="https://www.timbroder.com/2009/05/google-maps-shows-interesting-street.html"/>
+            <updated>2009-05-01T00:16:00+00:00</updated>
+            <id>https://www.timbroder.com/2009/05/google-maps-shows-interesting-street.html</id>
+            <content type="html"><![CDATA[<p>Good stuff. <a href="http://maps.google.co.uk/maps?&amp;ll=48.067541,12.862533&amp;spn=0.006345,0.010267&amp;t=h&amp;z=17">Link</a></p>
+
+<p><a href="http://1.bp.blogspot.com/_Ng3QbVQfLZ8/Sfo_Jqi6JyI/AAAAAAAAbHo/QilHprrfP9c/s1600-h/Untitled.jpg">![](http://1.bp.blogspot.com/_Ng3QbVQfLZ8/Sfo_Jqi6JyI/AAAAAAAAbHo/QilHprrfP9c
+/s400/Untitled.jpg)</a></p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Woohoo! Google Maps adds NYC transit directions]]></title>
+            <link href="https://www.timbroder.com/2008/09/wooho-google-maps-adds-nyc-transit.html"/>
+            <updated>2008-09-24T17:55:00+00:00</updated>
+            <id>https://www.timbroder.com/2008/09/wooho-google-maps-adds-nyc-transit.html</id>
+            <content type="html"><![CDATA[<p>Finally! Took em long enough. It even has the New Jersey Path.</p>
+
+<p>I've been using <a href="http://www.gypsymaps.com/">GypsyMaps</a> up until now if I
+needed directions, we'll see how they stack up against each other</p>
+
+<p><a href="http://maps.google.com/nyc">http://maps.google.com/nyc</a></p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Google I/O session videos posted with slides]]></title>
+            <link href="https://www.timbroder.com/2008/06/google-io-session-videos-posted-with.html"/>
+            <updated>2008-06-16T19:11:00+00:00</updated>
+            <id>https://www.timbroder.com/2008/06/google-io-session-videos-posted-with.html</id>
+            <content type="html"><![CDATA[<p>As I said <a href="http://blog.gpowered.net/2008/04/select-google-io-sessions-to-be-posted.html">earlier</a>, Quite a few presentations from Google I/O have
+been <a href="http://sites.google.com/site/io/">posted</a> for your viewing pleasure.
+I'll be glued to these this weekend while I'm on call.</p>
+
+<p>Topics include<br />
+Ajax<br />
+KML<br />
+Sketchup<br />
+Android<br />
+OpenSocial<br />
+Appengine<br />
+Data APIs<br />
+Theory Talks<br />
+Youtube<br />
+Gears<br />
+Mashups<br />
+Maps<br />
+and more!</p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[I/O: Web Browser, Meet Google Earth]]></title>
+            <link href="https://www.timbroder.com/2008/05/io-web-browser-meet-google-earth.html"/>
+            <updated>2008-05-28T22:14:00+00:00</updated>
+            <id>https://www.timbroder.com/2008/05/io-web-browser-meet-google-earth.html</id>
+            <content type="html"><![CDATA[<p>Enabling you to switch a Google Maps mashup or page to 3D Google earth with
+just a few lines of javascript</p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Google StreetView Going Global?]]></title>
+            <link href="https://www.timbroder.com/2007/10/google-streetview-going-global.html"/>
+            <updated>2007-10-01T15:41:00+00:00</updated>
+            <id>https://www.timbroder.com/2007/10/google-streetview-going-global.html</id>
+            <content type="html"><![CDATA[<p>Or at least to London? A VW bug with a camera attached to the top has been
+spotted in London. Could be
+<a href="http://maps.google.com/help/maps/streetview/index.html">Google</a>? Maybe
+expanding to areas around their <a href="http://googlified.com/2007is-there-a-google-office-near-you/">offices</a> in other countries? Nothing has been confirmed yet.</p>
+
+<p>I think this could pick up if Google started going to major Global Cities.
+Think about it, you could go site seeing without ever leaving your desk. The
+top cities on my list would be London, Tokyo, Paris, Venice, Dublin, and Hong
+Kong. I am hopefully going to two of these in the next 6 months (Tokyo and
+London) around the holidays. Although, Google might have some <a href="http://www.theregister.co.uk/2007/06/05/google_street_view_legality_in_europe/">legal hoops</a>
+to jump through if they decide to do this.</p>
+
+<p><a href="http://4.bp.blogspot.com/_Ng3QbVQfLZ8/RwEVuTA7FPI/AAAAAAAAMSc/7eShW1mlfzk/s1600-h/googUK.jpg"><img src="http://4.bp.blogspot.com/_Ng3QbVQfLZ8/RwEVuTA7FPI/AAAAAAAAMSc/7eShW1mlfzk/s400/googUK.jpg" alt="" /></a></p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Google Mashup Editor Blog: New Tutorial: Using Picasa Web Album Feeds in GME]]></title>
+            <link href="https://www.timbroder.com/2007/08/google-mashup-editor-blog-new-tutorial.html"/>
+            <updated>2007-08-22T03:34:00+00:00</updated>
+            <id>https://www.timbroder.com/2007/08/google-mashup-editor-blog-new-tutorial.html</id>
+            <content type="html"><![CDATA[<p>The guys over on the Mashup team have posted a <a href="http://code.google.com/support/bin/answer.py?answer=74728&amp;topic=12044">new tutorial</a> on how to use the
+Google Mashup Editor to mash Picasa Web Albums with a Google Map. The example
+is <a href="http://levsplaces.googlemashups.com/">here</a>. I started working on my own
+but I haven't really played with the GME before. Hopefully I'll have that
+tomorrow.</p>
+]]></content>
+        </entry>
+    </feed>

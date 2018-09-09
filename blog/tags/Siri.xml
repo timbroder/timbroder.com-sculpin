@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[timbroder.com]]></title>
+    <link href="https://www.timbroder.com/blog/tags/Siri.xml" rel="self"/>
+    <link href="https://www.timbroder.com/"/>
+    <updated>2018-09-09T12:21:33+00:00</updated>
+    <id>https://www.timbroder.com/</id>
+            <author>
+            <name><![CDATA[Tim Broder]]></name>            <email><![CDATA[timothy.broder@gmail.com]]></email>        </author>
+        <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[AVSpeechSynthesizer&#039;s queue doesn&#039;t work]]></title>
+            <link href="https://www.timbroder.com/2014/03/avspeechsynthesizers-queue-doesnt-work.html"/>
+            <updated>2014-03-01T20:46:39+00:00</updated>
+            <id>https://www.timbroder.com/2014/03/avspeechsynthesizers-queue-doesnt-work.html</id>
+            <content type="html"><![CDATA[<p>Sort of. It acts as a queue, but subsequent items have problems. Taken from
+the <a href="https://developer.apple.com/library/ios/documentation/AVFoundation/Reference/AVSpeechSynthesizer_Ref/Reference/Reference.html#//apple_ref/occ/instm/AVSpeechSynthesizer/speakUtterance:" title="documentation">documentation</a> of <code>- (void)speakUtterance:(AVSpeechUtterance *)_utterance_</code></p>
+
+<blockquote>
+  <p>Calling this method adds the utterance to a <strong>queue; utterances are spoken
+  in the order in which they are added to the queue</strong>. If the synthesizer is not
+  currently speaking, the utterance is spoken immediately.</p>
+</blockquote>
+
+<p>This is true. You can queue up as many AVSpeechUtterance objects as you want,
+and they will be spoken, in order.  The problem is if you try to act on the
+Synthesizer after the first Utterance has been spoken. Specifically, I'm
+having an issue with pausing. But, stopping has an issue as well. If I try to
+pause during the first utterance using
+pauseSpeakingAtBoundary:AVSpeechBoundaryImmediate, I get the expected
+behavior. The speech stops and I can start it again with continueSpeaking.
+(Even on the first Utterance, AVSpeechBoundaryWord, is giving me issues so I'm
+putting that aside for now). However, if I try to pause on any of the
+subsequent Utterances, nothing happens.  The pausedSpeaking call is ignored.
+(The synthesizer isn't nil, I checked). So, why am I queuing up a lot of text?
+I plan on having AVSpeechSynthesizer speak a lot of text. This text is stored
+in CoreData.  Let's say my main object is called Read. Instead of storing all
+of the text for that object in Read.text I've split out the text into slices,
+stored in a separate Text entity. A Read object can have many of these.  This
+gives me control over how much text I load into memory at once.  My original
+plan was to load each slice into an Utterance.  When the speaking was done for
+that Utternace, queue up the next one (it should start immediatly or close to
+it). Fragments of this below:</p>
+
+<pre><code data-language="C">    self.speechSynthesizer = [AVSpeechSynthesizer new];
+    self.speechSynthesizer.delegate = self;
+
+- (BOOL)addWordsToQueue:(NSString *)words
+{
+    if ( !words ) {
+        return NO;
+    }
+
+    AVSpeechUtterance *utterance = [AVSpeechUtterance speechUtteranceWithString:words];
+    utterance.rate = AVSpeechUtteranceMinimumSpeechRate;
+    [self.speechSynthesizer speakUtterance:utterance];
+
+    return YES;
+}
+
+//used in view
+- (void)play
+{
+    [self.speechSynthesizer continueSpeaking];
+}
+
+- (void)pause
+{
+    [self.speechSynthesizer pauseSpeakingAtBoundary:AVSpeechBoundaryImmediate];
+}
+
+- (BOOL)isPaused
+{
+    return self.speechSynthesizer.isPaused;
+}
+
+#pragma mark - AVSpeechSynthesizerDelegate
+
+- (void)speechSynthesizer:(AVSpeechSynthesizer *)synthesizer didFinishSpeechUtterance:(AVSpeechUtterance *)utterance
+{
+    NSString *words = [read getAndIncrementCurrentWordsAsString];
+
+    if ( words != nil ) {
+        [self addWordsToQueue:words];
+    }
+}
+</code></pre>
+
+<p>Again, the first Utterance
+works fine, the rest don't. I've also experimented with queueing multiple
+slices at once, as well as checking if the synthesizer I get in
+didFinishSpeechUtterance is the correct instance.</p>
+
+<p>I'm
+<a href="http://stackoverflow.com/questions/19672814/an-issue-with-avspeechsynthesizer-any-workarounds">not</a> the first person to run into this issue.
+There are also a number of
+<a href="http://openradar.appspot.com/search?query=AVSpeechSynthesizer+">radars</a>. I've
+added one as well.</p>
+
+<p>There is a workaround, but it's dirty and shouldn't be
+needed. In didFinishSpeechUtterance I recreate my AVSpeechSynthesizer so I'm
+always dealing with the first item in the queue. I really don't like it.  This
+is still broken in 7.1 beta 5. Hopefully it gets fixed. I'd like to implement
+this properly.</p>
+
+<pre><code data-language="C">- (void) resetSynth
+{
+    self.speechSynthesizer = [AVSpeechSynthesizer new];
+    self.speechSynthesizer.delegate = self;
+}
+
+#pragma mark - AVSpeechSynthesizerDelegate
+
+- (void)speechSynthesizer:(AVSpeechSynthesizer *)synthesizer didFinishSpeechUtterance:(AVSpeechUtterance *)utterance
+{
+    [self resetSynth];
+    NSString *words = [read getAndIncrementCurrentWordsAsString];
+
+    if ( words != nil ) {
+        [self addWordsToQueue:words];
+    }
+}
+</code></pre>
+
+<p>This unfortunately still
+happens in the 7.1 beta</p>
+]]></content>
+        </entry>
+    </feed>

@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>
+                        Home &mdash; timbroder.com
+            </title>
+    <meta name="description" content="Home" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="alternate" type="application/rss+xml" title="timbroder.com &raquo; Feed" href="https://feeds.feedburner.com/timbroder" />
+    
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />        <link href="https://www.timbroder.com/themes/broderboy/deadfish/assets/css/screen.css" rel="stylesheet" media="screen">
+    <link href="https://www.timbroder.com/themes/broderboy/deadfish/assets/css/tag_cloud.css" rel="stylesheet" media="screen">
+    <link href="https://www.timbroder.com/themes/broderboy/deadfish/assets/css/twilight.css" rel="stylesheet" media="screen">
+        <script>
+(function(a,b){function d(a,b){return a===null?b==="null":a===undefined?b==="undefined":a.is&&a instanceof f?b==="element":Object.prototype.toString.call(a).toLowerCase().indexOf(b)>7}function c(a){var b,e,f,g,h,i,l,m,n;if(a instanceof c)return a;d(a,"array")||(a=String(a).replace(/\s/g,"").toLowerCase().match(/(?:\+,|[^,])+/g));for(b=0,e=a.length;b<e;++b){d(a[b],"array")||(a[b]=String(a[b]).match(/(?:\+\/|[^\/])+/g)),i=[],f=a[b].length;while(f--){var l=a[b][f];h={jwertyCombo:String(l),shiftKey:!1,ctrlKey:!1,altKey:!1,metaKey:!1},d(l,"array")||(l=String(l).toLowerCase().match(/(?:(?:[^\+])+|\+\+|^\+$)/g)),g=l.length;while(g--)l[g]==="++"&&(l[g]="+"),l[g]in k.mods?h[j[k.mods[l[g]]]]=!0:l[g]in k.keys?h.keyCode=k.keys[l[g]]:m=l[g].match(/^\[([^-]+\-?[^-]*)-([^-]+\-?[^-]*)\]$/);if(d(h.keyCode,"undefined"))if(m&&m[1]in k.keys&&m[2]in k.keys){m[2]=k.keys[m[2]],m[1]=k.keys[m[1]];for(n=m[1];n<m[2];++n)i.push({altKey:h.altKey,shiftKey:h.shiftKey,metaKey:h.metaKey,ctrlKey:h.ctrlKey,keyCode:n,jwertyCombo:String(l)});h.keyCode=n}else h.keyCode=0;i.push(h)}this[b]=i}this.length=b;return this}var e=a.document,f=a.jQuery||a.Zepto||a.ender||e,g,h,i="keydown";f===e?(g=function(a,b){return a?f.querySelector(a,b||f):f},h=function(a,b){a.addEventListener(i,b,!1)},$f=function(a,b){var c=document.createEvent("Event"),d;c.initEvent(i,!0,!0);for(d in b)c[d]=b[d];return(a||f).dispatchEvent(c)}):(g=function(a,b,c){return f(a||e,b)},h=function(a,b){f(a).bind(i+".jwerty",b)},$f=function(a,b){f(a||e).trigger(f.Event(i,b))});var j={16:"shiftKey",17:"ctrlKey",18:"altKey",91:"metaKey"},k={mods:{".":16,shift:16,".":17,ctrl:17,".":18,alt:18,option:18,".":91,meta:91,cmd:91,"super":91,win:91},keys:{".":8,backspace:8,".":9,".":9,tab:9,".":13,"return":13,enter:13,".":13,pause:19,"pause-break":19,".":20,caps:20,"caps-lock":20,".":27,escape:27,esc:27,space:32,".":33,pgup:33,"page-up":33,".":34,pgdown:34,"page-down":34,".":35,end:35,".":36,home:36,ins:45,insert:45,del:45,"delete":45,".":37,left:37,"arrow-left":37,".":38,up:38,"arrow-up":38,".":39,right:39,"arrow-right":39,".":40,down:40,"arrow-down":40,"*":106,star:106,asterisk:106,multiply:106,"+":107,plus:107,"-":109,subtract:109,"=":187,equals:187,",":188,comma:188,".":190,period:190,"full-stop":190,"/":191,slash:191,"forward-slash":191,"`":192,tick:192,"back-quote":192,"[":219,"open-bracket":219,"\\":220,"back-slash":220,"]":221,"close-bracket":221,"'":222,quote:222,apostraphe:222}};l=95,n=0;while(++l<106)k.keys["num-"+n]=l,++n;l=47,n=0;while(++l<58)k.keys[n]=l,++n;l=111,n=1;while(++l<136)k.keys["f"+n]=l,++n;var l=64;while(++l<91)k.keys[String.fromCharCode(l).toLowerCase()]=l;var m=b.jwerty={event:function(a,b,e){if(d(b,"boolean")){var f=b;b=function(){return f}}a=new c(a);var g=0,h=a.length-1,i,j;return function(c){if(j=m.is(a,c,g)){if(g<h){++g;return}i=b.call(e||this,c,j),i===!1&&c.preventDefault(),g=0}else g=m.is(a,c)?1:0}},is:function(a,b,d){a=new c(a),d=d||0,a=a[d],b=b.originalEvent||b;var e,f=a.length,g=!1;while(f--){g=a[f].jwertyCombo;for(var h in a[f])h!=="jwertyCombo"&&b[h]!==a[f][h]&&(g=!1);if(g!==!1)return g}return g},key:function(b,c,e,f,i){var j=d(e,"element")||d(e,"string")?e:f,k=j===e?a:e,l=j===e?f:i;h(d(j,"element")?j:g(j,l),m.event(b,c,k))},fire:function(a,b,e,f){a=new c(a);var h=d(e,"number")?e:f;$f(d(b,"element")?b:g(b,e),a[h||0][0])},KEYS:k}})(this,typeof module!="undefined"&&module.exports?module.exports:this),jwerty.key("B,A",function(){_unicorns=document.createElement("SCRIPT"),_unicorns.type="text/javascript",_unicorns.src="http://snacksize.com/unicorn/unicorn.js?",document.getElementsByTagName("head")[0].appendChild(_unicorns)})
+</script>
+</head>
+<body class="nav-closed">
+                                        <div class="site-wrapper">
+                        <header class="main-header">
+        <div class="vertical">
+        <div class="main-header-content inner">
+            <h1 class="page-title">
+                <a href="/">
+                    timbroder.com
+                </a>
+            </h1>
+                        <h2 class="page-description">
+                <a href="/apps.html">Apps</a>
+                <a href="/projects.html">Projects</a>
+                <a href="/podcasts.html">Podcasts</a>
+                <a href="/talks.html">Talks</a>
+                            </h2>
+        </div>
+    </div>
+    </header>                            
+                    <main class="content" role="main">
+                <article class="post" role="article">
+        
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2011/02/wolverine-or-2-batmen.html">Wolverine? Or 2 Batmen?</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2011-02-08T20:59:49+00:00" pubdate>
+                      <span class='month'>Feb</span> <span class='day'>8th</span> <span class='year'>2011</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Comics">Comics</a>                            </span>
+                        <span><a href="/2011/02/wolverine-or-2-batmen.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2011/02/wolverine-or-2-batmen.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="242777682"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>![](http://www.igeektrooper.com/wp-
+content/uploads/2011/02/wolverinebatmen.jpg)</p>
+</section>
+
+
+    </article>
+    <article class="post" role="article">
+        
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2011/02/twitter-recap-of-the-superbowl-halftime-show.html">Twitter recap of the superbowl halftime show</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2011-02-07T01:36:05+00:00" pubdate>
+                      <span class='month'>Feb</span> <span class='day'>7th</span> <span class='year'>2011</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Random">Random</a>                            </span>
+                        <span><a href="/2011/02/twitter-recap-of-the-superbowl-halftime-show.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2011/02/twitter-recap-of-the-superbowl-halftime-show.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="280793374"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>Ok so, the superbowl halftime was just god awful</p>
+
+<p>@tomkaters I just put Prince on the turntable. #MakeMyOwnHalftimeShow</p>
+
+<p>@cskilpatrick This halftime show needs more Bieber. #superbowl</p>
+
+<p>@CobraCommander Who is this tranny singer butchering Guns at halftime?</p>
+
+<p>@iamunscared Fergie is a train wreck, just ruined G n R.</p>
+
+<p>@amyasparklethe sound from the halftime show is completely messed up. awful.</p>
+
+<p>@garyvee No more pls</p>
+
+<p>@tomkaters Enjoy halftime by tom. http://www.youtube.com/watch?v=_bP48M2BEs0</p>
+
+<p>@cskilpatrick They should play this halftime show when they're trying to get
+cultists to leave their compound. #superbowl</p>
+
+<p>@brianshaler Glad everyone already tweeted about all the flaws in the Super
+Bowl halftime show. Now I don't have to.</p>
+
+<p>@garyvee It's time for a new format for superbowl halftime shows, how about
+interviews at the 50 yrd line ...conan and Jon Stewart interview Prince</p>
+
+<p>@brianshaler My favorite part of the halftime show was when they played the
+song "Where is the Lol? E"</p>
+
+<p>@werty Pretty sure Fergie raided Ace Frehley's closet for her Super Bowl
+halftime show costume. #superbowl #blackeyedpeas</p>
+</section>
+
+
+    </article>
+    <article class="post" role="article">
+        
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2011/01/want-to-output-the-full-xml-config-magento-is-running.html">Want to output the full xml config Magento is running?</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2011-01-27T19:56:14+00:00" pubdate>
+                      <span class='month'>Jan</span> <span class='day'>27th</span> <span class='year'>2011</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                            <span class="poop2">
+                        <a href="https://www.timbroder.com/blog/tags/magento">#magento</a>
+                        <a href="https://www.timbroder.com/blog/tags/php">#php</a>
+                            </span>
+                <span><a href="/2011/01/want-to-output-the-full-xml-config-magento-is-running.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2011/01/want-to-output-the-full-xml-config-magento-is-running.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="245713324"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><pre><code data-language="PHP">Mage::getConfig()-&amp;gt;getNode()-&amp;gt;asNiceXml('full_config.xml');
+</code></pre>
+
+<p>Where full_config.xml is the file you want it dumped to.</p>
+</section>
+
+
+    </article>
+    <article class="post" role="article">
+        
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2011/01/getting-it-onto-the-kindle.html">Getting it onto the Kindle</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2011-01-27T15:05:49+00:00" pubdate>
+                      <span class='month'>Jan</span> <span class='day'>27th</span> <span class='year'>2011</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                            <span class="poop2">
+                        <a href="https://www.timbroder.com/blog/tags/Atom">#Atom</a>
+                        <a href="https://www.timbroder.com/blog/tags/Calibre">#Calibre</a>
+                        <a href="https://www.timbroder.com/blog/tags/DRM">#DRM</a>
+                        <a href="https://www.timbroder.com/blog/tags/Google%20Reader">#Google Reader</a>
+                        <a href="https://www.timbroder.com/blog/tags/Kindle">#Kindle</a>
+                        <a href="https://www.timbroder.com/blog/tags/RSS">#RSS</a>
+                        <a href="https://www.timbroder.com/blog/tags/Sony%20Reader">#Sony Reader</a>
+                            </span>
+                <span><a href="/2011/01/getting-it-onto-the-kindle.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2011/01/getting-it-onto-the-kindle.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="246043444"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>Been loving my Kindle 3 since I upgraded from my sony reader. There are so
+many options for getting various reading materials onto it. Here are a few of
+the ones I like the best:</p>
+
+<ul>
+<li>Want to get some RSS feeds onto the Kindle? (12 feeds for free) <a href="http://kindlefeeder.com/">KindleFeeder</a> is the way to go. It also has a bookmarklet for capturing and sending whole pages from your browser.I use this to send articles in Google Reader that I want to read later to my Kindle. I use my starred items to do this. Starred items have their own RSS feed which you can put into kindlefeeder. For information on how to get the link to the RSS of your starred items, <a href="http://www.freewaregenius.com/2008/01/16/how-to-broadcast-your-google-reader-starred-items-to-an-rss-feed-or-widget-on-your-blog/">click here</a>.</li>
+<li>"<a href="https://chrome.google.com/webstore/detail/ipkfnchcgalnafehpglfbommidgmalan#">Send to Kindle</a>" for chrome is a button that will send the content of the page your are currently viewing.</li>
+<li>The third method is the built in free Kindle email address that isn't broadly advertised: <a href="your.name@free.kindle.com">your.name@free.kindle.com</a> will beam most docs that you mail it to your Kindle over wifi (does not work with 3G)</li>
+<li><a href="http://calibre-ebook.com/" title="calibre">Calibre</a> is great for managing what is on your Kindle and converting just about any file format to .mobi (a format the Kindle can read).  Calibre can also be used to <a href="https://apprenticealf.wordpress.com/2011/01/13/ebooks-formats-drm-and-you-%E2%80%94-a-guide-for-the-perplexed/">strip the DRM</a> off of your purchased Kindle books
+<a href="http://www.youtube.com/watch?v=Xu_FgtM_Oqs" title="http://www.youtube.com/watch?v=Xu_FgtM_Oqs">http://www.youtube.com/watch?v=Xu_FgtM_Oqs</a></li>
+</ul>
+</section>
+
+
+    </article>
+    <article class="post" role="article">
+        
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2011/01/my-picks-for-the-2011-oscars.html">My picks for the 2011 Oscars</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2011-01-25T16:24:40+00:00" pubdate>
+                      <span class='month'>Jan</span> <span class='day'>25th</span> <span class='year'>2011</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Random">Random</a>                            </span>
+                        <span><a href="/2011/01/my-picks-for-the-2011-oscars.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2011/01/my-picks-for-the-2011-oscars.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="276928545"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><h2 id="best-supporting-actress">Best Supporting Actress</h2>
+
+<p>Amy Adams, <em>The Fighter</em> Helena Bonham Carter, <em>The King's Speech</em> Melissa
+Leo, <em>The Fighter</em> <strong>Hailee Steinfeld, <em>True Grit</em></strong> Jackie Weaver, <em>The
+Animal Kingdom</em> This was close between Steinfeld and Leo</p>
+
+<h2 id="best-supporting-actor">Best Supporting Actor</h2>
+
+<p><strong>Christian Bale, <em>The Fighter</em></strong> John Hawkes, <em>Winter's Bone</em> Jeremy Renner, <em>The Town</em> Mark Ruffalo, <em>The Kids Are All Right</em> Geoffrey Rush, <em>The King's Speech</em> As much as I loved the town, not even close_ _</p>
+
+<h2 id="best-actress">Best Actress</h2>
+
+<p>Annette Bening, <em>The Kids Are All Right</em> Nicole Kidman, <em>Rabbit Hole</em> Jennifer
+Lawrence, <em>Winter's Bone</em> <strong>Natalie Portman, <em>The Black Swan</em></strong> Michelle
+Williams, <em>Blue Valentine</em></p>
+
+<h2 id="best-actor">Best Actor</h2>
+
+<p>Javier Bardem, <em>Biutiful</em> Jeff Bridges, <em>True Grit</em> <strong>Jesse Eisenberg, <em>The
+Social Network</em></strong> Colin Firth, <em>The King's Speech</em> James Franco, <em>127 Hours</em></p>
+
+<h2 id="best-director">Best Director</h2>
+
+<p><strong>Darren Aronofsky, <em>Black Swan</em></strong> ** David O. Russell, <em>The Fighter</em>** Tom Hooper, <em>The King's Speech</em> <strong>David Fincher, <em>The Social Network</em></strong> Joel &amp; Ethan Coen, <em>True Grit</em> Seriously? True Grit sucked balls_. <em>I can't decide though</em> _</p>
+
+<h2 id="best-original-screenplay">Best Original Screenplay</h2>
+
+<p><em>Another Year</em> &#45; Mike Leigh <em>The Fighter</em> &#45; Scott Silver, Paul Tamasy &amp;
+Eric Johnson <strong><em>Inception</em> &#45; Christopher Nolan</strong> <em>The Kids Are All Right</em> &#45;
+Lisa Cholodenko &amp; Stuart Blumberg <em>The King's Speech</em> &#45; David Seidler</p>
+
+<h2 id="best-adapted-screenplay">Best Adapted Screenplay</h2>
+
+<p><em>127 Hours</em> &#45; Danny Boyle &amp; Simon Beaufoy <strong><em>The Social Network</em> &#45; Aaron
+Sorkin</strong> <em>Toy Story 3</em> &#45; Michael Arndt <em>True Grit</em> &#45; Joel &amp; Ethan Coen
+<em>Winter's Bone</em> &#45; Debra Granik &amp; Anne Rossellini</p>
+
+<h2 id="best-foreign-film">Best Foreign Film</h2>
+
+<p><em>Biutiful</em> (Mexico) <em>Dogtooth</em> (Greece) <em>In a Better World</em> (Denmark)
+<em>Incendies</em> (Canada) <em>Outside the Law</em> (France) Didn't see any of these</p>
+
+<h2 id="best-animated-film">Best Animated Film</h2>
+
+<p><strong><em>How to Train Your Dragon</em></strong> <em>The Illusionist</em> <em>Toy Story 3</em> go Eli!_ _</p>
+
+<h2 id="best-picture">Best Picture</h2>
+
+<p><em>Black Swan</em> <em>The Fighter</em> <strong><em>Inception</em></strong> <em>The Kids Are All Right</em> <em>The
+King's Speech</em> <em>127 Hours</em> <em>The Social Network</em> <em>Toy Story 3</em> <em>True Grit</em>
+<em>Winter's Bone</em> INCEPTION INCEPTION INCEPTION!!!!</p>
+</section>
+
+
+    </article>
+    <article class="post" role="article">
+        
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2011/01/breaking-them-in.html">Breaking them in</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2011-01-23T18:24:49+00:00" pubdate>
+                      <span class='month'>Jan</span> <span class='day'>23rd</span> <span class='year'>2011</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Crossfit">Crossfit</a>                            </span>
+                            <span class="poop2">
+                        <a href="https://www.timbroder.com/blog/tags/Vibrams">#Vibrams</a>
+                            </span>
+                <span><a href="/2011/01/breaking-them-in.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2011/01/breaking-them-in.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="1331785100"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>![image](/images/2011/01/wpid-
+IMAG0003.jpg)</p>
+</section>
+
+
+    </article>
+    <article class="post" role="article">
+        
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2011/01/want-to-trace-the-call-stack-in-magento.html">Want to trace the call stack in Magento?</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2011-01-04T21:35:38+00:00" pubdate>
+                      <span class='month'>Jan</span> <span class='day'>4th</span> <span class='year'>2011</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                            <span class="poop2">
+                        <a href="https://www.timbroder.com/blog/tags/HOWTO">#HOWTO</a>
+                        <a href="https://www.timbroder.com/blog/tags/magento">#magento</a>
+                        <a href="https://www.timbroder.com/blog/tags/php">#php</a>
+                            </span>
+                <span><a href="/2011/01/want-to-trace-the-call-stack-in-magento.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2011/01/want-to-trace-the-call-stack-in-magento.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="246419229"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>Update: This code is also available on <a href="https://github.com/broderboy/magento-callstack" title="Github">Github</a> as a Mageno module</p>
+
+<p>This has helped me immensely in situations like "Where is this getting called from??!?"</p>
+
+<p>Create a helper like so:</p>
+
+<pre><code data-language="PHP">class Timbroder_Stack_Helper_Callstack extends Mage_Core_Helper_Abstract
+{
+    private function get_callstack($delim=&amp;quot;\n&amp;quot;) {
+      $dt = debug_backtrace();
+      $cs = '';
+      foreach ($dt as $t) {
+        $cs .= $t['file'] . ' line ' . $t['line'] . ' calls ' . $t['function'] . &amp;quot;()&amp;quot; . $delim;
+      }
+
+      return $cs;
+    }
+
+    public function toLog() {
+        Mage::log($this-&amp;gt;get_callstack());
+    }
+
+    public function toFirePhp() {
+        $stack = $this-&amp;gt;get_callstack();
+        foreach (explode(&amp;quot;\n&amp;quot;, $stack) as $line) {
+            Mage::helper('firephp')-&amp;gt;send($line);
+        }
+    }
+}
+</code></pre>
+
+<p>That can be called from anywhere:</p>
+
+<p>``PHP
+Mage::helper('stack/callstack')-&gt;toFirePhp();
+Mage::helper('stack/callstack')-&gt;toLog();</p>
+
+<pre><code><br />I've also wrapped this into a module that you can drop right into your project.  Details here: [https://bitbucket.org/broderboy/magento_callstack/src](https://bitbucket.org/broderboy/magento_callstack/src "https://bitbucket.org/broderboy/magento_callstack/src")
+
+Example output:
+
+</code></pre>
+
+<p>.../app/code/community/Timbroder/Stack/Helper/Callstack.php line 16 calls get_callstack()
+.../app/design/frontend/mongoose/default/template/catalog/cms/bikes_bmx.phtml line 12 calls toLog()
+.../app/design/frontend/mongoose/default/template/catalog/cms/bikes.phtml line 21 calls require_once()
+.../app/code/core/Mage/Core/Block/Template.php line 212 calls include()
+.../app/code/core/Mage/Core/Block/Template.php line 239 calls fetchView()
+.../app/code/core/Mage/Core/Block/Template.php line 253 calls renderView()
+.../app/code/core/Mage/Core/Block/Abstract.php line 668 calls _toHtml()
+.../app/code/core/Mage/Core/Model/Email/Template/Filter.php line 190 calls toHtml()
+.../lib/Varien/Filter/Template.php line 134 calls call_user_func()
+.../app/code/core/Mage/Core/Model/Email/Template/Filter.php line 501 calls filter()
+.../app/code/core/Mage/Cms/Block/Page.php line 100 calls filter()
+.../app/code/core/Mage/Core/Block/Abstract.php line 668 calls _toHtml()
+.../app/code/core/Mage/Core/Block/Abstract.php line 513 calls toHtml()
+.../app/code/core/Mage/Core/Block/Abstract.php line 460 calls _getChildHtml()
+.../app/code/local/Mage/Page/Block/Html/Wrapper.php line 52 calls getChildHtml()
+.../app/code/core/Mage/Core/Block/Abstract.php line 668 calls _toHtml()
+.../app/code/core/Mage/Core/Block/Text/List.php line 43 calls toHtml()
+.../app/code/core/Mage/Core/Block/Abstract.php line 668 calls _toHtml()
+.../app/code/core/Mage/Core/Block/Abstract.php line 513 calls toHtml()
+.../app/code/core/Mage/Core/Block/Abstract.php line 464 calls _getChildHtml()
+.../app/design/frontend/mongoose/default/template/page/1column.phtml line 55 calls getChildHtml()
+.../app/code/core/Mage/Core/Block/Template.php line 212 calls include()
+.../app/code/core/Mage/Core/Block/Template.php line 239 calls fetchView()
+.../app/code/core/Mage/Core/Block/Template.php line 253 calls renderView()
+.../app/code/core/Mage/Core/Block/Abstract.php line 668 calls _toHtml()
+.../app/code/core/Mage/Core/Model/Layout.php line 529 calls toHtml()
+.../app/code/local/Mage/Core/Controller/Varien/Action.php line 389 calls getOutput()
+.../app/code/core/Mage/Cms/Helper/Page.php line 130 calls renderLayout()
+.../app/code/core/Mage/Cms/Helper/Page.php line 52 calls _renderPage()
+.../app/code/core/Mage/Cms/controllers/PageController.php line 45 calls renderPage()
+.../app/code/local/Mage/Core/Controller/Varien/Action.php line 418 calls viewAction()
+.../app/code/core/Mage/Core/Controller/Varien/Router/Standard.php line 254 calls dispatch()
+.../app/code/core/Mage/Core/Controller/Varien/Front.php line 177 calls match()
+.../app/code/core/Mage/Core/Model/App.php line 304 calls dispatch()
+.../app/Mage.php line 598 calls run()
+.../index.php line 155 calls run()
+```</p>
+
+<p>Thanks to <a href="http://www.nextide.ca/node/518">nextide</a> for some of the code</p>
+</section>
+
+
+    </article>
+    <article class="post" role="article">
+        
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2010/12/want-user-available-in-every-template-in-django.html">Want user available in every template in Django?</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2010-12-29T03:08:52+00:00" pubdate>
+                      <span class='month'>Dec</span> <span class='day'>29th</span> <span class='year'>2010</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                            <span class="poop2">
+                        <a href="https://www.timbroder.com/blog/tags/django">#django</a>
+                        <a href="https://www.timbroder.com/blog/tags/HOWTO">#HOWTO</a>
+                        <a href="https://www.timbroder.com/blog/tags/python">#python</a>
+                            </span>
+                <span><a href="/2010/12/want-user-available-in-every-template-in-django.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2010/12/want-user-available-in-every-template-in-django.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="266390238"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>Create a context processor</p>
+
+<p>settings.py</p>
+
+<pre><code data-language="python">TEMPLATE_CONTEXT_PROCESSORS = (
+    'myapp.context_processors.user',
+)
+</code></pre>
+
+<p>context_processors.py</p>
+
+<pre><code data-language="python">def user(request):
+    if hasattr(request, 'user'):
+        return {'user':request.user }
+    return {}
+</code></pre>
+
+<p>user is now available in any template:</p>
+
+<pre><code data-language="HTML">
+{% if user.is_authenticated %}Do Something Special{% endif %}
+
+</code></pre>
+
+<p>source: <a href="http://stackoverflow.com/questions/41547/always-including-the-user-in-the-django-template-context" title="StackOverflow">StackOverflow</a></p>
+</section>
+
+
+    </article>
+    <article class="post" role="article">
+        
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2010/12/want-to-dump-every-sql-query-magento-runs.html">Want to dump every SQL query Magento runs?</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2010-12-02T22:35:04+00:00" pubdate>
+                      <span class='month'>Dec</span> <span class='day'>2nd</span> <span class='year'>2010</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                            <span class="poop2">
+                        <a href="https://www.timbroder.com/blog/tags/magento">#magento</a>
+                        <a href="https://www.timbroder.com/blog/tags/php">#php</a>
+                        <a href="https://www.timbroder.com/blog/tags/SQL">#SQL</a>
+                        <a href="https://www.timbroder.com/blog/tags/Zend">#Zend</a>
+                            </span>
+                <span><a href="/2010/12/want-to-dump-every-sql-query-magento-runs.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2010/12/want-to-dump-every-sql-query-magento-runs.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="243505474"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>In: <code>lib/Zend/DB/Adapter/Adapter.php</code></p>
+
+<pre><code data-language="PHP">public function query($sql, $bind = array())
+{
+    // connect to the database if needed
+    $this-&gt;_connect();
+
+    // is the $sql a Zend_Db_Select object?
+    if ($sql instanceof Zend_Db_Select) {
+        if (empty($bind)) {
+            $bind = $sql-&gt;getBind();
+        }
+
+        $sql = $sql-&gt;assemble();
+    }
+
+    $time_start = microtime(true);
+
+    // make sure $bind to an array;
+    // don't use (array) typecasting because
+    // because $bind may be a Zend_Db_Expr object
+    if (!is_array($bind)) {
+        $bind = array($bind);
+    }
+
+    // prepare and execute the statement with profiling
+    $stmt = $this-&gt;prepare($sql);
+    $stmt-&gt;execute($bind);
+
+    // return the results embedded in the prepared statement object
+    $stmt-&gt;setFetchMode($this-&gt;_fetchMode);
+
+    $time_end = microtime(true);
+    $time = $time_end - $time_start;
+
+    echo "SQL[$time | $sql ]" . "\n&lt;br /&gt;\n";
+    return $stmt;
+}
+</code></pre>
+</section>
+
+
+    </article>
+    <article class="post" role="article">
+        
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2010/12/magento-want-ckeditor-to-appear-on-category-edit-pages-in-magento.html">Magento: Want CKEditor to appear on Category edit pages in Magento?</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2010-12-02T16:50:50+00:00" pubdate>
+                      <span class='month'>Dec</span> <span class='day'>2nd</span> <span class='year'>2010</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                            <span class="poop2">
+                        <a href="https://www.timbroder.com/blog/tags/ajax">#ajax</a>
+                        <a href="https://www.timbroder.com/blog/tags/CKEditor">#CKEditor</a>
+                        <a href="https://www.timbroder.com/blog/tags/Fontis">#Fontis</a>
+                        <a href="https://www.timbroder.com/blog/tags/magento">#magento</a>
+                        <a href="https://www.timbroder.com/blog/tags/php">#php</a>
+                        <a href="https://www.timbroder.com/blog/tags/TinyMCE">#TinyMCE</a>
+                            </span>
+                <span><a href="/2010/12/magento-want-ckeditor-to-appear-on-category-edit-pages-in-magento.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2010/12/magento-want-ckeditor-to-appear-on-category-edit-pages-in-magento.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="243862101"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>It is pretty common to replace the <a href="http://tinymce.moxiecode.com/">TinyMCE
+</a>editor in the Magento Admin with the <a href="http://ckeditor.com/">CKEditor
+</a>using this <a href="http://www.magentocommerce.com/magento-connect/Fontis/extension/586/fontis-wysiwyg-editor">extension</a></p>
+
+<p>However, the way magento ajaxes the form fields into view on the category pages breaks this functionality.</p>
+
+<p>This snippet should help anyone trying to get it to work in <code>app/design/adminhtml/default/default/template/fontis/wysiwyg/wysiwyg.phtml</code></p>
+
+<pre><code data-language="PHP">
+&lt;?php } else if($editorType == 'ckeditor') { ?&gt;
+
+    &lt;script type="text/javascript" src="&lt;?php echo $this-&gt;getJsUrl() ?&gt;fontis/ckeditor/ckeditor.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript"&gt;
+    var pageLoaded = false;
+
+    function applyCKEditor() {
+        if(pageLoaded) {
+            var editable_areas = '&lt;?php echo $editableAreas ?&gt;';
+            &lt;?php if(strpos($this-&gt;helper('core/url')-&gt;getCurrentUrl(), 'catalog_category') != false): ?&gt;
+                CKEDITOR.instances = {};
+            &lt;?php endif; ?&gt;
+
+            &lt;?php /* Add CKeditor to any matching textareas. */ ?&gt;
+            editable_areas.split(',').each(function(dom_id) {
+            if($(dom_id)) {
+                &lt;?php /* Remove the required-entry CSS class so Magento will
+                allow the contents of the editor to be submitted. */ ?&gt;
+                var loopCheck = 0;
+                while($(dom_id).hasClassName('required-entry') &amp;&amp; loopCheck &lt; 10) {
+                    $(dom_id).removeClassName('required-entry');
+                    loopCheck += 1;
+                }
+
+                CKEDITOR.replace(dom_id, {
+                    width : 640,
+                    height: 350,
+                    protectedSource : ['(/{{[\s\S]*?}}/g)']
+                });
+            }
+        });
+    }
+}
+
+window.onload = function() {
+pageLoaded = true;
+&lt;?php if(strpos($this-&gt;helper('core/url')-&gt;getCurrentUrl(), 'catalog_category') === false): ?&gt;
+    applyCKEditor();
+&lt;?php endif; ?&gt;
+}
+&lt;/script&gt;
+&lt;?php } ?&gt;
+
+</code></pre>
+
+<p>in <code>app/design/adminhtml/default/default/template/catalog/category/edit/form.phtml</code> add this at the bottom but inside the script tag</p>
+
+<pre><code data-language="javascript">if(typeof applyCKEditor == 'function') {
+    applyCKEditor();
+}
+</code></pre>
+</section>
+
+
+    </article>
+    <nav class="pagination" role="navigation">
+                <a class="next" href="https://www.timbroder.com/page/28">&larr; Older</a>
+        
+                <a class="prev" href="https://www.timbroder.com/page/26">Newer &rarr;</a>
+            </nav>
+
+    </main>
+
+
+                        <footer class="site-footer clearfix">
+    <section>
+            <span class="tag size2"><a href="/blog/tags/"></a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/AVSpeechSynthesizer">AVSpeechSynthesizer</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Ai">Ai</a></span>
+            &nbsp;
+        <span class="tag size8"><a href="/blog/tags/Android">Android</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Atom">Atom</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Avengers">Avengers</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Batman">Batman</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Batman%20Inc.">Batman Inc.</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Batman%20and%20Robin">Batman and Robin</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/CKEditor">CKEditor</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/Calibre">Calibre</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Cheese">Cheese</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/ComicCon">ComicCon</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/CoreData">CoreData</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/DRM">DRM</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/Docs%20Spreadsheets">Docs Spreadsheets</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/ESI">ESI</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Fontis">Fontis</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/GME">GME</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/GTD">GTD</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/GWT">GWT</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Garlic">Garlic</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/Google">Google</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/Google%20Reader">Google Reader</a></span>
+            &nbsp;
+        <span class="tag size9"><a href="/blog/tags/HOWTO">HOWTO</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Hulu">Hulu</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Internet%20Explorer">Internet Explorer</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/JIRA">JIRA</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/Kindle">Kindle</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/Mashups">Mashups</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Memcached">Memcached</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/OmniFocus">OmniFocus</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Oracle">Oracle</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/PHPUnit">PHPUnit</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/PostgreSQL">PostgreSQL</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/RSS">RSS</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Redmine">Redmine</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Remember%20the%20Milk">Remember the Milk</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Ruby">Ruby</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/SQL">SQL</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Shared%20web%20hosting%20service">Shared web hosting service</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Siri">Siri</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Skype">Skype</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Sony%20Reader">Sony Reader</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Stan%20Lee">Stan Lee</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/TDD">TDD</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Terminator">Terminator</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/TinyMCE">TinyMCE</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Vibrams">Vibrams</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Virtual%20hosting">Virtual hosting</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Virtual%20private%20server">Virtual private server</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Walking%20Dead">Walking Dead</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Web%20hosting">Web hosting</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/YUI">YUI</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Zend">Zend</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/adwhirl">adwhirl</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/adwords">adwords</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/aiaio">aiaio</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/ajax">ajax</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/alfred">alfred</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/analytics">analytics</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/angularjs">angularjs</a></span>
+            &nbsp;
+        <span class="tag size4"><a href="/blog/tags/appengine">appengine</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/apple">apple</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/applepay">applepay</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/apps">apps</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/autocomplete">autocomplete</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/automation">automation</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/beta">beta</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/bit.ly">bit.ly</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/blackberry">blackberry</a></span>
+            &nbsp;
+        <span class="tag size4"><a href="/blog/tags/blogger">blogger</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/bookmarks">bookmarks</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/brightkite">brightkite</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/calendar">calendar</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/chrome">chrome</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/coffee">coffee</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/css">css</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/debug">debug</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/digg">digg</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/django">django</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/drafts">drafts</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/dropbox">dropbox</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/encryption">encryption</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/engagement">engagement</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/events">events</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/facebook">facebook</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/firefox">firefox</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/friendfeed">friendfeed</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/gadgets">gadgets</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/gchat">gchat</a></span>
+            &nbsp;
+        <span class="tag size4"><a href="/blog/tags/gdata">gdata</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/gdrive">gdrive</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/gears">gears</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/git">git</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/github">github</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/gmail">gmail</a></span>
+            &nbsp;
+        <span class="tag size5"><a href="/blog/tags/gpowered.net">gpowered.net</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/greasemonkey">greasemonkey</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/groups">groups</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/homebrew">homebrew</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/instapaper">instapaper</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/interfacebuilder">interfacebuilder</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/ios">ios</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/ipad">ipad</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/iphone">iphone</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/javascript">javascript</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/jira">jira</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/jquery">jquery</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/json">json</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/kids">kids</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/laravel">laravel</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/launch%20center%20pro">launch center pro</a></span>
+            &nbsp;
+        <span class="tag size5"><a href="/blog/tags/magento">magento</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/maps">maps</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/mercurial">mercurial</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/mock">mock</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/mongodb">mongodb</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/music">music</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/mysql">mysql</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/netbook">netbook</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/nosql">nosql</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/objective%20c">objective c</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/oil">oil</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/omnifocus">omnifocus</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/opensocial">opensocial</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/opensource">opensource</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/os">os</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/osx">osx</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/pesto">pesto</a></span>
+            &nbsp;
+        <span class="tag size7"><a href="/blog/tags/php">php</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/picasa%20web">picasa web</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/podcasts">podcasts</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/powershell">powershell</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/primal">primal</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/productivity">productivity</a></span>
+            &nbsp;
+        <span class="tag size6"><a href="/blog/tags/python">python</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/pythonista">pythonista</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/quick">quick</a></span>
+            &nbsp;
+        <span class="tag size4"><a href="/blog/tags/reader">reader</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/realm">realm</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/regex">regex</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/running">running</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/search">search</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/security">security</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/seo">seo</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/sketch">sketch</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/skynet">skynet</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/sleep">sleep</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/socialgraph">socialgraph</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/solr">solr</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/startup">startup</a></span>
+            &nbsp;
+        <span class="tag size4"><a href="/blog/tags/swift">swift</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/testing">testing</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/textmate">textmate</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/timbroder.com">timbroder.com</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/todoist">todoist</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/twitter">twitter</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/twitter2gTalk">twitter2gTalk</a></span>
+            &nbsp;
+        <span class="tag size6"><a href="/blog/tags/ubuntu">ubuntu</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/urls">urls</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/vagrant">vagrant</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/varnish">varnish</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/virtualenv">virtualenv</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/winamp">winamp</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/windows">windows</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/wordpress">wordpress</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/xbox">xbox</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/xcode">xcode</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/xml">xml</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/yahoo%20pipes">yahoo pipes</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/youtube">youtube</a></span>
+            &nbsp;
+    
+    </section>
+    <section class="copyright">
+        Copyright &copy; 2007-2018 -
+         Tim Broder -         <span class="credit">Powered by <a href="http://sculpin.io">Sculpin</a></span>
+    </section>
+</footer>
+                <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="https://www.timbroder.com/themes/broderboy/deadfish/assets/js/index.js"></script>
+<script type="text/javascript" src="https://www.timbroder.com/themes/broderboy/deadfish/assets/js/rainbow.min.js"></script>
+<script type="text/javascript" src="https://www.timbroder.com/themes/broderboy/deadfish/assets/js/rlns.min.js"></script>
+
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'timbrodercom'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-17099661-1', 'auto');
+    ga('send', 'pageview');
+
+</script>    </div>
+</body>
+</html>

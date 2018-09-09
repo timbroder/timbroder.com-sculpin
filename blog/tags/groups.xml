@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[timbroder.com]]></title>
+    <link href="https://www.timbroder.com/blog/tags/groups.xml" rel="self"/>
+    <link href="https://www.timbroder.com/"/>
+    <updated>2018-09-09T12:21:33+00:00</updated>
+    <id>https://www.timbroder.com/</id>
+            <author>
+            <name><![CDATA[Tim Broder]]></name>            <email><![CDATA[timothy.broder@gmail.com]]></email>        </author>
+        <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[View Google Groups posts in Reader]]></title>
+            <link href="https://www.timbroder.com/2007/08/view-google-groups-posts-in-reader.html"/>
+            <updated>2007-08-22T21:11:00+00:00</updated>
+            <id>https://www.timbroder.com/2007/08/view-google-groups-posts-in-reader.html</id>
+            <content type="html"><![CDATA[<p>I don't know why I never noticed this before but you can subscribe to the mail
+sent to Google Groups through an RSS feed at the bottom of each group. I'm
+trying it out for a few groups, I might like it better then reading through
+the mail. I wonder if there is a way to subscribe to the rolled up versions of
+the posts...</p>
+
+<p><img src="http://lh5.google.com/timothy.broder/RsyngpE6BRI/AAAAAAAAKn8/F6Qvt7wUps4/s400/groups_reader.jpg?imgdl=1" alt="" /></p>
+]]></content>
+        </entry>
+    </feed>

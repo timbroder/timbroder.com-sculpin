@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[timbroder.com]]></title>
+    <link href="https://www.timbroder.com/blog/tags/winamp.xml" rel="self"/>
+    <link href="https://www.timbroder.com/"/>
+    <updated>2018-09-09T12:21:33+00:00</updated>
+    <id>https://www.timbroder.com/</id>
+            <author>
+            <name><![CDATA[Tim Broder]]></name>            <email><![CDATA[timothy.broder@gmail.com]]></email>        </author>
+        <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[How to manage podcasts in Winamp (screw itunes)]]></title>
+            <link href="https://www.timbroder.com/2009/04/how-to-manage-podcasts-in-winamp-screw.html"/>
+            <updated>2009-04-17T19:11:00+00:00</updated>
+            <id>https://www.timbroder.com/2009/04/how-to-manage-podcasts-in-winamp-screw.html</id>
+            <content type="html"><![CDATA[<p>So I really have been digging the Windows 7 beta.  However, Itunes does not
+sync podcasts correctly on the 64 bit version.  IF syncing works at all, it
+takes a while. I had used winamp to listen to my music a while ago, but had
+switched to amarok when I started single booting linux (yes, I hated Vista
+that much).  Now that I'm back to using windows a bit, I wanted my podcast
+experience to go flawlessly.</p>
+
+<p>As much as I dislike iTunes, they have got podcast management down pat</p>
+
+<ul>
+<li>search for podcast</li>
+<li>subscribe to podcast</li>
+<li>download episodes</li>
+<li>sync with ipod</li>
+<li><strong>after an episode has been listened to, delete from computer hard drive</strong>
+That last point is the most important part, everything else can be done
+manually  </li>
+</ul>
+
+<p>All this can be done with winamp. You will need two things, winamp and the
+<a href="http://mlipod.sourceforge.net/?page=downloads">ml_iPod</a> plugin.  While winamp
+does come with ipod support built in, ml_iPod has many more features.  The
+following steps should get you up to speed on podcasting with winamp</p>
+
+<ul>
+<li>install winamp</li>
+<li>install the ml_iPod plugin (it will tell you it has to remove the built in ipod plugin, this is ok)</li>
+<li>set a directory to save the episodes in  </li>
+</ul>
+
+<p><img src="http://1.bp.blogspot.com/_Ng3QbVQfLZ8/SejSAesN5OI/AAAAAAAAbG8/i6n7ZuHGR7A/s1600-h/1.jpg" alt="" /></p>
+
+<ul>
+<li>plug in your ipod</li>
+<li>enable podcast support for the ipod</li>
+<li>point it to your episode folder</li>
+<li>set the query for when to delete old episodes  </li>
+</ul>
+
+<p><img src="http://4.bp.blogspot.com/_Ng3QbVQfLZ8/SejS5pxj2JI/AAAAAAAAbHE/zU0cecph26A/s1600-h/2.jpg" alt="" /></p>
+
+<ul>
+<li>Add your podcasts by searching for them in the directory, or adding them manually using their RSS feed  </li>
+</ul>
+
+<p><img src="http://4.bp.blogspot.com/_Ng3QbVQfLZ8/SejTsQ-8VoI/AAAAAAAAbHM/RGPUVDtoXpI/s1600-h/3.jpg" alt="" /></p>
+
+<p>After this you should be good to go. podcasts!</p>
+]]></content>
+        </entry>
+    </feed>

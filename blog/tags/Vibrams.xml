@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[timbroder.com]]></title>
+    <link href="https://www.timbroder.com/blog/tags/Vibrams.xml" rel="self"/>
+    <link href="https://www.timbroder.com/"/>
+    <updated>2018-09-09T12:21:33+00:00</updated>
+    <id>https://www.timbroder.com/</id>
+            <author>
+            <name><![CDATA[Tim Broder]]></name>            <email><![CDATA[timothy.broder@gmail.com]]></email>        </author>
+        <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[Breaking them in]]></title>
+            <link href="https://www.timbroder.com/2011/01/breaking-them-in.html"/>
+            <updated>2011-01-23T18:24:49+00:00</updated>
+            <id>https://www.timbroder.com/2011/01/breaking-them-in.html</id>
+            <content type="html"><![CDATA[<p>![image](/images/2011/01/wpid-
+IMAG0003.jpg)</p>
+]]></content>
+        </entry>
+    </feed>

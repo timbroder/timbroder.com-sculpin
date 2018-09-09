@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[timbroder.com]]></title>
+    <link href="https://www.timbroder.com/blog/tags/pythonista.xml" rel="self"/>
+    <link href="https://www.timbroder.com/"/>
+    <updated>2018-09-09T12:21:33+00:00</updated>
+    <id>https://www.timbroder.com/</id>
+            <author>
+            <name><![CDATA[Tim Broder]]></name>            <email><![CDATA[timothy.broder@gmail.com]]></email>        </author>
+        <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[Automate Adding to Trello on iOS with Launch Center Pro and Pythonista]]></title>
+            <link href="https://www.timbroder.com/2013/03/automating-adding-to-trello-on-ios.html"/>
+            <updated>2013-03-23T17:38:14+00:00</updated>
+            <id>https://www.timbroder.com/2013/03/automating-adding-to-trello-on-ios.html</id>
+            <content type="html"><![CDATA[<p>I love using <a href="https://trello.com/">Trello </a>to organize my life and work. While
+I kind of like it's iOS app, sometimes navigating to a board to add a card can
+be a little time consuming.  I want this process to be faster. I also use
+Launch Center Pro to get some quick actions that I miss from Android. Mostly
+around quick communication, adding events, and now, adding to Trello.  LCP
+uses x-callback-urls for inter-app communication, but Trello doesn't have any
+that I could see. Inspired by Federico
+<a href="https://twitter.com/viticci">Viticci</a>'s article on <a href="http://www.macstories.net/stories/automating-ios-how-pythonista-changed-my-workflow/">automating his iOS
+workflow</a>, I decided to take a crack at it using pythonista. All
+code shown below can be found on
+<a href="https://github.com/broderboy/PythonistaTrello">GitHub</a>.</p>
+
+<p><a href="http://timbroder.com/2013/03/automating-adding-to-trello-with-launch-center-pro-and-pythonista.html/2013-02-11-14-32-57"><img src="/images/2013/02/2013-02-11-14.32.57.png" alt="2013-02-1114.32.57" /></a></p>
+
+<p><a href="http://timbroder.com/2013/03/automating-adding-to-trello-with-launch-center-pro-and-pythonista.html/2013-02-11-14-33-00"><img src="/images/2013/03/LCP.png" alt="2013-02-11
+14.33.00" /></a></p>
+
+<p><a href="http://omz-software.com/pythonista/">Pythonista</a> lets you edit and run python scripts on your phone.
+There are a few ways to get scripts onto your device:</p>
+
+<ul>
+<li>Edit right in the app</li>
+<li>Import <a href="https://gist.github.com/omz/b0644f5ed1d94bd32805">from a gist</a></li>
+<li>Use <a href="http://tapbots.com/software/pastebot/">pastebot</a>. A great app that gives you multiple clipboards on your device that will also sync with your mac. This is my preferred method.</li>
+</ul>
+
+<p>The endgame of all this: I want to be able to add a card to a specific board,
+with as few taps as possible. Check out this video for what we are going to
+build.  Digging into the <a href="https://trello.com/docs/api/card/index.html#post-1-cards">Trello
+API</a>, we can see
+that to add a card, we'll need a name for the card and the ID of the list to
+add it to. We also see that we'll need a token for any of the API calls. To
+get all of our lists, we'll also need to know about all of our boards.  This
+breaks our tasks out as follows:</p>
+
+<ol>
+<li>Get an App API Key</li>
+<li>Get an API Token</li>
+<li>Get a list of every board we heve</li>
+<li>Get the IDs of every list on each of these boards</li>
+<li>Add a new card to our list of choice</li>
+</ol>
+
+<p>To get an App API Key, you can generate one <a href="https://trello.com/1/appKey/generate" title="here">here</a>.  In theory, the one I distribute with
+these scripts should be ok. Get this first script into Pythonista and run it.
+It will generate a permanant API token for you that you can leave in Launch
+Center Pro when running these scripts.</p>
+
+<pre><code data-language="python">#GetTrelloToken
+
+import webbrowser
+
+url = 'https://trello.com/1/authorize?key=3e2cd730f3dcccbe15eaf0d39d219a37&amp;amp;name=PythonistaTrello&amp;amp;expiration=never&amp;amp;response_type=token&amp;amp;scope=read,write'
+
+#open web browser to get a permanant Trello API Token
+webbrowser.open(url)
+</code></pre>
+
+<p><a href="http://timbroder.com/2013/03/automating-adding-to-trello-with-launch-center-pro-and-pythonista.html/2013-02-11-14-54-35"><img src="/images/2013/02/2013-02-11-14.54.35.png" alt="2013-02-11 14.54.35" /></a></p>
+
+<p><a href="http://timbroder.com/2013/03/automating-adding-to-trello-with-launch-center-pro-and-pythonista.html/2013-02-11-14-54-40"> <img src="/images/2013/02/2013-02-11-14.54.40.png" alt="2013-02-1114.54.40" /></a></p>
+
+<p>Now that we have our key and tokens,
+let's get get all of our boards and the lists on each one. Run this script and
+pass in your token and your email address as arguments. (In pythonista hold
+down run to get the "Run with arguments dialog"). Add your arguments separated
+by spaces. For me, this could look something like: <code>"EGYlyiOdggDOaPoTUxaTQobmS6gtiX timothy.broder@gmail.com"</code></p>
+
+<pre><code data-language="python">#List all lists by user
+
+import urllib2
+import urllib
+import json
+import sys
+
+if len(sys.argv) != 3:
+    raise Exception("Usage: list_trello_lists.py [token] [email]")
+
+key = "3e2cd730f3dcccbe15eaf0d39d219a37"
+args = { 'key': key,
+    'token': sys.argv[1],
+    'filter': 'open'}
+
+#build out api url
+username = sys.argv[2]
+boards_url = "https://api.trello.com/1/members/%s/boards/?%s" % (username, urllib.urlencode(args))
+
+#get board data from api
+try:
+    data = urllib2.urlopen(boards_url)
+except urllib2.HTTPError as inst:
+    raise Exception("Key or Token incorrect")
+
+boards = json.loads(data.read())
+
+#loop through each board
+for board in boards:
+    board_id = board['id']
+    lists_url = "https://api.trello.com/1/boards/%s/lists?%s" % (board_id, urllib.urlencode(args))
+    data = urllib2.urlopen(lists_url)
+    lists = json.loads(data.read())
+
+    print "-- %s" % board['name']
+    #output each list in board
+    for lizt in lists:
+        print "\"%s\" %s" % (lizt['name'], lizt['id'])
+    print "\n"
+</code></pre>
+
+<p>Running this, we'll get the IDs of the lists we need</p>
+
+<p><a href="http://timbroder.com/2013/03/automating-adding-to-trello-with-launch-center-pro-and-pythonista.html/2013-02-11-15-06-39"><img src="/images/2013/02/2013-02-11-15.06.39.png" alt="2013-02-11 15.06.39" /></a></p>
+
+<p><a href="http://timbroder.com/2013/03/automating-adding-to-trello-with-launch-center-pro-and-pythonista.html/2013-02-11-15-07-13"><img src="/images/2013/02/2013-02-11-15.07.13.png" alt="2013-02-1115.07.13" /></a></p>
+
+<p>Finally, we'll need to take our key, the
+id of the list, what we want our card to say, and hit the API with them.  I
+also add in a position so the cards I add this way will appear at the top of
+their list. We'll pass these in as parameters:</p>
+
+<p><code>"EGYlyiOdggDOaPoTUxaTQobmS6gtiX V12t3k6RQQ2r8X top the name of my card goes here"</code></p>
+
+<p>Two things to point out inthis script:</p>
+
+<ul>
+<li>we put the name of the card at the end so we can just loop through all the remaining words and not have to worry about wrapping the name in quotes to deal with spaces.</li>
+<li>since the end game of this is to run from Launch center pro, we want to jump back to Launch Center Pro at the end using it's x-callback-url</li>
+</ul>
+
+<pre><code data-language="python">#Add card to List
+
+import urllib2
+import urllib
+import json
+import sys
+import webbrowser
+
+arglen = len(sys.argv)
+
+if arglen &lt; 5:     raise Exception("Usage: list_trello_lists.py [token] [list_id] [position] [card_name]") name = sys.argv[4] #take care of spaces if arglen &gt; 5:
+    for i in range(5,arglen):
+        name = "%s %s" % (name, sys.argv[i])
+
+key = "3e2cd730f3dcccbe15eaf0d39d219a37"
+token = sys.argv[1]
+args = { 'key': key,
+    'token': sys.argv[1],
+    'name': name,
+    'pos': sys.argv[3],
+    'idList': sys.argv[2]
+    }
+card_add_url = "https://api.trello.com/1/cards"
+
+try:
+    data = urllib2.urlopen(card_add_url, urllib.urlencode(args))
+except urllib2.HTTPError as inst:
+    raise Exception("Key or Token incorrect")
+
+#jump back to Launch Center Pro
+webbrowser.open("launchpro:")
+</code></pre>
+
+<p>To run this in Launch Center Pro,
+Add an Action > Pythonista > Run Script with Arguments. Put in the name
+of the script, then in arguments, but everything from above except the name:
+"EGYlyiOdggDOaPoTUxaTQobmS6gtiX V12t3k6RQQ2r8X top," then hit the button that
+says input prompt. Now, when you run the script, Launch Center Pro will prompt
+you for text, enter the name of the card and hit go.</p>
+
+<p>Add as many of these as
+you want! Just swap out the list ID.</p>
+]]></content>
+        </entry>
+    </feed>

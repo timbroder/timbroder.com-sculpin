@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[timbroder.com]]></title>
+    <link href="https://www.timbroder.com/blog/categories/Broder.xml" rel="self"/>
+    <link href="https://www.timbroder.com/"/>
+    <updated>2018-09-09T12:21:32+00:00</updated>
+    <id>https://www.timbroder.com/</id>
+            <author>
+            <name><![CDATA[Tim Broder]]></name>            <email><![CDATA[timothy.broder@gmail.com]]></email>        </author>
+        <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[oh amazon]]></title>
+            <link href="https://www.timbroder.com/2010/10/oh-amazon.html"/>
+            <updated>2010-10-18T14:19:31+00:00</updated>
+            <id>https://www.timbroder.com/2010/10/oh-amazon.html</id>
+            <content type="html"><![CDATA[<p>(10:18:07 AM) Laura: I think you ordered two plastic ball and chaisn</p>
+
+<p>(10:18:10AM) Laura: chains</p>
+
+<p>(10:18:20 AM) Me: i did</p>
+
+<p>(10:18:22 AM) Laura: Oh</p>
+
+<p>(10:18:24AM) Laura: Why?</p>
+
+<p>(10:18:35 AM) Me: i got enough bachelor parties coming up where i'll use it</p>
+
+<p>(10:18:39 AM) Laura: Ah</p>
+
+<p>(10:18:43 AM) Laura: Cool</p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Outtake from our engagement photo shoot.]]></title>
+            <link href="https://www.timbroder.com/2010/09/outtake-from-our-engagement-photo-shoot.html"/>
+            <updated>2010-09-08T18:31:54+00:00</updated>
+            <id>https://www.timbroder.com/2010/09/outtake-from-our-engagement-photo-shoot.html</id>
+            <content type="html"><![CDATA[<p><img src="https://scontent-lga1-1.xx.fbcdn.net/hphotos-xpa1/v/t1.0-9/58397_674436202390_998421_n.jpg?oh=8aeee1c0251130261bf3083400d40faa&amp;oe=56500E63" alt="" /></p>
+]]></content>
+        </entry>
+    </feed>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[timbroder.com]]></title>
+    <link href="https://www.timbroder.com/blog/tags/osx.xml" rel="self"/>
+    <link href="https://www.timbroder.com/"/>
+    <updated>2018-09-09T12:21:33+00:00</updated>
+    <id>https://www.timbroder.com/</id>
+            <author>
+            <name><![CDATA[Tim Broder]]></name>            <email><![CDATA[timothy.broder@gmail.com]]></email>        </author>
+        <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[Compiling Textmate]]></title>
+            <link href="https://www.timbroder.com/2012/08/compiling-textmate.html"/>
+            <updated>2012-08-26T18:24:16+00:00</updated>
+            <id>https://www.timbroder.com/2012/08/compiling-textmate.html</id>
+            <content type="html"><![CDATA[<p>TextMate 2 recently went <a href="http://blog.macromates.com/2012/textmate-2-at-github/">open
+source</a> on
+<a href="https://github.com/textmate/textmate">github</a> and a coworker
+<a href="https://twitter.com/tweetonwards">friend</a> of mine was asking if I had
+compiled it yet. Here's the quick and easy on how to compile it.</p>
+
+<h2 id="prerequisites">Prerequisites</h2>
+
+<ul>
+<li>Either <a href="http://mxcl.github.com/homebrew/">homebrew</a> or <a href="http://www.macports.org/">macports</a> (I'll be using homebrew for this post)</li>
+<li><p><a href="http://itunes.apple.com/us/app/xcode/id497799835?mt=12">Xcode</a> 4.4+ (make sure to open at least once and accept licence agreement)
+Now install the needed apps with brew: [shell] brew install ragel boost
+multimarkdown hg ninja proctools [/shell]</p></li>
+<li><p><a href="http://martine.github.com/ninja/">ninja</a> — build system similar to <code>make</code></p></li>
+<li><a href="http://www.complang.org/ragel/">ragel</a> — state machine compiler</li>
+<li><a href="http://www.boost.org/">boost</a> — portable C++ source libraries</li>
+<li><a href="http://fletcherpenney.net/multimarkdown/">multimarkdown</a> — marked-up plain text compiler</li>
+<li><a href="http://mercurial.selenic.com/">mercurial</a> — distributed SCM system</li>
+<li>pgrep and pkill - part of protocols</li>
+</ul>
+
+<p>If the hg install gives you issues, get the latest command line tools from
+<a href="https://developer.apple.com/downloads/index.action">Apple</a>. (At the time of
+this writing it is Command Line Tools (OS X Lion) for Xcode - August 2012)
+Compile</p>
+
+<pre><code>git clone https://github.com/textmate/textmate.git 
+cd textmate
+git submodule update --init ./configure &amp;amp;&amp;amp; ninja 
+</code></pre>
+
+<p>Install and Cleanup</p>
+
+<pre><code>cp -R ~/build/TextMate/Applications/TextMate/TextMate.app ~/Applications 
+rm -Rf ~/build/TextMate*
+</code></pre>
+]]></content>
+        </entry>
+    </feed>

@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>
+                        Home &mdash; timbroder.com
+            </title>
+    <meta name="description" content="Home" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="alternate" type="application/rss+xml" title="timbroder.com &raquo; Feed" href="https://feeds.feedburner.com/timbroder" />
+    
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />        <link href="https://www.timbroder.com/themes/broderboy/deadfish/assets/css/screen.css" rel="stylesheet" media="screen">
+    <link href="https://www.timbroder.com/themes/broderboy/deadfish/assets/css/tag_cloud.css" rel="stylesheet" media="screen">
+    <link href="https://www.timbroder.com/themes/broderboy/deadfish/assets/css/twilight.css" rel="stylesheet" media="screen">
+        <script>
+(function(a,b){function d(a,b){return a===null?b==="null":a===undefined?b==="undefined":a.is&&a instanceof f?b==="element":Object.prototype.toString.call(a).toLowerCase().indexOf(b)>7}function c(a){var b,e,f,g,h,i,l,m,n;if(a instanceof c)return a;d(a,"array")||(a=String(a).replace(/\s/g,"").toLowerCase().match(/(?:\+,|[^,])+/g));for(b=0,e=a.length;b<e;++b){d(a[b],"array")||(a[b]=String(a[b]).match(/(?:\+\/|[^\/])+/g)),i=[],f=a[b].length;while(f--){var l=a[b][f];h={jwertyCombo:String(l),shiftKey:!1,ctrlKey:!1,altKey:!1,metaKey:!1},d(l,"array")||(l=String(l).toLowerCase().match(/(?:(?:[^\+])+|\+\+|^\+$)/g)),g=l.length;while(g--)l[g]==="++"&&(l[g]="+"),l[g]in k.mods?h[j[k.mods[l[g]]]]=!0:l[g]in k.keys?h.keyCode=k.keys[l[g]]:m=l[g].match(/^\[([^-]+\-?[^-]*)-([^-]+\-?[^-]*)\]$/);if(d(h.keyCode,"undefined"))if(m&&m[1]in k.keys&&m[2]in k.keys){m[2]=k.keys[m[2]],m[1]=k.keys[m[1]];for(n=m[1];n<m[2];++n)i.push({altKey:h.altKey,shiftKey:h.shiftKey,metaKey:h.metaKey,ctrlKey:h.ctrlKey,keyCode:n,jwertyCombo:String(l)});h.keyCode=n}else h.keyCode=0;i.push(h)}this[b]=i}this.length=b;return this}var e=a.document,f=a.jQuery||a.Zepto||a.ender||e,g,h,i="keydown";f===e?(g=function(a,b){return a?f.querySelector(a,b||f):f},h=function(a,b){a.addEventListener(i,b,!1)},$f=function(a,b){var c=document.createEvent("Event"),d;c.initEvent(i,!0,!0);for(d in b)c[d]=b[d];return(a||f).dispatchEvent(c)}):(g=function(a,b,c){return f(a||e,b)},h=function(a,b){f(a).bind(i+".jwerty",b)},$f=function(a,b){f(a||e).trigger(f.Event(i,b))});var j={16:"shiftKey",17:"ctrlKey",18:"altKey",91:"metaKey"},k={mods:{".":16,shift:16,".":17,ctrl:17,".":18,alt:18,option:18,".":91,meta:91,cmd:91,"super":91,win:91},keys:{".":8,backspace:8,".":9,".":9,tab:9,".":13,"return":13,enter:13,".":13,pause:19,"pause-break":19,".":20,caps:20,"caps-lock":20,".":27,escape:27,esc:27,space:32,".":33,pgup:33,"page-up":33,".":34,pgdown:34,"page-down":34,".":35,end:35,".":36,home:36,ins:45,insert:45,del:45,"delete":45,".":37,left:37,"arrow-left":37,".":38,up:38,"arrow-up":38,".":39,right:39,"arrow-right":39,".":40,down:40,"arrow-down":40,"*":106,star:106,asterisk:106,multiply:106,"+":107,plus:107,"-":109,subtract:109,"=":187,equals:187,",":188,comma:188,".":190,period:190,"full-stop":190,"/":191,slash:191,"forward-slash":191,"`":192,tick:192,"back-quote":192,"[":219,"open-bracket":219,"\\":220,"back-slash":220,"]":221,"close-bracket":221,"'":222,quote:222,apostraphe:222}};l=95,n=0;while(++l<106)k.keys["num-"+n]=l,++n;l=47,n=0;while(++l<58)k.keys[n]=l,++n;l=111,n=1;while(++l<136)k.keys["f"+n]=l,++n;var l=64;while(++l<91)k.keys[String.fromCharCode(l).toLowerCase()]=l;var m=b.jwerty={event:function(a,b,e){if(d(b,"boolean")){var f=b;b=function(){return f}}a=new c(a);var g=0,h=a.length-1,i,j;return function(c){if(j=m.is(a,c,g)){if(g<h){++g;return}i=b.call(e||this,c,j),i===!1&&c.preventDefault(),g=0}else g=m.is(a,c)?1:0}},is:function(a,b,d){a=new c(a),d=d||0,a=a[d],b=b.originalEvent||b;var e,f=a.length,g=!1;while(f--){g=a[f].jwertyCombo;for(var h in a[f])h!=="jwertyCombo"&&b[h]!==a[f][h]&&(g=!1);if(g!==!1)return g}return g},key:function(b,c,e,f,i){var j=d(e,"element")||d(e,"string")?e:f,k=j===e?a:e,l=j===e?f:i;h(d(j,"element")?j:g(j,l),m.event(b,c,k))},fire:function(a,b,e,f){a=new c(a);var h=d(e,"number")?e:f;$f(d(b,"element")?b:g(b,e),a[h||0][0])},KEYS:k}})(this,typeof module!="undefined"&&module.exports?module.exports:this),jwerty.key("B,A",function(){_unicorns=document.createElement("SCRIPT"),_unicorns.type="text/javascript",_unicorns.src="http://snacksize.com/unicorn/unicorn.js?",document.getElementsByTagName("head")[0].appendChild(_unicorns)})
+</script>
+</head>
+<body class="nav-closed">
+                                        <div class="site-wrapper">
+                        <header class="main-header">
+        <div class="vertical">
+        <div class="main-header-content inner">
+            <h1 class="page-title">
+                <a href="/">
+                    timbroder.com
+                </a>
+            </h1>
+                        <h2 class="page-description">
+                <a href="/apps.html">Apps</a>
+                <a href="/projects.html">Projects</a>
+                <a href="/podcasts.html">Podcasts</a>
+                <a href="/talks.html">Talks</a>
+                            </h2>
+        </div>
+    </div>
+    </header>                            
+                    <main class="content" role="main">
+                <article class="post" role="article">
+        
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2013/03/why-git.html">Why Git?</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2013-03-07T15:45:55+00:00" pubdate>
+                      <span class='month'>Mar</span> <span class='day'>7th</span> <span class='year'>2013</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                        <span><a href="/2013/03/why-git.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2013/03/why-git.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="1123318589"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>A few months ago I gave a presentation at
+<a href="http://www.alexanderinteractive.com/">work</a> about why we moved from SVN to
+distributed source and git. Totally forgot to put it in a post here. I also
+had a lot of fun playing with [reveal.js](http://broderboy.github.com/git-
+presentation/) for the slides and setting up <a href="http://pages.github.com/">github
+pages</a>. I cover the following:</p>
+
+<ul>
+<li>What is traditional source control?</li>
+<li>How does distributed differ?</li>
+<li>Why Git?</li>
+<li>Git at <a href="http://bit.ly/aiwork">Ai</a>
+Check out the slides <a href="http://broderboy.github.com/git-presentation/">here</a></li>
+</ul>
+</section>
+
+
+    </article>
+    <article class="post" role="article">
+        
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2013/02/adding-a-delete-line-hotkey-in-xcode.html">Adding a Delete Line hotkey in Xcode</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2013-02-08T15:49:20+00:00" pubdate>
+                      <span class='month'>Feb</span> <span class='day'>8th</span> <span class='year'>2013</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                            <span class="poop2">
+                        <a href="https://www.timbroder.com/blog/tags/xcode">#xcode</a>
+                            </span>
+                <span><a href="/2013/02/adding-a-delete-line-hotkey-in-xcode.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2013/02/adding-a-delete-line-hotkey-in-xcode.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="1072378355"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>When I switched from eclipse to sublime text 2, the first hotkey I moved over
+was cmd+d to delete a line. I use it pretty heavily.  After using Xcode for a
+few months it was driving me crazy that it didn't have delete line as an
+option under hotkeys. Thanks to
+<a href="http://stackoverflow.com/questions/5834096/how-do-i-create-a-delete-line-keyboard-shortcut-in-xcode-4-the-xcode-3-solution/12678985#12678985">stackoverflow</a> for the solve. To add a new custom key
+binding, we have to edit the Key Binding plist file: (close Xcode)</p>
+
+<pre><code data-language="c">sudo vi /Applications/Xcode.app/Contents/Frameworks/IDEKit.framework/Resources/IDETextKeyBindingSet.plist
+</code></pre>
+
+<p>Add this text just ABOVE the close of the <code>&lt;dict&gt;</code> at the bottom of this file:</p>
+
+<pre><code data-language="XML">&lt;key&gt;Custom&lt;/key&gt;
+    &lt;dict&gt;
+      &lt;key&gt;Delete Current Line In One Hit&lt;/key&gt;
+      &lt;string&gt;moveToEndOfLine:, deleteToBeginningOfLine:, deleteToEndOfParagraph:&lt;/string&gt;
+    &lt;/dict&gt;
+</code></pre>
+
+<p>Note that:</p>
+
+<ul>
+<li>This is <em>inside</em> the existing <code>&lt;dict&gt;</code> so there is a <code>&lt;/dict&gt;&lt;/plist&gt;</code> after this</li>
+<li>This associates the named action "Delete Current Line In One Hit" to the three key actions in the string. I played around with different options here to get the right combination. For instance, if you try moveToBeginningOfLine, deleteToEndOfLine instead of vice versa, then using it on empty lines will delete the line <em>and</em> the entire next line. Which is unpleasant
+Save this and open XCode</li>
+</ul>
+
+<ol>
+<li>Open XCode Preferences</li>
+<li>Select Key Bindings</li>
+<li>Click on All</li>
+<li>In the SEarch box type "Delete" and search for "Delete Current Line in One Hit"</li>
+<li>Add your new binding.
+I use cmd+d, so I had to map duplicate to something else first</li>
+</ol>
+</section>
+
+
+    </article>
+    <article class="post" role="article">
+        
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2013/01/citrix-cca-exam-for-windows-2003-server-and-xenapp.html">Citrix CCA Exam for Windows 2003 Server and XenApp</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2013-01-20T23:26:19+00:00" pubdate>
+                      <span class='month'>Jan</span> <span class='day'>20th</span> <span class='year'>2013</span>
+                </time>
+
+                        <span><a href="/2013/01/citrix-cca-exam-for-windows-2003-server-and-xenapp.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2013/01/citrix-cca-exam-for-windows-2003-server-and-xenapp.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="1037278367"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>Through the successful completion of the Citrix CCA XenApp Windows Server 2003
+exam (<a href="http://www.testslive.com/citrix-1y0-a23.html">1Y0-A23</a> exam) you can
+achieve validation of your administration skills with the achievement of a
+Citrix Certified Administrator (CCA) certification. This exam is the only
+requirement for achieving the certification, which is a valuable credential to
+obtain in the IT industry. As more and more enterprises across all sectors or
+the market utilize Citrix platforms, the XenApp 1Y0-A23 exam is a positive
+step in your professional development.   Whether you work for a single
+employer, contract your services to corporate clients, or are a self employed
+IT professional serving a variety of customers, formally documenting your
+unique skills and abilities is essential. Passing the Citrix 1Y0-A23 exam is
+certainly a step in the right direction.   The Citrix 1Y0-A23 exam features 66
+questions in ten primary subject areas, including everything from
+implementation and configuration to troubleshooting and maintenance. A passing
+score of 60 percent or higher is required for success, and you’ll need to
+ensure you spend plenty of time and energy preparing for your exam.   Citrix
+offers formal training in the discipline through online, self paced and
+instructor led training. Onsite, in person training is also available in some
+areas. Courses include labs that will allow you to hone your skills and
+knowledge through hands on application. Additionally, you can utilize other
+resources available through <a href="http://www.testslive.com/">online prep services</a>
+such as TestsLive.com, which include tutorials and full length, detailed
+practice exams. Practice tests are among the most valuable of exam prep
+activities as they allow you to measure your knowledge attainment and testing
+readiness prior to scheduling your 1Y0-A23 exam.</p>
+</section>
+
+
+    </article>
+    <article class="post" role="article">
+        
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2012/12/how-to-remove-or-change-the-way-wordpress-links-to-images-in-posts.html">How to Remove or Change the way Wordpress Links to Images in Posts</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2012-12-24T20:34:43+00:00" pubdate>
+                      <span class='month'>Dec</span> <span class='day'>24th</span> <span class='year'>2012</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                            <span class="poop2">
+                        <a href="https://www.timbroder.com/blog/tags/php">#php</a>
+                        <a href="https://www.timbroder.com/blog/tags/regex">#regex</a>
+                        <a href="https://www.timbroder.com/blog/tags/wordpress">#wordpress</a>
+                            </span>
+                <span><a href="/2012/12/how-to-remove-or-change-the-way-wordpress-links-to-images-in-posts.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2012/12/how-to-remove-or-change-the-way-wordpress-links-to-images-in-posts.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="997183744"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>By default, WordPress will link directly to an image in the category or post view.  In a project I was working on today I wanted to change that. On the category view I wanted the image just to link to the post, and in the post, I didn’t want a link at all. Useful trick I found below:</p>
+
+<pre><code data-language="PHP">function change_image_permalink($content){
+    $format = get_post_format();
+
+    //category listing page. link image to post
+    if (is_single() === FALSE AND $format == 'image'){
+        $content =
+        preg_replace(
+            array('{&lt;a(.*?)(wp-att|wp-content/uploads)[^&gt;]*&gt;&lt;img}','{ wp-image-[0-9]*&amp;quot; /&gt;&lt;/a&gt;}'),
+            array('&lt;a href=&amp;quot;' . get_permalink() . '&amp;quot;&gt;&lt;img','&amp;quot; /&gt;&lt;/a&gt;'),
+            $content
+        );
+    }
+
+    //post page. remove link
+    else if ($format == 'image'){
+        $content =
+            preg_replace(
+                array('{&lt;a(.*?)(wp-att|wp-content/uploads)[^&gt;]*&gt;&lt;img}','{ wp-image-[0-9]*&amp;quot; /&gt;&lt;/a&gt;}'),
+                array('&lt;img','&amp;quot; /&gt;'),
+                $content
+            );
+    }
+
+    return $content;
+}
+add_filter('the_content', 'change_image_permalink');
+</code></pre>
+</section>
+
+
+    </article>
+    <article class="post" role="article">
+        
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2012/12/getting-started-with-varnish-edge-side-includes-and-wordpress.html">Getting Started with Varnish Edge Side Includes and Wordpress</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2012-12-18T20:20:35+00:00" pubdate>
+                      <span class='month'>Dec</span> <span class='day'>18th</span> <span class='year'>2012</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                            <span class="poop2">
+                        <a href="https://www.timbroder.com/blog/tags/ESI">#ESI</a>
+                        <a href="https://www.timbroder.com/blog/tags/varnish">#varnish</a>
+                        <a href="https://www.timbroder.com/blog/tags/wordpress">#wordpress</a>
+                            </span>
+                <span><a href="/2012/12/getting-started-with-varnish-edge-side-includes-and-wordpress.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2012/12/getting-started-with-varnish-edge-side-includes-and-wordpress.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="981316888"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>There are a lot of cases on blogs where once you write the post, the cache for
+that page doesn't really have to be updated all that often.  Comments can be
+powered by Disqus so you don't need to bust the cache every time someone
+comments. If you make a change to a post, it's page and any pages that display
+it (home, category, etc) should be updated automatically anyway; <a href="https://github.com/pkhamre/wp-varnish">wp-
+varnish</a> is the best plugin for that
+btw.</p>
+
+<p>Now, the sidebar. That's where it can get tricky.  On a lot of the
+content sites I work on, we can cache most pages for days, the backend doesn't
+need to keep generating them, the content just lives in varnish. Except for
+the sidebar.  This could have things like "Popular Posts" or "New Posts".
+Things that are going to change outside of the context of the post you are
+currently looking at.</p>
+
+<p>This is where <a href="http://en.wikipedia.org/wiki/Edge_Side_Includes">Edge Side
+Includes</a> (ESI) comes in.
+For a while, <a href="http://www.akamai.com/html/support/esi.html">Akamai</a> was the only way to get this behavior, and they are quite expensive. Don't get me
+wrong, they are amazing, but you have to be getting serious traffic to need them. <a href="https://www.varnish-cache.org/">Varnish</a> is one of the best caching
+solutions you can use, especially for Wordpress. If you are unsure where to start with Varnish and wordpress, <a href="http://www.ewanleith.com/blog/900/10-million-hits-a-day-with-wordpress-using-a-15-server">this
+article</a> is a great starting point. I'v also bookmarked some other articles <a href="https://pinboard.in/u:broderboy/t:varnish/t:wordpress">here</a>.</p>
+
+<p>ESI was
+introduced in 2.1, and really fleshed out in 3.0 and can be thought of as
+fragment caching for Varnish. It's really easy to fix the example I gave
+above: we want to be able to cache most of the content for 24 hours but
+refresh just the sidebar every 10 mins.  Varnish will do this processing for
+us, keeping the rest of the page cached, and splicing in the sidebar (and
+having your webserver process just the sidebar) when it needs to. Most of what
+I'm going to do below is in the ESI [documentation](https://www.varnish-
+cache.org/docs/3.0/tutorial/esi.html).</p>
+
+<p>We're going to assume that our theme
+has a dynamic sidebar called "Sidebar" and that there are cases where we want
+ESI to be active (production) and some where wordpress should just behave
+normally (dev).  This is what we have before we start thinking about Varnish:</p>
+
+<pre><code data-language="PHP">&lt;div class=&amp;quot;five columns&amp;quot;&gt;
+&lt;?php
+    if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar(&amp;quot;Sidebar&amp;quot;) ) :
+    endif;
+?&gt;
+&lt;/div&gt;
+</code></pre>
+
+<p>The two varnish tags we are going to use are an esi comment, and an esi:remove tag. These are the switch that will process the page properly whether you have ESI or not. esi:remove will ignore everything between them if ESI is enabled. This is where we put our “normal processing” code. If ESI is not active, this code will run as normal. Inside the esi comment we put the code that we want to run if ESI is enabled. If it is not, the code will be ignored.</p>
+
+<pre><code data-language="PHP">&lt;div class=&amp;quot;five columns&amp;quot;&gt;
+    &lt;esi:remove&gt;
+        &lt;?php
+        if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar(&amp;quot;Sidebar&amp;quot;) ) :
+        endif;
+        ?&gt;
+    &lt;/esi:remove&gt;
+    &lt;!--esi
+        &lt;esi:include src=&amp;quot;/wp-content/plugins/myplugin/esihandler.php&amp;quot;/&gt;
+    --&gt;
+&lt;/div&gt;
+</code></pre>
+
+<p>Now our sidebar display is ESI ready, but we need to give Varnish an endpoint to hit so it can generate the fragment of the sidebar. So lets create esihandler.php:</p>
+
+<pre><code data-language="PHP">&lt;?php
+
+$cwd = getcwd();
+$path = substr($cwd, 0, strpos($cwd, 'wp-content/'));
+require $path . 'wp-blog-header.php';
+
+if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar(&amp;quot;Sidebar&amp;quot;) ) :
+endif;
+</code></pre>
+
+<p>Lastly, we’ll have to tell Varnish to cache for different timeframes. A full Varnish config is out of the scope of this post, see the links above for more info. What we need is in the sub vcl_fetch call. Add this at the top:</p>
+
+<pre><code data-language="c">if (req.url ~ &amp;quot;esihandler.php&amp;quot;) {
+    set beresp.ttl = 10m;
+}
+else {
+    set beresp.do_esi = true;
+    set beresp.ttl = 1440m;
+}
+</code></pre>
+
+<p>And you should be all set. When developing you can use smaller timeframes (10 seconds, and 1min). Drop some logging in to see it in action.</p>
+
+<p>Let me know of any questions in the comments</p>
+</section>
+
+
+    </article>
+    <article class="post" role="article">
+        
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2012/09/generating-an-inlineadmin-form-on-the-fly-in-django.html">Generating an InlineModelAdmin Form on the fly in Django</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2012-09-11T19:17:52+00:00" pubdate>
+                      <span class='month'>Sep</span> <span class='day'>11th</span> <span class='year'>2012</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                            <span class="poop2">
+                        <a href="https://www.timbroder.com/blog/tags/django">#django</a>
+                            </span>
+                <span><a href="/2012/09/generating-an-inlineadmin-form-on-the-fly-in-django.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2012/09/generating-an-inlineadmin-form-on-the-fly-in-django.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="840145019"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>I'm adding drag/drop uploading to the django admin for one of our open source
+projects called <a href="https://github.com/aiaio/ai-stager">Stager</a>. A blog post
+about that will follow, it's not screen-shot ready yet.  While doing this I
+knew we needed a pretty seamless transition after the upload finished, and
+that we would have to refresh the inline.  I didn't want a full page refresh,
+so let's ajax it in.</p>
+
+<p>For these examples just assume that we have a parent CompAdmin which has an model of Comp and an inline called CompSlideInline.  We store the instance of the Comp in comp.</p>
+
+<pre><code data-language="python">from django.template import loader, Context
+from django.contrib.admin import helpers
+from django.db import transaction
+from django.contrib import admin
+
+comp = Comp.objects.get(id=comp_id)
+#get the current site
+admin_site = admin.site
+compAdmin = CompAdmin(Comp, admin_site)
+
+#get all possible inlines for the parent Admin
+inline_instances = compAdmin.get_inline_instances(request)
+prefixes = {}
+
+for FormSet, inline in zip(compAdmin.get_formsets(request, comp), inline_instances):
+    #get the inline of interest and generate it's formset
+    if isinstance(inline, CompSlideInline):
+        prefix = FormSet.get_default_prefix()
+        prefixes[prefix] = prefixes.get(prefix, 0) + 1
+        if prefixes[prefix] != 1 or not prefix:
+            prefix = &amp;quot;%s-%s&amp;quot; % (prefix, prefixes[prefix])
+        formset = FormSet(instance=comp, prefix=prefix, queryset=inline.queryset(request))
+
+#get possible fieldsets, readonly, and prepopulated information for the parent Admin
+fieldsets = list(inline.get_fieldsets(request, comp))
+readonly = list(inline.get_readonly_fields(request, comp))
+prepopulated = dict(inline.get_prepopulated_fields(request, comp))
+
+#generate the inline formset
+inline_admin_formset = helpers.InlineAdminFormSet(inline, formset,
+            fieldsets, prepopulated, readonly, model_admin=compAdmin)
+
+#render the template
+t = loader.get_template('tabular.html')
+c = Context({ 'inline_admin_formset': inline_admin_formset })
+rendered = t.render(c)
+</code></pre>
+</section>
+
+
+    </article>
+    <article class="post" role="article">
+        
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2012/09/ios-multiple-lines-of-text-in-a-uitableviewcell.html">iOS: Multiple Lines of Text in a UITableViewCell</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2012-09-10T23:32:42+00:00" pubdate>
+                      <span class='month'>Sep</span> <span class='day'>10th</span> <span class='year'>2012</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                            <span class="poop2">
+                        <a href="https://www.timbroder.com/blog/tags/ios">#ios</a>
+                            </span>
+                <span><a href="/2012/09/ios-multiple-lines-of-text-in-a-uitableviewcell.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2012/09/ios-multiple-lines-of-text-in-a-uitableviewcell.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="839042026"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>Have you ever wanted to display multiple lines of text in your Table Cell?
+It's easy to do in your UITableViewController.</p>
+
+<p><img src="/images/2012/09/2012-09-10_1921.png" alt="" /></p>
+
+<p>First, let's define the type of font we're going to use. We'll need this in 2 places:</p>
+
+<pre><code data-language="c">*)fontForCell { return [UIFont boldSystemFontOfSize:18.0]; } [/c] 
+</code></pre>
+
+<p>Next, calculate the height of the cell by using the height of a Label:</p>
+
+<pre><code data-language="c">- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSString *cellText = /* get your text */;
+    UIFont *cellFont = [self fontForCell];
+    CGSize constraintSize = CGSizeMake(280.0f, MAXFLOAT);
+    CGSize labelSize = [cellText sizeWithFont:cellFont constrainedToSize:constraintSize lineBreakMode:UILineBreakModeWordWrap];
+
+    return labelSize.height + 20;
+}
+</code></pre>
+
+<p>Finally, we'll set some attributes on the cell itself to change the height and
+tell the text to wrap:</p>
+
+<pre><code data-language="c">- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *CellIdentifier = @&amp;quot;MyIdentifier&amp;quot;;
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        cell.textLabel.lineBreakMode = UILineBreakModeWordWrap;
+        cell.textLabel.numberOfLines = 0;
+        cell.textLabel.font = [self fontForCell];
+    }
+    [cell.textLabel setText:/* get your text */;];
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    return cell;
+}
+</code></pre>
+</section>
+
+
+    </article>
+    <article class="post" role="article">
+        
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2012/09/how-to-tell-if-its-html5.html">How to tell if it&#039;s HTML5</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2012-09-06T14:44:32+00:00" pubdate>
+                      <span class='month'>Sep</span> <span class='day'>6th</span> <span class='year'>2012</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                        <span><a href="/2012/09/how-to-tell-if-its-html5.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2012/09/how-to-tell-if-its-html5.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="833324542"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p><img src="/images/2012/09/jxBZG.jpg" alt="" /></p>
+</section>
+
+
+    </article>
+    <article class="post" role="article">
+        
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2012/09/the-top-10-best-wordpress-plugins-to-get-up-and-running.html">The top 10 best Wordpress plugins to get up and running with everything you need.</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2012-09-03T00:39:24+00:00" pubdate>
+                      <span class='month'>Sep</span> <span class='day'>3rd</span> <span class='year'>2012</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                            <span class="poop2">
+                        <a href="https://www.timbroder.com/blog/tags/analytics">#analytics</a>
+                        <a href="https://www.timbroder.com/blog/tags/seo">#seo</a>
+                        <a href="https://www.timbroder.com/blog/tags/wordpress">#wordpress</a>
+                            </span>
+                <span><a href="/2012/09/the-top-10-best-wordpress-plugins-to-get-up-and-running.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2012/09/the-top-10-best-wordpress-plugins-to-get-up-and-running.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="828465510"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>These are the top 10 best wordpress plugins I use to quickly get a wordpress
+blog up and running with everything I need.  I used these last week to get a
+new site going in about 2 hours.  Leave some time for analytics to catch up
+and you are all set.</p>
+
+<ul>
+<li><a href="http://ronaldheft.com/code/analyticator/">Google Analyticator</a> harnesses the power of Google Analytics for your blog. See where traffic is coming from, where its going, as well as basic hit tracking. The plugin also comes with an easily customizable widget that can be used to display specific information that is gathered by Google Analytics using the Google Analytics API. It supports all of the tracking mechanisms that Google Analytics supports such as external link tracking, download tracking, tracking without counting administrative users, and any other advanced tracking the user wishes to add. Google Analyticator works with a majority of themes as long as these themes provide the proper plugin hooks.Features: 
+
+<ul>
+<li>Supports standard Google Analytics tracking via the latest async tracking methods (faster and more reliable than the older ga.js tracking method)</li>
+<li>Includes an admin dashboard widget that displays a graph of the last 30 days of visitors, a summary of site usage, the top pages, the top referrers, and the top searches</li>
+<li>Provides a widget that can be used to display visitor stat information on the front-end</li>
+<li>Supports external link tracking of all links on the page, including links not managed by WordPress</li>
+<li>Supports download link tracking</li>
+<li>Supports event tracking with outbound links / downloads instead of the old pageview tracking method</li>
+<li>Supports site speed tracking</li>
+<li>Supports hiding Administrator visits without affecting Google Analytics’ site overlay feature</li>
+<li>Supports any advanced tracking code Google provides</li>
+<li>Installs easily, only requiring the user know their UID</li>
+<li>Provides complete control over options; disable any feature if needed</li>
+<li>Supports localization – get the settings page in your language of choice</li>
+</ul></li>
+<li> <a href="http://flagrantdisregard.com/feedburner/">FD Feedburner Plugin for WordPress</a> lets you track subscribers to your feed by redirecting the main feed and optionally the comments feed to Feedburner.com. It does this seamlessly without the need to modify templates, setup new hidden feeds, modify .htaccess files, or asking users to migrate to a new feed. All existing feeds simply become Feedburner feeds seamlessly and transparently for all users. Just tell the plugin what your Feedburner feed URL is and you’re done.</li>
+<li><a href="http://plugins.josepardilla.com/fancybox-for-wordpress/">FancyBox for WordPress</a> will automatically show all images in a fancy popup window when clicked. Handy for resized images where you don't want your users stuck on just the image file when they click on it.</li>
+<li><a href="http://www.thulasidas.com/plugins/easy-adsense">Easy AdSense</a> manages all aspects of Google AdSense for a blog: insert ads into posts and sidebar, and add a Google Search box.Features: 
+
+<ul>
+<li>Remembers AdSense code and your options by theme, so that you don’t have to re-enter them if you play with multiple themes. [This feature provides a solution to Google's unwillingness to let you modify and customize the AdSense code -- you just store all the code variants in your blog database.]</li>
+<li>Enforces the Google policy of not more than three ad blocks per page.</li>
+<li>Sidebar Widgets: 
+
+<ul>
+<li>For AdSense for content with custom title.</li>
+<li>For search with customizable text or image title.</li>
+<li>For Link Units.</li>
+</ul></li>
+<li>Rich set of Options: 
+
+<ul>
+<li>To put Link Units or Ad Blocks in header or footer.</li>
+<li>To suppress ads on all pages (as opposed to posts), or on the front/home page.</li>
+<li>To add a customizable mouse-over border decoration on ad blocks.</li>
+</ul></li>
+<li>Control over the positioning and display of AdSense blocks in each post or page.</li>
+<li>Simplest possible configuration interface — nothing more than cutting and pasting AdSense code, and with sensible defaults for the few options present, all with clear instructions.</li>
+<li>Internationalized (multiple languages supported).</li>
+</ul></li>
+<li> <a href="http://yoast.com/wordpress/seo/">WordPress SEO by Yoast</a> is the most complete WordPress SEO plugin that exists today for WordPress.org users. It incorporates everything from a snippet preview and page analysis functionality that helps you optimize your pages content, images titles, meta descriptions and more to XML sitemaps, and loads of optimization options in between.  I use it to help generate a complete Google sitemap and tweak how my sites show up in Google.Features: 
+
+<ul>
+<li>Post titles and meta descriptions</li>
+<li>Robots Meta configuration</li>
+<li>Canonical</li>
+<li>Breadcrumbs</li>
+<li>Permalink clean up</li>
+<li>XML Sitemaps</li>
+<li>RSS enhancements</li>
+<li>Edit your robots.txt and .htaccess</li>
+<li>Clean up head section</li>
+</ul></li>
+<li><p> <a href="http://www.w3-edge.com/wordpress-plugins/w3-total-cache/">w3-total-cache</a>is THE performance plugin for wordpress.  It's the fastest and most complete WordPress performance optimization plugin. W3 Total Cache improves the user experience of your blog by improving your server performance, caching every aspect of your site, reducing the download time of your theme and providing transparent content delivery network (CDN) integration.  I use it heavily for it's memcached integration, front-end compression, and CDN integration.Benefits:</p>
+
+<ul>
+<li>At least 10x improvement in site performance (when fully configured: Grade A in YSlow or great Google Page Speed Improvements)</li>
+<li>“Instant” second page views (browser caching after first page view)</li>
+<li>Reduced page load time: increased visitor time on site (visitors view more pages)</li>
+<li>Optimized progressive render (pages appear to load instantly)</li>
+<li>Improved web server performance (easily sustain high traffic spikes)</li>
+<li><p>Up to 80% Bandwidth savings via Minify and HTTP compression of HTML, CSS, JavaScript and RSS feeds
+Features:</p></li>
+<li><p>Compatible with shared hosting, virtual private servers and dedicated servers / clusters</p></li>
+<li>Transparent content delivery network (CDN) integration with Media Library, theme files and WordPress itself</li>
+<li>Caching of (minified and compressed) pages and posts in memory or on disk</li>
+<li>Caching of (minified and compressed) CSS and JavaScript in memory, on disk or on CDN</li>
+<li>Caching of RSS (comments, page and site) feeds in memory or on disk</li>
+<li>Caching of search results pages (i.e. URIs with query string variables) in memory or on disk</li>
+<li>Caching of database objects in memory</li>
+<li>Minification of posts and pages and RSS feeds</li>
+<li>Minification (combine and remove comments / white space) of inline, embedded or 3rd party JavaScript (with automated updates)</li>
+<li>Minification (combine and remove comments / white space) of inline, embedded or 3rd party CSS (with automated updates)</li>
+<li>Browser caching of CSS, JavaScript and HTML using future expire headers and entity tags (ETag)</li>
+<li>JavaScript grouping by template (home page, post page etc) with embed location management</li>
+<li>Non-blocking JavaScript embedding</li>
+<li>Import post attachments directly into the Media Library (and CDN)</li>
+</ul></li>
+<li>Since most of my infrastructure is already on Amazon I use the <a href="http://wordpress.org/extend/plugins/amazon-ses-and-dkim-mailer/">Amazon SES DKIM Mailer</a> plugin to use <a href="http://aws.amazon.com/ses/">SES</a> as my mail provider.  It's a quick, easy way to get guaranteed delivery.</li>
+<li><a href="http://contactform7.com/">Contact Form 7</a> is the best contact form out there.  It allows you to flexibly design the form and mail. You can manage multiple contact forms as well.  In addition, it supports many features including AJAX submitting, CAPTCHA, Akismet spam filtering, file uploading, etc.</li>
+<li><a href="http://dialect.ca/code/wp-smushit/">WP Smush.it</a>  taps into the API behind Yahoo’s excellent Exceptional Performance series recommends optimizing images in several lossless ways: stripping meta data from JPEGs, optimizing JPEG compression, converting certain GIFs to indexed PNGs and stripping the un-used colours from indexed images.</li>
+<li>This last one isn't required for all setups, but if like me you have varnish sitting in front of your app servers, <a href="https://github.com/pkhamre/wp-varnish">wp-varnish</a> is a must have. It automatically clears your varnish caches as needed.</li>
+</ul>
+</section>
+
+
+    </article>
+    <article class="post" role="article">
+        
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2012/08/get-18-gigs-on-a-free-dropbox-account-for-10-20.html">Get 18+ Gigs on a Free Dropbox account for $10-$20</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2012-08-29T14:03:28+00:00" pubdate>
+                      <span class='month'>Aug</span> <span class='day'>29th</span> <span class='year'>2012</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                            <span class="poop2">
+                        <a href="https://www.timbroder.com/blog/tags/adwords">#adwords</a>
+                        <a href="https://www.timbroder.com/blog/tags/dropbox">#dropbox</a>
+                            </span>
+                <span><a href="/2012/08/get-18-gigs-on-a-free-dropbox-account-for-10-20.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2012/08/get-18-gigs-on-a-free-dropbox-account-for-10-20.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="823016953"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>Dropbox recently raised the cap on it's free tier to 18 gigs. But, you only
+get 2 gigs out of the gate. The rest is easy to get, but takes a little leg
+work. [![](http://timbroder.com/wp-
+content/uploads/2012/08/dropbox01.png)](http://timbroder.com/wp-
+content/uploads/2012/08/dropbox01.png) First, log into Dropbox and click on
+"Get free space!" at the top right. Then, do all the Facebook/twitter/social
+offers to get free space.</p>
+
+<p>Really bumping up your space involves Google
+<a href="https://adwords.google.com">Adwords</a>.  You can max out your space by putting
+your referral link on Dropbox ads that will show up in Google. How much this
+will end up costing you can vary. One of my coworkers spent $7, another $11,
+and I spent $19. If you set it up like I show below, you don't even have to
+think about it.</p>
+
+<p>Log into AdWords, create a new campaign and copy the below settings: (Click to
+zoom in)</p>
+
+<p><a href="/images/2012/08/dropbox1.png"><img src="/images/2012/08/dropbox1.png" alt="" /></a>
+<a href="/images/2012/08/dropbox2.png"><img src="/images/2012/08/dropbox2.png" alt="" /></a>
+<a href="/images/2012/08/dropbox3.png"><img src="/images/2012/08/dropbox3.png" alt="" /></a>
+<a href="/images/2012/08/dropbox4.png"><img src="/images/2012/08/dropbox4.png" alt="" /></a>
+<a href="/images/2012/08/dropbox5.png"><img src="/images/2012/08/dropbox5.png" alt="" /></a></p>
+
+<p>After this the campaign should be approved and you are all set. Keep an eye on
+it at the end of every day and see if you want to continue it to keep getting
+more space</p>
+
+<p>Get free space!</p>
+</section>
+
+
+    </article>
+    <nav class="pagination" role="navigation">
+                <a class="next" href="https://www.timbroder.com/page/24">&larr; Older</a>
+        
+                <a class="prev" href="https://www.timbroder.com/page/22">Newer &rarr;</a>
+            </nav>
+
+    </main>
+
+
+                        <footer class="site-footer clearfix">
+    <section>
+            <span class="tag size2"><a href="/blog/tags/"></a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/AVSpeechSynthesizer">AVSpeechSynthesizer</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Ai">Ai</a></span>
+            &nbsp;
+        <span class="tag size8"><a href="/blog/tags/Android">Android</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Atom">Atom</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Avengers">Avengers</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Batman">Batman</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Batman%20Inc.">Batman Inc.</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Batman%20and%20Robin">Batman and Robin</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/CKEditor">CKEditor</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/Calibre">Calibre</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Cheese">Cheese</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/ComicCon">ComicCon</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/CoreData">CoreData</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/DRM">DRM</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/Docs%20Spreadsheets">Docs Spreadsheets</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/ESI">ESI</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Fontis">Fontis</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/GME">GME</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/GTD">GTD</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/GWT">GWT</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Garlic">Garlic</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/Google">Google</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/Google%20Reader">Google Reader</a></span>
+            &nbsp;
+        <span class="tag size9"><a href="/blog/tags/HOWTO">HOWTO</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Hulu">Hulu</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Internet%20Explorer">Internet Explorer</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/JIRA">JIRA</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/Kindle">Kindle</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/Mashups">Mashups</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Memcached">Memcached</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/OmniFocus">OmniFocus</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Oracle">Oracle</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/PHPUnit">PHPUnit</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/PostgreSQL">PostgreSQL</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/RSS">RSS</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Redmine">Redmine</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Remember%20the%20Milk">Remember the Milk</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Ruby">Ruby</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/SQL">SQL</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Shared%20web%20hosting%20service">Shared web hosting service</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Siri">Siri</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Skype">Skype</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Sony%20Reader">Sony Reader</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Stan%20Lee">Stan Lee</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/TDD">TDD</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Terminator">Terminator</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/TinyMCE">TinyMCE</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Vibrams">Vibrams</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Virtual%20hosting">Virtual hosting</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Virtual%20private%20server">Virtual private server</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Walking%20Dead">Walking Dead</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Web%20hosting">Web hosting</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/YUI">YUI</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Zend">Zend</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/adwhirl">adwhirl</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/adwords">adwords</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/aiaio">aiaio</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/ajax">ajax</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/alfred">alfred</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/analytics">analytics</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/angularjs">angularjs</a></span>
+            &nbsp;
+        <span class="tag size4"><a href="/blog/tags/appengine">appengine</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/apple">apple</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/applepay">applepay</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/apps">apps</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/autocomplete">autocomplete</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/automation">automation</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/beta">beta</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/bit.ly">bit.ly</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/blackberry">blackberry</a></span>
+            &nbsp;
+        <span class="tag size4"><a href="/blog/tags/blogger">blogger</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/bookmarks">bookmarks</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/brightkite">brightkite</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/calendar">calendar</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/chrome">chrome</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/coffee">coffee</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/css">css</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/debug">debug</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/digg">digg</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/django">django</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/drafts">drafts</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/dropbox">dropbox</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/encryption">encryption</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/engagement">engagement</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/events">events</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/facebook">facebook</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/firefox">firefox</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/friendfeed">friendfeed</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/gadgets">gadgets</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/gchat">gchat</a></span>
+            &nbsp;
+        <span class="tag size4"><a href="/blog/tags/gdata">gdata</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/gdrive">gdrive</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/gears">gears</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/git">git</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/github">github</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/gmail">gmail</a></span>
+            &nbsp;
+        <span class="tag size5"><a href="/blog/tags/gpowered.net">gpowered.net</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/greasemonkey">greasemonkey</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/groups">groups</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/homebrew">homebrew</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/instapaper">instapaper</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/interfacebuilder">interfacebuilder</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/ios">ios</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/ipad">ipad</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/iphone">iphone</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/javascript">javascript</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/jira">jira</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/jquery">jquery</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/json">json</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/kids">kids</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/laravel">laravel</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/launch%20center%20pro">launch center pro</a></span>
+            &nbsp;
+        <span class="tag size5"><a href="/blog/tags/magento">magento</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/maps">maps</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/mercurial">mercurial</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/mock">mock</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/mongodb">mongodb</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/music">music</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/mysql">mysql</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/netbook">netbook</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/nosql">nosql</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/objective%20c">objective c</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/oil">oil</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/omnifocus">omnifocus</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/opensocial">opensocial</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/opensource">opensource</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/os">os</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/osx">osx</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/pesto">pesto</a></span>
+            &nbsp;
+        <span class="tag size7"><a href="/blog/tags/php">php</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/picasa%20web">picasa web</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/podcasts">podcasts</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/powershell">powershell</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/primal">primal</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/productivity">productivity</a></span>
+            &nbsp;
+        <span class="tag size6"><a href="/blog/tags/python">python</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/pythonista">pythonista</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/quick">quick</a></span>
+            &nbsp;
+        <span class="tag size4"><a href="/blog/tags/reader">reader</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/realm">realm</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/regex">regex</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/running">running</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/search">search</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/security">security</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/seo">seo</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/sketch">sketch</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/skynet">skynet</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/sleep">sleep</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/socialgraph">socialgraph</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/solr">solr</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/startup">startup</a></span>
+            &nbsp;
+        <span class="tag size4"><a href="/blog/tags/swift">swift</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/testing">testing</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/textmate">textmate</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/timbroder.com">timbroder.com</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/todoist">todoist</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/twitter">twitter</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/twitter2gTalk">twitter2gTalk</a></span>
+            &nbsp;
+        <span class="tag size6"><a href="/blog/tags/ubuntu">ubuntu</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/urls">urls</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/vagrant">vagrant</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/varnish">varnish</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/virtualenv">virtualenv</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/winamp">winamp</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/windows">windows</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/wordpress">wordpress</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/xbox">xbox</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/xcode">xcode</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/xml">xml</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/yahoo%20pipes">yahoo pipes</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/youtube">youtube</a></span>
+            &nbsp;
+    
+    </section>
+    <section class="copyright">
+        Copyright &copy; 2007-2018 -
+         Tim Broder -         <span class="credit">Powered by <a href="http://sculpin.io">Sculpin</a></span>
+    </section>
+</footer>
+                <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="https://www.timbroder.com/themes/broderboy/deadfish/assets/js/index.js"></script>
+<script type="text/javascript" src="https://www.timbroder.com/themes/broderboy/deadfish/assets/js/rainbow.min.js"></script>
+<script type="text/javascript" src="https://www.timbroder.com/themes/broderboy/deadfish/assets/js/rlns.min.js"></script>
+
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'timbrodercom'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-17099661-1', 'auto');
+    ga('send', 'pageview');
+
+</script>    </div>
+</body>
+</html>

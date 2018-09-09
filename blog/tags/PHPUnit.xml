@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[timbroder.com]]></title>
+    <link href="https://www.timbroder.com/blog/tags/PHPUnit.xml" rel="self"/>
+    <link href="https://www.timbroder.com/"/>
+    <updated>2018-09-09T12:21:33+00:00</updated>
+    <id>https://www.timbroder.com/</id>
+            <author>
+            <name><![CDATA[Tim Broder]]></name>            <email><![CDATA[timothy.broder@gmail.com]]></email>        </author>
+        <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[Setup and Teardown the Database Once Per Test Suite in PHPUnit]]></title>
+            <link href="https://www.timbroder.com/2016/05/Setup-and-Teardown-the-Database-Once-Per-Test-Suite-with-PHPUnit-Listeners.html"/>
+            <updated>2016-05-04T16:15:00+00:00</updated>
+            <id>https://www.timbroder.com/2016/05/Setup-and-Teardown-the-Database-Once-Per-Test-Suite-with-PHPUnit-Listeners.html</id>
+            <content type="html"><![CDATA[<p>I'm working on a series of integration tests where I want to set up and reset the database for each run. This could easily be done in the setUp and tearDown methods, but doing the full db each time is slow. Yes, I could just do the tables I need, but I was curious, and now I don't have to worry about which tables are setup in my testing DB. In this example, I'm using Laravel's migrations and SQLite as the test DB.</p>
+
+<p><strong>UPDATE 05/05/2016</strong>: As Sebastian <a href="http://www.timbroder.com/2016/05/Setup-and-Teardown-the-Database-Once-Per-Test-Suite-with-PHPUnit-Listeners.html#comment-2659950789" title="point out below">points out below</a> (thanks!) there is a much more appropriate way. Using <code>setUpBeforeClass</code> and <code>tearDownAfterClass</code> we achieve the same effect</p>
+
+<pre><code data-language="php">public static function setUpBeforeClass()
+{
+    parent::setUpBeforeClass();
+    exec('php artisan migrate --database sqlite_test');
+}
+
+public static function tearDownAfterClass()
+{
+    exec('php artisan migrate:reset --database sqlite_test');
+    parent::tearDownAfterClass(); 
+}
+</code></pre>
+
+<p><del>PHPUnit has <a href="https://phpunit.de/manual/current/en/extending-phpunit.html#extending-phpunit.examples.SimpleTestListener.php" title="listeners">listeners</a> that you can tap into at various parts of your tests' lifecycle. I'm particularly interested in when a specific suite starts and ends. We'll need to do 2 things:</del></p>
+
+<ol>
+<li><del>Create our Listener</del></li>
+<li><del>Register this Listener in phpunit.xml</del></li>
+</ol>
+
+<p>The listener is as follows:</p>
+
+<pre><code data-language="php">class FullDBListener extends PHPUnit_Framework_BaseTestListener
+{
+    protected $suites = ['UserIntegrationTest', 'AccountIntegrationTest'];
+
+    public function startTestSuite(PHPUnit_Framework_TestSuite $suite)
+    {
+        if (in_array($suite-&gt;getName(), $this-&gt;suites)) {
+            exec('php artisan migrate --database sqlite_test');
+        }
+    }
+
+    public function endTestSuite(PHPUnit_Framework_TestSuite $suite)
+    {
+        if (in_array($suite-&gt;getName(), $this-&gt;suites)) {
+            exec('php artisan migrate:reset --database sqlite_test');
+        }
+    }
+}
+</code></pre>
+
+<p>This does a few things:</p>
+
+<ol>
+<li><del>Stores the class names of each suite we want to run the db migrations for</del></li>
+<li><del>In <code>startTestSuite</code> it checks to see if we're in the right suite</del></li>
+<li><del>If we are, run an artisan migration on our test db</del></li>
+<li><del>In <code>endTestSuite</code> it checks to see if we're in the right suite</del></li>
+<li><del>If we are, run an artisan migration:reset on our test db</del></li>
+</ol>
+
+<p><del>Next, we need to make PHPUnit aware of this listener. Update your path accordingly</del></p>
+
+<pre><code data-language="xml">&lt;listeners&gt;
+    &lt;listener class="FullDBListener" file="./tests/app/FullDBListener.php"&gt;&lt;/listener&gt;
+&lt;/listeners&gt;
+</code></pre>
+
+<p>That's it!</p>
+
+<p>I do do some basic teardown in my test suite's <code>setUp</code> method to give me a blank slate. This has proven faster then doing the migrations each time</p>
+
+<pre><code data-language="php">public function setUp()
+{
+    parent::setUp();
+
+    User::truncate();
+}
+</code></pre>
+
+<p>I hope this helped you, if you have any questions, let me know!</p>
+]]></content>
+        </entry>
+    </feed>

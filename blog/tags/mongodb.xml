@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[timbroder.com]]></title>
+    <link href="https://www.timbroder.com/blog/tags/mongodb.xml" rel="self"/>
+    <link href="https://www.timbroder.com/"/>
+    <updated>2018-09-09T12:21:33+00:00</updated>
+    <id>https://www.timbroder.com/</id>
+            <author>
+            <name><![CDATA[Tim Broder]]></name>            <email><![CDATA[timothy.broder@gmail.com]]></email>        </author>
+        <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[Running Mongodb as a service on windows]]></title>
+            <link href="https://www.timbroder.com/2011/02/running-mongodb-as-a-service-on-windows.html"/>
+            <updated>2011-02-23T20:55:22+00:00</updated>
+            <id>https://www.timbroder.com/2011/02/running-mongodb-as-a-service-on-windows.html</id>
+            <content type="html"><![CDATA[<pre><code>&gt; c:\mongodb\mongod.exe --logpath "c:\mongodb\logs\mongo.log" --logappend --dbpath "c:\mongodb\dat
+a" --directoryperdb --install
+all output going to: c:\mongodb\logs\mongo.log
+Creating service MongoDB.
+Service creation successful.
+Service can be started from the command line via 'net start "MongoDB"'.
+
+&gt; net start MongoDB
+The Mongo DB service was started successfully.
+&gt;
+
+&gt; mongo
+MongoDB shell version: 1.6.5
+connecting to: test
+&gt;
+</code></pre>
+]]></content>
+        </entry>
+    </feed>

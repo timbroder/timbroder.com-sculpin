@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[timbroder.com]]></title>
+    <link href="https://www.timbroder.com/blog/tags/youtube.xml" rel="self"/>
+    <link href="https://www.timbroder.com/"/>
+    <updated>2018-09-09T12:21:33+00:00</updated>
+    <id>https://www.timbroder.com/</id>
+            <author>
+            <name><![CDATA[Tim Broder]]></name>            <email><![CDATA[timothy.broder@gmail.com]]></email>        </author>
+        <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[Fixing YouTube embeds in Wordpress]]></title>
+            <link href="https://www.timbroder.com/2013/05/fixing-youtube-embeds-in-wordpress.html"/>
+            <updated>2013-05-10T16:42:32+00:00</updated>
+            <id>https://www.timbroder.com/2013/05/fixing-youtube-embeds-in-wordpress.html</id>
+            <content type="html"><![CDATA[<p>In some wordpress themes, youtube embeds just show up as a black screen. As
+discussed <a href="http://wordpress.org/support/topic/dynamically-change-youtube-iframe-embeds-to-auto-add-transparent-mode?replies=8">here</a>, the solution is
+adding a transparency setting to the iframe's src.</p>
+
+<p>However, the solution in
+that thread only works if the src is right next to the frameborder. Updated
+code below if you are running into this problem</p>
+
+<pre><code data-language="PHP">function add_video_wmode_transparent( $html ) {
+    $pattern = '#(src=&amp;quot;https?://www.youtube(?:-nocookie)?.com/(?:v|embed)/([a-zA-Z0-9-]+).&amp;quot;)#';
+    preg_match_all( $pattern, $html, $matches );
+
+    if ( count( $matches ) &amp;gt; 0) {
+        foreach ( $matches[0] as $orig_src ) {
+            if ( !strstr($orig_src, 'wmode=transparent' ) &amp;amp;&amp;amp; !strstr( $orig_src, 'hd=1' ) ) {
+                $add = 'hd=1&amp;amp;wmode=transparent&amp;quot;';
+
+                if ( !strstr($orig_src, '?') ) {
+                    $add = '?' . $add;
+                }
+                $new_src = substr( $orig_src, 0, -1 ) . $add;
+                $html = str_replace( $orig_src, $new_src, $html );
+            }
+        }
+    }
+    return $html;
+}
+add_filter( 'the_content', 'add_video_wmode_transparent', 10 );
+</code></pre>
+
+<p>New thread in the wordpress forums can be found
+<a href="htp://wordpress.org/support/topic/dynamically-change-youtube-iframe-embeds-to-auto-add-transparent-mode-updated">here</a>. (The original was closed)</p>
+]]></content>
+        </entry>
+    </feed>

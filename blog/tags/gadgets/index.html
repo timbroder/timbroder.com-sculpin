@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>
+                        Tag Archive &mdash; timbroder.com
+            </title>
+    <meta name="description" content="Tag Archive" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="alternate" type="application/rss+xml" title="timbroder.com &raquo; Feed" href="https://feeds.feedburner.com/timbroder" />
+    
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />        <link href="https://www.timbroder.com/themes/broderboy/deadfish/assets/css/screen.css" rel="stylesheet" media="screen">
+    <link href="https://www.timbroder.com/themes/broderboy/deadfish/assets/css/tag_cloud.css" rel="stylesheet" media="screen">
+    <link href="https://www.timbroder.com/themes/broderboy/deadfish/assets/css/twilight.css" rel="stylesheet" media="screen">
+        <script>
+(function(a,b){function d(a,b){return a===null?b==="null":a===undefined?b==="undefined":a.is&&a instanceof f?b==="element":Object.prototype.toString.call(a).toLowerCase().indexOf(b)>7}function c(a){var b,e,f,g,h,i,l,m,n;if(a instanceof c)return a;d(a,"array")||(a=String(a).replace(/\s/g,"").toLowerCase().match(/(?:\+,|[^,])+/g));for(b=0,e=a.length;b<e;++b){d(a[b],"array")||(a[b]=String(a[b]).match(/(?:\+\/|[^\/])+/g)),i=[],f=a[b].length;while(f--){var l=a[b][f];h={jwertyCombo:String(l),shiftKey:!1,ctrlKey:!1,altKey:!1,metaKey:!1},d(l,"array")||(l=String(l).toLowerCase().match(/(?:(?:[^\+])+|\+\+|^\+$)/g)),g=l.length;while(g--)l[g]==="++"&&(l[g]="+"),l[g]in k.mods?h[j[k.mods[l[g]]]]=!0:l[g]in k.keys?h.keyCode=k.keys[l[g]]:m=l[g].match(/^\[([^-]+\-?[^-]*)-([^-]+\-?[^-]*)\]$/);if(d(h.keyCode,"undefined"))if(m&&m[1]in k.keys&&m[2]in k.keys){m[2]=k.keys[m[2]],m[1]=k.keys[m[1]];for(n=m[1];n<m[2];++n)i.push({altKey:h.altKey,shiftKey:h.shiftKey,metaKey:h.metaKey,ctrlKey:h.ctrlKey,keyCode:n,jwertyCombo:String(l)});h.keyCode=n}else h.keyCode=0;i.push(h)}this[b]=i}this.length=b;return this}var e=a.document,f=a.jQuery||a.Zepto||a.ender||e,g,h,i="keydown";f===e?(g=function(a,b){return a?f.querySelector(a,b||f):f},h=function(a,b){a.addEventListener(i,b,!1)},$f=function(a,b){var c=document.createEvent("Event"),d;c.initEvent(i,!0,!0);for(d in b)c[d]=b[d];return(a||f).dispatchEvent(c)}):(g=function(a,b,c){return f(a||e,b)},h=function(a,b){f(a).bind(i+".jwerty",b)},$f=function(a,b){f(a||e).trigger(f.Event(i,b))});var j={16:"shiftKey",17:"ctrlKey",18:"altKey",91:"metaKey"},k={mods:{".":16,shift:16,".":17,ctrl:17,".":18,alt:18,option:18,".":91,meta:91,cmd:91,"super":91,win:91},keys:{".":8,backspace:8,".":9,".":9,tab:9,".":13,"return":13,enter:13,".":13,pause:19,"pause-break":19,".":20,caps:20,"caps-lock":20,".":27,escape:27,esc:27,space:32,".":33,pgup:33,"page-up":33,".":34,pgdown:34,"page-down":34,".":35,end:35,".":36,home:36,ins:45,insert:45,del:45,"delete":45,".":37,left:37,"arrow-left":37,".":38,up:38,"arrow-up":38,".":39,right:39,"arrow-right":39,".":40,down:40,"arrow-down":40,"*":106,star:106,asterisk:106,multiply:106,"+":107,plus:107,"-":109,subtract:109,"=":187,equals:187,",":188,comma:188,".":190,period:190,"full-stop":190,"/":191,slash:191,"forward-slash":191,"`":192,tick:192,"back-quote":192,"[":219,"open-bracket":219,"\\":220,"back-slash":220,"]":221,"close-bracket":221,"'":222,quote:222,apostraphe:222}};l=95,n=0;while(++l<106)k.keys["num-"+n]=l,++n;l=47,n=0;while(++l<58)k.keys[n]=l,++n;l=111,n=1;while(++l<136)k.keys["f"+n]=l,++n;var l=64;while(++l<91)k.keys[String.fromCharCode(l).toLowerCase()]=l;var m=b.jwerty={event:function(a,b,e){if(d(b,"boolean")){var f=b;b=function(){return f}}a=new c(a);var g=0,h=a.length-1,i,j;return function(c){if(j=m.is(a,c,g)){if(g<h){++g;return}i=b.call(e||this,c,j),i===!1&&c.preventDefault(),g=0}else g=m.is(a,c)?1:0}},is:function(a,b,d){a=new c(a),d=d||0,a=a[d],b=b.originalEvent||b;var e,f=a.length,g=!1;while(f--){g=a[f].jwertyCombo;for(var h in a[f])h!=="jwertyCombo"&&b[h]!==a[f][h]&&(g=!1);if(g!==!1)return g}return g},key:function(b,c,e,f,i){var j=d(e,"element")||d(e,"string")?e:f,k=j===e?a:e,l=j===e?f:i;h(d(j,"element")?j:g(j,l),m.event(b,c,k))},fire:function(a,b,e,f){a=new c(a);var h=d(e,"number")?e:f;$f(d(b,"element")?b:g(b,e),a[h||0][0])},KEYS:k}})(this,typeof module!="undefined"&&module.exports?module.exports:this),jwerty.key("B,A",function(){_unicorns=document.createElement("SCRIPT"),_unicorns.type="text/javascript",_unicorns.src="http://snacksize.com/unicorn/unicorn.js?",document.getElementsByTagName("head")[0].appendChild(_unicorns)})
+</script>
+</head>
+<body class="nav-closed">
+                                        <div class="site-wrapper">
+                        <header class="main-header">
+        <div class="vertical">
+        <div class="main-header-content inner">
+            <h1 class="page-title">
+                <a href="/">
+                    timbroder.com
+                </a>
+            </h1>
+                        <h2 class="page-description">
+                <a href="/apps.html">Apps</a>
+                <a href="/projects.html">Projects</a>
+                <a href="/podcasts.html">Podcasts</a>
+                <a href="/talks.html">Talks</a>
+                            </h2>
+        </div>
+    </div>
+    </header>                            
+                    <main class="content" role="main">
+            <article class="post" role="article">
+    
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2008/06/google-io-session-videos-posted-with.html">Google I/O session videos posted with slides</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2008-06-16T19:11:00+00:00" pubdate>
+                      <span class='month'>Jun</span> <span class='day'>16th</span> <span class='year'>2008</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                            <span class="poop2">
+                        <a href="https://www.timbroder.com/blog/tags/Android">#Android</a>
+                        <a href="https://www.timbroder.com/blog/tags/appengine">#appengine</a>
+                        <a href="https://www.timbroder.com/blog/tags/blogger">#blogger</a>
+                        <a href="https://www.timbroder.com/blog/tags/bookmarks">#bookmarks</a>
+                        <a href="https://www.timbroder.com/blog/tags/calendar">#calendar</a>
+                        <a href="https://www.timbroder.com/blog/tags/Docs%20Spreadsheets">#Docs Spreadsheets</a>
+                        <a href="https://www.timbroder.com/blog/tags/gadgets">#gadgets</a>
+                        <a href="https://www.timbroder.com/blog/tags/gchat">#gchat</a>
+                        <a href="https://www.timbroder.com/blog/tags/gdata">#gdata</a>
+                        <a href="https://www.timbroder.com/blog/tags/gears">#gears</a>
+                        <a href="https://www.timbroder.com/blog/tags/GWT">#GWT</a>
+                        <a href="https://www.timbroder.com/blog/tags/maps">#maps</a>
+                        <a href="https://www.timbroder.com/blog/tags/Mashups">#Mashups</a>
+                        <a href="https://www.timbroder.com/blog/tags/picasa%20web">#picasa web</a>
+                        <a href="https://www.timbroder.com/blog/tags/reader">#reader</a>
+                            </span>
+                <span><a href="/2008/06/google-io-session-videos-posted-with.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2008/06/google-io-session-videos-posted-with.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-url="https://www.timbroder.com/2008/06/google-io-session-videos-posted-with.html"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>As I said <a href="http://blog.gpowered.net/2008/04/select-google-io-sessions-to-be-posted.html">earlier</a>, Quite a few presentations from Google I/O have
+been <a href="http://sites.google.com/site/io/">posted</a> for your viewing pleasure.
+I'll be glued to these this weekend while I'm on call.</p>
+
+<p>Topics include<br />
+Ajax<br />
+KML<br />
+Sketchup<br />
+Android<br />
+OpenSocial<br />
+Appengine<br />
+Data APIs<br />
+Theory Talks<br />
+Youtube<br />
+Gears<br />
+Mashups<br />
+Maps<br />
+and more!</p>
+</section>
+
+
+</article>
+<article class="post" role="article">
+    
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2007/11/october-speedlinking.html">October Speedlinking</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2007-11-05T23:17:00+00:00" pubdate>
+                      <span class='month'>Nov</span> <span class='day'>5th</span> <span class='year'>2007</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                            <span class="poop2">
+                        <a href="https://www.timbroder.com/blog/tags/blogger">#blogger</a>
+                        <a href="https://www.timbroder.com/blog/tags/calendar">#calendar</a>
+                        <a href="https://www.timbroder.com/blog/tags/Docs%20Spreadsheets">#Docs Spreadsheets</a>
+                        <a href="https://www.timbroder.com/blog/tags/gadgets">#gadgets</a>
+                        <a href="https://www.timbroder.com/blog/tags/gdata">#gdata</a>
+                        <a href="https://www.timbroder.com/blog/tags/gears">#gears</a>
+                        <a href="https://www.timbroder.com/blog/tags/GME">#GME</a>
+                        <a href="https://www.timbroder.com/blog/tags/Mashups">#Mashups</a>
+                        <a href="https://www.timbroder.com/blog/tags/picasa%20web">#picasa web</a>
+                            </span>
+                <span><a href="/2007/11/october-speedlinking.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2007/11/october-speedlinking.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="110582969"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>I haven't been able to post as often or as in depth as I'd like to have this
+past month. I chalk it up mostly to work, we all love 12 hour days right? But
+now that sign-off has passed and our last release of 2007 is calmly
+approaching (its on Friday), things have settled down a bit. Below are some
+great links from October, most of which I wanted to mention at some point and
+haven't gotten a chance to until now. Enjoy.</p>
+
+<ul>
+<li><p>The <a href="http://googlemashupeditor.blogspot.com/2007/09/authenticated-calendar-support-via-new.html">JavaScript Library</a> for Google Calendar was released. This allows for authenticated, cross domain access. Hopefully Picasa Web will follow suit.</p></li>
+<li><p><a href="http://googlewebtoolkit.blogspot.com/2007/09/gwt-application-development-for-iphone.html">GWT</a> goes to the iPhone</p></li>
+<li><p>The <a href="http://googledataapis.blogspot.com/2007/09/python-client-library-same-great-taste.html">Python Client Library</a> came out with version 1.0.8</p></li>
+<li><p>The <a href="http://gearsblog.blogspot.com/2007/09/digg-oracle-using-workerpool-as-well-as.html">Digg Oracle</a> demonstrates Gears' Worker Pool</p></li>
+<li><p>Google's <a href="http://googlified.com/2007google-stock-passes-600-mark/#comment-17313">Stock broke $600</a>. It is now well over $700</p></li>
+<li><p><a href="http://mashable.com/2007/10/08/orkut/">Orkut</a> ramps up for a US push</p></li>
+<li><p><a href="http://gearsblog.blogspot.com/2007/10/vortex-simple-new-offline-and-sync.html">Vortex</a> combines the know-how of Dojo and Gears</p></li>
+<li><p><a href="http://googlemapsapi.blogspot.com/2007/10/labeledmarker-v11-now-supporting-marker.html">LabeledMarker v1.1</a> in Google Maps comes out with Marker and Label toggling</p></li>
+<li><p>Google Reader comes out with <a href="http://googlesystem.blogspot.com/2007/10/find-number-of-google-subscribers-for.html">Subscriber stats</a>. Read about the controversy <a href="http://blog.gpowered.net/2007/10/google-reader-stats-out-of-wack.html">here</a>. Google responds <a href="http://googlereader.blogspot.com/2007/10/subscriber-stats-summed-up.html">here</a></p></li>
+<li><p><a href="http://googlesystem.blogspot.com/2007/10/google-maps-becomes-social.html">Google Maps Goes Social</a></p></li>
+<li><p>The <a href="http://googleajaxsearchapi.blogspot.com/2007/10/direct-access-to-youtube-channels.html">AJAX Search API</a> gives direct access to YouTube Channels</p></li>
+<li><p>Blogger GData JavaScript client library released with <a href="http://google-code-updates.blogspot.com/2007/10/blogger-gdata-javascript-client-library.html">offline Blogger client example</a></p></li>
+<li><p>Google Code Search <a href="http://google-code-updates.blogspot.com/2007/10/tell-us-about-code-on-your-site-with.html">goes to SiteMaps</a></p></li>
+<li><p>The Ajax API gets <a href="http://googleajaxsearchapi.blogspot.com/2007/10/ajax-feed-api-addition-dynamic-feed.html">Dynamic Feed Control</a></p></li>
+<li><p>You can now play <a href="http://google-latlong.blogspot.com/2007/10/now-playing-youtube-videos-in-google.html">Youtube videos in Google Earth</a></p></li>
+<li><p>Summer of code wrapped up with <a href="http://google-code-updates.blogspot.com/2007/10/wrapping-up-our-third-summer-of-code.html">Graduation</a></p></li>
+<li><p><a href="http://mashable.com/2007/10/24/google-finance-gadgets/">Google Finance adds new Gadgets and an API</a></p></li>
+<li><p>YouTubes player becomes <a href="http://googlesystem.blogspot.com/2007/10/customize-youtubes-player.html">Customizable</a></p></li>
+<li><p>A Greasemonkey script lets you have <a href="http://googlesystem.blogspot.com/2007/10/nested-folders-in-gmail.html">nested folders</a> in Gmail</p></li>
+<li><p>Blogger adds <a href="http://buzz.blogger.com/2007/10/subscribe-to-comments-by-email.html">Comment Notification</a></p></li>
+<li><p>Google <a href="http://www.entrepreneurs-journey.com/864/possible-explanations-for-the-pagerank-penalty-sweep/"> cracks down</a> on pages selling PageRank links</p></li>
+<li><p>Google contributes to <a href="http://mashable.com/2007/10/25/mysql-google/">MySQL</a></p></li>
+<li><p>Google Mac <a href="http://googlemac.blogspot.com/2007/10/google-desktop-update-for-leopard.html">updates Leopard</a></p></li>
+<li><p>Gmail <a href="http://gmailblog.blogspot.com/2007/10/sync-your-inbox-across-devices-with.html">enables IMAP</a></p></li>
+<li><p>Google Maps gets <a href="http://googlemapsapi.blogspot.com/2007/10/clickable-polys-old-school-image-maps.html">Clickable Polygons</a></p></li>
+<li><p>There is now a wizard for adding <a href="http://bloggerindraft.blogspot.com/2007/10/new-feature-gadgets-for-your-blog.html">Google Gadgets to your blog</a></p></li>
+<li><p>Webmaster central fixes the <a href="http://googlewebmastercentral.blogspot.com/2007/10/dealing-with-sitemap-cross-submissions.html">Cross Domain Sitemap errors</a></p></li>
+<li><p>Google maps <a href="http://feeds.feedburner.com/~r/OfficialGoogleMapsApiBlog/~3/174019883/make-your-kml-flash-y.html">adds Flash Content</a> into KLM</p></li>
+<li><p><a href="http://googlesystem.blogspot.com/2007/11/google-notebook-adds-labels-and.html">Google Notebook adds labels and bookmarks</a></p></li>
+<li><p>Blog Search is <a href="http://googlesystem.blogspot.com/2007/11/blog-search-included-in-google-history.html">now included</a> in Google History</p></li>
+<li><p>A cheap "<a href="http://googlesystem.blogspot.com/2007/11/tentative-google-pc.html">Google PC</a>" is on the market</p></li>
+<li><p>A new <a href="http://googlesystem.blogspot.com/2007/10/google-photo-picker.html">Photo Picker</a> for Gmail and Orkut pulls from Picasa</p></li>
+<li><p>GTalk may soon be able to <a href="http://googlesystem.blogspot.com/2007/10/google-to-connect-to-other-im-networks.html">connect to other networks</a> like AIM and Yahoo! Talk</p></li>
+<li><p>The <a href="http://googlesystem.blogspot.com/2007/10/gmails-new-version-is-now-available.html">new version</a> of Gmail comes out</p></li>
+<li><p>Google Code gets a <a href="http://googlified.com/2007new-google-code/">facelift</a></p></li>
+<li><p>Webmaster Tools gets <a href="http://googlified.com/2007set-geographic-target-in-webmaster-tools/">Geographic Targeting</a></p></li>
+<li><p>The Google Gadget Directory gets a <a href="http://blogoscoped.com/archive/2007-11-01-n78.html">facelift</a></p></li>
+<li><p>Microsoft is going to release the <a href="http://mashable.com/2007/11/04/microsoft-sync-framework/">Microsoft Sync Framework</a> to compete with Gears</p></li>
+<li><p>Picasa Web gets <a href="http://googlephotos.blogspot.com/2007/11/better-connections-with-picasa-web.html">opened</a>. (Flikr can transfer a picasa album to itself)</p></li>
+<li><p>Webmasters can now <a href="http://googlewebmastercentral.blogspot.com/2007/10/webmasters-can-now-provide-feedback-on.html">provide feedback</a> on sitelinks</p></li>
+<li><p><a href="http://gearsblog.blogspot.com/2007/10/bloggears-offline-blogger-client.html">Blog.gears</a> comes out</p></li>
+<li><p>Mapplets gets a documentation and example <a href="http://googlemapsapi.blogspot.com/2007/10/updated-documentation-examples-for.html">update</a></p></li>
+<li><p>New articles are posted for <a href="http://googlemapsapi.blogspot.com/2007/10/kml-articles-abound-its-about-time.html">KML</a></p></li>
+<li><p>The Ajax slideshow gets a full <a href="http://googleajaxsearchapi.blogspot.com/2007/10/slide-show-update-full-control-panel.html">Control Panel</a></p></li>
+<li><p><a href="http://googlemapsapi.blogspot.com/2007/10/map-of-dead-screen-overlayed-shoot-em_31.html">Map of the Dead!!</a> Google Maps overlay shooting game!</p></li>
+</ul>
+</section>
+
+
+</article>
+<article class="post" role="article">
+    
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2007/08/gadgets-now-on-google-calendar.html">Gadgets now on Google Calendar!</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2007-08-22T02:52:00+00:00" pubdate>
+                      <span class='month'>Aug</span> <span class='day'>22nd</span> <span class='year'>2007</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                            <span class="poop2">
+                        <a href="https://www.timbroder.com/blog/tags/calendar">#calendar</a>
+                        <a href="https://www.timbroder.com/blog/tags/gadgets">#gadgets</a>
+                            </span>
+                <span><a href="/2007/08/gadgets-now-on-google-calendar.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2007/08/gadgets-now-on-google-calendar.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="111198498"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>Google Gadgets can now be added to your calendar. Previously the only gadgets
+I had on my calendar were Google Doodles, Weather, phases of the moon, and
+PicasaWeb Photo of the day. Now just about anything is going to be possible. I
+briefly played around with it this morning and added horoscopes and Sudoku to
+my calendar.</p>
+
+<p><img src="http://lh5.google.com/timothy.broder/RsukR5E6BOI/AAAAAAAAKm4/QFkA3ZwVJ_M/s400/cal_gadgets.jpg?imgdl=1" alt="" /></p>
+
+<p>Other new gadgets include Movie Release dates and famous people's birthdays. I
+expect that very soon there will be video game releases as well.
+<a href="http://code.google.com/apis/calendar/calendar_gadgets.html">Documentation</a> is
+out for the gadgets, so get coding!</p>
+</section>
+
+
+</article>
+<article class="post" role="article">
+    
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2007/08/google-code-updates-google-developer.html">First Google Gadget</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2007-08-04T22:48:00+00:00" pubdate>
+                      <span class='month'>Aug</span> <span class='day'>4th</span> <span class='year'>2007</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                            <span class="poop2">
+                        <a href="https://www.timbroder.com/blog/tags/calendar">#calendar</a>
+                        <a href="https://www.timbroder.com/blog/tags/gadgets">#gadgets</a>
+                        <a href="https://www.timbroder.com/blog/tags/gdata">#gdata</a>
+                        <a href="https://www.timbroder.com/blog/tags/HOWTO">#HOWTO</a>
+                            </span>
+                <span><a href="/2007/08/google-code-updates-google-developer.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2007/08/google-code-updates-google-developer.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="121501700"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>After being inspired about Google Gadgets from the <a href="http://google-code-updates.blogspot.com/2007/07/google-developer-podcast-episode-five.html">Google Developer
+Podcast</a> I came up with one that my old <a href="http://www.rpicrew.com">crew
+team</a> can use. We have a shared google calendar that
+some of us use to keep track of races, meetings, etc. This gadget pulls and
+formats it nicely for the google IG or desktop.</p>
+
+<p><a href="http://fusion.google.com/add?moduleurl=http%3A//hosting.gmodules.com/ig/gadgets/file/109141966999504040851/RPICrewSchedule.xml"><img src="http://buttons.googlesyndication.com/fusion/add.gif" alt="Add to Google" /></a></p>
+
+<p>Javascript code for the gadget:</p>
+
+<pre><code>```html
+&lt;style type="text/css"&gt;
+div.exp{
+    padding: 0;
+    margin: 0;
+}
+div.loc{
+    margin-left: 19px;
+}
+&lt;/style&gt;
+&lt;script type="text/javascript"&gt;
+&lt;!--
+/**
+* Season info *
+* 0 Fall: Aug 26 - Nov 1
+* 1 Winter Training: Nov 2 - March 1
+* 2 Spring: March 2 - May 25
+* 3 Summer: May 26 - Aug 25
+**/
+
+/**
+* Callback function for the GData json-in-script call
+* Inserts the supplied list of events into a div of a pre-defined name
+*
+* @param {json} root is the JSON-formatted content from GData
+*/
+function processRaces(root) {
+displayRaces(root.feed, 'races');
+}
+
+//meow
+function displayRaces(feed, divId){
+var now = new Date();
+var season = getSeason(now);
+var events = document.getElementById(divId);
+
+//clear "Loading..."
+if (events.childNodes.length &gt; 0){
+events.removeChild(events.childNodes[0]);
+}
+
+//display season
+var d = document.createElement('div');
+d.appendChild(document.createTextNode(getSeasonText(season)));
+events.appendChild(d);
+
+//loop races
+for (var i=0; i&lt;feed.entry.length; i++){
+var entry = feed.entry[i];
+
+var d = getDate(entry['gd$when'][0].startTime);
+if(isCurrSeason(now, d)){
+var title = entry.title.$t;
+var desc = entry.content.$t;
+
+//set up image and clicking to expand
+var div = document.createElement('div');
+div.className = 'exp';
+var toggle = document.createElement('img');
+toggle.src= 'http://timothy.broder.googlepages.com/p.jpg';
+toggle.align = 'absmiddle';
+toggle.id = i;
+toggle.onclick = function() {toggleDiv(this); }
+div.appendChild(toggle);
+div.appendChild(document.createTextNode(' ' + d.getMonth() + "/" + d.getDay() + ' - '));
+
+// get the href to link to the event
+for(var j=0; j&lt;entry['link'].length; j++){
+if (entry['link'][j]['type'] == 'text/html' &amp;&amp; entry['link'][j]['rel'] == 'alternate'){
+var href = entry['link'][j]['href'];
+}
+}
+
+//we can link to the cal
+if (typeof href != 'undefined'){
+var link = document.createElement('a');
+link.href = href;
+link.target = '_blank';
+link.appendChild(document.createTextNode(title));
+div.appendChild(link);
+}
+else{ //shouldn't get here but just in case
+div.appendChild(document.createTextNode(title));
+}
+
+div.appendChild(document.createElement('br'));
+
+events.appendChild(div);
+
+var where = entry['gd$where'][0].valueString;
+var tDiv = document.createElement('div'); //div that will be hidden initially
+tDiv.id ='id' + i;
+tDiv.style['display'] = 'none';
+tDiv.className = 'loc';
+events.appendChild(tDiv);
+
+if(desc != null &amp;&amp; desc != ""){ //we have a desc (should be the teams we're competing against)
+var dDiv = document.createElement('span');
+dDiv.appendChild(document.createTextNode(desc + " "));
+tDiv.appendChild(dDiv);
+}
+//the location field is populated (hidden at start)
+if(where != null &amp;&amp; where != ""){ //we have a location
+var it = document.createElement('i');
+var map = document.createElement('a');
+map.target = '_blank';
+//link to location on google maps
+map.href = 'http://maps.google.com/maps?f=q&amp;hl;=en&amp;&amp;q;=' + spaceLink(entry['gd$where'][0].valueString);
+map.appendChild(document.createTextNode(entry['gd$where'][0].valueString));
+it.appendChild(document.createTextNode(" ("));
+it.appendChild(map);
+it.appendChild(document.createTextNode(")"));
+tDiv.appendChild(it);
+}
+}
+}
+}
+
+//format the date a little
+function getDate(when){
+var data = when.split("-");
+return new Date(data[0], data[1], data[2]);
+}
+
+//return int representation of season
+function getSeason(d){
+var month = d.getMonth();
+var day = d.getDate();
+var year = d.getFullYear();
+
+var aug = new Date(year, 8, 25);
+var nov = new Date(year, 11, 1);
+var mar = new Date(year, 3, 1);
+var may = new Date(year, 5, 25);
+
+if(aug &lt; d &amp;&amp; d &lt;= nov) return 0; //fall
+else if(mar &lt; d &amp;&amp; d &lt;= may) return 2; //spring
+else if(may &lt; d &amp;&amp; d &lt;= aug) return 3; //summer
+else return 1; //winter
+}
+
+//figure out the current season
+function isCurrSeason(now, d){
+currSeason = getSeason(now);
+season = getSeason(d);
+
+if(currSeason == season){ //same season yes
+if(now.getFullYear() == d.getFullYear()){ //same year also, match
+return true;
+}
+if(season == 1 &amp;&amp; (d.getFullYear() == now.getFullYear()-1)){ //diff year, prob winter
+return true;
+}
+}
+return false;
+}
+
+//return text for season
+function getSeasonText(season){
+if(season == 0) return "Fall Season";
+if(season == 1) return "Winter Training";
+if(season == 2) return "Spring Season";
+if(season == 3) return "Summer Season";
+
+return "no season"; //really shouldn't get here
+}
+
+//if the div is hidden show it, if not, hide it
+function toggleDiv(where_id){
+var div = document.getElementById('id' + where_id.id);
+var img = document.getElementById(where_id.id);
+if(div != null){
+if(div.style.display != 'none'){
+div.style.display = 'none';
+img.src= 'http://timothy.broder.googlepages.com/p.jpg';
+
+}
+else{
+div.style.display = 'block';
+img.src= 'http://timothy.broder.googlepages.com/m.jpg';
+}
+}
+}
+
+//convert the location so it can be used in a link to google maps
+function spaceLink(name){
+return name.replace(' ', ',+');
+}
+
+//--&gt;
+&lt;/script&gt;
+
+&lt;div id="races"&gt;&lt;p&gt;Loading...&lt;/p&gt;&lt;/div&gt;
+&lt;script type="text/javascript" src="http://www.google.com/calendar/feeds/rpicrew@gmail.com/public/full?alt=json-in-script&amp;callback;=processRaces&amp;orderby;=starttime&amp;singleevents;=true&amp;sortorder;=ascending&amp;start-min;=2007-01-01T00:00:00"&gt;&lt;/script&gt;
+</code></pre>
+
+<p>```</p>
+
+<p>And the XML for the gadget</p>
+
+<p>``` 
+    <?xml version="1.0" encoding="UTF-8"?>
+    <Module>
+    <ModulePrefs title="RPI Crew Schedule"
+    title_url="http://gpowered.net"
+    author="Tim Broder"
+    height="150"
+    width="250"
+    author_email="timothy.broder@gmail.com"
+    thumbnail="http://timothy.broder.googlepages.com/RPICrewScheduleThumb.jpg"
+    description="RPI Crew Race Schedule, links to the RPICrew shared google calendar"
+    author_photo="http://timothy.broder.googlepages.com/timothybrodersimpsons.png"
+    author_location="NYC"
+    author_affiliation="gPowered"
+    author_link="http://www.gpowered.net"
+    screenshot="http://timothy.broder.googlepages.com/RPICrewScheduleScreen.jpg"
+    >
+    <Require feature="dynamic-height"/>
+    <Require feature="analytics"/>
+    </ModulePrefs>
+    <Content type="html">&lt;![CDATA[</p>
+
+<pre><code>&lt;script&gt;
+// Track this gadget using Google Analytics.
+_IG_Analytics("UA-793489-6", "/RPICrewScheduleG");
+&lt;/script&gt;
+&lt;style type="text/css"&gt;
+div.exp{
+padding: 0;
+margin: 0;
+}
+div.loc{
+margin-left: 19px;
+}
+&lt;/style&gt;
+&lt;script type="text/javascript"&gt;
+&lt;!--
+/**
+* Season info *
+* 0 Fall: Aug 26 - Nov 1
+* 1 Winter Training: Nov 2 - March 1
+* 2 Spring: March 2 - May 25
+* 3 Summer: May 26 - Aug 25
+**/
+
+/**
+* Callback function for the GData json-in-script call
+* Inserts the supplied list of events into a div of a pre-defined name
+*
+* @param {json} root is the JSON-formatted content from GData
+*/
+function processRaces(root) {
+displayRaces(root.feed, 'races');
+}
+
+//meow
+function displayRaces(feed, divId){
+var now = new Date();
+var season = getSeason(now);
+var events = document.getElementById(divId);
+
+//clear "Loading..."
+if (events.childNodes.length &gt; 0){
+events.removeChild(events.childNodes[0]);
+}
+
+//display season
+var d = document.createElement('div');
+d.appendChild(document.createTextNode(getSeasonText(season)));
+events.appendChild(d);
+
+//loop races
+for (var i=0; i&lt;feed.entry.length; i++){
+var entry = feed.entry[i];
+
+var d = getDate(entry['gd$when'][0].startTime);
+if(isCurrSeason(now, d)){
+var title = entry.title.$t;
+var desc = entry.content.$t;
+
+//set up image and clicking to expand
+var div = document.createElement('div');
+div.className = 'exp';
+var toggle = document.createElement('img');
+toggle.src= 'http://timothy.broder.googlepages.com/p.jpg';
+toggle.align = 'absmiddle';
+toggle.id = i;
+toggle.onclick = function() {toggleDiv(this); }
+div.appendChild(toggle);
+div.appendChild(document.createTextNode(' ' + d.getMonth() + "/" + d.getDay() + ' - '));
+
+// get the href to link to the event
+for(var j=0; j&lt;entry['link'].length; j++){
+if (entry['link'][j]['type'] == 'text/html' &amp;&amp; entry['link'][j]['rel'] == 'alternate'){
+var href = entry['link'][j]['href'];
+}
+}
+
+//we can link to the cal
+if (typeof href != 'undefined'){
+var link = document.createElement('a');
+link.href = href;
+link.target = '_blank';
+link.appendChild(document.createTextNode(title));
+div.appendChild(link);
+}
+else{ //shouldn't get here but just in case
+div.appendChild(document.createTextNode(title));
+}
+
+div.appendChild(document.createElement('br'));
+
+events.appendChild(div);
+
+var where = entry['gd$where'][0].valueString;
+var tDiv = document.createElement('div'); //div that will be hidden initially
+tDiv.id ='id' + i;
+tDiv.style['display'] = 'none';
+tDiv.className = 'loc';
+events.appendChild(tDiv);
+
+if(desc != null &amp;&amp; desc != ""){ //we have a desc (should be the teams we're competing against)
+var dDiv = document.createElement('span');
+dDiv.appendChild(document.createTextNode(desc + " "));
+tDiv.appendChild(dDiv);
+}
+//the location field is populated (hidden at start)
+if(where != null &amp;&amp; where != ""){ //we have a location
+var it = document.createElement('i');
+var map = document.createElement('a');
+map.target = '_blank';
+//link to location on google maps
+map.href = 'http://maps.google.com/maps?f=q&amp;hl;=en&amp;&amp;q;=' + spaceLink(entry['gd$where'][0].valueString);
+map.appendChild(document.createTextNode(entry['gd$where'][0].valueString));
+it.appendChild(document.createTextNode(" ("));
+it.appendChild(map);
+it.appendChild(document.createTextNode(")"));
+tDiv.appendChild(it);
+}
+}
+}
+}
+
+//format the date a little
+function getDate(when){
+var data = when.split("-");
+return new Date(data[0], data[1], data[2]);
+}
+
+//return int representation of season
+function getSeason(d){
+var month = d.getMonth();
+var day = d.getDate();
+var year = d.getFullYear();
+
+var aug = new Date(year, 8, 25);
+var nov = new Date(year, 11, 1);
+var mar = new Date(year, 3, 1);
+var may = new Date(year, 5, 25);
+
+if(aug &lt; d &amp;&amp; d &lt;= nov) return 0; //fall
+else if(mar &lt; d &amp;&amp; d &lt;= may) return 2; //spring
+else if(may &lt; d &amp;&amp; d &lt;= aug) return 3; //summer
+else return 1; //winter
+}
+
+//figure out the current season
+function isCurrSeason(now, d){
+currSeason = getSeason(now);
+season = getSeason(d);
+
+if(currSeason == season){ //same season yes
+if(now.getFullYear() == d.getFullYear()){ //same year also, match
+return true;
+}
+if(season == 1 &amp;&amp; (d.getFullYear() == now.getFullYear()-1)){ //diff year, prob winter
+return true;
+}
+}
+return false;
+}
+
+//return text for season
+function getSeasonText(season){
+if(season == 0) return "Fall Season";
+if(season == 1) return "Winter Training";
+if(season == 2) return "Spring Season";
+if(season == 3) return "Summer Season";
+
+return "no season"; //really shouldn't get here
+}
+
+//if the div is hidden show it, if not, hide it
+function toggleDiv(where_id){
+var div = document.getElementById('id' + where_id.id);
+var img = document.getElementById(where_id.id);
+if(div != null){
+if(div.style.display != 'none'){
+div.style.display = 'none';
+img.src= 'http://timothy.broder.googlepages.com/p.jpg';
+
+}
+else{
+div.style.display = 'block';
+img.src= 'http://timothy.broder.googlepages.com/m.jpg';
+}
+}
+}
+
+//convert the location so it can be used in a link to google maps
+function spaceLink(name){
+return name.replace(' ', ',+');
+}
+
+//--&gt;
+&lt;/script&gt;
+
+&lt;div id="races"&gt;&lt;p&gt;Loading...&lt;/p&gt;&lt;/div&gt;
+&lt;script type="text/javascript" src="http://www.google.com/calendar/feeds/rpicrew@gmail.com/public/full?alt=json-in-script&amp;callback;=processRaces&amp;orderby;=starttime&amp;singleevents;=true&amp;sortorder;=ascending&amp;start-min;=2007-01-01T00:00:00"&gt;&lt;/script&gt;
+
+
+
+
+]]&gt;&lt;/Content&gt;
+&lt;/Module&gt;
+```
+</code></pre>
+</section>
+
+
+</article>
+
+    </main>
+
+
+                        <footer class="site-footer clearfix">
+    <section>
+            <span class="tag size2"><a href="/blog/tags/"></a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/AVSpeechSynthesizer">AVSpeechSynthesizer</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Ai">Ai</a></span>
+            &nbsp;
+        <span class="tag size8"><a href="/blog/tags/Android">Android</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Atom">Atom</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Avengers">Avengers</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Batman">Batman</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Batman%20Inc.">Batman Inc.</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Batman%20and%20Robin">Batman and Robin</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/CKEditor">CKEditor</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/Calibre">Calibre</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Cheese">Cheese</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/ComicCon">ComicCon</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/CoreData">CoreData</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/DRM">DRM</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/Docs%20Spreadsheets">Docs Spreadsheets</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/ESI">ESI</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Fontis">Fontis</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/GME">GME</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/GTD">GTD</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/GWT">GWT</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Garlic">Garlic</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/Google">Google</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/Google%20Reader">Google Reader</a></span>
+            &nbsp;
+        <span class="tag size9"><a href="/blog/tags/HOWTO">HOWTO</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Hulu">Hulu</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Internet%20Explorer">Internet Explorer</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/JIRA">JIRA</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/Kindle">Kindle</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/Mashups">Mashups</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Memcached">Memcached</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/OmniFocus">OmniFocus</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Oracle">Oracle</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/PHPUnit">PHPUnit</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/PostgreSQL">PostgreSQL</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/RSS">RSS</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Redmine">Redmine</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Remember%20the%20Milk">Remember the Milk</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Ruby">Ruby</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/SQL">SQL</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Shared%20web%20hosting%20service">Shared web hosting service</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Siri">Siri</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Skype">Skype</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Sony%20Reader">Sony Reader</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Stan%20Lee">Stan Lee</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/TDD">TDD</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Terminator">Terminator</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/TinyMCE">TinyMCE</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Vibrams">Vibrams</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Virtual%20hosting">Virtual hosting</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Virtual%20private%20server">Virtual private server</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Walking%20Dead">Walking Dead</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Web%20hosting">Web hosting</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/YUI">YUI</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Zend">Zend</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/adwhirl">adwhirl</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/adwords">adwords</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/aiaio">aiaio</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/ajax">ajax</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/alfred">alfred</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/analytics">analytics</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/angularjs">angularjs</a></span>
+            &nbsp;
+        <span class="tag size4"><a href="/blog/tags/appengine">appengine</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/apple">apple</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/applepay">applepay</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/apps">apps</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/autocomplete">autocomplete</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/automation">automation</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/beta">beta</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/bit.ly">bit.ly</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/blackberry">blackberry</a></span>
+            &nbsp;
+        <span class="tag size4"><a href="/blog/tags/blogger">blogger</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/bookmarks">bookmarks</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/brightkite">brightkite</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/calendar">calendar</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/chrome">chrome</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/coffee">coffee</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/css">css</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/debug">debug</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/digg">digg</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/django">django</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/drafts">drafts</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/dropbox">dropbox</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/encryption">encryption</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/engagement">engagement</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/events">events</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/facebook">facebook</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/firefox">firefox</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/friendfeed">friendfeed</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/gadgets">gadgets</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/gchat">gchat</a></span>
+            &nbsp;
+        <span class="tag size4"><a href="/blog/tags/gdata">gdata</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/gdrive">gdrive</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/gears">gears</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/git">git</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/github">github</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/gmail">gmail</a></span>
+            &nbsp;
+        <span class="tag size5"><a href="/blog/tags/gpowered.net">gpowered.net</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/greasemonkey">greasemonkey</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/groups">groups</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/homebrew">homebrew</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/instapaper">instapaper</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/interfacebuilder">interfacebuilder</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/ios">ios</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/ipad">ipad</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/iphone">iphone</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/javascript">javascript</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/jira">jira</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/jquery">jquery</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/json">json</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/kids">kids</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/laravel">laravel</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/launch%20center%20pro">launch center pro</a></span>
+            &nbsp;
+        <span class="tag size5"><a href="/blog/tags/magento">magento</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/maps">maps</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/mercurial">mercurial</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/mock">mock</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/mongodb">mongodb</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/music">music</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/mysql">mysql</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/netbook">netbook</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/nosql">nosql</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/objective%20c">objective c</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/oil">oil</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/omnifocus">omnifocus</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/opensocial">opensocial</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/opensource">opensource</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/os">os</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/osx">osx</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/pesto">pesto</a></span>
+            &nbsp;
+        <span class="tag size7"><a href="/blog/tags/php">php</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/picasa%20web">picasa web</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/podcasts">podcasts</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/powershell">powershell</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/primal">primal</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/productivity">productivity</a></span>
+            &nbsp;
+        <span class="tag size6"><a href="/blog/tags/python">python</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/pythonista">pythonista</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/quick">quick</a></span>
+            &nbsp;
+        <span class="tag size4"><a href="/blog/tags/reader">reader</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/realm">realm</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/regex">regex</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/running">running</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/search">search</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/security">security</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/seo">seo</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/sketch">sketch</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/skynet">skynet</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/sleep">sleep</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/socialgraph">socialgraph</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/solr">solr</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/startup">startup</a></span>
+            &nbsp;
+        <span class="tag size4"><a href="/blog/tags/swift">swift</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/testing">testing</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/textmate">textmate</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/timbroder.com">timbroder.com</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/todoist">todoist</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/twitter">twitter</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/twitter2gTalk">twitter2gTalk</a></span>
+            &nbsp;
+        <span class="tag size6"><a href="/blog/tags/ubuntu">ubuntu</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/urls">urls</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/vagrant">vagrant</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/varnish">varnish</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/virtualenv">virtualenv</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/winamp">winamp</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/windows">windows</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/wordpress">wordpress</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/xbox">xbox</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/xcode">xcode</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/xml">xml</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/yahoo%20pipes">yahoo pipes</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/youtube">youtube</a></span>
+            &nbsp;
+    
+    </section>
+    <section class="copyright">
+        Copyright &copy; 2007-2018 -
+         Tim Broder -         <span class="credit">Powered by <a href="http://sculpin.io">Sculpin</a></span>
+    </section>
+</footer>
+                <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="https://www.timbroder.com/themes/broderboy/deadfish/assets/js/index.js"></script>
+<script type="text/javascript" src="https://www.timbroder.com/themes/broderboy/deadfish/assets/js/rainbow.min.js"></script>
+<script type="text/javascript" src="https://www.timbroder.com/themes/broderboy/deadfish/assets/js/rlns.min.js"></script>
+
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'timbrodercom'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-17099661-1', 'auto');
+    ga('send', 'pageview');
+
+</script>    </div>
+</body>
+</html>

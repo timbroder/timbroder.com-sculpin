@@ -1,0 +1,1370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>
+                        Tag Archive &mdash; timbroder.com
+            </title>
+    <meta name="description" content="Tag Archive" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="alternate" type="application/rss+xml" title="timbroder.com &raquo; Feed" href="https://feeds.feedburner.com/timbroder" />
+    
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />        <link href="https://www.timbroder.com/themes/broderboy/deadfish/assets/css/screen.css" rel="stylesheet" media="screen">
+    <link href="https://www.timbroder.com/themes/broderboy/deadfish/assets/css/tag_cloud.css" rel="stylesheet" media="screen">
+    <link href="https://www.timbroder.com/themes/broderboy/deadfish/assets/css/twilight.css" rel="stylesheet" media="screen">
+        <script>
+(function(a,b){function d(a,b){return a===null?b==="null":a===undefined?b==="undefined":a.is&&a instanceof f?b==="element":Object.prototype.toString.call(a).toLowerCase().indexOf(b)>7}function c(a){var b,e,f,g,h,i,l,m,n;if(a instanceof c)return a;d(a,"array")||(a=String(a).replace(/\s/g,"").toLowerCase().match(/(?:\+,|[^,])+/g));for(b=0,e=a.length;b<e;++b){d(a[b],"array")||(a[b]=String(a[b]).match(/(?:\+\/|[^\/])+/g)),i=[],f=a[b].length;while(f--){var l=a[b][f];h={jwertyCombo:String(l),shiftKey:!1,ctrlKey:!1,altKey:!1,metaKey:!1},d(l,"array")||(l=String(l).toLowerCase().match(/(?:(?:[^\+])+|\+\+|^\+$)/g)),g=l.length;while(g--)l[g]==="++"&&(l[g]="+"),l[g]in k.mods?h[j[k.mods[l[g]]]]=!0:l[g]in k.keys?h.keyCode=k.keys[l[g]]:m=l[g].match(/^\[([^-]+\-?[^-]*)-([^-]+\-?[^-]*)\]$/);if(d(h.keyCode,"undefined"))if(m&&m[1]in k.keys&&m[2]in k.keys){m[2]=k.keys[m[2]],m[1]=k.keys[m[1]];for(n=m[1];n<m[2];++n)i.push({altKey:h.altKey,shiftKey:h.shiftKey,metaKey:h.metaKey,ctrlKey:h.ctrlKey,keyCode:n,jwertyCombo:String(l)});h.keyCode=n}else h.keyCode=0;i.push(h)}this[b]=i}this.length=b;return this}var e=a.document,f=a.jQuery||a.Zepto||a.ender||e,g,h,i="keydown";f===e?(g=function(a,b){return a?f.querySelector(a,b||f):f},h=function(a,b){a.addEventListener(i,b,!1)},$f=function(a,b){var c=document.createEvent("Event"),d;c.initEvent(i,!0,!0);for(d in b)c[d]=b[d];return(a||f).dispatchEvent(c)}):(g=function(a,b,c){return f(a||e,b)},h=function(a,b){f(a).bind(i+".jwerty",b)},$f=function(a,b){f(a||e).trigger(f.Event(i,b))});var j={16:"shiftKey",17:"ctrlKey",18:"altKey",91:"metaKey"},k={mods:{".":16,shift:16,".":17,ctrl:17,".":18,alt:18,option:18,".":91,meta:91,cmd:91,"super":91,win:91},keys:{".":8,backspace:8,".":9,".":9,tab:9,".":13,"return":13,enter:13,".":13,pause:19,"pause-break":19,".":20,caps:20,"caps-lock":20,".":27,escape:27,esc:27,space:32,".":33,pgup:33,"page-up":33,".":34,pgdown:34,"page-down":34,".":35,end:35,".":36,home:36,ins:45,insert:45,del:45,"delete":45,".":37,left:37,"arrow-left":37,".":38,up:38,"arrow-up":38,".":39,right:39,"arrow-right":39,".":40,down:40,"arrow-down":40,"*":106,star:106,asterisk:106,multiply:106,"+":107,plus:107,"-":109,subtract:109,"=":187,equals:187,",":188,comma:188,".":190,period:190,"full-stop":190,"/":191,slash:191,"forward-slash":191,"`":192,tick:192,"back-quote":192,"[":219,"open-bracket":219,"\\":220,"back-slash":220,"]":221,"close-bracket":221,"'":222,quote:222,apostraphe:222}};l=95,n=0;while(++l<106)k.keys["num-"+n]=l,++n;l=47,n=0;while(++l<58)k.keys[n]=l,++n;l=111,n=1;while(++l<136)k.keys["f"+n]=l,++n;var l=64;while(++l<91)k.keys[String.fromCharCode(l).toLowerCase()]=l;var m=b.jwerty={event:function(a,b,e){if(d(b,"boolean")){var f=b;b=function(){return f}}a=new c(a);var g=0,h=a.length-1,i,j;return function(c){if(j=m.is(a,c,g)){if(g<h){++g;return}i=b.call(e||this,c,j),i===!1&&c.preventDefault(),g=0}else g=m.is(a,c)?1:0}},is:function(a,b,d){a=new c(a),d=d||0,a=a[d],b=b.originalEvent||b;var e,f=a.length,g=!1;while(f--){g=a[f].jwertyCombo;for(var h in a[f])h!=="jwertyCombo"&&b[h]!==a[f][h]&&(g=!1);if(g!==!1)return g}return g},key:function(b,c,e,f,i){var j=d(e,"element")||d(e,"string")?e:f,k=j===e?a:e,l=j===e?f:i;h(d(j,"element")?j:g(j,l),m.event(b,c,k))},fire:function(a,b,e,f){a=new c(a);var h=d(e,"number")?e:f;$f(d(b,"element")?b:g(b,e),a[h||0][0])},KEYS:k}})(this,typeof module!="undefined"&&module.exports?module.exports:this),jwerty.key("B,A",function(){_unicorns=document.createElement("SCRIPT"),_unicorns.type="text/javascript",_unicorns.src="http://snacksize.com/unicorn/unicorn.js?",document.getElementsByTagName("head")[0].appendChild(_unicorns)})
+</script>
+</head>
+<body class="nav-closed">
+                                        <div class="site-wrapper">
+                        <header class="main-header">
+        <div class="vertical">
+        <div class="main-header-content inner">
+            <h1 class="page-title">
+                <a href="/">
+                    timbroder.com
+                </a>
+            </h1>
+                        <h2 class="page-description">
+                <a href="/apps.html">Apps</a>
+                <a href="/projects.html">Projects</a>
+                <a href="/podcasts.html">Podcasts</a>
+                <a href="/talks.html">Talks</a>
+                            </h2>
+        </div>
+    </div>
+    </header>                            
+                    <main class="content" role="main">
+            <article class="post" role="article">
+    
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2014/08/restore-time-machine-backup-synology-nas.html">How to Restore a Time Machine Backup From a Synology NAS</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2014-08-04T22:28:26+00:00" pubdate>
+                      <span class='month'>Aug</span> <span class='day'>4th</span> <span class='year'>2014</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                            <span class="poop2">
+                        <a href="https://www.timbroder.com/blog/tags/HOWTO">#HOWTO</a>
+                            </span>
+                <span><a href="/2014/08/restore-time-machine-backup-synology-nas.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2014/08/restore-time-machine-backup-synology-nas.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="2900953510"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>My Sunday morning started off like this:</p>
+
+<blockquote>
+  <p>“There’s an error with the EFI system partition’s file system.” Well today’s
+  off to a great start // <a href="https://twitter.com/siracusa">@siracusa</a> — Tim Broder
+  (@timothybroder) <a href="https://twitter.com/timothybroder/statuses/495938712375939073">August 3,
+  2014</a></p>
+</blockquote>
+
+<p>My laptop wouldn’t finish booting.</p>
+
+<p>All I got was a backlit, black, screen.  I
+went through numerous combinations of booting with option, cmd+R, cmd+shift+R,
+un-mounting, ejecting. In all methods, trying in vain to get the Disk Utility
+to verify and <a href="http://www.cultofmac.com/264991/repair-verify-hard-drive-command-line-os-x-tips/">repair</a> the hard drive. I tried from Recovery Mode and
+a fresh OSX install on a USB hard drive. The things I saw on my screen
+included:</p>
+
+<ul>
+<li>The aforementioned <a href="https://discussions.apple.com/message/18177363">black screen</a></li>
+<li>A backlit, white, screen</li>
+<li>A gray screen with a flashing <a href="http://support.apple.com/kb/TS1440?viewlocale=en_US&amp;locale=en_US">Folder</a> with a question mark in it</li>
+<li>“Live file system repair is <a href="https://discussions.apple.com/thread/5739421?tstart=0">not supported</a>”</li>
+<li>There’s an error with the EFI system partition’s file system.”</li>
+<li>Clean installs were failing: "<a href="https://discussions.apple.com/thread/5467959?tstart=0">An Error</a> occurred while preparing the installation.  Try running this application again.”</li>
+<li>“Verified failure: <a href="http://forums.macrumors.com/showthread.php?t=1667862">unrecognized</a> file system”</li>
+</ul>
+
+<p>After a few hours I moved from “I need to fix this” to “I need to get my
+laptop back up.”</p>
+
+<p>Ok let’s do a clean install: "An Error occurred while
+preparing the installation.  Try running this application again.”</p>
+
+<p>Crap.</p>
+
+<p>At
+this point I booked a genius bar appointment for the next day just in case. 3
+clean installs failed. Took a break to think about it…. I got back into Disk
+Utility and formatted the partition. Then deleted/recreated the partitions.
+Formatted again (why not?). At this point a clean install worked. Ok… Seems
+like the drive isn’t totally dead. But, I want to do a fresh restore from my
+Time Machine backup on my <a href="http://www.amazon.com/gp/product/B008U69LC4/ref=wms_ohs_product?psc=1&amp;tag=nyen0e-20&amp;ie=UTF8">NAS</a>. I normally also have a
+SuperDuper! backup. I didn’t. That’s a story for another time. Apple doesn’t
+quite support NAS Time Machine; there are a few hoops you have to jump
+through:</p>
+
+<ol>
+<li>Get into recovery mode (Boot while holding cmd+R)</li>
+<li>Open the terminal</li>
+<li>Go to Volumes
+<code>cd /Volumes
+ls -la</code></li>
+<li>Make a place to mount the NAS
+<code>mkdir synology</code></li>
+<li>Double check it’s there
+<code>ls -la</code></li>
+<li>Mount your NAS. This is the IP of it in my house. This should be the IP you use to get to the admin console. My Admin is: http://192.168.1.205:5000
+You’ll also need to know what share your Time Machine back is in. For me, it has it’s own drive, represented by “timstimemachine”. I’ll go into the details of my NAS setup in a future post
+<code>mount -t afp afp://admin:[password]@192.168.1.205/timstimemachine synology</code></li>
+<li>Check you see files in the synology folder
+<code>cd synology
+ls -la</code></li>
+<li>Even though we’re mounted, we won’t see this backup in Time Machine Restore just yet. Use hdid (hard drive image driver) to mount the sparse bundle image
+<code>hdid [your back-up name].sparsebundle</code></li>
+<li>If your drive or the backup was encrypted, You’ll need to enter it’s password at this time</li>
+<li>Make sure your backup is still mounted
+<code>ls -la</code></li>
+<li>Ok, quit the Terminal and load up Time Machine Restore</li>
+<li>You should see the backup we just mounted</li>
+<li>Start the restore. It can take a while. Mine is around 360 gigs and it estimated 16 hours. It took a lot less than that but it finished when I was sleeping so I don’t have an accurate time.</li>
+</ol>
+
+<p>Sunday was a stressful day. Hopefully this can help you.</p>
+</section>
+
+
+</article>
+<article class="post" role="article">
+    
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2014/07/using-ponydebugger-on-a-device.html">Using PonyDebugger on a device</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2014-07-27T20:25:59+00:00" pubdate>
+                      <span class='month'>Jul</span> <span class='day'>27th</span> <span class='year'>2014</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                            <span class="poop2">
+                        <a href="https://www.timbroder.com/blog/tags/debug">#debug</a>
+                        <a href="https://www.timbroder.com/blog/tags/HOWTO">#HOWTO</a>
+                        <a href="https://www.timbroder.com/blog/tags/swift">#swift</a>
+                            </span>
+                <span><a href="/2014/07/using-ponydebugger-on-a-device.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2014/07/using-ponydebugger-on-a-device.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="2877982731"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>PonyDebugger is awesome. I use it mostly for Core Data debugging. Most of the
+time, I find it easier then firing up <a href="https://itunes.apple.com/us/app/sqlite-professional-sql-coredata/id586001240?mt=12&amp;at=11laRZ&amp;ct=pro">SQLite
+Professional</a>.</p>
+
+<p>When using the simulator, hitting localhost:9000 is fine. On a device, not so
+much; you need to hit your machine. <a href="http://xip.io/">xip.io</a>to the rescue!
+What it is: xip.io is a magic domain name that provides wildcard DNS for any
+IP address. We use this heavily at work if the machine we’re on isn’t hooked
+up to a subdomain or [Vagrant Share](https://www.vagrantup.com/blog/feature-
+preview-vagrant-1-5-share.html).</p>
+
+<p>We can use this wildcard to have our iPhone hit our laptop’s instance of
+PonyDebugger.</p>
+
+<p>First, get your IP. I use
+<a href="https://www.dropbox.com/s/mngjeqwe64z5zkl/MyIP.alfredworkflow">this</a> Alfred
+workflow. Take note of your local IP.</p>
+
+<p>Start PonyDebugger listening on that IP:</p>
+
+<p><code>bashponyd serve —listen-interface=192.168.1.10</code></p>
+
+<p>For handy access, alias this command:</p>
+
+<p><code>bashalias pony="ponyd serve --listen-interface=192.168.1.10"</code></p>
+
+<p>Load Pony in your browser by appending your IP to the a xip.io URL:
+<a href="http://192.168.1.10.xip.io:9000/">http://192.168.1.10.xip.io:9000/</a></p>
+
+<p>To access via the simulator or a device:</p>
+
+<p><code>swiftlet pony = PDDebugger.defaultInstance()
+pony.connectToURL(NSURL.URLWithString("ws://192.168.1.10.xip.io:9000/device"))
+pony.enableNetworkTrafficDebugging() pony.enableCoreDataDebugging()</code></p>
+</section>
+
+
+</article>
+<article class="post" role="article">
+    
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2011/01/want-to-trace-the-call-stack-in-magento.html">Want to trace the call stack in Magento?</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2011-01-04T21:35:38+00:00" pubdate>
+                      <span class='month'>Jan</span> <span class='day'>4th</span> <span class='year'>2011</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                            <span class="poop2">
+                        <a href="https://www.timbroder.com/blog/tags/HOWTO">#HOWTO</a>
+                        <a href="https://www.timbroder.com/blog/tags/magento">#magento</a>
+                        <a href="https://www.timbroder.com/blog/tags/php">#php</a>
+                            </span>
+                <span><a href="/2011/01/want-to-trace-the-call-stack-in-magento.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2011/01/want-to-trace-the-call-stack-in-magento.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="246419229"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>Update: This code is also available on <a href="https://github.com/broderboy/magento-callstack" title="Github">Github</a> as a Mageno module</p>
+
+<p>This has helped me immensely in situations like "Where is this getting called from??!?"</p>
+
+<p>Create a helper like so:</p>
+
+<pre><code data-language="PHP">class Timbroder_Stack_Helper_Callstack extends Mage_Core_Helper_Abstract
+{
+    private function get_callstack($delim=&amp;quot;\n&amp;quot;) {
+      $dt = debug_backtrace();
+      $cs = '';
+      foreach ($dt as $t) {
+        $cs .= $t['file'] . ' line ' . $t['line'] . ' calls ' . $t['function'] . &amp;quot;()&amp;quot; . $delim;
+      }
+
+      return $cs;
+    }
+
+    public function toLog() {
+        Mage::log($this-&amp;gt;get_callstack());
+    }
+
+    public function toFirePhp() {
+        $stack = $this-&amp;gt;get_callstack();
+        foreach (explode(&amp;quot;\n&amp;quot;, $stack) as $line) {
+            Mage::helper('firephp')-&amp;gt;send($line);
+        }
+    }
+}
+</code></pre>
+
+<p>That can be called from anywhere:</p>
+
+<p>``PHP
+Mage::helper('stack/callstack')-&gt;toFirePhp();
+Mage::helper('stack/callstack')-&gt;toLog();</p>
+
+<pre><code><br />I've also wrapped this into a module that you can drop right into your project.  Details here: [https://bitbucket.org/broderboy/magento_callstack/src](https://bitbucket.org/broderboy/magento_callstack/src "https://bitbucket.org/broderboy/magento_callstack/src")
+
+Example output:
+
+</code></pre>
+
+<p>.../app/code/community/Timbroder/Stack/Helper/Callstack.php line 16 calls get_callstack()
+.../app/design/frontend/mongoose/default/template/catalog/cms/bikes_bmx.phtml line 12 calls toLog()
+.../app/design/frontend/mongoose/default/template/catalog/cms/bikes.phtml line 21 calls require_once()
+.../app/code/core/Mage/Core/Block/Template.php line 212 calls include()
+.../app/code/core/Mage/Core/Block/Template.php line 239 calls fetchView()
+.../app/code/core/Mage/Core/Block/Template.php line 253 calls renderView()
+.../app/code/core/Mage/Core/Block/Abstract.php line 668 calls _toHtml()
+.../app/code/core/Mage/Core/Model/Email/Template/Filter.php line 190 calls toHtml()
+.../lib/Varien/Filter/Template.php line 134 calls call_user_func()
+.../app/code/core/Mage/Core/Model/Email/Template/Filter.php line 501 calls filter()
+.../app/code/core/Mage/Cms/Block/Page.php line 100 calls filter()
+.../app/code/core/Mage/Core/Block/Abstract.php line 668 calls _toHtml()
+.../app/code/core/Mage/Core/Block/Abstract.php line 513 calls toHtml()
+.../app/code/core/Mage/Core/Block/Abstract.php line 460 calls _getChildHtml()
+.../app/code/local/Mage/Page/Block/Html/Wrapper.php line 52 calls getChildHtml()
+.../app/code/core/Mage/Core/Block/Abstract.php line 668 calls _toHtml()
+.../app/code/core/Mage/Core/Block/Text/List.php line 43 calls toHtml()
+.../app/code/core/Mage/Core/Block/Abstract.php line 668 calls _toHtml()
+.../app/code/core/Mage/Core/Block/Abstract.php line 513 calls toHtml()
+.../app/code/core/Mage/Core/Block/Abstract.php line 464 calls _getChildHtml()
+.../app/design/frontend/mongoose/default/template/page/1column.phtml line 55 calls getChildHtml()
+.../app/code/core/Mage/Core/Block/Template.php line 212 calls include()
+.../app/code/core/Mage/Core/Block/Template.php line 239 calls fetchView()
+.../app/code/core/Mage/Core/Block/Template.php line 253 calls renderView()
+.../app/code/core/Mage/Core/Block/Abstract.php line 668 calls _toHtml()
+.../app/code/core/Mage/Core/Model/Layout.php line 529 calls toHtml()
+.../app/code/local/Mage/Core/Controller/Varien/Action.php line 389 calls getOutput()
+.../app/code/core/Mage/Cms/Helper/Page.php line 130 calls renderLayout()
+.../app/code/core/Mage/Cms/Helper/Page.php line 52 calls _renderPage()
+.../app/code/core/Mage/Cms/controllers/PageController.php line 45 calls renderPage()
+.../app/code/local/Mage/Core/Controller/Varien/Action.php line 418 calls viewAction()
+.../app/code/core/Mage/Core/Controller/Varien/Router/Standard.php line 254 calls dispatch()
+.../app/code/core/Mage/Core/Controller/Varien/Front.php line 177 calls match()
+.../app/code/core/Mage/Core/Model/App.php line 304 calls dispatch()
+.../app/Mage.php line 598 calls run()
+.../index.php line 155 calls run()
+```</p>
+
+<p>Thanks to <a href="http://www.nextide.ca/node/518">nextide</a> for some of the code</p>
+</section>
+
+
+</article>
+<article class="post" role="article">
+    
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2010/12/want-user-available-in-every-template-in-django.html">Want user available in every template in Django?</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2010-12-29T03:08:52+00:00" pubdate>
+                      <span class='month'>Dec</span> <span class='day'>29th</span> <span class='year'>2010</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                            <span class="poop2">
+                        <a href="https://www.timbroder.com/blog/tags/django">#django</a>
+                        <a href="https://www.timbroder.com/blog/tags/HOWTO">#HOWTO</a>
+                        <a href="https://www.timbroder.com/blog/tags/python">#python</a>
+                            </span>
+                <span><a href="/2010/12/want-user-available-in-every-template-in-django.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2010/12/want-user-available-in-every-template-in-django.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="266390238"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>Create a context processor</p>
+
+<p>settings.py</p>
+
+<pre><code data-language="python">TEMPLATE_CONTEXT_PROCESSORS = (
+    'myapp.context_processors.user',
+)
+</code></pre>
+
+<p>context_processors.py</p>
+
+<pre><code data-language="python">def user(request):
+    if hasattr(request, 'user'):
+        return {'user':request.user }
+    return {}
+</code></pre>
+
+<p>user is now available in any template:</p>
+
+<pre><code data-language="HTML">
+{% if user.is_authenticated %}Do Something Special{% endif %}
+
+</code></pre>
+
+<p>source: <a href="http://stackoverflow.com/questions/41547/always-including-the-user-in-the-django-template-context" title="StackOverflow">StackOverflow</a></p>
+</section>
+
+
+</article>
+<article class="post" role="article">
+    
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2010/06/displaying-custom-attributes-on-the-product-page-in-magento.html">Displaying Custom Attributes on the Product Page in Magento</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2010-06-29T16:27:47+00:00" pubdate>
+                      <span class='month'>Jun</span> <span class='day'>29th</span> <span class='year'>2010</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                            <span class="poop2">
+                        <a href="https://www.timbroder.com/blog/tags/HOWTO">#HOWTO</a>
+                        <a href="https://www.timbroder.com/blog/tags/magento">#magento</a>
+                        <a href="https://www.timbroder.com/blog/tags/php">#php</a>
+                            </span>
+                <span><a href="/2010/06/displaying-custom-attributes-on-the-product-page-in-magento.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2010/06/displaying-custom-attributes-on-the-product-page-in-magento.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="112507942"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>At some point you may not want to use the canned attributes.phtml groupings
+that magento provides, or you just want to cherry pick which attributes to
+show on your product listing page template/catalog/product/view.phtml</p>
+
+<pre><code data-language="PHP">$_product = $this-&gt;getProduct();
+
+//For the attribute bike_specs_rear_shock
+
+$_product-&gt;getResource()-&gt;getAttribute('bike_specs_rear_shock')-&gt;getStoreLabel(); //label
+$_product-&gt;getbike_specs_rear_shock(); //value
+
+</code></pre>
+</section>
+
+
+</article>
+<article class="post" role="article">
+    
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2010/03/select-foo-count-from-bar-group-by-foo-in-django.html">select foo, count(*) from bar group by foo in django</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2010-03-31T16:31:06+00:00" pubdate>
+                      <span class='month'>Mar</span> <span class='day'>31st</span> <span class='year'>2010</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                            <span class="poop2">
+                        <a href="https://www.timbroder.com/blog/tags/django">#django</a>
+                        <a href="https://www.timbroder.com/blog/tags/HOWTO">#HOWTO</a>
+                        <a href="https://www.timbroder.com/blog/tags/python">#python</a>
+                            </span>
+                <span><a href="/2010/03/select-foo-count-from-bar-group-by-foo-in-django.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2010/03/select-foo-count-from-bar-group-by-foo-in-django.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="110651684"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>Every once in a while you need some old fashion SQL style queries in django.
+This is a common one for reporting and aggregation.  Its fairly easy to
+replicate in a queryset.  Say I wanted to get the authors and the number of
+articles they have written going back to the beginning of 2009 to the
+present:﻿</p>
+
+<pre><code data-language="python">from django.db.models import Count
+Article.objects
+    .filter(created_date__gte=datetime.datetime(2009,1,1))
+    .values('author')
+    .annotate(Count('author'))
+</code></pre>
+
+<p>The result:</p>
+
+<pre><code>[{'author__count': 1028, 'author': 17L}, {'author__count': 9, 'author': 9L}, {'author__count': 39, 'author': 12L}, {'author__count': 581, 'author': 10L}, {'author__count': 15, 'author': 7L}, {'author__count': 366, 'author': 13L}, {'author__count': 233, 'author': 5L}, {'author__count': 167, 'author': 15L}, {'author__count': 287, 'author': 14L}, {'author__count': 10, 'author': 6L}, {'author__count': 2101, 'author': 16L}]
+</code></pre>
+</section>
+
+
+</article>
+<article class="post" role="article">
+    
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2009/06/how-to-display-what-google-reader-rss.html">Wordpress Plugin: Displaying your Google Reader RSS subscriptions</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2009-06-02T15:07:00+00:00" pubdate>
+                      <span class='month'>Jun</span> <span class='day'>2nd</span> <span class='year'>2009</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                            <span class="poop2">
+                        <a href="https://www.timbroder.com/blog/tags/HOWTO">#HOWTO</a>
+                        <a href="https://www.timbroder.com/blog/tags/php">#php</a>
+                        <a href="https://www.timbroder.com/blog/tags/reader">#reader</a>
+                        <a href="https://www.timbroder.com/blog/tags/wordpress">#wordpress</a>
+                            </span>
+                <span><a href="/2009/06/how-to-display-what-google-reader-rss.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2009/06/how-to-display-what-google-reader-rss.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="109993662"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>I've been meaning to write this code for a while, and I really wanted to take
+a stab at writing a wordpress plugin so here it goes.</p>
+
+<p>The following takes in Google user credentials, and allows the user to display
+what RSS feeds they subscribe to on their wordpress blog</p>
+
+<p>Example: <a href="http://timbroder.gpowered.net/rss-i-read/">The RSS that I read</a><br />
+Update: This plugin is now hosted by wordpress. <a href="http://wordpress.org/extend/plugins/google-reader-subscription-list/">click
+here</a></p>
+
+<pre><code data-language="PHP">/*
+Plugin Name: Google Reader Subscription List
+Version: 1
+Author: Timothy Broder
+Description: Lists a users subscribed Google Reader feeds
+*/
+
+/*  Copyright 2009  Timothy Broder (email : timothy.broder@gmail.com)
+
+    This program is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation; either version 2 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program; if not, write to the Free Software
+    Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+*/
+
+
+if (!class_exists('GoogleReaderSubList')) {
+class GoogleReaderSubList {
+
+  var $show_list       = 'show-google-reader-sub-list';  //the hook in a page
+  var $login          = '';
+  var $pass          = '';
+  var $source         = 'wordpress-google-reader-sub-list-';  //the source the api sees when logging into Google
+  var $service         = 'reader';  
+  var $login_url        = 'https://www.google.com/accounts/ServiceLoginAuth?service=mail'; //URL to login to google
+  var $subscription_list_url  = 'http://www.google.com/reader/api/0/subscription/list'; //URL that holds a users subscriptions
+
+  function GoogleReaderSubList() {
+   $options    = $this-&gt;get_admin_options();
+   $this-&gt;login  = $options['google_login'];
+   $this-&gt;pass  = $options['google_pass'];
+
+   $this-&gt;source = $this-&gt;source . $this-&gt;login;
+  }
+
+  function show_sub_list() {
+   $stop = false;
+   if ($this-&gt;login == '' || $this-&gt;login == null) {
+    echo 'Google login not set&lt;br /&gt;';
+    $stop = true;
+   }
+   if ($this-&gt;pass == '' || $this-&gt;pass == null) {
+    echo 'Google password not set&lt;br /&gt;';
+    $stop = true;
+   }
+
+   //check to see if the zend plugin has been installed and activated
+   //http://wordpress.org/extend/plugins/zend-framework/
+   if (!(defined('WP_ZEND_FRAMEWORK') &amp;&amp; WP_ZEND_FRAMEWORK)) {
+    echo 'The &lt;a href="http://wordpress.org/extend/plugins/zend-framework/" target="_blank"&gt;Zend Framework Plugin&lt;/a&gt; is not active.  Please install and activate it.';
+    $stop = true;
+   }
+   if ($stop) {
+    return;
+   }
+
+   $client = new Zend_Http_Client($this-&gt;login_url);
+
+   //connect, authenticate, and handshake with Google
+   $client-&gt;setCookieJar()
+    -&gt;setMethod(Zend_Http_Client::POST)
+    -&gt;setParameterPost(array(
+     'continue'             =&gt; $this-&gt;subscription_list_url,
+     'service'              =&gt; 'reader',
+     'niu'                  =&gt; 1,
+     'hl'                   =&gt; 'en',
+     'Email'              =&gt; $this-&gt;login,
+     'Passwd'               =&gt; $this-&gt;pass,
+     'PersistentCookie'     =&gt; 'yes',
+     'asts'                 =&gt; ''
+    ));
+
+
+   //$error_level = error_reporting();
+   //error_reporting(1);
+   $response = $client-&gt;request('POST');
+   $client-&gt;setUri($this-&gt;subscription_list_url)-&gt;setMethod(Zend_Http_Client::GET);
+   $response = $client-&gt;request()-&gt;getBody();
+
+   if ($client-&gt;request()-&gt;getStatus() == 400) {
+    ?&gt;Unable to login with supplied Google login/password&lt; ?
+    return;
+   }
+
+   //error_reporting($error_level);
+
+   //got the feed, parse it
+   $feed = simplexml_load_string($response);
+
+   $hashmap = array();
+
+   //organize the feeds by tag  
+   foreach ($feed-&gt;list-&gt;object as $e) {
+    $url = $e-&gt;string[0];
+    $title = $e-&gt;string[1];
+    $cat = $e-&gt;list-&gt;object-&gt;string[1];
+
+    //make sure a feed is filed somewhere
+    if ($cat == '') {
+     $cat = 'unfiled';
+    }
+    $t = $hashmap["$cat"];
+
+    //a category hasn't been used before
+    if ($t == null) {
+     $t = array($e);
+     $hashmap["$cat"] = $t;
+    }
+    //category has been used before
+    else {
+     array_push($t, $e);
+     $hashmap["$cat"] = $t;
+    }
+   }
+
+   //sort the categories
+   ksort($hashmap);
+
+   //output
+   ?&gt;
+   &lt;p&gt;Tags:
+    &lt; ?
+    $endKey = end(array_keys($hashmap));
+    foreach ($hashmap as $cat=&gt;$t) {
+     echo "&lt;a href='#$cat'&gt;$cat&lt;/a&gt;";
+     if ($cat != $endKey) {
+      echo ', ';
+     }
+    }
+    ?&gt;
+   &lt;/p&gt;&lt; ?
+
+   foreach ($hashmap as $cat=&gt;$t) {
+    echo "&lt;a name='$cat'&gt;&lt;/a&gt;";
+    echo "&lt;b&gt;$cat&lt;/b&gt;&lt;br /&gt;";    
+    foreach ($t as $e) {
+     list($feed, $url) = split('feed/', $e-&gt;string[0]);
+     $title = $e-&gt;string[1];
+
+     echo "&lt;a href='$url' target='_blank'&gt;$title&lt;/a&gt;&lt;br /&gt;";
+
+    }
+    echo '&lt;br /&gt;';
+   }
+  }
+
+  function addContent($content) {
+   // Only do this if this is a page and it has the appropriate custom field
+   if (is_page()) {
+    $cust_field_values = get_post_custom_values($this-&gt;show_list);
+    if ($cust_field_values != NULL) {
+     if (defined('WP_ZEND_FRAMEWORK') &amp;&amp; WP_ZEND_FRAMEWORK) {
+      require_once 'Zend/Loader.php';
+      Zend_Loader::loadClass('Zend_Http_Client');
+     }
+     $content = $this-&gt;show_sub_list();
+    }
+   }
+   return $content;
+  }
+
+  function init() {
+   $this-&gt;get_admin_options();
+  }  
+
+  function get_admin_options() {
+   $admin_options = array('google_login' =&gt; '',
+    'google_pass' =&gt; '',
+    'use_accordion' =&gt; 'true');
+   $options = get_option($this-&gt;adminOptionName);
+   if (!empty($options)) {
+    foreach ($options as $key =&gt; $option) {
+     $admin_options[$key] = $option;
+    }
+   }
+   update_option($this-&gt;admin_optionsName, $admin_options);
+   return $admin_options;
+  }
+
+  function printAdminPage() {
+   $options = $this-&gt;get_admin_options();
+
+   if (isset($_POST['update_greader_sub_list_settings'])) {
+    if (isset($_POST['greader_sub_list_login'])) {
+     $options['google_login'] = $_POST['greader_sub_list_login'];
+    }
+    if (isset($_POST['greader_sub_list_pass'])) {
+     $options['google_pass'] = $_POST['greader_sub_list_pass'];
+    }
+
+    update_option($this-&gt;admin_optionsName, $options);
+    echo '&lt;div class="updated"&gt;&lt;p&gt;&lt;strong&gt;' .  _e('Settings Updated.', 'GoogleReaderSubList'). '&lt;/strong&gt;&lt;/p&gt;&lt;/div&gt;';
+
+   }
+   //$submit = _e('Update Settings', 'GoogleReaderSubList');
+
+   echo "&lt;div class='wrap'&gt;    &lt;form method='post' action='" . $_SERVER['REQUEST_URI'] . "'&gt;     &lt;h2&gt;Google Reader Subscription List&lt;/h2&gt;     &lt;h3&gt;Google Login&lt;/h3&gt;     &lt;input type='text' name='greader_sub_list_login' value='";
+   echo _e(apply_filters('format_to_edit', $options['google_login']), 'GoogleReaderSubList');
+   echo "' /&gt;
+     &lt;h3&gt;Google Password&lt;/h3&gt;     &lt;input type='password' name='greader_sub_list_pass' value='";
+   echo _e(apply_filters('format_to_edit', $options['google_pass']), 'GoogleReaderSubList');
+   echo "' /&gt;
+     &lt;div class='submit'&gt;      &lt;input type='submit' name='update_greader_sub_list_settings' value='";
+   echo _e('Update Settings', 'GoogleReaderSubList');
+   echo "'/&gt;
+     &lt;/div&gt;    &lt;/form&gt;   &lt;/div&gt;";
+  }
+}
+}
+
+if (class_exists('GoogleReaderSubList')) {
+$greader_sub_list = new GoogleReaderSubList();
+}
+
+if (!function_exists('greader_sub_list_ap')) {
+function greader_sub_list_ap() {
+  global $greader_sub_list;
+  if (!isset($greader_sub_list)) {
+   return;
+  }
+  if (function_exists('add_options_page')) {
+   add_options_page('gReader Subscriptions', 'gReader Subscriptions', 9, basename(__FILE__), array(&amp;$greader_sub_list, 'printAdminPage'));
+  }
+}
+}
+
+if (isset($greader_sub_list)) {
+add_action('admin_menu', 'greader_sub_list_ap');
+add_action('activate_google-raeder-list/google-reader-list.php', array(&amp;$greader_sub_list, 'init'));
+add_filter('the_content', array(&amp;$greader_sub_list, 'addContent'), '7');
+}
+</code></pre>
+</section>
+
+
+</article>
+<article class="post" role="article">
+    
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2009/06/quick-google-authentication-in-php.html">Quick Google Authentication in PHP</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2009-06-02T15:02:00+00:00" pubdate>
+                      <span class='month'>Jun</span> <span class='day'>2nd</span> <span class='year'>2009</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                            <span class="poop2">
+                        <a href="https://www.timbroder.com/blog/tags/gdata">#gdata</a>
+                        <a href="https://www.timbroder.com/blog/tags/HOWTO">#HOWTO</a>
+                        <a href="https://www.timbroder.com/blog/tags/php">#php</a>
+                            </span>
+                <span><a href="/2009/06/quick-google-authentication-in-php.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2009/06/quick-google-authentication-in-php.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="110297072"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>Here is a quick way to authenticate against Google and retrieve a protected
+feed. It does not use the supported ClientLogin method but it does allow you
+to get to some unsupported feeds (Reader, Bookmarks, etc) The <a href="http://framework.zend.com/download/gdata">Zend Gdata
+library</a> is required</p>
+
+<pre><code data-language="PHP">$show_list       = 'show-google-reader-sub-list';  //the hook in a page
+$login          = '';
+$pass          = '';
+$source         = 'wordpress-google-reader-sub-list-';  //the source the api sees when logging into Google
+$service         = 'reader';  
+$login_url        = 'https://www.google.com/accounts/ServiceLoginAuth?service=mail'; //URL to login to google
+$subscription_list_url  = 'http://www.google.com/reader/api/0/subscription/list'; //URL that holds a users subscriptions
+
+
+$client = new Zend_Http_Client($login_url);
+
+//connect, authenticate, and handshake with Google
+$client-&gt;setCookieJar()
+-&gt;setMethod(Zend_Http_Client::POST)
+-&gt;setParameterPost(array(
+ 'continue'             =&gt; $subscription_list_url,
+ 'service'              =&gt; 'reader',
+ 'niu'                  =&gt; 1,
+ 'hl'                   =&gt; 'en',
+ 'Email'              =&gt; $login,
+ 'Passwd'               =&gt; $pass,
+ 'PersistentCookie'     =&gt; 'yes',
+ 'asts'                 =&gt; ''
+));
+
+
+$response = $client-&gt;request('POST');
+$client-&gt;setUri($subscription_list_url)-&gt;setMethod(Zend_Http_Client::GET);
+$response = $client-&gt;request()-&gt;getBody();
+
+if ($client-&gt;request()-&gt;getStatus() == 400) {
+?&gt;Unable to login with supplied Google login/password```
+</code></pre>
+</section>
+
+
+</article>
+<article class="post" role="article">
+    
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2009/04/how-to-manage-podcasts-in-winamp-screw.html">How to manage podcasts in Winamp (screw itunes)</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2009-04-17T19:11:00+00:00" pubdate>
+                      <span class='month'>Apr</span> <span class='day'>17th</span> <span class='year'>2009</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                            <span class="poop2">
+                        <a href="https://www.timbroder.com/blog/tags/HOWTO">#HOWTO</a>
+                        <a href="https://www.timbroder.com/blog/tags/podcasts">#podcasts</a>
+                        <a href="https://www.timbroder.com/blog/tags/winamp">#winamp</a>
+                            </span>
+                <span><a href="/2009/04/how-to-manage-podcasts-in-winamp-screw.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2009/04/how-to-manage-podcasts-in-winamp-screw.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="111041871"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>So I really have been digging the Windows 7 beta.  However, Itunes does not
+sync podcasts correctly on the 64 bit version.  IF syncing works at all, it
+takes a while. I had used winamp to listen to my music a while ago, but had
+switched to amarok when I started single booting linux (yes, I hated Vista
+that much).  Now that I'm back to using windows a bit, I wanted my podcast
+experience to go flawlessly.</p>
+
+<p>As much as I dislike iTunes, they have got podcast management down pat</p>
+
+<ul>
+<li>search for podcast</li>
+<li>subscribe to podcast</li>
+<li>download episodes</li>
+<li>sync with ipod</li>
+<li><strong>after an episode has been listened to, delete from computer hard drive</strong>
+That last point is the most important part, everything else can be done
+manually  </li>
+</ul>
+
+<p>All this can be done with winamp. You will need two things, winamp and the
+<a href="http://mlipod.sourceforge.net/?page=downloads">ml_iPod</a> plugin.  While winamp
+does come with ipod support built in, ml_iPod has many more features.  The
+following steps should get you up to speed on podcasting with winamp</p>
+
+<ul>
+<li>install winamp</li>
+<li>install the ml_iPod plugin (it will tell you it has to remove the built in ipod plugin, this is ok)</li>
+<li>set a directory to save the episodes in  </li>
+</ul>
+
+<p><img src="http://1.bp.blogspot.com/_Ng3QbVQfLZ8/SejSAesN5OI/AAAAAAAAbG8/i6n7ZuHGR7A/s1600-h/1.jpg" alt="" /></p>
+
+<ul>
+<li>plug in your ipod</li>
+<li>enable podcast support for the ipod</li>
+<li>point it to your episode folder</li>
+<li>set the query for when to delete old episodes  </li>
+</ul>
+
+<p><img src="http://4.bp.blogspot.com/_Ng3QbVQfLZ8/SejS5pxj2JI/AAAAAAAAbHE/zU0cecph26A/s1600-h/2.jpg" alt="" /></p>
+
+<ul>
+<li>Add your podcasts by searching for them in the directory, or adding them manually using their RSS feed  </li>
+</ul>
+
+<p><img src="http://4.bp.blogspot.com/_Ng3QbVQfLZ8/SejTsQ-8VoI/AAAAAAAAbHM/RGPUVDtoXpI/s1600-h/3.jpg" alt="" /></p>
+
+<p>After this you should be good to go. podcasts!</p>
+</section>
+
+
+</article>
+<article class="post" role="article">
+    
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2009/02/installing-ubuntu-netbook-remix-with.html">Installing Ubuntu Netbook Remix (with Jaunty) on an MSI Wind</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2009-02-25T20:51:00+00:00" pubdate>
+                      <span class='month'>Feb</span> <span class='day'>25th</span> <span class='year'>2009</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                            <span class="poop2">
+                        <a href="https://www.timbroder.com/blog/tags/HOWTO">#HOWTO</a>
+                        <a href="https://www.timbroder.com/blog/tags/netbook">#netbook</a>
+                        <a href="https://www.timbroder.com/blog/tags/ubuntu">#ubuntu</a>
+                            </span>
+                <span><a href="/2009/02/installing-ubuntu-netbook-remix-with.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2009/02/installing-ubuntu-netbook-remix-with.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="111207570"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>I recently picked up a MSI Wind Netbook and love the damn thing. <a href="http://www.canonical.com/projects/ubuntu/unr">Ubuntu
+Netbook Remix</a> brings in a great
+UI which makes navigating on the small screen much easier.I used Ubuntu Jaunty
+Jackalope Alpha 4 as the base install, mainly because I didn't want to go
+through the trouble of converting my ext3 partitions to ext4 when it comes out
+on April 23rd, and the driver support is more complete.  I haven't had many
+problems with it aside from a few random firefox crashes.</p>
+
+<p><img src="http://1.bp.blogspot.com/_Ng3QbVQfLZ8/SaWunIJBkfI/AAAAAAAAa7c/XG8CFukv18E/s1600-h/Screenshot1.png" alt="" /></p>
+
+<p><img src="http://3.bp.blogspot.com/_Ng3QbVQfLZ8/SaYPBBQ2EmI/AAAAAAAAa74/DBWWqZQOEko/s1600-h/partitions.png" alt="" /></p>
+
+<ol>
+<li><p>We're going to make a bootable USB stick to install Ubuntu</p></li>
+<li><p>On a separate machine, <a href="http://www.ubuntu.com/testing/jaunty/alpha4#Download%20Alpha%204">Download </a>the cd image.  If you want to use 8.10, get the iso <a href="http://www.ubuntu.com/getubuntu/download">here</a></p></li>
+<li><p>if you are already using an Ubuntu install of 8.10 or higher, skip to step 11</p></li>
+<li><p>burn the image to a cd</p></li>
+<li><p>Boot to the cd, do not install, load the demo OS</p></li>
+<li>click System-&gt;Administration-&gt;Create a USB startup disk</li>
+<li>point it to either the cd in your drive, or the iso</li>
+<li>point to the correct USB stick</li>
+<li>the rest of the settings can stay default</li>
+<li>click Make Startup Disk</li>
+<li>Insert the usb drive into your wind, power it on, and hit delete to go into the bios, change the first boot device to USB Drive</li>
+<li>save and exit the bios</li>
+<li>If the wind boots off of the USB stick correctly, you should see the same screen as when you had booted off the cd</li>
+<li><a href="https://help.ubuntu.com/community/GraphicalInstall">Install </a>Ubuntu</li>
+<li><p>I made my partitions as follows:<br />
+|30 gig recovery partition|20 gig XP partition|15 Gig Ext4 Ubuntu Partition|4
+gig swap partition|the rest of the drive as an ext4 partition<br />
+![](http://3.bp.blogspot.com/_Ng3QbVQfLZ8/SaYPBBQ2EmI/AAAAA
+AAAa74/DBWWqZQOEko/s1600-h/partitions.png)</p></li>
+<li><p>That last partition is where I will mount my home directory, as well as mount from windows xp using <a href="http://www.fs-driver.org/faq.html">ext2fs </a>(I havn't actually tried this yet)</p></li>
+<li><p>Add the netbook remix repositories to your system.  This can be be done in synaptic or by typing the following into a terminal<br />
+sudo gedit /etc/apt/sources.list</p></li>
+<li><p>add the following:<br />
+deb http://ppa.launchpad.net/netbook-remix-team/ubuntu intrepid main<br />
+deb-src http://ppa.launchpad.net/netbook-remix-team/ubuntu intrepid main</p></li>
+<li><p>sudo apt-get update</p></li>
+<li><p>sudo apt-get install go-home-applet<br />
+sudo apt-get install window-picker-applet<br />
+sudo apt-get install maximus<br />
+sudo apt-get install human-netbook-theme</p></li>
+<li><p>Select the "Human Netbook Theme" in System Preferences&gt;Apperance</p></li>
+<li><p>go into System Preferences-&gt; sessions-&gt;startup programs and confirm that "Maximus" and "window-picker-applet" are thre</p></li>
+<li><p><strong>Disable Compiz Effects</strong> System Preferences-&gt;Appearance-&gt;None</p>
+
+<p>This is what is required to get netbook remix running, I continued with the
+following to tweak it some more</p></li>
+<li><p>Delete the bottom panel by right clicking on it</p></li>
+<li><p>Delete all the applets on the top panel by right clicking on them</p></li>
+<li><p>Add applets to the top panel so it ends up like:<br />
+Window Picker Applet | Trash Can |Notification Area | MixerApplet | Clock</p></li>
+<li><p>I also made alt+q the hotkey to show the desktop, makes navigating to it faster. Another option is the show desktop applet button that can be added to the top bar.  Preferences-&gt;keyboard shortcuts-&gt;"Hide all normal windows....."</p></li>
+</ol>
+
+<p>More info is available
+<a href="http://wiki.msiwind.net/index.php/Ubuntu_8.04_Hardy_Heron">here</a>.</p>
+</section>
+
+
+</article>
+<nav>
+    <br />
+    <a href="https://www.timbroder.com/blog/tags/2">Older Posts</a><br />
+</nav>
+
+    </main>
+
+
+                        <footer class="site-footer clearfix">
+    <section>
+            <span class="tag size2"><a href="/blog/tags/"></a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/AVSpeechSynthesizer">AVSpeechSynthesizer</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Ai">Ai</a></span>
+            &nbsp;
+        <span class="tag size8"><a href="/blog/tags/Android">Android</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Atom">Atom</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Avengers">Avengers</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Batman">Batman</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Batman%20Inc.">Batman Inc.</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Batman%20and%20Robin">Batman and Robin</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/CKEditor">CKEditor</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/Calibre">Calibre</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Cheese">Cheese</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/ComicCon">ComicCon</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/CoreData">CoreData</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/DRM">DRM</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/Docs%20Spreadsheets">Docs Spreadsheets</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/ESI">ESI</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Fontis">Fontis</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/GME">GME</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/GTD">GTD</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/GWT">GWT</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Garlic">Garlic</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/Google">Google</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/Google%20Reader">Google Reader</a></span>
+            &nbsp;
+        <span class="tag size9"><a href="/blog/tags/HOWTO">HOWTO</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Hulu">Hulu</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Internet%20Explorer">Internet Explorer</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/JIRA">JIRA</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/Kindle">Kindle</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/Mashups">Mashups</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Memcached">Memcached</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/OmniFocus">OmniFocus</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Oracle">Oracle</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/PHPUnit">PHPUnit</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/PostgreSQL">PostgreSQL</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/RSS">RSS</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Redmine">Redmine</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Remember%20the%20Milk">Remember the Milk</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Ruby">Ruby</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/SQL">SQL</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Shared%20web%20hosting%20service">Shared web hosting service</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Siri">Siri</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Skype">Skype</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Sony%20Reader">Sony Reader</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Stan%20Lee">Stan Lee</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/TDD">TDD</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Terminator">Terminator</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/TinyMCE">TinyMCE</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Vibrams">Vibrams</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Virtual%20hosting">Virtual hosting</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Virtual%20private%20server">Virtual private server</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Walking%20Dead">Walking Dead</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Web%20hosting">Web hosting</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/YUI">YUI</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Zend">Zend</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/adwhirl">adwhirl</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/adwords">adwords</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/aiaio">aiaio</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/ajax">ajax</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/alfred">alfred</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/analytics">analytics</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/angularjs">angularjs</a></span>
+            &nbsp;
+        <span class="tag size4"><a href="/blog/tags/appengine">appengine</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/apple">apple</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/applepay">applepay</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/apps">apps</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/autocomplete">autocomplete</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/automation">automation</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/beta">beta</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/bit.ly">bit.ly</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/blackberry">blackberry</a></span>
+            &nbsp;
+        <span class="tag size4"><a href="/blog/tags/blogger">blogger</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/bookmarks">bookmarks</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/brightkite">brightkite</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/calendar">calendar</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/chrome">chrome</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/coffee">coffee</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/css">css</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/debug">debug</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/digg">digg</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/django">django</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/drafts">drafts</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/dropbox">dropbox</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/encryption">encryption</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/engagement">engagement</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/events">events</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/facebook">facebook</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/firefox">firefox</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/friendfeed">friendfeed</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/gadgets">gadgets</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/gchat">gchat</a></span>
+            &nbsp;
+        <span class="tag size4"><a href="/blog/tags/gdata">gdata</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/gdrive">gdrive</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/gears">gears</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/git">git</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/github">github</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/gmail">gmail</a></span>
+            &nbsp;
+        <span class="tag size5"><a href="/blog/tags/gpowered.net">gpowered.net</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/greasemonkey">greasemonkey</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/groups">groups</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/homebrew">homebrew</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/instapaper">instapaper</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/interfacebuilder">interfacebuilder</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/ios">ios</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/ipad">ipad</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/iphone">iphone</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/javascript">javascript</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/jira">jira</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/jquery">jquery</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/json">json</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/kids">kids</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/laravel">laravel</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/launch%20center%20pro">launch center pro</a></span>
+            &nbsp;
+        <span class="tag size5"><a href="/blog/tags/magento">magento</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/maps">maps</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/mercurial">mercurial</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/mock">mock</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/mongodb">mongodb</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/music">music</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/mysql">mysql</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/netbook">netbook</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/nosql">nosql</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/objective%20c">objective c</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/oil">oil</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/omnifocus">omnifocus</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/opensocial">opensocial</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/opensource">opensource</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/os">os</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/osx">osx</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/pesto">pesto</a></span>
+            &nbsp;
+        <span class="tag size7"><a href="/blog/tags/php">php</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/picasa%20web">picasa web</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/podcasts">podcasts</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/powershell">powershell</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/primal">primal</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/productivity">productivity</a></span>
+            &nbsp;
+        <span class="tag size6"><a href="/blog/tags/python">python</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/pythonista">pythonista</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/quick">quick</a></span>
+            &nbsp;
+        <span class="tag size4"><a href="/blog/tags/reader">reader</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/realm">realm</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/regex">regex</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/running">running</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/search">search</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/security">security</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/seo">seo</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/sketch">sketch</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/skynet">skynet</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/sleep">sleep</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/socialgraph">socialgraph</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/solr">solr</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/startup">startup</a></span>
+            &nbsp;
+        <span class="tag size4"><a href="/blog/tags/swift">swift</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/testing">testing</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/textmate">textmate</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/timbroder.com">timbroder.com</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/todoist">todoist</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/twitter">twitter</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/twitter2gTalk">twitter2gTalk</a></span>
+            &nbsp;
+        <span class="tag size6"><a href="/blog/tags/ubuntu">ubuntu</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/urls">urls</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/vagrant">vagrant</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/varnish">varnish</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/virtualenv">virtualenv</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/winamp">winamp</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/windows">windows</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/wordpress">wordpress</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/xbox">xbox</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/xcode">xcode</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/xml">xml</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/yahoo%20pipes">yahoo pipes</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/youtube">youtube</a></span>
+            &nbsp;
+    
+    </section>
+    <section class="copyright">
+        Copyright &copy; 2007-2018 -
+         Tim Broder -         <span class="credit">Powered by <a href="http://sculpin.io">Sculpin</a></span>
+    </section>
+</footer>
+                <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="https://www.timbroder.com/themes/broderboy/deadfish/assets/js/index.js"></script>
+<script type="text/javascript" src="https://www.timbroder.com/themes/broderboy/deadfish/assets/js/rainbow.min.js"></script>
+<script type="text/javascript" src="https://www.timbroder.com/themes/broderboy/deadfish/assets/js/rlns.min.js"></script>
+
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'timbrodercom'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-17099661-1', 'auto');
+    ga('send', 'pageview');
+
+</script>    </div>
+</body>
+</html>

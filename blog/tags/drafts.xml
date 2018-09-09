@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[timbroder.com]]></title>
+    <link href="https://www.timbroder.com/blog/tags/drafts.xml" rel="self"/>
+    <link href="https://www.timbroder.com/"/>
+    <updated>2018-09-09T12:21:33+00:00</updated>
+    <id>https://www.timbroder.com/</id>
+            <author>
+            <name><![CDATA[Tim Broder]]></name>            <email><![CDATA[timothy.broder@gmail.com]]></email>        </author>
+        <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[Drafts]]></title>
+            <link href="https://www.timbroder.com/2014/03/drafts.html"/>
+            <updated>2014-03-28T16:07:22+00:00</updated>
+            <id>https://www.timbroder.com/2014/03/drafts.html</id>
+            <content type="html"><![CDATA[<p>On the plane last night I realize that I have quite a number of draft posts
+sitting in <a href="https://itunes.apple.com/us/app/weather-notifications/id704052114?ls=1&amp;mt=8&amp;uo=4&amp;at=11l4Cf&amp;ct=blog">Drafts</a>. These came in
+from <a href="https://itunes.apple.com/en/app/instapaper/id288545208?mt=8&amp;uo=4&amp;at=11l4Cf&amp;ct=blog">Instapaper</a> on the train. I probably read an unhealthy amount of
+things in Instapaper.  I’m going to try to be more diligent about posting
+these in real time. For now I’ve scheduled these out over the next few days</p>
+]]></content>
+        </entry>
+    </feed>

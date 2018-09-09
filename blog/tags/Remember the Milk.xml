@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[timbroder.com]]></title>
+    <link href="https://www.timbroder.com/blog/tags/Remember the Milk.xml" rel="self"/>
+    <link href="https://www.timbroder.com/"/>
+    <updated>2018-09-09T12:21:33+00:00</updated>
+    <id>https://www.timbroder.com/</id>
+            <author>
+            <name><![CDATA[Tim Broder]]></name>            <email><![CDATA[timothy.broder@gmail.com]]></email>        </author>
+        <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[Moving Gmail Gadgets to the Right Side]]></title>
+            <link href="https://www.timbroder.com/2011/04/moving-gmail-gadgets-to-the-right-side.html"/>
+            <updated>2011-04-07T14:56:39+00:00</updated>
+            <id>https://www.timbroder.com/2011/04/moving-gmail-gadgets-to-the-right-side.html</id>
+            <content type="html"><![CDATA[<p>I started using Remember the Milk recently but didn't want the <a href="http://www.rememberthemilk.com/services/gmail/gadget/">gmail
+gadget</a> to be so far
+down on the left hand side of my screen.  There is no built in way to move
+gadgets to the right hand side with the exception of chat (labels used to do
+this but was removed in favor of drag in drop back in late 2009).
+<a href="/images/2011/04/gmail_right_widgets.png"><img src="/images/2011/04/gmail_right_widgets.png" alt="" /></a>   If you don't have anything
+in the right hand column, <em>enable Right-Side Chat</em> from Gmail Labs.  We are
+going to add in some custom css to gmail so install either [Stylist ](https://
+chrome.google.com/extensions/detail/pabfempgigicdjjlccdgnbmeggkbjdhd)for
+Chrome or <a href="https://addons.mozilla.org/en-US/firefox/addon/stylish/">Stylish</a>
+for Firefox. Add the following style:</p>
+
+<pre><code>div.TZ:nth-child(8) {
+position:absolute !important; 
+right:0px; 
+top:165px; 
+width:164px; }
+</code></pre>
+
+<p>In chrome you can also restrict the domain to mail.google.com. For me, the
+Remember the Milk gadget was the 8th child. Play with this until it looks
+right for you. You may also have to play with the "top" element depending on
+how much room your chat gadget takes up</p>
+]]></content>
+        </entry>
+    </feed>

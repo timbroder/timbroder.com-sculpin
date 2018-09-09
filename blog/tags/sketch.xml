@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[timbroder.com]]></title>
+    <link href="https://www.timbroder.com/blog/tags/sketch.xml" rel="self"/>
+    <link href="https://www.timbroder.com/"/>
+    <updated>2018-09-09T12:21:33+00:00</updated>
+    <id>https://www.timbroder.com/</id>
+            <author>
+            <name><![CDATA[Tim Broder]]></name>            <email><![CDATA[timothy.broder@gmail.com]]></email>        </author>
+        <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[Sketch Git Plugin]]></title>
+            <link href="https://www.timbroder.com/2016/05/Sketch-Git-Plugin.html"/>
+            <updated>2016-05-04T11:10:00+00:00</updated>
+            <id>https://www.timbroder.com/2016/05/Sketch-Git-Plugin.html</id>
+            <content type="html"><![CDATA[<blockquote>
+  <p>A Git client built right into Sketch. Generate pretty diffs so that everybody knows what are the changes!</p>
+</blockquote>
+
+<p>Designers can use git too!</p>
+]]></content>
+        </entry>
+    </feed>

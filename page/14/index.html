@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>
+                        Home &mdash; timbroder.com
+            </title>
+    <meta name="description" content="Home" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="alternate" type="application/rss+xml" title="timbroder.com &raquo; Feed" href="https://feeds.feedburner.com/timbroder" />
+    
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />        <link href="https://www.timbroder.com/themes/broderboy/deadfish/assets/css/screen.css" rel="stylesheet" media="screen">
+    <link href="https://www.timbroder.com/themes/broderboy/deadfish/assets/css/tag_cloud.css" rel="stylesheet" media="screen">
+    <link href="https://www.timbroder.com/themes/broderboy/deadfish/assets/css/twilight.css" rel="stylesheet" media="screen">
+        <script>
+(function(a,b){function d(a,b){return a===null?b==="null":a===undefined?b==="undefined":a.is&&a instanceof f?b==="element":Object.prototype.toString.call(a).toLowerCase().indexOf(b)>7}function c(a){var b,e,f,g,h,i,l,m,n;if(a instanceof c)return a;d(a,"array")||(a=String(a).replace(/\s/g,"").toLowerCase().match(/(?:\+,|[^,])+/g));for(b=0,e=a.length;b<e;++b){d(a[b],"array")||(a[b]=String(a[b]).match(/(?:\+\/|[^\/])+/g)),i=[],f=a[b].length;while(f--){var l=a[b][f];h={jwertyCombo:String(l),shiftKey:!1,ctrlKey:!1,altKey:!1,metaKey:!1},d(l,"array")||(l=String(l).toLowerCase().match(/(?:(?:[^\+])+|\+\+|^\+$)/g)),g=l.length;while(g--)l[g]==="++"&&(l[g]="+"),l[g]in k.mods?h[j[k.mods[l[g]]]]=!0:l[g]in k.keys?h.keyCode=k.keys[l[g]]:m=l[g].match(/^\[([^-]+\-?[^-]*)-([^-]+\-?[^-]*)\]$/);if(d(h.keyCode,"undefined"))if(m&&m[1]in k.keys&&m[2]in k.keys){m[2]=k.keys[m[2]],m[1]=k.keys[m[1]];for(n=m[1];n<m[2];++n)i.push({altKey:h.altKey,shiftKey:h.shiftKey,metaKey:h.metaKey,ctrlKey:h.ctrlKey,keyCode:n,jwertyCombo:String(l)});h.keyCode=n}else h.keyCode=0;i.push(h)}this[b]=i}this.length=b;return this}var e=a.document,f=a.jQuery||a.Zepto||a.ender||e,g,h,i="keydown";f===e?(g=function(a,b){return a?f.querySelector(a,b||f):f},h=function(a,b){a.addEventListener(i,b,!1)},$f=function(a,b){var c=document.createEvent("Event"),d;c.initEvent(i,!0,!0);for(d in b)c[d]=b[d];return(a||f).dispatchEvent(c)}):(g=function(a,b,c){return f(a||e,b)},h=function(a,b){f(a).bind(i+".jwerty",b)},$f=function(a,b){f(a||e).trigger(f.Event(i,b))});var j={16:"shiftKey",17:"ctrlKey",18:"altKey",91:"metaKey"},k={mods:{".":16,shift:16,".":17,ctrl:17,".":18,alt:18,option:18,".":91,meta:91,cmd:91,"super":91,win:91},keys:{".":8,backspace:8,".":9,".":9,tab:9,".":13,"return":13,enter:13,".":13,pause:19,"pause-break":19,".":20,caps:20,"caps-lock":20,".":27,escape:27,esc:27,space:32,".":33,pgup:33,"page-up":33,".":34,pgdown:34,"page-down":34,".":35,end:35,".":36,home:36,ins:45,insert:45,del:45,"delete":45,".":37,left:37,"arrow-left":37,".":38,up:38,"arrow-up":38,".":39,right:39,"arrow-right":39,".":40,down:40,"arrow-down":40,"*":106,star:106,asterisk:106,multiply:106,"+":107,plus:107,"-":109,subtract:109,"=":187,equals:187,",":188,comma:188,".":190,period:190,"full-stop":190,"/":191,slash:191,"forward-slash":191,"`":192,tick:192,"back-quote":192,"[":219,"open-bracket":219,"\\":220,"back-slash":220,"]":221,"close-bracket":221,"'":222,quote:222,apostraphe:222}};l=95,n=0;while(++l<106)k.keys["num-"+n]=l,++n;l=47,n=0;while(++l<58)k.keys[n]=l,++n;l=111,n=1;while(++l<136)k.keys["f"+n]=l,++n;var l=64;while(++l<91)k.keys[String.fromCharCode(l).toLowerCase()]=l;var m=b.jwerty={event:function(a,b,e){if(d(b,"boolean")){var f=b;b=function(){return f}}a=new c(a);var g=0,h=a.length-1,i,j;return function(c){if(j=m.is(a,c,g)){if(g<h){++g;return}i=b.call(e||this,c,j),i===!1&&c.preventDefault(),g=0}else g=m.is(a,c)?1:0}},is:function(a,b,d){a=new c(a),d=d||0,a=a[d],b=b.originalEvent||b;var e,f=a.length,g=!1;while(f--){g=a[f].jwertyCombo;for(var h in a[f])h!=="jwertyCombo"&&b[h]!==a[f][h]&&(g=!1);if(g!==!1)return g}return g},key:function(b,c,e,f,i){var j=d(e,"element")||d(e,"string")?e:f,k=j===e?a:e,l=j===e?f:i;h(d(j,"element")?j:g(j,l),m.event(b,c,k))},fire:function(a,b,e,f){a=new c(a);var h=d(e,"number")?e:f;$f(d(b,"element")?b:g(b,e),a[h||0][0])},KEYS:k}})(this,typeof module!="undefined"&&module.exports?module.exports:this),jwerty.key("B,A",function(){_unicorns=document.createElement("SCRIPT"),_unicorns.type="text/javascript",_unicorns.src="http://snacksize.com/unicorn/unicorn.js?",document.getElementsByTagName("head")[0].appendChild(_unicorns)})
+</script>
+</head>
+<body class="nav-closed">
+                                        <div class="site-wrapper">
+                        <header class="main-header">
+        <div class="vertical">
+        <div class="main-header-content inner">
+            <h1 class="page-title">
+                <a href="/">
+                    timbroder.com
+                </a>
+            </h1>
+                        <h2 class="page-description">
+                <a href="/apps.html">Apps</a>
+                <a href="/projects.html">Projects</a>
+                <a href="/podcasts.html">Podcasts</a>
+                <a href="/talks.html">Talks</a>
+                            </h2>
+        </div>
+    </div>
+    </header>                            
+                    <main class="content" role="main">
+                <article class="post" role="article">
+            
+<header class="post-header">
+    <h1 class="post-title"><a href="http://inessential.com/2015/07/19/secret_projects_diary_2_swift_2_0_prot">Learning from Brent</a> ☞ </h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2015-07-19T21:42:00+00:00" pubdate>
+          <a href="https://www.timbroder.com/2015/07/inessential-secret-projects-diary-#2-swift-2.html">            <span class='month'>Jul</span> <span class='day'>19th</span> <span class='year'>2015</span>
+          </a>      </time>
+
+                        <span><a href="/2015/07/inessential-secret-projects-diary-#2-swift-2.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2015/07/inessential-secret-projects-diary-#2-swift-2.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-url="https://www.timbroder.com/2015/07/inessential-secret-projects-diary-#2-swift-2.html"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>I learn more about how to think about programming from Brent Simmons' blog than any place I can think of. I wish he wrote books or did full length tutorials. Probably more the later. I really like his thought process and how he breaks problems down.</p>
+
+<p>A good follow up to his Swift Protocol issue can be found <a href="http://owensd.io/2015/07/19/brents-feed-problem.html">here</a> by David Owen. I learn a lot from him too</p>
+
+<blockquote>
+  <p>Let's say I'm writing an RSS reader. (This is the example I tend to use on my blog, for historical reasons, and shouldn't be taken as indicative of anything.)</p>
+  
+  <p>Let's say the RSS reader can have a mix of stand-alone feeds and feeds that are synced with FeedBin, Feedly, NewsBlur, etc. I might very well do this:</p>
+  
+  <p>Create a Feed protocol.
+  Create classes for each different type of feed: LocalFeed, FeedBinFeed, FeedlyFeed, etc. Each one of these conforms to the Feed protocol.
+  (Why? Because each syncing system is different, and rather than have a giant Feed class that can handle all the different types, it's smarter to have a Feed protocol and then specific implementations for each different type of feed.)</p>
+  
+  <p>RSS readers tend to have folders too. But folders may have different rules, depending on the system: folders inside folders may or may not be allowed, for instance. So, similarly, I might do this:</p>
+  
+  <p>Create a Folder protocol.
+  Create classes for each different type of folder: LocalFolder, FeedBinFolder, FeedlyFolder, etc. Each one of these conforms to the Folder protocol.</p>
+</blockquote>
+</section>
+
+
+    </article>
+    <article class="post" role="article">
+        
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2015/07/fussy-coffee.html">Fussy Coffee</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2015-07-19T00:00:00+00:00" pubdate>
+                      <span class='month'>Jul</span> <span class='day'>19th</span> <span class='year'>2015</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/productivity">productivity</a>                            </span>
+                            <span class="poop2">
+                        <a href="https://www.timbroder.com/blog/tags/coffee">#coffee</a>
+                            </span>
+                <span><a href="/2015/07/fussy-coffee.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2015/07/fussy-coffee.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-url="https://www.timbroder.com/2015/07/fussy-coffee.html"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>Over the years I've <a href="http://www.marco.org/2010/06/16/the-coffee-setup-2010-i-own-a-lot-of-ways-to" title="read">read</a> or <a href="http://techdistortion.com/podcasts/pragmatic/episode-30-coffee" title="listened">listened</a> to some of the <a href="http://www.caseyliss.com/2014/7/25/neat-ice-kit" title="fussy">fussy</a> drinking <a href="https://david-smith.org/blog/2014/05/22/my-travel-coffee-kit/" title="habbits">habbits</a> of people I respect and follow.  I've been meaning to write about what I do for coffee for a while. A <a href="https://twitter.com/jessicalippke" title="coworker">coworker</a> of mine has asked and a recent post by my friend <a href="http://www.samuelstrickland.me/blog/2015/7/coffee-nerdery" title="Sam">Sam</a> kicked me to sit down and write it.</p>
+
+<p>Sam talks about Coffee Nerdery and it made me stop and think about how much I get into it. When I was younger, "nerd" had a negative connotation. I learned to not let it bother me a long time ago. <a href="http://fishingboatproceeds.tumblr.com/post/31143873695/now-available-for-pre-order-at-dftba-com-in" title="Nerds are passionate about many things">Nerds are passionate about many things</a>. For me it was comics, computers, books. Now, add a liiiitle bit of coffee into that.</p>
+
+<p>Don't get me wrong, <a href="http://www.marco.org/2014/03/31/throwing-k-cups-in-glass-houses" title="regular coffee is just fine">regular coffee is just fine</a>. Half the time, at work, I just have a cup from the pot. (Granted, that's <a href="http://gorillacoffee.com/" title="good coffee">good coffee</a>). But, as I've written about previously, <a href="http://timbroder.com/2014/09/morning-rituals.html" title="rituals are important">rituals are important</a>. Some of what I do with coffee is for the taste. Some of it is the ritual of preparing it and the comfort that it brings. Some of it is feeling included in a club, even if that club exists only online in the form of twitter, slack, and blog posts. Because of a few of the gadgets I use, I thought I was a little nerdier. But, the gadgets is where it ends. I don't fiddle with temperature or what I use to stir. I just get good beans and prep them with what I have.</p>
+
+<p>At the end of the day it doesn't matter. If you are passionate about something, want to throw all of your energy into it, are just curious, or just want to fiddle. Do it. If it entertains you, it scratches an itch, or you get something else out of it. Do it. Nerdism is starting to feel like a post within itself. Back to coffee.</p>
+
+<p>Here's what I do:
+I start up the kettle. When it hisses, I pour it in
+<img src="https://farm1.staticflickr.com/523/19799533225_f86f5625d2_z_d.jpg" alt="" /></p>
+
+<p>The beans I use are usually from the <a href="https://bluebottlecoffee.com/f4a9df89" title="Blue Bottle Coffee mail service">Blue Bottle Coffee mail service</a>. (&lt;-- referral link. help me out!) I'll do a review of the service at some point in the future. For now, check out <a href="http://www.marco.org/2012/05/29/tonx-coffee" title="Marco's">Marco's</a>
+<img src="https://farm1.staticflickr.com/452/19178658403_356e1f2eeb_z_d.jpg" alt="" /></p>
+
+<p>I grind the beans by hand using a <a href="http://amzn.to/1Mefklf" title="hand">Porlex JP-30 Stainless Steel Coffee Grinder</a></p>
+
+<p><img src="https://farm4.staticflickr.com/3732/19611530590_717563e7a2_z_d.jpg" alt="" /></p>
+
+<p><img src="https://farm1.staticflickr.com/560/19773361246_66d5776853_z_d.jpg" alt="" /></p>
+
+<p>Next is brewing. I use an <a href="http://www.amazon.com/gp/product/B001HBCVX0?ref_=oh_aui_search_detailpage&amp;redirect=true&amp;psc=1&amp;tag=nyen0e-20" title="AeroPress">AeroPress</a> and LOVE it.  Even if you use coffee grinds from the supermarket, the Aeropress make brewing so darned easy. Both brewing and cleaning. It makes one cup at a time. Add the coffee, the water, let it sit and then pump it out. Cleaning is just popping the "puck" of spent coffee into the garbage, rinsing everything with water, and throwing it in the drainboard. I use the "inverted method" as I find it the easiest. Check out this <a href="https://bluebottlecoffee.com/frequency/aeropress-video?tonx=1" title="1 min">1 min</a> Blue Bottle video that explains it. Sometimes, I also use the <a href="https://itunes.apple.com/us/app/aeropress-timer-for-aerobies/id602496538?mt=8&amp;at=11laRZ&amp;ct=pro" title="AeroPress Timer">AeroPress Timer</a> app on my phone that, in theory, gets a better tasting brew. I stir it with the handle of the AeroPress scoop</p>
+
+<p><img src="https://farm1.staticflickr.com/304/19611557190_c75f29d297_z_d.jpg" alt="" /></p>
+
+<p><img src="https://farm1.staticflickr.com/259/19799586545_8fa60e61ee_z_d.jpg" alt="" /></p>
+
+<p>Most of the time, I have the coffee exactly as it comes out of the press. This is a little closer to espresso than coffee. The instructions say "add water to taste". I've been home with <a href="https://twitter.com/timothybroder/status/617041906040762368" title="Charlie">Charlie</a> the past few weeks and have been trying this. I like both, I'm not sure which method I'll end up with. Either way, I add my 2 ice cubes</p>
+
+<p><img src="https://farm4.staticflickr.com/3690/19614589349_11ff2ac88c_z_d.jpg" alt="" /></p>
+
+<p>Now. Bulletproof Coffee. I've done this on and off over the past few years. Gizmodo <a href="http://gizmodo.com/bulletproof-coffee-debunking-the-hot-buttered-hype-1681321467" title="debunked">debunked</a> it earlier this year. What do I think? For the most part. It works. For the first few months, you feel like you've had rocket fuel and can do anything. Then, it tapers off. I do it a few times a year, usually close to the release of a website for a little boost. I eyeball a tablespoon or so of <a href="http://amzn.to/1Megeyb" title="Kerry Gold Butter">Kerry Gold Butter</a> and add a tablespoon of <a href="http://amzn.to/1fgmicy" title="MCT Oil">MCT Oil</a>. If you are going to try it, don't buy the bulletproof brand. It's not any better and amazon can save you money.</p>
+
+<p>However you take your coffee; whether you are super fussy, love your starbucks, or dabble a little bit at home: <a href="http://www.marco.org/2014/03/31/throwing-k-cups-in-glass-houses" title="It doesn’t matter">It doesn’t matter</a>. ENJOY your coffee</p>
+</section>
+
+
+    </article>
+    <article class="post" role="article">
+            
+<header class="post-header">
+    <h1 class="post-title"><a href="https://medium.com/@gortok/open-sourcing-jewelbots-1061c1f9f8f5">Open-Sourcing Jewelbots</a> ☞ </h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2015-05-02T17:08:34+00:00" pubdate>
+          <a href="https://www.timbroder.com/2015/05/open-sourcing-jewelbots.html">            <span class='month'>May</span> <span class='day'>2nd</span> <span class='year'>2015</span>
+          </a>      </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Commentary">Commentary</a>                            </span>
+                        <span><a href="/2015/05/open-sourcing-jewelbots.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2015/05/open-sourcing-jewelbots.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="3730812711"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><blockquote>
+  <p>I’ve always wondered why companies (and individuals) don’t put more of their
+  source code out there</p>
+</blockquote>
+</section>
+
+
+    </article>
+    <article class="post" role="article">
+            
+<header class="post-header">
+    <h1 class="post-title"><a href="http://tekside.net/iphonaddict/2015/1/11/games-i-was-addicted-to-in-20">Games I was addicted to in 2014</a> ☞ </h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2015-03-10T14:03:30+00:00" pubdate>
+          <a href="https://www.timbroder.com/2015/03/games-i-was-addicted-to-in-2014.html">            <span class='month'>Mar</span> <span class='day'>10th</span> <span class='year'>2015</span>
+          </a>      </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Commentary">Commentary</a>                            </span>
+                            <span class="poop2">
+                        <a href="https://www.timbroder.com/blog/tags/ios">#ios</a>
+                            </span>
+                <span><a href="/2015/03/games-i-was-addicted-to-in-2014.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2015/03/games-i-was-addicted-to-in-2014.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="3716258245"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>I posted on <a href="http://tekside.net/iphonaddict/2015/1/11/games-i-was-addicted-to-in-20">TekSide</a>:</p>
+
+<p>I don't consider myself a gamer anymore. I used to be.
+Countless, countless hours in Final Fantasy 6-9, Zelda, Tetris, Alleyway,
+Neverwinter, Halo, Fallout, Half life, Oblivion. The list goes on. I cut my
+teeth on a gameboy and SNES and kept going. Things dropped off after Halo 2. I
+surfaced for Halo  3 (a lot) and 4 (less so). I didn't play much on my phone
+during my years on Android; the games really weren't that great or polished.</p>
+
+<p>Part of my commute is a 10 minute subway ride. Something quick to play is
+appreciated, but I've been looking for something a little more immersive.
+Something I can sit and get lost in for a few hours. The other part of my
+commute is a 30 min commuter train ride where I'm either reading instapaper,
+napping, or playing a game while listening to podcasts.</p>
+
+<p><strong><a href="http://apple.co/1DzraiL">Baldur's Gate</a></strong> - I
+found this very late in the year. In fact I think I installed it at my in-laws
+on Christmas morning. I had never played either of the originals and was
+curious. It was one of the few games that consistently showed up on "best iOS
+RPG" when I was searching for something to play. The face that it looked like
+Neverwinter was a huge bonus for me. The tutorial for this game is very, very
+buggy and was very off-putting. Once I got past that though, everything
+changed. The game mechanics started making sense: pinching and zooming the map
+is fluid and tapping on your party to direct their targets just felt
+completely natural. The story quickly swept me in and I started questing. When
+I play RPGs, I try to do all the side quests. Baldur's Gate is no different.
+I'm currently grinding my way through a number of maps looking for someone's
+lost cloak. Perfect gameplay for listening to podcasts on the train. Outside
+of that though the music and sound effects are top notch. If you were ever a
+fan of D&amp;D style point+click RPGs, this will feel right at home. If you've
+never tried them, I can't recommend this game enough.</p>
+
+<p><a href="/images/2015/03/1.png"><img src="/images/2015/03/1-1024x768.png" alt="1" /></a></p>
+
+<p><strong><a href="http://apple.co/1Dzrkql">Tiny Tower</a> &amp; <a href="http://apple.co/1LGeXPK">Pocket Trains</a></strong> &#45; I put
+these games together because while very different games, they have similar
+gameplay mechanics. Build out your empire! In Tiny Tower, this takes the form
+of expanding a single tower. Inside this tower are all your Bitizens live:
+Where they eat, where they work, and where they have fun. Ala Sim City, but in
+an enclosed environment. In Pocket trains, you expand your train line, going
+for a trans-continental goal. Pick the cargo for your trains, build tracks,
+repair the engines, and race against the clock. Both games have IAP to buy
+coins and bucks to get you through the game faster. I've never used real world
+money in either and it's just as enjoyable</p>
+
+<p><strong><a href="http://apple.co/1LGeYmQ">RGB Express</a></strong> &#45; This is a good
+puzzle game where you draw routes for your drivers, picking up packages and
+making sure that every house receives the correct package. Setup your route,
+press play, watch your trucks zoom, and hope you didn't create any collisions!
+Pro Tip: You can set the playback to run the trucks at a faster speed. Kudos
+to the iOSDocked crew for making this the GameCenter Showdown in episode 77.</p>
+
+<p><strong><a href="http://apple.co/1Dzrxdd">Threes</a></strong> - Threes is a tiny puzzle that grows on you. It looks simple at
+first. But at some point you figure out you need a strategy to go higher.
+Match the same number, it triples and collapses. Keep going. Build higher and
+higher. Compete with your friends. It gets harder the higher you go and
+becomes addicting trying to get to that next score. I play tower defense
+style: Building into one of the top two corners and slowly growing numbers in
+those directions. What's your high score?</p>
+
+<p><a href="/images/2015/03/2.png"><img src="/images/2015/03/2.png" alt="2" /></a></p>
+
+<p><strong><a href="http://apple.co/1LGf2Dc">2048</a></strong> &#45; This game is very similar to threes
+(maybe too much so). But, it's still fun. I keep this one around because it
+takes a little less concentration than threes. It's more mindless and good for
+when I'm tired or need to think. It's a good distraction. 2048 is my checkers
+to my Threes chess.</p>
+
+<p><a href="/images/2015/03/3.png"><img src="/images/2015/03/3.png" alt="3" /></a></p>
+
+<p><strong><a href="http://apple.co/1DzrKgm">Honorable Mention: Monument Valley</a></strong> &#45; I
+can't stress enough that you NEED to go play this game. There is no other
+experience like it on iOS. Control your character through immersive M.C.
+Escher-like paintings. The levels are gorgeous. You'll spend time just staring
+at them, moving pieces around just to see what they do. It only gets Honorable
+Mention because of replay value. I played through it once in a few hours and
+that was that. But, it's magical. Everyone should play it</p>
+
+<p><a href="/images/2015/03/4.jpeg"><img src="/images/2015/03/4.jpeg" alt="4" /></a></p>
+
+<p><a href="/images/2015/03/5.jpeg"><img src="/images/2015/03/5.jpeg" alt="5" /></a></p>
+</section>
+
+
+    </article>
+    <article class="post" role="article">
+        
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2015/03/php7-vagrant-box.html">PHP7 Vagrant Box</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2015-03-07T16:13:24+00:00" pubdate>
+                      <span class='month'>Mar</span> <span class='day'>7th</span> <span class='year'>2015</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                            <span class="poop2">
+                        <a href="https://www.timbroder.com/blog/tags/php">#php</a>
+                        <a href="https://www.timbroder.com/blog/tags/vagrant">#vagrant</a>
+                            </span>
+                <span><a href="/2015/03/php7-vagrant-box.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2015/03/php7-vagrant-box.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="3579007676"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>I’m keeping a close eye (or as much as I can anyway) on PHP7 and what it means
+for the future of the language. Installing in your local dev machine is risky,
+especially if you have ongoing work. As usual, Vagrant comes to the rescue!</p>
+
+<p><a href="https://twitter.com/rasmus/">Rasmus Lerdorf</a> has put together a Vagrant box
+to ease in the setup and isolate your testing.</p>
+
+<p>If you use Atlas, check out the box
+<a href="https://atlas.hashicorp.com/rasmus/boxes/php7dev">here</a>. Otherwise, the
+readme is available on
+<a href="https://github.com/rlerdorf/php7dev/blob/master/README.md">Github</a></p>
+</section>
+
+
+    </article>
+    <article class="post" role="article">
+            
+<header class="post-header">
+    <h1 class="post-title"><a href="http://robb.is/thinking-about/beyond-uxkit/">Beyond UXKit - Robert Böhnke</a> ☞ </h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2015-02-07T15:46:33+00:00" pubdate>
+          <a href="https://www.timbroder.com/2015/02/beyond-uxkit-robert-bohnke.html">            <span class='month'>Feb</span> <span class='day'>7th</span> <span class='year'>2015</span>
+          </a>      </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Commentary">Commentary</a>                            </span>
+                        <span><a href="/2015/02/beyond-uxkit-robert-bohnke.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2015/02/beyond-uxkit-robert-bohnke.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="3495489176"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>Robert Böhnke wrote a good [piece](http://robb.is/thinking-about/beyond-
+uxkit/) on what UXKit could mean for the future of iOS/Mac UI Engineering</p>
+
+<blockquote>
+  <p>The new Photos for Mac is based on a new private framework in 10.10.3,
+  UXKit. It is essentially a replica of UIKit, based on top of AppKit.</p>
+</blockquote>
+
+<p>He also comments on what something like react native could mean for engineers,
+and the attitude the community has had around other “non-native” in the past</p>
+</section>
+
+
+    </article>
+    <article class="post" role="article">
+            
+<header class="post-header">
+    <h1 class="post-title"><a href="http://mongular.org/docs">Mongular, a Content Delivery System</a> ☞ </h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2015-02-06T16:03:23+00:00" pubdate>
+          <a href="https://www.timbroder.com/2015/02/mongular-content-delivery-system.html">            <span class='month'>Feb</span> <span class='day'>6th</span> <span class='year'>2015</span>
+          </a>      </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>,                         <a href="https://www.timbroder.com/blog/categories/Commentary">Commentary</a>                            </span>
+                        <span><a href="/2015/02/mongular-content-delivery-system.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2015/02/mongular-content-delivery-system.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="3495636050"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>Mongular is something to keep a close eye on. We’ve had a number of projects
+at <a href="http://www.alexanderinteractive.com">work</a> where we might want something…
+other than a CMS. Where content is king and that content is decoupled from the
+system using or displaying it.  Other solutions that we’re excited about are
+<a href="https://prismic.io/">Prismic</a> and <a href="https://www.contentful.com/">Contentful</a>.</p>
+
+<p>Systems like this would let us do <strong>whatever</strong> we wanted with the site. Not
+being tied to the confines of a particular CMS’ way of doing things could be
+freeing. These systems offer much more powerful ways to relate content or
+parts of content to each other. Going far beyond just weighted tags.</p>
+
+<blockquote>
+  <p>What is Mongular?</p>
+</blockquote>
+
+<p>></p>
+
+<blockquote>
+  <p>Mongular is a Content Delivery System (Framework?... not really) built to
+  take advantage of all the tools available to speed up the delivery of your
+  content to users, and reduce server load.</p>
+</blockquote>
+
+<p>></p>
+
+<blockquote>
+  <p>Content Delivery System?</p>
+</blockquote>
+
+<p>></p>
+
+<blockquote>
+  <p>Mongular wasn't built to be a Content Management System, even though with
+  enough development it could probably be built to do just that.</p>
+</blockquote>
+
+<p>></p>
+
+<blockquote>
+  <p>Mongular was built to deliver content in an easy, efficient and extendable
+  manner. Where developers take it, is up to them.</p>
+</blockquote>
+
+<p>Related reading:</p>
+
+<ul>
+<li><a href="https://blog.prismic.io/UyheDQEAAIYqPg5V/structured-text-a-cleaner-way-to-deal-with-rich-text-in-manageable-content">Structured Text: A cleaner way to deal with Rich Text in Manageable Content</a></li>
+<li><a href="https://blog.prismic.io/VD0Bdi8AADEA8qOm/experiments-compare-content-variations-efficacy-on-a-blog-or-page">Experiments: compare content variations efficacy on a blog or page</a></li>
+<li><a href="http://www.theguardian.com/open-platform/blog/what-is-powering-the-content-api">What's powering the Content API? - The Guardian speaks at Lucene Eurocon 2010</a></li>
+</ul>
+</section>
+
+
+    </article>
+    <article class="post" role="article">
+        
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2015/01/equality-in-the-apple-blogging-scene.html">Equality in the Apple Blogging Scene</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2015-01-12T00:10:24+00:00" pubdate>
+                      <span class='month'>Jan</span> <span class='day'>12th</span> <span class='year'>2015</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                        <span><a href="/2015/01/equality-in-the-apple-blogging-scene.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2015/01/equality-in-the-apple-blogging-scene.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="3413941731"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>Long time Mac developer, Daniel Jalkut posited a question last night on
+Twitter.</p>
+
+<blockquote>
+  <p>I find it far easier to follow brilliant women on Twitter than in blogs. Do
+  women in the Apple scene not blog as much, or am I missing them?</p>
+</blockquote>
+
+<p>></p>
+
+<blockquote>
+  <p>— Daniel Jalkut (@danielpunkass) <a href="https://twitter.com/danielpunkass/status/553983430095302656">January 10,
+  2015</a></p>
+</blockquote>
+
+<p>This question came out of some of the responses to Marco Arment’s “hot”
+<a href="http://www.marco.org/2015/01/04/apple-lost-functional-high-ground">post</a> last
+week about the state of Apple’s software ecosystem. Daniel got a good number
+of replies.</p>
+
+<p>I’m always looking for more to read, especially technical blogs. I’ve gone
+through them and added the following to my iOS RSS folder:</p>
+
+<ul>
+<li><a href="http://www.catehuston.com/blog/">Accidentally in Code</a> by <a href="https://twitter.com/catehstn">@catehstn</a></li>
+<li><a href="http://ericasadun.com/">Erica Sadun</a></li>
+<li><a href="http://www.mistys-internet.website/blog/">The Future Is Now</a> by <a href="https://twitter.com/mistydemeo">@mistydemeo</a></li>
+<li><a href="http://khanlou.com/">KHANLOU.COM</a></li>
+<li><a href="http://natashatherobot.com/">Natasha The Robot</a> by <a href="https://twitter.com/NatashaTheRobot">@NatashaTheRobot</a></li>
+<li><a href="http://blog.ashleynh.me/">Ashley Nelson-Hornstein</a> </li>
+</ul>
+</section>
+
+
+    </article>
+    <article class="post" role="article">
+        
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2015/01/contributing-to-magento2.html">Contributing to Magento2</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2015-01-07T17:04:00+00:00" pubdate>
+                      <span class='month'>Jan</span> <span class='day'>7th</span> <span class='year'>2015</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                            <span class="poop2">
+                        <a href="https://www.timbroder.com/blog/tags/magento">#magento</a>
+                            </span>
+                <span><a href="/2015/01/contributing-to-magento2.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2015/01/contributing-to-magento2.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="3399042067"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>The Magento2 dev team is now using Github in the traditional sense: They have
+an internal repo that gets pushed out to github at the end of their sprint.
+All commits stay intact. This is WAY better than the previous method of
+pushing a giant commit with everything each sprint.</p>
+
+<p>Ben has a <a href="http://bhmarks.com/blog/contributing-to-magento-2/">good walkthrough</a> on submitting a pull request to the repo. He links to a few
+resources to get up and running on the new platform.  Alan Kent goes into more
+<a href="https://alankent.wordpress.com/2014/12/27/behind-the-recent-magento-2-github-changes/">detail</a> on the “why” of the change.</p>
+
+<p>It’s not just code that has been opened up. The
+<a href="https://alankent.wordpress.com/2014/12/20/about-magento-2-0-developer-documentation/">documentation</a> lives on Github now too.</p>
+
+<p>These are all great changes. The more eyes we have on code the better. Do your
+part: <a href="https://github.com/magento/magento2">Install</a> the Magento 2 developer
+preview and get testing</p>
+</section>
+
+
+    </article>
+    <article class="post" role="article">
+            
+<header class="post-header">
+    <h1 class="post-title"><a href="http://www.devfactor.net/2014/12/30/2375-amazon-mistake/">My $2375 Amazon EC2 Mistake</a> ☞ </h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2015-01-07T16:02:04+00:00" pubdate>
+          <a href="https://www.timbroder.com/2015/01/my-2375-amazon-ec2-mistake.html">            <span class='month'>Jan</span> <span class='day'>7th</span> <span class='year'>2015</span>
+          </a>      </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Commentary">Commentary</a>                            </span>
+                        <span><a href="/2015/01/my-2375-amazon-ec2-mistake.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2015/01/my-2375-amazon-ec2-mistake.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="3401532866"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>A word of warning: Know what your modules/extensions/pods/plugins are doing,
+<strong>especially</strong> if they use any of your credentials.</p>
+
+<p>I’m actually surprised that this actually was up that long. I accidentally did
+this once and Amazon was on the phone with me 10 mins later.</p>
+
+<blockquote>
+  <p>Turns out through the S3 API you can actually spin up EC2 instances, and my
+  key had been spotted by a bot that continually searches GitHub for API keys.
+  Amazon AWS customer support informed me this happens a lot recently, hackers
+  have created an algorithm that searches GitHub 24 hours per day for API keys…
+  Once it finds one it spins up max instances of EC2 servers to farm itself
+  bitcoins…</p>
+  
+  <p>Boom! A $2375 bill in the morning. Just for trying to learn rails.</p>
+</blockquote>
+</section>
+
+
+    </article>
+    <nav class="pagination" role="navigation">
+                <a class="next" href="https://www.timbroder.com/page/15">&larr; Older</a>
+        
+                <a class="prev" href="https://www.timbroder.com/page/13">Newer &rarr;</a>
+            </nav>
+
+    </main>
+
+
+                        <footer class="site-footer clearfix">
+    <section>
+            <span class="tag size2"><a href="/blog/tags/"></a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/AVSpeechSynthesizer">AVSpeechSynthesizer</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Ai">Ai</a></span>
+            &nbsp;
+        <span class="tag size8"><a href="/blog/tags/Android">Android</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Atom">Atom</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Avengers">Avengers</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Batman">Batman</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Batman%20Inc.">Batman Inc.</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Batman%20and%20Robin">Batman and Robin</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/CKEditor">CKEditor</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/Calibre">Calibre</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Cheese">Cheese</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/ComicCon">ComicCon</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/CoreData">CoreData</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/DRM">DRM</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/Docs%20Spreadsheets">Docs Spreadsheets</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/ESI">ESI</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Fontis">Fontis</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/GME">GME</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/GTD">GTD</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/GWT">GWT</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Garlic">Garlic</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/Google">Google</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/Google%20Reader">Google Reader</a></span>
+            &nbsp;
+        <span class="tag size9"><a href="/blog/tags/HOWTO">HOWTO</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Hulu">Hulu</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Internet%20Explorer">Internet Explorer</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/JIRA">JIRA</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/Kindle">Kindle</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/Mashups">Mashups</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Memcached">Memcached</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/OmniFocus">OmniFocus</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Oracle">Oracle</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/PHPUnit">PHPUnit</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/PostgreSQL">PostgreSQL</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/RSS">RSS</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Redmine">Redmine</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Remember%20the%20Milk">Remember the Milk</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Ruby">Ruby</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/SQL">SQL</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Shared%20web%20hosting%20service">Shared web hosting service</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Siri">Siri</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Skype">Skype</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Sony%20Reader">Sony Reader</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Stan%20Lee">Stan Lee</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/TDD">TDD</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Terminator">Terminator</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/TinyMCE">TinyMCE</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Vibrams">Vibrams</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Virtual%20hosting">Virtual hosting</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Virtual%20private%20server">Virtual private server</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Walking%20Dead">Walking Dead</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Web%20hosting">Web hosting</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/YUI">YUI</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Zend">Zend</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/adwhirl">adwhirl</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/adwords">adwords</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/aiaio">aiaio</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/ajax">ajax</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/alfred">alfred</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/analytics">analytics</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/angularjs">angularjs</a></span>
+            &nbsp;
+        <span class="tag size4"><a href="/blog/tags/appengine">appengine</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/apple">apple</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/applepay">applepay</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/apps">apps</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/autocomplete">autocomplete</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/automation">automation</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/beta">beta</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/bit.ly">bit.ly</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/blackberry">blackberry</a></span>
+            &nbsp;
+        <span class="tag size4"><a href="/blog/tags/blogger">blogger</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/bookmarks">bookmarks</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/brightkite">brightkite</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/calendar">calendar</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/chrome">chrome</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/coffee">coffee</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/css">css</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/debug">debug</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/digg">digg</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/django">django</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/drafts">drafts</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/dropbox">dropbox</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/encryption">encryption</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/engagement">engagement</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/events">events</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/facebook">facebook</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/firefox">firefox</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/friendfeed">friendfeed</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/gadgets">gadgets</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/gchat">gchat</a></span>
+            &nbsp;
+        <span class="tag size4"><a href="/blog/tags/gdata">gdata</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/gdrive">gdrive</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/gears">gears</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/git">git</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/github">github</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/gmail">gmail</a></span>
+            &nbsp;
+        <span class="tag size5"><a href="/blog/tags/gpowered.net">gpowered.net</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/greasemonkey">greasemonkey</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/groups">groups</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/homebrew">homebrew</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/instapaper">instapaper</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/interfacebuilder">interfacebuilder</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/ios">ios</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/ipad">ipad</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/iphone">iphone</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/javascript">javascript</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/jira">jira</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/jquery">jquery</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/json">json</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/kids">kids</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/laravel">laravel</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/launch%20center%20pro">launch center pro</a></span>
+            &nbsp;
+        <span class="tag size5"><a href="/blog/tags/magento">magento</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/maps">maps</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/mercurial">mercurial</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/mock">mock</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/mongodb">mongodb</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/music">music</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/mysql">mysql</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/netbook">netbook</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/nosql">nosql</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/objective%20c">objective c</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/oil">oil</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/omnifocus">omnifocus</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/opensocial">opensocial</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/opensource">opensource</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/os">os</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/osx">osx</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/pesto">pesto</a></span>
+            &nbsp;
+        <span class="tag size7"><a href="/blog/tags/php">php</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/picasa%20web">picasa web</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/podcasts">podcasts</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/powershell">powershell</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/primal">primal</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/productivity">productivity</a></span>
+            &nbsp;
+        <span class="tag size6"><a href="/blog/tags/python">python</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/pythonista">pythonista</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/quick">quick</a></span>
+            &nbsp;
+        <span class="tag size4"><a href="/blog/tags/reader">reader</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/realm">realm</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/regex">regex</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/running">running</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/search">search</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/security">security</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/seo">seo</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/sketch">sketch</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/skynet">skynet</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/sleep">sleep</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/socialgraph">socialgraph</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/solr">solr</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/startup">startup</a></span>
+            &nbsp;
+        <span class="tag size4"><a href="/blog/tags/swift">swift</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/testing">testing</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/textmate">textmate</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/timbroder.com">timbroder.com</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/todoist">todoist</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/twitter">twitter</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/twitter2gTalk">twitter2gTalk</a></span>
+            &nbsp;
+        <span class="tag size6"><a href="/blog/tags/ubuntu">ubuntu</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/urls">urls</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/vagrant">vagrant</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/varnish">varnish</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/virtualenv">virtualenv</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/winamp">winamp</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/windows">windows</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/wordpress">wordpress</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/xbox">xbox</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/xcode">xcode</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/xml">xml</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/yahoo%20pipes">yahoo pipes</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/youtube">youtube</a></span>
+            &nbsp;
+    
+    </section>
+    <section class="copyright">
+        Copyright &copy; 2007-2018 -
+         Tim Broder -         <span class="credit">Powered by <a href="http://sculpin.io">Sculpin</a></span>
+    </section>
+</footer>
+                <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="https://www.timbroder.com/themes/broderboy/deadfish/assets/js/index.js"></script>
+<script type="text/javascript" src="https://www.timbroder.com/themes/broderboy/deadfish/assets/js/rainbow.min.js"></script>
+<script type="text/javascript" src="https://www.timbroder.com/themes/broderboy/deadfish/assets/js/rlns.min.js"></script>
+
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'timbrodercom'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-17099661-1', 'auto');
+    ga('send', 'pageview');
+
+</script>    </div>
+</body>
+</html>

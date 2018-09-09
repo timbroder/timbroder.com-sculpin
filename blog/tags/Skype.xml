@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[timbroder.com]]></title>
+    <link href="https://www.timbroder.com/blog/tags/Skype.xml" rel="self"/>
+    <link href="https://www.timbroder.com/"/>
+    <updated>2018-09-09T12:21:33+00:00</updated>
+    <id>https://www.timbroder.com/</id>
+            <author>
+            <name><![CDATA[Tim Broder]]></name>            <email><![CDATA[timothy.broder@gmail.com]]></email>        </author>
+        <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[Gmail to real phone calling]]></title>
+            <link href="https://www.timbroder.com/2010/08/gmail-to-real-phone-calling.html"/>
+            <updated>2010-08-25T19:07:05+00:00</updated>
+            <id>https://www.timbroder.com/2010/08/gmail-to-real-phone-calling.html</id>
+            <content type="html"><![CDATA[<p>We're playing with this at the office, pretty slick.  Seems like google just
+really wants to be skype though <img src="http://3.bp.blogspot.com/_JE4qNpFW6Yk/THRyAaGzsCI/AAAAAAAAAsI/Kv0RN0TmcLU/s800/screenshot2.jpeg" alt="" /> "<a href="http://gmailblog.blogspot.com/2008/11/say-hello-to-gmail-voice-and-video-chat.html">Gmail voice and video
+chat</a> makes it easy to stay in touch with friends and family using
+your computer’s microphone and speakers. But until now, this required both
+people to be at their computers, signed into Gmail at the same time. Given
+that most of us don’t spend all day in front of our computers, we thought,
+“wouldn’t it be nice if you could call people directly on their phones?”
+Starting today, you can call any phone right from Gmail."  Full info can be
+found <a href="http://gmailblog.blogspot.com/2010/08/call-phones-from-gmail.html">here</a></p>
+]]></content>
+        </entry>
+    </feed>

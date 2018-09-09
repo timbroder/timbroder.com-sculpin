@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[timbroder.com]]></title>
+    <link href="https://www.timbroder.com/blog/tags/javascript.xml" rel="self"/>
+    <link href="https://www.timbroder.com/"/>
+    <updated>2018-09-09T12:21:33+00:00</updated>
+    <id>https://www.timbroder.com/</id>
+            <author>
+            <name><![CDATA[Tim Broder]]></name>            <email><![CDATA[timothy.broder@gmail.com]]></email>        </author>
+        <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[Refreshing all the css on a page using jQuery]]></title>
+            <link href="https://www.timbroder.com/2012/07/refreshing-all-the-css-on-a-page-using-jquery.html"/>
+            <updated>2012-07-16T19:16:03+00:00</updated>
+            <id>https://www.timbroder.com/2012/07/refreshing-all-the-css-on-a-page-using-jquery.html</id>
+            <content type="html"><![CDATA[<p>I have a client project where we let them customize some css attributes in the
+admin, show them the updates in a small preview area, then save the changes
+back to the server. The custom css attributes are in a small css file that is
+generated on pageload and then cached to the server. All of the admin
+functionality is done through ajax, so I wanted a good way to update the UI of
+the site without having to do a full pageload. The below function was a great
+help.</p>
+
+<pre><code data-language="javascript">function reloadStylesheets() {
+    var queryString = '?reload=' + new Date().getTime();
+    $('link[rel=&amp;quot;stylesheet&amp;quot;]').each(function () {
+        this.href = this.href.replace(/\?.*|$/, queryString);
+    });
+}
+</code></pre>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Jira Tabs: Open all those Jira&#039;s at once! ]]></title>
+            <link href="https://www.timbroder.com/2011/04/jira-tabs-open-all-those-jiras-at-once.html"/>
+            <updated>2011-04-22T18:21:22+00:00</updated>
+            <id>https://www.timbroder.com/2011/04/jira-tabs-open-all-those-jiras-at-once.html</id>
+            <content type="html"><![CDATA[<p>Update: Code lives on <a href="https://github.com/broderboy/jira-tabs" title="GitHub">GitHub</a></p>
+
+<p>Ever want to open all the Jira’s on the screen in new tabs? Jess does, I do,
+and you should too! For firefox and chrome we now have the JiraTabs bookmark
+button. Go to <a href="http://broderboy.github.io/jira-tabs/" title="this page">this page</a> and drag the link up to your bookmarks bar. Then, whenever you are
+on a filter or search view of Jira's, click the button and all the jira's on
+your screen will open up in new tabs</p>
+
+<p>Demo:</p>
+
+<p><a href="http://www.youtube.com/watch?v=PltTkfuhKfM"><img src="http://img.youtube.com/vi/PltTkfuhKfM/0.jpg" alt="" /></a></p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Some reading from django-nyc]]></title>
+            <link href="https://www.timbroder.com/2010/09/some-reading-from-django-nyc.html"/>
+            <updated>2010-09-30T18:04:45+00:00</updated>
+            <id>https://www.timbroder.com/2010/09/some-reading-from-django-nyc.html</id>
+            <content type="html"><![CDATA[<p>Went to the <a href="http://www.djangonyc.org/">django-nyc</a> meetup last night, it was
+in Manhattan and much easier to get to then when it's at huge in bk.  Wrote
+down a few things to read up on:</p>
+
+<ul>
+<li><a href="http://celeryproject.org/">Celery</a> &#45; Celery is an asynchronous task queue/job queue based on distributed message passing. It is focused on real-time operation, but supports scheduling as well.</li>
+<li><a href="http://github.com/justinlilly/django-ideas">Django ideas</a> &#45; Voting on things with limited numbers of votes to spread around, ala UserVoice</li>
+<li><a href="http://www.meetup.com/NYC-GTUG/">Google tech meetup</a></li>
+<li><a href="http://code.google.com/apis/predict/">Google prediction api</a></li>
+<li><a href="http://www.meetup.com/javascript-7/">Nyc js</a></li>
+<li><a href="http://www.google.com/search?q=Ben+Firshman+class+based+views&amp;ie=utf-8&amp;oe=utf-8&amp;aq=t&amp;rls=org.mozilla:en-US:official&amp;client=firefox-a">Ben Firshman class based views</a></li>
+<li><a href="http://djangocon.blip.tv/">Django con blip tv</a></li>
+<li><a href="http://djangocon.blip.tv/file/4135225/">Scaling worlds largest Django install </a></li>
+<li>Maps of imaginary lands</li>
+<li>Eric's keynote</li>
+<li><a href="http://a.images.blip.tv/Robertlofthouse-PonyPwning373-117.jpg">Pony pwning security risks</a></li>
+<li><a href="http://djangocon.blip.tv/file/4107023/">How to sell Django</a></li>
+<li><a href="http://djangocon.blip.tv/file/4111172/">Nosql and Django</a></li>
+<li><a href="http://djangocon.blip.tv/file/4134218/">How to come up to speed with new codebase</a></li>
+<li>Frameworks</li>
+<li>Virtualenv wrapper</li>
+<li><a href="http://www.google.com/search?q=Fabric&amp;ie=utf-8&amp;oe=utf-8&amp;aq=t&amp;rls=org.mozilla:en-US:official&amp;client=firefox-a#sclient=psy&amp;hl=en&amp;client=firefox-a&amp;hs=X5N&amp;rls=org.mozilla%3Aen-US%3Aofficial&amp;source=hp&amp;q=Fabric+django&amp;aq=f&amp;aqi=g1g-m1g-o1&amp;aql=&amp;oq=&amp;gs_rfai=&amp;pbx=1&amp;fp=84f34ab5383c7ee9">Fabric</a></li>
+<li><a href="http://www.capistranorb.com/">Capistrana</a></li>
+<li>Django picket ajax</li>
+<li><a href="http://dajaxproject.com/">Dajax</a></li>
+</ul>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Google’s JavaScript/ Chrome Experiments Showcase]]></title>
+            <link href="https://www.timbroder.com/2009/03/googles-javascript-chrome-experiments.html"/>
+            <updated>2009-03-19T17:08:00+00:00</updated>
+            <id>https://www.timbroder.com/2009/03/googles-javascript-chrome-experiments.html</id>
+            <content type="html"><![CDATA[<p>Google at <a href="http://www.chromeexperiments.com/">ChromeExperiments.com</a> released
+a showcase site for JavaScript experiments especially aimed as promotion to
+demonstrate their own Chrome browser’s capabilities.  From games to 3D
+graphics, these demo's really show off what the chrome javascript engine can
+do</p>
+
+<p><img src="http://1.bp.blogspot.com/_Ng3QbVQfLZ8/ScJ8EmTWaKI/AAAAAAAAbGE/_Oq790Qhn5Q/s1600-h/chrome.JPG" alt="" /></p>
+]]></content>
+        </entry>
+    </feed>

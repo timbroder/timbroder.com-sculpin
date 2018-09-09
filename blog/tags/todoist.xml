@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[timbroder.com]]></title>
+    <link href="https://www.timbroder.com/blog/tags/todoist.xml" rel="self"/>
+    <link href="https://www.timbroder.com/"/>
+    <updated>2018-09-09T12:21:33+00:00</updated>
+    <id>https://www.timbroder.com/</id>
+            <author>
+            <name><![CDATA[Tim Broder]]></name>            <email><![CDATA[timothy.broder@gmail.com]]></email>        </author>
+        <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[How to Sync Basecamp Todos to Omnifocus or Todoist]]></title>
+            <link href="https://www.timbroder.com/2015/10/how-to-sync-basecamp-todos-to-omnifocus-or-todoist-.html"/>
+            <updated>2015-10-17T11:54:00+00:00</updated>
+            <id>https://www.timbroder.com/2015/10/how-to-sync-basecamp-todos-to-omnifocus-or-todoist-.html</id>
+            <content type="html"><![CDATA[<p><a href="https://basecamp.com/" title="Basecamp">Basecamp</a> is a large part of our process at Ai. It tracks most of our communication (a lot of this has been moving to <a href="https://slack.com/" title="Slack">Slack</a>). Basecamp serves as our system of record for signs-offs and deliverables. We also use it's "todo" function pretty heavily in the planning stages and tracking client tasks. Once we get into implementation, we transition to <a href="https://www.atlassian.com/software/jira" title="Jira">Jira</a>, as it's more powerful. Clients do not have access to Jira.</p>
+
+<p>I don't have an issue tracking Basecamp tasks. It's really good at emailing you when something is due. But, as I've said before, I'd be even BETTER at it, if the tasks were <a href="http://www.timbroder.com/2015/10/using-omnifocus-as-a-honey-do-app.html" title="in my world">in my world</a>. My world is <a href="https://itunes.apple.com/us/app/omnifocus-2/id867299399?mt=12&amp;at=11laRZ&amp;ct=pro" title="Omnifocus">Omnifocus</a>, but there is a VERY large contingent of <a href="https://itunes.apple.com/us/app/todoist-to-do-list-task-list/id585829637?mt=12&amp;at=11laRZ&amp;ct=pro" title="Todoist">Todoist</a> users at Ai. I am the outlier in this. In the past, my reasons for not using Todoist were I didn't want Ai tasks and personal project tasks in the same app, the hotkeys weren't up to snuff, and I didn't want to pay for premium to get notifications. I've since ignored these rules with Omnifocus; It runs everything in my life, it DOES have great hotkeys, and I dropped the $$$ for premium Omnifocus which was more expensive than Todoist premium in the long run. But, this is a topic for another post.</p>
+
+<p>Back on track. How to get Basecamp todos into my system? Again, Zapier to the rescue. Zapier can connect to Basecamp, do some basic filtering to make sure I only get tasks that I care about, and drop them into my Omnifocus inbox. Most of the following steps hold true for both Omnifocus and Todoist</p>
+
+<ol>
+<li><p>Create a new Zap that triggers when a new Basecamp todo is created. Have it create a new task in your system</p>
+
+<p><img src="https://farm6.staticflickr.com/5713/22062008838_fe08637466_k_d.jpg" alt="" /></p></li>
+<li><p>Select the appropriate Basecamp account and test it</p>
+
+<p><img src="https://farm6.staticflickr.com/5776/22249798545_09e03d2937_o_d.png" alt="" /></p></li>
+<li><p>Select and test your Todoist/Omnifocus account</p>
+
+<p><img src="https://farm1.staticflickr.com/737/22260363271_38415f36d9_o_d.png" alt="" /></p></li>
+<li><p>Choose your Basecamp Account, Project, and Todo list. If you want to filter even more by only items assigned to you, add a custom filter. Do this by either Assignee ID or Name</p>
+
+<p><img src="https://farm1.staticflickr.com/669/22063082689_9af276bb66_o_d.png" alt="" /></p></li>
+<li><p>Match up the Basecamp data to your tool of choice. First is how I send it to Omnifocus. Note, I do need to populate the due date by hand. In both options, I add the url back to the task in Basecamp so I can easy mark it off or comment in it when I'm done. Todoist lets you be a LOT more granular and handles all of the fields so you have no manual intervetntion</p>
+
+<p><img src="https://farm6.staticflickr.com/5697/22062121310_feb74fe493_o_d.png" alt="" /></p>
+
+<p><img src="https://farm1.staticflickr.com/734/22062436938_6ef239ce7f_o_d.png" alt="" /></p></li>
+<li><p>My tasks are now in my world. Profit.</p></li>
+</ol>
+]]></content>
+        </entry>
+    </feed>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[timbroder.com]]></title>
+    <link href="https://www.timbroder.com/blog/tags/timbroder.com.xml" rel="self"/>
+    <link href="https://www.timbroder.com/"/>
+    <updated>2018-09-09T12:21:33+00:00</updated>
+    <id>https://www.timbroder.com/</id>
+            <author>
+            <name><![CDATA[Tim Broder]]></name>            <email><![CDATA[timothy.broder@gmail.com]]></email>        </author>
+        <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[How to get brightkite photos into an RSS feed (to post to a blog)]]></title>
+            <link href="https://www.timbroder.com/2009/01/how-to-get-brightkite-photos-into-rss.html"/>
+            <updated>2009-01-26T15:11:00+00:00</updated>
+            <id>https://www.timbroder.com/2009/01/how-to-get-brightkite-photos-into-rss.html</id>
+            <content type="html"><![CDATA[<p>I started another <a href="http://timbroder.com">blog </a>so I have a place to rant about
+comics or movies or whatever else I need to get off my chest, and I needed an
+excuse to play with wordpress (something I've been wanting to do for a while).
+I plan on posting how I did certain things on that blog on gPowered. One of
+the things I really wanted to do was have my twitter photos show up as posts
+on that blog. For a while I have been using
+<a href="http://twitpic.com/photos/broderboy">twitpic</a>, but have recently changed over
+to <a href="http://brightkite.com/people/broderboy">brightkite</a>. Brightkite provides
+an rss feed of all your activity, but I was only interested in the photos.
+Looked like a job for <a href="http://pipes.yahoo.com/pipes/pipe.info?_id=PMOQjpHo3RGyu7JdLXO0Kg">Yahoo!
+Pipes</a>.</p>
+
+<p><a href="http://4.bp.blogspot.com/_Ng3QbVQfLZ8/SX3Uw_HR3KI/AAAAAAAAajI/XPnLMt02wdQ/s1600-h/pipe1.JPG">![](http://4.bp.blogspot.com/_Ng3QbVQfLZ8/SX3Uw_HR3KI/AAAAAAAAajI/XPnLMt02wdQ
+/s320/pipe1.JPG)</a></p>
+
+<p>I imported the bkite feed into pipes, filtered on the items that were photo
+posts, and renamed the title so it would have the title of the photo instead
+of the bkite location (by default bkite photo titles are the location where
+you most recently checked in). I also did some URL generation so anyone could
+<a href="http://pipes.yahoo.com/pipes/pipe.run?_id=PMOQjpHo3RGyu7JdLXO0Kg&amp;_render=rss&amp;username=broderboy">use the pipe</a> The next step was to get this into
+wordpress. I Installed the
+<a href="http://projects.radgeek.com/feedwordpress/">FeedWordPress</a> plugin and set it
+up to import the pipe's RSS feed. You can tweak the the settings on what user
+should be used to write the posts, categories, tags, permalinks (I set mine to
+point directly back to brightkite). Hope this helps someone out there,
+enjoy</p>
+]]></content>
+        </entry>
+    </feed>

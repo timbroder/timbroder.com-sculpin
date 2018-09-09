@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>
+                        Tag Archive &mdash; timbroder.com
+            </title>
+    <meta name="description" content="Tag Archive" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="alternate" type="application/rss+xml" title="timbroder.com &raquo; Feed" href="https://feeds.feedburner.com/timbroder" />
+    
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />        <link href="https://www.timbroder.com/themes/broderboy/deadfish/assets/css/screen.css" rel="stylesheet" media="screen">
+    <link href="https://www.timbroder.com/themes/broderboy/deadfish/assets/css/tag_cloud.css" rel="stylesheet" media="screen">
+    <link href="https://www.timbroder.com/themes/broderboy/deadfish/assets/css/twilight.css" rel="stylesheet" media="screen">
+        <script>
+(function(a,b){function d(a,b){return a===null?b==="null":a===undefined?b==="undefined":a.is&&a instanceof f?b==="element":Object.prototype.toString.call(a).toLowerCase().indexOf(b)>7}function c(a){var b,e,f,g,h,i,l,m,n;if(a instanceof c)return a;d(a,"array")||(a=String(a).replace(/\s/g,"").toLowerCase().match(/(?:\+,|[^,])+/g));for(b=0,e=a.length;b<e;++b){d(a[b],"array")||(a[b]=String(a[b]).match(/(?:\+\/|[^\/])+/g)),i=[],f=a[b].length;while(f--){var l=a[b][f];h={jwertyCombo:String(l),shiftKey:!1,ctrlKey:!1,altKey:!1,metaKey:!1},d(l,"array")||(l=String(l).toLowerCase().match(/(?:(?:[^\+])+|\+\+|^\+$)/g)),g=l.length;while(g--)l[g]==="++"&&(l[g]="+"),l[g]in k.mods?h[j[k.mods[l[g]]]]=!0:l[g]in k.keys?h.keyCode=k.keys[l[g]]:m=l[g].match(/^\[([^-]+\-?[^-]*)-([^-]+\-?[^-]*)\]$/);if(d(h.keyCode,"undefined"))if(m&&m[1]in k.keys&&m[2]in k.keys){m[2]=k.keys[m[2]],m[1]=k.keys[m[1]];for(n=m[1];n<m[2];++n)i.push({altKey:h.altKey,shiftKey:h.shiftKey,metaKey:h.metaKey,ctrlKey:h.ctrlKey,keyCode:n,jwertyCombo:String(l)});h.keyCode=n}else h.keyCode=0;i.push(h)}this[b]=i}this.length=b;return this}var e=a.document,f=a.jQuery||a.Zepto||a.ender||e,g,h,i="keydown";f===e?(g=function(a,b){return a?f.querySelector(a,b||f):f},h=function(a,b){a.addEventListener(i,b,!1)},$f=function(a,b){var c=document.createEvent("Event"),d;c.initEvent(i,!0,!0);for(d in b)c[d]=b[d];return(a||f).dispatchEvent(c)}):(g=function(a,b,c){return f(a||e,b)},h=function(a,b){f(a).bind(i+".jwerty",b)},$f=function(a,b){f(a||e).trigger(f.Event(i,b))});var j={16:"shiftKey",17:"ctrlKey",18:"altKey",91:"metaKey"},k={mods:{".":16,shift:16,".":17,ctrl:17,".":18,alt:18,option:18,".":91,meta:91,cmd:91,"super":91,win:91},keys:{".":8,backspace:8,".":9,".":9,tab:9,".":13,"return":13,enter:13,".":13,pause:19,"pause-break":19,".":20,caps:20,"caps-lock":20,".":27,escape:27,esc:27,space:32,".":33,pgup:33,"page-up":33,".":34,pgdown:34,"page-down":34,".":35,end:35,".":36,home:36,ins:45,insert:45,del:45,"delete":45,".":37,left:37,"arrow-left":37,".":38,up:38,"arrow-up":38,".":39,right:39,"arrow-right":39,".":40,down:40,"arrow-down":40,"*":106,star:106,asterisk:106,multiply:106,"+":107,plus:107,"-":109,subtract:109,"=":187,equals:187,",":188,comma:188,".":190,period:190,"full-stop":190,"/":191,slash:191,"forward-slash":191,"`":192,tick:192,"back-quote":192,"[":219,"open-bracket":219,"\\":220,"back-slash":220,"]":221,"close-bracket":221,"'":222,quote:222,apostraphe:222}};l=95,n=0;while(++l<106)k.keys["num-"+n]=l,++n;l=47,n=0;while(++l<58)k.keys[n]=l,++n;l=111,n=1;while(++l<136)k.keys["f"+n]=l,++n;var l=64;while(++l<91)k.keys[String.fromCharCode(l).toLowerCase()]=l;var m=b.jwerty={event:function(a,b,e){if(d(b,"boolean")){var f=b;b=function(){return f}}a=new c(a);var g=0,h=a.length-1,i,j;return function(c){if(j=m.is(a,c,g)){if(g<h){++g;return}i=b.call(e||this,c,j),i===!1&&c.preventDefault(),g=0}else g=m.is(a,c)?1:0}},is:function(a,b,d){a=new c(a),d=d||0,a=a[d],b=b.originalEvent||b;var e,f=a.length,g=!1;while(f--){g=a[f].jwertyCombo;for(var h in a[f])h!=="jwertyCombo"&&b[h]!==a[f][h]&&(g=!1);if(g!==!1)return g}return g},key:function(b,c,e,f,i){var j=d(e,"element")||d(e,"string")?e:f,k=j===e?a:e,l=j===e?f:i;h(d(j,"element")?j:g(j,l),m.event(b,c,k))},fire:function(a,b,e,f){a=new c(a);var h=d(e,"number")?e:f;$f(d(b,"element")?b:g(b,e),a[h||0][0])},KEYS:k}})(this,typeof module!="undefined"&&module.exports?module.exports:this),jwerty.key("B,A",function(){_unicorns=document.createElement("SCRIPT"),_unicorns.type="text/javascript",_unicorns.src="http://snacksize.com/unicorn/unicorn.js?",document.getElementsByTagName("head")[0].appendChild(_unicorns)})
+</script>
+</head>
+<body class="nav-closed">
+                                        <div class="site-wrapper">
+                        <header class="main-header">
+        <div class="vertical">
+        <div class="main-header-content inner">
+            <h1 class="page-title">
+                <a href="/">
+                    timbroder.com
+                </a>
+            </h1>
+                        <h2 class="page-description">
+                <a href="/apps.html">Apps</a>
+                <a href="/projects.html">Projects</a>
+                <a href="/podcasts.html">Podcasts</a>
+                <a href="/talks.html">Talks</a>
+                            </h2>
+        </div>
+    </div>
+    </header>                            
+                    <main class="content" role="main">
+            <article class="post" role="article">
+    
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2015/07/fussy-coffee.html">Fussy Coffee</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2015-07-19T00:00:00+00:00" pubdate>
+                      <span class='month'>Jul</span> <span class='day'>19th</span> <span class='year'>2015</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/productivity">productivity</a>                            </span>
+                            <span class="poop2">
+                        <a href="https://www.timbroder.com/blog/tags/coffee">#coffee</a>
+                            </span>
+                <span><a href="/2015/07/fussy-coffee.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2015/07/fussy-coffee.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-url="https://www.timbroder.com/2015/07/fussy-coffee.html"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>Over the years I've <a href="http://www.marco.org/2010/06/16/the-coffee-setup-2010-i-own-a-lot-of-ways-to" title="read">read</a> or <a href="http://techdistortion.com/podcasts/pragmatic/episode-30-coffee" title="listened">listened</a> to some of the <a href="http://www.caseyliss.com/2014/7/25/neat-ice-kit" title="fussy">fussy</a> drinking <a href="https://david-smith.org/blog/2014/05/22/my-travel-coffee-kit/" title="habbits">habbits</a> of people I respect and follow.  I've been meaning to write about what I do for coffee for a while. A <a href="https://twitter.com/jessicalippke" title="coworker">coworker</a> of mine has asked and a recent post by my friend <a href="http://www.samuelstrickland.me/blog/2015/7/coffee-nerdery" title="Sam">Sam</a> kicked me to sit down and write it.</p>
+
+<p>Sam talks about Coffee Nerdery and it made me stop and think about how much I get into it. When I was younger, "nerd" had a negative connotation. I learned to not let it bother me a long time ago. <a href="http://fishingboatproceeds.tumblr.com/post/31143873695/now-available-for-pre-order-at-dftba-com-in" title="Nerds are passionate about many things">Nerds are passionate about many things</a>. For me it was comics, computers, books. Now, add a liiiitle bit of coffee into that.</p>
+
+<p>Don't get me wrong, <a href="http://www.marco.org/2014/03/31/throwing-k-cups-in-glass-houses" title="regular coffee is just fine">regular coffee is just fine</a>. Half the time, at work, I just have a cup from the pot. (Granted, that's <a href="http://gorillacoffee.com/" title="good coffee">good coffee</a>). But, as I've written about previously, <a href="http://timbroder.com/2014/09/morning-rituals.html" title="rituals are important">rituals are important</a>. Some of what I do with coffee is for the taste. Some of it is the ritual of preparing it and the comfort that it brings. Some of it is feeling included in a club, even if that club exists only online in the form of twitter, slack, and blog posts. Because of a few of the gadgets I use, I thought I was a little nerdier. But, the gadgets is where it ends. I don't fiddle with temperature or what I use to stir. I just get good beans and prep them with what I have.</p>
+
+<p>At the end of the day it doesn't matter. If you are passionate about something, want to throw all of your energy into it, are just curious, or just want to fiddle. Do it. If it entertains you, it scratches an itch, or you get something else out of it. Do it. Nerdism is starting to feel like a post within itself. Back to coffee.</p>
+
+<p>Here's what I do:
+I start up the kettle. When it hisses, I pour it in
+<img src="https://farm1.staticflickr.com/523/19799533225_f86f5625d2_z_d.jpg" alt="" /></p>
+
+<p>The beans I use are usually from the <a href="https://bluebottlecoffee.com/f4a9df89" title="Blue Bottle Coffee mail service">Blue Bottle Coffee mail service</a>. (&lt;-- referral link. help me out!) I'll do a review of the service at some point in the future. For now, check out <a href="http://www.marco.org/2012/05/29/tonx-coffee" title="Marco's">Marco's</a>
+<img src="https://farm1.staticflickr.com/452/19178658403_356e1f2eeb_z_d.jpg" alt="" /></p>
+
+<p>I grind the beans by hand using a <a href="http://amzn.to/1Mefklf" title="hand">Porlex JP-30 Stainless Steel Coffee Grinder</a></p>
+
+<p><img src="https://farm4.staticflickr.com/3732/19611530590_717563e7a2_z_d.jpg" alt="" /></p>
+
+<p><img src="https://farm1.staticflickr.com/560/19773361246_66d5776853_z_d.jpg" alt="" /></p>
+
+<p>Next is brewing. I use an <a href="http://www.amazon.com/gp/product/B001HBCVX0?ref_=oh_aui_search_detailpage&amp;redirect=true&amp;psc=1&amp;tag=nyen0e-20" title="AeroPress">AeroPress</a> and LOVE it.  Even if you use coffee grinds from the supermarket, the Aeropress make brewing so darned easy. Both brewing and cleaning. It makes one cup at a time. Add the coffee, the water, let it sit and then pump it out. Cleaning is just popping the "puck" of spent coffee into the garbage, rinsing everything with water, and throwing it in the drainboard. I use the "inverted method" as I find it the easiest. Check out this <a href="https://bluebottlecoffee.com/frequency/aeropress-video?tonx=1" title="1 min">1 min</a> Blue Bottle video that explains it. Sometimes, I also use the <a href="https://itunes.apple.com/us/app/aeropress-timer-for-aerobies/id602496538?mt=8&amp;at=11laRZ&amp;ct=pro" title="AeroPress Timer">AeroPress Timer</a> app on my phone that, in theory, gets a better tasting brew. I stir it with the handle of the AeroPress scoop</p>
+
+<p><img src="https://farm1.staticflickr.com/304/19611557190_c75f29d297_z_d.jpg" alt="" /></p>
+
+<p><img src="https://farm1.staticflickr.com/259/19799586545_8fa60e61ee_z_d.jpg" alt="" /></p>
+
+<p>Most of the time, I have the coffee exactly as it comes out of the press. This is a little closer to espresso than coffee. The instructions say "add water to taste". I've been home with <a href="https://twitter.com/timothybroder/status/617041906040762368" title="Charlie">Charlie</a> the past few weeks and have been trying this. I like both, I'm not sure which method I'll end up with. Either way, I add my 2 ice cubes</p>
+
+<p><img src="https://farm4.staticflickr.com/3690/19614589349_11ff2ac88c_z_d.jpg" alt="" /></p>
+
+<p>Now. Bulletproof Coffee. I've done this on and off over the past few years. Gizmodo <a href="http://gizmodo.com/bulletproof-coffee-debunking-the-hot-buttered-hype-1681321467" title="debunked">debunked</a> it earlier this year. What do I think? For the most part. It works. For the first few months, you feel like you've had rocket fuel and can do anything. Then, it tapers off. I do it a few times a year, usually close to the release of a website for a little boost. I eyeball a tablespoon or so of <a href="http://amzn.to/1Megeyb" title="Kerry Gold Butter">Kerry Gold Butter</a> and add a tablespoon of <a href="http://amzn.to/1fgmicy" title="MCT Oil">MCT Oil</a>. If you are going to try it, don't buy the bulletproof brand. It's not any better and amazon can save you money.</p>
+
+<p>However you take your coffee; whether you are super fussy, love your starbucks, or dabble a little bit at home: <a href="http://www.marco.org/2014/03/31/throwing-k-cups-in-glass-houses" title="It doesn’t matter">It doesn’t matter</a>. ENJOY your coffee</p>
+</section>
+
+
+</article>
+<article class="post" role="article">
+    
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2014/09/morning-rituals.html">On Morning Rituals</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2014-09-16T15:51:28+00:00" pubdate>
+                      <span class='month'>Sep</span> <span class='day'>16th</span> <span class='year'>2014</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                            <span class="poop2">
+                        <a href="https://www.timbroder.com/blog/tags/coffee">#coffee</a>
+                        <a href="https://www.timbroder.com/blog/tags/sleep">#sleep</a>
+                            </span>
+                <span><a href="/2014/09/morning-rituals.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2014/09/morning-rituals.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="3024144661"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>Rituals are important. I’m a creature of habit. But, I had never characterized
+some of the things I do as rituals.  I read some posts by <a href="http://www.caseyliss.com/2014/6/28/go-pack">Casey
+Liss</a> and <a href="http://david-smith.org/blog/2014/05/22/my-travel-coffee-kit/">David Smith</a> that were not unlike
+some of the things I do.  I like repetition. I like not having to think about
+a decision or even make one to begin with.  Similar things for breakfast each
+day. If I cook a big meal I’ll have the leftovers for subsequent meals until
+they are gone.</p>
+
+<p>Having these rituals help me get my day going. They let me know
+that all is right in the world.</p>
+
+<p>My morning ritual is something of a decision
+tree:</p>
+
+<p><strong>Gym</strong></p>
+
+<p>I used to go to my gym a lot more often; 4-6 days a week. Adding
+in runs on top of that if I was training for a race. Lately 3 days a week
+seems to be my norm. I’ve grown to be ok with this. Personal and work stress
+are adding up, and that’s what I can do right now. Which is funny because the
+gym is a <em>huge</em> stress relief for me. But, I digress.  If I go to the gym, I
+shower at the gym after my workout, then walk to work.  I either have
+breakfast with me or I pick it up on the way to the office. If I have it with
+me, it means I cooked it the night before: 3-4 eggs fried in coconut oil,
+seasoning, maybe some sourcraut (It’s a lot better than you think it is). If I
+pick it up it’s some kind of veggie omelet or scrambled eggs with a vegetable.
+This has been my morning gym ritual for about 5 years now.  I started drinking
+coffee about a year ago. I have a half cup from the pot of work if I eat
+breakfast there.  I add 2 cubes of ice to it from work’s freezer.  I want to
+drink it immediately and this brings it to the right temperature for my taste.
+Having this repetition helps me start my day. I usually eat my food at the
+cafe table, with my laptop, doing a quick pass of email.  I’m trying to shift
+this into <em>doing</em> something with the first hour of my day, not just drowning
+in email.</p>
+
+<p>Wakeup time: 5:35am. Catch 6:07 train into the city. My clothes are
+laid out the night before. Wakeup, chug protein shake so I’m not starving,
+wash face, brush teeth, do inhaler, run to train.</p>
+
+<p><strong>Home</strong></p>
+
+<p>If I sleep in, I
+eat and have coffee at home.  I’ll wakeup and jump in the shower to wake up a
+little. Breakfast will be 3 eggs and sometimes a few strips of bacon.  I put
+the frying pan on high. While it’s heating up I put the kettle on.  I crack a
+few eggs into the pan. While they are sitting, I start getting the Aeropress
+ready.  I love the Aeropress. It’s perfect for a single cup, or even 2 if I’m
+making one for Laura. I get my coffee from <a href="https://tonx.org/f4a9df89">Tonx</a>.
+If you aren’t familiar with them, I highly recommend. You get your coffee
+every 2 weeks for a monthly fee. The beans are roasted fresh, which apparently
+augments the taste.  I don’t have to worry about running out, or remembering
+to pick some up from the store. It just shows up. Less stress.  The amount of
+coffee I drink is perfect for their lowest plan. At most I end up with an
+extra cup and a half of beans. It’s very, very rare that I run out. I also
+tried Drifwaway coffee which I <strong>really</strong> liked. They send you a sample pack
+of 4 types of coffee. You rate each one and this effects what your shipments
+are in the future. I consistently got something I really enjoyed. I
+occasionally get something I’m not a big fan of with Tonx.  You might wonder
+why I don’t just pick 1 thing and stick with it. That would be less stress,
+actually. But, I’m still getting into coffee and exploring what I like. I
+can’t tell you right now what type of coffee I like using the right
+terminology. But, Driftaway’s shipment size was too big for me, I ended up
+having a decent amount leftover.</p>
+
+<p>Wakeup time: in between 7 and 8, depending on
+what my morning for work looks like</p>
+
+<p><strong>Run</strong></p>
+
+<p>I may, like I did this morning,
+get up 30-60 mins before my sleep in time and get a run in.  If it’s going to
+be raining I’ll opt for this. I love running in the rain.  The amount of
+running I’ve been doing recently has dropped drastically. I’m trying to get
+back into it. I really do love it. After the run, I fall into what I normally
+do at home.</p>
+
+<p>I use an alarm for all of these. For the gym, I’ll set the <a href="http://www.amazon.com/Sony-Machine-Cassette-Player-Icf-cs650/dp/B00KNKJYQS?tag=nyen0e-20">Sony
+clock radio</a> I’ve had since I was 6. I’m amazed it still
+works, though it took me a while to find a link to it online. I wake up at the
+same time for the gym, no matter the day. I just flip on the alarm. Laura
+keeps it tuned to NPR, so I wake up to that.  The other days I’ll use my
+phone. Siri sets alarms for whatever time I need.</p>
+
+<p>I never snooze. Never have,
+don’t think I ever will.  If I’m not going to get up until 20 mins later, I’d
+rather just get that as real sleep time.  My alarm clock has always been in a
+place where I have to get up to turn it off. (This was particularly helpful in
+college. I woke up at 4:40 for practice. Sleep was very valuable)</p>
+
+<p>If you are
+frazzled in the morning or feel stressed out getting ready for work, think
+about repetition. What would you want to do every morning? What of your
+routine can be ritualized?</p>
+
+<p>If you did a few things the night before (pick
+clothes) would that lessen your stress in the morning? Think about it. I love
+it. If you have any rituals that help you start your day, or lower your
+stress, let me below in the comments or on</p>
+</section>
+
+
+</article>
+
+    </main>
+
+
+                        <footer class="site-footer clearfix">
+    <section>
+            <span class="tag size2"><a href="/blog/tags/"></a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/AVSpeechSynthesizer">AVSpeechSynthesizer</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Ai">Ai</a></span>
+            &nbsp;
+        <span class="tag size8"><a href="/blog/tags/Android">Android</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Atom">Atom</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Avengers">Avengers</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Batman">Batman</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Batman%20Inc.">Batman Inc.</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Batman%20and%20Robin">Batman and Robin</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/CKEditor">CKEditor</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/Calibre">Calibre</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Cheese">Cheese</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/ComicCon">ComicCon</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/CoreData">CoreData</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/DRM">DRM</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/Docs%20Spreadsheets">Docs Spreadsheets</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/ESI">ESI</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Fontis">Fontis</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/GME">GME</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/GTD">GTD</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/GWT">GWT</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Garlic">Garlic</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/Google">Google</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/Google%20Reader">Google Reader</a></span>
+            &nbsp;
+        <span class="tag size9"><a href="/blog/tags/HOWTO">HOWTO</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Hulu">Hulu</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Internet%20Explorer">Internet Explorer</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/JIRA">JIRA</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/Kindle">Kindle</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/Mashups">Mashups</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Memcached">Memcached</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/OmniFocus">OmniFocus</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Oracle">Oracle</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/PHPUnit">PHPUnit</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/PostgreSQL">PostgreSQL</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/RSS">RSS</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Redmine">Redmine</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Remember%20the%20Milk">Remember the Milk</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Ruby">Ruby</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/SQL">SQL</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Shared%20web%20hosting%20service">Shared web hosting service</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Siri">Siri</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Skype">Skype</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Sony%20Reader">Sony Reader</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Stan%20Lee">Stan Lee</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/TDD">TDD</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Terminator">Terminator</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/TinyMCE">TinyMCE</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Vibrams">Vibrams</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Virtual%20hosting">Virtual hosting</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Virtual%20private%20server">Virtual private server</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Walking%20Dead">Walking Dead</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Web%20hosting">Web hosting</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/YUI">YUI</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Zend">Zend</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/adwhirl">adwhirl</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/adwords">adwords</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/aiaio">aiaio</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/ajax">ajax</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/alfred">alfred</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/analytics">analytics</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/angularjs">angularjs</a></span>
+            &nbsp;
+        <span class="tag size4"><a href="/blog/tags/appengine">appengine</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/apple">apple</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/applepay">applepay</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/apps">apps</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/autocomplete">autocomplete</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/automation">automation</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/beta">beta</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/bit.ly">bit.ly</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/blackberry">blackberry</a></span>
+            &nbsp;
+        <span class="tag size4"><a href="/blog/tags/blogger">blogger</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/bookmarks">bookmarks</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/brightkite">brightkite</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/calendar">calendar</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/chrome">chrome</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/coffee">coffee</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/css">css</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/debug">debug</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/digg">digg</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/django">django</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/drafts">drafts</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/dropbox">dropbox</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/encryption">encryption</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/engagement">engagement</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/events">events</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/facebook">facebook</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/firefox">firefox</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/friendfeed">friendfeed</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/gadgets">gadgets</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/gchat">gchat</a></span>
+            &nbsp;
+        <span class="tag size4"><a href="/blog/tags/gdata">gdata</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/gdrive">gdrive</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/gears">gears</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/git">git</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/github">github</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/gmail">gmail</a></span>
+            &nbsp;
+        <span class="tag size5"><a href="/blog/tags/gpowered.net">gpowered.net</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/greasemonkey">greasemonkey</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/groups">groups</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/homebrew">homebrew</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/instapaper">instapaper</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/interfacebuilder">interfacebuilder</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/ios">ios</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/ipad">ipad</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/iphone">iphone</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/javascript">javascript</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/jira">jira</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/jquery">jquery</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/json">json</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/kids">kids</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/laravel">laravel</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/launch%20center%20pro">launch center pro</a></span>
+            &nbsp;
+        <span class="tag size5"><a href="/blog/tags/magento">magento</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/maps">maps</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/mercurial">mercurial</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/mock">mock</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/mongodb">mongodb</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/music">music</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/mysql">mysql</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/netbook">netbook</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/nosql">nosql</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/objective%20c">objective c</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/oil">oil</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/omnifocus">omnifocus</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/opensocial">opensocial</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/opensource">opensource</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/os">os</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/osx">osx</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/pesto">pesto</a></span>
+            &nbsp;
+        <span class="tag size7"><a href="/blog/tags/php">php</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/picasa%20web">picasa web</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/podcasts">podcasts</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/powershell">powershell</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/primal">primal</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/productivity">productivity</a></span>
+            &nbsp;
+        <span class="tag size6"><a href="/blog/tags/python">python</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/pythonista">pythonista</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/quick">quick</a></span>
+            &nbsp;
+        <span class="tag size4"><a href="/blog/tags/reader">reader</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/realm">realm</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/regex">regex</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/running">running</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/search">search</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/security">security</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/seo">seo</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/sketch">sketch</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/skynet">skynet</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/sleep">sleep</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/socialgraph">socialgraph</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/solr">solr</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/startup">startup</a></span>
+            &nbsp;
+        <span class="tag size4"><a href="/blog/tags/swift">swift</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/testing">testing</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/textmate">textmate</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/timbroder.com">timbroder.com</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/todoist">todoist</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/twitter">twitter</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/twitter2gTalk">twitter2gTalk</a></span>
+            &nbsp;
+        <span class="tag size6"><a href="/blog/tags/ubuntu">ubuntu</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/urls">urls</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/vagrant">vagrant</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/varnish">varnish</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/virtualenv">virtualenv</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/winamp">winamp</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/windows">windows</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/wordpress">wordpress</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/xbox">xbox</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/xcode">xcode</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/xml">xml</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/yahoo%20pipes">yahoo pipes</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/youtube">youtube</a></span>
+            &nbsp;
+    
+    </section>
+    <section class="copyright">
+        Copyright &copy; 2007-2018 -
+         Tim Broder -         <span class="credit">Powered by <a href="http://sculpin.io">Sculpin</a></span>
+    </section>
+</footer>
+                <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="https://www.timbroder.com/themes/broderboy/deadfish/assets/js/index.js"></script>
+<script type="text/javascript" src="https://www.timbroder.com/themes/broderboy/deadfish/assets/js/rainbow.min.js"></script>
+<script type="text/javascript" src="https://www.timbroder.com/themes/broderboy/deadfish/assets/js/rlns.min.js"></script>
+
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'timbrodercom'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-17099661-1', 'auto');
+    ga('send', 'pageview');
+
+</script>    </div>
+</body>
+</html>

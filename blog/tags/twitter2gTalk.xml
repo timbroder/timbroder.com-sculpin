@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[timbroder.com]]></title>
+    <link href="https://www.timbroder.com/blog/tags/twitter2gTalk.xml" rel="self"/>
+    <link href="https://www.timbroder.com/"/>
+    <updated>2018-09-09T12:21:33+00:00</updated>
+    <id>https://www.timbroder.com/</id>
+            <author>
+            <name><![CDATA[Tim Broder]]></name>            <email><![CDATA[timothy.broder@gmail.com]]></email>        </author>
+        <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[twitter2gTalk Goes Live!]]></title>
+            <link href="https://www.timbroder.com/2008/05/twitter2gtalk-goes-live.html"/>
+            <updated>2008-05-22T19:01:00+00:00</updated>
+            <id>https://www.timbroder.com/2008/05/twitter2gtalk-goes-live.html</id>
+            <content type="html"><![CDATA[<p><strong>Get your tweets onto Google Talk!</strong></p>
+
+<p><a href="http://www.twitter.com">Twitter</a>: A free social networking and micro-blogging
+service that allows users to send "updates" (or "tweets"; text-based posts, up
+to 140 characters long) to the Twitter website, via short message service
+(SMS), instant messaging, or a third-party application such as Twitterrific or
+Facebook.</p>
+
+<p><a href="http://www.google.com/talk/">gTalk</a>: (Google Talk) is a Windows and web-based
+application for voice over internet (VOIP) and instant messaging, offered by
+Google.</p>
+
+<p><a href="http://twitter2gtalk.appspot.com/">twitter2gTalk</a>: Takes your current tweet
+and sets it as your Google Talk status (away) message.</p>
+
+<p>I've been toying with <a href="http://blog.gpowered.net/2008/03/update-google-talk-status-with-twitter.html">this</a> for a while now. I really wanted to launch
+twitter2gTalk as a service that anyone could use. I had the backend code all
+done and was dragging my feet writing the django front-end. I went to a
+hackathon for <a href="code.google.com/appengine/">Google AppEngine</a> and converted
+most of the code to run on that. You need a Google Account to login, but then
+again, you need one to use gTalk anyway.</p>
+
+<p>I hope some people will find this cool or useful (some people have been
+<a href="http://heavycrag.blogspot.com/2008/05/new-reason-to-tweet.html">waiting</a> for
+this and already signed up). Feel free to follow
+<a href="http://twitter.com/broderboy">me</a> or <a href="http://twitter.com/twit2gTalk">the app</a>
+on twitter for feature updates or
+<a href="http://feeds.feedburner.com/gPpowered">subscribe</a> to this blog.</p>
+]]></content>
+        </entry>
+    </feed>

@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>
+                        Category Archive &mdash; timbroder.com
+            </title>
+    <meta name="description" content="Category Archive" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="alternate" type="application/rss+xml" title="timbroder.com &raquo; Feed" href="https://feeds.feedburner.com/timbroder" />
+    
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />        <link href="https://www.timbroder.com/themes/broderboy/deadfish/assets/css/screen.css" rel="stylesheet" media="screen">
+    <link href="https://www.timbroder.com/themes/broderboy/deadfish/assets/css/tag_cloud.css" rel="stylesheet" media="screen">
+    <link href="https://www.timbroder.com/themes/broderboy/deadfish/assets/css/twilight.css" rel="stylesheet" media="screen">
+        <script>
+(function(a,b){function d(a,b){return a===null?b==="null":a===undefined?b==="undefined":a.is&&a instanceof f?b==="element":Object.prototype.toString.call(a).toLowerCase().indexOf(b)>7}function c(a){var b,e,f,g,h,i,l,m,n;if(a instanceof c)return a;d(a,"array")||(a=String(a).replace(/\s/g,"").toLowerCase().match(/(?:\+,|[^,])+/g));for(b=0,e=a.length;b<e;++b){d(a[b],"array")||(a[b]=String(a[b]).match(/(?:\+\/|[^\/])+/g)),i=[],f=a[b].length;while(f--){var l=a[b][f];h={jwertyCombo:String(l),shiftKey:!1,ctrlKey:!1,altKey:!1,metaKey:!1},d(l,"array")||(l=String(l).toLowerCase().match(/(?:(?:[^\+])+|\+\+|^\+$)/g)),g=l.length;while(g--)l[g]==="++"&&(l[g]="+"),l[g]in k.mods?h[j[k.mods[l[g]]]]=!0:l[g]in k.keys?h.keyCode=k.keys[l[g]]:m=l[g].match(/^\[([^-]+\-?[^-]*)-([^-]+\-?[^-]*)\]$/);if(d(h.keyCode,"undefined"))if(m&&m[1]in k.keys&&m[2]in k.keys){m[2]=k.keys[m[2]],m[1]=k.keys[m[1]];for(n=m[1];n<m[2];++n)i.push({altKey:h.altKey,shiftKey:h.shiftKey,metaKey:h.metaKey,ctrlKey:h.ctrlKey,keyCode:n,jwertyCombo:String(l)});h.keyCode=n}else h.keyCode=0;i.push(h)}this[b]=i}this.length=b;return this}var e=a.document,f=a.jQuery||a.Zepto||a.ender||e,g,h,i="keydown";f===e?(g=function(a,b){return a?f.querySelector(a,b||f):f},h=function(a,b){a.addEventListener(i,b,!1)},$f=function(a,b){var c=document.createEvent("Event"),d;c.initEvent(i,!0,!0);for(d in b)c[d]=b[d];return(a||f).dispatchEvent(c)}):(g=function(a,b,c){return f(a||e,b)},h=function(a,b){f(a).bind(i+".jwerty",b)},$f=function(a,b){f(a||e).trigger(f.Event(i,b))});var j={16:"shiftKey",17:"ctrlKey",18:"altKey",91:"metaKey"},k={mods:{".":16,shift:16,".":17,ctrl:17,".":18,alt:18,option:18,".":91,meta:91,cmd:91,"super":91,win:91},keys:{".":8,backspace:8,".":9,".":9,tab:9,".":13,"return":13,enter:13,".":13,pause:19,"pause-break":19,".":20,caps:20,"caps-lock":20,".":27,escape:27,esc:27,space:32,".":33,pgup:33,"page-up":33,".":34,pgdown:34,"page-down":34,".":35,end:35,".":36,home:36,ins:45,insert:45,del:45,"delete":45,".":37,left:37,"arrow-left":37,".":38,up:38,"arrow-up":38,".":39,right:39,"arrow-right":39,".":40,down:40,"arrow-down":40,"*":106,star:106,asterisk:106,multiply:106,"+":107,plus:107,"-":109,subtract:109,"=":187,equals:187,",":188,comma:188,".":190,period:190,"full-stop":190,"/":191,slash:191,"forward-slash":191,"`":192,tick:192,"back-quote":192,"[":219,"open-bracket":219,"\\":220,"back-slash":220,"]":221,"close-bracket":221,"'":222,quote:222,apostraphe:222}};l=95,n=0;while(++l<106)k.keys["num-"+n]=l,++n;l=47,n=0;while(++l<58)k.keys[n]=l,++n;l=111,n=1;while(++l<136)k.keys["f"+n]=l,++n;var l=64;while(++l<91)k.keys[String.fromCharCode(l).toLowerCase()]=l;var m=b.jwerty={event:function(a,b,e){if(d(b,"boolean")){var f=b;b=function(){return f}}a=new c(a);var g=0,h=a.length-1,i,j;return function(c){if(j=m.is(a,c,g)){if(g<h){++g;return}i=b.call(e||this,c,j),i===!1&&c.preventDefault(),g=0}else g=m.is(a,c)?1:0}},is:function(a,b,d){a=new c(a),d=d||0,a=a[d],b=b.originalEvent||b;var e,f=a.length,g=!1;while(f--){g=a[f].jwertyCombo;for(var h in a[f])h!=="jwertyCombo"&&b[h]!==a[f][h]&&(g=!1);if(g!==!1)return g}return g},key:function(b,c,e,f,i){var j=d(e,"element")||d(e,"string")?e:f,k=j===e?a:e,l=j===e?f:i;h(d(j,"element")?j:g(j,l),m.event(b,c,k))},fire:function(a,b,e,f){a=new c(a);var h=d(e,"number")?e:f;$f(d(b,"element")?b:g(b,e),a[h||0][0])},KEYS:k}})(this,typeof module!="undefined"&&module.exports?module.exports:this),jwerty.key("B,A",function(){_unicorns=document.createElement("SCRIPT"),_unicorns.type="text/javascript",_unicorns.src="http://snacksize.com/unicorn/unicorn.js?",document.getElementsByTagName("head")[0].appendChild(_unicorns)})
+</script>
+</head>
+<body class="nav-closed">
+                                        <div class="site-wrapper">
+                        <header class="main-header">
+        <div class="vertical">
+        <div class="main-header-content inner">
+            <h1 class="page-title">
+                <a href="/">
+                    timbroder.com
+                </a>
+            </h1>
+                        <h2 class="page-description">
+                <a href="/apps.html">Apps</a>
+                <a href="/projects.html">Projects</a>
+                <a href="/podcasts.html">Podcasts</a>
+                <a href="/talks.html">Talks</a>
+                            </h2>
+        </div>
+    </div>
+    </header>                            
+                    <main class="content" role="main">
+            <article class="post" role="article">
+    
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2010/06/iphone4-vs-htc-evo.html">iPhone4 vs HTC Evo</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2010-06-28T17:24:17+00:00" pubdate>
+                      <span class='month'>Jun</span> <span class='day'>28th</span> <span class='year'>2010</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                            <span class="poop2">
+                        <a href="https://www.timbroder.com/blog/tags/Android">#Android</a>
+                        <a href="https://www.timbroder.com/blog/tags/iphone">#iphone</a>
+                            </span>
+                <span><a href="/2010/06/iphone4-vs-htc-evo.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2010/06/iphone4-vs-htc-evo.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="112171748"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>Warning: cursing</p>
+
+<p><a href="http://www.youtube.com/watch?v=FL7yD-0pqZg"><img src="http://img.youtube.com/vi/FL7yD-0pqZg/0.jpg" alt="" /></a></p>
+</section>
+
+
+</article>
+<article class="post" role="article">
+    
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2010/06/syntaxhighlighter-evolved.html">SyntaxHighlighter Evolved</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2010-06-18T17:45:25+00:00" pubdate>
+                      <span class='month'>Jun</span> <span class='day'>18th</span> <span class='year'>2010</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                            <span class="poop2">
+                        <a href="https://www.timbroder.com/blog/tags/php">#php</a>
+                        <a href="https://www.timbroder.com/blog/tags/wordpress">#wordpress</a>
+                            </span>
+                <span><a href="/2010/06/syntaxhighlighter-evolved.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2010/06/syntaxhighlighter-evolved.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="109993176"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>I'm currently in the process of migrating gpowerd.net over to this domain and
+onto wordpress. <a href="http://alexgorbatchev.com/wiki/SyntaxHighlighter"> SyntaxHighlighter
+</a>has been upgraded quite a
+bit since I <a href="http://timbroder.com/2007/07/howto-post-code/">last</a> wrote about
+it.  I came across a <a href="http://wordpress.org/extend/plugins/syntaxhighlighter/">great
+plugin</a> to handle the
+code highlighting for me on wordpress.  I love the plugin, didn't have to go
+into the wordpress template. It doesn't support the old pre syntax that I had
+been using previously but it was simple to add in. Patch to add this to 2.3.8
+is below, Thanks to <a href="http://www.viper007bond.com/wordpress-plugins/syntaxhighlighter/">Alex </a>for the plugin</p>
+
+<p>```<br />
+    --- syntaxhighlighter.orrig.php 2010-06-03 20:08:24.000000000 -0500
+    +++ syntaxhighlighter.php   2010-06-18 12:27:35.000000000 -0500
+    @@ -101,12 +101,15 @@
+                'tabsize'        => 4,
+                'toolbar'        => 1,
+                'wraplines'      => 1,
+    +           'legacy'         => 0,
+            ) );</p>
+
+<pre><code>        // Create the settings array by merging the user's settings and the defaults
+        $usersettings = (array) get_option('syntaxhighlighter_settings');
+        $this-&gt;settings = wp_parse_args( $usersettings, $this-&gt;defaultsettings );
+
++       if ( 1 == $this-&gt;settings['legacy'] )
++                   wp_register_script( 'syntaxhighlighter-brush-legacy',             plugins_url('syntaxhighlighter/syntaxhighlighter/scripts/shLegacy.js'),            array(),                         $this-&gt;agshver );
+
+        // Register generic hooks
+        add_filter( 'the_content',                array(&amp;$this, 'parse_shortcodes'),                              7 );
+@@ -175,6 +178,7 @@
+            'javascript'    =&gt; 'jscript',
+            //'latex'         =&gt; 'latex',
+            'tex'           =&gt; 'latex',
++           'legacy'        =&gt; 'legacy',
+            'matlab'        =&gt; 'matlabkey',
+            'objc'          =&gt; 'objc',
+            'obj-c'         =&gt; 'objc',
+@@ -583,6 +587,9 @@
+        echo "  SyntaxHighlighter.config.strings.noBrush = '" . $this-&gt;js_escape_singlequotes( __( "Can't find brush for: ", 'syntaxhighlighter' ) ) . "';\n";
+        echo "  SyntaxHighlighter.config.strings.brushNotHtmlScript = '" . $this-&gt;js_escape_singlequotes( __( "Brush wasn't configured for html-script option: ", 'syntaxhighlighter' ) ) . "';\n";
+
++       if ( 1 == $this-&gt;settings['legacy'] )
++           echo "  dp.SyntaxHighlighter.HighlightAll('code');\n";
++
+        if ( 1 != $this-&gt;settings['autolinks'] )
+            echo "  SyntaxHighlighter.defaults['auto-links'] = false;\n";
+
+@@ -687,6 +694,7 @@
+            'tabsize'        =&gt; false,
+            'toolbar'        =&gt; false,
+            'wraplines'      =&gt; false,
++           'legacy'         =&gt; false,
+        ), $atts ) );
+
+        // Check for language shortcode tag such as [php]code[/php]
+
+
+@@ -771,6 +779,7 @@
+ 'smarttabs'      =&gt; 'smart-tabs',
+ 'tabsize'        =&gt; 'tab-size',
+ 'wraplines'      =&gt; 'wrap-lines',
++           'legacy'         =&gt; 'legacy',
+ );
+
+ // Allowed configuration parameters and their type
+@@ -925,6 +934,7 @@
+ settings['light'], 1 ); ?&gt; /&gt; 
+
+ settings['smarttabs'], 1 ); ?&gt; /&gt; 
+
+ settings['wraplines'], 1 ); ?&gt; /&gt; 
+
++                   settings['legacy'], 1 ); ?&gt; /&gt; 
+
+
+
+
+
+@@ -1062,6 +1072,7 @@
+ $settings['smarttabs']      = ( !empty($settings['smarttabs']) )      ? 1 : 0;
+ $settings['toolbar']        = ( !empty($settings['toolbar']) )        ? 1 : 0;
+ $settings['wraplines']      = ( !empty($settings['wraplines']) )      ? 1 : 0;
++           $settings['legacy']         = ( !empty($settings['legacy']) )         ? 1 : 0;
+
+ if ( 'true' != $settings['padlinenumbers'] &amp;&amp; 'false' != $settings['padlinenumbers'] )
+ $settings['padlinenumbers'] = (int) $settings['padlinenumbers'];
+```
+</code></pre>
+</section>
+
+
+</article>
+<article class="post" role="article">
+    
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2010/03/select-foo-count-from-bar-group-by-foo-in-django.html">select foo, count(*) from bar group by foo in django</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2010-03-31T16:31:06+00:00" pubdate>
+                      <span class='month'>Mar</span> <span class='day'>31st</span> <span class='year'>2010</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                            <span class="poop2">
+                        <a href="https://www.timbroder.com/blog/tags/django">#django</a>
+                        <a href="https://www.timbroder.com/blog/tags/HOWTO">#HOWTO</a>
+                        <a href="https://www.timbroder.com/blog/tags/python">#python</a>
+                            </span>
+                <span><a href="/2010/03/select-foo-count-from-bar-group-by-foo-in-django.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2010/03/select-foo-count-from-bar-group-by-foo-in-django.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="110651684"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>Every once in a while you need some old fashion SQL style queries in django.
+This is a common one for reporting and aggregation.  Its fairly easy to
+replicate in a queryset.  Say I wanted to get the authors and the number of
+articles they have written going back to the beginning of 2009 to the
+present:﻿</p>
+
+<pre><code data-language="python">from django.db.models import Count
+Article.objects
+    .filter(created_date__gte=datetime.datetime(2009,1,1))
+    .values('author')
+    .annotate(Count('author'))
+</code></pre>
+
+<p>The result:</p>
+
+<pre><code>[{'author__count': 1028, 'author': 17L}, {'author__count': 9, 'author': 9L}, {'author__count': 39, 'author': 12L}, {'author__count': 581, 'author': 10L}, {'author__count': 15, 'author': 7L}, {'author__count': 366, 'author': 13L}, {'author__count': 233, 'author': 5L}, {'author__count': 167, 'author': 15L}, {'author__count': 287, 'author': 14L}, {'author__count': 10, 'author': 6L}, {'author__count': 2101, 'author': 16L}]
+</code></pre>
+</section>
+
+
+</article>
+<article class="post" role="article">
+    
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2010/03/ie9-platform-preview.html">IE9 platform preview</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2010-03-16T20:15:00+00:00" pubdate>
+                      <span class='month'>Mar</span> <span class='day'>16th</span> <span class='year'>2010</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                            <span class="poop2">
+                        <a href="https://www.timbroder.com/blog/tags/Internet%20Explorer">#Internet Explorer</a>
+                            </span>
+                <span><a href="/2010/03/ie9-platform-preview.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2010/03/ie9-platform-preview.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-url="https://www.timbroder.com/2010/03/ie9-platform-preview.html"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p><a href="http://www.blogcdn.com/www.switched.com/media/2009/11/ie9scribble.jpg"><img src="http://www.blogcdn.com/www.switched.com/media/2009/11/ie9scribble.jpg" alt="" /></a></p>
+
+<p>Interested in checking out the new Web platform capabilities of Internet
+Explorer 9?</p>
+
+<p><a href="http://ie.microsoft.com/testdrive/info/ThankYou/Default.html">Download</a> the
+Internet Explorer Platform Preview right now.</p>
+</section>
+
+
+</article>
+<article class="post" role="article">
+    
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2010/02/hide-buzz-without-disabling-it.html">Hide buzz without disabling it</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2010-02-12T16:27:00+00:00" pubdate>
+                      <span class='month'>Feb</span> <span class='day'>12th</span> <span class='year'>2010</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                        <span><a href="/2010/02/hide-buzz-without-disabling-it.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2010/02/hide-buzz-without-disabling-it.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="110652092"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>If you want people to see your buzzes, but like myself want to keep checking
+people's google reader shares IN google reader, and see twitter in twitter,
+you can hide the Buzz label.  Go into settings &gt; labels &gt; buzz &gt; hide</p>
+</section>
+
+
+</article>
+<article class="post" role="article">
+    
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2010/02/why-google-needs-buzz.html">Why Google Needs Buzz</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2010-02-12T14:34:00+00:00" pubdate>
+                      <span class='month'>Feb</span> <span class='day'>12th</span> <span class='year'>2010</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                        <span><a href="/2010/02/why-google-needs-buzz.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2010/02/why-google-needs-buzz.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-url="https://www.timbroder.com/2010/02/why-google-needs-buzz.html"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p><a href="http://kevinrose.com/post/385156078">Why Google Needs Buzz</a>: "</p>
+
+<p>[![](http://feeds.feedburner.com/%7Eff/krose?i=Ma-
+a6KVRROg:XtH5NORu2hI:V_sGLiPBpWU)](http://feeds.feedburner.com/%7Eff/krose?a
+=Ma-a6KVRROg:XtH5NORu2hI:V_sGLiPBpWU) [![](http://feeds.feedburner.com/%7Eff/k
+rose?d=7Q72WNTAKBA)](http://feeds.feedburner.com/%7Eff/krose?a=Ma-
+a6KVRROg:XtH5NORu2hI:7Q72WNTAKBA) [![](http://feeds.feedburner.com/%7Eff/krose
+?d=qj6IDK7rITs)](http://feeds.feedburner.com/%7Eff/krose?a=Ma-
+a6KVRROg:XtH5NORu2hI:qj6IDK7rITs)
+[![](http://feeds.feedburner.com/%7Eff/krose?i=Ma-
+a6KVRROg:XtH5NORu2hI:gIN9vFwOqvQ)](http://feeds.feedburner.com/%7Eff/krose?a
+=Ma-a6KVRROg:XtH5NORu2hI:gIN9vFwOqvQ) [![](http://feeds.feedburner.com/%7Eff/k
+rose?d=yIl2AUoC8zA)](http://feeds.feedburner.com/%7Eff/krose?a=Ma-
+a6KVRROg:XtH5NORu2hI:yIl2AUoC8zA)</p>
+</section>
+
+
+</article>
+<article class="post" role="article">
+    
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2010/02/google-buzz-facebook-email.html">Google Buzz? Facebook Email?</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2010-02-10T16:55:00+00:00" pubdate>
+                      <span class='month'>Feb</span> <span class='day'>10th</span> <span class='year'>2010</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                        <span><a href="/2010/02/google-buzz-facebook-email.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2010/02/google-buzz-facebook-email.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="115179986"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p><a href="http://www.google.com/buzz">Google Buzz</a> quetly came out, adds friendfeed
+like functionality to gmail</p>
+
+<p>Facebook is also <a href="http://gizmodo.com/5465353/facebook-eyes-webmail-with-project-titan">launching email</a>, interesting times ahead in the communication
+world.</p>
+</section>
+
+
+</article>
+<article class="post" role="article">
+    
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2010/02/django-admin-inline-preview.html">Django Admin inline preview</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2010-02-09T19:17:00+00:00" pubdate>
+                      <span class='month'>Feb</span> <span class='day'>9th</span> <span class='year'>2010</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                        <span><a href="/2010/02/django-admin-inline-preview.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2010/02/django-admin-inline-preview.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="110431677"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>Update: This code lives on <a href="https://github.com/broderboy/django-admin-preview">Github</a></p>
+
+<p>To get inline Admin Previews in the list view</p>
+
+<p>1) Inherit from PreviewAdmin in your ModelAdmin<br />
+2) In your model's template directory, create a folder called preview, and
+create a template for that model's preview</p>
+
+<p>Example for model Article</p>
+
+<pre><code data-language="python">class ArticleAdmin(PreviewAdmin, other admin.ModelAdmin,,,_):  
+    list_display = (..,.., 'admin_slide_preview')  
+    ...  
+    ...  
+</code></pre>
+
+<p>then edit <code>app_that_has_ArticleModel/templates/preview/article.html</code></p>
+
+<p>Whatever is in article.html will be shown inline<br />
+Access your Article object through  in the template</p>
+
+<pre><code data-language="python">class PreviewAdmin(admin.ModelAdmin):
+    #add to your ModelAdmin
+    #list_display = ('headline','created_date', 'state', 'admin_slide_preview')
+    def admin_slide_preview(self, obj):
+        return "&lt;div class=\"previewslide\" id=\"%s/preview/\"&gt;+&lt;/div&gt;" % obj.id
+    admin_slide_preview.allow_tags = True
+    admin_slide_preview.short_description = 'Preview'
+
+    def get_preview(self, request, object_id):
+        sub = self.queryset(request)[0]
+        template = "preview/%s.html" % sub.__class__.__name__
+        return object_detail(request, queryset=self.queryset(request), object_id=object_id, template_name=template.lower())
+
+    def get_urls(self):
+        urls = super(PreviewAdmin, self).get_urls()
+        my_urls = patterns('',
+            (r'^(?P&lt;object_id&gt;\d+)/preview/$', self.get_preview),
+        )
+        return my_urls + urls
+
+    class Media:
+        js = js = ('js/jquery.js',
+                   'js/jquery.adminpreview.js'
+</code></pre>
+
+<pre><code data-language="CSS">//base.css
+.previewslide {
+    cursor:pointer;
+    cursor:hand;
+}
+
+```javascript
+//jquery.adminpreview.js
+$(document).ready(function(){
+ $(".previewslide").click(function(){
+  $.ajax({
+   url:$(this).attr('id'),
+   context: $(this).parent().parent(),
+   success:function(data){
+    var $html = $(data);
+    $('.previewed').each(function(){
+     $(this).remove();
+    });
+
+    if(!$html.hasClass('previewed')){
+     $html.addClass('previewed');
+    }
+
+    $html.addClass($(this.context).attr('class'));  
+    $(this.context).after($html);
+   }
+  });
+ });
+});
+</code></pre>
+</section>
+
+
+</article>
+<article class="post" role="article">
+    
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2010/02/get-admin-url-for-django-model.html">Get the admin url for a django model</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2010-02-09T18:48:00+00:00" pubdate>
+                      <span class='month'>Feb</span> <span class='day'>9th</span> <span class='year'>2010</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                        <span><a href="/2010/02/get-admin-url-for-django-model.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2010/02/get-admin-url-for-django-model.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="110651160"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>Add this to your model to be able to get their admin change link from anywhere</p>
+
+<p>Useful if you want to jump to the admin screen of an object you are looking at
+on the front end</p>
+
+<pre><code data-language="python">from django.core import urlresolvers
+from django.contrib.contenttypes.models import ContentType
+
+def get_admin_url(self):
+    content_type = ContentType.objects.get_for_model(self.__class__)
+    return urlresolvers.reverse("admin:%s_%s_change" % (content_type.app_label, content_type.model), args=(self.id,))
+</code></pre>
+</section>
+
+
+</article>
+<article class="post" role="article">
+    
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2010/02/remaining-character-count-in-django.html">Remaining character count in django admin</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2010-02-01T19:28:00+00:00" pubdate>
+                      <span class='month'>Feb</span> <span class='day'>1st</span> <span class='year'>2010</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                        <span><a href="/2010/02/remaining-character-count-in-django.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2010/02/remaining-character-count-in-django.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="111426281"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>Update: This code also lives on <a href="https://github.com/broderboy/django-admin-remainingcharacters">Github</a></p>
+
+<p>Want to display the remaining characters on a text field in admin? (based off
+of maxlength or an override)</p>
+
+<pre><code data-language="python">#have your ModelAdmin inherit this to use
+class CounterAdmin(admin.ModelAdmin):
+    counted_fields = ()
+
+    #really for textareas
+    max_lengths = {'abstract': 400,}
+
+    class Media:
+        js = ('js/jquery.js',
+              'js/jquery.charCount.js',)
+
+    def formfield_for_dbfield(self, db_field, **kwargs):
+        field = super(CounterAdmin, self).formfield_for_dbfield(db_field, **kwargs)
+        print db_field.name
+        print self.counted_fields
+        if db_field.name in self.counted_fields:
+            try:
+                len = self.max_lengths[db_field.name]
+                field.widget.attrs['maxlength'] = len
+            except: pass
+            field.widget.attrs['class'] = 'counted ' + field.widget.attrs.get('class','')
+        return field
+</code></pre>
+
+<pre><code data-language="javascript">jquery,charCount.js
+
+/*
+*  Character Count Plugin - jQuery plugin
+*  Dynamic character count for text areas and input fields
+* written by Alen Grakalic
+* http://cssglobe.com/post/7161/jquery-plugin-simplest-twitterlike-dynamic-character-count-for-textareas
+*
+* Copyright (c) 2009 Alen Grakalic (http://cssglobe.com)
+* Dual licensed under the MIT (MIT-LICENSE.txt)
+* and GPL (GPL-LICENSE.txt) licenses.
+*
+* Built for jQuery library
+* http://jquery.com
+*
+*/
+
+/*
+* Modified 2010 Tim Broder for django-admin-charcount
+* http://gpowered.net
+*/
+(function($) {
+$.fn.charCount = function(options){
+  // default configuration properties
+  var defaults = {
+   allowed: 140,  
+   warning: 20,
+   css: 'help',
+   counterElement: 'p',
+   cssWarning: 'warning',
+   cssExceeded: 'exceeded',
+   counterText: ''
+  };
+
+  var options = $.extend(defaults, options);
+
+  function calculate(obj){
+   var count = $(obj).val().length;
+   var available = options.allowed - count;
+   if(available &lt; = options.warning &amp;&amp; available &gt;= 0){
+    $(obj).next().addClass(options.cssWarning);
+   } else {
+    $(obj).next().removeClass(options.cssWarning);
+   }
+   if(available &lt; 0){
+    $(obj).next().addClass(options.cssExceeded);
+   } else {
+    $(obj).next().removeClass(options.cssExceeded);
+   }
+   $(obj).next().html(options.counterText + available);
+  };
+
+  this.each(function() {    
+
+   $(this).after('&lt;'+ options.counterElement +' class="' + options.css + '"&gt;'+ options.counterText +'');
+   calculate(this);
+   $(this).keyup(function(){calculate(this); });
+   $(this).change(function(){calculate(this)});
+  });
+
+};
+
+})(jQuery);
+
+/*function init_counters(selector, len){
+$(selector).each(function() {
+  //console.log($(this).attr('maxlength'));
+  if(len==null){
+   len = $(this).attr('maxlength');
+  }
+  $(this).charCount({
+   counterText: 'Characters Remaining: ',
+   allowed: len,
+  });
+});
+}*/
+
+$(document).ready(function(){
+$(".counted").each(function(){
+  console.log($(this));
+  len = $(this).attr('maxlength');
+  $(this).charCount({
+   counterText: 'Characters Remaining: ',
+   allowed: len,
+  });
+});
+//init_counters("input[maxlength]", 80);
+//init_counters("textarea[maxlength]");
+//init_counters("#id_abstract", 400);
+});
+
+/*
+* &lt;style type="text/css"&gt;
+form .counter{
+}
+form .warning{color:#600;}
+form .exceeded{color:#e00;}
+&lt;/style&gt;
+*/
+</code></pre>
+</section>
+
+
+</article>
+<nav>
+    <a href="https://www.timbroder.com/blog/categories/14">Newer Posts</a><br />
+    <a href="https://www.timbroder.com/blog/categories/16">Older Posts</a><br />
+</nav>
+
+    </main>
+
+
+                        <footer class="site-footer clearfix">
+    <section>
+            <span class="tag size2"><a href="/blog/tags/"></a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/AVSpeechSynthesizer">AVSpeechSynthesizer</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Ai">Ai</a></span>
+            &nbsp;
+        <span class="tag size8"><a href="/blog/tags/Android">Android</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Atom">Atom</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Avengers">Avengers</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Batman">Batman</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Batman%20Inc.">Batman Inc.</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Batman%20and%20Robin">Batman and Robin</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/CKEditor">CKEditor</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/Calibre">Calibre</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Cheese">Cheese</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/ComicCon">ComicCon</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/CoreData">CoreData</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/DRM">DRM</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/Docs%20Spreadsheets">Docs Spreadsheets</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/ESI">ESI</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Fontis">Fontis</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/GME">GME</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/GTD">GTD</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/GWT">GWT</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Garlic">Garlic</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/Google">Google</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/Google%20Reader">Google Reader</a></span>
+            &nbsp;
+        <span class="tag size9"><a href="/blog/tags/HOWTO">HOWTO</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Hulu">Hulu</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Internet%20Explorer">Internet Explorer</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/JIRA">JIRA</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/Kindle">Kindle</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/Mashups">Mashups</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Memcached">Memcached</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/OmniFocus">OmniFocus</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Oracle">Oracle</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/PHPUnit">PHPUnit</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/PostgreSQL">PostgreSQL</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/RSS">RSS</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Redmine">Redmine</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Remember%20the%20Milk">Remember the Milk</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Ruby">Ruby</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/SQL">SQL</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Shared%20web%20hosting%20service">Shared web hosting service</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Siri">Siri</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Skype">Skype</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Sony%20Reader">Sony Reader</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Stan%20Lee">Stan Lee</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/TDD">TDD</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Terminator">Terminator</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/TinyMCE">TinyMCE</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Vibrams">Vibrams</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Virtual%20hosting">Virtual hosting</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Virtual%20private%20server">Virtual private server</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Walking%20Dead">Walking Dead</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Web%20hosting">Web hosting</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/YUI">YUI</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Zend">Zend</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/adwhirl">adwhirl</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/adwords">adwords</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/aiaio">aiaio</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/ajax">ajax</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/alfred">alfred</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/analytics">analytics</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/angularjs">angularjs</a></span>
+            &nbsp;
+        <span class="tag size4"><a href="/blog/tags/appengine">appengine</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/apple">apple</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/applepay">applepay</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/apps">apps</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/autocomplete">autocomplete</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/automation">automation</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/beta">beta</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/bit.ly">bit.ly</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/blackberry">blackberry</a></span>
+            &nbsp;
+        <span class="tag size4"><a href="/blog/tags/blogger">blogger</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/bookmarks">bookmarks</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/brightkite">brightkite</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/calendar">calendar</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/chrome">chrome</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/coffee">coffee</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/css">css</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/debug">debug</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/digg">digg</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/django">django</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/drafts">drafts</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/dropbox">dropbox</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/encryption">encryption</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/engagement">engagement</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/events">events</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/facebook">facebook</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/firefox">firefox</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/friendfeed">friendfeed</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/gadgets">gadgets</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/gchat">gchat</a></span>
+            &nbsp;
+        <span class="tag size4"><a href="/blog/tags/gdata">gdata</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/gdrive">gdrive</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/gears">gears</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/git">git</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/github">github</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/gmail">gmail</a></span>
+            &nbsp;
+        <span class="tag size5"><a href="/blog/tags/gpowered.net">gpowered.net</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/greasemonkey">greasemonkey</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/groups">groups</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/homebrew">homebrew</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/instapaper">instapaper</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/interfacebuilder">interfacebuilder</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/ios">ios</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/ipad">ipad</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/iphone">iphone</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/javascript">javascript</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/jira">jira</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/jquery">jquery</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/json">json</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/kids">kids</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/laravel">laravel</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/launch%20center%20pro">launch center pro</a></span>
+            &nbsp;
+        <span class="tag size5"><a href="/blog/tags/magento">magento</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/maps">maps</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/mercurial">mercurial</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/mock">mock</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/mongodb">mongodb</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/music">music</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/mysql">mysql</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/netbook">netbook</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/nosql">nosql</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/objective%20c">objective c</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/oil">oil</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/omnifocus">omnifocus</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/opensocial">opensocial</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/opensource">opensource</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/os">os</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/osx">osx</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/pesto">pesto</a></span>
+            &nbsp;
+        <span class="tag size7"><a href="/blog/tags/php">php</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/picasa%20web">picasa web</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/podcasts">podcasts</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/powershell">powershell</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/primal">primal</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/productivity">productivity</a></span>
+            &nbsp;
+        <span class="tag size6"><a href="/blog/tags/python">python</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/pythonista">pythonista</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/quick">quick</a></span>
+            &nbsp;
+        <span class="tag size4"><a href="/blog/tags/reader">reader</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/realm">realm</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/regex">regex</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/running">running</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/search">search</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/security">security</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/seo">seo</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/sketch">sketch</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/skynet">skynet</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/sleep">sleep</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/socialgraph">socialgraph</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/solr">solr</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/startup">startup</a></span>
+            &nbsp;
+        <span class="tag size4"><a href="/blog/tags/swift">swift</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/testing">testing</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/textmate">textmate</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/timbroder.com">timbroder.com</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/todoist">todoist</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/twitter">twitter</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/twitter2gTalk">twitter2gTalk</a></span>
+            &nbsp;
+        <span class="tag size6"><a href="/blog/tags/ubuntu">ubuntu</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/urls">urls</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/vagrant">vagrant</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/varnish">varnish</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/virtualenv">virtualenv</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/winamp">winamp</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/windows">windows</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/wordpress">wordpress</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/xbox">xbox</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/xcode">xcode</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/xml">xml</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/yahoo%20pipes">yahoo pipes</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/youtube">youtube</a></span>
+            &nbsp;
+    
+    </section>
+    <section class="copyright">
+        Copyright &copy; 2007-2018 -
+         Tim Broder -         <span class="credit">Powered by <a href="http://sculpin.io">Sculpin</a></span>
+    </section>
+</footer>
+                <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="https://www.timbroder.com/themes/broderboy/deadfish/assets/js/index.js"></script>
+<script type="text/javascript" src="https://www.timbroder.com/themes/broderboy/deadfish/assets/js/rainbow.min.js"></script>
+<script type="text/javascript" src="https://www.timbroder.com/themes/broderboy/deadfish/assets/js/rlns.min.js"></script>
+
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'timbrodercom'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-17099661-1', 'auto');
+    ga('send', 'pageview');
+
+</script>    </div>
+</body>
+</html>

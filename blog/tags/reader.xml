@@ -1,0 +1,804 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[timbroder.com]]></title>
+    <link href="https://www.timbroder.com/blog/tags/reader.xml" rel="self"/>
+    <link href="https://www.timbroder.com/"/>
+    <updated>2018-09-09T12:21:33+00:00</updated>
+    <id>https://www.timbroder.com/</id>
+            <author>
+            <name><![CDATA[Tim Broder]]></name>            <email><![CDATA[timothy.broder@gmail.com]]></email>        </author>
+        <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[Send To Tumblr And Track With Bitly Google Reader Custom Link]]></title>
+            <link href="https://www.timbroder.com/2009/08/send-to-tumblr-and-track-with-bitly.html"/>
+            <updated>2009-08-14T13:43:00+00:00</updated>
+            <id>https://www.timbroder.com/2009/08/send-to-tumblr-and-track-with-bitly.html</id>
+            <content type="html"><![CDATA[<p>Testing the "send to blogger" button... <a href="http://labs.kortina.net/2009/08/13/send-to-tumblr-and-track-with-bitly-google-reader-custom-link/">Send To Tumblr And Track With Bitly
+Google Reader Custom Link</a>: "</p>
+
+<p>Google Reader just launched a “Send to Twitter” feature that allows you to
+share bit.ly links to interesting items in your reader with your Twitter
+friends.  First, awesome!</p>
+
+<p>Second, Google Reader has been getting lots of product development attention
+lately, and with all the awesome stuff they are adding, I spend all of my time
+there as opposed to twitter.com/home, facebook.com/home, or Tumblr Dashboard.
+One thing I miss about Tumblr dashboard was easy reblogging.</p>
+
+<p><a href="http://labs.kortina.net/files/2009/08/2009-08-13_2354.png">![How to Create Custom Send To Links in Google Reader](http://labs.kortina.ne
+t/files/2009/08/2009-08-13_2354-300x173.png)</a></p>
+
+<p>How to Create Custom Send To Links in Google Reader</p>
+
+<p>There is a “Send to Tumblr” link as one of the defaults, but it doesn’t use
+bit.ly urls. So, I hacked together a custom “Send to Tumblr” link.</p>
+
+<pre><code>URL: http://tumblr.com/share?v=2&amp;u=&amp;t=Send To Tumblr And Track With Bitly
+Google Reader Custom Link&amp;s=Send To Tumblr And Track With Bitly Google Reader
+Custom Link%0Avia%20kortina`
+</code></pre>
+
+<p><code>Icon URL: http://assets.tumblr.com/images/favicon.gif?2</code></p>
+
+<p>[![Custom Send to Tumblr with Bitly Link from Google Reader Link](http://labs.
+kortina.net/files/2009/08/2009-08-13_2351-300x170.png)](http://labs.kortina.ne
+t/files/2009/08/2009-08-13_2351.png)</p>
+
+<p>Custom Send to Tumblr with Bitly Link from Google Reader Link</p>
+
+<p><img src="http://labs.kortina.net/?ak_action=api_record_view&amp;id=351&amp;type=feed" alt="" /></p>
+
+<p>Possibly related posts:</p>
+
+<ol>
+<li><a href="http://labs.kortina.net/2009/07/26/i-want-read-flare-plugins-for-sharing-in-google-reader/" title="Permanent Link: I Want “Read Flare” — Plugins for Sharing in Google Reader">I Want “Read Flare” — Plugins for Sharing in Google Reader</a></li>
+<li><a href="http://labs.kortina.net/2009/08/05/business-cards-have-google-maps-now/" title="Permanent Link: Business Cards Have Google Maps Now">Business Cards Have Google Maps Now</a></li>
+<li><a href="http://labs.kortina.net/2009/07/13/how-to-make-a-fixed-link-to-twitter-thats-always-visible-on-your-webpage/" title="Permanent Link: How To Make a Fixed Link to Twitter That’s Always Visible on Your Webpage">How To Make a Fixed Link to Twitter That’s Always Visible on Your Webpage</a></li>
+</ol>
+
+<p>[![](http://feeds.feedburner.com/~ff/kortina-
+essays?d=yIl2AUoC8zA)](http://feeds.feedburner.com/~ff/kortina-
+essays?a=o2hn6f5JGDQ:skeQbrLiUSU:yIl2AUoC8zA)
+[![](http://feeds.feedburner.com/~ff/kortina-
+essays?i=o2hn6f5JGDQ:skeQbrLiUSU:D7DqB2pKExk)](http://feeds.feedburner.com/~ff
+/kortina-essays?a=o2hn6f5JGDQ:skeQbrLiUSU:D7DqB2pKExk)
+[![](http://feeds.feedburner.com/~ff/kortina-
+essays?d=qj6IDK7rITs)](http://feeds.feedburner.com/~ff/kortina-
+essays?a=o2hn6f5JGDQ:skeQbrLiUSU:qj6IDK7rITs)
+[![](http://feeds.feedburner.com/~ff/kortina-
+essays?i=o2hn6f5JGDQ:skeQbrLiUSU:gIN9vFwOqvQ)](http://feeds.feedburner.com/~ff
+/kortina-essays?a=o2hn6f5JGDQ:skeQbrLiUSU:gIN9vFwOqvQ)
+[![](http://feeds.feedburner.com/~ff/kortina-
+essays?d=7Q72WNTAKBA)](http://feeds.feedburner.com/~ff/kortina-
+essays?a=o2hn6f5JGDQ:skeQbrLiUSU:7Q72WNTAKBA)
+[![](http://feeds.feedburner.com/~ff/kortina-
+essays?d=c-S6u7MTCTE)](http://feeds.feedburner.com/~ff/kortina-
+essays?a=o2hn6f5JGDQ:skeQbrLiUSU:c-S6u7MTCTE)</p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Wordpress Plugin: Displaying your Google Reader RSS subscriptions]]></title>
+            <link href="https://www.timbroder.com/2009/06/how-to-display-what-google-reader-rss.html"/>
+            <updated>2009-06-02T15:07:00+00:00</updated>
+            <id>https://www.timbroder.com/2009/06/how-to-display-what-google-reader-rss.html</id>
+            <content type="html"><![CDATA[<p>I've been meaning to write this code for a while, and I really wanted to take
+a stab at writing a wordpress plugin so here it goes.</p>
+
+<p>The following takes in Google user credentials, and allows the user to display
+what RSS feeds they subscribe to on their wordpress blog</p>
+
+<p>Example: <a href="http://timbroder.gpowered.net/rss-i-read/">The RSS that I read</a><br />
+Update: This plugin is now hosted by wordpress. <a href="http://wordpress.org/extend/plugins/google-reader-subscription-list/">click
+here</a></p>
+
+<pre><code data-language="PHP">/*
+Plugin Name: Google Reader Subscription List
+Version: 1
+Author: Timothy Broder
+Description: Lists a users subscribed Google Reader feeds
+*/
+
+/*  Copyright 2009  Timothy Broder (email : timothy.broder@gmail.com)
+
+    This program is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation; either version 2 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program; if not, write to the Free Software
+    Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+*/
+
+
+if (!class_exists('GoogleReaderSubList')) {
+class GoogleReaderSubList {
+
+  var $show_list       = 'show-google-reader-sub-list';  //the hook in a page
+  var $login          = '';
+  var $pass          = '';
+  var $source         = 'wordpress-google-reader-sub-list-';  //the source the api sees when logging into Google
+  var $service         = 'reader';  
+  var $login_url        = 'https://www.google.com/accounts/ServiceLoginAuth?service=mail'; //URL to login to google
+  var $subscription_list_url  = 'http://www.google.com/reader/api/0/subscription/list'; //URL that holds a users subscriptions
+
+  function GoogleReaderSubList() {
+   $options    = $this-&gt;get_admin_options();
+   $this-&gt;login  = $options['google_login'];
+   $this-&gt;pass  = $options['google_pass'];
+
+   $this-&gt;source = $this-&gt;source . $this-&gt;login;
+  }
+
+  function show_sub_list() {
+   $stop = false;
+   if ($this-&gt;login == '' || $this-&gt;login == null) {
+    echo 'Google login not set&lt;br /&gt;';
+    $stop = true;
+   }
+   if ($this-&gt;pass == '' || $this-&gt;pass == null) {
+    echo 'Google password not set&lt;br /&gt;';
+    $stop = true;
+   }
+
+   //check to see if the zend plugin has been installed and activated
+   //http://wordpress.org/extend/plugins/zend-framework/
+   if (!(defined('WP_ZEND_FRAMEWORK') &amp;&amp; WP_ZEND_FRAMEWORK)) {
+    echo 'The &lt;a href="http://wordpress.org/extend/plugins/zend-framework/" target="_blank"&gt;Zend Framework Plugin&lt;/a&gt; is not active.  Please install and activate it.';
+    $stop = true;
+   }
+   if ($stop) {
+    return;
+   }
+
+   $client = new Zend_Http_Client($this-&gt;login_url);
+
+   //connect, authenticate, and handshake with Google
+   $client-&gt;setCookieJar()
+    -&gt;setMethod(Zend_Http_Client::POST)
+    -&gt;setParameterPost(array(
+     'continue'             =&gt; $this-&gt;subscription_list_url,
+     'service'              =&gt; 'reader',
+     'niu'                  =&gt; 1,
+     'hl'                   =&gt; 'en',
+     'Email'              =&gt; $this-&gt;login,
+     'Passwd'               =&gt; $this-&gt;pass,
+     'PersistentCookie'     =&gt; 'yes',
+     'asts'                 =&gt; ''
+    ));
+
+
+   //$error_level = error_reporting();
+   //error_reporting(1);
+   $response = $client-&gt;request('POST');
+   $client-&gt;setUri($this-&gt;subscription_list_url)-&gt;setMethod(Zend_Http_Client::GET);
+   $response = $client-&gt;request()-&gt;getBody();
+
+   if ($client-&gt;request()-&gt;getStatus() == 400) {
+    ?&gt;Unable to login with supplied Google login/password&lt; ?
+    return;
+   }
+
+   //error_reporting($error_level);
+
+   //got the feed, parse it
+   $feed = simplexml_load_string($response);
+
+   $hashmap = array();
+
+   //organize the feeds by tag  
+   foreach ($feed-&gt;list-&gt;object as $e) {
+    $url = $e-&gt;string[0];
+    $title = $e-&gt;string[1];
+    $cat = $e-&gt;list-&gt;object-&gt;string[1];
+
+    //make sure a feed is filed somewhere
+    if ($cat == '') {
+     $cat = 'unfiled';
+    }
+    $t = $hashmap["$cat"];
+
+    //a category hasn't been used before
+    if ($t == null) {
+     $t = array($e);
+     $hashmap["$cat"] = $t;
+    }
+    //category has been used before
+    else {
+     array_push($t, $e);
+     $hashmap["$cat"] = $t;
+    }
+   }
+
+   //sort the categories
+   ksort($hashmap);
+
+   //output
+   ?&gt;
+   &lt;p&gt;Tags:
+    &lt; ?
+    $endKey = end(array_keys($hashmap));
+    foreach ($hashmap as $cat=&gt;$t) {
+     echo "&lt;a href='#$cat'&gt;$cat&lt;/a&gt;";
+     if ($cat != $endKey) {
+      echo ', ';
+     }
+    }
+    ?&gt;
+   &lt;/p&gt;&lt; ?
+
+   foreach ($hashmap as $cat=&gt;$t) {
+    echo "&lt;a name='$cat'&gt;&lt;/a&gt;";
+    echo "&lt;b&gt;$cat&lt;/b&gt;&lt;br /&gt;";    
+    foreach ($t as $e) {
+     list($feed, $url) = split('feed/', $e-&gt;string[0]);
+     $title = $e-&gt;string[1];
+
+     echo "&lt;a href='$url' target='_blank'&gt;$title&lt;/a&gt;&lt;br /&gt;";
+
+    }
+    echo '&lt;br /&gt;';
+   }
+  }
+
+  function addContent($content) {
+   // Only do this if this is a page and it has the appropriate custom field
+   if (is_page()) {
+    $cust_field_values = get_post_custom_values($this-&gt;show_list);
+    if ($cust_field_values != NULL) {
+     if (defined('WP_ZEND_FRAMEWORK') &amp;&amp; WP_ZEND_FRAMEWORK) {
+      require_once 'Zend/Loader.php';
+      Zend_Loader::loadClass('Zend_Http_Client');
+     }
+     $content = $this-&gt;show_sub_list();
+    }
+   }
+   return $content;
+  }
+
+  function init() {
+   $this-&gt;get_admin_options();
+  }  
+
+  function get_admin_options() {
+   $admin_options = array('google_login' =&gt; '',
+    'google_pass' =&gt; '',
+    'use_accordion' =&gt; 'true');
+   $options = get_option($this-&gt;adminOptionName);
+   if (!empty($options)) {
+    foreach ($options as $key =&gt; $option) {
+     $admin_options[$key] = $option;
+    }
+   }
+   update_option($this-&gt;admin_optionsName, $admin_options);
+   return $admin_options;
+  }
+
+  function printAdminPage() {
+   $options = $this-&gt;get_admin_options();
+
+   if (isset($_POST['update_greader_sub_list_settings'])) {
+    if (isset($_POST['greader_sub_list_login'])) {
+     $options['google_login'] = $_POST['greader_sub_list_login'];
+    }
+    if (isset($_POST['greader_sub_list_pass'])) {
+     $options['google_pass'] = $_POST['greader_sub_list_pass'];
+    }
+
+    update_option($this-&gt;admin_optionsName, $options);
+    echo '&lt;div class="updated"&gt;&lt;p&gt;&lt;strong&gt;' .  _e('Settings Updated.', 'GoogleReaderSubList'). '&lt;/strong&gt;&lt;/p&gt;&lt;/div&gt;';
+
+   }
+   //$submit = _e('Update Settings', 'GoogleReaderSubList');
+
+   echo "&lt;div class='wrap'&gt;    &lt;form method='post' action='" . $_SERVER['REQUEST_URI'] . "'&gt;     &lt;h2&gt;Google Reader Subscription List&lt;/h2&gt;     &lt;h3&gt;Google Login&lt;/h3&gt;     &lt;input type='text' name='greader_sub_list_login' value='";
+   echo _e(apply_filters('format_to_edit', $options['google_login']), 'GoogleReaderSubList');
+   echo "' /&gt;
+     &lt;h3&gt;Google Password&lt;/h3&gt;     &lt;input type='password' name='greader_sub_list_pass' value='";
+   echo _e(apply_filters('format_to_edit', $options['google_pass']), 'GoogleReaderSubList');
+   echo "' /&gt;
+     &lt;div class='submit'&gt;      &lt;input type='submit' name='update_greader_sub_list_settings' value='";
+   echo _e('Update Settings', 'GoogleReaderSubList');
+   echo "'/&gt;
+     &lt;/div&gt;    &lt;/form&gt;   &lt;/div&gt;";
+  }
+}
+}
+
+if (class_exists('GoogleReaderSubList')) {
+$greader_sub_list = new GoogleReaderSubList();
+}
+
+if (!function_exists('greader_sub_list_ap')) {
+function greader_sub_list_ap() {
+  global $greader_sub_list;
+  if (!isset($greader_sub_list)) {
+   return;
+  }
+  if (function_exists('add_options_page')) {
+   add_options_page('gReader Subscriptions', 'gReader Subscriptions', 9, basename(__FILE__), array(&amp;$greader_sub_list, 'printAdminPage'));
+  }
+}
+}
+
+if (isset($greader_sub_list)) {
+add_action('admin_menu', 'greader_sub_list_ap');
+add_action('activate_google-raeder-list/google-reader-list.php', array(&amp;$greader_sub_list, 'init'));
+add_filter('the_content', array(&amp;$greader_sub_list, 'addContent'), '7');
+}
+</code></pre>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Google Reader gets a facelift]]></title>
+            <link href="https://www.timbroder.com/2008/12/google-reader-gets-facelift.html"/>
+            <updated>2008-12-05T14:20:00+00:00</updated>
+            <id>https://www.timbroder.com/2008/12/google-reader-gets-facelift.html</id>
+            <content type="html"><![CDATA[<p>It's now less "bubble" looking. I'm wondering if its pulling from my gmail
+theme, but I unfortunately can't check that from work. I really like being
+able to hide the stats in the upper left. The only one I ever look at is how
+many total unread items I have.</p>
+
+<p><img src="http://1.bp.blogspot.com/_Ng3QbVQfLZ8/STk5K-WSxAI/AAAAAAAAT_c/dhYyr6IvNIk/s1600-h/reader.jpg" alt="" /></p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Google I/O session videos posted with slides]]></title>
+            <link href="https://www.timbroder.com/2008/06/google-io-session-videos-posted-with.html"/>
+            <updated>2008-06-16T19:11:00+00:00</updated>
+            <id>https://www.timbroder.com/2008/06/google-io-session-videos-posted-with.html</id>
+            <content type="html"><![CDATA[<p>As I said <a href="http://blog.gpowered.net/2008/04/select-google-io-sessions-to-be-posted.html">earlier</a>, Quite a few presentations from Google I/O have
+been <a href="http://sites.google.com/site/io/">posted</a> for your viewing pleasure.
+I'll be glued to these this weekend while I'm on call.</p>
+
+<p>Topics include<br />
+Ajax<br />
+KML<br />
+Sketchup<br />
+Android<br />
+OpenSocial<br />
+Appengine<br />
+Data APIs<br />
+Theory Talks<br />
+Youtube<br />
+Gears<br />
+Mashups<br />
+Maps<br />
+and more!</p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Blogger adds bloggroll]]></title>
+            <link href="https://www.timbroder.com/2008/04/blogger-adds-bloggroll.html"/>
+            <updated>2008-04-03T22:37:00+00:00</updated>
+            <id>https://www.timbroder.com/2008/04/blogger-adds-bloggroll.html</id>
+            <content type="html"><![CDATA[<p>[Blogger](http://buzz.blogger.com/2008/04/blog-list-scheduled-post-publishing-
+on.html) in <a href="http://draft.blogger.com/">draft</a> added 2 new features today: a
+blogroll page element, and post scheduling. Post scheduling is pretty useful,
+you can write up your post, set the time (in the future) that you want it to
+post, and Blogger will do it automatically. The second feature, a blogroll, I
+would like a lot more if it was done better. The main thing I like about it is
+that it integrates with Google Reader so if I'm linking to my friend's blogs,
+I just scroll to my 'Friends' Tag and add them. The thing I don't like however
+is that it does not support <a href="http://gmpg.org/xfn/">XFN</a> or
+<a href="http://gmpg.org/xfn/">FOAF</a> therefore not getting picked up by the
+<a href="http://code.google.com/apis/socialgraph/docs/">SocialGraph API</a>. For example,
+if I linked to my <a href="http://maybe-not.net/" title="Laura's blog">girlfriend's blog</a>,
+the blogroll just lists this as</p>
+
+<pre><code data-language="HTML">&lt;a href='http://maybe-not.net/' target='_blank'&gt;Maybe-Not&lt;/a&gt;
+</code></pre>
+
+<p>A better link, for example from a <a href="http://www.wordpress.org">wordpress</a>
+blogroll would look something like</p>
+
+<pre><code data-language="HTML">&lt;a href="http://maybe-not.net/" rel="friend sweetheart" title="Laura&amp;#8217;s blog"&gt;Maybe-Not&lt;/a&gt;&lt; 
+</code></pre>
+
+<p>...and get picked up but the SocialGraph as having a relationship to me.
+Blogger is great and I love using it, but the features of wordpress are
+blowing it out of the water.</p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Google Reader stats out of Wack]]></title>
+            <link href="https://www.timbroder.com/2007/10/google-reader-stats-out-of-wack.html"/>
+            <updated>2007-10-25T00:27:00+00:00</updated>
+            <id>https://www.timbroder.com/2007/10/google-reader-stats-out-of-wack.html</id>
+            <content type="html"><![CDATA[<p>First, <a href="http://www.techcrunch.com/2007/10/14/top-blogs-on-google-reader/">Techcrunch</a> came up with a list of the top blogs that users subscribe to using
+Google Reader. The top 3 on the list were BBC with 202,463, Google News wih
+192,100, and ESPN with 189,274 . Remember, these are only the stats if the
+subscriber is using Google Reader, obviously there are blogs with a higher
+subscription count, such as the <a href="http://googleblog.blogspot.com/">Official Google
+Blog</a> (They still haven't moved over to
+blogs.google.com eh?) with over 669,000 subscribers as reported by FeedBurner.</p>
+
+<p>It was all well and good that Google Reader showed high stats for these blogs,
+but.... we were apparently duped...</p>
+
+<p>In his article <a href="http://mashable.com/2007/10/15/google-reader-stats-are-bullshit-with-proof/">Google Reader Stats are BullSh*t (With
+Proof)</a>, Pete Cashmore goes into his explanation of the "default feed effect."
+A default feed is a feed that comes already subscribed in a news aggregator ,
+or is part of a default group (like say Digg, Engadget, and Gizmodo being in
+the Technology group on Google Reader). Being in these groups is a major
+traffic boost.</p>
+
+<p>However the system has some flaws</p>
+
+<ul>
+<li>There is subscription data for feeds that don't exist</li>
+<li>Google Reader does not check to see if a subscriber is active or not. (Someone signs up for Reader, adds a feed, and never touches Reader again, they count as a subscriber)</li>
+<li>Feedburner pulls some stats from Google Reader</li>
+<li>This problem is not limited to Google Reader. It includes many feed readers and start pages</li>
+</ul>
+
+<p>Tune in next time after I do some research into how out wack FeedBurner
+statistics are.</p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Displaying what you read from Google Reader]]></title>
+            <link href="https://www.timbroder.com/2007/10/displaying-what-you-read-in-google.html"/>
+            <updated>2007-10-05T02:04:00+00:00</updated>
+            <id>https://www.timbroder.com/2007/10/displaying-what-you-read-in-google.html</id>
+            <content type="html"><![CDATA[<p>I've been wanting to <a href="http://www.gpowered.net/g/feeds/">share</a> what I
+subscribe to in Google Reader and using the <a href="http://gpowered.blogspot.com/2007/08/google-reader-api-functions.html">functions I
+wrote</a>
+I was able to do just that. Check out the article for the full run down on the
+unofficial Google Reader API. This is written in python but should be easily
+portable to php. If i get around to it, I want to make a WordPress plugin so
+bloggers can share what they read with their readers. This will be followed
+(or in parallel depending on my mood) with a Javascript version so Blogspot
+users can do the same in the sidebar. On to the code!</p>
+
+<p>To start off we'll just copy the functions we need from <a href="http://gpowered.blogspot.com/2007/08/google-reader-api-functions.html">last
+time</a>.
+Generally this is the login and SID token functions, as well as the feed list
+function.</p>
+
+<pre><code data-language="python">from django.shortcuts import render_to_response
+from django.template import Library
+from elementtree import ElementTree
+import urllib
+import urllib2
+import re
+
+login = 'timothy.broder@gmail.com'
+password = '***'
+source = 'gPowered'
+
+google_url = 'http://www.google.com'
+reader_url = google_url + '/reader'
+login_url = 'https://www.google.com/accounts/ClientLogin'
+token_url = reader_url + '/api/0/token'
+subscription_list_url = reader_url + '/api/0/subscription/list'
+
+#login / get SED
+def get_SID():
+    header = {'User-agent' : source}
+    post_data = urllib.urlencode({ 'Email': login, 'Passwd': password, 'service': 'reader', 'source': source, 'continue': google_url, })
+    request = urllib2.Request(login_url, post_data, header)
+
+    try :
+        f = urllib2.urlopen( request )
+        result = f.read()
+
+    except:
+        print 'Error logging in'
+
+    return re.search('SID=(\S*)', result).group(1)
+
+#get results from url
+def get_results(SID, url):
+    header = {'User-agent' : source}
+    header['Cookie']='Name=SID;SID=%s;Domain=.google.com;Path=/;Expires=160000000000' % SID
+    print url
+    request = urllib2.Request(url, None, header)
+
+    try :
+        f = urllib2.urlopen( request )
+        result = f.read()
+
+    except:
+        print 'Error getting data from %s' % url
+
+    return result
+
+#get a specific feed.  It works for any feed, subscribed or not
+def get_feed(SID, url):
+    return get_results(SID, get_feed_url + url.encode('utf-8'))
+
+#get a token, this is needed for modifying to reader
+def get_token(SID):
+    return get_results(SID, token_url)
+
+#get a list of the users subscribed feeds
+def get_subscription_list(SID):
+    return get_results(SID, subscription_list_url)
+</code></pre>
+
+<p>Then we'll want to get rid off all the information in the feed that we don't
+want and load what we do into a data dictionary. After its in the dictionary,
+feed names and links (and the folders they are in) are ready to be displayed.
+As usual, I use Django to display my pages, but everything is the same up to
+the final return in the Feeds method. Below is an example of what each
+subscription looks like in the Google Reader Feed, and below that is how to
+process it</p>
+
+<pre><code data-language="XML">&lt;object&gt;
+    &lt;string name="id"&gt;feed/http://www.ubuntu.com/rss.xml&lt;/string&gt;
+    &lt;string name="title"&gt;Ubuntu&lt;/string&gt;
+    &lt;list name="categories"&gt;
+
+        &lt;object&gt;
+            &lt;string name="id"&gt;user/16162999404522159936/label/dev&lt;/string&gt;
+            &lt;string name="label"&gt;dev&lt;/string&gt;
+        &lt;/object&gt;
+    &lt;/list&gt;
+    &lt;number name="firstitemmsec"&gt;1186137757794&lt;/number&gt;
+&lt;/object&gt;
+</code></pre>
+
+<pre><code data-language="python">class myFeed:
+    def __init__(self, name, link):
+        self.name = name
+        self.link = link
+
+def Feeds(request):
+    SID = get_SID()
+    feeds = get_subscription_list(SID)
+    tree = ElementTree.fromstring(feeds)
+    d = dict()
+
+    #loop through each feed
+    for object in tree.findall('list')[0].findall('object'):
+        strings = object.findall('string')
+        key = object.findall('list')[0].findall('object')[0].findall('string')[1].text
+
+        #tag already exists, add to the list
+        try:
+            d[key].append(myFeed(strings[1].text, strings[0].text.replace('feed/', '')))
+        #tag doesn't exist, create list
+        except KeyError:
+            d[key] = [myFeed(strings[1].text, strings[0].text.replace('feed/', ''))]
+
+
+    return render_to_response('pages/feeds.html', {
+    'feeds': d,
+    })
+</code></pre>
+
+<p>For those of you that use django or are just curious how I end up displaying
+the feeds, this is what i have in my view:</p>
+
+<pre><code data-language="html"><br />### My Reading
+
+{% for item in feeds.items %}
+    {{ item.0 }}
+    {% for feed in item.1 %}
+        [{{ feed.name }}]({{ feed.link }})
+    {% endfor %}
+{% endfor %}
+
+</code></pre>
+
+<p>Again, too see what I subscribe to, <a href="http://www.gpowered.net/g/feeds/">click
+here</a></p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Google Reader adds Search Box!!]]></title>
+            <link href="https://www.timbroder.com/2007/09/google-reader-adds-search-box.html"/>
+            <updated>2007-09-06T18:20:00+00:00</updated>
+            <id>https://www.timbroder.com/2007/09/google-reader-adds-search-box.html</id>
+            <content type="html"><![CDATA[<p>Finally!! No more using Yahoo Pipes to search the feeds!</p>
+
+<p>I'm sitting here waiting for my friend Eli to pick me up from his apartment
+for a nice lunch over at dreamworks, glancing over a few feeds (I have a LOT
+to catch up on when I get back to NY), and one jumped out at me, the Google
+Reader Team has finally added a search box to Google reader.</p>
+
+<p><img src="http://lh3.google.com/timothy.broder/RuBD9JE6BbI/AAAAAAAAKqA/hVp1MIIZftM/s400/tim.jpg?imgdl=1" alt="" /></p>
+
+<p>This box will search all of your feeds! Also included in this release are:</p>
+
+<ul>
+<li>Ability to hide side navigation (I just tried it, it's very well done)  </li>
+<li>Unread count is now 1,000+ rather then 100+ (this is going to be good for
+me when I get back)  </li>
+<li>Forward and Back buttons now have more responsiveness when moving between
+folders and feeds  </li>
+</ul>
+
+<p>Check out <a href="http://blogsearch.google.com/">Google Blog Search</a> for more blog
+searching.</p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[HOWTO: Google Reader API Functions]]></title>
+            <link href="https://www.timbroder.com/2007/08/google-reader-api-functions.html"/>
+            <updated>2007-08-23T02:57:00+00:00</updated>
+            <id>https://www.timbroder.com/2007/08/google-reader-api-functions.html</id>
+            <content type="html"><![CDATA[<p>I've been wanting an API for Google reader since I started using it, and
+especially since i started gPowered so I could display a list of the feeds I
+read on the site. The official word on an API for reader is "It's coming in a
+few weeks," but that was back in late 2005. The reason being that at the time,
+the URLs the API would use were going to change a lot. So, after a bit of
+research and coding I came up with some python functions to do the job.</p>
+
+<p>The first step was authenticating against Google accounts without using the
+<a href="http://code.google.com/p/gdata-python-client/">client library</a>. The Python
+Gdata Library makes login very easy but Reader isn't part of the Client
+Library yet (maybe I'll try to add it, we'll see...) but
+<a href="http://djcraven.blogspot.com/2006/10/success-posting-to-blogger-beta-using.html">this</a> was the method I was using for gdata and python pre-Client
+Library, and the principles still hold true for working with Reader.
+Thankfully, most of the <a href="http://www.niallkennedy.com/blog/archives/2005/12/google_reader_a.html">research</a> for working with the 'Reader API' was done for me
+already by Niall Kennedy. This is an unofficial, unsupported API and the URLs
+for some of the queries have changed since the writing of that article. Here
+we go...</p>
+
+<p>We're going to use urllib(2) to handle the communication with this one. I
+rather would have used httplib, but I was having trouble with the
+authentication cookie. Each retrieval has its own URL to query against</p>
+
+<pre><code data-language="python">import urllib
+import urllib2
+import re
+
+login = 'timothy.broder@gmail.com'
+password = '****'
+source = 'gPowered'
+
+google_url = 'http://www.google.com'
+reader_url = google_url + '/reader'
+login_url = 'https://www.google.com/accounts/ClientLogin'
+token_url = reader_url + '/api/0/token'
+subscription_list_url = reader_url + '/api/0/subscription/list'
+reading_url = reader_url + '/atom/user/-/state/com.google/reading-list'
+read_items_url = reader_url + '/atom/user/-/state/com.google/read'
+reading_tag_url = reader_url + '/atom/user/-/label/%s'
+starred_url = reader_url + '/atom/user/-/state/com.google/starred'
+subscription_url = reader_url + '/api/0/subscription/edit'
+get_feed_url = reader_url + '/atom/feed/'
+</code></pre>
+
+<p>When we authenticate against Google Reader with a gmail account and password
+in the browser, a cookie is stored. We'll have to recreate the values in this
+cookie. The static values are the Domain (.google.com), the Path (/), and
+Expires (we'll use 160000000000). The unique value, based on the current login
+session, is the SID (Session ID?), which we will need to retrieve. We'll do
+the login and retrieval in the same function:</p>
+
+<pre><code data-language="python">#login / get SED
+def get_SID():
+    header = {'User-agent' : source}
+    post_data = urllib.urlencode({ 'Email': login, 'Passwd': password, 'service': 'reader', 'source': source, 'continue': google_url, })
+    request = urllib2.Request(login_url, post_data, header)
+
+    try :
+        f = urllib2.urlopen( request )
+        result = f.read()
+
+    except:
+        print 'Error logging in'
+
+    return re.search('SID=(\S*)', result).group(1)
+</code></pre>
+
+<p>We'll also need a function that can handle any of those URLs, create the
+header, attach a cookie to it, and retrieve the data from Google. I left the
+return as a raw data string so you could use whatever XML parsing library you
+want. I personally like using [ElementTree](http://effbot.org/zone/element-
+index.htm).</p>
+
+<pre><code data-language="python">#get results from url
+def get_results(SID, url):
+    header = {'User-agent' : source}
+    header['Cookie']='Name=SID;SID=%s;Domain=.google.com;Path=/;Expires=160000000000' % SID
+
+    request = urllib2.Request(url, None, header)
+
+    try :
+        f = urllib2.urlopen( request )
+        result = f.read()
+
+    except:
+        print 'Error getting data from %s' % url
+
+    return result
+</code></pre>
+
+<p>The following methods are the calls that I've gotten working so far; I'm going
+to keep working on the 'edit' functions, like adding, removing feeds, changing
+tags, etc. See the comments for what they do. Note: Any edit against the API
+needs to send over a changing token as part of the call</p>
+
+<pre><code data-language="python">#get a token, this is needed for modifying to reader
+def get_token(SID):
+    return get_results(SID, token_url)
+
+#get a specific feed.  It works for any feed, subscribed or not
+def get_feed(SID, url):
+ return get_results(SID, get_feed_url + url.encode('utf-8'))
+
+#get a list of the users subscribed feeds
+def get_subscription_list(SID):
+    return get_results(SID, subscription_list_url)
+
+#get a feed of the users unread items
+def get_reading_list(SID):
+    return get_results(SID, reading_url)
+
+#get a feed of the users read items
+def get_read_items(SID):
+    return get_results(SID, read_items_url)
+
+#get a feed of the users unread items of a given tag
+def get_reading_tag_list(SID, tag):
+        tagged_url = reading_tag_url % tag
+        return get_results(SID, tagged_url.encode('utf-8'))
+
+#get a feed of a users starred items/feeds
+def get_starred(SID):
+    return get_results(SID, starred_url)
+
+#subscribe of unsubscribe to a feed
+def modify_subscription(SID, what, do):
+    url = subscription_url + '?client=client:%s&amp;ac;=%s&amp;s;=%s&amp;token;=%s' % ( login, do.encode('utf-8'), 'feed%2F' + what.encode('utf-8'), get_token(SID) )
+    print url
+    return get_results(SID, url)
+
+#subscribe to a feed
+def subscribe_to(SID, url):
+    return modify_subscription(SID, url, 'subscribe')
+
+#unsubscribe to a feed
+def unsubscribe_from(SID, url):
+    return modify_subscription(SID, url, 'unsubscribe')
+</code></pre>
+
+<p>Example usage:</p>
+
+<pre><code data-language="python">SID = get_SID()
+print get_subscription_list(SID)
+#print get_reading_list(SID)
+#print get_read_items(SID)
+#print get_reading_tag_list(SID, 'me')
+#print get_reading_tag_list(SID, 'nada-mas')
+#print get_starred(SID)
+#print get_token(SID)
+
+#test_feed = 'http://picasaweb.google.com/data/feed/base/user/timothy.broder/albumid/5101347429735335089?kind=photo&amp;alt;=rss&amp;hl;=en_US'
+
+#print subscribe_to(SID, test_feed)
+#returns ok but I don't see the feed in reader?
+
+#print get_feed(SID, test_feed)
+</code></pre>
+
+<p>Like I said, I'd like to keep going with this and get the edit functionality
+to work better. I'm also going to take a look into the Client Library and see
+if I could set this up as a patch that people could use if they wanted to use
+the API.</p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[View Google Groups posts in Reader]]></title>
+            <link href="https://www.timbroder.com/2007/08/view-google-groups-posts-in-reader.html"/>
+            <updated>2007-08-22T21:11:00+00:00</updated>
+            <id>https://www.timbroder.com/2007/08/view-google-groups-posts-in-reader.html</id>
+            <content type="html"><![CDATA[<p>I don't know why I never noticed this before but you can subscribe to the mail
+sent to Google Groups through an RSS feed at the bottom of each group. I'm
+trying it out for a few groups, I might like it better then reading through
+the mail. I wonder if there is a way to subscribe to the rolled up versions of
+the posts...</p>
+
+<p><img src="http://lh5.google.com/timothy.broder/RsyngpE6BRI/AAAAAAAAKn8/F6Qvt7wUps4/s400/groups_reader.jpg?imgdl=1" alt="" /></p>
+]]></content>
+        </entry>
+    </feed>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[timbroder.com]]></title>
+    <link href="https://www.timbroder.com/blog/tags/podcasts.xml" rel="self"/>
+    <link href="https://www.timbroder.com/"/>
+    <updated>2018-09-09T12:21:33+00:00</updated>
+    <id>https://www.timbroder.com/</id>
+            <author>
+            <name><![CDATA[Tim Broder]]></name>            <email><![CDATA[timothy.broder@gmail.com]]></email>        </author>
+        <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[Podcast Reruns]]></title>
+            <link href="https://www.timbroder.com/2014/08/podcast-reruns.html"/>
+            <updated>2014-08-18T18:06:58+00:00</updated>
+            <id>https://www.timbroder.com/2014/08/podcast-reruns.html</id>
+            <content type="html"><![CDATA[<p>Last year, I had been plowing through old episodes of a few Tech podcasts. I
+was able to get through all of <a href="http://developingperspective.com/">Developing
+Perspective</a> (they are short) and was
+working on <a href="http://5by5.tv/buildanalyze">Build and Analyze</a>.  I’m halfway-ish
+through B&amp;A, but my listening has died off in leu of new episodes of
+<a href="http://timbroder.com/podcasts">other shows</a>.</p>
+
+<p>I’ve missed listening to it.  The reason it dropped of is playlist related.
+Everything I listen to is in one playlist that I prune from time to time. I
+didn’t add B&amp;A to it because I didn’t want to have to download each
+episode each time. I downloaded them all at once. If I added it to the
+playlist, all 108 episodes would have shown up.  I had a separate playlist
+just for this show. But, I would forget about it.</p>
+
+<p>I got to thinking about reruns. TV has them. YouTube has them.  Why not this
+medium?  Whether specifically for podcasts or RSS feeds in general, I thought
+something might exist. Something that would take a feed and give back the
+items at a pubDate+days interval. This way, whatever you consume the feeds
+with, will think it’s new. This could be done by modifying the pubDate, though
+some feed scrapers might not care that a pubDate might be in the future.  The
+other method would be to restrict a feed based on a range of days (or weeks
+for Podcasts).</p>
+
+<p>I googled around for a bit. The back of my mind thinks it remembers something
+from…. 5 or so years ago? No luck. Then I wanted to build a service to do it…
+Then I remembered time is scarce these days. Yahoo Pipes to the rescue!!</p>
+
+<p>I got a pipe working that overcast would accept and process. Then tweaked it
+for more public consumption.</p>
+
+<p><a href="http://pipes.yahoo.com/timbroder/podcastreruns">http://pipes.yahoo.com/timbroder/podcastreruns</a></p>
+
+<p>The Pipe has 3 inputs (listed in a different order from that link for ease of
+explanation)</p>
+
+<ul>
+<li>Feed URL: Paste in the url of your podcast feed here</li>
+<li>How Many Weeks ago to start: This is when in the podcast to start pulling from. If want to start at the very first episode, use the number of weeks between when the episode first aired, and now.  I want to start B&amp;A at episode 49. It aired on 10/24/2011. It’s currently 7/29/2014. So, I want to start 145 weeks ago</li>
+<li>How many episodes do you want per week: This depends on how much you want, and how often the podcast released episodes.  If it was a weekly podcast and you want to get 1 episode a week, put 1. If it was weekly and you want 4 episodes a week to catch up faster, put 4.  What this is doing is loading all the feed items in between the “start week” and this number at once. Podcasts that come out more than once a week will be multiplied by this number</li>
+</ul>
+
+<p>Configure as needed, then cick “Run Pipe” to confirm you see the appropriate
+episodes. Then, grab the RSS url for this configuration. Load this URL into
+your pod catcher.</p>
+
+<p><img src="/images/2014/07/2014-07-29_16021.png" alt="2014 07 29 1602" /></p>
+
+<p>I’ve been testing this for a few weeks now and it’s working great! Another
+good use would be [Overcast’s](https://itunes.apple.com/us/app/overcast-
+podcast-player/id888422857?mt=8&amp;at=11laRZ&amp;ct=pro) “Retired Greats” Section:</p>
+
+<p> <img src="/images/2014/08/overcast1.jpg" alt="Overcast1" /></p>
+
+<p>If you are interested in the inner workings of this Pipe, here is a
+screenshot. Though, looking at this now, getting more than 1 episode a week
+needs some tweaking.</p>
+
+<p><a href="/images/2014/07/2014-07-29_16061.png"><img src="/images/2014/07/2014-07-29_16061.png" alt="2014 07 29 1606" /></a></p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[What do you listen to? (podcast edition)]]></title>
+            <link href="https://www.timbroder.com/2011/10/what-do-you-listen-to-podcast-edition.html"/>
+            <updated>2011-10-21T16:25:07+00:00</updated>
+            <id>https://www.timbroder.com/2011/10/what-do-you-listen-to-podcast-edition.html</id>
+            <content type="html"><![CDATA[<p>I tend to listen to a decent number of podcasts. Usually while doing the
+dishes, running, or something or other in the park.  Some are book/comic
+related and help me keep up to date with what's coming out and how some books
+were that I didn't have time to read.  Others are tech and help me get other
+opinions on the new libraries or trends.  I've found a number of fun libraries
+/how-tos from listening. Check them out below, what do you listen to? Tech</p>
+
+<ul>
+<li>Sitepoint - Web Dev news, tutorials, interviews <a href="http://www.sitepoint.com/"> http://www.sitepoint.com/</a></li>
+<li>Official jQuery podcast* - Javascript library <a href="http://podcast.jquery.com/">http://podcast.jquery.com/</a></li>
+<li>yayQuery* - Front End Dev podcast <a href="http://yayquery.com/"> http://yayquery.com/</a></li>
+<li>djangodose* - Had great news about jquery, but I think its dead <a href="http://djangodose.com/">http://djangodose.com/</a></li>
+<li>techzinglive - Random tech/hacker news <a href="http://techzinglive.com/">http://techzinglive.com/</a></li>
+<li>The Dev Show - Ruby,Php, Java, Javascript <a href="http://5by5.tv/devshow">http://5by5.tv/devshow</a></li>
+<li>The changelog - Open source news <a href="http://thechangelog.com/"> http://thechangelog.com/</a></li>
+<li>ATX Web Show - web stuff <a href="http://atxwebshow.com/">http://atxwebshow.com/</a></li>
+<li><p>The javascript show* - great js news and library coverage <a href="http://javascriptshow.com/">http://javascriptshow.com/</a>
+Non Tech</p></li>
+<li><p>iFanboy* - Comic book news and reviews <a href="http://javascriptshow.com/">http://ifanboy.com/</a></p></li>
+<li>Sword and Laser* - Science Fiction and Fantasy book club <a href="http://www.swordandlaser.com/">http://www.swordandlaser.com/</a></li>
+<li>11 O'Clock Comics - Comic news and culture <a href="http://bullpenbulletinspodcast.com/">http://bullpenbulletinspodcast.com/</a></li>
+<li>Word Balloon - Comic creator interviews <a href="http://wordballoon.com/"> http://wordballoon.com/</a></li>
+<li><p>Fuzzy Typewriter - Random media / culture <a href="http://fuzzytypewriter.wordpress.com/"> http://fuzzytypewriter.wordpress.com/</a></p>
+
+<p>** I listen to every episode, others I cherry-pick</p></li>
+</ul>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[How to manage podcasts in Winamp (screw itunes)]]></title>
+            <link href="https://www.timbroder.com/2009/04/how-to-manage-podcasts-in-winamp-screw.html"/>
+            <updated>2009-04-17T19:11:00+00:00</updated>
+            <id>https://www.timbroder.com/2009/04/how-to-manage-podcasts-in-winamp-screw.html</id>
+            <content type="html"><![CDATA[<p>So I really have been digging the Windows 7 beta.  However, Itunes does not
+sync podcasts correctly on the 64 bit version.  IF syncing works at all, it
+takes a while. I had used winamp to listen to my music a while ago, but had
+switched to amarok when I started single booting linux (yes, I hated Vista
+that much).  Now that I'm back to using windows a bit, I wanted my podcast
+experience to go flawlessly.</p>
+
+<p>As much as I dislike iTunes, they have got podcast management down pat</p>
+
+<ul>
+<li>search for podcast</li>
+<li>subscribe to podcast</li>
+<li>download episodes</li>
+<li>sync with ipod</li>
+<li><strong>after an episode has been listened to, delete from computer hard drive</strong>
+That last point is the most important part, everything else can be done
+manually  </li>
+</ul>
+
+<p>All this can be done with winamp. You will need two things, winamp and the
+<a href="http://mlipod.sourceforge.net/?page=downloads">ml_iPod</a> plugin.  While winamp
+does come with ipod support built in, ml_iPod has many more features.  The
+following steps should get you up to speed on podcasting with winamp</p>
+
+<ul>
+<li>install winamp</li>
+<li>install the ml_iPod plugin (it will tell you it has to remove the built in ipod plugin, this is ok)</li>
+<li>set a directory to save the episodes in  </li>
+</ul>
+
+<p><img src="http://1.bp.blogspot.com/_Ng3QbVQfLZ8/SejSAesN5OI/AAAAAAAAbG8/i6n7ZuHGR7A/s1600-h/1.jpg" alt="" /></p>
+
+<ul>
+<li>plug in your ipod</li>
+<li>enable podcast support for the ipod</li>
+<li>point it to your episode folder</li>
+<li>set the query for when to delete old episodes  </li>
+</ul>
+
+<p><img src="http://4.bp.blogspot.com/_Ng3QbVQfLZ8/SejS5pxj2JI/AAAAAAAAbHE/zU0cecph26A/s1600-h/2.jpg" alt="" /></p>
+
+<ul>
+<li>Add your podcasts by searching for them in the directory, or adding them manually using their RSS feed  </li>
+</ul>
+
+<p><img src="http://4.bp.blogspot.com/_Ng3QbVQfLZ8/SejTsQ-8VoI/AAAAAAAAbHM/RGPUVDtoXpI/s1600-h/3.jpg" alt="" /></p>
+
+<p>After this you should be good to go. podcasts!</p>
+]]></content>
+        </entry>
+    </feed>

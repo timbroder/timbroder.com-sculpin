@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[timbroder.com]]></title>
+    <link href="https://www.timbroder.com/blog/tags/automation.xml" rel="self"/>
+    <link href="https://www.timbroder.com/"/>
+    <updated>2018-09-09T12:21:33+00:00</updated>
+    <id>https://www.timbroder.com/</id>
+            <author>
+            <name><![CDATA[Tim Broder]]></name>            <email><![CDATA[timothy.broder@gmail.com]]></email>        </author>
+        <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[How to Get Notified if someone stars, forks, or follows your Github]]></title>
+            <link href="https://www.timbroder.com/2016/03/How-to-Get-Notified-if-someone-stars,-forks,-or-follows-your-Github.html"/>
+            <updated>2016-03-25T15:41:00+00:00</updated>
+            <id>https://www.timbroder.com/2016/03/How-to-Get-Notified-if-someone-stars,-forks,-or-follows-your-Github.html</id>
+            <content type="html"><![CDATA[<p>I've been using <a href="https://gitnotifier.io/" title="GitNotifier">GitNotifier</a> for a few weeks now. I get a weekly report emailed to me of who has starred or forked any of my repositories, as well as follow/unfollows. It's a nice little touch to put on top of Github's already great service</p>
+]]></content>
+        </entry>
+    </feed>

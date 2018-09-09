@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[timbroder.com]]></title>
+    <link href="https://www.timbroder.com/blog/tags/search.xml" rel="self"/>
+    <link href="https://www.timbroder.com/"/>
+    <updated>2018-09-09T12:21:33+00:00</updated>
+    <id>https://www.timbroder.com/</id>
+            <author>
+            <name><![CDATA[Tim Broder]]></name>            <email><![CDATA[timothy.broder@gmail.com]]></email>        </author>
+        <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[Google goes Instant]]></title>
+            <link href="https://www.timbroder.com/2010/09/google-goes-instant.html"/>
+            <updated>2010-09-08T19:21:05+00:00</updated>
+            <id>https://www.timbroder.com/2010/09/google-goes-instant.html</id>
+            <content type="html"><![CDATA[<p>Google Instant is a new search enhancement that shows results as you type. We
+are pushing the limits of our technology and infrastructure to help you get
+better search results, faster. Our key technical insight was that people type
+slowly, but read quickly, typically taking 300 milliseconds between
+keystrokes, but only 30 milliseconds (a tenth of the time!) to glance at
+another part of the page. This means that you can scan a results page while
+you type. The most obvious change is that you get to the right content much
+faster than before because you don’t have to finish typing your full search
+term, or even press “search.” Another shift is that seeing results as you type
+helps you formulate a better search term by providing instant feedback. You
+can now adapt your search on the fly until the results match exactly what you
+want. In time, we may wonder how search ever worked in any other way.</p>
+
+<h2 id="benefits">Benefits</h2>
+
+<p><strong>Faster Searches:</strong> By predicting your search and showing results before you finish typing, Google Instant can save 2-5 seconds per search.</p>
+
+<p><strong>Smarter Predictions:</strong> Even when you don’t know exactly what you’re looking for, predictions help guide your search. The top prediction is shown in grey text directly in the search box, so you can stop typing as soon as you see what you need.</p>
+
+<p><strong>Instant Results:</strong> Start typing and results appear right before your eyes. Until now, you had to type a full search term, hit return, and hope for the right results. Now results appear instantly as you type, helping you see where you’re headed, every step of the way.</p>
+]]></content>
+        </entry>
+    </feed>

@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>
+                        Category Archive &mdash; timbroder.com
+            </title>
+    <meta name="description" content="Category Archive" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="alternate" type="application/rss+xml" title="timbroder.com &raquo; Feed" href="https://feeds.feedburner.com/timbroder" />
+    
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />        <link href="https://www.timbroder.com/themes/broderboy/deadfish/assets/css/screen.css" rel="stylesheet" media="screen">
+    <link href="https://www.timbroder.com/themes/broderboy/deadfish/assets/css/tag_cloud.css" rel="stylesheet" media="screen">
+    <link href="https://www.timbroder.com/themes/broderboy/deadfish/assets/css/twilight.css" rel="stylesheet" media="screen">
+        <script>
+(function(a,b){function d(a,b){return a===null?b==="null":a===undefined?b==="undefined":a.is&&a instanceof f?b==="element":Object.prototype.toString.call(a).toLowerCase().indexOf(b)>7}function c(a){var b,e,f,g,h,i,l,m,n;if(a instanceof c)return a;d(a,"array")||(a=String(a).replace(/\s/g,"").toLowerCase().match(/(?:\+,|[^,])+/g));for(b=0,e=a.length;b<e;++b){d(a[b],"array")||(a[b]=String(a[b]).match(/(?:\+\/|[^\/])+/g)),i=[],f=a[b].length;while(f--){var l=a[b][f];h={jwertyCombo:String(l),shiftKey:!1,ctrlKey:!1,altKey:!1,metaKey:!1},d(l,"array")||(l=String(l).toLowerCase().match(/(?:(?:[^\+])+|\+\+|^\+$)/g)),g=l.length;while(g--)l[g]==="++"&&(l[g]="+"),l[g]in k.mods?h[j[k.mods[l[g]]]]=!0:l[g]in k.keys?h.keyCode=k.keys[l[g]]:m=l[g].match(/^\[([^-]+\-?[^-]*)-([^-]+\-?[^-]*)\]$/);if(d(h.keyCode,"undefined"))if(m&&m[1]in k.keys&&m[2]in k.keys){m[2]=k.keys[m[2]],m[1]=k.keys[m[1]];for(n=m[1];n<m[2];++n)i.push({altKey:h.altKey,shiftKey:h.shiftKey,metaKey:h.metaKey,ctrlKey:h.ctrlKey,keyCode:n,jwertyCombo:String(l)});h.keyCode=n}else h.keyCode=0;i.push(h)}this[b]=i}this.length=b;return this}var e=a.document,f=a.jQuery||a.Zepto||a.ender||e,g,h,i="keydown";f===e?(g=function(a,b){return a?f.querySelector(a,b||f):f},h=function(a,b){a.addEventListener(i,b,!1)},$f=function(a,b){var c=document.createEvent("Event"),d;c.initEvent(i,!0,!0);for(d in b)c[d]=b[d];return(a||f).dispatchEvent(c)}):(g=function(a,b,c){return f(a||e,b)},h=function(a,b){f(a).bind(i+".jwerty",b)},$f=function(a,b){f(a||e).trigger(f.Event(i,b))});var j={16:"shiftKey",17:"ctrlKey",18:"altKey",91:"metaKey"},k={mods:{".":16,shift:16,".":17,ctrl:17,".":18,alt:18,option:18,".":91,meta:91,cmd:91,"super":91,win:91},keys:{".":8,backspace:8,".":9,".":9,tab:9,".":13,"return":13,enter:13,".":13,pause:19,"pause-break":19,".":20,caps:20,"caps-lock":20,".":27,escape:27,esc:27,space:32,".":33,pgup:33,"page-up":33,".":34,pgdown:34,"page-down":34,".":35,end:35,".":36,home:36,ins:45,insert:45,del:45,"delete":45,".":37,left:37,"arrow-left":37,".":38,up:38,"arrow-up":38,".":39,right:39,"arrow-right":39,".":40,down:40,"arrow-down":40,"*":106,star:106,asterisk:106,multiply:106,"+":107,plus:107,"-":109,subtract:109,"=":187,equals:187,",":188,comma:188,".":190,period:190,"full-stop":190,"/":191,slash:191,"forward-slash":191,"`":192,tick:192,"back-quote":192,"[":219,"open-bracket":219,"\\":220,"back-slash":220,"]":221,"close-bracket":221,"'":222,quote:222,apostraphe:222}};l=95,n=0;while(++l<106)k.keys["num-"+n]=l,++n;l=47,n=0;while(++l<58)k.keys[n]=l,++n;l=111,n=1;while(++l<136)k.keys["f"+n]=l,++n;var l=64;while(++l<91)k.keys[String.fromCharCode(l).toLowerCase()]=l;var m=b.jwerty={event:function(a,b,e){if(d(b,"boolean")){var f=b;b=function(){return f}}a=new c(a);var g=0,h=a.length-1,i,j;return function(c){if(j=m.is(a,c,g)){if(g<h){++g;return}i=b.call(e||this,c,j),i===!1&&c.preventDefault(),g=0}else g=m.is(a,c)?1:0}},is:function(a,b,d){a=new c(a),d=d||0,a=a[d],b=b.originalEvent||b;var e,f=a.length,g=!1;while(f--){g=a[f].jwertyCombo;for(var h in a[f])h!=="jwertyCombo"&&b[h]!==a[f][h]&&(g=!1);if(g!==!1)return g}return g},key:function(b,c,e,f,i){var j=d(e,"element")||d(e,"string")?e:f,k=j===e?a:e,l=j===e?f:i;h(d(j,"element")?j:g(j,l),m.event(b,c,k))},fire:function(a,b,e,f){a=new c(a);var h=d(e,"number")?e:f;$f(d(b,"element")?b:g(b,e),a[h||0][0])},KEYS:k}})(this,typeof module!="undefined"&&module.exports?module.exports:this),jwerty.key("B,A",function(){_unicorns=document.createElement("SCRIPT"),_unicorns.type="text/javascript",_unicorns.src="http://snacksize.com/unicorn/unicorn.js?",document.getElementsByTagName("head")[0].appendChild(_unicorns)})
+</script>
+</head>
+<body class="nav-closed">
+                                        <div class="site-wrapper">
+                        <header class="main-header">
+        <div class="vertical">
+        <div class="main-header-content inner">
+            <h1 class="page-title">
+                <a href="/">
+                    timbroder.com
+                </a>
+            </h1>
+                        <h2 class="page-description">
+                <a href="/apps.html">Apps</a>
+                <a href="/projects.html">Projects</a>
+                <a href="/podcasts.html">Podcasts</a>
+                <a href="/talks.html">Talks</a>
+                            </h2>
+        </div>
+    </div>
+    </header>                            
+                    <main class="content" role="main">
+            <article class="post" role="article">
+    
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2008/06/google-io-session-videos-posted-with.html">Google I/O session videos posted with slides</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2008-06-16T19:11:00+00:00" pubdate>
+                      <span class='month'>Jun</span> <span class='day'>16th</span> <span class='year'>2008</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                            <span class="poop2">
+                        <a href="https://www.timbroder.com/blog/tags/Android">#Android</a>
+                        <a href="https://www.timbroder.com/blog/tags/appengine">#appengine</a>
+                        <a href="https://www.timbroder.com/blog/tags/blogger">#blogger</a>
+                        <a href="https://www.timbroder.com/blog/tags/bookmarks">#bookmarks</a>
+                        <a href="https://www.timbroder.com/blog/tags/calendar">#calendar</a>
+                        <a href="https://www.timbroder.com/blog/tags/Docs%20Spreadsheets">#Docs Spreadsheets</a>
+                        <a href="https://www.timbroder.com/blog/tags/gadgets">#gadgets</a>
+                        <a href="https://www.timbroder.com/blog/tags/gchat">#gchat</a>
+                        <a href="https://www.timbroder.com/blog/tags/gdata">#gdata</a>
+                        <a href="https://www.timbroder.com/blog/tags/gears">#gears</a>
+                        <a href="https://www.timbroder.com/blog/tags/GWT">#GWT</a>
+                        <a href="https://www.timbroder.com/blog/tags/maps">#maps</a>
+                        <a href="https://www.timbroder.com/blog/tags/Mashups">#Mashups</a>
+                        <a href="https://www.timbroder.com/blog/tags/picasa%20web">#picasa web</a>
+                        <a href="https://www.timbroder.com/blog/tags/reader">#reader</a>
+                            </span>
+                <span><a href="/2008/06/google-io-session-videos-posted-with.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2008/06/google-io-session-videos-posted-with.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-url="https://www.timbroder.com/2008/06/google-io-session-videos-posted-with.html"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>As I said <a href="http://blog.gpowered.net/2008/04/select-google-io-sessions-to-be-posted.html">earlier</a>, Quite a few presentations from Google I/O have
+been <a href="http://sites.google.com/site/io/">posted</a> for your viewing pleasure.
+I'll be glued to these this weekend while I'm on call.</p>
+
+<p>Topics include<br />
+Ajax<br />
+KML<br />
+Sketchup<br />
+Android<br />
+OpenSocial<br />
+Appengine<br />
+Data APIs<br />
+Theory Talks<br />
+Youtube<br />
+Gears<br />
+Mashups<br />
+Maps<br />
+and more!</p>
+</section>
+
+
+</article>
+<article class="post" role="article">
+    
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2008/06/google-toolbar-available-for-firefox-3.html">Google Toolbar Available for Firefox 3</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2008-06-16T17:54:00+00:00" pubdate>
+                      <span class='month'>Jun</span> <span class='day'>16th</span> <span class='year'>2008</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                        <span><a href="/2008/06/google-toolbar-available-for-firefox-3.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2008/06/google-toolbar-available-for-firefox-3.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="119716302"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p><a href="http://blogoscoped.com/archive/2008-06-16.html#n62">Finally</a>, the Google
+<a href="http://toolbar.google.com/">toolbar</a> is available for all those with the
+Firefox beta or RC releases. Just in time too... took them long enough...
+happy days are here again!</p>
+</section>
+
+
+</article>
+<article class="post" role="article">
+    
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2008/06/live-diggnation-ny-photos.html">Live Diggnation NY Photos</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2008-06-05T11:31:00+00:00" pubdate>
+                      <span class='month'>Jun</span> <span class='day'>5th</span> <span class='year'>2008</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                            <span class="poop2">
+                        <a href="https://www.timbroder.com/blog/tags/digg">#digg</a>
+                        <a href="https://www.timbroder.com/blog/tags/events">#events</a>
+                            </span>
+                <span><a href="/2008/06/live-diggnation-ny-photos.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2008/06/live-diggnation-ny-photos.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="119628703"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>The show was absolutely nuts. Had a great time at Studio B. Sorry for the
+crappy photo quality, I forgot my camera and the blackberry doesn't do so well
+in the dark... I think the estimate for this meetup was about 2,000 people
+inside and 600 waiting outside in the rain? Great turnout, great show.
+Diggnation better come back to NY. (As they said at the show, NY creates/diggs
+the most content on Digg then anywhere else in the world, GO NEW YORK!</p>
+
+<p>[![](ht
+tp://2.bp.blogspot.com/_Ng3QbVQfLZ8/SEfPwSCzrtI/AAAAAAAASAk/uE3SLJhkVc4/s400/I
+MG00031.jpg)](http://2.bp.blogspot.com/_Ng3QbVQfLZ8/SEfPwSCzrtI/AAAAAAAASAk/uE
+3SLJhkVc4/s1600-h/IMG00031.jpg) [![](http://4.bp.blogspot.com/_Ng3QbVQfLZ8/SEf
+PtyCzrsI/AAAAAAAASAc/peqDoJ87kDk/s400/IMG00032.jpg)](http://4.bp.blogspot.com/
+_Ng3QbVQfLZ8/SEfPtyCzrsI/AAAAAAAASAc/peqDoJ87kDk/s1600-h/IMG00032.jpg) [![](ht
+tp://2.bp.blogspot.com/_Ng3QbVQfLZ8/SEfPrSCzrrI/AAAAAAAASAU/eCCoFaLbTwo/s400/I
+MG00033.jpg)](http://2.bp.blogspot.com/_Ng3QbVQfLZ8/SEfPrSCzrrI/AAAAAAAASAU/eC
+CoFaLbTwo/s1600-h/IMG00033.jpg) [![](http://3.bp.blogspot.com/_Ng3QbVQfLZ8/SEf
+PliCzrqI/AAAAAAAASAM/tpEyMMpkI9I/s400/IMG00034.jpg)](http://3.bp.blogspot.com/
+_Ng3QbVQfLZ8/SEfPliCzrqI/AAAAAAAASAM/tpEyMMpkI9I/s1600-h/IMG00034.jpg) [![](ht
+tp://2.bp.blogspot.com/_Ng3QbVQfLZ8/SEfPgSCzrpI/AAAAAAAASAE/dSjsnwdN89U/s400/I
+MG00035.jpg)](http://2.bp.blogspot.com/_Ng3QbVQfLZ8/SEfPgSCzrpI/AAAAAAAASAE/dS
+jsnwdN89U/s1600-h/IMG00035.jpg) [![](http://3.bp.blogspot.com/_Ng3QbVQfLZ8/SEf
+PYiCzroI/AAAAAAAAR_8/knHsvfKP7Vs/s400/IMG00036.jpg)](http://3.bp.blogspot.com/
+_Ng3QbVQfLZ8/SEfPYiCzroI/AAAAAAAAR_8/knHsvfKP7Vs/s1600-h/IMG00036.jpg) [![](ht
+tp://3.bp.blogspot.com/_Ng3QbVQfLZ8/SEfPRiCzrnI/AAAAAAAAR_0/qAMV4gBESLs/s400/I
+MG00037.jpg)](http://3.bp.blogspot.com/_Ng3QbVQfLZ8/SEfPRiCzrnI/AAAAAAAAR_0/qA
+MV4gBESLs/s1600-h/IMG00037.jpg) [![](http://3.bp.blogspot.com/_Ng3QbVQfLZ8/SEf
+PKiCzrmI/AAAAAAAAR_s/SAWtqLlV5Qw/s400/IMG00038.jpg)](http://3.bp.blogspot.com/
+_Ng3QbVQfLZ8/SEfPKiCzrmI/AAAAAAAAR_s/SAWtqLlV5Qw/s1600-h/IMG00038.jpg) [![](ht
+tp://3.bp.blogspot.com/_Ng3QbVQfLZ8/SEfPGiCzrlI/AAAAAAAAR_k/9ZVOZXOuhq8/s400/I
+MG00039.jpg)](http://3.bp.blogspot.com/_Ng3QbVQfLZ8/SEfPGiCzrlI/AAAAAAAAR_k/9Z
+VOZXOuhq8/s1600-h/IMG00039.jpg) [![](http://2.bp.blogspot.com/_Ng3QbVQfLZ8/SEf
+PDSCzrkI/AAAAAAAAR_c/HuoFOMnMPvw/s400/IMG00040.jpg)](http://2.bp.blogspot.com/
+_Ng3QbVQfLZ8/SEfPDSCzrkI/AAAAAAAAR_c/HuoFOMnMPvw/s1600-h/IMG00040.jpg)
+[![](http://4.bp.blogspot.com/_Ng3QbVQfLZ8/SEfPAyCzrjI/AAAAAAAAR_U/Fq-qaIQjk-E
+/s400/IMG00041.jpg)](http://4.bp.blogspot.com/_Ng3QbVQfLZ8/SEfPAyCzrjI/AAAAAAA
+AR_U/Fq-qaIQjk-E/s1600-h/IMG00041.jpg)
+[![](http://2.bp.blogspot.com/_Ng3QbVQfLZ8/SEfO-SCzriI/AAAAAAAAR_M/jaP9miTIGAE
+/s400/IMG00042.jpg)](http://2.bp.blogspot.com/_Ng3QbVQfLZ8/SEfO-
+SCzriI/AAAAAAAAR_M/jaP9miTIGAE/s1600-h/IMG00042.jpg)</p>
+</section>
+
+
+</article>
+<article class="post" role="article">
+    
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2008/06/diggnation-filming-at-studio-b-in-nyc.html">Diggnation filming at Studio B in NYC tonight</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2008-06-04T11:36:00+00:00" pubdate>
+                      <span class='month'>Jun</span> <span class='day'>4th</span> <span class='year'>2008</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                            <span class="poop2">
+                        <a href="https://www.timbroder.com/blog/tags/events">#events</a>
+                            </span>
+                <span><a href="/2008/06/diggnation-filming-at-studio-b-in-nyc.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2008/06/diggnation-filming-at-studio-b-in-nyc.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-url="https://www.timbroder.com/2008/06/diggnation-filming-at-studio-b-in-nyc.html"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>Kevin Rose is filming Diggnation in Brooklyn tonight for <a href="http://www.internetweekny.com/">Internet
+Week</a>. It starts at 6 I should be able to get
+out of work in time. Anyone else going?</p>
+
+<p>"Diggnation is a weekly video podcast produced by Revision3. It is hosted by
+Kevin Rose and Alex Albrecht, who had previously hosted TechTV's The Screen
+Savers together. Its main purpose is to discuss the top stories from Digg, the
+social bookmarking website developed by Rose and others. The format of the
+show usually involves Rose and Albrecht reviewing one or more brands of beer
+at the opening of the show, of which they will consume throughout the show,
+(steadily getting more and more drunk until they are almost incoherent)
+followed by them discussing various Digg stories from the previous week. Both
+audio and video versions of the podcast are available from Revision3."</p>
+</section>
+
+
+</article>
+<article class="post" role="article">
+    
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2008/06/5-reasons-why-rim-should-make.html">5 Reasons Why RIM Should Make A BlackBerry That Runs Android</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2008-06-02T23:21:00+00:00" pubdate>
+                      <span class='month'>Jun</span> <span class='day'>2nd</span> <span class='year'>2008</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                            <span class="poop2">
+                        <a href="https://www.timbroder.com/blog/tags/Android">#Android</a>
+                        <a href="https://www.timbroder.com/blog/tags/blackberry">#blackberry</a>
+                            </span>
+                <span><a href="/2008/06/5-reasons-why-rim-should-make.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2008/06/5-reasons-why-rim-should-make.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="119856930"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>I'd really enjoy this. 1) I'm obviously addicted to my crackberry. 2) I'm not
+sure how I feel about lots of typing in a touch screen. I played with the HTC
+Touch over the weekend. It was cool, it was pretty, but the screen wasn't as
+responsive as I would have hoped. We'll see what HTC can do with the
+<a href="http://www.htc.com/www/product.aspx?id=46278">Diamond</a> and the
+<a href="http://androidcommunity.com/first-live-images-of-fullscreen-android-demo-20080528/">Dream</a></p>
+</section>
+
+
+</article>
+<article class="post" role="article">
+    
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2008/05/io-myspace-installs-gears.html">I/O: MySpace installs gears</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2008-05-29T21:34:00+00:00" pubdate>
+                      <span class='month'>May</span> <span class='day'>29th</span> <span class='year'>2008</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                            <span class="poop2">
+                        <a href="https://www.timbroder.com/blog/tags/gears">#gears</a>
+                            </span>
+                <span><a href="/2008/05/io-myspace-installs-gears.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2008/05/io-myspace-installs-gears.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-url="https://www.timbroder.com/2008/05/io-myspace-installs-gears.html"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>Myspace unveiled a new search feature of their message center at Google I/O
+utilizing gears. As you search your messages, results are shown in real time,
+coming out of the local cache stored in gears. Hopefully this will give gears
+more publicity and other sited (<a href="http://www.techcrunch.com/2008/05/28/myspace-shows-facebook-how-its-done-google-gears-to-power-messaging/">ahem</a>,
+facebook) will take a look at it ;)</p>
+
+<p>This almost makes me want to create a myspace account to go play with it...
+ALMOST...</p>
+</section>
+
+
+</article>
+<article class="post" role="article">
+    
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2008/05/io-appengine-is-open.html">I/O: AppEngine is open!</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2008-05-29T14:02:00+00:00" pubdate>
+                      <span class='month'>May</span> <span class='day'>29th</span> <span class='year'>2008</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                            <span class="poop2">
+                        <a href="https://www.timbroder.com/blog/tags/appengine">#appengine</a>
+                            </span>
+                <span><a href="/2008/05/io-appengine-is-open.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2008/05/io-appengine-is-open.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="121764443"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>Appengine is no longer limited to the first 10,000 people or hackathon
+attendees. Anyone can set up an account but each account is still limited to 3
+apps. Guess all those extra gmail accounts will come in handy eh?</p>
+</section>
+
+
+</article>
+<article class="post" role="article">
+    
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2008/05/io-lots-of-android-ui-videos.html">I/O: Lots of Android UI Videos!</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2008-05-29T13:53:00+00:00" pubdate>
+                      <span class='month'>May</span> <span class='day'>29th</span> <span class='year'>2008</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                            <span class="poop2">
+                        <a href="https://www.timbroder.com/blog/tags/Android">#Android</a>
+                            </span>
+                <span><a href="/2008/05/io-lots-of-android-ui-videos.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2008/05/io-lots-of-android-ui-videos.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="122025898"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>Check <a href="http://androidcommunity.com/first-live-images-of-fullscreen-android-demo-20080528/">them</a> out, as usual, youtube is blocked at work for me...</p>
+</section>
+
+
+</article>
+<article class="post" role="article">
+    
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2008/05/io-web-browser-meet-google-earth.html">I/O: Web Browser, Meet Google Earth</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2008-05-28T22:14:00+00:00" pubdate>
+                      <span class='month'>May</span> <span class='day'>28th</span> <span class='year'>2008</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                            <span class="poop2">
+                        <a href="https://www.timbroder.com/blog/tags/maps">#maps</a>
+                            </span>
+                <span><a href="/2008/05/io-web-browser-meet-google-earth.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2008/05/io-web-browser-meet-google-earth.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-url="https://www.timbroder.com/2008/05/io-web-browser-meet-google-earth.html"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>Enabling you to switch a Google Maps mashup or page to 3D Google earth with
+just a few lines of javascript</p>
+</section>
+
+
+</article>
+<article class="post" role="article">
+    
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2008/05/aol-joins-opensocial.html">I/O: AOL Joins OpenSocial</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2008-05-28T18:48:00+00:00" pubdate>
+                      <span class='month'>May</span> <span class='day'>28th</span> <span class='year'>2008</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                            <span class="poop2">
+                        <a href="https://www.timbroder.com/blog/tags/opensocial">#opensocial</a>
+                            </span>
+                <span><a href="/2008/05/aol-joins-opensocial.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2008/05/aol-joins-opensocial.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-url="https://www.timbroder.com/2008/05/aol-joins-opensocial.html"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>After today, AOL's products will
+<a href="http://www.techcrunch.com/2008/05/28/aol-joins-opensocial/">support</a> Google's
+OpenSocial.</p>
+</section>
+
+
+</article>
+<nav>
+    <a href="https://www.timbroder.com/blog/categories/24">Newer Posts</a><br />
+    <a href="https://www.timbroder.com/blog/categories/26">Older Posts</a><br />
+</nav>
+
+    </main>
+
+
+                        <footer class="site-footer clearfix">
+    <section>
+            <span class="tag size2"><a href="/blog/tags/"></a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/AVSpeechSynthesizer">AVSpeechSynthesizer</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Ai">Ai</a></span>
+            &nbsp;
+        <span class="tag size8"><a href="/blog/tags/Android">Android</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Atom">Atom</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Avengers">Avengers</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Batman">Batman</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Batman%20Inc.">Batman Inc.</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Batman%20and%20Robin">Batman and Robin</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/CKEditor">CKEditor</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/Calibre">Calibre</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Cheese">Cheese</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/ComicCon">ComicCon</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/CoreData">CoreData</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/DRM">DRM</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/Docs%20Spreadsheets">Docs Spreadsheets</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/ESI">ESI</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Fontis">Fontis</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/GME">GME</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/GTD">GTD</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/GWT">GWT</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Garlic">Garlic</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/Google">Google</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/Google%20Reader">Google Reader</a></span>
+            &nbsp;
+        <span class="tag size9"><a href="/blog/tags/HOWTO">HOWTO</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Hulu">Hulu</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Internet%20Explorer">Internet Explorer</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/JIRA">JIRA</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/Kindle">Kindle</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/Mashups">Mashups</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Memcached">Memcached</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/OmniFocus">OmniFocus</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Oracle">Oracle</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/PHPUnit">PHPUnit</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/PostgreSQL">PostgreSQL</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/RSS">RSS</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Redmine">Redmine</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Remember%20the%20Milk">Remember the Milk</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Ruby">Ruby</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/SQL">SQL</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Shared%20web%20hosting%20service">Shared web hosting service</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Siri">Siri</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Skype">Skype</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Sony%20Reader">Sony Reader</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Stan%20Lee">Stan Lee</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/TDD">TDD</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Terminator">Terminator</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/TinyMCE">TinyMCE</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Vibrams">Vibrams</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Virtual%20hosting">Virtual hosting</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Virtual%20private%20server">Virtual private server</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Walking%20Dead">Walking Dead</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Web%20hosting">Web hosting</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/YUI">YUI</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Zend">Zend</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/adwhirl">adwhirl</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/adwords">adwords</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/aiaio">aiaio</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/ajax">ajax</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/alfred">alfred</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/analytics">analytics</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/angularjs">angularjs</a></span>
+            &nbsp;
+        <span class="tag size4"><a href="/blog/tags/appengine">appengine</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/apple">apple</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/applepay">applepay</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/apps">apps</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/autocomplete">autocomplete</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/automation">automation</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/beta">beta</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/bit.ly">bit.ly</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/blackberry">blackberry</a></span>
+            &nbsp;
+        <span class="tag size4"><a href="/blog/tags/blogger">blogger</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/bookmarks">bookmarks</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/brightkite">brightkite</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/calendar">calendar</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/chrome">chrome</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/coffee">coffee</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/css">css</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/debug">debug</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/digg">digg</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/django">django</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/drafts">drafts</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/dropbox">dropbox</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/encryption">encryption</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/engagement">engagement</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/events">events</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/facebook">facebook</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/firefox">firefox</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/friendfeed">friendfeed</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/gadgets">gadgets</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/gchat">gchat</a></span>
+            &nbsp;
+        <span class="tag size4"><a href="/blog/tags/gdata">gdata</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/gdrive">gdrive</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/gears">gears</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/git">git</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/github">github</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/gmail">gmail</a></span>
+            &nbsp;
+        <span class="tag size5"><a href="/blog/tags/gpowered.net">gpowered.net</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/greasemonkey">greasemonkey</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/groups">groups</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/homebrew">homebrew</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/instapaper">instapaper</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/interfacebuilder">interfacebuilder</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/ios">ios</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/ipad">ipad</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/iphone">iphone</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/javascript">javascript</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/jira">jira</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/jquery">jquery</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/json">json</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/kids">kids</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/laravel">laravel</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/launch%20center%20pro">launch center pro</a></span>
+            &nbsp;
+        <span class="tag size5"><a href="/blog/tags/magento">magento</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/maps">maps</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/mercurial">mercurial</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/mock">mock</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/mongodb">mongodb</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/music">music</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/mysql">mysql</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/netbook">netbook</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/nosql">nosql</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/objective%20c">objective c</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/oil">oil</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/omnifocus">omnifocus</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/opensocial">opensocial</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/opensource">opensource</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/os">os</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/osx">osx</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/pesto">pesto</a></span>
+            &nbsp;
+        <span class="tag size7"><a href="/blog/tags/php">php</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/picasa%20web">picasa web</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/podcasts">podcasts</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/powershell">powershell</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/primal">primal</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/productivity">productivity</a></span>
+            &nbsp;
+        <span class="tag size6"><a href="/blog/tags/python">python</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/pythonista">pythonista</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/quick">quick</a></span>
+            &nbsp;
+        <span class="tag size4"><a href="/blog/tags/reader">reader</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/realm">realm</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/regex">regex</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/running">running</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/search">search</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/security">security</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/seo">seo</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/sketch">sketch</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/skynet">skynet</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/sleep">sleep</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/socialgraph">socialgraph</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/solr">solr</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/startup">startup</a></span>
+            &nbsp;
+        <span class="tag size4"><a href="/blog/tags/swift">swift</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/testing">testing</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/textmate">textmate</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/timbroder.com">timbroder.com</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/todoist">todoist</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/twitter">twitter</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/twitter2gTalk">twitter2gTalk</a></span>
+            &nbsp;
+        <span class="tag size6"><a href="/blog/tags/ubuntu">ubuntu</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/urls">urls</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/vagrant">vagrant</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/varnish">varnish</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/virtualenv">virtualenv</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/winamp">winamp</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/windows">windows</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/wordpress">wordpress</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/xbox">xbox</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/xcode">xcode</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/xml">xml</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/yahoo%20pipes">yahoo pipes</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/youtube">youtube</a></span>
+            &nbsp;
+    
+    </section>
+    <section class="copyright">
+        Copyright &copy; 2007-2018 -
+         Tim Broder -         <span class="credit">Powered by <a href="http://sculpin.io">Sculpin</a></span>
+    </section>
+</footer>
+                <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="https://www.timbroder.com/themes/broderboy/deadfish/assets/js/index.js"></script>
+<script type="text/javascript" src="https://www.timbroder.com/themes/broderboy/deadfish/assets/js/rainbow.min.js"></script>
+<script type="text/javascript" src="https://www.timbroder.com/themes/broderboy/deadfish/assets/js/rlns.min.js"></script>
+
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'timbrodercom'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-17099661-1', 'auto');
+    ga('send', 'pageview');
+
+</script>    </div>
+</body>
+</html>

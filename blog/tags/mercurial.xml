@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[timbroder.com]]></title>
+    <link href="https://www.timbroder.com/blog/tags/mercurial.xml" rel="self"/>
+    <link href="https://www.timbroder.com/"/>
+    <updated>2018-09-09T12:21:33+00:00</updated>
+    <id>https://www.timbroder.com/</id>
+            <author>
+            <name><![CDATA[Tim Broder]]></name>            <email><![CDATA[timothy.broder@gmail.com]]></email>        </author>
+        <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[Improve your Magento workflow: Use git or mercurial]]></title>
+            <link href="https://www.timbroder.com/2012/07/improve-your-magento-workflow-use-git-or-mercurial.html"/>
+            <updated>2012-07-31T13:18:07+00:00</updated>
+            <id>https://www.timbroder.com/2012/07/improve-your-magento-workflow-use-git-or-mercurial.html</id>
+            <content type="html"><![CDATA[<p>Most of our new projects at work are on mercurial and I've moved most of my
+personal projects over to git.  We do, unfortunately, still have one Magento
+install that lives in our old subversion repository.  If you've ever tried to
+work with a project the size of Magento in SVN with branching, you know the
+kind of pain this can cause. My machine at work is no slouch. An i7, 8 gigs of
+ram, 256 megs graphics card, and an SSD. Perfect for any number of high
+performance or <a href="http://sv.partypoker.com/">online games</a>, compiling, or video
+editing. Yet, switching branches on the mercurial project brings it to its
+knees.  It's honestly better to go shoot a quick game of pool while its
+switching rather then try to get anything done.  Eventually... we'll get it
+into mercurial.   Anyway, to migrate a project from svn to git, use the
+following command: [code]git svn clone http://svn/repo/here/trunk[/code] To
+migrate a project from svn to hg, use the following command: 
+<code>hg convert http://svn/repo/here/trunk</code></p>
+
+<p>Branching is now much, much easier and if
+that isn't enough for you to switch here are a few more reasons:</p>
+
+<ul>
+<li>git is much easier to use than when it first came out</li>
+<li>merging is exponentially smoother than SVN</li>
+<li>distributed: you can branch, merge, commit, revert all locally without effecting your team until you push. All this happens locally = faster</li>
+<li>you can work offline</li>
+<li>can centralize only if you want to</li>
+<li>branching takes on a whole new level. Create custom workflows base on release, or bug, or whatever you want</li>
+<li>merging is exponentially smoother than SVN (yes, I listed this twice)</li>
+<li>visual branch diagrams</li>
+</ul>
+]]></content>
+        </entry>
+    </feed>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[timbroder.com]]></title>
+    <link href="https://www.timbroder.com/blog/tags/quick.xml" rel="self"/>
+    <link href="https://www.timbroder.com/"/>
+    <updated>2018-09-09T12:21:33+00:00</updated>
+    <id>https://www.timbroder.com/</id>
+            <author>
+            <name><![CDATA[Tim Broder]]></name>            <email><![CDATA[timothy.broder@gmail.com]]></email>        </author>
+        <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[Testing UIViewController Transitions with Quick and Swift]]></title>
+            <link href="https://www.timbroder.com/2016/01/testing-uiviewcontroller-transitions.html"/>
+            <updated>2016-01-31T14:57:00+00:00</updated>
+            <id>https://www.timbroder.com/2016/01/testing-uiviewcontroller-transitions.html</id>
+            <content type="html"><![CDATA[<p><em>The examples below are using the <a href="https://github.com/Quick/Quick" title="Quick">Quick</a> test framework, but the principals we're going to talk about can be used in any setup.</em></p>
+
+<p>We have some complicated logic further down our user registration flow. I want to make sure that the right UIViewControllers are appearing when they are supposed to. I've been reading a <a href="http://swiftandpainless.com/testing-if-a-view-controller-got-pushed/" title="few">few</a> <a href="https://www.natashatherobot.com/ios-testing-view-controllers-swift/" title="different">different</a> <a href="http://www.iosmike.com/2014/08/unit-testing-viewcontrollers-in-swift.html" title="approaches">approaches</a> on how to handle this. Below is where I've ended up, and I'm pretty happy with it.</p>
+
+<p>For simplicity's sake, I'm going to show how to test if the user has tapped "Login" or "Register" on our opening screen. We can assume we have a LoadingViewController which represents the first screen. On this screens are two buttons, which correspond to these actions:</p>
+
+<pre><code data-language="swift">@IBAction func tapLogin(sender: AnyObject) {
+    self.navigationController?.pushViewController(self.storyboard?.instantiateViewControllerWithIdentifier("loginview") as! LoginViewController, animated: true)
+}
+
+@IBAction func tapRegister(sender: AnyObject) {
+    self.navigationController?.pushViewController(self.storyboard?.instantiateViewControllerWithIdentifier("registerview") as! RegisterViewController, animated: true)
+}
+</code></pre>
+
+<p>We also have a UINavigationController taking care of the view hierarchy. I also want to use the transitions and IDs already set up in the Storyboard.</p>
+
+<p>Let's start by referencing the UINavigationController and the UIViewController we're going to start with.</p>
+
+<pre><code data-language="swift">class LandingScreenUITests: QuickSpec {
+    override func spec() {
+        describe("Landing Screen") {
+
+            var viewController: LoadingViewController!
+            var navigationController: UINavigationController!
+
+
+        }
+    }
+}
+</code></pre>
+
+<p>Next, we're going to instantiate the storyboard, both controllers, and push the VC onto the view hierarchy</p>
+
+<pre><code data-language="swift">beforeEach {
+    let storyboard = UIStoryboard(name: "Main", bundle: NSBundle(forClass: self.dynamicType))
+    viewController = storyboard.instantiateViewControllerWithIdentifier("loadingview") as! LoadingViewController
+    navigationController = storyboard.instantiateViewControllerWithIdentifier("navigationcontroller") as! UINavigationController
+
+    navigationController.pushViewController(viewController, animated: false)
+
+    let _ =  viewController.view
+}
+</code></pre>
+
+<p>Two gotchas to watch out for here:</p>
+
+<ol>
+<li>Make sure Main.Storyboard is available in your Test target</li>
+<li>Make sure to use the <code>self.dynamicType</code> bundle above</li>
+</ol>
+
+<p>Missing either of these may result in a weird casting error:</p>
+
+<pre><code>Could not cast value of type 'MyApp.LoadingViewController' (0x10b9f5e50) to MyAppUITests.LoadingViewController' (0x11f894370).
+</code></pre>
+
+<p>Finally, lets call the appropriate methods on our initial UIViewController, and test the type of the UIViewController that has been put on the top of the hierarchy. <em>Note: I use <code>toEventually</code> here to wait for the transition animation</em></p>
+
+<pre><code data-language="swift">describe("User wants to log in") {
+    it("taps Login") {
+        viewController.tapLogin(self)
+        expect(navigationController.visibleViewController).toEventually(beAKindOf(LoginViewController))
+    }
+}
+
+describe("User wants to register") {
+    it("taps Register") {
+        viewController.tapRegister(self)
+        expect(navigationController.visibleViewController).toEventually(beAKindOf(RegisterViewController))
+    }
+}
+</code></pre>
+
+<p>For reference, here is the whole test class together:</p>
+
+<pre><code data-language="swift">import Foundation
+import Quick
+import Nimble
+@testable import MyApp
+
+class LandingScreenUITests: QuickSpec {
+    override func spec() {
+        describe("Landing Screen") {
+
+            var viewController: LoadingViewController!
+            var navigationController: UINavigationController!
+
+            beforeEach {
+                let storyboard = UIStoryboard(name: "Main", bundle: NSBundle(forClass: self.dynamicType))
+                viewController = storyboard.instantiateViewControllerWithIdentifier("loadingview") as! LoadingViewController
+                navigationController = storyboard.instantiateViewControllerWithIdentifier("navigationcontroller") as! UINavigationController
+
+                navigationController.pushViewController(viewController, animated: false)
+
+                let _ =  viewController.view
+            }
+
+            describe("User wants to log in") {
+                it("taps Login") {
+                    viewController.tapLogin(self)
+                    expect(navigationController.visibleViewController).toEventually(beAKindOf(LoginViewController))
+                }
+            }
+
+            describe("User wants to register") {
+                it("taps Register") {
+                    viewController.tapRegister(self)
+                    expect(navigationController.visibleViewController).toEventually(beAKindOf(RegisterViewController))
+                }
+            }
+        }
+    }
+}
+</code></pre>
+
+<p><em>Many thanks to the blog posts referenced at the top of this post</em></p>
+]]></content>
+        </entry>
+    </feed>

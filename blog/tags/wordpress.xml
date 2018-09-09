@@ -1,0 +1,680 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[timbroder.com]]></title>
+    <link href="https://www.timbroder.com/blog/tags/wordpress.xml" rel="self"/>
+    <link href="https://www.timbroder.com/"/>
+    <updated>2018-09-09T12:21:33+00:00</updated>
+    <id>https://www.timbroder.com/</id>
+            <author>
+            <name><![CDATA[Tim Broder]]></name>            <email><![CDATA[timothy.broder@gmail.com]]></email>        </author>
+        <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[Fixing YouTube embeds in Wordpress]]></title>
+            <link href="https://www.timbroder.com/2013/05/fixing-youtube-embeds-in-wordpress.html"/>
+            <updated>2013-05-10T16:42:32+00:00</updated>
+            <id>https://www.timbroder.com/2013/05/fixing-youtube-embeds-in-wordpress.html</id>
+            <content type="html"><![CDATA[<p>In some wordpress themes, youtube embeds just show up as a black screen. As
+discussed <a href="http://wordpress.org/support/topic/dynamically-change-youtube-iframe-embeds-to-auto-add-transparent-mode?replies=8">here</a>, the solution is
+adding a transparency setting to the iframe's src.</p>
+
+<p>However, the solution in
+that thread only works if the src is right next to the frameborder. Updated
+code below if you are running into this problem</p>
+
+<pre><code data-language="PHP">function add_video_wmode_transparent( $html ) {
+    $pattern = '#(src=&amp;quot;https?://www.youtube(?:-nocookie)?.com/(?:v|embed)/([a-zA-Z0-9-]+).&amp;quot;)#';
+    preg_match_all( $pattern, $html, $matches );
+
+    if ( count( $matches ) &amp;gt; 0) {
+        foreach ( $matches[0] as $orig_src ) {
+            if ( !strstr($orig_src, 'wmode=transparent' ) &amp;amp;&amp;amp; !strstr( $orig_src, 'hd=1' ) ) {
+                $add = 'hd=1&amp;amp;wmode=transparent&amp;quot;';
+
+                if ( !strstr($orig_src, '?') ) {
+                    $add = '?' . $add;
+                }
+                $new_src = substr( $orig_src, 0, -1 ) . $add;
+                $html = str_replace( $orig_src, $new_src, $html );
+            }
+        }
+    }
+    return $html;
+}
+add_filter( 'the_content', 'add_video_wmode_transparent', 10 );
+</code></pre>
+
+<p>New thread in the wordpress forums can be found
+<a href="htp://wordpress.org/support/topic/dynamically-change-youtube-iframe-embeds-to-auto-add-transparent-mode-updated">here</a>. (The original was closed)</p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[How to Remove or Change the way Wordpress Links to Images in Posts]]></title>
+            <link href="https://www.timbroder.com/2012/12/how-to-remove-or-change-the-way-wordpress-links-to-images-in-posts.html"/>
+            <updated>2012-12-24T20:34:43+00:00</updated>
+            <id>https://www.timbroder.com/2012/12/how-to-remove-or-change-the-way-wordpress-links-to-images-in-posts.html</id>
+            <content type="html"><![CDATA[<p>By default, WordPress will link directly to an image in the category or post view.  In a project I was working on today I wanted to change that. On the category view I wanted the image just to link to the post, and in the post, I didn’t want a link at all. Useful trick I found below:</p>
+
+<pre><code data-language="PHP">function change_image_permalink($content){
+    $format = get_post_format();
+
+    //category listing page. link image to post
+    if (is_single() === FALSE AND $format == 'image'){
+        $content =
+        preg_replace(
+            array('{&lt;a(.*?)(wp-att|wp-content/uploads)[^&gt;]*&gt;&lt;img}','{ wp-image-[0-9]*&amp;quot; /&gt;&lt;/a&gt;}'),
+            array('&lt;a href=&amp;quot;' . get_permalink() . '&amp;quot;&gt;&lt;img','&amp;quot; /&gt;&lt;/a&gt;'),
+            $content
+        );
+    }
+
+    //post page. remove link
+    else if ($format == 'image'){
+        $content =
+            preg_replace(
+                array('{&lt;a(.*?)(wp-att|wp-content/uploads)[^&gt;]*&gt;&lt;img}','{ wp-image-[0-9]*&amp;quot; /&gt;&lt;/a&gt;}'),
+                array('&lt;img','&amp;quot; /&gt;'),
+                $content
+            );
+    }
+
+    return $content;
+}
+add_filter('the_content', 'change_image_permalink');
+</code></pre>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Getting Started with Varnish Edge Side Includes and Wordpress]]></title>
+            <link href="https://www.timbroder.com/2012/12/getting-started-with-varnish-edge-side-includes-and-wordpress.html"/>
+            <updated>2012-12-18T20:20:35+00:00</updated>
+            <id>https://www.timbroder.com/2012/12/getting-started-with-varnish-edge-side-includes-and-wordpress.html</id>
+            <content type="html"><![CDATA[<p>There are a lot of cases on blogs where once you write the post, the cache for
+that page doesn't really have to be updated all that often.  Comments can be
+powered by Disqus so you don't need to bust the cache every time someone
+comments. If you make a change to a post, it's page and any pages that display
+it (home, category, etc) should be updated automatically anyway; <a href="https://github.com/pkhamre/wp-varnish">wp-
+varnish</a> is the best plugin for that
+btw.</p>
+
+<p>Now, the sidebar. That's where it can get tricky.  On a lot of the
+content sites I work on, we can cache most pages for days, the backend doesn't
+need to keep generating them, the content just lives in varnish. Except for
+the sidebar.  This could have things like "Popular Posts" or "New Posts".
+Things that are going to change outside of the context of the post you are
+currently looking at.</p>
+
+<p>This is where <a href="http://en.wikipedia.org/wiki/Edge_Side_Includes">Edge Side
+Includes</a> (ESI) comes in.
+For a while, <a href="http://www.akamai.com/html/support/esi.html">Akamai</a> was the only way to get this behavior, and they are quite expensive. Don't get me
+wrong, they are amazing, but you have to be getting serious traffic to need them. <a href="https://www.varnish-cache.org/">Varnish</a> is one of the best caching
+solutions you can use, especially for Wordpress. If you are unsure where to start with Varnish and wordpress, <a href="http://www.ewanleith.com/blog/900/10-million-hits-a-day-with-wordpress-using-a-15-server">this
+article</a> is a great starting point. I'v also bookmarked some other articles <a href="https://pinboard.in/u:broderboy/t:varnish/t:wordpress">here</a>.</p>
+
+<p>ESI was
+introduced in 2.1, and really fleshed out in 3.0 and can be thought of as
+fragment caching for Varnish. It's really easy to fix the example I gave
+above: we want to be able to cache most of the content for 24 hours but
+refresh just the sidebar every 10 mins.  Varnish will do this processing for
+us, keeping the rest of the page cached, and splicing in the sidebar (and
+having your webserver process just the sidebar) when it needs to. Most of what
+I'm going to do below is in the ESI [documentation](https://www.varnish-
+cache.org/docs/3.0/tutorial/esi.html).</p>
+
+<p>We're going to assume that our theme
+has a dynamic sidebar called "Sidebar" and that there are cases where we want
+ESI to be active (production) and some where wordpress should just behave
+normally (dev).  This is what we have before we start thinking about Varnish:</p>
+
+<pre><code data-language="PHP">&lt;div class=&amp;quot;five columns&amp;quot;&gt;
+&lt;?php
+    if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar(&amp;quot;Sidebar&amp;quot;) ) :
+    endif;
+?&gt;
+&lt;/div&gt;
+</code></pre>
+
+<p>The two varnish tags we are going to use are an esi comment, and an esi:remove tag. These are the switch that will process the page properly whether you have ESI or not. esi:remove will ignore everything between them if ESI is enabled. This is where we put our “normal processing” code. If ESI is not active, this code will run as normal. Inside the esi comment we put the code that we want to run if ESI is enabled. If it is not, the code will be ignored.</p>
+
+<pre><code data-language="PHP">&lt;div class=&amp;quot;five columns&amp;quot;&gt;
+    &lt;esi:remove&gt;
+        &lt;?php
+        if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar(&amp;quot;Sidebar&amp;quot;) ) :
+        endif;
+        ?&gt;
+    &lt;/esi:remove&gt;
+    &lt;!--esi
+        &lt;esi:include src=&amp;quot;/wp-content/plugins/myplugin/esihandler.php&amp;quot;/&gt;
+    --&gt;
+&lt;/div&gt;
+</code></pre>
+
+<p>Now our sidebar display is ESI ready, but we need to give Varnish an endpoint to hit so it can generate the fragment of the sidebar. So lets create esihandler.php:</p>
+
+<pre><code data-language="PHP">&lt;?php
+
+$cwd = getcwd();
+$path = substr($cwd, 0, strpos($cwd, 'wp-content/'));
+require $path . 'wp-blog-header.php';
+
+if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar(&amp;quot;Sidebar&amp;quot;) ) :
+endif;
+</code></pre>
+
+<p>Lastly, we’ll have to tell Varnish to cache for different timeframes. A full Varnish config is out of the scope of this post, see the links above for more info. What we need is in the sub vcl_fetch call. Add this at the top:</p>
+
+<pre><code data-language="c">if (req.url ~ &amp;quot;esihandler.php&amp;quot;) {
+    set beresp.ttl = 10m;
+}
+else {
+    set beresp.do_esi = true;
+    set beresp.ttl = 1440m;
+}
+</code></pre>
+
+<p>And you should be all set. When developing you can use smaller timeframes (10 seconds, and 1min). Drop some logging in to see it in action.</p>
+
+<p>Let me know of any questions in the comments</p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[The top 10 best Wordpress plugins to get up and running with everything you need.]]></title>
+            <link href="https://www.timbroder.com/2012/09/the-top-10-best-wordpress-plugins-to-get-up-and-running.html"/>
+            <updated>2012-09-03T00:39:24+00:00</updated>
+            <id>https://www.timbroder.com/2012/09/the-top-10-best-wordpress-plugins-to-get-up-and-running.html</id>
+            <content type="html"><![CDATA[<p>These are the top 10 best wordpress plugins I use to quickly get a wordpress
+blog up and running with everything I need.  I used these last week to get a
+new site going in about 2 hours.  Leave some time for analytics to catch up
+and you are all set.</p>
+
+<ul>
+<li><a href="http://ronaldheft.com/code/analyticator/">Google Analyticator</a> harnesses the power of Google Analytics for your blog. See where traffic is coming from, where its going, as well as basic hit tracking. The plugin also comes with an easily customizable widget that can be used to display specific information that is gathered by Google Analytics using the Google Analytics API. It supports all of the tracking mechanisms that Google Analytics supports such as external link tracking, download tracking, tracking without counting administrative users, and any other advanced tracking the user wishes to add. Google Analyticator works with a majority of themes as long as these themes provide the proper plugin hooks.Features: 
+
+<ul>
+<li>Supports standard Google Analytics tracking via the latest async tracking methods (faster and more reliable than the older ga.js tracking method)</li>
+<li>Includes an admin dashboard widget that displays a graph of the last 30 days of visitors, a summary of site usage, the top pages, the top referrers, and the top searches</li>
+<li>Provides a widget that can be used to display visitor stat information on the front-end</li>
+<li>Supports external link tracking of all links on the page, including links not managed by WordPress</li>
+<li>Supports download link tracking</li>
+<li>Supports event tracking with outbound links / downloads instead of the old pageview tracking method</li>
+<li>Supports site speed tracking</li>
+<li>Supports hiding Administrator visits without affecting Google Analytics’ site overlay feature</li>
+<li>Supports any advanced tracking code Google provides</li>
+<li>Installs easily, only requiring the user know their UID</li>
+<li>Provides complete control over options; disable any feature if needed</li>
+<li>Supports localization – get the settings page in your language of choice</li>
+</ul></li>
+<li> <a href="http://flagrantdisregard.com/feedburner/">FD Feedburner Plugin for WordPress</a> lets you track subscribers to your feed by redirecting the main feed and optionally the comments feed to Feedburner.com. It does this seamlessly without the need to modify templates, setup new hidden feeds, modify .htaccess files, or asking users to migrate to a new feed. All existing feeds simply become Feedburner feeds seamlessly and transparently for all users. Just tell the plugin what your Feedburner feed URL is and you’re done.</li>
+<li><a href="http://plugins.josepardilla.com/fancybox-for-wordpress/">FancyBox for WordPress</a> will automatically show all images in a fancy popup window when clicked. Handy for resized images where you don't want your users stuck on just the image file when they click on it.</li>
+<li><a href="http://www.thulasidas.com/plugins/easy-adsense">Easy AdSense</a> manages all aspects of Google AdSense for a blog: insert ads into posts and sidebar, and add a Google Search box.Features: 
+
+<ul>
+<li>Remembers AdSense code and your options by theme, so that you don’t have to re-enter them if you play with multiple themes. [This feature provides a solution to Google's unwillingness to let you modify and customize the AdSense code -- you just store all the code variants in your blog database.]</li>
+<li>Enforces the Google policy of not more than three ad blocks per page.</li>
+<li>Sidebar Widgets: 
+
+<ul>
+<li>For AdSense for content with custom title.</li>
+<li>For search with customizable text or image title.</li>
+<li>For Link Units.</li>
+</ul></li>
+<li>Rich set of Options: 
+
+<ul>
+<li>To put Link Units or Ad Blocks in header or footer.</li>
+<li>To suppress ads on all pages (as opposed to posts), or on the front/home page.</li>
+<li>To add a customizable mouse-over border decoration on ad blocks.</li>
+</ul></li>
+<li>Control over the positioning and display of AdSense blocks in each post or page.</li>
+<li>Simplest possible configuration interface — nothing more than cutting and pasting AdSense code, and with sensible defaults for the few options present, all with clear instructions.</li>
+<li>Internationalized (multiple languages supported).</li>
+</ul></li>
+<li> <a href="http://yoast.com/wordpress/seo/">WordPress SEO by Yoast</a> is the most complete WordPress SEO plugin that exists today for WordPress.org users. It incorporates everything from a snippet preview and page analysis functionality that helps you optimize your pages content, images titles, meta descriptions and more to XML sitemaps, and loads of optimization options in between.  I use it to help generate a complete Google sitemap and tweak how my sites show up in Google.Features: 
+
+<ul>
+<li>Post titles and meta descriptions</li>
+<li>Robots Meta configuration</li>
+<li>Canonical</li>
+<li>Breadcrumbs</li>
+<li>Permalink clean up</li>
+<li>XML Sitemaps</li>
+<li>RSS enhancements</li>
+<li>Edit your robots.txt and .htaccess</li>
+<li>Clean up head section</li>
+</ul></li>
+<li><p> <a href="http://www.w3-edge.com/wordpress-plugins/w3-total-cache/">w3-total-cache</a>is THE performance plugin for wordpress.  It's the fastest and most complete WordPress performance optimization plugin. W3 Total Cache improves the user experience of your blog by improving your server performance, caching every aspect of your site, reducing the download time of your theme and providing transparent content delivery network (CDN) integration.  I use it heavily for it's memcached integration, front-end compression, and CDN integration.Benefits:</p>
+
+<ul>
+<li>At least 10x improvement in site performance (when fully configured: Grade A in YSlow or great Google Page Speed Improvements)</li>
+<li>“Instant” second page views (browser caching after first page view)</li>
+<li>Reduced page load time: increased visitor time on site (visitors view more pages)</li>
+<li>Optimized progressive render (pages appear to load instantly)</li>
+<li>Improved web server performance (easily sustain high traffic spikes)</li>
+<li><p>Up to 80% Bandwidth savings via Minify and HTTP compression of HTML, CSS, JavaScript and RSS feeds
+Features:</p></li>
+<li><p>Compatible with shared hosting, virtual private servers and dedicated servers / clusters</p></li>
+<li>Transparent content delivery network (CDN) integration with Media Library, theme files and WordPress itself</li>
+<li>Caching of (minified and compressed) pages and posts in memory or on disk</li>
+<li>Caching of (minified and compressed) CSS and JavaScript in memory, on disk or on CDN</li>
+<li>Caching of RSS (comments, page and site) feeds in memory or on disk</li>
+<li>Caching of search results pages (i.e. URIs with query string variables) in memory or on disk</li>
+<li>Caching of database objects in memory</li>
+<li>Minification of posts and pages and RSS feeds</li>
+<li>Minification (combine and remove comments / white space) of inline, embedded or 3rd party JavaScript (with automated updates)</li>
+<li>Minification (combine and remove comments / white space) of inline, embedded or 3rd party CSS (with automated updates)</li>
+<li>Browser caching of CSS, JavaScript and HTML using future expire headers and entity tags (ETag)</li>
+<li>JavaScript grouping by template (home page, post page etc) with embed location management</li>
+<li>Non-blocking JavaScript embedding</li>
+<li>Import post attachments directly into the Media Library (and CDN)</li>
+</ul></li>
+<li>Since most of my infrastructure is already on Amazon I use the <a href="http://wordpress.org/extend/plugins/amazon-ses-and-dkim-mailer/">Amazon SES DKIM Mailer</a> plugin to use <a href="http://aws.amazon.com/ses/">SES</a> as my mail provider.  It's a quick, easy way to get guaranteed delivery.</li>
+<li><a href="http://contactform7.com/">Contact Form 7</a> is the best contact form out there.  It allows you to flexibly design the form and mail. You can manage multiple contact forms as well.  In addition, it supports many features including AJAX submitting, CAPTCHA, Akismet spam filtering, file uploading, etc.</li>
+<li><a href="http://dialect.ca/code/wp-smushit/">WP Smush.it</a>  taps into the API behind Yahoo’s excellent Exceptional Performance series recommends optimizing images in several lossless ways: stripping meta data from JPEGs, optimizing JPEG compression, converting certain GIFs to indexed PNGs and stripping the un-used colours from indexed images.</li>
+<li>This last one isn't required for all setups, but if like me you have varnish sitting in front of your app servers, <a href="https://github.com/pkhamre/wp-varnish">wp-varnish</a> is a must have. It automatically clears your varnish caches as needed.</li>
+</ul>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[gpowered.net is now timbroder.com]]></title>
+            <link href="https://www.timbroder.com/2010/07/gpowered-net-is-now-timbroder-com.html"/>
+            <updated>2010-07-23T19:48:27+00:00</updated>
+            <id>https://www.timbroder.com/2010/07/gpowered-net-is-now-timbroder-com.html</id>
+            <content type="html"><![CDATA[<p>Hi all, some of you may have noticed this site is no longer on the
+gpowered.net domain.  I've been wanting to move onto wordpress for a while now
+and also do some additional writing beyond code stuffs which would be outside
+of the scope of gpowered.  I also unfortunately (or fortunately because I love
+my <a href="http://www.alexanderinteractive.com/">job</a>) don't have as much time as I
+used to to research and post how to's.  Heavy django and magento going on
+lately, I'll try to post about those. There are two RSS links at the top, RSS
+has everything on this site including gpowered.  the gpowered RSS will
+continue to contain only tech articles. Let me know of any issues on the new
+site</p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[SyntaxHighlighter Evolved]]></title>
+            <link href="https://www.timbroder.com/2010/06/syntaxhighlighter-evolved.html"/>
+            <updated>2010-06-18T17:45:25+00:00</updated>
+            <id>https://www.timbroder.com/2010/06/syntaxhighlighter-evolved.html</id>
+            <content type="html"><![CDATA[<p>I'm currently in the process of migrating gpowerd.net over to this domain and
+onto wordpress. <a href="http://alexgorbatchev.com/wiki/SyntaxHighlighter"> SyntaxHighlighter
+</a>has been upgraded quite a
+bit since I <a href="http://timbroder.com/2007/07/howto-post-code/">last</a> wrote about
+it.  I came across a <a href="http://wordpress.org/extend/plugins/syntaxhighlighter/">great
+plugin</a> to handle the
+code highlighting for me on wordpress.  I love the plugin, didn't have to go
+into the wordpress template. It doesn't support the old pre syntax that I had
+been using previously but it was simple to add in. Patch to add this to 2.3.8
+is below, Thanks to <a href="http://www.viper007bond.com/wordpress-plugins/syntaxhighlighter/">Alex </a>for the plugin</p>
+
+<p>```<br />
+    --- syntaxhighlighter.orrig.php 2010-06-03 20:08:24.000000000 -0500
+    +++ syntaxhighlighter.php   2010-06-18 12:27:35.000000000 -0500
+    @@ -101,12 +101,15 @@
+                'tabsize'        => 4,
+                'toolbar'        => 1,
+                'wraplines'      => 1,
+    +           'legacy'         => 0,
+            ) );</p>
+
+<pre><code>        // Create the settings array by merging the user's settings and the defaults
+        $usersettings = (array) get_option('syntaxhighlighter_settings');
+        $this-&gt;settings = wp_parse_args( $usersettings, $this-&gt;defaultsettings );
+
++       if ( 1 == $this-&gt;settings['legacy'] )
++                   wp_register_script( 'syntaxhighlighter-brush-legacy',             plugins_url('syntaxhighlighter/syntaxhighlighter/scripts/shLegacy.js'),            array(),                         $this-&gt;agshver );
+
+        // Register generic hooks
+        add_filter( 'the_content',                array(&amp;$this, 'parse_shortcodes'),                              7 );
+@@ -175,6 +178,7 @@
+            'javascript'    =&gt; 'jscript',
+            //'latex'         =&gt; 'latex',
+            'tex'           =&gt; 'latex',
++           'legacy'        =&gt; 'legacy',
+            'matlab'        =&gt; 'matlabkey',
+            'objc'          =&gt; 'objc',
+            'obj-c'         =&gt; 'objc',
+@@ -583,6 +587,9 @@
+        echo "  SyntaxHighlighter.config.strings.noBrush = '" . $this-&gt;js_escape_singlequotes( __( "Can't find brush for: ", 'syntaxhighlighter' ) ) . "';\n";
+        echo "  SyntaxHighlighter.config.strings.brushNotHtmlScript = '" . $this-&gt;js_escape_singlequotes( __( "Brush wasn't configured for html-script option: ", 'syntaxhighlighter' ) ) . "';\n";
+
++       if ( 1 == $this-&gt;settings['legacy'] )
++           echo "  dp.SyntaxHighlighter.HighlightAll('code');\n";
++
+        if ( 1 != $this-&gt;settings['autolinks'] )
+            echo "  SyntaxHighlighter.defaults['auto-links'] = false;\n";
+
+@@ -687,6 +694,7 @@
+            'tabsize'        =&gt; false,
+            'toolbar'        =&gt; false,
+            'wraplines'      =&gt; false,
++           'legacy'         =&gt; false,
+        ), $atts ) );
+
+        // Check for language shortcode tag such as [php]code[/php]
+
+
+@@ -771,6 +779,7 @@
+ 'smarttabs'      =&gt; 'smart-tabs',
+ 'tabsize'        =&gt; 'tab-size',
+ 'wraplines'      =&gt; 'wrap-lines',
++           'legacy'         =&gt; 'legacy',
+ );
+
+ // Allowed configuration parameters and their type
+@@ -925,6 +934,7 @@
+ settings['light'], 1 ); ?&gt; /&gt; 
+
+ settings['smarttabs'], 1 ); ?&gt; /&gt; 
+
+ settings['wraplines'], 1 ); ?&gt; /&gt; 
+
++                   settings['legacy'], 1 ); ?&gt; /&gt; 
+
+
+
+
+
+@@ -1062,6 +1072,7 @@
+ $settings['smarttabs']      = ( !empty($settings['smarttabs']) )      ? 1 : 0;
+ $settings['toolbar']        = ( !empty($settings['toolbar']) )        ? 1 : 0;
+ $settings['wraplines']      = ( !empty($settings['wraplines']) )      ? 1 : 0;
++           $settings['legacy']         = ( !empty($settings['legacy']) )         ? 1 : 0;
+
+ if ( 'true' != $settings['padlinenumbers'] &amp;&amp; 'false' != $settings['padlinenumbers'] )
+ $settings['padlinenumbers'] = (int) $settings['padlinenumbers'];
+```
+</code></pre>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Wordpress Plugin: Displaying your Google Reader RSS subscriptions]]></title>
+            <link href="https://www.timbroder.com/2009/06/how-to-display-what-google-reader-rss.html"/>
+            <updated>2009-06-02T15:07:00+00:00</updated>
+            <id>https://www.timbroder.com/2009/06/how-to-display-what-google-reader-rss.html</id>
+            <content type="html"><![CDATA[<p>I've been meaning to write this code for a while, and I really wanted to take
+a stab at writing a wordpress plugin so here it goes.</p>
+
+<p>The following takes in Google user credentials, and allows the user to display
+what RSS feeds they subscribe to on their wordpress blog</p>
+
+<p>Example: <a href="http://timbroder.gpowered.net/rss-i-read/">The RSS that I read</a><br />
+Update: This plugin is now hosted by wordpress. <a href="http://wordpress.org/extend/plugins/google-reader-subscription-list/">click
+here</a></p>
+
+<pre><code data-language="PHP">/*
+Plugin Name: Google Reader Subscription List
+Version: 1
+Author: Timothy Broder
+Description: Lists a users subscribed Google Reader feeds
+*/
+
+/*  Copyright 2009  Timothy Broder (email : timothy.broder@gmail.com)
+
+    This program is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation; either version 2 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program; if not, write to the Free Software
+    Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+*/
+
+
+if (!class_exists('GoogleReaderSubList')) {
+class GoogleReaderSubList {
+
+  var $show_list       = 'show-google-reader-sub-list';  //the hook in a page
+  var $login          = '';
+  var $pass          = '';
+  var $source         = 'wordpress-google-reader-sub-list-';  //the source the api sees when logging into Google
+  var $service         = 'reader';  
+  var $login_url        = 'https://www.google.com/accounts/ServiceLoginAuth?service=mail'; //URL to login to google
+  var $subscription_list_url  = 'http://www.google.com/reader/api/0/subscription/list'; //URL that holds a users subscriptions
+
+  function GoogleReaderSubList() {
+   $options    = $this-&gt;get_admin_options();
+   $this-&gt;login  = $options['google_login'];
+   $this-&gt;pass  = $options['google_pass'];
+
+   $this-&gt;source = $this-&gt;source . $this-&gt;login;
+  }
+
+  function show_sub_list() {
+   $stop = false;
+   if ($this-&gt;login == '' || $this-&gt;login == null) {
+    echo 'Google login not set&lt;br /&gt;';
+    $stop = true;
+   }
+   if ($this-&gt;pass == '' || $this-&gt;pass == null) {
+    echo 'Google password not set&lt;br /&gt;';
+    $stop = true;
+   }
+
+   //check to see if the zend plugin has been installed and activated
+   //http://wordpress.org/extend/plugins/zend-framework/
+   if (!(defined('WP_ZEND_FRAMEWORK') &amp;&amp; WP_ZEND_FRAMEWORK)) {
+    echo 'The &lt;a href="http://wordpress.org/extend/plugins/zend-framework/" target="_blank"&gt;Zend Framework Plugin&lt;/a&gt; is not active.  Please install and activate it.';
+    $stop = true;
+   }
+   if ($stop) {
+    return;
+   }
+
+   $client = new Zend_Http_Client($this-&gt;login_url);
+
+   //connect, authenticate, and handshake with Google
+   $client-&gt;setCookieJar()
+    -&gt;setMethod(Zend_Http_Client::POST)
+    -&gt;setParameterPost(array(
+     'continue'             =&gt; $this-&gt;subscription_list_url,
+     'service'              =&gt; 'reader',
+     'niu'                  =&gt; 1,
+     'hl'                   =&gt; 'en',
+     'Email'              =&gt; $this-&gt;login,
+     'Passwd'               =&gt; $this-&gt;pass,
+     'PersistentCookie'     =&gt; 'yes',
+     'asts'                 =&gt; ''
+    ));
+
+
+   //$error_level = error_reporting();
+   //error_reporting(1);
+   $response = $client-&gt;request('POST');
+   $client-&gt;setUri($this-&gt;subscription_list_url)-&gt;setMethod(Zend_Http_Client::GET);
+   $response = $client-&gt;request()-&gt;getBody();
+
+   if ($client-&gt;request()-&gt;getStatus() == 400) {
+    ?&gt;Unable to login with supplied Google login/password&lt; ?
+    return;
+   }
+
+   //error_reporting($error_level);
+
+   //got the feed, parse it
+   $feed = simplexml_load_string($response);
+
+   $hashmap = array();
+
+   //organize the feeds by tag  
+   foreach ($feed-&gt;list-&gt;object as $e) {
+    $url = $e-&gt;string[0];
+    $title = $e-&gt;string[1];
+    $cat = $e-&gt;list-&gt;object-&gt;string[1];
+
+    //make sure a feed is filed somewhere
+    if ($cat == '') {
+     $cat = 'unfiled';
+    }
+    $t = $hashmap["$cat"];
+
+    //a category hasn't been used before
+    if ($t == null) {
+     $t = array($e);
+     $hashmap["$cat"] = $t;
+    }
+    //category has been used before
+    else {
+     array_push($t, $e);
+     $hashmap["$cat"] = $t;
+    }
+   }
+
+   //sort the categories
+   ksort($hashmap);
+
+   //output
+   ?&gt;
+   &lt;p&gt;Tags:
+    &lt; ?
+    $endKey = end(array_keys($hashmap));
+    foreach ($hashmap as $cat=&gt;$t) {
+     echo "&lt;a href='#$cat'&gt;$cat&lt;/a&gt;";
+     if ($cat != $endKey) {
+      echo ', ';
+     }
+    }
+    ?&gt;
+   &lt;/p&gt;&lt; ?
+
+   foreach ($hashmap as $cat=&gt;$t) {
+    echo "&lt;a name='$cat'&gt;&lt;/a&gt;";
+    echo "&lt;b&gt;$cat&lt;/b&gt;&lt;br /&gt;";    
+    foreach ($t as $e) {
+     list($feed, $url) = split('feed/', $e-&gt;string[0]);
+     $title = $e-&gt;string[1];
+
+     echo "&lt;a href='$url' target='_blank'&gt;$title&lt;/a&gt;&lt;br /&gt;";
+
+    }
+    echo '&lt;br /&gt;';
+   }
+  }
+
+  function addContent($content) {
+   // Only do this if this is a page and it has the appropriate custom field
+   if (is_page()) {
+    $cust_field_values = get_post_custom_values($this-&gt;show_list);
+    if ($cust_field_values != NULL) {
+     if (defined('WP_ZEND_FRAMEWORK') &amp;&amp; WP_ZEND_FRAMEWORK) {
+      require_once 'Zend/Loader.php';
+      Zend_Loader::loadClass('Zend_Http_Client');
+     }
+     $content = $this-&gt;show_sub_list();
+    }
+   }
+   return $content;
+  }
+
+  function init() {
+   $this-&gt;get_admin_options();
+  }  
+
+  function get_admin_options() {
+   $admin_options = array('google_login' =&gt; '',
+    'google_pass' =&gt; '',
+    'use_accordion' =&gt; 'true');
+   $options = get_option($this-&gt;adminOptionName);
+   if (!empty($options)) {
+    foreach ($options as $key =&gt; $option) {
+     $admin_options[$key] = $option;
+    }
+   }
+   update_option($this-&gt;admin_optionsName, $admin_options);
+   return $admin_options;
+  }
+
+  function printAdminPage() {
+   $options = $this-&gt;get_admin_options();
+
+   if (isset($_POST['update_greader_sub_list_settings'])) {
+    if (isset($_POST['greader_sub_list_login'])) {
+     $options['google_login'] = $_POST['greader_sub_list_login'];
+    }
+    if (isset($_POST['greader_sub_list_pass'])) {
+     $options['google_pass'] = $_POST['greader_sub_list_pass'];
+    }
+
+    update_option($this-&gt;admin_optionsName, $options);
+    echo '&lt;div class="updated"&gt;&lt;p&gt;&lt;strong&gt;' .  _e('Settings Updated.', 'GoogleReaderSubList'). '&lt;/strong&gt;&lt;/p&gt;&lt;/div&gt;';
+
+   }
+   //$submit = _e('Update Settings', 'GoogleReaderSubList');
+
+   echo "&lt;div class='wrap'&gt;    &lt;form method='post' action='" . $_SERVER['REQUEST_URI'] . "'&gt;     &lt;h2&gt;Google Reader Subscription List&lt;/h2&gt;     &lt;h3&gt;Google Login&lt;/h3&gt;     &lt;input type='text' name='greader_sub_list_login' value='";
+   echo _e(apply_filters('format_to_edit', $options['google_login']), 'GoogleReaderSubList');
+   echo "' /&gt;
+     &lt;h3&gt;Google Password&lt;/h3&gt;     &lt;input type='password' name='greader_sub_list_pass' value='";
+   echo _e(apply_filters('format_to_edit', $options['google_pass']), 'GoogleReaderSubList');
+   echo "' /&gt;
+     &lt;div class='submit'&gt;      &lt;input type='submit' name='update_greader_sub_list_settings' value='";
+   echo _e('Update Settings', 'GoogleReaderSubList');
+   echo "'/&gt;
+     &lt;/div&gt;    &lt;/form&gt;   &lt;/div&gt;";
+  }
+}
+}
+
+if (class_exists('GoogleReaderSubList')) {
+$greader_sub_list = new GoogleReaderSubList();
+}
+
+if (!function_exists('greader_sub_list_ap')) {
+function greader_sub_list_ap() {
+  global $greader_sub_list;
+  if (!isset($greader_sub_list)) {
+   return;
+  }
+  if (function_exists('add_options_page')) {
+   add_options_page('gReader Subscriptions', 'gReader Subscriptions', 9, basename(__FILE__), array(&amp;$greader_sub_list, 'printAdminPage'));
+  }
+}
+}
+
+if (isset($greader_sub_list)) {
+add_action('admin_menu', 'greader_sub_list_ap');
+add_action('activate_google-raeder-list/google-reader-list.php', array(&amp;$greader_sub_list, 'init'));
+add_filter('the_content', array(&amp;$greader_sub_list, 'addContent'), '7');
+}
+</code></pre>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[How to get brightkite photos into an RSS feed (to post to a blog)]]></title>
+            <link href="https://www.timbroder.com/2009/01/how-to-get-brightkite-photos-into-rss.html"/>
+            <updated>2009-01-26T15:11:00+00:00</updated>
+            <id>https://www.timbroder.com/2009/01/how-to-get-brightkite-photos-into-rss.html</id>
+            <content type="html"><![CDATA[<p>I started another <a href="http://timbroder.com">blog </a>so I have a place to rant about
+comics or movies or whatever else I need to get off my chest, and I needed an
+excuse to play with wordpress (something I've been wanting to do for a while).
+I plan on posting how I did certain things on that blog on gPowered. One of
+the things I really wanted to do was have my twitter photos show up as posts
+on that blog. For a while I have been using
+<a href="http://twitpic.com/photos/broderboy">twitpic</a>, but have recently changed over
+to <a href="http://brightkite.com/people/broderboy">brightkite</a>. Brightkite provides
+an rss feed of all your activity, but I was only interested in the photos.
+Looked like a job for <a href="http://pipes.yahoo.com/pipes/pipe.info?_id=PMOQjpHo3RGyu7JdLXO0Kg">Yahoo!
+Pipes</a>.</p>
+
+<p><a href="http://4.bp.blogspot.com/_Ng3QbVQfLZ8/SX3Uw_HR3KI/AAAAAAAAajI/XPnLMt02wdQ/s1600-h/pipe1.JPG">![](http://4.bp.blogspot.com/_Ng3QbVQfLZ8/SX3Uw_HR3KI/AAAAAAAAajI/XPnLMt02wdQ
+/s320/pipe1.JPG)</a></p>
+
+<p>I imported the bkite feed into pipes, filtered on the items that were photo
+posts, and renamed the title so it would have the title of the photo instead
+of the bkite location (by default bkite photo titles are the location where
+you most recently checked in). I also did some URL generation so anyone could
+<a href="http://pipes.yahoo.com/pipes/pipe.run?_id=PMOQjpHo3RGyu7JdLXO0Kg&amp;_render=rss&amp;username=broderboy">use the pipe</a> The next step was to get this into
+wordpress. I Installed the
+<a href="http://projects.radgeek.com/feedwordpress/">FeedWordPress</a> plugin and set it
+up to import the pipe's RSS feed. You can tweak the the settings on what user
+should be used to write the posts, categories, tags, permalinks (I set mine to
+point directly back to brightkite). Hope this helps someone out there,
+enjoy</p>
+]]></content>
+        </entry>
+    </feed>

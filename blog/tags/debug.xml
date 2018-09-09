@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[timbroder.com]]></title>
+    <link href="https://www.timbroder.com/blog/tags/debug.xml" rel="self"/>
+    <link href="https://www.timbroder.com/"/>
+    <updated>2018-09-09T12:21:33+00:00</updated>
+    <id>https://www.timbroder.com/</id>
+            <author>
+            <name><![CDATA[Tim Broder]]></name>            <email><![CDATA[timothy.broder@gmail.com]]></email>        </author>
+        <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[Using PonyDebugger on a device]]></title>
+            <link href="https://www.timbroder.com/2014/07/using-ponydebugger-on-a-device.html"/>
+            <updated>2014-07-27T20:25:59+00:00</updated>
+            <id>https://www.timbroder.com/2014/07/using-ponydebugger-on-a-device.html</id>
+            <content type="html"><![CDATA[<p>PonyDebugger is awesome. I use it mostly for Core Data debugging. Most of the
+time, I find it easier then firing up <a href="https://itunes.apple.com/us/app/sqlite-professional-sql-coredata/id586001240?mt=12&amp;at=11laRZ&amp;ct=pro">SQLite
+Professional</a>.</p>
+
+<p>When using the simulator, hitting localhost:9000 is fine. On a device, not so
+much; you need to hit your machine. <a href="http://xip.io/">xip.io</a>to the rescue!
+What it is: xip.io is a magic domain name that provides wildcard DNS for any
+IP address. We use this heavily at work if the machine we’re on isn’t hooked
+up to a subdomain or [Vagrant Share](https://www.vagrantup.com/blog/feature-
+preview-vagrant-1-5-share.html).</p>
+
+<p>We can use this wildcard to have our iPhone hit our laptop’s instance of
+PonyDebugger.</p>
+
+<p>First, get your IP. I use
+<a href="https://www.dropbox.com/s/mngjeqwe64z5zkl/MyIP.alfredworkflow">this</a> Alfred
+workflow. Take note of your local IP.</p>
+
+<p>Start PonyDebugger listening on that IP:</p>
+
+<p><code>bashponyd serve —listen-interface=192.168.1.10</code></p>
+
+<p>For handy access, alias this command:</p>
+
+<p><code>bashalias pony="ponyd serve --listen-interface=192.168.1.10"</code></p>
+
+<p>Load Pony in your browser by appending your IP to the a xip.io URL:
+<a href="http://192.168.1.10.xip.io:9000/">http://192.168.1.10.xip.io:9000/</a></p>
+
+<p>To access via the simulator or a device:</p>
+
+<p><code>swiftlet pony = PDDebugger.defaultInstance()
+pony.connectToURL(NSURL.URLWithString("ws://192.168.1.10.xip.io:9000/device"))
+pony.enableNetworkTrafficDebugging() pony.enableCoreDataDebugging()</code></p>
+]]></content>
+        </entry>
+    </feed>

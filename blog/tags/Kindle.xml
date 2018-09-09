@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[timbroder.com]]></title>
+    <link href="https://www.timbroder.com/blog/tags/Kindle.xml" rel="self"/>
+    <link href="https://www.timbroder.com/"/>
+    <updated>2018-09-09T12:21:33+00:00</updated>
+    <id>https://www.timbroder.com/</id>
+            <author>
+            <name><![CDATA[Tim Broder]]></name>            <email><![CDATA[timothy.broder@gmail.com]]></email>        </author>
+        <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[Sync side-loaded content between your Kindle and other devices]]></title>
+            <link href="https://www.timbroder.com/2012/04/sync-side-loaded-content-between-your-kindle-and-other-devices.html"/>
+            <updated>2012-04-16T17:35:23+00:00</updated>
+            <id>https://www.timbroder.com/2012/04/sync-side-loaded-content-between-your-kindle-and-other-devices.html</id>
+            <content type="html"><![CDATA[<p>I read a lot of books on my kindle that I got from other sources, mostly
+<a href="http://www.manning.com/catalog/mobile/">Manning</a> and
+<a href="http://shop.oreilly.com/category/ebooks.do">O'Rielly</a>, but these won't sync
+between my phone and my kindle.  Only books purchased from Amazon will sync
+between devices. [Again](http://timbroder.com/2011/01/getting-it-onto-the-
+kindle.html), Calibre to the rescue. For this to work, the book must already
+exist on the kindle and be sold through Amazon.  The example book I'm going to
+use is <a href="http://shop.oreilly.com/product/9780596520137.do">Version Control with
+Git</a>.</p>
+
+<ol>
+<li>Add the book to your Calibre library</li>
+<li>Update any needed metadata.</li>
+<li>Jump over to Amazon and open the <a href="http://www.amazon.com/Version-Control-Git-collaborative-ebook/dp/B002L4EXHO/ref=tmm_kin_title_0?ie=UTF8&amp;m=AG56TWVU5XWC2&amp;qid=1334596465&amp;sr=1-1">book's page</a></li>
+<li>Make sure you are on the Kindle edition of the book.  If there is no kindle edition, this will not work.</li>
+<li>Make note of the ASIN code. <img src="http://farm8.staticflickr.com/7249/7084540211_05042bf0fc_o.png" alt="" /></li>
+<li>Take this code and use it as the ISBN number in Calibre (it will not like this, that's ok) <img src="http://farm8.staticflickr.com/7233/7084540251_5ce233f54c_o.png" alt="" /></li>
+<li>Convert the book to .mobi (Even if it is already in .mobi format, you have to do this)</li>
+<li>Copy the book to your kindle via USB. Either by dragging it in your file manager or through Calibre. Do not use email, wifi, or 3g to do this, it will remove the ASIN code that we just wrapped onto the document. Once it is on the device syncing over wifi/3g will function as normal)</li>
+<li>Using USB, copy the file to your device. For android this is the kindle folder on your SD card. I haven't tested but doing through iTunes is supposed to work for an iphone/ipad.
+Enjoy!</li>
+</ol>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Getting it onto the Kindle]]></title>
+            <link href="https://www.timbroder.com/2011/01/getting-it-onto-the-kindle.html"/>
+            <updated>2011-01-27T15:05:49+00:00</updated>
+            <id>https://www.timbroder.com/2011/01/getting-it-onto-the-kindle.html</id>
+            <content type="html"><![CDATA[<p>Been loving my Kindle 3 since I upgraded from my sony reader. There are so
+many options for getting various reading materials onto it. Here are a few of
+the ones I like the best:</p>
+
+<ul>
+<li>Want to get some RSS feeds onto the Kindle? (12 feeds for free) <a href="http://kindlefeeder.com/">KindleFeeder</a> is the way to go. It also has a bookmarklet for capturing and sending whole pages from your browser.I use this to send articles in Google Reader that I want to read later to my Kindle. I use my starred items to do this. Starred items have their own RSS feed which you can put into kindlefeeder. For information on how to get the link to the RSS of your starred items, <a href="http://www.freewaregenius.com/2008/01/16/how-to-broadcast-your-google-reader-starred-items-to-an-rss-feed-or-widget-on-your-blog/">click here</a>.</li>
+<li>"<a href="https://chrome.google.com/webstore/detail/ipkfnchcgalnafehpglfbommidgmalan#">Send to Kindle</a>" for chrome is a button that will send the content of the page your are currently viewing.</li>
+<li>The third method is the built in free Kindle email address that isn't broadly advertised: <a href="your.name@free.kindle.com">your.name@free.kindle.com</a> will beam most docs that you mail it to your Kindle over wifi (does not work with 3G)</li>
+<li><a href="http://calibre-ebook.com/" title="calibre">Calibre</a> is great for managing what is on your Kindle and converting just about any file format to .mobi (a format the Kindle can read).  Calibre can also be used to <a href="https://apprenticealf.wordpress.com/2011/01/13/ebooks-formats-drm-and-you-%E2%80%94-a-guide-for-the-perplexed/">strip the DRM</a> off of your purchased Kindle books
+<a href="http://www.youtube.com/watch?v=Xu_FgtM_Oqs" title="http://www.youtube.com/watch?v=Xu_FgtM_Oqs">http://www.youtube.com/watch?v=Xu_FgtM_Oqs</a></li>
+</ul>
+]]></content>
+        </entry>
+    </feed>

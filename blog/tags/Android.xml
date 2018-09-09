@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[timbroder.com]]></title>
+    <link href="https://www.timbroder.com/blog/tags/Android.xml" rel="self"/>
+    <link href="https://www.timbroder.com/"/>
+    <updated>2018-09-09T12:21:33+00:00</updated>
+    <id>https://www.timbroder.com/</id>
+            <author>
+            <name><![CDATA[Tim Broder]]></name>            <email><![CDATA[timothy.broder@gmail.com]]></email>        </author>
+        <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[Setting up Office 365 email on Android]]></title>
+            <link href="https://www.timbroder.com/2012/05/setting-office-365-email-android.html"/>
+            <updated>2012-05-25T16:42:48+00:00</updated>
+            <id>https://www.timbroder.com/2012/05/setting-office-365-email-android.html</id>
+            <content type="html"><![CDATA[<p><a href="/images/2012/05/Screenshot_2012-05-24-14-05-231.png">![](/images/2012/05/Screenshot_2012-05-24-14-
+05-231.png)</a></p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Where the new Ice Cream Sandwich build of dropbox stores files]]></title>
+            <link href="https://www.timbroder.com/2011/12/where-the-new-ice-cream-sandwich-build-of-dropbox-stores-files.html"/>
+            <updated>2011-12-24T16:21:12+00:00</updated>
+            <id>https://www.timbroder.com/2011/12/where-the-new-ice-cream-sandwich-build-of-dropbox-stores-files.html</id>
+            <content type="html"><![CDATA[<p>In the old version of dropbox, you used to be able to long press > download
+a file.  This has been replaced by "favorite". Instead of going to:
+<code>/sdcard/dropbox</code> These files are now stored in: <code>/sdcard/Android/data/com.dropbox.android/files/scratch</code></p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Powering Chrome to Phone with Android to Device Messaging ]]></title>
+            <link href="https://www.timbroder.com/2010/08/powering-chrome-to-phone-with-android-to-device-messaging.html"/>
+            <updated>2010-08-12T18:42:08+00:00</updated>
+            <id>https://www.timbroder.com/2010/08/powering-chrome-to-phone-with-android-to-device-messaging.html</id>
+            <content type="html"><![CDATA[<p>Android <a href="http://code.google.com/android/c2dm/">Cloud to Device Messaging
+(C2DM)</a> was launched recently as part of
+Android 2.2. C2DM enables third-party developers to push lightweight data
+messages to the phone. C2DM created a nice opportunity for us to pull together
+different Google developer tools to create a simple but useful application to
+enable users to push links and other information from their desktop / laptop
+to their phone. The result was Chrome to Phone - a <a href="http://www.google.com/intl/en/jobs/lifeatgoogle/englife/">20-percent
+time</a> project at
+Google. <a href="http://chrome.blogspot.com/">Chrome to Phone</a> comprises a Chrome
+Extension, an Android Application, and a Google AppEngine server. All of the
+code is open sourced and serves as a nice example of how to use C2DM. I really
+can't wait for the 2.2 update to my phone. Check out the technical brief
+<a href="http://android-developers.blogspot.com/2010/08/powering-chrome-to-phone-with-android.html">here</a></p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[iPhone4 vs HTC Evo]]></title>
+            <link href="https://www.timbroder.com/2010/06/iphone4-vs-htc-evo.html"/>
+            <updated>2010-06-28T17:24:17+00:00</updated>
+            <id>https://www.timbroder.com/2010/06/iphone4-vs-htc-evo.html</id>
+            <content type="html"><![CDATA[<p>Warning: cursing</p>
+
+<p><a href="http://www.youtube.com/watch?v=FL7yD-0pqZg"><img src="http://img.youtube.com/vi/FL7yD-0pqZg/0.jpg" alt="" /></a></p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Android hacked to run on x86]]></title>
+            <link href="https://www.timbroder.com/2009/07/android-hacked-to-run-on-x86.html"/>
+            <updated>2009-07-15T14:51:00+00:00</updated>
+            <id>https://www.timbroder.com/2009/07/android-hacked-to-run-on-x86.html</id>
+            <content type="html"><![CDATA[<p>I foresee this being my weekend project <a href="http://androidcommunity.com/android-hacked-to-run-on-x86-20090714/">http://androidcommunity.com/android-hacked-to-run-on-x86-20090714/</a></p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Foxtrot Android]]></title>
+            <link href="https://www.timbroder.com/2008/11/foxtrot-android.html"/>
+            <updated>2008-11-10T14:37:00+00:00</updated>
+            <id>https://www.timbroder.com/2008/11/foxtrot-android.html</id>
+            <content type="html"><![CDATA[<p><a href="http://picayune.uclick.com/comics/ft/2008/ft081109.gif"><img src="http://picayune.uclick.com/comics/ft/2008/ft081109.gif" alt="" /></a></p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Android Market now open. Full source released]]></title>
+            <link href="https://www.timbroder.com/2008/11/android-market-now-open-full-source.html"/>
+            <updated>2008-11-03T14:28:00+00:00</updated>
+            <id>https://www.timbroder.com/2008/11/android-market-now-open-full-source.html</id>
+            <content type="html"><![CDATA[<p>The Android Market is now open, register to add your apps!
+<a href="http://www.android.com/market/">http://www.android.com/market/</a></p>
+
+<p><a href="http://1.bp.blogspot.com/_Ng3QbVQfLZ8/SQ8LWQBaTRI/AAAAAAAATtw/vUbKNKpvwLg/s1600-h/market.JPG">![](http://1.bp.blogspot.com/_Ng3QbVQfLZ8/SQ8LWQBaTRI/AAAAAAAATtw/dg9Emi0zDTs
+/s320-R/market.JPG)</a></p>
+
+<p>The full source code for Android is now available:
+<a href="http://source.android.com/">http://source.android.com/</a></p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Google Android G1 T-Mobile announcement is streaming live]]></title>
+            <link href="https://www.timbroder.com/2008/09/google-android-g1-t-mobile-announcement.html"/>
+            <updated>2008-09-23T14:36:00+00:00</updated>
+            <id>https://www.timbroder.com/2008/09/google-android-g1-t-mobile-announcement.html</id>
+            <content type="html"><![CDATA[<p>Watch it <a href="http://announcement.t-mobileg1.com/">here</a></p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Official: T-Mobile Android Announcement September 23rd]]></title>
+            <link href="https://www.timbroder.com/2008/09/official-t-mobile-android-announcement.html"/>
+            <updated>2008-09-17T22:31:00+00:00</updated>
+            <id>https://www.timbroder.com/2008/09/official-t-mobile-android-announcement.html</id>
+            <content type="html"><![CDATA[<p><a href="http://www.talkandroid.com/211-official-t-mobile-android-september/#comment-250">Cool</a>, for T-Mobile users anyway. Hopefully Verizon or
+AT&amp;T; is next in line, and yes, I will leave Verizon for AT&amp;T; if they
+get it first</p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[T-Mobile Android handset to retail for $199]]></title>
+            <link href="https://www.timbroder.com/2008/09/t-mobile-android-handset-to-retail-for.html"/>
+            <updated>2008-09-17T20:30:00+00:00</updated>
+            <id>https://www.timbroder.com/2008/09/t-mobile-android-handset-to-retail-for.html</id>
+            <content type="html"><![CDATA[<p>iPhone vs. Android, <a href="http://androidcommunity.com/t-mobile-android-handset-to-retail-for-199-20080918/">go!</a></p>
+]]></content>
+        </entry>
+    </feed>

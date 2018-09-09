@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[timbroder.com]]></title>
+    <link href="https://www.timbroder.com/blog/tags/realm.xml" rel="self"/>
+    <link href="https://www.timbroder.com/"/>
+    <updated>2018-09-09T12:21:33+00:00</updated>
+    <id>https://www.timbroder.com/</id>
+            <author>
+            <name><![CDATA[Tim Broder]]></name>            <email><![CDATA[timothy.broder@gmail.com]]></email>        </author>
+        <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[Using an Encrypted Realm in a background or notification processes?]]></title>
+            <link href="https://www.timbroder.com/2016/10/Using-an-Encrypted-Realm-with-background-or-notificatio-processes.html"/>
+            <updated>2016-10-30T13:54:00+00:00</updated>
+            <id>https://www.timbroder.com/2016/10/Using-an-Encrypted-Realm-with-background-or-notificatio-processes.html</id>
+            <content type="html"><![CDATA[<p><em>Note: This post's primary purpose is to help me think through this problem. I have no prescribed solution at the end of it. The conversation will continue on <a href="http://stackoverflow.com/q/40332246/647343" title="Stack Overflow">Stack Overflow</a>. I will update this post once I have a final approach.</em></p>
+
+<p>Realm has a great <a href="https://realm.io/docs/swift/latest/#encryption" title="write up">write up</a> and <a href="https://github.com/realm/realm-cocoa/blob/master/examples/ios/swift-2.2/Encryption/ViewController.swift" title="sample code">sample code</a> for encrypting your database. This documentation and sample work as intended, until you try to decrypt realm when:</p>
+
+<ol>
+<li>A user has a password on their phone</li>
+<li>The device is locked</li>
+<li>Your app is trying to do work with Realm when a remote notification comes in</li>
+</ol>
+
+<p>This happens because we can't access the keychain to get (or create) the key to en/decrypt the Realm. The default <code>kSecAttrAccessible</code> value is <code>kSecAttrAccessibleWhenUnlocked</code></p>
+
+<p>There are a few options as I see them:</p>
+
+<ol>
+<li>Change <code>kSecAttrAccessible</code> to <code>kSecAttrAccessibleAlways</code>. I don't like this because it's a) too open and b) it was <a href="http://stackoverflow.com/questions/32112678/ksecattraccessiblealways-deprecated-in-ios-9#comment53491023_32600761" title="slated to be deprecated in iOS 9">slated to be deprecated in iOS 9</a></li>
+<li>Change <code>kSecAttrAccessible</code> to <code>kSecAttrAccessibleAfterFirstUnlock</code> or <code>kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly</code>. This is better but still feels too open to <em>me</em>, even though the <a href="https://developer.apple.com/reference/security/ksecattraccessibleafterfirstunlockthisdeviceonly" title="docs">docs</a> state: <em>This is recommended for items that need to be accessed by background applications</em></li>
+<li>Create a second, non-encrypted Realm to use as a staging database. Store notification data here, then when the app wakes up from user interaction (the device would be unlocked), move the data from the staging Realm into the encrypted real one. This doesn't feel right either, as we'll have data temporarily not encrypted</li>
+<li>Combine 2 and 3 and encrypt the staging Realm, and protect it's key with <code>kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly</code></li>
+<li>??</li>
+</ol>
+
+<p>I'm currently trying to decide if #2, if #3 is worth putting the time into, or if I can come up with a #5</p>
+]]></content>
+        </entry>
+    </feed>

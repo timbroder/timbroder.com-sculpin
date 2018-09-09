@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[timbroder.com]]></title>
+    <link href="https://www.timbroder.com/blog/tags/magento.xml" rel="self"/>
+    <link href="https://www.timbroder.com/"/>
+    <updated>2018-09-09T12:21:33+00:00</updated>
+    <id>https://www.timbroder.com/</id>
+            <author>
+            <name><![CDATA[Tim Broder]]></name>            <email><![CDATA[timothy.broder@gmail.com]]></email>        </author>
+        <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[Contributing to Magento2]]></title>
+            <link href="https://www.timbroder.com/2015/01/contributing-to-magento2.html"/>
+            <updated>2015-01-07T17:04:00+00:00</updated>
+            <id>https://www.timbroder.com/2015/01/contributing-to-magento2.html</id>
+            <content type="html"><![CDATA[<p>The Magento2 dev team is now using Github in the traditional sense: They have
+an internal repo that gets pushed out to github at the end of their sprint.
+All commits stay intact. This is WAY better than the previous method of
+pushing a giant commit with everything each sprint.</p>
+
+<p>Ben has a <a href="http://bhmarks.com/blog/contributing-to-magento-2/">good walkthrough</a> on submitting a pull request to the repo. He links to a few
+resources to get up and running on the new platform.  Alan Kent goes into more
+<a href="https://alankent.wordpress.com/2014/12/27/behind-the-recent-magento-2-github-changes/">detail</a> on the “why” of the change.</p>
+
+<p>It’s not just code that has been opened up. The
+<a href="https://alankent.wordpress.com/2014/12/20/about-magento-2-0-developer-documentation/">documentation</a> lives on Github now too.</p>
+
+<p>These are all great changes. The more eyes we have on code the better. Do your
+part: <a href="https://github.com/magento/magento2">Install</a> the Magento 2 developer
+preview and get testing</p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Apple Pay and Magento]]></title>
+            <link href="https://www.timbroder.com/2014/12/apple-pay-and-magento.html"/>
+            <updated>2014-12-13T23:12:12+00:00</updated>
+            <id>https://www.timbroder.com/2014/12/apple-pay-and-magento.html</id>
+            <content type="html"><![CDATA[<p><strong>The Business of Apple Pay</strong> (Alec Simonson)</p>
+
+<p>On the outset, Apple Pay is very cool and could very well be the wave of the
+future. A lot of this hinges on “what’s under the hood” in terms of Apple’s
+contract with the leading credit card companies who helped with the
+development. If everything is open, and companies like Samsung can let their
+customers pay with NFC technology as well, I could see this as something that
+will be successful, adopted, and an example of Apple leading the way. However,
+if Apple goes all proprietary (as they love to do) and contractually forces
+these major credit cards to only use their devices, or charges other companies
+like Samsung to license their payment platform, or otherwise mandate that all
+touch-to-pay via smartphone methods are hereby known as “Apple Pay,” I could
+see adoption problems happening. Open standards have frequently been key to
+paving the way to adoption, and this has never really been Apple’s model in
+the past. For example, AirPlay is really cool and loved but does not work
+outside the environs of iOS, and can therefore never reach greater than 14.8%
+penetration as of this writing. So Chromecast was born, and while not nearly
+as simple or feature rich, it’s open to both Android and iOS and therefore has
+a much higher potential of adoption. Feature expansion will follow.</p>
+
+<p>One of the aspects of Apple Pay that I think is great is that merchants aren’t
+really troubled with much of everything, since most of this is really on the
+backend. A new reader with NFC capabilities, and they’re off and running. Low
+cost or no cost adoption. Or is it? Nobody has mentioned what Apple’s
+commission is on this latest development. An article on Forbes suggested it
+may be around 0.2%, giving Apple $0.20 for every $100 spent. That’s not much,
+but when you consider what percentage that is of the credit card companies’
+net (perhaps around 14%), it starts to look more substantial. Credit card
+companies like their investors, so it’s hard to imagine them not wanting to
+pass that extra cost onto merchants, who will be all-too-willing to share that
+with consumers.</p>
+
+<p>All of that aside, it’s very smart and forward thinking, and early adopters
+will likely be looked upon with jealousy by others. From an implementation
+perspective, adding Apple Pay will likely be as easy as it was to add Google+,
+and merchants will do it. But the long-term prospects will rely highly on what
+sort of deal Apple made….the devil is always in the details.</p>
+
+<p><strong>The Technology of Apple Pay</strong> (Tim Broder)</p>
+
+<p>Out of the gate, Pay is native app only. This leaves Magento sites at a
+disadvantage. In the future I’d like to see Apple open up this functionality
+to Safari on both mobile and desktop. Pay already has one-time number
+generation. This could be implemented in the browser similar to how
+[1Password](https://itunes.apple.com/us/app/1password-password-
+manager/id443987910?mt=12&amp;at=11laRZ&amp;ct=pro) can inject a credit card number
+into a form. Until something like this happens, only sites with a native app
+siting in front of Magento’s API will be able to take advantage.  If you are
+looking to investigate this space, <a href="http://meets.io/">meets.io</a>, an unofficial
+Magento SDK, is a great starting point.</p>
+
+<p>I’ll be curious if a developer comes up with a browser dedicated to this
+functionality. Tap into the Pay API and generate credit card numbers ad hoc,
+and bridge between Pay and e-commerce sites. Or, take it a step further and
+develop a custom keyboard for iOS 8. If allowed, it would be more seamless
+than a whole seperate browser. I say “if allowed” because there are some
+restrictions on what 3rd party keyboard can do. For example, they cannot touch
+passwords. The stock keyboard reasserts itself when tapping on a password
+field.</p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Improve your Magento workflow: Use git or mercurial]]></title>
+            <link href="https://www.timbroder.com/2012/07/improve-your-magento-workflow-use-git-or-mercurial.html"/>
+            <updated>2012-07-31T13:18:07+00:00</updated>
+            <id>https://www.timbroder.com/2012/07/improve-your-magento-workflow-use-git-or-mercurial.html</id>
+            <content type="html"><![CDATA[<p>Most of our new projects at work are on mercurial and I've moved most of my
+personal projects over to git.  We do, unfortunately, still have one Magento
+install that lives in our old subversion repository.  If you've ever tried to
+work with a project the size of Magento in SVN with branching, you know the
+kind of pain this can cause. My machine at work is no slouch. An i7, 8 gigs of
+ram, 256 megs graphics card, and an SSD. Perfect for any number of high
+performance or <a href="http://sv.partypoker.com/">online games</a>, compiling, or video
+editing. Yet, switching branches on the mercurial project brings it to its
+knees.  It's honestly better to go shoot a quick game of pool while its
+switching rather then try to get anything done.  Eventually... we'll get it
+into mercurial.   Anyway, to migrate a project from svn to git, use the
+following command: [code]git svn clone http://svn/repo/here/trunk[/code] To
+migrate a project from svn to hg, use the following command: 
+<code>hg convert http://svn/repo/here/trunk</code></p>
+
+<p>Branching is now much, much easier and if
+that isn't enough for you to switch here are a few more reasons:</p>
+
+<ul>
+<li>git is much easier to use than when it first came out</li>
+<li>merging is exponentially smoother than SVN</li>
+<li>distributed: you can branch, merge, commit, revert all locally without effecting your team until you push. All this happens locally = faster</li>
+<li>you can work offline</li>
+<li>can centralize only if you want to</li>
+<li>branching takes on a whole new level. Create custom workflows base on release, or bug, or whatever you want</li>
+<li>merging is exponentially smoother than SVN (yes, I listed this twice)</li>
+<li>visual branch diagrams</li>
+</ul>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Important Magento Security Update – Zend Platform Vulnerability]]></title>
+            <link href="https://www.timbroder.com/2012/07/important-magento-security-update-zend-platform-vulnerability.html"/>
+            <updated>2012-07-06T18:47:04+00:00</updated>
+            <id>https://www.timbroder.com/2012/07/important-magento-security-update-zend-platform-vulnerability.html</id>
+            <content type="html"><![CDATA[<p>While doing routine sanity checks, on of our QA Engineers, Sammy Shaar, was
+alerted about an important Magento <a href="http://by.ai/MnzJ">security update</a>. The
+vulnerability potentially allows an attacker to read any file on the web
+server where the <a href="http://by.ai/rk3s">Zend XMLRPC</a> functionality is enabled.
+This might include password files, configuration files, and possibly even
+databases if they are stored on the same machine as the Magento web server. To
+see if you site has been affected, please see <a href="http://by.ai/CpYr">this page</a>.
+Luckily, Magento has released patches for all supported versions:</p>
+
+<ul>
+<li>Magento Enterprise Edition and Professional Edition merchants: You may access the Zend Security Upgrade patch from Patches &amp; Support for your product in the Downloads section of your Magento account. Account log-in is required.<a href="http://www.magentocommerce.com/products/customer/account/" title="Download"> Download</a></li>
+<li>Magento Community Edition merchants:<a href="http://www.magentocommerce.com/downloads/assets/1.7.0.2/CE_1.4.0.0-1.4.1.1.patch" title="Community Edition 1.4.0.0 through 1.4.1.1"> Community Edition 1.4.0.0 through 1.4.1.1</a><a href="http://www.magentocommerce.com/downloads/assets/1.7.0.2/CE_1.4.2.0.patch" title="Community Edition 1.4.2.0"> Community Edition 1.4.2.0</a><a href="http://www.magentocommerce.com/downloads/assets/1.7.0.2/CE_1.5.0.0-1.7.0.1.patch" title="Community Edition 1.5.0.0 through 1.7.0.1"> Community Edition 1.5.0.0 through 1.7.0.1</a>
+To install the patch, place the patch file in the root of your Magento site
+and run the following command: patch -p0 &lt; zendxml_fix.patch If you don't
+have ssh access or patch installed on your machine, please see this stack
+overflow <a href="http://by.ai/1LtK">post </a>for alternative methods.</li>
+</ul>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Creating a stateless request in Magento]]></title>
+            <link href="https://www.timbroder.com/2011/10/1060.html"/>
+            <updated>2011-10-17T16:22:06+00:00</updated>
+            <id>https://www.timbroder.com/2011/10/1060.html</id>
+            <content type="html"><![CDATA[<p>Have you ever wanted to create a stateless request in Magento? Something that doesn't touch any of Magento's sessions?  We were having issues with some of the ajax calls on our cart and checkout pages mucking with the user's cart and had get stateless on these calls.  The issue we were having was our checkout page was loading, then a javascript include was going out and bringing code from a 3rd party relevance engine into our dom, which was in turn calling back an ajax request to our servers.  This issue with this being that at the start of the page load, the checkout session was being set to a certain state.  This state was then being sent through the rest of the page load, and the ajax calls. Unfortunately, by the time the ajax call got back to our server, the session was different in both locations, creating a race condition.  The ajax request usually won, removing the work the full page load had done with trying to process checkout.  The good news was there was nothing in the ajax call that needed to touch the session, it was just some data lookup. So, nix the session part of that call, and our troubles should be over... Magento's api controller is the only place that implements a stateless request this but its fairly easy to do (after a bit of digging).</p>
+
+<p>As long as Mage_Core_Controller_Varien_Action is a parent in your controller's hierchy, you are good to go (it probably is).  This class has a const FLAG_NO_START_SESSION which looks promising. Digging into the code a little we see that it controls whether cookies are processed or the session is started:</p>
+
+<pre><code data-language="PHP">&lt;?php
+...
+        if (!$this-&gt;getFlag('', self::FLAG_NO_START_SESSION)) {
+            $checkCookie = in_array($this-&gt;getRequest()-&gt;getActionName(), $this-&gt;_cookieCheckActions);
+            $checkCookie = $checkCookie &amp;amp;&amp;amp; !$this-&gt;getRequest()-&gt;getParam('nocookie', false);
+            $cookies = Mage::getSingleton('core/cookie')-&gt;get();
+            if ($checkCookie &amp;amp;&amp;amp; empty($cookies)) {
+                $this-&gt;setFlag('', self::FLAG_NO_COOKIES_REDIRECT, true);
+            }
+            Mage::getSingleton('core/session', array('name' =&gt; $this-&gt;_sessionNamespace))-&gt;start();
+        }
+</code></pre>
+
+<p>By adding to the preDispatch() method of our Action or Controller we can toggle this:</p>
+
+<pre><code data-language="PHP">&lt;?php
+class Ai_AjaxCatalog_Controller_Action extends Mage_Core_Controller_Front_Action
+{
+    public function preDispatch()
+    {
+        $this-&gt;setFlag('', self::FLAG_NO_START_SESSION, 1); // Do not start standard session
+        parent::preDispatch();
+        return $this;
+    }
+}
+</code></pre>
+
+<p>Now, any action in this controller will be stateless and not effect any sessions.</p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Extending a Magento Controller]]></title>
+            <link href="https://www.timbroder.com/2011/04/extending-a-magento-controller.html"/>
+            <updated>2011-04-19T21:16:46+00:00</updated>
+            <id>https://www.timbroder.com/2011/04/extending-a-magento-controller.html</id>
+            <content type="html"><![CDATA[<p>We're ajaxing part of the Magento shopping cart so we need to modify/extend some of the cart controller functionality.  Sometimes when modifying controller's you have to worry about updating the routes. For this, we don't need to, we still want all the urls to be used the same way.</p>
+
+<p>app/code/local/Ai/Checkout/etc/config.xml:</p>
+
+<pre><code data-language="XML">&lt;config&gt;
+    &lt;modules&gt;
+        &lt;Ai_Checkout&gt;
+             &lt;version&gt;0.0.1&lt;/version&gt;
+        &lt;/Ai_Checkout&gt;
+    &lt;/modules&gt;
+...
+    &lt;frontend&gt;
+        &lt;routers&gt;
+            &lt;checkout&gt;
+                &lt;use&gt;standard&lt;/use&gt;
+                &lt;args&gt;
+                    &lt;module&gt;Ai_Checkout&lt;/module&gt;
+                    &lt;frontName&gt;checkout&lt;/frontName&gt;
+                &lt;/args&gt;
+            &lt;/checkout&gt;
+        &lt;/routers&gt;
+    &lt;/frontend&gt;    
+&lt;/config&gt;
+</code></pre>
+
+<p>app/code/local/Ai/Checkout/controllers/CartController.php:</p>
+
+<p>```PHP
+require_once Mage::getModuleDir('controllers', 'Mage_Checkout') . DS . 'CartController.php';</p>
+
+<p>class Ai_Checkout_CartController extends Mage_Checkout_CartController
+{
+   public function updatePostAction()
+    {
+        Mage::log(&quot;NEW CONTROLLER&quot;, null, 'tim.log');
+        try {
+[/php]</p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[A note on Magento and multiple nodes using Memcached]]></title>
+            <link href="https://www.timbroder.com/2011/02/a-note-on-magento-and-multiple-nodes-using-memcached.html"/>
+            <updated>2011-02-11T18:35:44+00:00</updated>
+            <id>https://www.timbroder.com/2011/02/a-note-on-magento-and-multiple-nodes-using-memcached.html</id>
+            <content type="html"><![CDATA[<p>If you have multiple nodes using a shared memcached server, make sure you
+define a shared prefix for the keys to use.</p>
+
+<p>In local.xml:</p>
+
+<pre><code data-language="XML">        &lt;cache&gt;
+...
+            &lt;prefix&gt;a1i&lt;/prefix&gt;
+            &lt;id_prefix&gt;a1i&lt;/id_prefix&gt;
+            &lt;memcached&gt;
+...
+</code></pre>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Want to output the full xml config Magento is running?]]></title>
+            <link href="https://www.timbroder.com/2011/01/want-to-output-the-full-xml-config-magento-is-running.html"/>
+            <updated>2011-01-27T19:56:14+00:00</updated>
+            <id>https://www.timbroder.com/2011/01/want-to-output-the-full-xml-config-magento-is-running.html</id>
+            <content type="html"><![CDATA[<pre><code data-language="PHP">Mage::getConfig()-&amp;gt;getNode()-&amp;gt;asNiceXml('full_config.xml');
+</code></pre>
+
+<p>Where full_config.xml is the file you want it dumped to.</p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Want to trace the call stack in Magento?]]></title>
+            <link href="https://www.timbroder.com/2011/01/want-to-trace-the-call-stack-in-magento.html"/>
+            <updated>2011-01-04T21:35:38+00:00</updated>
+            <id>https://www.timbroder.com/2011/01/want-to-trace-the-call-stack-in-magento.html</id>
+            <content type="html"><![CDATA[<p>Update: This code is also available on <a href="https://github.com/broderboy/magento-callstack" title="Github">Github</a> as a Mageno module</p>
+
+<p>This has helped me immensely in situations like "Where is this getting called from??!?"</p>
+
+<p>Create a helper like so:</p>
+
+<pre><code data-language="PHP">class Timbroder_Stack_Helper_Callstack extends Mage_Core_Helper_Abstract
+{
+    private function get_callstack($delim=&amp;quot;\n&amp;quot;) {
+      $dt = debug_backtrace();
+      $cs = '';
+      foreach ($dt as $t) {
+        $cs .= $t['file'] . ' line ' . $t['line'] . ' calls ' . $t['function'] . &amp;quot;()&amp;quot; . $delim;
+      }
+
+      return $cs;
+    }
+
+    public function toLog() {
+        Mage::log($this-&amp;gt;get_callstack());
+    }
+
+    public function toFirePhp() {
+        $stack = $this-&amp;gt;get_callstack();
+        foreach (explode(&amp;quot;\n&amp;quot;, $stack) as $line) {
+            Mage::helper('firephp')-&amp;gt;send($line);
+        }
+    }
+}
+</code></pre>
+
+<p>That can be called from anywhere:</p>
+
+<p>``PHP
+Mage::helper('stack/callstack')-&gt;toFirePhp();
+Mage::helper('stack/callstack')-&gt;toLog();</p>
+
+<pre><code><br />I've also wrapped this into a module that you can drop right into your project.  Details here: [https://bitbucket.org/broderboy/magento_callstack/src](https://bitbucket.org/broderboy/magento_callstack/src "https://bitbucket.org/broderboy/magento_callstack/src")
+
+Example output:
+
+</code></pre>
+
+<p>.../app/code/community/Timbroder/Stack/Helper/Callstack.php line 16 calls get_callstack()
+.../app/design/frontend/mongoose/default/template/catalog/cms/bikes_bmx.phtml line 12 calls toLog()
+.../app/design/frontend/mongoose/default/template/catalog/cms/bikes.phtml line 21 calls require_once()
+.../app/code/core/Mage/Core/Block/Template.php line 212 calls include()
+.../app/code/core/Mage/Core/Block/Template.php line 239 calls fetchView()
+.../app/code/core/Mage/Core/Block/Template.php line 253 calls renderView()
+.../app/code/core/Mage/Core/Block/Abstract.php line 668 calls _toHtml()
+.../app/code/core/Mage/Core/Model/Email/Template/Filter.php line 190 calls toHtml()
+.../lib/Varien/Filter/Template.php line 134 calls call_user_func()
+.../app/code/core/Mage/Core/Model/Email/Template/Filter.php line 501 calls filter()
+.../app/code/core/Mage/Cms/Block/Page.php line 100 calls filter()
+.../app/code/core/Mage/Core/Block/Abstract.php line 668 calls _toHtml()
+.../app/code/core/Mage/Core/Block/Abstract.php line 513 calls toHtml()
+.../app/code/core/Mage/Core/Block/Abstract.php line 460 calls _getChildHtml()
+.../app/code/local/Mage/Page/Block/Html/Wrapper.php line 52 calls getChildHtml()
+.../app/code/core/Mage/Core/Block/Abstract.php line 668 calls _toHtml()
+.../app/code/core/Mage/Core/Block/Text/List.php line 43 calls toHtml()
+.../app/code/core/Mage/Core/Block/Abstract.php line 668 calls _toHtml()
+.../app/code/core/Mage/Core/Block/Abstract.php line 513 calls toHtml()
+.../app/code/core/Mage/Core/Block/Abstract.php line 464 calls _getChildHtml()
+.../app/design/frontend/mongoose/default/template/page/1column.phtml line 55 calls getChildHtml()
+.../app/code/core/Mage/Core/Block/Template.php line 212 calls include()
+.../app/code/core/Mage/Core/Block/Template.php line 239 calls fetchView()
+.../app/code/core/Mage/Core/Block/Template.php line 253 calls renderView()
+.../app/code/core/Mage/Core/Block/Abstract.php line 668 calls _toHtml()
+.../app/code/core/Mage/Core/Model/Layout.php line 529 calls toHtml()
+.../app/code/local/Mage/Core/Controller/Varien/Action.php line 389 calls getOutput()
+.../app/code/core/Mage/Cms/Helper/Page.php line 130 calls renderLayout()
+.../app/code/core/Mage/Cms/Helper/Page.php line 52 calls _renderPage()
+.../app/code/core/Mage/Cms/controllers/PageController.php line 45 calls renderPage()
+.../app/code/local/Mage/Core/Controller/Varien/Action.php line 418 calls viewAction()
+.../app/code/core/Mage/Core/Controller/Varien/Router/Standard.php line 254 calls dispatch()
+.../app/code/core/Mage/Core/Controller/Varien/Front.php line 177 calls match()
+.../app/code/core/Mage/Core/Model/App.php line 304 calls dispatch()
+.../app/Mage.php line 598 calls run()
+.../index.php line 155 calls run()
+```</p>
+
+<p>Thanks to <a href="http://www.nextide.ca/node/518">nextide</a> for some of the code</p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Want to dump every SQL query Magento runs?]]></title>
+            <link href="https://www.timbroder.com/2010/12/want-to-dump-every-sql-query-magento-runs.html"/>
+            <updated>2010-12-02T22:35:04+00:00</updated>
+            <id>https://www.timbroder.com/2010/12/want-to-dump-every-sql-query-magento-runs.html</id>
+            <content type="html"><![CDATA[<p>In: <code>lib/Zend/DB/Adapter/Adapter.php</code></p>
+
+<pre><code data-language="PHP">public function query($sql, $bind = array())
+{
+    // connect to the database if needed
+    $this-&gt;_connect();
+
+    // is the $sql a Zend_Db_Select object?
+    if ($sql instanceof Zend_Db_Select) {
+        if (empty($bind)) {
+            $bind = $sql-&gt;getBind();
+        }
+
+        $sql = $sql-&gt;assemble();
+    }
+
+    $time_start = microtime(true);
+
+    // make sure $bind to an array;
+    // don't use (array) typecasting because
+    // because $bind may be a Zend_Db_Expr object
+    if (!is_array($bind)) {
+        $bind = array($bind);
+    }
+
+    // prepare and execute the statement with profiling
+    $stmt = $this-&gt;prepare($sql);
+    $stmt-&gt;execute($bind);
+
+    // return the results embedded in the prepared statement object
+    $stmt-&gt;setFetchMode($this-&gt;_fetchMode);
+
+    $time_end = microtime(true);
+    $time = $time_end - $time_start;
+
+    echo "SQL[$time | $sql ]" . "\n&lt;br /&gt;\n";
+    return $stmt;
+}
+</code></pre>
+]]></content>
+        </entry>
+    </feed>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[timbroder.com]]></title>
+    <link href="https://www.timbroder.com/blog/categories/Reading.xml" rel="self"/>
+    <link href="https://www.timbroder.com/"/>
+    <updated>2018-09-09T12:21:32+00:00</updated>
+    <id>https://www.timbroder.com/</id>
+            <author>
+            <name><![CDATA[Tim Broder]]></name>            <email><![CDATA[timothy.broder@gmail.com]]></email>        </author>
+        <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[Why We Do What We Do]]></title>
+            <link href="https://www.timbroder.com/2013/09/why-we-do-what-we-do.html"/>
+            <updated>2013-09-29T21:09:22+00:00</updated>
+            <id>https://www.timbroder.com/2013/09/why-we-do-what-we-do.html</id>
+            <content type="html"><![CDATA[<p>In his talk at Smashing Conf in Freiburg Germany 2013 Dan Rubin talked about
+the impact of motivation on our work. Here are some notes from his talk Why We
+Do What We Do:</p>
+
+<p>via <a href="http://www.lukew.com/ff/entry.asp?1791=">Smashing Conf: Why We Do What We Do</a>.</p>
+]]></content>
+        </entry>
+    </feed>

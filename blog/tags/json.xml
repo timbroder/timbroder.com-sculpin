@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[timbroder.com]]></title>
+    <link href="https://www.timbroder.com/blog/tags/json.xml" rel="self"/>
+    <link href="https://www.timbroder.com/"/>
+    <updated>2018-09-09T12:21:33+00:00</updated>
+    <id>https://www.timbroder.com/</id>
+            <author>
+            <name><![CDATA[Tim Broder]]></name>            <email><![CDATA[timothy.broder@gmail.com]]></email>        </author>
+        <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[Format JSON and save to gist with Alfred]]></title>
+            <link href="https://www.timbroder.com/2014/07/format-json-and-save-to-gist.html"/>
+            <updated>2014-07-08T21:02:32+00:00</updated>
+            <id>https://www.timbroder.com/2014/07/format-json-and-save-to-gist.html</id>
+            <content type="html"><![CDATA[<p>At work, we have an Angular app that deals with a lot of custom JSON. With a
+distributed dev team, we pass a LOT of JSON around.  Copying from Chrome’s net
+tab, formatting, adding to a Github <a href="https://gist.github.com/">gist</a> for easy
+transport is a PITA when you are doing it 20 times a day. I have 2 Alfred
+workflows to help with this.</p>
+
+<p>My Use:</p>
+
+<ol>
+<li>Copy unformatted JSON to clipboard</li>
+<li>Alfred “JsonLint”. Formatted JSON is now in my clipboard</li>
+<li>Alfred “gist”. URL to raw gist is now in my clipboard</li>
+<li>One of these days I’ll chain these together</li>
+</ol>
+
+<p>To get this working:</p>
+
+<ol>
+<li>You’ll need the Alfred <a href="http://www.alfredapp.com/powerpack/">PowerPack</a></li>
+<li>Install my JSON lint <a href="https://github.com/broderboy/AlfredJsonLint/blob/master/Json%20Lint.alfredworkflow?raw=true">workflow</a>. (It needs work, but gets the job done)</li>
+<li>Install <a href="https://github.com/phallstrom/AlfredGist">AlfredGist</a></li>
+</ol>
+
+<p>* Be sure to follow the setup <a href="https://github.com/phallstrom/AlfredGist">instructions</a>.
+  * I prefer to have the ‘raw’ url returned from AlfredGist. (in the clipboard and opened)<br />
+To enable this, open functions.sh<br />
+Look for this line: <code>gist_url=$(get_json_key “html_url" "$json")</code>
+Modify to: <code>gist_url=$(get_json_key “raw_url” "$json")</code></p>
+
+<ul>
+<li>In “gistconfig” set the gists to be private</li>
+</ul>
+
+<p>You should now be able to chain together as I listed above</p>
+
+<p>Let me know if you have any questions!</p>
+]]></content>
+        </entry>
+    </feed>

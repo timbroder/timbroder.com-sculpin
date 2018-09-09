@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[timbroder.com]]></title>
+    <link href="https://www.timbroder.com/blog/tags/SQL.xml" rel="self"/>
+    <link href="https://www.timbroder.com/"/>
+    <updated>2018-09-09T12:21:33+00:00</updated>
+    <id>https://www.timbroder.com/</id>
+            <author>
+            <name><![CDATA[Tim Broder]]></name>            <email><![CDATA[timothy.broder@gmail.com]]></email>        </author>
+        <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[Want to dump every SQL query Magento runs?]]></title>
+            <link href="https://www.timbroder.com/2010/12/want-to-dump-every-sql-query-magento-runs.html"/>
+            <updated>2010-12-02T22:35:04+00:00</updated>
+            <id>https://www.timbroder.com/2010/12/want-to-dump-every-sql-query-magento-runs.html</id>
+            <content type="html"><![CDATA[<p>In: <code>lib/Zend/DB/Adapter/Adapter.php</code></p>
+
+<pre><code data-language="PHP">public function query($sql, $bind = array())
+{
+    // connect to the database if needed
+    $this-&gt;_connect();
+
+    // is the $sql a Zend_Db_Select object?
+    if ($sql instanceof Zend_Db_Select) {
+        if (empty($bind)) {
+            $bind = $sql-&gt;getBind();
+        }
+
+        $sql = $sql-&gt;assemble();
+    }
+
+    $time_start = microtime(true);
+
+    // make sure $bind to an array;
+    // don't use (array) typecasting because
+    // because $bind may be a Zend_Db_Expr object
+    if (!is_array($bind)) {
+        $bind = array($bind);
+    }
+
+    // prepare and execute the statement with profiling
+    $stmt = $this-&gt;prepare($sql);
+    $stmt-&gt;execute($bind);
+
+    // return the results embedded in the prepared statement object
+    $stmt-&gt;setFetchMode($this-&gt;_fetchMode);
+
+    $time_end = microtime(true);
+    $time = $time_end - $time_start;
+
+    echo "SQL[$time | $sql ]" . "\n&lt;br /&gt;\n";
+    return $stmt;
+}
+</code></pre>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[How fuc**d is your database?]]></title>
+            <link href="https://www.timbroder.com/2010/08/how-fucd-is-your-database.html"/>
+            <updated>2010-08-26T20:53:42+00:00</updated>
+            <id>https://www.timbroder.com/2010/08/how-fucd-is-your-database.html</id>
+            <content type="html"><![CDATA[<p>Are you using PostgreSQL, MySQL, MSSQL, Oracle, SQLite, MS Access, or NoSQL?
+<a href="http://howfuckedismydatabase.com/">http://howfuckedismydatabase.com/</a></p>
+]]></content>
+        </entry>
+    </feed>

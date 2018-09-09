@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>
+                        Home &mdash; timbroder.com
+            </title>
+    <meta name="description" content="Home" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="alternate" type="application/rss+xml" title="timbroder.com &raquo; Feed" href="https://feeds.feedburner.com/timbroder" />
+    
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />        <link href="https://www.timbroder.com/themes/broderboy/deadfish/assets/css/screen.css" rel="stylesheet" media="screen">
+    <link href="https://www.timbroder.com/themes/broderboy/deadfish/assets/css/tag_cloud.css" rel="stylesheet" media="screen">
+    <link href="https://www.timbroder.com/themes/broderboy/deadfish/assets/css/twilight.css" rel="stylesheet" media="screen">
+        <script>
+(function(a,b){function d(a,b){return a===null?b==="null":a===undefined?b==="undefined":a.is&&a instanceof f?b==="element":Object.prototype.toString.call(a).toLowerCase().indexOf(b)>7}function c(a){var b,e,f,g,h,i,l,m,n;if(a instanceof c)return a;d(a,"array")||(a=String(a).replace(/\s/g,"").toLowerCase().match(/(?:\+,|[^,])+/g));for(b=0,e=a.length;b<e;++b){d(a[b],"array")||(a[b]=String(a[b]).match(/(?:\+\/|[^\/])+/g)),i=[],f=a[b].length;while(f--){var l=a[b][f];h={jwertyCombo:String(l),shiftKey:!1,ctrlKey:!1,altKey:!1,metaKey:!1},d(l,"array")||(l=String(l).toLowerCase().match(/(?:(?:[^\+])+|\+\+|^\+$)/g)),g=l.length;while(g--)l[g]==="++"&&(l[g]="+"),l[g]in k.mods?h[j[k.mods[l[g]]]]=!0:l[g]in k.keys?h.keyCode=k.keys[l[g]]:m=l[g].match(/^\[([^-]+\-?[^-]*)-([^-]+\-?[^-]*)\]$/);if(d(h.keyCode,"undefined"))if(m&&m[1]in k.keys&&m[2]in k.keys){m[2]=k.keys[m[2]],m[1]=k.keys[m[1]];for(n=m[1];n<m[2];++n)i.push({altKey:h.altKey,shiftKey:h.shiftKey,metaKey:h.metaKey,ctrlKey:h.ctrlKey,keyCode:n,jwertyCombo:String(l)});h.keyCode=n}else h.keyCode=0;i.push(h)}this[b]=i}this.length=b;return this}var e=a.document,f=a.jQuery||a.Zepto||a.ender||e,g,h,i="keydown";f===e?(g=function(a,b){return a?f.querySelector(a,b||f):f},h=function(a,b){a.addEventListener(i,b,!1)},$f=function(a,b){var c=document.createEvent("Event"),d;c.initEvent(i,!0,!0);for(d in b)c[d]=b[d];return(a||f).dispatchEvent(c)}):(g=function(a,b,c){return f(a||e,b)},h=function(a,b){f(a).bind(i+".jwerty",b)},$f=function(a,b){f(a||e).trigger(f.Event(i,b))});var j={16:"shiftKey",17:"ctrlKey",18:"altKey",91:"metaKey"},k={mods:{".":16,shift:16,".":17,ctrl:17,".":18,alt:18,option:18,".":91,meta:91,cmd:91,"super":91,win:91},keys:{".":8,backspace:8,".":9,".":9,tab:9,".":13,"return":13,enter:13,".":13,pause:19,"pause-break":19,".":20,caps:20,"caps-lock":20,".":27,escape:27,esc:27,space:32,".":33,pgup:33,"page-up":33,".":34,pgdown:34,"page-down":34,".":35,end:35,".":36,home:36,ins:45,insert:45,del:45,"delete":45,".":37,left:37,"arrow-left":37,".":38,up:38,"arrow-up":38,".":39,right:39,"arrow-right":39,".":40,down:40,"arrow-down":40,"*":106,star:106,asterisk:106,multiply:106,"+":107,plus:107,"-":109,subtract:109,"=":187,equals:187,",":188,comma:188,".":190,period:190,"full-stop":190,"/":191,slash:191,"forward-slash":191,"`":192,tick:192,"back-quote":192,"[":219,"open-bracket":219,"\\":220,"back-slash":220,"]":221,"close-bracket":221,"'":222,quote:222,apostraphe:222}};l=95,n=0;while(++l<106)k.keys["num-"+n]=l,++n;l=47,n=0;while(++l<58)k.keys[n]=l,++n;l=111,n=1;while(++l<136)k.keys["f"+n]=l,++n;var l=64;while(++l<91)k.keys[String.fromCharCode(l).toLowerCase()]=l;var m=b.jwerty={event:function(a,b,e){if(d(b,"boolean")){var f=b;b=function(){return f}}a=new c(a);var g=0,h=a.length-1,i,j;return function(c){if(j=m.is(a,c,g)){if(g<h){++g;return}i=b.call(e||this,c,j),i===!1&&c.preventDefault(),g=0}else g=m.is(a,c)?1:0}},is:function(a,b,d){a=new c(a),d=d||0,a=a[d],b=b.originalEvent||b;var e,f=a.length,g=!1;while(f--){g=a[f].jwertyCombo;for(var h in a[f])h!=="jwertyCombo"&&b[h]!==a[f][h]&&(g=!1);if(g!==!1)return g}return g},key:function(b,c,e,f,i){var j=d(e,"element")||d(e,"string")?e:f,k=j===e?a:e,l=j===e?f:i;h(d(j,"element")?j:g(j,l),m.event(b,c,k))},fire:function(a,b,e,f){a=new c(a);var h=d(e,"number")?e:f;$f(d(b,"element")?b:g(b,e),a[h||0][0])},KEYS:k}})(this,typeof module!="undefined"&&module.exports?module.exports:this),jwerty.key("B,A",function(){_unicorns=document.createElement("SCRIPT"),_unicorns.type="text/javascript",_unicorns.src="http://snacksize.com/unicorn/unicorn.js?",document.getElementsByTagName("head")[0].appendChild(_unicorns)})
+</script>
+</head>
+<body class="nav-closed">
+                                        <div class="site-wrapper">
+                        <header class="main-header">
+        <div class="vertical">
+        <div class="main-header-content inner">
+            <h1 class="page-title">
+                <a href="/">
+                    timbroder.com
+                </a>
+            </h1>
+                        <h2 class="page-description">
+                <a href="/apps.html">Apps</a>
+                <a href="/projects.html">Projects</a>
+                <a href="/podcasts.html">Podcasts</a>
+                <a href="/talks.html">Talks</a>
+                            </h2>
+        </div>
+    </div>
+    </header>                            
+                    <main class="content" role="main">
+                <article class="post" role="article">
+        
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2009/10/google-wave-as-project-collaboration.html">Google Wave as a Project Collaboration Tool</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2009-10-29T17:21:00+00:00" pubdate>
+                      <span class='month'>Oct</span> <span class='day'>29th</span> <span class='year'>2009</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                        <span><a href="/2009/10/google-wave-as-project-collaboration.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2009/10/google-wave-as-project-collaboration.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-url="https://www.timbroder.com/2009/10/google-wave-as-project-collaboration.html"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>I'm a'bloggin on the company blog! (Alexander Interactive) <a href="http://www.alexanderinteractive.com/blog/2009/10/google-wave-as-a-project-collaboration-tool.html">Google Wave as a
+Project Collaboration Tool</a>:</p>
+
+<p>If you aren't already familiar with Google Wave, check out some basic info,
+and a very in-depth video <a href="http://wave.google.com/help/wave/about.html">here</a>.
+Wave is a new project from Google that reinvents email communication. Forget
+everything you know about email, it was invented back in the 70's, things have
+changed; technology is faster, we have cloud computing, web apps look fancier,
+and for a while, a large portion of email users are moving (back) to web based
+clients.</p>
+
+<p>Email is the current method of communication and collaboration when working on
+a project. You usually have a folder for that project in Outlook, some rules
+to filter project related messages into that folder, and an email chain for
+each issue. People reply to messages inside that chain somewhere, the thread
+gets continued, people get added to the thread, people drop off. You don't
+know where you are in the chain when you check in a few hours later, and you
+get bombarded by... STOP!</p>
+
+<p>Wave is very early in its adoption, it's invite only, but it has the strong
+potential to fix a lot of these problems. It can clean up a lot of the clutter
+of project communication and throw it on the cloud so you can get to it
+anywhere. Wave does need some more security built in for the corporate
+settings, but that is in the pipeline. Right now waves can only be private or
+public, but once inside a private wave, that user can invite anyone.</p>
+
+<p>Some notes on how Wave can help a project:</p>
+
+<ul>
+<li><p>Each Project would get its own folder in wave</p></li>
+<li><p>Anyone working on the project would have access to this folder</p></li>
+<li><p>Every issue or conversation would get its own wave and everyone who needs to be involved in the issue is added to the wave.</p></li>
+<li><p>At this point every project related message is confined to the projects folder. No Outlook rules or message dragging will ever be needed. If a new person needs to be involved in the discussion, they are just added to the wave, no forwarding or reply-all.</p></li>
+<li><p>The conversation can continue similar to email, with individual replies, but it can be so much more. In line replies with related topics can appear right with the original topic, not hidden down 6 replies in an email chain</p></li>
+<li><p>You can show only new replies on the wave and get caught back up in the discussion quickly</p></li>
+<li><p>You can do a playback of all or part of the discussion and see who chimed in and when</p></li>
+<li><p>Need to share documents? You will eventually be able to drag them right out of your file system into the browser and into the wave. (This is currently only supported for pictures)</p></li>
+</ul>
+
+<p>As I said, Wave is very early in its adoption, but after more people join, and
+more developer plugins come out, I think it will be a very valuable tool both
+in the workplace and at home.</p>
+</section>
+
+
+    </article>
+    <article class="post" role="article">
+        
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2009/10/use-google-voice-with-your-existing.html">Use Google Voice with your existing number</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2009-10-27T14:17:00+00:00" pubdate>
+                      <span class='month'>Oct</span> <span class='day'>27th</span> <span class='year'>2009</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                        <span><a href="/2009/10/use-google-voice-with-your-existing.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2009/10/use-google-voice-with-your-existing.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="109993700"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>WOOHOO!!!! It's working on my verizon blackberry!</p>
+
+<p>"Up until now, if you wanted to use <a href="http://google.com/voice">Google Voice</a>,
+you needed to choose a new number (a "Google number"). Taking calls through
+your Google number allows us to offer features like call recording, call
+screening and getting text messages via email. But we know not everyone wants
+to switch to a new phone number, so it made sense for us to create a lighter
+version of Google Voice for people who are willing to trade some features for
+the ability to use their existing numbers.</p>
+
+<p>We're excited to announce that you now have the choice to get Google Voice
+with your existing mobile number OR with a Google number.</p>
+
+<p>If you sign up using your existing number, you'll still get many of Google
+Voice's features. Most notably, you'll get all the functionality of Google
+voicemail, as explained in this video:</p>
+
+<p>[](http://www.youtube.com/v/Ua9Q5frlQ2M&amp;rel=0&amp;color1=0xb1b1b1&amp;color2=0xcfcfcf&amp;
+hl=en&amp;feature=player_embedded&amp;fs=1)[](http://www.youtube.com/v/Ua9Q5frlQ2M&amp;rel
+=0&amp;color1=0xb1b1b1&amp;color2=0xcfcfcf&amp;hl=en&amp;feature=player_embedded&amp;fs=1)[](http:
+//www.youtube.com/v/Ua9Q5frlQ2M&amp;rel=0&amp;color1=0xb1b1b1&amp;color2=0xcfcfcf&amp;hl=en&amp;fe
+ature=player_embedded&amp;fs=1)[](http://www.youtube.com/v/Ua9Q5frlQ2M&amp;rel=0&amp;color
+1=0xb1b1b1&amp;color2=0xcfcfcf&amp;hl=en&amp;feature=player_embedded&amp;fs=1)[](http://www.yo
+utube.com/v/Ua9Q5frlQ2M&amp;rel=0&amp;color1=0xb1b1b1&amp;color2=0xcfcfcf&amp;hl=en&amp;feature=pl
+ayer_embedded&amp;fs=1)[](http://www.youtube.com/v/Ua9Q5frlQ2M&amp;rel=0&amp;color1=0xb1b1
+b1&amp;color2=0xcfcfcf&amp;hl=en&amp;feature=player_embedded&amp;fs=1)[](http://www.youtube.co
+m/v/Ua9Q5frlQ2M&amp;rel=0&amp;color1=0xb1b1b1&amp;color2=0xcfcfcf&amp;hl=en&amp;feature=player_emb
+edded&amp;fs=1)[](http://www.youtube.com/v/Ua9Q5frlQ2M&amp;rel=0&amp;color1=0xb1b1b1&amp;color
+2=0xcfcfcf&amp;hl=en&amp;feature=player_embedded&amp;fs=1)</p>
+
+<p>If you already have a Google Voice account, you can [add Google voicemail](htt
+p://www.google.com/support/voice/bin/answer.py?hl=en&amp;answer=164652) to any
+mobile phone you've linked to your account. If you're not yet using Google
+Voice, you can <a href="https://services.google.com/fb/forms/googlevoiceinvite/">request an
+invite</a> or ask a
+friend with a Google Voice account to send you an invitation. When you receive
+the invitation to sign up, you can choose to use Google Voice with your
+existing number — or to get a Google number for additional features.</p>
+
+<p>Google Voice is about giving you more control over your communications. We
+hope this new option makes it easier for you to manage your messages and
+personalize your voicemail experience."</p>
+</section>
+
+
+    </article>
+    <article class="post" role="article">
+        
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2009/10/google-wave-checker-for-firefox.html">Google Wave checker for firefox</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2009-10-14T20:12:00+00:00" pubdate>
+                      <span class='month'>Oct</span> <span class='day'>14th</span> <span class='year'>2009</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                        <span><a href="/2009/10/google-wave-checker-for-firefox.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2009/10/google-wave-checker-for-firefox.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="110695840"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>I'm liking google wave so far (not loving yet, but there aren't that many
+people on it yet), but one of the annoying things was actually having to be in
+the app to see if I have new waves. <a href="https://addons.mozilla.org/en-US/firefox/addon/14973">Firefox
+plugin</a>, problem solved!</p>
+
+<p><img src="http://1.bp.blogspot.com/_Ng3QbVQfLZ8/StYwiumOMGI/AAAAAAAAeDM/0zzwORULv6s/s1600-h/2009-10-14_1611_001.png" alt="" /></p>
+</section>
+
+
+    </article>
+    <article class="post" role="article">
+        
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2009/10/firefox-keyboard-and-mouse-shortcuts.html">Firefox Keyboard and Mouse Shortcuts</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2009-10-05T15:06:00+00:00" pubdate>
+                      <span class='month'>Oct</span> <span class='day'>5th</span> <span class='year'>2009</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                        <span><a href="/2009/10/firefox-keyboard-and-mouse-shortcuts.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2009/10/firefox-keyboard-and-mouse-shortcuts.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="109993695"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p><a href="http://www.mouserunner.com/FF_Shortcuts1Printable.html">Here is a list</a> of
+Firefox keyboard and mouse shortcuts for each of the three major operating
+systems organized by topic.</p>
+</section>
+
+
+    </article>
+    <article class="post" role="article">
+        
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2009/09/checking-if-remote-file-exists-in.html">Checking if a remote file exists in python</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2009-09-30T19:51:00+00:00" pubdate>
+                      <span class='month'>Sep</span> <span class='day'>30th</span> <span class='year'>2009</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                        <span><a href="/2009/09/checking-if-remote-file-exists-in.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2009/09/checking-if-remote-file-exists-in.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="109993689"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>Normally, to check if a remote web file exists I would use urllib's getcode()
+but that is a 2.6 and newer feature.  In Python 2.5 its a little more
+interesting.  Thankfully, wget's spider command can help us out.</p>
+
+<pre><code data-language="python">from subprocess import Popen, PIPE
+def url_exists(url):
+    command = ["wget", "-S", "--spider", url]
+    p = Popen(command, stdout=PIPE, stderr=PIPE)
+    stdout, stderr = p.communicate()
+    exists = stderr.find('ERROR 404')
+    if int(exists) &gt; -1:
+        return False
+    else:
+        return True
+</code></pre>
+</section>
+
+
+    </article>
+    <article class="post" role="article">
+        
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2009/09/twitter-get-phone-calls-facebook-gets.html">Twitter get phone calls, Facebook gets voice chat</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2009-09-18T19:40:00+00:00" pubdate>
+                      <span class='month'>Sep</span> <span class='day'>18th</span> <span class='year'>2009</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                        <span><a href="/2009/09/twitter-get-phone-calls-facebook-gets.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2009/09/twitter-get-phone-calls-facebook-gets.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-url="https://www.timbroder.com/2009/09/twitter-get-phone-calls-facebook-gets.html"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>Twitter users on Thursday will, for the first time, be able to <a href="http://digg.com/d314ZwX">make voice
+calls</a> directly to each other through the
+microblogging service.</p>
+
+<p>Look out, Facebook users: <a href="http://digg.com/d314NzW">Here comes voice chat</a>.</p>
+
+<p>Sometime in the next few weeks, the social network's tens of millions of users
+will begin to be able to have high-quality voice conversations, even as its
+third-party developers are able to start including voice in their
+applications.</p>
+</section>
+
+
+    </article>
+    <article class="post" role="article">
+        
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2009/09/fight-gone-bad-iv.html">Fight Gone Bad IV</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2009-09-10T19:18:00+00:00" pubdate>
+                      <span class='month'>Sep</span> <span class='day'>10th</span> <span class='year'>2009</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                        <span><a href="/2009/09/fight-gone-bad-iv.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2009/09/fight-gone-bad-iv.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="123222125"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>Anyone want to help me out by donating?</p>
+
+<p><a href="http://feedproxy.google.com/~r/timbroder/~3/PDBIQvyH3rY/">Fight Gone Bad IV</a>:</p>
+
+<p>On Sept 26th I am competing in Fight Gone Bad IV to raise money for Wounded
+Warriors and Athletes for a cure.  Fight gone bad is a CrossFit workout scored
+by the number of reps.</p>
+
+<p>Description from the <a href="http://www.crossfit.com/cf-info/faq.html#WOD2">CrossFit website</a></p>
+
+<p><strong>4.3. Explain Fight Gone Bad</strong>
+    In this workout you move from each of five stations after a minute. This is a five-minute round from which a one-minute break is allowed before repeating. We’ve used this in 3 and 5 round versions. The stations are:</p>
+
+<ol>
+<li>Wall-ball: 20 pound ball, 10 ft target. (Reps)</li>
+<li>Sumo deadlift high-pull: 75 pounds (Reps)</li>
+<li>Box Jump: 20″ box (Reps)</li>
+<li>Push-press: 75 pounds (Reps)</li>
+<li>Row: calories (Calories)</li>
+</ol>
+
+<p>The clock does not reset or stop between exercises. On call of “rotate,” the
+athlete/s must move to next station immediately for good score. One point is
+given for each rep, except on the rower where each calorie is one point.</p>
+
+<p>If you can, <a href="http://bit.ly/2N8ifX">please donate</a> to help me support these
+initiatives</p>
+</section>
+
+
+    </article>
+    <article class="post" role="article">
+        
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2009/08/location-location-location.html">Location, Location, Location</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2009-08-29T18:39:00+00:00" pubdate>
+                      <span class='month'>Aug</span> <span class='day'>29th</span> <span class='year'>2009</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                        <span><a href="/2009/08/location-location-location.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2009/08/location-location-location.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="123477204"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>This will be pretty cool when it comes out</p>
+
+<p><a href="http://blog.twitter.com/2009/08/location-location-location.html">Location, Location, Location</a>: "<img src="http://3.bp.blogspot.com/_E8ZD85Wzu9E/So20MKF3WiI/AAAAAAAAAnw/QjXxH9JTBGM/s1600-h/iStock_000006260161Small.jpg" alt="" />Twitter platform developers have been doing innovative work
+with location for some time despite having access to only a rudimentary level
+of API support. Most of the location-based projects we see are built using the
+simple, account-level location field folks can fill out as part of their
+profile. Since anything can be written in this field, it's interesting but not
+very dependable.</p>
+
+<p>We're gearing up to launch a new feature which makes Twitter truly location-
+aware. A new API will allow developers to add latitude and longitude to any
+tweet. Folks will need to activate this new feature by choice because it will
+be off by default and the exact location data won't be stored for an extended
+period of time. However, if people do opt-in to sharing location on a tweet-
+by-tweet basis, compelling context will be added to each burst of information.</p>
+
+<p>For example, with accurate, tweet-level location data you could switch from
+reading the tweets of accounts you follow to reading tweets from anyone in
+your neighborhood or city—whether you follow them or not. It's easy to imagine
+how this might be interesting at an event like a concert or even something
+more dramatic like an earthquake. There will likely be many use cases we
+haven't even thought of yet which is part of what makes this so exciting.</p>
+
+<p>Developer Preview</p>
+
+<p>We're going to release geolocation to platform developers before we add the
+feature to Twitter.com. Most of the mobile applications people use and love
+are built by Twitter platform developers. Developers will have access to this
+new geolocation feature early which means it will most likely be available on
+your app of choice before it's available on Twitter's web site. Later, we'll
+add it to our mobile web site and Twitter.com as well.</p>
+
+<p>We're very excited about the potential of location metadata combined with
+Twitter. Our platform team has been on a roll lately. Geolocation lead
+@<a href="http://twitter.com/rsarver">rsarver</a> is particularly enthusiastic about
+location given his personal interest and involvement in events such as
+WhereCamp and his career history with location-aware services.</p>
+
+<p><img src="https://blogger.googleusercontent.com/tracker/23958943-4539167026890119148?l=blog.twitter.com" alt="" /></p>
+</section>
+
+
+    </article>
+    <article class="post" role="article">
+        
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2009/08/tech-support-cheat-sheet.html">Tech Support Cheat Sheet</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2009-08-24T18:32:00+00:00" pubdate>
+                      <span class='month'>Aug</span> <span class='day'>24th</span> <span class='year'>2009</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                        <span><a href="/2009/08/tech-support-cheat-sheet.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2009/08/tech-support-cheat-sheet.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="120710393"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p><a href="http://xkcd.com/627/">Tech Support Cheat Sheet</a>: <img src="http://imgs.xkcd.com/comics/tech_support_cheat_sheet.png" alt="'Hey Megan, it's your
+father. How do I print out a
+flowchart?'" /></p>
+</section>
+
+
+    </article>
+    <article class="post" role="article">
+        
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2009/08/send-to-tumblr-and-track-with-bitly.html">Send To Tumblr And Track With Bitly Google Reader Custom Link</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2009-08-14T13:43:00+00:00" pubdate>
+                      <span class='month'>Aug</span> <span class='day'>14th</span> <span class='year'>2009</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                            <span class="poop2">
+                        <a href="https://www.timbroder.com/blog/tags/reader">#reader</a>
+                            </span>
+                <span><a href="/2009/08/send-to-tumblr-and-track-with-bitly.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2009/08/send-to-tumblr-and-track-with-bitly.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="109993671"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>Testing the "send to blogger" button... <a href="http://labs.kortina.net/2009/08/13/send-to-tumblr-and-track-with-bitly-google-reader-custom-link/">Send To Tumblr And Track With Bitly
+Google Reader Custom Link</a>: "</p>
+
+<p>Google Reader just launched a “Send to Twitter” feature that allows you to
+share bit.ly links to interesting items in your reader with your Twitter
+friends.  First, awesome!</p>
+
+<p>Second, Google Reader has been getting lots of product development attention
+lately, and with all the awesome stuff they are adding, I spend all of my time
+there as opposed to twitter.com/home, facebook.com/home, or Tumblr Dashboard.
+One thing I miss about Tumblr dashboard was easy reblogging.</p>
+
+<p><a href="http://labs.kortina.net/files/2009/08/2009-08-13_2354.png">![How to Create Custom Send To Links in Google Reader](http://labs.kortina.ne
+t/files/2009/08/2009-08-13_2354-300x173.png)</a></p>
+
+<p>How to Create Custom Send To Links in Google Reader</p>
+
+<p>There is a “Send to Tumblr” link as one of the defaults, but it doesn’t use
+bit.ly urls. So, I hacked together a custom “Send to Tumblr” link.</p>
+
+<pre><code>URL: http://tumblr.com/share?v=2&amp;u=&amp;t=Send To Tumblr And Track With Bitly
+Google Reader Custom Link&amp;s=Send To Tumblr And Track With Bitly Google Reader
+Custom Link%0Avia%20kortina`
+</code></pre>
+
+<p><code>Icon URL: http://assets.tumblr.com/images/favicon.gif?2</code></p>
+
+<p>[![Custom Send to Tumblr with Bitly Link from Google Reader Link](http://labs.
+kortina.net/files/2009/08/2009-08-13_2351-300x170.png)](http://labs.kortina.ne
+t/files/2009/08/2009-08-13_2351.png)</p>
+
+<p>Custom Send to Tumblr with Bitly Link from Google Reader Link</p>
+
+<p><img src="http://labs.kortina.net/?ak_action=api_record_view&amp;id=351&amp;type=feed" alt="" /></p>
+
+<p>Possibly related posts:</p>
+
+<ol>
+<li><a href="http://labs.kortina.net/2009/07/26/i-want-read-flare-plugins-for-sharing-in-google-reader/" title="Permanent Link: I Want “Read Flare” — Plugins for Sharing in Google Reader">I Want “Read Flare” — Plugins for Sharing in Google Reader</a></li>
+<li><a href="http://labs.kortina.net/2009/08/05/business-cards-have-google-maps-now/" title="Permanent Link: Business Cards Have Google Maps Now">Business Cards Have Google Maps Now</a></li>
+<li><a href="http://labs.kortina.net/2009/07/13/how-to-make-a-fixed-link-to-twitter-thats-always-visible-on-your-webpage/" title="Permanent Link: How To Make a Fixed Link to Twitter That’s Always Visible on Your Webpage">How To Make a Fixed Link to Twitter That’s Always Visible on Your Webpage</a></li>
+</ol>
+
+<p>[![](http://feeds.feedburner.com/~ff/kortina-
+essays?d=yIl2AUoC8zA)](http://feeds.feedburner.com/~ff/kortina-
+essays?a=o2hn6f5JGDQ:skeQbrLiUSU:yIl2AUoC8zA)
+[![](http://feeds.feedburner.com/~ff/kortina-
+essays?i=o2hn6f5JGDQ:skeQbrLiUSU:D7DqB2pKExk)](http://feeds.feedburner.com/~ff
+/kortina-essays?a=o2hn6f5JGDQ:skeQbrLiUSU:D7DqB2pKExk)
+[![](http://feeds.feedburner.com/~ff/kortina-
+essays?d=qj6IDK7rITs)](http://feeds.feedburner.com/~ff/kortina-
+essays?a=o2hn6f5JGDQ:skeQbrLiUSU:qj6IDK7rITs)
+[![](http://feeds.feedburner.com/~ff/kortina-
+essays?i=o2hn6f5JGDQ:skeQbrLiUSU:gIN9vFwOqvQ)](http://feeds.feedburner.com/~ff
+/kortina-essays?a=o2hn6f5JGDQ:skeQbrLiUSU:gIN9vFwOqvQ)
+[![](http://feeds.feedburner.com/~ff/kortina-
+essays?d=7Q72WNTAKBA)](http://feeds.feedburner.com/~ff/kortina-
+essays?a=o2hn6f5JGDQ:skeQbrLiUSU:7Q72WNTAKBA)
+[![](http://feeds.feedburner.com/~ff/kortina-
+essays?d=c-S6u7MTCTE)](http://feeds.feedburner.com/~ff/kortina-
+essays?a=o2hn6f5JGDQ:skeQbrLiUSU:c-S6u7MTCTE)</p>
+</section>
+
+
+    </article>
+    <nav class="pagination" role="navigation">
+                <a class="next" href="https://www.timbroder.com/page/34">&larr; Older</a>
+        
+                <a class="prev" href="https://www.timbroder.com/page/32">Newer &rarr;</a>
+            </nav>
+
+    </main>
+
+
+                        <footer class="site-footer clearfix">
+    <section>
+            <span class="tag size2"><a href="/blog/tags/"></a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/AVSpeechSynthesizer">AVSpeechSynthesizer</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Ai">Ai</a></span>
+            &nbsp;
+        <span class="tag size8"><a href="/blog/tags/Android">Android</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Atom">Atom</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Avengers">Avengers</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Batman">Batman</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Batman%20Inc.">Batman Inc.</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Batman%20and%20Robin">Batman and Robin</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/CKEditor">CKEditor</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/Calibre">Calibre</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Cheese">Cheese</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/ComicCon">ComicCon</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/CoreData">CoreData</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/DRM">DRM</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/Docs%20Spreadsheets">Docs Spreadsheets</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/ESI">ESI</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Fontis">Fontis</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/GME">GME</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/GTD">GTD</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/GWT">GWT</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Garlic">Garlic</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/Google">Google</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/Google%20Reader">Google Reader</a></span>
+            &nbsp;
+        <span class="tag size9"><a href="/blog/tags/HOWTO">HOWTO</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Hulu">Hulu</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Internet%20Explorer">Internet Explorer</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/JIRA">JIRA</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/Kindle">Kindle</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/Mashups">Mashups</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Memcached">Memcached</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/OmniFocus">OmniFocus</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Oracle">Oracle</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/PHPUnit">PHPUnit</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/PostgreSQL">PostgreSQL</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/RSS">RSS</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Redmine">Redmine</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Remember%20the%20Milk">Remember the Milk</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Ruby">Ruby</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/SQL">SQL</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Shared%20web%20hosting%20service">Shared web hosting service</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Siri">Siri</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Skype">Skype</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Sony%20Reader">Sony Reader</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Stan%20Lee">Stan Lee</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/TDD">TDD</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Terminator">Terminator</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/TinyMCE">TinyMCE</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Vibrams">Vibrams</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Virtual%20hosting">Virtual hosting</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Virtual%20private%20server">Virtual private server</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Walking%20Dead">Walking Dead</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Web%20hosting">Web hosting</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/YUI">YUI</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Zend">Zend</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/adwhirl">adwhirl</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/adwords">adwords</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/aiaio">aiaio</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/ajax">ajax</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/alfred">alfred</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/analytics">analytics</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/angularjs">angularjs</a></span>
+            &nbsp;
+        <span class="tag size4"><a href="/blog/tags/appengine">appengine</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/apple">apple</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/applepay">applepay</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/apps">apps</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/autocomplete">autocomplete</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/automation">automation</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/beta">beta</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/bit.ly">bit.ly</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/blackberry">blackberry</a></span>
+            &nbsp;
+        <span class="tag size4"><a href="/blog/tags/blogger">blogger</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/bookmarks">bookmarks</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/brightkite">brightkite</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/calendar">calendar</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/chrome">chrome</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/coffee">coffee</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/css">css</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/debug">debug</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/digg">digg</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/django">django</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/drafts">drafts</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/dropbox">dropbox</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/encryption">encryption</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/engagement">engagement</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/events">events</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/facebook">facebook</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/firefox">firefox</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/friendfeed">friendfeed</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/gadgets">gadgets</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/gchat">gchat</a></span>
+            &nbsp;
+        <span class="tag size4"><a href="/blog/tags/gdata">gdata</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/gdrive">gdrive</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/gears">gears</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/git">git</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/github">github</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/gmail">gmail</a></span>
+            &nbsp;
+        <span class="tag size5"><a href="/blog/tags/gpowered.net">gpowered.net</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/greasemonkey">greasemonkey</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/groups">groups</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/homebrew">homebrew</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/instapaper">instapaper</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/interfacebuilder">interfacebuilder</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/ios">ios</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/ipad">ipad</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/iphone">iphone</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/javascript">javascript</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/jira">jira</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/jquery">jquery</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/json">json</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/kids">kids</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/laravel">laravel</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/launch%20center%20pro">launch center pro</a></span>
+            &nbsp;
+        <span class="tag size5"><a href="/blog/tags/magento">magento</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/maps">maps</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/mercurial">mercurial</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/mock">mock</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/mongodb">mongodb</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/music">music</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/mysql">mysql</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/netbook">netbook</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/nosql">nosql</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/objective%20c">objective c</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/oil">oil</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/omnifocus">omnifocus</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/opensocial">opensocial</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/opensource">opensource</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/os">os</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/osx">osx</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/pesto">pesto</a></span>
+            &nbsp;
+        <span class="tag size7"><a href="/blog/tags/php">php</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/picasa%20web">picasa web</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/podcasts">podcasts</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/powershell">powershell</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/primal">primal</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/productivity">productivity</a></span>
+            &nbsp;
+        <span class="tag size6"><a href="/blog/tags/python">python</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/pythonista">pythonista</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/quick">quick</a></span>
+            &nbsp;
+        <span class="tag size4"><a href="/blog/tags/reader">reader</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/realm">realm</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/regex">regex</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/running">running</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/search">search</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/security">security</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/seo">seo</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/sketch">sketch</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/skynet">skynet</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/sleep">sleep</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/socialgraph">socialgraph</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/solr">solr</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/startup">startup</a></span>
+            &nbsp;
+        <span class="tag size4"><a href="/blog/tags/swift">swift</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/testing">testing</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/textmate">textmate</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/timbroder.com">timbroder.com</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/todoist">todoist</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/twitter">twitter</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/twitter2gTalk">twitter2gTalk</a></span>
+            &nbsp;
+        <span class="tag size6"><a href="/blog/tags/ubuntu">ubuntu</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/urls">urls</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/vagrant">vagrant</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/varnish">varnish</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/virtualenv">virtualenv</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/winamp">winamp</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/windows">windows</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/wordpress">wordpress</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/xbox">xbox</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/xcode">xcode</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/xml">xml</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/yahoo%20pipes">yahoo pipes</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/youtube">youtube</a></span>
+            &nbsp;
+    
+    </section>
+    <section class="copyright">
+        Copyright &copy; 2007-2018 -
+         Tim Broder -         <span class="credit">Powered by <a href="http://sculpin.io">Sculpin</a></span>
+    </section>
+</footer>
+                <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="https://www.timbroder.com/themes/broderboy/deadfish/assets/js/index.js"></script>
+<script type="text/javascript" src="https://www.timbroder.com/themes/broderboy/deadfish/assets/js/rainbow.min.js"></script>
+<script type="text/javascript" src="https://www.timbroder.com/themes/broderboy/deadfish/assets/js/rlns.min.js"></script>
+
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'timbrodercom'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-17099661-1', 'auto');
+    ga('send', 'pageview');
+
+</script>    </div>
+</body>
+</html>

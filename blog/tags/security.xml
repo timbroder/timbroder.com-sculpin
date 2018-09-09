@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[timbroder.com]]></title>
+    <link href="https://www.timbroder.com/blog/tags/security.xml" rel="self"/>
+    <link href="https://www.timbroder.com/"/>
+    <updated>2018-09-09T12:21:33+00:00</updated>
+    <id>https://www.timbroder.com/</id>
+            <author>
+            <name><![CDATA[Tim Broder]]></name>            <email><![CDATA[timothy.broder@gmail.com]]></email>        </author>
+        <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[Feb 23 was a security day]]></title>
+            <link href="https://www.timbroder.com/2017/02/Feb-23-was-a-security-day.html"/>
+            <updated>2017-02-24T09:22:00+00:00</updated>
+            <id>https://www.timbroder.com/2017/02/Feb-23-was-a-security-day.html</id>
+            <content type="html"><![CDATA[<p>Busy day yesterday:</p>
+
+<ul>
+<li><a href="https://blog.cloudflare.com/incident-report-on-memory-leak-caused-by-cloudflare-parser-bug/" title="Cloudflare leaked secrets">Cloudflare leaked secrets</a></li>
+<li><a href="http://www.theverge.com/2017/2/23/14712118/google-sha1-collision-broken-web-encryption-shattered" title="Google cracked SHA-1">Google cracked SHA-1</a></li>
+<li>Dropbox opensourced <a href="https://blogs.dropbox.com/tech/2017/02/meet-securitybot-open-sourcing-automated-security-at-scale/" title="Securitybot: Open Sourcing Automated Security at Scale">Securitybot: Automated Security at Scale</a></li>
+</ul>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Important Magento Security Update – Zend Platform Vulnerability]]></title>
+            <link href="https://www.timbroder.com/2012/07/important-magento-security-update-zend-platform-vulnerability.html"/>
+            <updated>2012-07-06T18:47:04+00:00</updated>
+            <id>https://www.timbroder.com/2012/07/important-magento-security-update-zend-platform-vulnerability.html</id>
+            <content type="html"><![CDATA[<p>While doing routine sanity checks, on of our QA Engineers, Sammy Shaar, was
+alerted about an important Magento <a href="http://by.ai/MnzJ">security update</a>. The
+vulnerability potentially allows an attacker to read any file on the web
+server where the <a href="http://by.ai/rk3s">Zend XMLRPC</a> functionality is enabled.
+This might include password files, configuration files, and possibly even
+databases if they are stored on the same machine as the Magento web server. To
+see if you site has been affected, please see <a href="http://by.ai/CpYr">this page</a>.
+Luckily, Magento has released patches for all supported versions:</p>
+
+<ul>
+<li>Magento Enterprise Edition and Professional Edition merchants: You may access the Zend Security Upgrade patch from Patches &amp; Support for your product in the Downloads section of your Magento account. Account log-in is required.<a href="http://www.magentocommerce.com/products/customer/account/" title="Download"> Download</a></li>
+<li>Magento Community Edition merchants:<a href="http://www.magentocommerce.com/downloads/assets/1.7.0.2/CE_1.4.0.0-1.4.1.1.patch" title="Community Edition 1.4.0.0 through 1.4.1.1"> Community Edition 1.4.0.0 through 1.4.1.1</a><a href="http://www.magentocommerce.com/downloads/assets/1.7.0.2/CE_1.4.2.0.patch" title="Community Edition 1.4.2.0"> Community Edition 1.4.2.0</a><a href="http://www.magentocommerce.com/downloads/assets/1.7.0.2/CE_1.5.0.0-1.7.0.1.patch" title="Community Edition 1.5.0.0 through 1.7.0.1"> Community Edition 1.5.0.0 through 1.7.0.1</a>
+To install the patch, place the patch file in the root of your Magento site
+and run the following command: patch -p0 &lt; zendxml_fix.patch If you don't
+have ssh access or patch installed on your machine, please see this stack
+overflow <a href="http://by.ai/1LtK">post </a>for alternative methods.</li>
+</ul>
+]]></content>
+        </entry>
+    </feed>

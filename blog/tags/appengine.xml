@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[timbroder.com]]></title>
+    <link href="https://www.timbroder.com/blog/tags/appengine.xml" rel="self"/>
+    <link href="https://www.timbroder.com/"/>
+    <updated>2018-09-09T12:21:33+00:00</updated>
+    <id>https://www.timbroder.com/</id>
+            <author>
+            <name><![CDATA[Tim Broder]]></name>            <email><![CDATA[timothy.broder@gmail.com]]></email>        </author>
+        <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[Big Appengine news: Cron, Java, Firewalled Data, DB Import]]></title>
+            <link href="https://www.timbroder.com/2009/04/big-appengine-news-cron-java-firewalled.html"/>
+            <updated>2009-04-08T13:45:00+00:00</updated>
+            <id>https://www.timbroder.com/2009/04/big-appengine-news-cron-java-firewalled.html</id>
+            <content type="html"><![CDATA[<p><a href="http://googleappengine.blogspot.com/2009/04/seriously-this-time-new-language-on-app.html">Java Support</a>: This was the first, and most popular <a href="http://code.google.com/p/googleappengine/issues/detail?id=1">request
+</a>in the bug
+tracker. Followed closely by PHP support.  Google has merged the simplicity of
+appengine with the robustness of java, and added it to their <a href="http://code.google.com/eclipse">Eclipse
+plugin</a> to boot.</p>
+
+<p><a href="http://code.google.com/appengine/docs/python/config/cron.html">Cron Support</a>:
+The cron support works by calling a URL at a given interval. I'm not sure if
+cron jobs are also restricted by the timeout policy, hopefully they will be
+allowed to be longer.</p>
+
+<p><a href="http://code.google.com/securedataconnector/">Secure Data Connector</a>: An
+exampled of this would be accessing data behind a corporate firewall.  Might
+be a (good/bad) idea ;)</p>
+
+<p><a href="http://code.google.com/appengine/docs/python/tools/uploadingdata.html">Bulk Uploader</a>: Dump data into appengine from another database or a CSV
+file</p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[New third-party party tool for monitoring App Engine cluster status]]></title>
+            <link href="https://www.timbroder.com/2008/08/new-third-party-party-tool-for.html"/>
+            <updated>2008-08-23T01:34:00+00:00</updated>
+            <id>https://www.timbroder.com/2008/08/new-third-party-party-tool-for.html</id>
+            <content type="html"><![CDATA[<p><a href="http://www.cloudstatus.com/appengine">Cloud Status</a> has some pretty cool
+real-time appengine cloud stats. Check it out</p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Google I/O session videos posted with slides]]></title>
+            <link href="https://www.timbroder.com/2008/06/google-io-session-videos-posted-with.html"/>
+            <updated>2008-06-16T19:11:00+00:00</updated>
+            <id>https://www.timbroder.com/2008/06/google-io-session-videos-posted-with.html</id>
+            <content type="html"><![CDATA[<p>As I said <a href="http://blog.gpowered.net/2008/04/select-google-io-sessions-to-be-posted.html">earlier</a>, Quite a few presentations from Google I/O have
+been <a href="http://sites.google.com/site/io/">posted</a> for your viewing pleasure.
+I'll be glued to these this weekend while I'm on call.</p>
+
+<p>Topics include<br />
+Ajax<br />
+KML<br />
+Sketchup<br />
+Android<br />
+OpenSocial<br />
+Appengine<br />
+Data APIs<br />
+Theory Talks<br />
+Youtube<br />
+Gears<br />
+Mashups<br />
+Maps<br />
+and more!</p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[I/O: AppEngine is open!]]></title>
+            <link href="https://www.timbroder.com/2008/05/io-appengine-is-open.html"/>
+            <updated>2008-05-29T14:02:00+00:00</updated>
+            <id>https://www.timbroder.com/2008/05/io-appengine-is-open.html</id>
+            <content type="html"><![CDATA[<p>Appengine is no longer limited to the first 10,000 people or hackathon
+attendees. Anyone can set up an account but each account is still limited to 3
+apps. Guess all those extra gmail accounts will come in handy eh?</p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[AppEngine Pricing announced]]></title>
+            <link href="https://www.timbroder.com/2008/05/appengine-pricing-announced.html"/>
+            <updated>2008-05-28T13:55:00+00:00</updated>
+            <id>https://www.timbroder.com/2008/05/appengine-pricing-announced.html</id>
+            <content type="html"><![CDATA[<p>These look pretty cheap for what you get, and if one of my little apps
+actually got popular enough to fall outside of the free range, I'd gladly pay
+for it</p>
+
+<p>Free quota to get started: 500MB storage and enough CPU and bandwidth for
+about 5 million pageviews per month<br />
+$0.10 - $0.12 per CPU core-hour<br />
+$0.15 - $0.18 per GB-month of storage<br />
+$0.11 - $0.13 per GB outgoing bandwidth<br />
+$0.09 - $0.11 per GB incoming bandwidth</p>
+
+<p>Google I/O started this morning, unhappy I am not there...</p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[twitter2gTalk Goes Live!]]></title>
+            <link href="https://www.timbroder.com/2008/05/twitter2gtalk-goes-live.html"/>
+            <updated>2008-05-22T19:01:00+00:00</updated>
+            <id>https://www.timbroder.com/2008/05/twitter2gtalk-goes-live.html</id>
+            <content type="html"><![CDATA[<p><strong>Get your tweets onto Google Talk!</strong></p>
+
+<p><a href="http://www.twitter.com">Twitter</a>: A free social networking and micro-blogging
+service that allows users to send "updates" (or "tweets"; text-based posts, up
+to 140 characters long) to the Twitter website, via short message service
+(SMS), instant messaging, or a third-party application such as Twitterrific or
+Facebook.</p>
+
+<p><a href="http://www.google.com/talk/">gTalk</a>: (Google Talk) is a Windows and web-based
+application for voice over internet (VOIP) and instant messaging, offered by
+Google.</p>
+
+<p><a href="http://twitter2gtalk.appspot.com/">twitter2gTalk</a>: Takes your current tweet
+and sets it as your Google Talk status (away) message.</p>
+
+<p>I've been toying with <a href="http://blog.gpowered.net/2008/03/update-google-talk-status-with-twitter.html">this</a> for a while now. I really wanted to launch
+twitter2gTalk as a service that anyone could use. I had the backend code all
+done and was dragging my feet writing the django front-end. I went to a
+hackathon for <a href="code.google.com/appengine/">Google AppEngine</a> and converted
+most of the code to run on that. You need a Google Account to login, but then
+again, you need one to use gTalk anyway.</p>
+
+<p>I hope some people will find this cool or useful (some people have been
+<a href="http://heavycrag.blogspot.com/2008/05/new-reason-to-tweet.html">waiting</a> for
+this and already signed up). Feel free to follow
+<a href="http://twitter.com/broderboy">me</a> or <a href="http://twitter.com/twit2gTalk">the app</a>
+on twitter for feature updates or
+<a href="http://feeds.feedburner.com/gPpowered">subscribe</a> to this blog.</p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Appengine Hackathon!]]></title>
+            <link href="https://www.timbroder.com/2008/05/appengine-hackathon.html"/>
+            <updated>2008-05-07T12:07:00+00:00</updated>
+            <id>https://www.timbroder.com/2008/05/appengine-hackathon.html</id>
+            <content type="html"><![CDATA[<p>I'm heading to Google NY for the day for an appengine hackathon. I have a
+bazillion ideas banging around in my head. We'll see what I come back with. If
+anyone else is going to be there send me an
+<a href="&#109;&#x61;&#105;&#x6c;&#116;&#111;&#x3a;&#116;&#x69;&#109;&#x6f;t&#104;&#x79;&#46;&#x62;&#114;&#x6f;&#x64;&#101;&#x72;&#64;&#x67;m&#97;&#x69;&#108;&#x2e;&#99;&#x6f;m">email</a> me or send me a
+<a href="http://twitter.com/broderboy">tweet</a></p>
+
+<p><a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;geocode=&amp;q=76+Ninth+Avenue,+New+York,+NY+10011&amp;sll=40.71453,-74.00713&amp;sspn=0.208963,0.421944&amp;ie=UTF8&amp;ll=40.751744,-74.000387&amp;spn=0.003845,0.010042&amp;z=14&amp;iwloc=addr&amp;source=embed">View Larger Map</a></p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Got my Google appengine account!]]></title>
+            <link href="https://www.timbroder.com/2008/05/got-my-google-appengine-account.html"/>
+            <updated>2008-05-06T23:59:00+00:00</updated>
+            <id>https://www.timbroder.com/2008/05/got-my-google-appengine-account.html</id>
+            <content type="html"><![CDATA[<p>But someone already registered gpowered =(</p>
+
+<p><a href="http://3.bp.blogspot.com/_Ng3QbVQfLZ8/SCDxA_mVqRI/AAAAAAAARz8/mPX39zsC2Vk/s1600-h/no_gpowered.jpg">![](http://3.bp.blogspot.com/_Ng3QbVQfLZ8/SCDxA_mVqRI/AAAAAAAARz8/mPX39zsC2Vk
+/s400/no_gpowered.jpg)</a></p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Google Code Blog: Google App Engine Hack-a-thon coming to your coast!]]></title>
+            <link href="https://www.timbroder.com/2008/04/google-code-blog-google-app-engine-hack.html"/>
+            <updated>2008-04-25T14:42:00+00:00</updated>
+            <id>https://www.timbroder.com/2008/04/google-code-blog-google-app-engine-hack.html</id>
+            <content type="html"><![CDATA[<p>I'm going to the NYC one, anyone else?</p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Non Google AppEngine hosting]]></title>
+            <link href="https://www.timbroder.com/2008/04/non-google-appengine-hosting.html"/>
+            <updated>2008-04-18T20:05:00+00:00</updated>
+            <id>https://www.timbroder.com/2008/04/non-google-appengine-hosting.html</id>
+            <content type="html"><![CDATA[<p>If you are like me, and are waiting to get in on the action, check it out:
+<a href="http://appdrop.com/">http://appdrop.com/</a></p>
+]]></content>
+        </entry>
+    </feed>

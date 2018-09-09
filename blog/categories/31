@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>
+                        Category Archive &mdash; timbroder.com
+            </title>
+    <meta name="description" content="Category Archive" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="alternate" type="application/rss+xml" title="timbroder.com &raquo; Feed" href="https://feeds.feedburner.com/timbroder" />
+    
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />        <link href="https://www.timbroder.com/themes/broderboy/deadfish/assets/css/screen.css" rel="stylesheet" media="screen">
+    <link href="https://www.timbroder.com/themes/broderboy/deadfish/assets/css/tag_cloud.css" rel="stylesheet" media="screen">
+    <link href="https://www.timbroder.com/themes/broderboy/deadfish/assets/css/twilight.css" rel="stylesheet" media="screen">
+        <script>
+(function(a,b){function d(a,b){return a===null?b==="null":a===undefined?b==="undefined":a.is&&a instanceof f?b==="element":Object.prototype.toString.call(a).toLowerCase().indexOf(b)>7}function c(a){var b,e,f,g,h,i,l,m,n;if(a instanceof c)return a;d(a,"array")||(a=String(a).replace(/\s/g,"").toLowerCase().match(/(?:\+,|[^,])+/g));for(b=0,e=a.length;b<e;++b){d(a[b],"array")||(a[b]=String(a[b]).match(/(?:\+\/|[^\/])+/g)),i=[],f=a[b].length;while(f--){var l=a[b][f];h={jwertyCombo:String(l),shiftKey:!1,ctrlKey:!1,altKey:!1,metaKey:!1},d(l,"array")||(l=String(l).toLowerCase().match(/(?:(?:[^\+])+|\+\+|^\+$)/g)),g=l.length;while(g--)l[g]==="++"&&(l[g]="+"),l[g]in k.mods?h[j[k.mods[l[g]]]]=!0:l[g]in k.keys?h.keyCode=k.keys[l[g]]:m=l[g].match(/^\[([^-]+\-?[^-]*)-([^-]+\-?[^-]*)\]$/);if(d(h.keyCode,"undefined"))if(m&&m[1]in k.keys&&m[2]in k.keys){m[2]=k.keys[m[2]],m[1]=k.keys[m[1]];for(n=m[1];n<m[2];++n)i.push({altKey:h.altKey,shiftKey:h.shiftKey,metaKey:h.metaKey,ctrlKey:h.ctrlKey,keyCode:n,jwertyCombo:String(l)});h.keyCode=n}else h.keyCode=0;i.push(h)}this[b]=i}this.length=b;return this}var e=a.document,f=a.jQuery||a.Zepto||a.ender||e,g,h,i="keydown";f===e?(g=function(a,b){return a?f.querySelector(a,b||f):f},h=function(a,b){a.addEventListener(i,b,!1)},$f=function(a,b){var c=document.createEvent("Event"),d;c.initEvent(i,!0,!0);for(d in b)c[d]=b[d];return(a||f).dispatchEvent(c)}):(g=function(a,b,c){return f(a||e,b)},h=function(a,b){f(a).bind(i+".jwerty",b)},$f=function(a,b){f(a||e).trigger(f.Event(i,b))});var j={16:"shiftKey",17:"ctrlKey",18:"altKey",91:"metaKey"},k={mods:{".":16,shift:16,".":17,ctrl:17,".":18,alt:18,option:18,".":91,meta:91,cmd:91,"super":91,win:91},keys:{".":8,backspace:8,".":9,".":9,tab:9,".":13,"return":13,enter:13,".":13,pause:19,"pause-break":19,".":20,caps:20,"caps-lock":20,".":27,escape:27,esc:27,space:32,".":33,pgup:33,"page-up":33,".":34,pgdown:34,"page-down":34,".":35,end:35,".":36,home:36,ins:45,insert:45,del:45,"delete":45,".":37,left:37,"arrow-left":37,".":38,up:38,"arrow-up":38,".":39,right:39,"arrow-right":39,".":40,down:40,"arrow-down":40,"*":106,star:106,asterisk:106,multiply:106,"+":107,plus:107,"-":109,subtract:109,"=":187,equals:187,",":188,comma:188,".":190,period:190,"full-stop":190,"/":191,slash:191,"forward-slash":191,"`":192,tick:192,"back-quote":192,"[":219,"open-bracket":219,"\\":220,"back-slash":220,"]":221,"close-bracket":221,"'":222,quote:222,apostraphe:222}};l=95,n=0;while(++l<106)k.keys["num-"+n]=l,++n;l=47,n=0;while(++l<58)k.keys[n]=l,++n;l=111,n=1;while(++l<136)k.keys["f"+n]=l,++n;var l=64;while(++l<91)k.keys[String.fromCharCode(l).toLowerCase()]=l;var m=b.jwerty={event:function(a,b,e){if(d(b,"boolean")){var f=b;b=function(){return f}}a=new c(a);var g=0,h=a.length-1,i,j;return function(c){if(j=m.is(a,c,g)){if(g<h){++g;return}i=b.call(e||this,c,j),i===!1&&c.preventDefault(),g=0}else g=m.is(a,c)?1:0}},is:function(a,b,d){a=new c(a),d=d||0,a=a[d],b=b.originalEvent||b;var e,f=a.length,g=!1;while(f--){g=a[f].jwertyCombo;for(var h in a[f])h!=="jwertyCombo"&&b[h]!==a[f][h]&&(g=!1);if(g!==!1)return g}return g},key:function(b,c,e,f,i){var j=d(e,"element")||d(e,"string")?e:f,k=j===e?a:e,l=j===e?f:i;h(d(j,"element")?j:g(j,l),m.event(b,c,k))},fire:function(a,b,e,f){a=new c(a);var h=d(e,"number")?e:f;$f(d(b,"element")?b:g(b,e),a[h||0][0])},KEYS:k}})(this,typeof module!="undefined"&&module.exports?module.exports:this),jwerty.key("B,A",function(){_unicorns=document.createElement("SCRIPT"),_unicorns.type="text/javascript",_unicorns.src="http://snacksize.com/unicorn/unicorn.js?",document.getElementsByTagName("head")[0].appendChild(_unicorns)})
+</script>
+</head>
+<body class="nav-closed">
+                                        <div class="site-wrapper">
+                        <header class="main-header">
+        <div class="vertical">
+        <div class="main-header-content inner">
+            <h1 class="page-title">
+                <a href="/">
+                    timbroder.com
+                </a>
+            </h1>
+                        <h2 class="page-description">
+                <a href="/apps.html">Apps</a>
+                <a href="/projects.html">Projects</a>
+                <a href="/podcasts.html">Podcasts</a>
+                <a href="/talks.html">Talks</a>
+                            </h2>
+        </div>
+    </div>
+    </header>                            
+                    <main class="content" role="main">
+            <article class="post" role="article">
+    
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2007/09/google-developer-podcast-ep-9-quickcap.html">Google Developer Podcast Ep 9 QuickCap</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2007-09-27T23:36:00+00:00" pubdate>
+                      <span class='month'>Sep</span> <span class='day'>27th</span> <span class='year'>2007</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                        <span><a href="/2007/09/google-developer-podcast-ep-9-quickcap.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2007/09/google-developer-podcast-ep-9-quickcap.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-url="https://www.timbroder.com/2007/09/google-developer-podcast-ep-9-quickcap.html"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>I got some time today to listen to this Podcast today on the way to and from
+one of our other buildings today uptown. I was attending
+<a href="http://www.sas.com">SAS</a> training which is a pretty cool data mining / report
+generation tool.</p>
+
+<p>This episode was an interview with T.V. Raman and his seeing eye dog Hubbell
+on accessibility in a developer's world. Quick recap:</p>
+
+<ul>
+<li><p>Why care about accessibility? (As a developer)</p>
+
+<ul>
+<li>You DON'T know your user</li>
+<li>try to build for the widest range of abilities</li>
+</ul></li>
+<li>Think about how people with different abilities will use the app</li>
+<li>FireFox, Internet Explorer, Safari, Konquerer. Browser specifics are a problem</li>
+<li>Generic browsers out of the box do not help vision, does not enhance views, or help the motion impaired</li>
+<li>you have to add on to the browser</li>
+<li>There is too much "slop", you need to take a step back and not assume what your user will use</li>
+<li>CSS is good for getting developer / user balance</li>
+<li>There are very good FireFox accessibility addons</li>
+<li>Google results page is an html mess so it can work in all browsers</li>
+<li>The standard GMail interface is an accessibility nightmare but this is remedied by using the mobile version</li>
+<li>A year from now Ajax accessibility will get much better with FireFox 3</li>
+<li><strong>Bottom Lines:</strong>
+
+<ul>
+<li>What is it that you are using for accessibility? Is it the base platform? Does it come with tools</li>
+<li>What is the focus?</li>
+<li>What platform are you on?</li>
+</ul></li>
+<li>Google books scan and OCR to voice is decent</li>
+<li>The mobile calendar is also good.</li>
+</ul>
+</section>
+
+
+</article>
+<article class="post" role="article">
+    
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2007/09/google-developer-podcast-ep-8-summary.html">Google Developer Podcast Ep 8 Summary</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2007-09-25T03:24:00+00:00" pubdate>
+                      <span class='month'>Sep</span> <span class='day'>25th</span> <span class='year'>2007</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                        <span><a href="/2007/09/google-developer-podcast-ep-8-summary.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2007/09/google-developer-podcast-ep-8-summary.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-url="https://www.timbroder.com/2007/09/google-developer-podcast-ep-8-summary.html"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>I got some time today on the train today to listen to Episode 8 of the Google
+Developer Podcast. Normally I'll listen to it at work when it first comes out
+but it's been way to hectic. Here are some highlights some commentary thrown
+in.</p>
+
+<ul>
+<li>ZohoWriter goes on Gears - See my opinions about this <a href="http://gpowered.blogspot.com/2007/08/google-get-in-gear.html">here</a>. Google really needs to step it up and get Gears into their own services. The top two on my list being Gmail and Docs</li>
+<li>Embed Google Maps in a "youtube like way". Also the Drag zoom and custom marker manager controls have been improved. Very easy to use.</li>
+<li>Sky in Google Earth. I havn't played with this yet. I'll check it out after work tomorrow if Halo 3 isn't in the mailbox ;-) 
+
+<ul>
+<li>Stars</li>
+<li>Google's proof that there probably is life on other planets: Earth is not just a "one off".</li>
+<li>We need a Marvin the Martian Easter egg</li>
+</ul></li>
+<li><p>Google Objective-C library has been updated for code search, Picasa, and calendar
+The Guest in this episode was Mark Stahl, the Tech lead of GData since it
+started (about 2 1/2 years)</p></li>
+<li><p>GData is the way to interact with Google Data, See most of my <a href="http://gpowered.blogspot.com/search/label/HOWTO">HOWTO's</a> for examples.</p></li>
+<li>Uses the Atom publishing protocol (REST)</li>
+<li>Resources are represented as XML. Many, many libraries are out there for working with XML so no steep learning curve for working with the data.</li>
+<li>GET, PUT, POST, DEL to manipulate Data</li>
+<li>A feed is a container of Data Items</li>
+<li>Atom: syndication technology. It is a feed document. Used as a response for "get me the latest version of.... foofoo data set</li>
+<li>Atom publishing protocol added manipulation in the form of read/write</li>
+<li>Atom beat out RSS because it already had an ITEF committee</li>
+<li>GData builds on top of Atom publishing 
+
+<ul>
+<li>Way to query, by passing parameters through a URL</li>
+<li>Standardized parameters</li>
+</ul></li>
+<li>Atom has no concurrency to detect conflicts / multiple writes</li>
+<li>Etags are coming in the future to address this. Etags are strings that contain version info. This will enable for better caching solutions on the client, or any point in between the client and the server.</li>
+<li>
+<ul>
+<li>The GData team chose REST because the web is built on REST ideas. It already had developer Acceptability. It's also easy to learn. </li>
+</ul></li>
+<li>REST is a style, its good at certain things, but has trouble mapping certain operations that would perhaps be better off as an RPC</li>
+<li>Atomic but not transactional</li>
+<li>The first service to get GData was Calendar, and it currently gets the most request, followed (in order) by Blogger, Base, and Spreadsheets.</li>
+<li>The most popular client libraries are the ones in Java and .net, followed by Python, PHP, Objective C, Lisp, and Ruby</li>
+<li>Authentication can be done via ClientLogin with a token (Programmatic login), or via authsub (Google handles credentials)</li>
+<li>Uses "kinds": Semantic level syndication (add custom info to an entry and helps define types of entries)</li>
+</ul>
+</section>
+
+
+</article>
+<article class="post" role="article">
+    
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2007/09/cangooglehearmecom-beta-starts.html">CanGoogleHearMe.com beta starts</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2007-09-24T12:10:00+00:00" pubdate>
+                      <span class='month'>Sep</span> <span class='day'>24th</span> <span class='year'>2007</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                        <span><a href="/2007/09/cangooglehearmecom-beta-starts.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2007/09/cangooglehearmecom-beta-starts.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="116705898"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>The beta for <a href="http://cangooglehearme.com/">CanGoogleHearMe.com</a> has started
+(which I am part of), but that's all I can really say about it. If you don't
+know what CanGoogleHearMe is or what Aaron and the gang have been up to, check
+out the <a href="http://cangooglehearme.com/chapter1.php">original story</a></p>
+</section>
+
+
+</article>
+<article class="post" role="article">
+    
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2007/09/bring-on-gdrive.html">Bring on the GDrive!</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2007-09-20T01:07:00+00:00" pubdate>
+                      <span class='month'>Sep</span> <span class='day'>20th</span> <span class='year'>2007</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                            <span class="poop2">
+                        <a href="https://www.timbroder.com/blog/tags/gdrive">#gdrive</a>
+                            </span>
+                <span><a href="/2007/09/bring-on-gdrive.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2007/09/bring-on-gdrive.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="110879848"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>Do you want the GDrive? I know I do. Rumors have been flying around for almost
+2 years about this thing, its been the brunt of an April Fool's joke, complete
+with official announcement and a Google Group (see below). Googlers use it,
+and if it ever comes out, it would change the way both home and corporate
+users think about file storage. Google is almost there, almost. When they
+integrate Gears into Docs they'll be one step closer. They would just need a
+few more features on the main Docs UI (bulk file upload, share files right
+from there instead of having to publish from within the document) and allow
+for any file type.</p>
+
+<p><img src="http://lh3.google.com/timothy.broder/RvHFzfREi8I/AAAAAAAAMSI/87CkGvBuJLI/s400/plat1.jpg?imgdl=1" alt="" /></p>
+
+<p>Quick recap of the internal GDrive / Platypus client:<br />
+Backup: if your computer goes down, catches on fire, or just plain old BSOD's,
+just get a new computer, install the platypus client, and your files<br />
+will be on the new system before you know it You can sync across multiple
+computers. Great if you have multiple buildings, cubes, or a laptop floating
+around<br />
+VPN-less access<br />
+Disconnect Access. Google Gears anyone?<br />
+Other users can just mount your shares on their filesystem<br />
+FAST</p>
+
+<p>I took some time and went through similar offerings that are currently
+available</p>
+
+<p>** <a href="http://aws.amazon.com/s3">Amazon S3</a>**</p>
+
+<ul>
+<li>uses Amazon account (just have to enable as a web service)</li>
+<li>$.15 per gig</li>
+<li>programmatic way to store files. No UI on Amazon's site</li>
+</ul>
+
+<p><strong><a href="http://www.xdrive.com">Xdrive</a></strong></p>
+
+<p><img src="http://lh6.google.com/timothy.broder/RvHFzPREi4I/AAAAAAAAMRo/Z4qDjUvEaSM/s400/xdrive.jpg?imgdl=1" alt="" /></p>
+
+<p>Pros</p>
+
+<ul>
+<li>Nothing to install</li>
+<li>Breaks into photos, docs, music, videos, downloads, and bookmarks by default</li>
+<li>can upload a folder or multiple files from the same folder</li>
+<li>good upload speed</li>
+<li>5 gigs of space is free</li>
+<li><p>you can make "shows" to show off your photos and/or videos
+Cons</p></li>
+<li><p>Had to sign in with my AIM account to sign up for the service. Then directly after signing up I had to sign in with my AIM account again.</p></li>
+<li>can't drag files into folders</li>
+<li>"Share with friend" email didn't come for 15 min</li>
+<li>the "close window" button after logging out didn't work</li>
+<li>login button is a little out of the way</li>
+</ul>
+
+<p><strong><a href="http://www.box.net">Box.net</a></strong></p>
+
+<p><img src="http://lh6.google.com/timothy.broder/RvHFzPREi5I/AAAAAAAAMRw/Z_IsNLXYdyw/s400/boxnet.jpg?imgdl=1" alt="" /></p>
+
+<p>Pros</p>
+
+<ul>
+<li>fast site</li>
+<li>clean look</li>
+<li>5 gig free</li>
+<li>easy to embed folder into site or blog</li>
+<li>easy to send links to files in an email</li>
+<li>share folders as a link or an RSS feed</li>
+<li>drag and drop file upload in a popup</li>
+<li><p>there are groups in the paid account
+Cons</p></li>
+<li><p>friends have to sign up to send files (I would rather be able to give them a public link to my folder)</p></li>
+<li>have to pay to get groups</li>
+<li>contacts section felt ackward</li>
+</ul>
+
+<p><strong><a href="www.movedigital.com/">MoveDigital</a></strong></p>
+
+<p><img src="http://lh3.google.com/timothy.broder/RvHFzfREi6I/AAAAAAAAMR4/JBWgcFd5K4k/s400/movedigital.jpg?imgdl=1" alt="" /></p>
+
+<p>Pros</p>
+
+<ul>
+<li>can upload a file from a URL</li>
+<li>Uploads showed all the details: speed, percent done, etc</li>
+<li><p>Has mobile phone access
+Cons</p></li>
+<li><p>Expensive. The pricing starts at $10 for 1 gig and goes up exponentially</p></li>
+<li>Drag and drop is an install. And it didn't let me login (was using Vista to test these, I know... I know...)</li>
+<li>Slow uploads</li>
+</ul>
+
+<p><strong><a href="www.omnidrive.com/">Omnidrive</a></strong></p>
+
+<p>![](http://lh3.google.com/timothy.broder/RvHFzfREi7I/AAAAAAAAMSA/P_Z24ztAeQ4/s
+400/omni.jpg?imgdl=1)</p>
+
+<ul>
+<li>Sign up was very slow</li>
+<li>I tried to upload a 4 meg file and got a Java heapspace error</li>
+</ul>
+
+<p><strong>Microsoft Skydrive</strong><br />
+Pros</p>
+
+<ul>
+<li>Multiple file upload is very responsive and pretty</li>
+<li>Can embed in blog</li>
+<li><p>Has link to share with public
+Cons</p></li>
+<li><p>Needed to install an ActiveX control (had to use IE, bummer) for multiple file upload.</p></li>
+<li>Doesn't show upload speed</li>
+<li>Only 500 MB</li>
+<li>50 MB Max file size</li>
+</ul>
+
+<p>Overall I think I would have to go with Box.net. It was really smooth. Had
+some good features and it was really easy to upload files. the free 5 gigs
+wasn't too bad either.</p>
+
+<p>Some related GDrive articles:<br />
+* <a href="http://googlified.com/2007gdrive-is-here-almost/">GDrive is Here, Almost</a><br />
+* <a href="http://blogoscoped.com/archive/2007-09-04-n51.html">Evidence of GDrive in Google
+Apps</a><br />
+* <a href="http://googlesystem.blogspot.com/2006/07/gdrive-is-on-way.html">GDrive Is On The Way</a><br />
+* <a href="http://battellemedia.com/archives/002986.php">Inside the GDrive Platypus
+--Almost</a><br />
+* <a href="http://www.techcrunch.com/2006/10/13/another-gdrive-platypus-leak/">Another GDrive “Platypus” Leak</a><br />
+* <a href="http://blogoscoped.com/archive/2006-10-13-n53.html">Google Gdrive Client
+Leaked</a><br />
+* <a href="http://googlified.com/2006gdrive-gdisk/">GDrive -> GDisk</a><br />
+* <a href="http://blogoscoped.com/archive/2006-07-11-n52.html">When Will Gdrive Be Public (If
+Ever)?</a><br />
+* <a href="http://www.techcrunch.com/2006/07/10/gdrive-plays-whack-a-mole-with-bloggers/">GDrive plays whack-a-mole with bloggers</a><br />
+* <a href="http://blogoscoped.com/archive/2007-09-04-n51.html">Evidence of GDrive in Google
+Apps</a> <a href="http://www.techcrunch.com/2007/08/19/what-ever-happened-to-gdrive/">What Ever Happened
+To GDrive?</a><br />
+* <a href="http://blogoscoped.com/archive/2007-08-19-n82.html">Rumor: Was the Gdrive Release
+Canceled?</a></p>
+</section>
+
+
+</article>
+<article class="post" role="article">
+    
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2007/09/using-blogger-and-feedburner-sitemaps.html">Using Blogger and Feedburner Sitemaps in Webmaster Tools</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2007-09-20T00:20:00+00:00" pubdate>
+                      <span class='month'>Sep</span> <span class='day'>20th</span> <span class='year'>2007</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                            <span class="poop2">
+                        <a href="https://www.timbroder.com/blog/tags/blogger">#blogger</a>
+                            </span>
+                <span><a href="/2007/09/using-blogger-and-feedburner-sitemaps.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2007/09/using-blogger-and-feedburner-sitemaps.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="110879835"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>Blogger, good. FeedBurner, good. Google Webmaster tools, good. The 3 working
+together? A little more difficult. A few months ago blogger <a href="http://buzz.blogger.com/2007/07/attention-FeedBurner-fans.html">added
+support</a> to
+have FeedBurner + blogger integration. No more editing template code, just
+change a setting in blogger, and viola, FeedBurner will track all your
+subscribers. However, this method did not go over so well with Google
+Webmaster Tools. Previously you could just add your blog's feed as a sitemap
+for you blog and the Google Bot would have no problem. If you turned on
+FeedBurner however, sitemap errors popped up all over because the FeedBurner
+links were on a different domain from the blog, etc..</p>
+
+<p>Here is a way to make it work (assuming you already have a blog set up):</p>
+
+<ol>
+<li><p>Make an account on <a href="http://www.FeedBurner.com/fb/a/home">FeedBurner</a> and add your blog to it<br />
+<img src="http://lh6.google.com/timothy.broder/RvE7pPREi1I/AAAAAAAAMRQ/rgAU_migW2A/s400/feedburne.jpg?imgdl=1" alt="" /></p></li>
+<li><p>Then, in blogger go to settings > Site Feed > Post Feed Redirect URL and add your FeedBurner feed</p>
+
+<p><img src="http://lh6.google.com/timothy.broder/RvE7pPREi2I/AAAAAAAAMRY/yy7Obs753HM/s400/FeedBurner2.jpg?imgdl=1" alt="" /></p>
+
+<ol start="3">
+<li>Finally, if you want to track your blog in <a href="www.google.com/webmasters/sitemaps/">Google Webmaster Tools</a> you will have to add the sitemap a little differently then normal. Add a General Web sitemap as the "rss.xml?orderby=updated" feed off of your blog. FeedBurner does not pick up this feed in the redirects, so the Google Bot will not have trouble with it.  </li>
+</ol>
+
+<p><img src="http://lh3.google.com/timothy.broder/RvE7pfREi3I/AAAAAAAAMRg/s_PLXzrV9hE/s400/FeedBurner3.jpg?imgdl=1" alt="" /></p>
+
+<ol start="4">
+<li>After this your site will be tracked by FeedBurner as well as Google Webmaster tools and the Google Bot will be able to use the sitemap properly  </li>
+</ol></li>
+</ol>
+</section>
+
+
+</article>
+<article class="post" role="article">
+    
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2007/09/google-books-my-library-vs-librarything.html">Google Books “My Library” Vs. LibraryThing vs. Shelfari</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2007-09-19T02:11:00+00:00" pubdate>
+                      <span class='month'>Sep</span> <span class='day'>19th</span> <span class='year'>2007</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                        <span><a href="/2007/09/google-books-my-library-vs-librarything.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2007/09/google-books-my-library-vs-librarything.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="113337330"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>I love to read. I always have and I probably always will. When people ask me
+why I read so much or about how fast I can, I usually attest to the fact that
+when I was a child, the household rule was no television on weekdays, so, lots
+of books and reading. I still remember the first book I was able to finish on
+my own without any help from my mother; The Mouse and the Motorcycle.</p>
+
+<p>A few months ago when I was looking for a service to keep track of all my
+books (those I had read and those I wanted), the top two that I had come up
+with were <a href="http://www.shelfari.com/">Shelfari</a> and
+<a href="http://www.librarything.com/">LibraryThing</a>. At the time LibraryThing seemed
+slow and clunky while Shelfari came off as fairly polished. Note that I really
+didn’t spend too much time at either during this initial assessment and that I
+ended up going with Shelfari.</p>
+
+<p>Coming back to the present, I still use Shelfari and now that <a href="http://books.google.com/">Google Book
+search</a> has come out with the <a href="http://books.google.com/googlebooks/mylibrary/">“My
+Library”</a> feature, its time to
+do an assessment of this decision.</p>
+
+<p><strong>My Library</strong><br />
+Launched on September 6th, this is the latest feature of Google Book Search.
+Normally I just go to Amazon if I’m looking for a book, but that’s more likely
+because that’s what I am used to. Check out my test Library
+<a href="http://books.google.com/books?as_list=BDYjGJ9gQiI2fwZ2RhK_5ARoUEnPi_37Mmen-Zjyn9rNza5Y7yew&amp;hl=en">here</a></p>
+
+<p><img src="http://lh6.google.com/timothy.broder/RvCD9fREiyI/AAAAAAAAMQ4/Rm4fglWiqd4/s400/mylibrary.jpg?imgdl=1" alt="" /></p>
+
+<p>Pros</p>
+
+<ul>
+<li>Search doesn’t always return what I want. Sometimes I had to go find the ISBN and use that</li>
+<li>Very fast searching</li>
+<li>Once books are added to the library, you can search the text within those books and get a preview</li>
+<li>Has List view and cover view. The list view has a link to Add Labels, Write a Review, and More Editions</li>
+<li>Links to buy the book from Amazon, Barns &amp; Noble, Booksense, or Froogle</li>
+<li>Can look for the book in a library</li>
+<li>Reviews from all over the internet (shows 10)</li>
+<li>References from all over the internet (shows 10)</li>
+<li>References from other books</li>
+<li>Links to other editions</li>
+<li>References from scholarly works</li>
+<li>Can share list as an RSS feed</li>
+<li>No need to sign up if you already have a Google account</li>
+<li>Unlimited books</li>
+</ul>
+
+<p>Cons</p>
+
+<ul>
+<li>limited preview, I know other services don’t even offer a preview, but its such a tease</li>
+<li>The library didn’t seem to be finding good results. I looked up a few books that I know are in the library up the street and it wasn’t finding them.</li>
+<li>No user reviews</li>
+<li>Only export format is RSS</li>
+<li>Can only import by ISBN by typing a list or copy/paste</li>
+<li>Need a Google account</li>
+</ul>
+
+<p><strong>LibraryThing</strong><br />
+I had initially been turned off by this one because the UI seemed clunky and
+was sluggish when I first tested it out. A lot of this has changed. Check out
+my test library <a href="http://www.librarything.com/catalog/broderboy">here</a></p>
+
+<p><img src="http://lh6.google.com/timothy.broder/RvCD9fREizI/AAAAAAAAMRA/rPQTBXANWPg/s400/librarything.jpg?imgdl=1" alt="" /></p>
+
+<p>Pros</p>
+
+<ul>
+<li>If you really like Amazon (me), then using that as the database is a pro</li>
+<li>Good recommendations. The recommendations were pretty spot on. There are books on the list that I have been meaning to read for a while now (that I have not yet added)</li>
+<li>Lots of “Find At” (buy) options: Abebooks, Alibris, Amazon, Barnes &amp; Noble, BookFinder, BookSense, Worldcat, and more</li>
+<li>The size differences and bolding in the tag cloud make it pretty easy to spot trends</li>
+<li>Reviews by users</li>
+<li>I love the book swapping links</li>
+<li>Good rating system (out of 5)</li>
+<li>Links to related Wikipedia articles</li>
+<li>Lots of options for blog cloud</li>
+<li>Can link with other social sites: Facebook, Digg, etc</li>
+</ul>
+
+<p>Cons</p>
+
+<ul>
+<li>only searches Amazon of the Library of congress</li>
+<li>You can only save 200 books. Lame. They charge $10/year or $25/lifetime to store unlimited books</li>
+<li>The Display styles of A, B, C, D, E are confusing if you don’t go look up what they mean</li>
+<li>The “click on cover” menu takes a little while to get used to</li>
+<li>Blog cloud is static</li>
+<li>Has a lot of social aspects, but no “Friends”</li>
+</ul>
+
+<p>LibraryThing Blog widget:</p>
+
+<p><strong>Shelfari</strong><br />
+This is the service I originally went with. Check out my main shelf
+<a href="http://www.shelfari.com/broderboy/shelf">here</a></p>
+
+<p><img src="http://lh6.google.com/timothy.broder/RvCD9fREi0I/AAAAAAAAMRI/GZLVbfjMVig/s400/shelfari.jpg?imgdl=1" alt="" /></p>
+
+<p>Pros</p>
+
+<ul>
+<li>Multiple shelves</li>
+<li>Friends and groups, seems more social then the other two. (LibraryThing links to social aspects, but doesn’t have them as built in as Shelfari)</li>
+<li>Quite pretty</li>
+<li>Member reviews and Amazon reviews (linked separately)</li>
+<li>Can write notes (different from reviews) about each book or a shelf in general</li>
+</ul>
+
+<p>Cons</p>
+
+<ul>
+<li>Requires Flash</li>
+<li>Can only buy from Amazon</li>
+<li>Tag cloud doesn’t have enough difference in size</li>
+<li>Ads at the bottom of each page</li>
+<li>Has social aspect of friends, but doesn’t reach out to other social sites</li>
+</ul>
+
+<p>Shelfari Blog Widget:</p>
+
+<p>All in all I think I may stick with Shelfari. Yes My Library was the fastest
+for searching, and did relate the books to the most external sources, but
+sometimes it took a little longer to find the book I was looking for in the
+list. My searches in Shelfari, while slower always had the book I wanted in
+the top 3 results. I really like the recommendation and book swapping features
+of LibraryThing. What sold me on Shelfari and continues to do so, is the
+multiple shelves. I have a shelf for books I own and have read, a shelf for
+books I own but have not read, and a shelf for books I would like to buy. I
+just really like breaking it up this way. The only thing that could make this
+aspect better, would be if I could like my third list to my Amazon wish list.</p>
+</section>
+
+
+</article>
+<article class="post" role="article">
+    
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2007/09/rest-in-peace-robert-jordan.html">Rest in Peace Robert Jordan</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2007-09-18T10:55:00+00:00" pubdate>
+                      <span class='month'>Sep</span> <span class='day'>18th</span> <span class='year'>2007</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                        <span><a href="/2007/09/rest-in-peace-robert-jordan.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2007/09/rest-in-peace-robert-jordan.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-url="https://www.timbroder.com/2007/09/rest-in-peace-robert-jordan.html"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>Alas and woes, one of my favorite authors, <a href="http://www.dragonmount.com/RobertJordan/">Robert
+Jordan</a> has passed away. RJ is the
+author of the magnificent <a href="http://en.wikipedia.org/wiki/The_Wheel_of_Time">The Wheel of
+Time</a> Series. The series
+currently had 11 books plus a prequel. Jordan was feverishly working on the
+12th and final book entitled A Memory of Light. My old Roommate
+<a href="http://www.shelfari.com/Kitster">Kit</a> got me into it and though I had
+previously tried the series when I was about 10 I didn't get into it, this
+time around I instantly fell in love with The Eye of the World (first book). I
+put RJ's work on the same level as Tolkien, who is my all time favorite
+author. Robert Jordan came to "dominate the world that Tolkien began to reveal
+to us." One of the words at the bottom of gpowered.net comes from a reference
+to the main character, Rand.</p>
+
+<p>RJ, you gave me a great world to escape this one into. I will miss you dearly.
+Rest in Peace and become a Memory of Light.</p>
+</section>
+
+
+</article>
+<article class="post" role="article">
+    
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2007/09/google-acquires-postini.html">Google acquires Postini</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2007-09-16T17:31:00+00:00" pubdate>
+                      <span class='month'>Sep</span> <span class='day'>16th</span> <span class='year'>2007</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                        <span><a href="/2007/09/google-acquires-postini.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2007/09/google-acquires-postini.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-url="https://www.timbroder.com/2007/09/google-acquires-postini.html"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>Google has acquired <a href="http://www.postini.com/index.php">Postini</a> to better
+improve Google Apps.</p>
+
+<p>A blurb from Postini's website:<br />
+<em>With Postini Solutions, you can secure all of your electronic communications
+- email, instant messaging and the web – and manage your company's
+communication policies from one central location. Postini Solutions can also
+make it easy to meet your archiving and encryption needs.</em></p>
+
+<p>Things I would like to see come out of this:<br />
+* The ability to encrypt Gmail messages and Google Docs without having to use
+greasemonkey<br />
+* A Google API to encrypt files and transfers in your own application or site<br />
+* (Ad?) subsidized access to Postini services</p>
+
+<p>The question on the tip of my tongue is, is Postini going to remain a separate
+entity though owned by Google, or are its services going to be completely
+integrated into Google's services?</p>
+</section>
+
+
+</article>
+<article class="post" role="article">
+    
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2007/09/gme-914-feature-release.html">GME 9/14 Feature Release</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2007-09-16T17:21:00+00:00" pubdate>
+                      <span class='month'>Sep</span> <span class='day'>16th</span> <span class='year'>2007</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                            <span class="poop2">
+                        <a href="https://www.timbroder.com/blog/tags/GME">#GME</a>
+                            </span>
+                <span><a href="/2007/09/gme-914-feature-release.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2007/09/gme-914-feature-release.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-url="https://www.timbroder.com/2007/09/gme-914-feature-release.html"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>A new version of the <a href="http://editor.googlemashups.com">Google Mashup Editor</a>
+was released on Friday. Highlights of new features include:<br />
+* Ratings and Labels for external feeds<br />
+* Now uses GWT 1.4 (newest version)<br />
+* New "Save" event. List and item modules throw a save event when new entries
+are added to a feed<br />
+* Smarter loading of external libraries<br />
+* Documentation and samples were updated to support new features</p>
+
+<p>Bug fix highlights:<br />
+* Auto-complete can now be used when entry has a coma<br />
+* "nowrap" style for blue-theme CSS class was removed<br />
+* Documentation links in the editor now point to the correct docs<br />
+* Source highlighting in the editor was fixed</p>
+
+<p>For the complete list, check out this
+<a href="http://googlemashupeditor.blogspot.com/2007/09/more-new-stuff-914-feature-release.html">post</a></p>
+</section>
+
+
+</article>
+<article class="post" role="article">
+    
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2007/09/playing-halo-3-on-imax.html">Playing Halo 3 on IMAX!</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2007-09-16T16:12:00+00:00" pubdate>
+                      <span class='month'>Sep</span> <span class='day'>16th</span> <span class='year'>2007</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                        <span><a href="/2007/09/playing-halo-3-on-imax.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2007/09/playing-halo-3-on-imax.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="121007806"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>Completely off topic, but I had to share. Last Thursday I had the amazing
+privilege to play Halo 3 on the Lincoln Center IMAX Screen. It was amazing.
+For those of you that don't know, the Lincoln center IMAX screen is
+70-something feet tall. The master chief was bigger then me. My buddy who got
+the tickets was on line around 6:30, I shower up around 8 or so (they were
+only letting the first 200 people play), and we got into the theater around
+9pm.</p>
+
+<p>Joe Tung and Luke started off by running through a campaign demo, showing off
+the saved video features, and blowing stuff up with Forge. The campaign demo
+we saw was 'The Storm' which had never been seen before. They fought through
+some baddies but turned off the demo as a gigantic spider mech came on to the
+screen, I guess we have to wait a few more days to see the rest of that...</p>
+
+<p>After the demos they let us play some slayer! 8 people at a time in 6 min
+rounds, I was #164 so I had to wait a bit, no worries though, seeing the other
+games on the giant screen made it worth the wait. When I got to play though,
+they only let 6 gamers onto the consoles... why? Joe and Luke had decided to
+join the fun! Playing Halo 3 against a producer and developer... super cool!
+I, of course, had my ass royally handed to me. I wish I had some photos to
+show but the security was pretty tight. In retrospect I should have tried to
+take a few on my way out. I had played and had nothing to lose... oh well...</p>
+
+<p>Halo 3 can't come soon enough (and I actually have a 360 now)...</p>
+</section>
+
+
+</article>
+<nav>
+    <a href="https://www.timbroder.com/blog/categories/30">Newer Posts</a><br />
+    <a href="https://www.timbroder.com/blog/categories/32">Older Posts</a><br />
+</nav>
+
+    </main>
+
+
+                        <footer class="site-footer clearfix">
+    <section>
+            <span class="tag size2"><a href="/blog/tags/"></a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/AVSpeechSynthesizer">AVSpeechSynthesizer</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Ai">Ai</a></span>
+            &nbsp;
+        <span class="tag size8"><a href="/blog/tags/Android">Android</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Atom">Atom</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Avengers">Avengers</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Batman">Batman</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Batman%20Inc.">Batman Inc.</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Batman%20and%20Robin">Batman and Robin</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/CKEditor">CKEditor</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/Calibre">Calibre</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Cheese">Cheese</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/ComicCon">ComicCon</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/CoreData">CoreData</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/DRM">DRM</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/Docs%20Spreadsheets">Docs Spreadsheets</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/ESI">ESI</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Fontis">Fontis</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/GME">GME</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/GTD">GTD</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/GWT">GWT</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Garlic">Garlic</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/Google">Google</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/Google%20Reader">Google Reader</a></span>
+            &nbsp;
+        <span class="tag size9"><a href="/blog/tags/HOWTO">HOWTO</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Hulu">Hulu</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Internet%20Explorer">Internet Explorer</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/JIRA">JIRA</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/Kindle">Kindle</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/Mashups">Mashups</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Memcached">Memcached</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/OmniFocus">OmniFocus</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Oracle">Oracle</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/PHPUnit">PHPUnit</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/PostgreSQL">PostgreSQL</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/RSS">RSS</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Redmine">Redmine</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Remember%20the%20Milk">Remember the Milk</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Ruby">Ruby</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/SQL">SQL</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Shared%20web%20hosting%20service">Shared web hosting service</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Siri">Siri</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Skype">Skype</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Sony%20Reader">Sony Reader</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Stan%20Lee">Stan Lee</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/TDD">TDD</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Terminator">Terminator</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/TinyMCE">TinyMCE</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Vibrams">Vibrams</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Virtual%20hosting">Virtual hosting</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Virtual%20private%20server">Virtual private server</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Walking%20Dead">Walking Dead</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Web%20hosting">Web hosting</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/YUI">YUI</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Zend">Zend</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/adwhirl">adwhirl</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/adwords">adwords</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/aiaio">aiaio</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/ajax">ajax</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/alfred">alfred</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/analytics">analytics</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/angularjs">angularjs</a></span>
+            &nbsp;
+        <span class="tag size4"><a href="/blog/tags/appengine">appengine</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/apple">apple</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/applepay">applepay</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/apps">apps</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/autocomplete">autocomplete</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/automation">automation</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/beta">beta</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/bit.ly">bit.ly</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/blackberry">blackberry</a></span>
+            &nbsp;
+        <span class="tag size4"><a href="/blog/tags/blogger">blogger</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/bookmarks">bookmarks</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/brightkite">brightkite</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/calendar">calendar</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/chrome">chrome</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/coffee">coffee</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/css">css</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/debug">debug</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/digg">digg</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/django">django</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/drafts">drafts</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/dropbox">dropbox</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/encryption">encryption</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/engagement">engagement</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/events">events</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/facebook">facebook</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/firefox">firefox</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/friendfeed">friendfeed</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/gadgets">gadgets</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/gchat">gchat</a></span>
+            &nbsp;
+        <span class="tag size4"><a href="/blog/tags/gdata">gdata</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/gdrive">gdrive</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/gears">gears</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/git">git</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/github">github</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/gmail">gmail</a></span>
+            &nbsp;
+        <span class="tag size5"><a href="/blog/tags/gpowered.net">gpowered.net</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/greasemonkey">greasemonkey</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/groups">groups</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/homebrew">homebrew</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/instapaper">instapaper</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/interfacebuilder">interfacebuilder</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/ios">ios</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/ipad">ipad</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/iphone">iphone</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/javascript">javascript</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/jira">jira</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/jquery">jquery</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/json">json</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/kids">kids</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/laravel">laravel</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/launch%20center%20pro">launch center pro</a></span>
+            &nbsp;
+        <span class="tag size5"><a href="/blog/tags/magento">magento</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/maps">maps</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/mercurial">mercurial</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/mock">mock</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/mongodb">mongodb</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/music">music</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/mysql">mysql</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/netbook">netbook</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/nosql">nosql</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/objective%20c">objective c</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/oil">oil</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/omnifocus">omnifocus</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/opensocial">opensocial</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/opensource">opensource</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/os">os</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/osx">osx</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/pesto">pesto</a></span>
+            &nbsp;
+        <span class="tag size7"><a href="/blog/tags/php">php</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/picasa%20web">picasa web</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/podcasts">podcasts</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/powershell">powershell</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/primal">primal</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/productivity">productivity</a></span>
+            &nbsp;
+        <span class="tag size6"><a href="/blog/tags/python">python</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/pythonista">pythonista</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/quick">quick</a></span>
+            &nbsp;
+        <span class="tag size4"><a href="/blog/tags/reader">reader</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/realm">realm</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/regex">regex</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/running">running</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/search">search</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/security">security</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/seo">seo</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/sketch">sketch</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/skynet">skynet</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/sleep">sleep</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/socialgraph">socialgraph</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/solr">solr</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/startup">startup</a></span>
+            &nbsp;
+        <span class="tag size4"><a href="/blog/tags/swift">swift</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/testing">testing</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/textmate">textmate</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/timbroder.com">timbroder.com</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/todoist">todoist</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/twitter">twitter</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/twitter2gTalk">twitter2gTalk</a></span>
+            &nbsp;
+        <span class="tag size6"><a href="/blog/tags/ubuntu">ubuntu</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/urls">urls</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/vagrant">vagrant</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/varnish">varnish</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/virtualenv">virtualenv</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/winamp">winamp</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/windows">windows</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/wordpress">wordpress</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/xbox">xbox</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/xcode">xcode</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/xml">xml</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/yahoo%20pipes">yahoo pipes</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/youtube">youtube</a></span>
+            &nbsp;
+    
+    </section>
+    <section class="copyright">
+        Copyright &copy; 2007-2018 -
+         Tim Broder -         <span class="credit">Powered by <a href="http://sculpin.io">Sculpin</a></span>
+    </section>
+</footer>
+                <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="https://www.timbroder.com/themes/broderboy/deadfish/assets/js/index.js"></script>
+<script type="text/javascript" src="https://www.timbroder.com/themes/broderboy/deadfish/assets/js/rainbow.min.js"></script>
+<script type="text/javascript" src="https://www.timbroder.com/themes/broderboy/deadfish/assets/js/rlns.min.js"></script>
+
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'timbrodercom'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-17099661-1', 'auto');
+    ga('send', 'pageview');
+
+</script>    </div>
+</body>
+</html>

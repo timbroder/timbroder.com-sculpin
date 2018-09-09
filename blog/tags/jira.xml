@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[timbroder.com]]></title>
+    <link href="https://www.timbroder.com/blog/tags/jira.xml" rel="self"/>
+    <link href="https://www.timbroder.com/"/>
+    <updated>2018-09-09T12:21:33+00:00</updated>
+    <id>https://www.timbroder.com/</id>
+            <author>
+            <name><![CDATA[Tim Broder]]></name>            <email><![CDATA[timothy.broder@gmail.com]]></email>        </author>
+        <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[Jira Filter Subscriptions]]></title>
+            <link href="https://www.timbroder.com/2016/02/jira-filter-subscriptions.html"/>
+            <updated>2016-02-22T23:00:00+00:00</updated>
+            <id>https://www.timbroder.com/2016/02/jira-filter-subscriptions.html</id>
+            <content type="html"><![CDATA[<p>I'm working in a Jira that I don't have admin access to. It's been a while since that's happened!</p>
+
+<p>I wanted a way to get notified if anyone in the system opens a new ticket, so I could decide if I wanted to watch it or not. Jira makes this fairly straightforward with filters and subscriptions.</p>
+
+<p>First, create a filter that picks up any tickets created in the last hour. I named mine "Recently Created"</p>
+
+<p><img src="https://farm2.staticflickr.com/1529/24572160063_d61b56b982_z_d.jpg" alt="" /></p>
+
+<p>Then, click details, and new subscription</p>
+
+<p><img src="https://farm2.staticflickr.com/1488/25172705536_1b486d9f4c_z_d.jpg" alt="" /></p>
+
+<p>Setup the schedule to be every 30 mins, 24 hours a day, and to <strong>not</strong> email you if there are no new issues</p>
+
+<p><img src="https://farm2.staticflickr.com/1644/24831359639_ab75c74611_z_d.jpg" alt="" /></p>
+
+<p>You'll get a well formatted email if there are new issues, and you can cherry pick the ones you want to watch</p>
+]]></content>
+        </entry>
+    </feed>

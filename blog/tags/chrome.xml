@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[timbroder.com]]></title>
+    <link href="https://www.timbroder.com/blog/tags/chrome.xml" rel="self"/>
+    <link href="https://www.timbroder.com/"/>
+    <updated>2018-09-09T12:21:33+00:00</updated>
+    <id>https://www.timbroder.com/</id>
+            <author>
+            <name><![CDATA[Tim Broder]]></name>            <email><![CDATA[timothy.broder@gmail.com]]></email>        </author>
+        <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[First Google Chrome Extensions]]></title>
+            <link href="https://www.timbroder.com/2009/03/first-google-chrome-extensions.html"/>
+            <updated>2009-03-19T17:11:00+00:00</updated>
+            <id>https://www.timbroder.com/2009/03/first-google-chrome-extensions.html</id>
+            <content type="html"><![CDATA[<p>Extensions <a href="http://dev.chromium.org/developers/design-documents/extensions/howto">are coming</a> for chrome.</p>
+
+<p>Google’s Matt Cutts <a href="http://www.mattcutts.com/blog/write-chrome-extension/">in a blog post says</a>: “Extensions currently have very Greasemonkey-like
+functionality: you identify which web pages should be modified, plus
+JavaScript to be added to those pages. By default, the extension’s JavaScript
+runs after the page loads, but you can specify that the extension’s JavaScript
+should run before the page loads. Right now, you can only load one JS file,
+but that could change in the future. You also can’t currently load Cascading
+Style Sheets (CSS), but that might also change.”</p>
+
+<p>Personally, I think they should just port greasemonkey directly so chrome can
+take advantage off all the <a href="http://userscripts.org/">existing scripts
+</a></p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Google’s JavaScript/ Chrome Experiments Showcase]]></title>
+            <link href="https://www.timbroder.com/2009/03/googles-javascript-chrome-experiments.html"/>
+            <updated>2009-03-19T17:08:00+00:00</updated>
+            <id>https://www.timbroder.com/2009/03/googles-javascript-chrome-experiments.html</id>
+            <content type="html"><![CDATA[<p>Google at <a href="http://www.chromeexperiments.com/">ChromeExperiments.com</a> released
+a showcase site for JavaScript experiments especially aimed as promotion to
+demonstrate their own Chrome browser’s capabilities.  From games to 3D
+graphics, these demo's really show off what the chrome javascript engine can
+do</p>
+
+<p><img src="http://1.bp.blogspot.com/_Ng3QbVQfLZ8/ScJ8EmTWaKI/AAAAAAAAbGE/_Oq790Qhn5Q/s1600-h/chrome.JPG" alt="" /></p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Chrome: Don&#039;t Clog the Tubes!]]></title>
+            <link href="https://www.timbroder.com/2008/09/chrome-dont-clog-tubes.html"/>
+            <updated>2008-09-08T19:06:00+00:00</updated>
+            <id>https://www.timbroder.com/2008/09/chrome-dont-clog-tubes.html</id>
+            <content type="html"><![CDATA[<p>A buddy at work mentioned this. There are also a lot more listed over at
+<a href="http://lifehacker.com/5045164/google-chromes-full-list-of-special-about-pages">lifehacker</a></p>
+
+<p><a href="http://3.bp.blogspot.com/_Ng3QbVQfLZ8/SMV4afne6pI/AAAAAAAATC8/PbOxUVJEpkI/s1600-h/clog.JPG">![](http://3.bp.blogspot.com/_Ng3QbVQfLZ8/SMV4afne6pI/AAAAAAAATC8/PbOxUVJEpkI
+/s400/clog.JPG)</a></p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[WINE Updates with Better Chrome Support]]></title>
+            <link href="https://www.timbroder.com/2008/09/wine-updates-with-better-chrome-support.html"/>
+            <updated>2008-09-08T14:41:00+00:00</updated>
+            <id>https://www.timbroder.com/2008/09/wine-updates-with-better-chrome-support.html</id>
+            <content type="html"><![CDATA[<p>via <a href="http://lifehacker.com/5046581/wine-updates-with-better-chrome-support">lifehacker</a>: I'll be trying this when I get home.</p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Chrome coming to Android?]]></title>
+            <link href="https://www.timbroder.com/2008/09/chrome-coming-to-android.html"/>
+            <updated>2008-09-04T13:24:00+00:00</updated>
+            <id>https://www.timbroder.com/2008/09/chrome-coming-to-android.html</id>
+            <content type="html"><![CDATA[<p><a href="http://androidcommunity.com/google-chrome-coming-to-android-20080903/">Android Community</a> and a few other blogs have stated that Chrome will be
+making its way to android, but aside from the processing stack and improved
+javascriptability (yes I just made up a word), is it really going to be the
+full chrome app everyone is playing with or just a tweaked out webkit (which
+we already knew was going to be the native Android browser)</p>
+]]></content>
+        </entry>
+    </feed>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[timbroder.com]]></title>
+    <link href="https://www.timbroder.com/blog/tags/blackberry.xml" rel="self"/>
+    <link href="https://www.timbroder.com/"/>
+    <updated>2018-09-09T12:21:33+00:00</updated>
+    <id>https://www.timbroder.com/</id>
+            <author>
+            <name><![CDATA[Tim Broder]]></name>            <email><![CDATA[timothy.broder@gmail.com]]></email>        </author>
+        <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[5 Reasons Why RIM Should Make A BlackBerry That Runs Android]]></title>
+            <link href="https://www.timbroder.com/2008/06/5-reasons-why-rim-should-make.html"/>
+            <updated>2008-06-02T23:21:00+00:00</updated>
+            <id>https://www.timbroder.com/2008/06/5-reasons-why-rim-should-make.html</id>
+            <content type="html"><![CDATA[<p>I'd really enjoy this. 1) I'm obviously addicted to my crackberry. 2) I'm not
+sure how I feel about lots of typing in a touch screen. I played with the HTC
+Touch over the weekend. It was cool, it was pretty, but the screen wasn't as
+responsive as I would have hoped. We'll see what HTC can do with the
+<a href="http://www.htc.com/www/product.aspx?id=46278">Diamond</a> and the
+<a href="http://androidcommunity.com/first-live-images-of-fullscreen-android-demo-20080528/">Dream</a></p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[New Work Blackberry]]></title>
+            <link href="https://www.timbroder.com/2008/05/new-work-blackberry.html"/>
+            <updated>2008-05-05T21:31:00+00:00</updated>
+            <id>https://www.timbroder.com/2008/05/new-work-blackberry.html</id>
+            <content type="html"><![CDATA[<p>Got a new blackberry at work today: The
+<a href="http://www.blackberry8800series.com/blackberry8820/">8820</a>. Much nicer then
+my old <a href="http://na.blackberry.com/eng/devices/device-detail.jsp?navId=H0,C63,P65">clunker</a> which... err... broke... yeah we'll go with
+broke. Getting the curve when it comes out on Friday for Verizon. I can't
+install any applications on my work one, but as soon as I get my personal one,
+Google Blackberry app reviews will be pouring out =)</p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[test from my blackberry]]></title>
+            <link href="https://www.timbroder.com/2008/04/test-from-my-blackberry.html"/>
+            <updated>2008-04-10T19:23:00+00:00</updated>
+            <id>https://www.timbroder.com/2008/04/test-from-my-blackberry.html</id>
+            <content type="html"><![CDATA[<p>If you are reading this. I was able to post from my work blackberry, neat</p>
+
+<p><em>(Waiting for a baby shower, I mean meeting, to start. Currently guarding the
+cake) Mmmmm cake</em></p>
+]]></content>
+        </entry>
+    </feed>

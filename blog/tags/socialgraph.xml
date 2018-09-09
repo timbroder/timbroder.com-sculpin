@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[timbroder.com]]></title>
+    <link href="https://www.timbroder.com/blog/tags/socialgraph.xml" rel="self"/>
+    <link href="https://www.timbroder.com/"/>
+    <updated>2018-09-09T12:21:33+00:00</updated>
+    <id>https://www.timbroder.com/</id>
+            <author>
+            <name><![CDATA[Tim Broder]]></name>            <email><![CDATA[timothy.broder@gmail.com]]></email>        </author>
+        <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[Social Badges]]></title>
+            <link href="https://www.timbroder.com/2008/06/social-badges.html"/>
+            <updated>2008-06-20T00:25:00+00:00</updated>
+            <id>https://www.timbroder.com/2008/06/social-badges.html</id>
+            <content type="html"><![CDATA[<p>So, for whatever reason. I never added my social network badges to this site.
+I should have, a long time ago. Feel free to follow me on
+<a href="http://friendfeed.com/broderboy">FriendFeed</a> or
+<a href="http://twitter.com/broderboy">Twitter</a>, be my friend on
+<a href="http://www.facebook.com/profile.php?id=17500954">Facebook</a> or
+<a href="http://www.linkedin.com/pub/5/749/644">linkedin</a>, see what I've
+<a href="http://www.digg.com/users/timothybroder">Dugg</a> or
+<a href="http://www.last.fm/user/broderboy/">listened</a> to, take a look at my
+<a href="http://picasaweb.google.com/timothy.broder">photos</a>, and more. Will definitly
+be seeing how this effects my <a href="http://code.google.com/apis/socialgraph/">social
+graph</a></p>
+
+<p><a href="http://friendfeed.com/broderboy"><img src="http://gpowered.net/php/images/internal.png" alt="FriendFeed" /></a> <a href="http://twitter.com/broderboy"><img src="http://gpowered.net/php/images/twitter.png" alt="Twitter" /></a>
+<a href="http://blog.gpowered.net/"><img src="http://gpowered.net/php/images/blog.png" alt="Blog" /></a> 
+<a href="http://www.facebook.com/profile.php?id=17500954"><img src="http://gpowered.net/php/images/facebook.png" alt="Facebook" /></a> <a href="http://www.digg.com/users/timothybroder"><img src="http://gpowered.net/php/images/digg.png" alt="Digg" /></a> <a href="http://www.google.com/reader/shared/16162999404522159936"><img src="http://gpowered.net/php/images/googlereader.png" alt="Google Reader" /></a> <a href="http://www.last.fm/user/broderboy/"><img src="http://gpowered.net/php/images/lastfm.png" alt="Last.fm" /></a> <a href="http://picasaweb.google.com/timothy.broder">![Picasa Web Albums](http://gpowered.net/php/imag
+es/picasa.png)</a> <a href="http://www.linkedin.com/pub/5/749/644">![LinkedIn](http:
+//gpowered.net/php/images/linkedin.png)</a> <a href="http://www.librarything.com/profile/broderboy"><img src="http://gpowered.net/php/images/librarything.png" alt="LibraryThing" /></a> <a href="http://www.pandora.com/people/timothy.broder">![Pandora](http://gpowered.net/php/imag
+es/pandora.png)</a> <a href="http://del.icio.us/broderboy"><img src="http://gpowered.net/php/images/delicious.png" alt="del.icio.us" /></a> 
+<a href="http://broderboy.stumbleupon.com/"><img src="http://gpowered.net/php/images/stumbleupon.png" alt="StumbleUpon" /></a> <a href="http://broderboy.tumblr.com/"><img src="http://gpowered.net/php/images/tumblr.png" alt="Tumblr" /></a> <a href="http://www.youtube.com/profile?user=broderboy">![YouTube](http://gpowered.net/php/images/youtub
+e.png)</a> <a href="http://pownce.com/broderboy/">![Pownce](http://gpowe
+red.net/php/images/pownce.png)</a></p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Blogger adds bloggroll]]></title>
+            <link href="https://www.timbroder.com/2008/04/blogger-adds-bloggroll.html"/>
+            <updated>2008-04-03T22:37:00+00:00</updated>
+            <id>https://www.timbroder.com/2008/04/blogger-adds-bloggroll.html</id>
+            <content type="html"><![CDATA[<p>[Blogger](http://buzz.blogger.com/2008/04/blog-list-scheduled-post-publishing-
+on.html) in <a href="http://draft.blogger.com/">draft</a> added 2 new features today: a
+blogroll page element, and post scheduling. Post scheduling is pretty useful,
+you can write up your post, set the time (in the future) that you want it to
+post, and Blogger will do it automatically. The second feature, a blogroll, I
+would like a lot more if it was done better. The main thing I like about it is
+that it integrates with Google Reader so if I'm linking to my friend's blogs,
+I just scroll to my 'Friends' Tag and add them. The thing I don't like however
+is that it does not support <a href="http://gmpg.org/xfn/">XFN</a> or
+<a href="http://gmpg.org/xfn/">FOAF</a> therefore not getting picked up by the
+<a href="http://code.google.com/apis/socialgraph/docs/">SocialGraph API</a>. For example,
+if I linked to my <a href="http://maybe-not.net/" title="Laura's blog">girlfriend's blog</a>,
+the blogroll just lists this as</p>
+
+<pre><code data-language="HTML">&lt;a href='http://maybe-not.net/' target='_blank'&gt;Maybe-Not&lt;/a&gt;
+</code></pre>
+
+<p>A better link, for example from a <a href="http://www.wordpress.org">wordpress</a>
+blogroll would look something like</p>
+
+<pre><code data-language="HTML">&lt;a href="http://maybe-not.net/" rel="friend sweetheart" title="Laura&amp;#8217;s blog"&gt;Maybe-Not&lt;/a&gt;&lt; 
+</code></pre>
+
+<p>...and get picked up but the SocialGraph as having a relationship to me.
+Blogger is great and I love using it, but the features of wordpress are
+blowing it out of the water.</p>
+]]></content>
+        </entry>
+    </feed>

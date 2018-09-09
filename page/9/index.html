@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>
+                        Home &mdash; timbroder.com
+            </title>
+    <meta name="description" content="Home" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="alternate" type="application/rss+xml" title="timbroder.com &raquo; Feed" href="https://feeds.feedburner.com/timbroder" />
+    
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />        <link href="https://www.timbroder.com/themes/broderboy/deadfish/assets/css/screen.css" rel="stylesheet" media="screen">
+    <link href="https://www.timbroder.com/themes/broderboy/deadfish/assets/css/tag_cloud.css" rel="stylesheet" media="screen">
+    <link href="https://www.timbroder.com/themes/broderboy/deadfish/assets/css/twilight.css" rel="stylesheet" media="screen">
+        <script>
+(function(a,b){function d(a,b){return a===null?b==="null":a===undefined?b==="undefined":a.is&&a instanceof f?b==="element":Object.prototype.toString.call(a).toLowerCase().indexOf(b)>7}function c(a){var b,e,f,g,h,i,l,m,n;if(a instanceof c)return a;d(a,"array")||(a=String(a).replace(/\s/g,"").toLowerCase().match(/(?:\+,|[^,])+/g));for(b=0,e=a.length;b<e;++b){d(a[b],"array")||(a[b]=String(a[b]).match(/(?:\+\/|[^\/])+/g)),i=[],f=a[b].length;while(f--){var l=a[b][f];h={jwertyCombo:String(l),shiftKey:!1,ctrlKey:!1,altKey:!1,metaKey:!1},d(l,"array")||(l=String(l).toLowerCase().match(/(?:(?:[^\+])+|\+\+|^\+$)/g)),g=l.length;while(g--)l[g]==="++"&&(l[g]="+"),l[g]in k.mods?h[j[k.mods[l[g]]]]=!0:l[g]in k.keys?h.keyCode=k.keys[l[g]]:m=l[g].match(/^\[([^-]+\-?[^-]*)-([^-]+\-?[^-]*)\]$/);if(d(h.keyCode,"undefined"))if(m&&m[1]in k.keys&&m[2]in k.keys){m[2]=k.keys[m[2]],m[1]=k.keys[m[1]];for(n=m[1];n<m[2];++n)i.push({altKey:h.altKey,shiftKey:h.shiftKey,metaKey:h.metaKey,ctrlKey:h.ctrlKey,keyCode:n,jwertyCombo:String(l)});h.keyCode=n}else h.keyCode=0;i.push(h)}this[b]=i}this.length=b;return this}var e=a.document,f=a.jQuery||a.Zepto||a.ender||e,g,h,i="keydown";f===e?(g=function(a,b){return a?f.querySelector(a,b||f):f},h=function(a,b){a.addEventListener(i,b,!1)},$f=function(a,b){var c=document.createEvent("Event"),d;c.initEvent(i,!0,!0);for(d in b)c[d]=b[d];return(a||f).dispatchEvent(c)}):(g=function(a,b,c){return f(a||e,b)},h=function(a,b){f(a).bind(i+".jwerty",b)},$f=function(a,b){f(a||e).trigger(f.Event(i,b))});var j={16:"shiftKey",17:"ctrlKey",18:"altKey",91:"metaKey"},k={mods:{".":16,shift:16,".":17,ctrl:17,".":18,alt:18,option:18,".":91,meta:91,cmd:91,"super":91,win:91},keys:{".":8,backspace:8,".":9,".":9,tab:9,".":13,"return":13,enter:13,".":13,pause:19,"pause-break":19,".":20,caps:20,"caps-lock":20,".":27,escape:27,esc:27,space:32,".":33,pgup:33,"page-up":33,".":34,pgdown:34,"page-down":34,".":35,end:35,".":36,home:36,ins:45,insert:45,del:45,"delete":45,".":37,left:37,"arrow-left":37,".":38,up:38,"arrow-up":38,".":39,right:39,"arrow-right":39,".":40,down:40,"arrow-down":40,"*":106,star:106,asterisk:106,multiply:106,"+":107,plus:107,"-":109,subtract:109,"=":187,equals:187,",":188,comma:188,".":190,period:190,"full-stop":190,"/":191,slash:191,"forward-slash":191,"`":192,tick:192,"back-quote":192,"[":219,"open-bracket":219,"\\":220,"back-slash":220,"]":221,"close-bracket":221,"'":222,quote:222,apostraphe:222}};l=95,n=0;while(++l<106)k.keys["num-"+n]=l,++n;l=47,n=0;while(++l<58)k.keys[n]=l,++n;l=111,n=1;while(++l<136)k.keys["f"+n]=l,++n;var l=64;while(++l<91)k.keys[String.fromCharCode(l).toLowerCase()]=l;var m=b.jwerty={event:function(a,b,e){if(d(b,"boolean")){var f=b;b=function(){return f}}a=new c(a);var g=0,h=a.length-1,i,j;return function(c){if(j=m.is(a,c,g)){if(g<h){++g;return}i=b.call(e||this,c,j),i===!1&&c.preventDefault(),g=0}else g=m.is(a,c)?1:0}},is:function(a,b,d){a=new c(a),d=d||0,a=a[d],b=b.originalEvent||b;var e,f=a.length,g=!1;while(f--){g=a[f].jwertyCombo;for(var h in a[f])h!=="jwertyCombo"&&b[h]!==a[f][h]&&(g=!1);if(g!==!1)return g}return g},key:function(b,c,e,f,i){var j=d(e,"element")||d(e,"string")?e:f,k=j===e?a:e,l=j===e?f:i;h(d(j,"element")?j:g(j,l),m.event(b,c,k))},fire:function(a,b,e,f){a=new c(a);var h=d(e,"number")?e:f;$f(d(b,"element")?b:g(b,e),a[h||0][0])},KEYS:k}})(this,typeof module!="undefined"&&module.exports?module.exports:this),jwerty.key("B,A",function(){_unicorns=document.createElement("SCRIPT"),_unicorns.type="text/javascript",_unicorns.src="http://snacksize.com/unicorn/unicorn.js?",document.getElementsByTagName("head")[0].appendChild(_unicorns)})
+</script>
+</head>
+<body class="nav-closed">
+                                        <div class="site-wrapper">
+                        <header class="main-header">
+        <div class="vertical">
+        <div class="main-header-content inner">
+            <h1 class="page-title">
+                <a href="/">
+                    timbroder.com
+                </a>
+            </h1>
+                        <h2 class="page-description">
+                <a href="/apps.html">Apps</a>
+                <a href="/projects.html">Projects</a>
+                <a href="/podcasts.html">Podcasts</a>
+                <a href="/talks.html">Talks</a>
+                            </h2>
+        </div>
+    </div>
+    </header>                            
+                    <main class="content" role="main">
+                <article class="post" role="article">
+            
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.macstories.net/stories/why-2do-is-my-new-favorite-ios-task-manager/">Why 2Do Is My New Favorite Ios Task Manager</a> ☞ </h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2015-12-11T08:25:00+00:00" pubdate>
+          <a href="https://www.timbroder.com/2015/12/why-2do-is-my-new-favorite-ios-task-manager.html">            <span class='month'>Dec</span> <span class='day'>11th</span> <span class='year'>2015</span>
+          </a>      </time>
+
+                        <span><a href="/2015/12/why-2do-is-my-new-favorite-ios-task-manager.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2015/12/why-2do-is-my-new-favorite-ios-task-manager.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-url="https://www.timbroder.com/2015/12/why-2do-is-my-new-favorite-ios-task-manager.html"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>Great review of 2Do by Viticci. If I wasn't already so invested in Omnifocus, this looks like it would be perfect.</p>
+
+<blockquote>
+  <p>2Do perfectly adapts to the way I work.</p>
+</blockquote>
+
+<p>This is THE most critical thing when choosing a task manager. Trello still maps 100% to the way I think, but Omnifocus fits seamlessly in with the way I work</p>
+</section>
+
+
+    </article>
+    <article class="post" role="article">
+        
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2015/12/new-manager-tools.html">New Manager Tools</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2015-12-09T10:45:00+00:00" pubdate>
+                      <span class='month'>Dec</span> <span class='day'>9th</span> <span class='year'>2015</span>
+                </time>
+
+                        <span><a href="/2015/12/new-manager-tools.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2015/12/new-manager-tools.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-url="https://www.timbroder.com/2015/12/new-manager-tools.html"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p><em>This article leans slightly towards Technology Management but is applicable across disciplines</em></p>
+
+<p>You've been a great senior resource, you've lead a team or a project, and you've made the decision, along with your manager to transition to some kind of management role. If you are still thinking about it, or wondering what it will be like, start here: <a href="http://firstround.com/review/this-90-day-plan-turns-engineers-into-remarkable-managers/" title="This 90-Day Plan Turns Engineers into Remarkable Managers">This 90-Day Plan Turns Engineers into Remarkable Managers</a>. This article will give you all of the thought starters your need to decide if management is something you want to pursue.</p>
+
+<p>Below are some required reading to add to your utility belt. Start taking a read through these, and make sure you block off the appropriate amount of time each week to continue your learning! This list is meant to be a starting point for new managers, not an all inclusive list of manager resources</p>
+
+<h2 id="books">Books</h2>
+
+<ul>
+<li><a href="http://www.amazon.com/Managing-Right-First-David-Baker/dp/1605440027?tag=nyen0e-20" title="Managing Right for the First Time">Managing Right for the First Time</a> - This book is intended as a field guide for first time managers, or for managers who want to begin doing a better job. <a href="https://www.recourses.com/" title="David Baker">David Baker</a> worked closely with 600+ companies and interviewed more than 10,000 employees, then summarized the findings in an interesting and eminently readable form. Read this book and you're likely to understand management and leadership like you never have before, but also learn very practical steps toward becoming a better manager and leader.</li>
+<li><a href="http://www.amazon.com/Getting-Things-Done-Stress-Free-Productivity-ebook/dp/B00KWG9M2E/ref=tmm_kin_swatch_0?qid=&amp;sr=&amp;tag=nyen0e-20&amp;_encoding=UTF8" title="Getting Things Done: The Art of Stress-Free Productivity">Getting Things Done: The Art of Stress-Free Productivity</a> - <em>Note</em>: I'm not advocating for using the GTD system. Use what works for you. However, the first half of this book is a <strong>gold mine</strong> for how to think about planning, resources, and managing your own and other's tasks. I personally do use GTD, but the lessons, and the way of thinking that this book opens up is transferable to any system. It got me <strong>thinking</strong> about planning and delegating in different and exciting ways. Read the introduction and I guarantee that you'll see scenarios you recognize and want to scream <em>"YES, YES I DEAL WITH THIS. I HATE IT! HOW DO I FIX IT?"</em></li>
+<li><a href="http://www.amazon.com/The-Personal-MBA-Master-Business/dp/1591845572?tag=nyen0e-20" title="The Personal MBA: Master the Art of Business">The Personal MBA: Master the Art of Business</a> - This book is, but isn't about MBA. It's a toolkit of how to handle various situations and grow your skill set. It's not meant to be read cover to cover, but peruse the table of contents you'll see things you want to read.</li>
+<li><a href="http://www.amazon.com/Emotional-Intelligence-Project-Managers-Outstanding/dp/0814474160?tag=nyen0e-20" title="Emotional Intelligence for Project Managers: The People Skills You Need to Achieve Outstanding Results">Emotional Intelligence for Project Managers: The People Skills You Need to Achieve Outstanding Results</a> - Great book on emotional intelligence</li>
+</ul>
+
+<h2 id="articles-to-read">Articles to read</h2>
+
+<ul>
+<li><a href="http://firstround.com/review/this-90-day-plan-turns-engineers-into-remarkable-managers/" title="This 90-Day Plan Turns Engineers into Remarkable Managers">This 90-Day Plan Turns Engineers into Remarkable Managers</a></li>
+<li><a href="https://hbr.org/1999/11/management-time-whos-got-the-monkey" title="Management Time: Who’s Got the Monkey?">Management Time: Who’s Got the Monkey?</a> - How to delegate and not be caught under a fire hose of people waiting on you</li>
+<li><a href="https://library.gv.com/meetings-that-don-t-suck-959b8b5df3a4#.qxdgj8nmx" title="Meetings that don’t suck">Meetings that don’t suck</a></li>
+<li><a href="https://hbr.org/2015/03/what-everyone-needs-to-know-about-running-productive-meetings" title="What Everyone Needs to Know About Running Productive Meetings">What Everyone Needs to Know About Running Productive Meetings</a></li>
+<li><a href="https://github.com/kyleboon/managing_engineers" title="Managing Engineers Reading List">Managing Engineers Reading List</a> on Github</li>
+<li><a href="https://hbr.org/2015/08/tough-love-performance-reviews-in-10-minutes" title="Tough Love Performance Reviews, in 10 Minutes">Tough Love Performance Reviews, in 10 Minutes</a></li>
+</ul>
+
+<h2 id="websites-to-subscribe-to">Websites to subscribe to</h2>
+
+<ul>
+<li><a href="https://hbr.org/" title="Harvard Business Review">Harvard Business Review</a> - I subscribe to these tags and have learned SO much: <a href="https://hbr.org/topic/coaching" title="Coaching">Coaching</a>, <a href="https://hbr.org/topic/decision-making" title="Decision Making">Decision Making</a>, <a href="https://hbr.org/topic/leadership" title="Leadership">Leadership</a>, <a href="https://hbr.org/topic/leadership" title="Leadership">Leadership</a>, <a href="https://hbr.org/topic/motivating-people?" title="Motivating People">Motivating People</a>, <a href="https://hbr.org/topic/leading-teams" title="Leading Teams">Leading Teams</a>, <a href="https://hbr.org/topic/managing-people" title="Managing People">Managing People</a>, <a href="https://hbr.org/topic/communication" title="Communication">Communication</a>, <a href="https://hbr.org/topic/managing-yourself" title="Managing Yourself">Managing Yourself</a>, <a href="https://hbr.org/topic/productivity" title="Productivity">Productivity</a>, <a href="https://hbr.org/topic/work-life-balance" title="Work-Life Balance">Work-Life Balance</a></li>
+<li><a href="http://softwareleadweekly.com/" title="Software Lead Weekly">Software Lead Weekly</a></li>
+<li><a href="http://blog.precipice.org/" title="Marc Hedlund's Blog">Marc Hedlund's Blog</a> - This hasn't been updated in a few years, but skim the article list. Lots of good things</li>
+<li><a href="http://randsinrepose.com/" title="http://randsinrepose.com/">http://randsinrepose.com/</a></li>
+</ul>
+
+<h2 id="listening">Listening</h2>
+
+<ul>
+<li><a href="https://www.manager-tools.com/all-podcasts?field_content_domain_tid=4" title="Manager Tools Podcast">Manager Tools Podcast</a> - A huge library of how to deal with any situation. Skim the list, there will be something in there you want to learn about. Don't forget to subscribe!</li>
+</ul>
+
+<p>*Thanks to <a href="https://twitter.com/mshmsh5000" title="mshmsh5000">mshmsh5000</a> and <a href="https://twitter.com/jessicalippke" title="jessicalippke">jessicalippke</a> for input
+If you have anything that should be on this starter list, let me know!</p>
+</section>
+
+
+    </article>
+    <article class="post" role="article">
+            
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.omnigroup.com/blog/omnifocus-for-mac-ready-for-push">Omnifocus For Mac V2.4 Ready For A Push - The Omni Group</a> ☞ </h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2015-12-07T15:42:00+00:00" pubdate>
+          <a href="https://www.timbroder.com/2015/12/omnifocus-for-mac-v2.html">            <span class='month'>Dec</span> <span class='day'>7th</span> <span class='year'>2015</span>
+          </a>      </time>
+
+                        <span><a href="/2015/12/omnifocus-for-mac-v2.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2015/12/omnifocus-for-mac-v2.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-url="https://www.timbroder.com/2015/12/omnifocus-for-mac-v2.html"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><blockquote>
+  <p>Due Soon also includes a new option—“Today”—which includes only items due before midnight instead of over “the next 24 hours.”</p>
+</blockquote>
+
+<p>I am so happy for this. My most wanted feature. I use a hacky 8pm default time to make "due soon" be "today, sort of, even if I'm working a little late".</p>
+
+<p>Now to figure out what my new default time will be!</p>
+
+<blockquote>
+  <p>So, over the past few months, we built our own service for Mac to match what Apple’s APN provided us on iOS.</p>
+</blockquote>
+
+<p>This is just impressive</p>
+</section>
+
+
+    </article>
+    <article class="post" role="article">
+            
+<header class="post-header">
+    <h1 class="post-title"><a href="http://www.matthewlang.net/2015/12/07/still-using-feedbin/">Still Using Feedbin</a> ☞ </h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2015-12-07T11:45:00+00:00" pubdate>
+          <a href="https://www.timbroder.com/2015/12/still-using-feedbin.html">            <span class='month'>Dec</span> <span class='day'>7th</span> <span class='year'>2015</span>
+          </a>      </time>
+
+                        <span><a href="/2015/12/still-using-feedbin.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2015/12/still-using-feedbin.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-url="https://www.timbroder.com/2015/12/still-using-feedbin.html"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><blockquote>
+  <p>Feedbin is under continual development and every few of months there's a new feature released or small improvements made to the user-interface.</p>
+</blockquote>
+
+<p>I signed up for <a href="https://feedbin.com/" title="%fill:name%">Feedbin</a> and <a href="https://itunes.apple.com/us/app/feed-wrangler/id634486174?mt=8&amp;at=11laRZ&amp;ct=Wflw6" title="%fill:name%">Feed Weangler</a> the day they came out. I was a <em>huge</em> Google Reader junkie (and had even written add-on modules for it ). I wanted to make sure I had a great service when it finally shut down. I paid for both services for 2 years to fully try them both out.</p>
+
+<p>I've been more than happy with Feedbin. It gets regular updates,  is super fast, and integrates with all of the apps I use on my phone or Mac. Feed Wrangler had the killer feature of not showing RSS items if you had already loaded them into Instapaper. I wanted this to be enough to keep using it, but unfortunately it wasn't. I love <a href="https://mobile.twitter.com/_davidsmith" title="%fill:name%">David Smith</a>, his work, and all he does for the community. But it's obvious that Feed Wrangler isn't his main focus. That's ok! But, I want a product they continually approves beyond security updates</p>
+</section>
+
+
+    </article>
+    <article class="post" role="article">
+            
+<header class="post-header">
+    <h1 class="post-title"><a href="http://www.colinodell.com/blog/2015-12/five-lesser-known-features-of-php-7">Five Lesser-Known Features Of Php 7 | Colin O&#039;Dell</a> ☞ </h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2015-12-04T06:34:00+00:00" pubdate>
+          <a href="https://www.timbroder.com/2015/12/five-lesser-known-features-of-php-7-|-colin-o&#039;dell.html">            <span class='month'>Dec</span> <span class='day'>4th</span> <span class='year'>2015</span>
+          </a>      </time>
+
+                        <span><a href="/2015/12/five-lesser-known-features-of-php-7-|-colin-o&#039;dell.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2015/12/five-lesser-known-features-of-php-7-|-colin-o&#039;dell.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-url="https://www.timbroder.com/2015/12/five-lesser-known-features-of-php-7-|-colin-o&#039;dell.html"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><blockquote>
+  <p>With the imminent release of PHP 7 on the horizon, I thought it would be cool to check out some of the lesser-known features coming with the 7.0.0 release</p>
+</blockquote>
+
+<p>​</p>
+</section>
+
+
+    </article>
+    <article class="post" role="article">
+            
+<header class="post-header">
+    <h1 class="post-title"><a href="http://arstechnica.com/apple/2015/12/craig-federighi-talks-open-source-swift-and-whats-coming-in-version-3-0/">Craig Federighi Talks Open Source Swift And What’S Coming In Version 3.0</a> ☞ </h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2015-12-03T20:31:00+00:00" pubdate>
+          <a href="https://www.timbroder.com/2015/12/craig-federighi-talks-open-source-swift-and-what’s-coming-in-version-3.html">            <span class='month'>Dec</span> <span class='day'>3rd</span> <span class='year'>2015</span>
+          </a>      </time>
+
+                        <span><a href="/2015/12/craig-federighi-talks-open-source-swift-and-what’s-coming-in-version-3.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2015/12/craig-federighi-talks-open-source-swift-and-what’s-coming-in-version-3.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-url="https://www.timbroder.com/2015/12/craig-federighi-talks-open-source-swift-and-what’s-coming-in-version-3.html"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>So many good things happened with Swift and open source today.</p>
+
+<blockquote>
+  <p>The project will be hosted on GitHub and will include the compiler, the LLDB debugger, the REPL command-line environment, the standard and core libraries, and code from supporting projects.</p>
+</blockquote>
+
+<p>There is a LOT over on Apple's new <a href="https://github.com/apple" title="%fill:name%">GitHub</a></p>
+
+<blockquote>
+  <p>New to Swift (and also open source) is the Swift Package Manager</p>
+</blockquote>
+
+<p>​</p>
+
+<blockquote>
+  <p>Apple engineers working on Swift will start using the GitHub repos, developing the language out in the open.</p>
+</blockquote>
+
+<p>​</p>
+
+<blockquote>
+  <p>So instead of getting a big Swift 3.0 info dump at WWDC 2016 in the summer and then digging into the Xcode betas and adapting, developers can already find an “evolution document” on the Swift site that maps out where the language is headed in its next major version.</p>
+</blockquote>
+
+<p>​</p>
+
+<blockquote>
+  <p>One of Apple’s goals for Swift 3.0 is source compatibility going forward so that Swift code that is written may need to be recompiled as the language continues to evolve, but it will need to be rewritten or changed less frequently or not at all.</p>
+</blockquote>
+
+<p>​</p>
+
+<blockquote>
+  <p>“We’ll be supporting Objective-C and continuing to evolve it as necessary to fit into this evolving world. We do think that Swift is the language that we recommend for new developers to our platform who are investing for the future and building new apps. We think Swift is absolutely the right place to start. But we’ll continue to maintain, advance, and support Objective-C for as far as we can see</p>
+</blockquote>
+
+<p>​</p>
+</section>
+
+
+    </article>
+    <article class="post" role="article">
+            
+<header class="post-header">
+    <h1 class="post-title"><a href="https://github.com/Kickball/awesome-selfhosted">Awesome Self Hosted</a> ☞ </h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2015-12-02T09:37:00+00:00" pubdate>
+          <a href="https://www.timbroder.com/2015/12/awesome-self-hosted.html">            <span class='month'>Dec</span> <span class='day'>2nd</span> <span class='year'>2015</span>
+          </a>      </time>
+
+                        <span><a href="/2015/12/awesome-self-hosted.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2015/12/awesome-self-hosted.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-url="https://www.timbroder.com/2015/12/awesome-self-hosted.html"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>Great list of self hosted OSS</p>
+</section>
+
+
+    </article>
+    <article class="post" role="article">
+            
+<header class="post-header">
+    <h1 class="post-title"><a href="https://medium.com/@kentcdodds/first-timers-only-78281ea47455">First Timers Only</a> ☞ </h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2015-11-25T15:45:00+00:00" pubdate>
+          <a href="https://www.timbroder.com/2015/11/first-timers-only.html">            <span class='month'>Nov</span> <span class='day'>25th</span> <span class='year'>2015</span>
+          </a>      </time>
+
+                        <span><a href="/2015/11/first-timers-only.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2015/11/first-timers-only.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-url="https://www.timbroder.com/2015/11/first-timers-only.html"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>A suggestion to Open Source project maintainers</p>
+
+<blockquote>
+  <p>The hard part of getting into open source for the first time isn’t the implementation of a feature, but figuring out how to actually contribute code.</p>
+</blockquote>
+
+<p>Great read on setting up your open source project for success as well as making it EASY for people to make their first contribution</p>
+</section>
+
+
+    </article>
+    <article class="post" role="article">
+            
+<header class="post-header">
+    <h1 class="post-title"><a href="http://relay.fm/topfour/5">Top Four 5: Podcasts</a> ☞ </h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2015-11-14T07:42:00+00:00" pubdate>
+          <a href="https://www.timbroder.com/2015/11/top-four-5.html">            <span class='month'>Nov</span> <span class='day'>14th</span> <span class='year'>2015</span>
+          </a>      </time>
+
+                        <span><a href="/2015/11/top-four-5.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2015/11/top-four-5.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-url="https://www.timbroder.com/2015/11/top-four-5.html"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><blockquote>
+  <p>Marco and Tiff rank their four favorite podcasts (right now)</p>
+</blockquote>
+
+<p>​This episode of Top Four was great. It did NOTHING to help the number of podcasts that I want to <a href="http://www.timbroder.com/podcasts-i-listen-to.html">listen to</a>. I already listen to a lot so adding would have to mean removing something if it was for my personal queue.</p>
+
+<p>​Luckily, it did give Laura and I some great ideas for shows to listen to together in the car. As we get closer to holiday season and start driving around the northeast, these will be a huge help:</p>
+
+<ul>
+<li>​<a href="http://undisclosed-podcast.com/">Undisclosed</a></li>
+<li><a href="http://youlooknicetoday.com/">You Look Nice Today</a></li>
+</ul>
+
+<p>​<a href="http://www.merlinmann.com/roderick/">Roderick on the Line</a> sounds like something I'd really enjoy. But, at 178 episodes it's too intimidating. I can only handle <a href="http://5by5.tv/b2w">one</a> "catch up" show. (Interesting that both of these involve Merlin). If I had more space/time, <a href="https://gimletmedia.com/show/reply-all/">Reply All</a> would be first up</p>
+</section>
+
+
+    </article>
+    <article class="post" role="article">
+            
+<header class="post-header">
+    <h1 class="post-title"><a href="http://tekside.net/showandtell/2015/11/9/show-tell-ep013-star-wars-original-trilogy">Show &amp; Tell - Ep013 - Star Wars Original Trilogy</a> ☞ </h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2015-11-10T09:24:00+00:00" pubdate>
+          <a href="https://www.timbroder.com/2015/11/show-&amp;-tell---ep013---star-wars-original-trilogy.html">            <span class='month'>Nov</span> <span class='day'>10th</span> <span class='year'>2015</span>
+          </a>      </time>
+
+                        <span><a href="/2015/11/show-&amp;-tell---ep013---star-wars-original-trilogy.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2015/11/show-&amp;-tell---ep013---star-wars-original-trilogy.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-url="https://www.timbroder.com/2015/11/show-&amp;-tell---ep013---star-wars-original-trilogy.html"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><blockquote>
+  <p>Star Wars: The Original Trilogy</p>
+</blockquote>
+
+<ul>
+<li>A New Hope!</li>
+<li>The Empire Strikes Back!</li>
+<li>Return of the Jedi!</li>
+</ul>
+
+<p>This episode was a lot of fun and has a few surprise guests</p>
+</section>
+
+
+    </article>
+    <nav class="pagination" role="navigation">
+                <a class="next" href="https://www.timbroder.com/page/10">&larr; Older</a>
+        
+                <a class="prev" href="https://www.timbroder.com/page/8">Newer &rarr;</a>
+            </nav>
+
+    </main>
+
+
+                        <footer class="site-footer clearfix">
+    <section>
+            <span class="tag size2"><a href="/blog/tags/"></a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/AVSpeechSynthesizer">AVSpeechSynthesizer</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Ai">Ai</a></span>
+            &nbsp;
+        <span class="tag size8"><a href="/blog/tags/Android">Android</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Atom">Atom</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Avengers">Avengers</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Batman">Batman</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Batman%20Inc.">Batman Inc.</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Batman%20and%20Robin">Batman and Robin</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/CKEditor">CKEditor</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/Calibre">Calibre</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Cheese">Cheese</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/ComicCon">ComicCon</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/CoreData">CoreData</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/DRM">DRM</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/Docs%20Spreadsheets">Docs Spreadsheets</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/ESI">ESI</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Fontis">Fontis</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/GME">GME</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/GTD">GTD</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/GWT">GWT</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Garlic">Garlic</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/Google">Google</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/Google%20Reader">Google Reader</a></span>
+            &nbsp;
+        <span class="tag size9"><a href="/blog/tags/HOWTO">HOWTO</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Hulu">Hulu</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Internet%20Explorer">Internet Explorer</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/JIRA">JIRA</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/Kindle">Kindle</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/Mashups">Mashups</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Memcached">Memcached</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/OmniFocus">OmniFocus</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Oracle">Oracle</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/PHPUnit">PHPUnit</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/PostgreSQL">PostgreSQL</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/RSS">RSS</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Redmine">Redmine</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Remember%20the%20Milk">Remember the Milk</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Ruby">Ruby</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/SQL">SQL</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Shared%20web%20hosting%20service">Shared web hosting service</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Siri">Siri</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Skype">Skype</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Sony%20Reader">Sony Reader</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Stan%20Lee">Stan Lee</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/TDD">TDD</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Terminator">Terminator</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/TinyMCE">TinyMCE</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Vibrams">Vibrams</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Virtual%20hosting">Virtual hosting</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Virtual%20private%20server">Virtual private server</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Walking%20Dead">Walking Dead</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Web%20hosting">Web hosting</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/YUI">YUI</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Zend">Zend</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/adwhirl">adwhirl</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/adwords">adwords</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/aiaio">aiaio</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/ajax">ajax</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/alfred">alfred</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/analytics">analytics</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/angularjs">angularjs</a></span>
+            &nbsp;
+        <span class="tag size4"><a href="/blog/tags/appengine">appengine</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/apple">apple</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/applepay">applepay</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/apps">apps</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/autocomplete">autocomplete</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/automation">automation</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/beta">beta</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/bit.ly">bit.ly</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/blackberry">blackberry</a></span>
+            &nbsp;
+        <span class="tag size4"><a href="/blog/tags/blogger">blogger</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/bookmarks">bookmarks</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/brightkite">brightkite</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/calendar">calendar</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/chrome">chrome</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/coffee">coffee</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/css">css</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/debug">debug</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/digg">digg</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/django">django</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/drafts">drafts</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/dropbox">dropbox</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/encryption">encryption</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/engagement">engagement</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/events">events</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/facebook">facebook</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/firefox">firefox</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/friendfeed">friendfeed</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/gadgets">gadgets</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/gchat">gchat</a></span>
+            &nbsp;
+        <span class="tag size4"><a href="/blog/tags/gdata">gdata</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/gdrive">gdrive</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/gears">gears</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/git">git</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/github">github</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/gmail">gmail</a></span>
+            &nbsp;
+        <span class="tag size5"><a href="/blog/tags/gpowered.net">gpowered.net</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/greasemonkey">greasemonkey</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/groups">groups</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/homebrew">homebrew</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/instapaper">instapaper</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/interfacebuilder">interfacebuilder</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/ios">ios</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/ipad">ipad</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/iphone">iphone</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/javascript">javascript</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/jira">jira</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/jquery">jquery</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/json">json</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/kids">kids</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/laravel">laravel</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/launch%20center%20pro">launch center pro</a></span>
+            &nbsp;
+        <span class="tag size5"><a href="/blog/tags/magento">magento</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/maps">maps</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/mercurial">mercurial</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/mock">mock</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/mongodb">mongodb</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/music">music</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/mysql">mysql</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/netbook">netbook</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/nosql">nosql</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/objective%20c">objective c</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/oil">oil</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/omnifocus">omnifocus</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/opensocial">opensocial</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/opensource">opensource</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/os">os</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/osx">osx</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/pesto">pesto</a></span>
+            &nbsp;
+        <span class="tag size7"><a href="/blog/tags/php">php</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/picasa%20web">picasa web</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/podcasts">podcasts</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/powershell">powershell</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/primal">primal</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/productivity">productivity</a></span>
+            &nbsp;
+        <span class="tag size6"><a href="/blog/tags/python">python</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/pythonista">pythonista</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/quick">quick</a></span>
+            &nbsp;
+        <span class="tag size4"><a href="/blog/tags/reader">reader</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/realm">realm</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/regex">regex</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/running">running</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/search">search</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/security">security</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/seo">seo</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/sketch">sketch</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/skynet">skynet</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/sleep">sleep</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/socialgraph">socialgraph</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/solr">solr</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/startup">startup</a></span>
+            &nbsp;
+        <span class="tag size4"><a href="/blog/tags/swift">swift</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/testing">testing</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/textmate">textmate</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/timbroder.com">timbroder.com</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/todoist">todoist</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/twitter">twitter</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/twitter2gTalk">twitter2gTalk</a></span>
+            &nbsp;
+        <span class="tag size6"><a href="/blog/tags/ubuntu">ubuntu</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/urls">urls</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/vagrant">vagrant</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/varnish">varnish</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/virtualenv">virtualenv</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/winamp">winamp</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/windows">windows</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/wordpress">wordpress</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/xbox">xbox</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/xcode">xcode</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/xml">xml</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/yahoo%20pipes">yahoo pipes</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/youtube">youtube</a></span>
+            &nbsp;
+    
+    </section>
+    <section class="copyright">
+        Copyright &copy; 2007-2018 -
+         Tim Broder -         <span class="credit">Powered by <a href="http://sculpin.io">Sculpin</a></span>
+    </section>
+</footer>
+                <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="https://www.timbroder.com/themes/broderboy/deadfish/assets/js/index.js"></script>
+<script type="text/javascript" src="https://www.timbroder.com/themes/broderboy/deadfish/assets/js/rainbow.min.js"></script>
+<script type="text/javascript" src="https://www.timbroder.com/themes/broderboy/deadfish/assets/js/rlns.min.js"></script>
+
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'timbrodercom'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-17099661-1', 'auto');
+    ga('send', 'pageview');
+
+</script>    </div>
+</body>
+</html>

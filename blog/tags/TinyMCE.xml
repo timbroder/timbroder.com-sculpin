@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[timbroder.com]]></title>
+    <link href="https://www.timbroder.com/blog/tags/TinyMCE.xml" rel="self"/>
+    <link href="https://www.timbroder.com/"/>
+    <updated>2018-09-09T12:21:33+00:00</updated>
+    <id>https://www.timbroder.com/</id>
+            <author>
+            <name><![CDATA[Tim Broder]]></name>            <email><![CDATA[timothy.broder@gmail.com]]></email>        </author>
+        <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[Magento: Want CKEditor to appear on Category edit pages in Magento?]]></title>
+            <link href="https://www.timbroder.com/2010/12/magento-want-ckeditor-to-appear-on-category-edit-pages-in-magento.html"/>
+            <updated>2010-12-02T16:50:50+00:00</updated>
+            <id>https://www.timbroder.com/2010/12/magento-want-ckeditor-to-appear-on-category-edit-pages-in-magento.html</id>
+            <content type="html"><![CDATA[<p>It is pretty common to replace the <a href="http://tinymce.moxiecode.com/">TinyMCE
+</a>editor in the Magento Admin with the <a href="http://ckeditor.com/">CKEditor
+</a>using this <a href="http://www.magentocommerce.com/magento-connect/Fontis/extension/586/fontis-wysiwyg-editor">extension</a></p>
+
+<p>However, the way magento ajaxes the form fields into view on the category pages breaks this functionality.</p>
+
+<p>This snippet should help anyone trying to get it to work in <code>app/design/adminhtml/default/default/template/fontis/wysiwyg/wysiwyg.phtml</code></p>
+
+<pre><code data-language="PHP">
+&lt;?php } else if($editorType == 'ckeditor') { ?&gt;
+
+    &lt;script type="text/javascript" src="&lt;?php echo $this-&gt;getJsUrl() ?&gt;fontis/ckeditor/ckeditor.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript"&gt;
+    var pageLoaded = false;
+
+    function applyCKEditor() {
+        if(pageLoaded) {
+            var editable_areas = '&lt;?php echo $editableAreas ?&gt;';
+            &lt;?php if(strpos($this-&gt;helper('core/url')-&gt;getCurrentUrl(), 'catalog_category') != false): ?&gt;
+                CKEDITOR.instances = {};
+            &lt;?php endif; ?&gt;
+
+            &lt;?php /* Add CKeditor to any matching textareas. */ ?&gt;
+            editable_areas.split(',').each(function(dom_id) {
+            if($(dom_id)) {
+                &lt;?php /* Remove the required-entry CSS class so Magento will
+                allow the contents of the editor to be submitted. */ ?&gt;
+                var loopCheck = 0;
+                while($(dom_id).hasClassName('required-entry') &amp;&amp; loopCheck &lt; 10) {
+                    $(dom_id).removeClassName('required-entry');
+                    loopCheck += 1;
+                }
+
+                CKEDITOR.replace(dom_id, {
+                    width : 640,
+                    height: 350,
+                    protectedSource : ['(/{{[\s\S]*?}}/g)']
+                });
+            }
+        });
+    }
+}
+
+window.onload = function() {
+pageLoaded = true;
+&lt;?php if(strpos($this-&gt;helper('core/url')-&gt;getCurrentUrl(), 'catalog_category') === false): ?&gt;
+    applyCKEditor();
+&lt;?php endif; ?&gt;
+}
+&lt;/script&gt;
+&lt;?php } ?&gt;
+
+</code></pre>
+
+<p>in <code>app/design/adminhtml/default/default/template/catalog/category/edit/form.phtml</code> add this at the bottom but inside the script tag</p>
+
+<pre><code data-language="javascript">if(typeof applyCKEditor == 'function') {
+    applyCKEditor();
+}
+</code></pre>
+]]></content>
+        </entry>
+    </feed>

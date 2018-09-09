@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[timbroder.com]]></title>
+    <link href="https://www.timbroder.com/blog/tags/analytics.xml" rel="self"/>
+    <link href="https://www.timbroder.com/"/>
+    <updated>2018-09-09T12:21:33+00:00</updated>
+    <id>https://www.timbroder.com/</id>
+            <author>
+            <name><![CDATA[Tim Broder]]></name>            <email><![CDATA[timothy.broder@gmail.com]]></email>        </author>
+        <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[The top 10 best Wordpress plugins to get up and running with everything you need.]]></title>
+            <link href="https://www.timbroder.com/2012/09/the-top-10-best-wordpress-plugins-to-get-up-and-running.html"/>
+            <updated>2012-09-03T00:39:24+00:00</updated>
+            <id>https://www.timbroder.com/2012/09/the-top-10-best-wordpress-plugins-to-get-up-and-running.html</id>
+            <content type="html"><![CDATA[<p>These are the top 10 best wordpress plugins I use to quickly get a wordpress
+blog up and running with everything I need.  I used these last week to get a
+new site going in about 2 hours.  Leave some time for analytics to catch up
+and you are all set.</p>
+
+<ul>
+<li><a href="http://ronaldheft.com/code/analyticator/">Google Analyticator</a> harnesses the power of Google Analytics for your blog. See where traffic is coming from, where its going, as well as basic hit tracking. The plugin also comes with an easily customizable widget that can be used to display specific information that is gathered by Google Analytics using the Google Analytics API. It supports all of the tracking mechanisms that Google Analytics supports such as external link tracking, download tracking, tracking without counting administrative users, and any other advanced tracking the user wishes to add. Google Analyticator works with a majority of themes as long as these themes provide the proper plugin hooks.Features: 
+
+<ul>
+<li>Supports standard Google Analytics tracking via the latest async tracking methods (faster and more reliable than the older ga.js tracking method)</li>
+<li>Includes an admin dashboard widget that displays a graph of the last 30 days of visitors, a summary of site usage, the top pages, the top referrers, and the top searches</li>
+<li>Provides a widget that can be used to display visitor stat information on the front-end</li>
+<li>Supports external link tracking of all links on the page, including links not managed by WordPress</li>
+<li>Supports download link tracking</li>
+<li>Supports event tracking with outbound links / downloads instead of the old pageview tracking method</li>
+<li>Supports site speed tracking</li>
+<li>Supports hiding Administrator visits without affecting Google Analytics’ site overlay feature</li>
+<li>Supports any advanced tracking code Google provides</li>
+<li>Installs easily, only requiring the user know their UID</li>
+<li>Provides complete control over options; disable any feature if needed</li>
+<li>Supports localization – get the settings page in your language of choice</li>
+</ul></li>
+<li> <a href="http://flagrantdisregard.com/feedburner/">FD Feedburner Plugin for WordPress</a> lets you track subscribers to your feed by redirecting the main feed and optionally the comments feed to Feedburner.com. It does this seamlessly without the need to modify templates, setup new hidden feeds, modify .htaccess files, or asking users to migrate to a new feed. All existing feeds simply become Feedburner feeds seamlessly and transparently for all users. Just tell the plugin what your Feedburner feed URL is and you’re done.</li>
+<li><a href="http://plugins.josepardilla.com/fancybox-for-wordpress/">FancyBox for WordPress</a> will automatically show all images in a fancy popup window when clicked. Handy for resized images where you don't want your users stuck on just the image file when they click on it.</li>
+<li><a href="http://www.thulasidas.com/plugins/easy-adsense">Easy AdSense</a> manages all aspects of Google AdSense for a blog: insert ads into posts and sidebar, and add a Google Search box.Features: 
+
+<ul>
+<li>Remembers AdSense code and your options by theme, so that you don’t have to re-enter them if you play with multiple themes. [This feature provides a solution to Google's unwillingness to let you modify and customize the AdSense code -- you just store all the code variants in your blog database.]</li>
+<li>Enforces the Google policy of not more than three ad blocks per page.</li>
+<li>Sidebar Widgets: 
+
+<ul>
+<li>For AdSense for content with custom title.</li>
+<li>For search with customizable text or image title.</li>
+<li>For Link Units.</li>
+</ul></li>
+<li>Rich set of Options: 
+
+<ul>
+<li>To put Link Units or Ad Blocks in header or footer.</li>
+<li>To suppress ads on all pages (as opposed to posts), or on the front/home page.</li>
+<li>To add a customizable mouse-over border decoration on ad blocks.</li>
+</ul></li>
+<li>Control over the positioning and display of AdSense blocks in each post or page.</li>
+<li>Simplest possible configuration interface — nothing more than cutting and pasting AdSense code, and with sensible defaults for the few options present, all with clear instructions.</li>
+<li>Internationalized (multiple languages supported).</li>
+</ul></li>
+<li> <a href="http://yoast.com/wordpress/seo/">WordPress SEO by Yoast</a> is the most complete WordPress SEO plugin that exists today for WordPress.org users. It incorporates everything from a snippet preview and page analysis functionality that helps you optimize your pages content, images titles, meta descriptions and more to XML sitemaps, and loads of optimization options in between.  I use it to help generate a complete Google sitemap and tweak how my sites show up in Google.Features: 
+
+<ul>
+<li>Post titles and meta descriptions</li>
+<li>Robots Meta configuration</li>
+<li>Canonical</li>
+<li>Breadcrumbs</li>
+<li>Permalink clean up</li>
+<li>XML Sitemaps</li>
+<li>RSS enhancements</li>
+<li>Edit your robots.txt and .htaccess</li>
+<li>Clean up head section</li>
+</ul></li>
+<li><p> <a href="http://www.w3-edge.com/wordpress-plugins/w3-total-cache/">w3-total-cache</a>is THE performance plugin for wordpress.  It's the fastest and most complete WordPress performance optimization plugin. W3 Total Cache improves the user experience of your blog by improving your server performance, caching every aspect of your site, reducing the download time of your theme and providing transparent content delivery network (CDN) integration.  I use it heavily for it's memcached integration, front-end compression, and CDN integration.Benefits:</p>
+
+<ul>
+<li>At least 10x improvement in site performance (when fully configured: Grade A in YSlow or great Google Page Speed Improvements)</li>
+<li>“Instant” second page views (browser caching after first page view)</li>
+<li>Reduced page load time: increased visitor time on site (visitors view more pages)</li>
+<li>Optimized progressive render (pages appear to load instantly)</li>
+<li>Improved web server performance (easily sustain high traffic spikes)</li>
+<li><p>Up to 80% Bandwidth savings via Minify and HTTP compression of HTML, CSS, JavaScript and RSS feeds
+Features:</p></li>
+<li><p>Compatible with shared hosting, virtual private servers and dedicated servers / clusters</p></li>
+<li>Transparent content delivery network (CDN) integration with Media Library, theme files and WordPress itself</li>
+<li>Caching of (minified and compressed) pages and posts in memory or on disk</li>
+<li>Caching of (minified and compressed) CSS and JavaScript in memory, on disk or on CDN</li>
+<li>Caching of RSS (comments, page and site) feeds in memory or on disk</li>
+<li>Caching of search results pages (i.e. URIs with query string variables) in memory or on disk</li>
+<li>Caching of database objects in memory</li>
+<li>Minification of posts and pages and RSS feeds</li>
+<li>Minification (combine and remove comments / white space) of inline, embedded or 3rd party JavaScript (with automated updates)</li>
+<li>Minification (combine and remove comments / white space) of inline, embedded or 3rd party CSS (with automated updates)</li>
+<li>Browser caching of CSS, JavaScript and HTML using future expire headers and entity tags (ETag)</li>
+<li>JavaScript grouping by template (home page, post page etc) with embed location management</li>
+<li>Non-blocking JavaScript embedding</li>
+<li>Import post attachments directly into the Media Library (and CDN)</li>
+</ul></li>
+<li>Since most of my infrastructure is already on Amazon I use the <a href="http://wordpress.org/extend/plugins/amazon-ses-and-dkim-mailer/">Amazon SES DKIM Mailer</a> plugin to use <a href="http://aws.amazon.com/ses/">SES</a> as my mail provider.  It's a quick, easy way to get guaranteed delivery.</li>
+<li><a href="http://contactform7.com/">Contact Form 7</a> is the best contact form out there.  It allows you to flexibly design the form and mail. You can manage multiple contact forms as well.  In addition, it supports many features including AJAX submitting, CAPTCHA, Akismet spam filtering, file uploading, etc.</li>
+<li><a href="http://dialect.ca/code/wp-smushit/">WP Smush.it</a>  taps into the API behind Yahoo’s excellent Exceptional Performance series recommends optimizing images in several lossless ways: stripping meta data from JPEGs, optimizing JPEG compression, converting certain GIFs to indexed PNGs and stripping the un-used colours from indexed images.</li>
+<li>This last one isn't required for all setups, but if like me you have varnish sitting in front of your app servers, <a href="https://github.com/pkhamre/wp-varnish">wp-varnish</a> is a must have. It automatically clears your varnish caches as needed.</li>
+</ul>
+]]></content>
+        </entry>
+    </feed>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[timbroder.com]]></title>
+    <link href="https://www.timbroder.com/blog/tags/opensource.xml" rel="self"/>
+    <link href="https://www.timbroder.com/"/>
+    <updated>2018-09-09T12:21:33+00:00</updated>
+    <id>https://www.timbroder.com/</id>
+            <author>
+            <name><![CDATA[Tim Broder]]></name>            <email><![CDATA[timothy.broder@gmail.com]]></email>        </author>
+        <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[Open source everything]]></title>
+            <link href="https://www.timbroder.com/2016/05/Open-source-everything.html"/>
+            <updated>2016-05-24T16:51:00+00:00</updated>
+            <id>https://www.timbroder.com/2016/05/Open-source-everything.html</id>
+            <content type="html"><![CDATA[<p>Great 2 part series by <a href="https://twitter.com/jesse_squires" title="@jesse_squires">@jesse_squires</a> on the importance of documenting everything and the gains of working in open source. I picked up a few tricks, especially <a href="https://github.com/onevcat/VVDocumenter-Xcode" title="VVDocumenter-Xcode">VVDocumenter-Xcode</a> for docblock generation. But, more importantly is the ethos in which he approaches his work</p>
+
+<ul>
+<li><a href="http://www.jessesquires.com/swift-documentation/" title="Swift Documentation">Swift Documentation</a></li>
+<li><a href="http://www.jessesquires.com/open-source-everything/" title="Open Source Everything">Open Source Everything</a></li>
+</ul>
+]]></content>
+        </entry>
+    </feed>

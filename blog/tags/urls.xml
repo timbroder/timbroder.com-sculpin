@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[timbroder.com]]></title>
+    <link href="https://www.timbroder.com/blog/tags/urls.xml" rel="self"/>
+    <link href="https://www.timbroder.com/"/>
+    <updated>2018-09-09T12:21:33+00:00</updated>
+    <id>https://www.timbroder.com/</id>
+            <author>
+            <name><![CDATA[Tim Broder]]></name>            <email><![CDATA[timothy.broder@gmail.com]]></email>        </author>
+        <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[Goo.gl url shortener goes public]]></title>
+            <link href="https://www.timbroder.com/2010/10/goo-gl-url-shortener-goes-public.html"/>
+            <updated>2010-10-01T14:53:20+00:00</updated>
+            <id>https://www.timbroder.com/2010/10/goo-gl-url-shortener-goes-public.html</id>
+            <content type="html"><![CDATA[<p>Google's URL shortener service is now public, complete with QR code generation
+Check it out: <a href="http://goo.gl/AP5t">http://goo.gl/AP5t</a> <a href="http://goo.gl/AP5t.qr">http://goo.gl/AP5t.qr</a> It will be
+interesting to see how this stands up to <a href="http://bit.ly">bit.ly</a></p>
+]]></content>
+        </entry>
+    </feed>

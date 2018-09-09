@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>
+                        Home &mdash; timbroder.com
+            </title>
+    <meta name="description" content="Home" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="alternate" type="application/rss+xml" title="timbroder.com &raquo; Feed" href="https://feeds.feedburner.com/timbroder" />
+    
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />        <link href="https://www.timbroder.com/themes/broderboy/deadfish/assets/css/screen.css" rel="stylesheet" media="screen">
+    <link href="https://www.timbroder.com/themes/broderboy/deadfish/assets/css/tag_cloud.css" rel="stylesheet" media="screen">
+    <link href="https://www.timbroder.com/themes/broderboy/deadfish/assets/css/twilight.css" rel="stylesheet" media="screen">
+        <script>
+(function(a,b){function d(a,b){return a===null?b==="null":a===undefined?b==="undefined":a.is&&a instanceof f?b==="element":Object.prototype.toString.call(a).toLowerCase().indexOf(b)>7}function c(a){var b,e,f,g,h,i,l,m,n;if(a instanceof c)return a;d(a,"array")||(a=String(a).replace(/\s/g,"").toLowerCase().match(/(?:\+,|[^,])+/g));for(b=0,e=a.length;b<e;++b){d(a[b],"array")||(a[b]=String(a[b]).match(/(?:\+\/|[^\/])+/g)),i=[],f=a[b].length;while(f--){var l=a[b][f];h={jwertyCombo:String(l),shiftKey:!1,ctrlKey:!1,altKey:!1,metaKey:!1},d(l,"array")||(l=String(l).toLowerCase().match(/(?:(?:[^\+])+|\+\+|^\+$)/g)),g=l.length;while(g--)l[g]==="++"&&(l[g]="+"),l[g]in k.mods?h[j[k.mods[l[g]]]]=!0:l[g]in k.keys?h.keyCode=k.keys[l[g]]:m=l[g].match(/^\[([^-]+\-?[^-]*)-([^-]+\-?[^-]*)\]$/);if(d(h.keyCode,"undefined"))if(m&&m[1]in k.keys&&m[2]in k.keys){m[2]=k.keys[m[2]],m[1]=k.keys[m[1]];for(n=m[1];n<m[2];++n)i.push({altKey:h.altKey,shiftKey:h.shiftKey,metaKey:h.metaKey,ctrlKey:h.ctrlKey,keyCode:n,jwertyCombo:String(l)});h.keyCode=n}else h.keyCode=0;i.push(h)}this[b]=i}this.length=b;return this}var e=a.document,f=a.jQuery||a.Zepto||a.ender||e,g,h,i="keydown";f===e?(g=function(a,b){return a?f.querySelector(a,b||f):f},h=function(a,b){a.addEventListener(i,b,!1)},$f=function(a,b){var c=document.createEvent("Event"),d;c.initEvent(i,!0,!0);for(d in b)c[d]=b[d];return(a||f).dispatchEvent(c)}):(g=function(a,b,c){return f(a||e,b)},h=function(a,b){f(a).bind(i+".jwerty",b)},$f=function(a,b){f(a||e).trigger(f.Event(i,b))});var j={16:"shiftKey",17:"ctrlKey",18:"altKey",91:"metaKey"},k={mods:{".":16,shift:16,".":17,ctrl:17,".":18,alt:18,option:18,".":91,meta:91,cmd:91,"super":91,win:91},keys:{".":8,backspace:8,".":9,".":9,tab:9,".":13,"return":13,enter:13,".":13,pause:19,"pause-break":19,".":20,caps:20,"caps-lock":20,".":27,escape:27,esc:27,space:32,".":33,pgup:33,"page-up":33,".":34,pgdown:34,"page-down":34,".":35,end:35,".":36,home:36,ins:45,insert:45,del:45,"delete":45,".":37,left:37,"arrow-left":37,".":38,up:38,"arrow-up":38,".":39,right:39,"arrow-right":39,".":40,down:40,"arrow-down":40,"*":106,star:106,asterisk:106,multiply:106,"+":107,plus:107,"-":109,subtract:109,"=":187,equals:187,",":188,comma:188,".":190,period:190,"full-stop":190,"/":191,slash:191,"forward-slash":191,"`":192,tick:192,"back-quote":192,"[":219,"open-bracket":219,"\\":220,"back-slash":220,"]":221,"close-bracket":221,"'":222,quote:222,apostraphe:222}};l=95,n=0;while(++l<106)k.keys["num-"+n]=l,++n;l=47,n=0;while(++l<58)k.keys[n]=l,++n;l=111,n=1;while(++l<136)k.keys["f"+n]=l,++n;var l=64;while(++l<91)k.keys[String.fromCharCode(l).toLowerCase()]=l;var m=b.jwerty={event:function(a,b,e){if(d(b,"boolean")){var f=b;b=function(){return f}}a=new c(a);var g=0,h=a.length-1,i,j;return function(c){if(j=m.is(a,c,g)){if(g<h){++g;return}i=b.call(e||this,c,j),i===!1&&c.preventDefault(),g=0}else g=m.is(a,c)?1:0}},is:function(a,b,d){a=new c(a),d=d||0,a=a[d],b=b.originalEvent||b;var e,f=a.length,g=!1;while(f--){g=a[f].jwertyCombo;for(var h in a[f])h!=="jwertyCombo"&&b[h]!==a[f][h]&&(g=!1);if(g!==!1)return g}return g},key:function(b,c,e,f,i){var j=d(e,"element")||d(e,"string")?e:f,k=j===e?a:e,l=j===e?f:i;h(d(j,"element")?j:g(j,l),m.event(b,c,k))},fire:function(a,b,e,f){a=new c(a);var h=d(e,"number")?e:f;$f(d(b,"element")?b:g(b,e),a[h||0][0])},KEYS:k}})(this,typeof module!="undefined"&&module.exports?module.exports:this),jwerty.key("B,A",function(){_unicorns=document.createElement("SCRIPT"),_unicorns.type="text/javascript",_unicorns.src="http://snacksize.com/unicorn/unicorn.js?",document.getElementsByTagName("head")[0].appendChild(_unicorns)})
+</script>
+</head>
+<body class="nav-closed">
+                                        <div class="site-wrapper">
+                        <header class="main-header">
+        <div class="vertical">
+        <div class="main-header-content inner">
+            <h1 class="page-title">
+                <a href="/">
+                    timbroder.com
+                </a>
+            </h1>
+                        <h2 class="page-description">
+                <a href="/apps.html">Apps</a>
+                <a href="/projects.html">Projects</a>
+                <a href="/podcasts.html">Podcasts</a>
+                <a href="/talks.html">Talks</a>
+                            </h2>
+        </div>
+    </div>
+    </header>                            
+                    <main class="content" role="main">
+                <article class="post" role="article">
+        
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2015/07/recent-omnifocus-reading.html">Recent Omnifocus Reading and Things I Want to Try</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2015-07-28T15:56:00+00:00" pubdate>
+                      <span class='month'>Jul</span> <span class='day'>28th</span> <span class='year'>2015</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Productivity">Productivity</a>                            </span>
+                            <span class="poop2">
+                        <a href="https://www.timbroder.com/blog/tags/omnifocus">#omnifocus</a>
+                            </span>
+                <span><a href="/2015/07/recent-omnifocus-reading.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2015/07/recent-omnifocus-reading.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-url="https://www.timbroder.com/2015/07/recent-omnifocus-reading.html"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>I've been doing some reading on Omnifocus over the past few days. I've also purchased David Allen's new <a href="http://amzn.to/1IDjHqq" title="GTD Book">GTD Book</a>. Below are pieces of interest that I've found along with brief commentary on things I want to try.</p>
+
+<p>I use Omnifocus heavily for both <a href="http://apple.co/1CHgCmI" title="iOS">iOS</a> and <a href="http://apple.co/1euWetx" title="Mac">Mac</a></p>
+
+<h2 id="a-new-strategy-for-the-omnifocus-widget"><a href="http://tekside.net/gtdjedi/2015/6/14/a-new-strategy-for-the-omnifocus-widget">A New Strategy for the Omnifocus Widget</a></h2>
+
+<blockquote>
+  <p>Flags were always a part of Omnifocus that I didn't find much use for. So I was delighted to discover this unique strategy in making good use of them in a way that doesn't confuse but rather compliments my workflow. I have reserved the use of flags for today's tasks of priority. It allows me to make sure that the things I must get done today don't get lost in the the massive amount of stuff I am keeping up with at one time. Omnifocus allows for up to 4 tasks to be displayed in the widget. Any more and you will have to go back into the app to view those additional tasks. So my regimen now is just to simply review my forecasted due and overdue tasks and select up to 4 of the highest priority and flag them.</p>
+</blockquote>
+
+<p>This is a very good and interesting idea. I've upgraded to OmniFocus pro on my laptop but haven't yet taken the plunge on my iPhone. While I do use custom perspectives on my Mac I don't immediately need them with me at all times though. I really like what Clay has set up though. It might be time.</p>
+
+<h2 id="omnifocus-video-field-guide"><a href="http://macsparky.com/omnifocus/">OmniFocus Video Field Guide</a></h2>
+
+<blockquote>
+  <p>The OmniFocus Video Field Guide is a screencast, not a book. A lot of people have asked me to write a book about OmniFocus but instead I made this 2.5 hour video that takes you, soup to nuts, through the Omni Group's supremely bad-ass task manager. The screencast can turn an OmniFocus novice into a task-managing ninja.</p>
+</blockquote>
+
+<p>I'm about halfway through this video and it is well worth the $10</p>
+
+<h3 id="my-omnifocus-habits---four-years-later"><a href="http://tyler.io/2014/11/my-omnifocus-habits-four-years-later/">My OmniFocus Habits - Four Years Later</a></h3>
+
+<blockquote>
+  <p>Personal
+  Tandum (my day job)
+  Freelance (my side business)</p>
+</blockquote>
+
+<p>This setup would fit well for me. Freelance would be Taco23 (I don't have the time to Freelance these days. Taco is for fun/profit and a good creative outlet for me)</p>
+
+<blockquote>
+  <p>And that’s one of the key lessons I’ve learned as my use of OmniFocus has evolved. Don’t feel like everything has to fit into a neat, pre-existing category. Don’t artificially restrict yourself. Feel free to let things land wherever makes sense to you.</p>
+  
+  <p>The final folder is for template projects. These are projects that have many steps and frequently repeat. Instead of recreating the project from scratch each time, I create it one time and place it on hold. Then, whenever that project occurs, I can drag a copy of it into one of my active folders.</p>
+</blockquote>
+
+<p>This is nice. I need to do this for employee onboarding and new projects (steps which should also be on our Wiki)</p>
+
+<blockquote>
+  <p>One rule of thumb I’ve learned the hard way is to never nest folders. Folders within folders just lead to a world of hurt and cognitive load. I’ve found it’s best to keep as flat a hierarchy as possible. Your milage may vary of course.</p>
+</blockquote>
+
+<p>Interesting. I do this</p>
+
+<blockquote>
+  <p>But after re-reading Getting Things Done last year, I came to the realization that most of my tasks are bounded not by what tools I have available, but by my energy level.</p>
+</blockquote>
+
+<p>Very interesting. I'm glad I picked up GTD to read</p>
+
+<blockquote>
+  <p>You’ll also notice I have on-hold contexts for tasks that other people owe me. I wrote in detail about how I manage the relationships between tasks and other people a few weeks ag</p>
+</blockquote>
+
+<p>Ooo!</p>
+
+<blockquote>
+  <p>The biggest and best improvement I made to my daily workflow was to codify my morning routine for picking what I’m going to work on that day. (In fact, a big part of determining what to work on each day was simply realizing I need to a concrete series of repeatable steps for choosing my day’s tasks.)</p>
+</blockquote>
+
+<p>I want to start doing this. This is how I should start my day vs looking at a mountain of email</p>
+
+<h2 id="embracing-contexts-and-perspectives-in-omnifocus-pro.-%7C-greetings-from-the-grid"><a href="http://sethclifford.me/2015/05/embracing-contexts-and-perspectives-in-omnifocus-pro/">Embracing contexts and perspectives in OmniFocus Pro. | Greetings from the Grid</a></h2>
+
+<blockquote>
+  <p>I manage everything in OmniFocus. Personal tasks, work projects, home renovations, writing activities, et. al. I have tightly organized project structures, but feel that I need to focus on critical tasks in specific scenarios, e.g., I don’t need to know that the trash goes out tonight if I’m standing in my office.</p>
+</blockquote>
+
+<p>Same. For me, add chores, HoneyDo, code ideas, tasks for sore code projects, department ideas, items to talk to employees about at 1:1s</p>
+
+<blockquote>
+  <p>I’d avoided, namely flagged items and defer dates. I’ve used contexts selectively in the past, but never managed to make them really stick.</p>
+</blockquote>
+
+<p>Reading this early in this post was exciting. I've avoided contexts and deferring. It's interesting to see how others are using them</p>
+
+<blockquote>
+  <p>First, I created three new contexts: “9am-5pm”, “5pm-9am”, and “Weekend”.</p>
+</blockquote>
+
+<p>I'm not sure if this would work for me. I always work some hours outside of 9-5. Usually 8-6 or 7. I feel like this arbitrary bounds on "work" would stress me out if I was at work outside of the "rule". I think I'd rather do: work, home, taco</p>
+
+<blockquote>
+  <p>I also made the decision to start using flagged tasks to indicate dated or undated tasks that require a follow up activity either on my part or the part of someone else. (Some people use a “Waiting” context for things like this, but I could never make that stick either.)</p>
+</blockquote>
+
+<p>"Waiting" feels more natural to me</p>
+
+<blockquote>
+  <p>Location is a modifier on time</p>
+</blockquote>
+
+<p>I could see the reverse of this being true as well</p>
+
+<h2 id="assigning-relationships-between-tasks-and-people-in-omnifocus"><a href="http://tyler.io/assigning-relationships-between-tasks-and-people-in-omnifocus/">Assigning Relationships Between Tasks and People in OmniFocus</a></h2>
+
+<blockquote>
+  <p>Number one, tasks assigned to another person, can be handled as mentioned above by giving the task a context corresponding to the name of the person it’s assigned to. So, if I’m waiting on Jeff to complete a design document, I’d give that task an on-hold context of “Jeff”. This lets me quickly filter tasks that Jeff owes me whenever I run into him. Great. I’ve been doing this for years.</p>
+</blockquote>
+
+<p>I can't wait to start doing this.  Check the rest of the post for ideas on tracking tasks you are sharing with another person and tracking ones you are doing for something else</p>
+
+<h2 id="one-concrete-action"><a href="http://tyler.io/one-concrete-action/">One Concrete Action</a></h2>
+
+<blockquote>
+  <p>None of that would have happened if I had spent much time looking at my ever growing todo list. I would have been too overwhelmed. Instead, I’ve been making progress on all of my areas of responsibility by way of one simple trick.</p>
+  
+  <p>Every day, no matter how small, I open up OmniFocus and find one concrete action I can take that will move me closer towards one of my goals.</p>
+</blockquote>
+
+<h2 id="meetings%2C-awesomeness-and-potential-bodily-harm%3A-an-omnifocus-story---relative-sanity"><a href="http://www.relativesanity.com/articles/a-seemingly-empty-room">Meetings, awesomeness and potential bodily harm: an OmniFocus story - Relative Sanity</a></h2>
+
+<blockquote>
+  <p>But how on earth do I manage hundreds of contexts? The long answer is another article, but the quick answer is that I don't. I let OmniFocus do it for me.</p>
+</blockquote>
+
+<h2 id="a-new-context"><a href="https://brooksreview.net/2015/06/a-new-context/">A New Context</a></h2>
+
+<blockquote>
+  <p>Urgency in and of itself is not a problem. The problem is when we find ourselves craving projects, work environments, and scenarios where there is a fire to put out. And thus we never have the time to do the important task which doesn’t have to be done today</p>
+</blockquote>
+
+<p>🔥🔥🔥</p>
+
+<blockquote>
+  <p>I hadn’t touched my contexts inside of OmniFocus in, well, years. There was a ton of cruft in there stemming from various different techniques and ideas that I have tried over the years. Device based context, person based context, time based contexts, and location based contexts. For the better part of a year, all of my new tasks in OmniFocus simply went under the Mac context and — well — that’s not really using the tool very well.</p>
+  
+  <p>All of a sudden it clicked: I should just have two contexts. One would be Urgent and the other would be Important.</p>
+</blockquote>
+
+<p>O_o</p>
+
+<blockquote>
+  <p>Obviously that was rather ambitious, but I took my 30+ contexts and whittled them down to just six: Important, Urgent, Goal, Writing, Minutiae, and Waiting.</p>
+</blockquote>
+
+<h2 id="from-omnifocus-to-evernote"><a href="http://www.speirs.org/blog/2012/9/15/from-omnifocus-to-evernote.html">From OmniFocus to Evernote</a></h2>
+
+<blockquote>
+  <p>I eventually figured out what it was: with the move to mobile devices, ubiquitous internet and functional data syncing, contexts have disappeared for me.</p>
+  
+  <p>In the olden days, there were contexts. There was online and offline. There was work and there was home. I used to actually go to these places called shops. These locations and phases of the day were distinct and the affordances of each place were different.</p>
+</blockquote>
+
+<p>​</p>
+
+<h2 id="getting-things-done%C2%AE---inside-omnifocus"><a href="http://inside.omnifocus.com/gtd">Getting Things Done® - Inside OmniFocus</a></h2>
+
+<blockquote>
+  <p>One other thing to consider: can you do it, or does it require someone elses action? If someone else: delegate it. Send them an email right then, or create an action to “Email Brian about this one thing.”</p>
+</blockquote>
+
+<p>Yessss</p>
+
+<blockquote>
+  <p>Review</p>
+  
+  <p>Reviewing is a key facet of GTD® that keeps everything going smoothly. In short, we’re periodically looking over projects and making some considerations.</p>
+  
+  <p>The GTD Weekly Review® is just that: weekly. And it should do three big things:</p>
+  
+  <p>Get Clear
+  Did your desk get physically full over the past week? Clear it out. Scan in new items or type in notes so that you can file all of that clutter away.
+  Get your Inbox to zero
+  Now that you’ve just added to your Inbox, process it.
+  Empty your head
+  Anything else that needs to come out? Take the time to do a brain dump, like we did at the beginning, to make room for the next week.</p>
+</blockquote>
+
+<p>I need to do this regularly</p>
+
+<blockquote>
+  <p>Then, we’ll get current. To get current, review each project and action list. Consider these questions.</p>
+  
+  <p>Do I need to add a new first step?
+  Is the first action action-able enough?
+  Does this project represent your goals?
+  Should I still be worrying about it, or should I drop it?
+  Does the metadata represent what you want?
+  Could you defer it? Should you set a flag for higher priority?
+  Are my Waiting-For lists actionable yet?
+  Has anyone emailed you? Should you check back on an unanswered email?</p>
+  
+  <p>You can toggle specific calendars by using the View Popover in the toolbar.</p>
+  
+  <p>And let’s say it’s the end of the day on Thursday, but you still have a few more things to do for the week. In the Forecast view, you can drag from 1 day to another—using the minicalendar—to reschedule, or modify the Due Date. Holding down the Command key will instead modify the Defer Date. Holding down both the Command and Option key will change both.</p>
+</blockquote>
+
+<p>Sweet. Did not know this</p>
+
+<blockquote>
+  <p>Resources</p>
+  
+  <p>Delegation</p>
+  
+  <p>Listening</p>
+  
+  <p>Intro to GTD and the following episodes on the Back to Work podcast. Merlin Mann &amp; Dan Benjamin.
+  OmniFocus &amp; GTD by Kelly Forrester at the David Allen Company.
+  Preneurcast 025: Getting Things Done With OmniFocus.</p>
+</blockquote>
+
+<p>​</p>
+</section>
+
+
+    </article>
+    <article class="post" role="article">
+        
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2015/07/best-apps-for-new-dads.html">The Best Apps for New Dads</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2015-07-27T12:32:00+00:00" pubdate>
+                      <span class='month'>Jul</span> <span class='day'>27th</span> <span class='year'>2015</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/code">code</a>                            </span>
+                            <span class="poop2">
+                        <a href="https://www.timbroder.com/blog/tags/apps">#apps</a>
+                        <a href="https://www.timbroder.com/blog/tags/kids">#kids</a>
+                            </span>
+                <span><a href="/2015/07/best-apps-for-new-dads.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2015/07/best-apps-for-new-dads.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-url="https://www.timbroder.com/2015/07/best-apps-for-new-dads.html"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>I posted over on <a href="http://tekside.net/iphonaddict/2015/7/15/the-best-apps-for-new-dads" title="TekSide">TekSide</a>:</p>
+
+<p>We have a newborn named <a href="https://twitter.com/timothybroder/status/617041906040762368" title="Charlie">Charlie</a>. He's 2 weeks old so I'm no expert on being a Dad, but there have been a few apps the have been extremely helpful throughout the whole process. I tried a number of apps with tips, data entry, tools, and other functions, but these are the ones that stuck. As always, my iPhone is constantly by my side and I couldn't imagine going through pregnancy, labor, or fatherhood without them.</p>
+
+<p><a href="http://apple.co/1O6Fg0E">Who's Your Daddy? The Pregnancy Guide for First Time Dads</a></p>
+
+<p>As soon as you find out your pregnant, download this app and put in the tentative due date of the baby. The app will then start giving you daily tips. These range from the practical:</p>
+
+<ul>
+<li>Make sure your life insurance is appropriate for a family</li>
+<li>Create a gift registry</li>
+<li>Pack the hospital bag (later on)</li>
+</ul>
+
+<p>To things for you:</p>
+
+<ul>
+<li>Go out for one last romp with the boys</li>
+<li>Is your paternity leave sorted?</li>
+<li>You have one responsibility now: be there for her</li>
+</ul>
+
+<p>To things for <strong>her</strong>. (These are the true gems)</p>
+
+<ul>
+<li>Being home her favorite snacks tonight</li>
+<li>Tell her she looks beautiful today</li>
+<li>Kiss her long and hard when you get home tonight</li>
+<li>Schedule a date at your favorite place tonight</li>
+<li>Hit the movies one last time</li>
+</ul>
+
+<p>These daily notification were HUGE. They let me know when I should be doing things and gave suggestions on how to do them. The app also has a list of tools including a hospital bag list, baby name tracking, and a contraction counter. We ended up not using the contraction counter though. I didn't trust it. The app closed in the middle of one and it forgot that we had a timer going. We then switched over to the standard <a href="http://apple.co/1O6Foxb">Full Term</a>, which is mentioned below.</p>
+
+<p>This app was on my home screen for the duration of pregnancy</p>
+
+<p><img src="https://farm1.staticflickr.com/490/19535083889_fc74ddc6d8_o_d.png" alt="Daddy Features" />
+<img src="https://farm1.staticflickr.com/341/19100803003_f49e041b03_o_d.png" alt="Daddy Tip 1" />
+<img src="https://farm1.staticflickr.com/308/19695513376_43bb959f3a_o_d.png" alt="Daddy Tip 2" /></p>
+
+<p><a href="http://apple.co/1CHgsMa">Nurture</a></p>
+
+<p>Nurture was great both as a visual log of my wife during her pregnancy, and as an information resource as to what was going on with Baby.  Every week, the app prompted Laura to take a photo of herself. It was really cool to see how she changed from week to week. At the end, the app also strings these images together in a nice little animation.</p>
+
+<p>The feature I liked most about Nurture was the description of how big Charlie actually was.  It lists a fruit or a piece of candy which really lets you correlate his size to something real. From a Skittle, to a mango, to a melon, we looked forward to seeing the update every Tuesday.</p>
+
+<p>Every week I would scroll through the relevant medical and parenting articles that the app suggested. Most were very good and worth reading. I also read a few books which I'll cover in a future post.</p>
+
+<p><img src="https://farm1.staticflickr.com/268/19101397623_e102831237_o_d.png" alt="Nurture Screenshot" /></p>
+
+<p><a href="http://apple.co/1O6Foxb">Full Term</a></p>
+
+<p>This was our (and everywhere on the internet) contraction counter of choice. Starting and stopping the counter was super easy. Especially at a time where you can't really do more than glance at your phone. The app also presents the last contraction, an average of the last hour, and an average of the last 6 hours in an easy to read format. We ended up going through all of the labor at the hospital where Laura was hooked up to a machine. But, had we done it at home, this app would have been perfect to figure out when we should head in.</p>
+
+<p>My one wish would have been having a watch app alongside this to make start/stopping even easier</p>
+
+<p><a href="http://apple.co/1CHgoMc">BabyConnect</a></p>
+
+<p>Data Entry! This app looks quite dated (It's still using the old iOS6 design language) but it is very, very functional.  It can track:</p>
+
+<ul>
+<li>Feedings</li>
+<li>Diaper</li>
+<li>Sleep</li>
+<li>Mood</li>
+<li>Activity</li>
+<li>Medical</li>
+<li>Milestones</li>
+<li>Daycare Dropoff/Pickup</li>
+<li>Messages to baby for the future</li>
+<li>Photos</li>
+</ul>
+
+<p>We've only been using the Feed, Diaper, and Milestone functions so far. Photos we're using a shared album in Photos.app which is shared with immediate family and very close friends.  Mood and Activity are on the short list to start using. The app can aggregate any of these data points into graphs which give you quick info when you need it. "How many times per day are we feeding him?" This is handy when we went to the pediatrician early on and he wanted to know how many wet diapers Charlie had per day. (The only measure of if he's getting enough food when breastfeeding)</p>
+
+<p>The killer feature of BabyConnect is it's sync capabilities. We have it set up where both Laura and I are the parents of Charlie and either of us can enter information from any device and it immediately syncs. Just in case we forgot to grab our phone for a night feeding, we also have an iPod touch sitting in the nursery with this app installed so we can track what goes on at night.  I also have notifications turned on (for now anyway) so I can see when Laura does certain things with Charlie</p>
+
+<p><img src="https://farm1.staticflickr.com/274/19100802803_1e098e6101_o_d.png" alt="BabyConnect Features" />
+<img src="https://farm1.staticflickr.com/558/19726310291_212508717f_o_d.png" alt="BabyConnect Chart" /></p>
+
+<p><a href="http://apple.co/1CHg9kn">Quick Tips</a></p>
+
+<p>Great quick tips and how-to's for new dads. I find myself browsing these while I'm trying to get Charlie to calm down at night. How to deal with crying or feeding  or tutorials on holding, diaper changes, and bath time.</p>
+
+<p><img src="https://farm1.staticflickr.com/483/19099268484_68f0d377cc_o_d.png" alt="Quick Tips" />
+<img src="https://farm1.staticflickr.com/466/19721849935_d39099a900_o_d.png" alt="How To" /></p>
+
+<p><a href="http://apple.co/1CHgy6p">DayOne</a></p>
+
+<p>I won't go into Journaling as a whole in this article, but Day One is a great app to get frustrations or despair out of your head. Baby will pick up on these and it's a good mechanism to get back in the moment. Whether you are alone or it's not something you can or should discuss with your spouse at that point in time</p>
+
+<p><a href="http://apple.co/1CHgCmI">Omnifocus</a></p>
+
+<p>My to-do list of choice. Used for things like</p>
+
+<ul>
+<li>Set up Will</li>
+<li>Order Stroller</li>
+<li>Confirm insurance</li>
+<li>etc</li>
+</ul>
+
+<p>Non-App Resources</p>
+
+<ul>
+<li><a href="http://thenightlight.com/">TheNightLight</a> - If you like the <a href="http://thewirecutter.com/">The Wire Cutter</a> check this site out. It's from the same team and they have great reviews on everything from bottles, to monitors, to strollers.</li>
+<li><a href="http://www.lucieslist.com/">Lucie's List</a> - This is technically a mommy blog, but sign up for their weekly newsletter. The info is great and it's another source that will remind you to do things; Decide on circumcision, Picking a godparent, and more</li>
+</ul>
+</section>
+
+
+    </article>
+    <article class="post" role="article">
+        
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2015/07/apple-music-followup-part-1.html">Apple Music Followup: Part 1</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2015-07-26T21:55:00+00:00" pubdate>
+                      <span class='month'>Jul</span> <span class='day'>26th</span> <span class='year'>2015</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Commentary">Commentary</a>                            </span>
+                            <span class="poop2">
+                        <a href="https://www.timbroder.com/blog/tags/apple">#apple</a>
+                        <a href="https://www.timbroder.com/blog/tags/music">#music</a>
+                            </span>
+                <span><a href="/2015/07/apple-music-followup-part-1.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2015/07/apple-music-followup-part-1.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-url="https://www.timbroder.com/2015/07/apple-music-followup-part-1.html"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>A few new articles popped up in my RSS feed since I <a href="http://www.timbroder.com/2015/07/apple-music-is-a-nightmare-and-i%E2%80%99m-done-with-it.html">mentioned</a> Apple Music</p>
+
+<p><a href="http://www.loopinsight.com/2015/07/24/i-got-my-music-back-at-least-most-of-it/">I got my music back. At least most of it</a></p>
+
+<blockquote>
+  <p>At this point, I’m just glad to have most of music back, but I still have no idea what happened to the other songs, for sure.</p>
+</blockquote>
+
+<p>Jim was able to meet with Apple privately and investigate a lot of his issues. Check out his post for the full story</p>
+
+<p><a href="http://www.loopinsight.com/2015/07/24/dave-mark-why-im-not-done-with-apple-music/">Dave Mark: Why I’m not done with Apple Music</a></p>
+
+<blockquote>
+  <p>My Mac and iOS devices might as well be on different planets. When I search for a song on my iPhone, I can tap the Apple Music tab and, assuming the song is available on the Apple Music library, I can add the song to my current playlist, download it to my device for offline play, and mark it with a For You heart. Easy peasy.</p>
+  
+  <p>On my Mac, not so simple. Unlike the iOS universe, there is no Apple Music application on my Mac. On my iOS device, things are clear cut. There’s the iTunes Store app for buying music and the Apple Music app for streaming.</p>
+  
+  <p>So all this said, why am I still pushing on? Why don’t I make the move to Spotify?</p>
+  
+  <p>It’s all about potential.</p>
+</blockquote>
+
+<p>Click through to continue</p>
+
+<p><a href="http://morrick.me/archives/7371">Apple Music ought to be better than this</a></p>
+
+<blockquote>
+  <p>Mark is not the only one willing to cut Apple some slack. I’ve heard other people — satisfied enough with Apple Music — sharing this kind of forgiving attitude.</p>
+  
+  <p>Well, I don’t agree with it. I think people should expect better from Apple. A better service. Better quality, and yes, from day one. Apple has the resources to make it happen. Apple is a bigger company than any other in the music streaming industry. Apple has the advantage of its ecosystem, not to mention the data already accumulated through the Genius algorithm within iTunes. Yet Apple Music feels more rushed, more confusing, feels like a patchwork of different ideas and directions, and it ultimately feels more ‘beta’ than other competing apps and services when these first launched.</p>
+</blockquote>
+
+<p>As I said last time. I expected more. A higher quality</p>
+
+<blockquote>
+  <p>The problems with iTunes 12.2, iCloud Music Library, etc., give me the impression that Apple Music’s features have been hurriedly bolted on the already pachydermic, bloated, jack-of-all-trades iTunes app, and shipped without extensive, thorough testing.</p>
+</blockquote>
+
+<p>​</p>
+
+<blockquote>
+  <p>Would people be equally forgiving if third-party paid music streaming apps and services caused the same mess Apple Music did for a lot of users? Would they talk of ‘potential’, or things getting better with the next version/iteration? I’m not so sure.</p>
+</blockquote>
+
+<p>​</p>
+
+<blockquote>
+  <p>A few people wrote me that I was “crazy” for not dropping Spotify and instantly switch to Apple Music like they did; none of them said exactly why I should do so, the only vague criticism towards Spotify being “It’s just a mess” (huh?)</p>
+</blockquote>
+
+<p>I don't understand this</p>
+
+<p><a href="http://www.marco.org/2015/07/26/dont-order-the-fish">Don’t order the fish – Marco.org</a></p>
+
+<blockquote>
+  <p>But the iTunes Store back-end is a toxic hellstew of unreliability. Everything that touches the iTunes Store has a spotty record for me and almost every Mac owner I know.</p>
+  
+  <p>And the iTunes app itself is the toxic hellstew. iTunes has an impossible combination of tasks on its plate that cannot be done well. iTunes is the definition of cruft and technical debt. It was an early version of iTunes that demonstrated the first software bugs to Grace Hopper in 1946.</p>
+</blockquote>
+
+<p>​</p>
+</section>
+
+
+    </article>
+    <article class="post" role="article">
+            
+<header class="post-header">
+    <h1 class="post-title"><a href="http://social.techcrunch.com/2015/07/22/uber-for-developers/">Gigster Does The Dev Dirty Work To Turn Your Idea Into An App</a> ☞ </h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2015-07-24T11:31:00+00:00" pubdate>
+          <a href="https://www.timbroder.com/2015/07/gigster-does-the-dev-dirty-work-to-turn-your-idea-into-an-app.html">            <span class='month'>Jul</span> <span class='day'>24th</span> <span class='year'>2015</span>
+          </a>      </time>
+
+                        <span><a href="/2015/07/gigster-does-the-dev-dirty-work-to-turn-your-idea-into-an-app.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2015/07/gigster-does-the-dev-dirty-work-to-turn-your-idea-into-an-app.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-url="https://www.timbroder.com/2015/07/gigster-does-the-dev-dirty-work-to-turn-your-idea-into-an-app.html"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><blockquote>
+  <p>Crew and Toptal pre-vet their freelancers, but all the management issues remain</p>
+</blockquote>
+
+<p>We've had varying levels of success with TopTal. But, the management side of it wasn't the issue. The issue was code quality and expertise. But, we got what we paid for</p>
+
+<blockquote>
+  <p>Just go to Gigsterâs site, instant message with a sales engineer, tell them what you want built, and in 10 minutes you get a guaranteed quote for what it will cost and how long it will take. Give Gigster the go-ahead, and it will manage an elite set of freelance coders and designers to build your product and give you status reports each week. Once you get your project back, Gigster will even maintain the code, and you can pay to add upgrades or new features.</p>
+</blockquote>
+
+<p>I'm trying to decide if this is worth trying. Next week when I'm back at work I might float a small project their way to see what the quote is. (Assuming I already know what it would cost us to do it ourselves</p>
+</section>
+
+
+    </article>
+    <article class="post" role="article">
+            
+<header class="post-header">
+    <h1 class="post-title"><a href="http://www.loopinsight.com/2015/07/22/apple-music-is-a-nightmare-and-im-done-with-it/">Apple Music Is A Nightmare And I’m Done With It</a> ☞ </h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2015-07-22T15:51:00+00:00" pubdate>
+          <a href="https://www.timbroder.com/2015/07/apple-music-is-a-nightmare-and-i’m-done-with-it.html">            <span class='month'>Jul</span> <span class='day'>22nd</span> <span class='year'>2015</span>
+          </a>      </time>
+
+                        <span><a href="/2015/07/apple-music-is-a-nightmare-and-i’m-done-with-it.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2015/07/apple-music-is-a-nightmare-and-i’m-done-with-it.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-url="https://www.timbroder.com/2015/07/apple-music-is-a-nightmare-and-i’m-done-with-it.html"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>Jim Dalrymple at The Loop has had some scathing issues with Apple Music. My thoughts below.</p>
+
+<blockquote>
+  <p>I love Apple. I love them because they take difficult problems and come up with innovative, simple solutions. The things they make just work and we trust them. Unfortunately, my experience with Apple Music has been exactly the opposite. As of today, I’m missing about 4,700 songs from my library with little hope of getting them back.</p>
+  
+  <p>I had high hopes for Apple Music. I really wanted it to work and become my default music streaming service, but after the problems I’ve experienced over the last couple of weeks, I’m disabling it altogether</p>
+</blockquote>
+
+<p>I had mediocre hopes for apple music. A lot of my friends at <a href="http://www.alexanderinteractive.com/" title="work">work</a> and at <a href="http://tekside.net/" title="Tekside">Tekside</a> are raving about it. But, it's a service. A web/cloud/backend service. Apple historically has sucked at these. (Ping, iCloud sync, iMessage still isn't perfect).</p>
+
+<p>This isn't a review because as I'm still playing with it. But I'm looking at it from the perspective of someone who has used Spotify for years. I've commented a few times that I've been delighted at the new music their weekly newsletter recommends for me. I end up <strong>LOVING</strong> about 80% of them and they get discography playlists. (Unless I'm listening to trance or classical I make discography playlists for every band I listen to. I usually listen to them in order. It never been one for a more traditionally playlist or shuffling different bands on a play. I like to listen to albums, the way they were destined to be listened to.</p>
+
+<p>What I'm trying to get at, is Apple is coming to me at a high bar. Their music service can't be good, or even great. It has to knock my socks off. It has to make me love it. It has to make me want to go through the trouble of canceling my Spotify subscription and recreate the way I listen to music in it's ecosystem</p>
+
+<p>I don't have to worry too much about music I've purchased. I went from Napster to Pandora to Spotify. There are a few bands that I own the music for the I've added to Spotify (looking at you Beatles and Tool)</p>
+
+<p>Also, EVERYONE at work is on Spotify and playlists are passed around all the time. It will be interesting to see how his shakes out. (I've been home on paternity leave so I'm not sure what's going on with Apple music over there)</p>
+
+<blockquote>
+  <p>As if all of that wasn’t enough, Apple Music gave me one more kick in the head. Over the weekend, I turned off Apple Music and it took large chunks of my purchased music with it. Sadly, many of the songs were added from CDs years ago that I no longer have access to. Looking at my old iTunes Match library, before Apple Music, I’m missing about 4,700 songs. At this point, I just don’t care anymore, I just want Apple Music off my devices.</p>
+  
+  <p>I trusted my data to Apple and they failed. I also failed by not backing up my library before installing Apple Music. I will not make either of those mistakes again.</p>
+</blockquote>
+
+<p>I'm assuming Apple Music uses cloudkit. I'm <strong>hoping</strong> it does. If it uses iCloud sync, it's screwed. I've seen how that works. Heck I've built apps that use it so I know its shortcomings. I have little trust in apples cloud ability</p>
+
+<p>Beats1 alone is not enough to take my money. But we will see how I use it over the next month. I'll be exclusively using it to give it an honest try</p>
+
+<p>But, here's another thing. This launch had to be <strong>flawless</strong>. This has Apple and some of the biggest names in music behind it. Hearing repeat content within the first few days on Beats1 is inexcusable. Losing music is horrid. And downtime if such a high profile service is even worse.</p>
+
+<p>All 3 of these things have happened. "It's a new service" is not an excuse for this. This isn't some startup or kickstater project. This is Apple and while they didn't trip out of the gate, it wasn't far behind</p>
+</section>
+
+
+    </article>
+    <article class="post" role="article">
+            
+<header class="post-header">
+    <h1 class="post-title"><a href="http://www.samuelstrickland.me/blog/2015/7/ios-games-you-need-to-play">Sam: Ios Games You Need To Play</a> ☞ </h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2015-07-21T11:03:00+00:00" pubdate>
+          <a href="https://www.timbroder.com/2015/07/ios-games-you-need-to-play.html">            <span class='month'>Jul</span> <span class='day'>21st</span> <span class='year'>2015</span>
+          </a>      </time>
+
+                        <span><a href="/2015/07/ios-games-you-need-to-play.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2015/07/ios-games-you-need-to-play.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-url="https://www.timbroder.com/2015/07/ios-games-you-need-to-play.html"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>I wrote about my <a href="http://timbroder.com/2015/03/games-i-was-addicted-to-in-2014.html">favorite games of 2014</a>. <a href="http://www.samuelstrickland.me/blog/2015/7/ios-games-you-need-to-play?utm_content=buffer125bf&amp;utm_medium=social&amp;utm_source=twitter.com&amp;u">Sam</a> posted his list. You should take a look.</p>
+
+<blockquote>
+  <p><a href="http://apple.co/1MnhKiF">Sword &amp; Sworcery</a>
+  This is one of my favorite games of all time. It tells a tragic and beautiful story full of fantastical mystery. The world is unlike anything else; creating an amazing blend between high fantasy, music culture, and otherworldly charm. Everything reacts to your touch. It makes you feel like you are a guide and a participant in this story, following the Sythian through her journey as a companion rather than an observer.</p>
+</blockquote>
+
+<p>This has been on my list of games to try forever. It's not that I balked at the $4.99  price tag. Plenty of the Final Fantasy games I've bought were $15. I didn't like the look of sword and sorcery from the screenshots. But Sam's recent game recommendations to me have been great. I'm currently working on a combination of Final Fantasy 6 and Baldur's Gate. Maybe when I finish one of those</p>
+
+<blockquote>
+  <p><a href="http://apple.co/1MnhQ9Q">Botanicula</a> &amp; <a href="http://apple.co/1GAdYdk">Machinarium</a>
+  Unlike a lot of adventure games, these never dive into obtuse logic puzzles or irreconcilable fail states. Instead, they let you freely explore their worlds and solve puzzles on your own terms.</p>
+</blockquote>
+
+<p>I'll add another vote do Machinarium. After playing through the Room I &amp; II last summer Laura and I looked for another puzzle/adventure game. We landed on Machinarium and have been playing through it together when we have time</p>
+
+<blockquote>
+  <p><a href="http://apple.co/1GAe3hd">realMyst</a>
+  A modern translation of the classic adventure game, realMyst takes the original game, Myst, and opens up the world to free movement.</p>
+</blockquote>
+
+<p>I LOVED the original Myst. But replaying it scares me. I survived it. I conquered it. I don't know if I would want to open that back up.</p>
+
+<p>It's HARD</p>
+</section>
+
+
+    </article>
+    <article class="post" role="article">
+            
+<header class="post-header">
+    <h1 class="post-title"><a href="http://www.rollingstone.com/culture/features/ben-schlappig-airlines-fly-free-20150720">Up In The Air: Meet The Man Who Flies Around The World For Free</a> ☞ </h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2015-07-20T20:12:00+00:00" pubdate>
+          <a href="https://www.timbroder.com/2015/07/up-in-the-air:-meet-the-man-who-flies-around-the-world-for-free.html">            <span class='month'>Jul</span> <span class='day'>20th</span> <span class='year'>2015</span>
+          </a>      </time>
+
+                        <span><a href="/2015/07/up-in-the-air:-meet-the-man-who-flies-around-the-world-for-free.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2015/07/up-in-the-air:-meet-the-man-who-flies-around-the-world-for-free.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-url="https://www.timbroder.com/2015/07/up-in-the-air:-meet-the-man-who-flies-around-the-world-for-free.html"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>This was a fascinating read about a quasi-underground culture or gaming airline systems and flying for free.  Luxury only: business class and private rooms only</p>
+
+<blockquote>
+  <p>“At that point, I was like, ‘Screw it,’ ” he remembers. “I decided I might as well do this full-time.” In April 2014, at the end of his lease, he walked into Seattle-Tacoma International Airport. He hasn’t come down since.</p>
+</blockquote>
+
+<p>​This article reminded me of the <a href="http://www.hitch50.com/">Hitch 50</a> blog from years ago. Back in 2006, Scotty and Fiddy embarked on an adventure to visit the capitals of all 50 states in 50 days. Solely through hitchhiking. That was a fun tale to watch in real time</p>
+</section>
+
+
+    </article>
+    <article class="post" role="article">
+            
+<header class="post-header">
+    <h1 class="post-title"><a href="http://coffeecoder.net/blog/blog-little-things">Blog Little Things - Coffee Coder</a> ☞ </h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2015-07-20T13:32:00+00:00" pubdate>
+          <a href="https://www.timbroder.com/2015/07/blog-little-things---coffee-coder.html">            <span class='month'>Jul</span> <span class='day'>20th</span> <span class='year'>2015</span>
+          </a>      </time>
+
+                        <span><a href="/2015/07/blog-little-things---coffee-coder.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2015/07/blog-little-things---coffee-coder.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-url="https://www.timbroder.com/2015/07/blog-little-things---coffee-coder.html"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><blockquote>
+  <p>don’t fear to blog little things. It doesn’t need to be big, significant, detailed, mind-blowing to come out but just of a little value. It is helpful to think just of one person who had the exact same problem as yours and was helped by your post. Maybe the post won’t get thousands of shares as we see in our reading list but hey, it saved someone’s time</p>
+</blockquote>
+
+<p>​</p>
+</section>
+
+
+    </article>
+    <article class="post" role="article">
+            
+<header class="post-header">
+    <h1 class="post-title"><a href="http://www.manton.org/2015/06/more-quick-blogging-workflows.html">More Quick Blogging Workflows | Manton Reece</a> ☞ </h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2015-07-19T22:32:00+00:00" pubdate>
+          <a href="https://www.timbroder.com/2015/07/more-quick-blogging-workflows-|-manton-reece.html">            <span class='month'>Jul</span> <span class='day'>19th</span> <span class='year'>2015</span>
+          </a>      </time>
+
+                        <span><a href="/2015/07/more-quick-blogging-workflows-|-manton-reece.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2015/07/more-quick-blogging-workflows-|-manton-reece.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-url="https://www.timbroder.com/2015/07/more-quick-blogging-workflows-|-manton-reece.html"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><blockquote>
+  <p>We all want to get better at writing and posting more frequently. As I mentioned in yesterday's post, the best way to improve anything is to do more of it, more often</p>
+</blockquote>
+
+<p>100% agree. Rebuilding my blog was fun. Let's see if I can get myself to write mode ;)</p>
+
+<p>I'm also trying a "habit app"</p>
+
+<blockquote>
+  <p>a big part of posting regularly is just having a system that makes it easy</p>
+</blockquote>
+
+<p>Amen</p>
+
+<blockquote>
+  <p>Posting to a blog first and then Twitter second seems like a simple idea, but it is extremely powerful. Years from now you end up with an archive of all your short-form writing at your own domain. Not as an afterthought, but as the default.</p>
+</blockquote>
+
+<p>This is a very interesting idea. It's somewhere in the list for my site rebuild. Somewhere in the middle</p>
+
+<p>I do really like using buffer though. But I could still go to buffer from IFTTT</p>
+</section>
+
+
+    </article>
+    <article class="post" role="article">
+            
+<header class="post-header">
+    <h1 class="post-title"><a href="http://www.manton.org/2015/06/we-need-more-bad-ideas.html">We Need More Bad Ideas</a> ☞ </h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2015-07-19T22:25:00+00:00" pubdate>
+          <a href="https://www.timbroder.com/2015/07/we-need-more-bad-ideas-|-manton-reece.html">            <span class='month'>Jul</span> <span class='day'>19th</span> <span class='year'>2015</span>
+          </a>      </time>
+
+                        <span><a href="/2015/07/we-need-more-bad-ideas-|-manton-reece.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2015/07/we-need-more-bad-ideas-|-manton-reece.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-url="https://www.timbroder.com/2015/07/we-need-more-bad-ideas-|-manton-reece.html"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p><a href="http://www.manton.org/2015/06/we-need-more-bad-ideas.html">Manton Reece</a>:</p>
+
+<blockquote>
+  <p>The essay reminds me of something that always stuck with me reading about legendary Warner Bros. animation director Chuck Jones years ago. He said that when he was young, his father would give him and his siblings essentially unlimited paper to draw on, unused supplies from his business. We all have 100,000 bad drawings in us. The sooner we get through all the bad drawings — in Shawn’s essay, the bad ideas — the sooner we can start producing our best work.</p>
+</blockquote>
+
+<p>Write your ideas down. Good or bad. They aren't a thing while they just rattle around in your head.</p>
+
+<p>Get them out: onto paper, Omnifocus, evernote, whatever. This makes them real</p>
+
+<p>Then you can decide what's good or bad</p>
+</section>
+
+
+    </article>
+    <nav class="pagination" role="navigation">
+                <a class="next" href="https://www.timbroder.com/page/14">&larr; Older</a>
+        
+                <a class="prev" href="https://www.timbroder.com/page/12">Newer &rarr;</a>
+            </nav>
+
+    </main>
+
+
+                        <footer class="site-footer clearfix">
+    <section>
+            <span class="tag size2"><a href="/blog/tags/"></a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/AVSpeechSynthesizer">AVSpeechSynthesizer</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Ai">Ai</a></span>
+            &nbsp;
+        <span class="tag size8"><a href="/blog/tags/Android">Android</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Atom">Atom</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Avengers">Avengers</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Batman">Batman</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Batman%20Inc.">Batman Inc.</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Batman%20and%20Robin">Batman and Robin</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/CKEditor">CKEditor</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/Calibre">Calibre</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Cheese">Cheese</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/ComicCon">ComicCon</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/CoreData">CoreData</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/DRM">DRM</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/Docs%20Spreadsheets">Docs Spreadsheets</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/ESI">ESI</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Fontis">Fontis</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/GME">GME</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/GTD">GTD</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/GWT">GWT</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Garlic">Garlic</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/Google">Google</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/Google%20Reader">Google Reader</a></span>
+            &nbsp;
+        <span class="tag size9"><a href="/blog/tags/HOWTO">HOWTO</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Hulu">Hulu</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Internet%20Explorer">Internet Explorer</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/JIRA">JIRA</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/Kindle">Kindle</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/Mashups">Mashups</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Memcached">Memcached</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/OmniFocus">OmniFocus</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Oracle">Oracle</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/PHPUnit">PHPUnit</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/PostgreSQL">PostgreSQL</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/RSS">RSS</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Redmine">Redmine</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Remember%20the%20Milk">Remember the Milk</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Ruby">Ruby</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/SQL">SQL</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Shared%20web%20hosting%20service">Shared web hosting service</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Siri">Siri</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Skype">Skype</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Sony%20Reader">Sony Reader</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Stan%20Lee">Stan Lee</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/TDD">TDD</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Terminator">Terminator</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/TinyMCE">TinyMCE</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Vibrams">Vibrams</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Virtual%20hosting">Virtual hosting</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Virtual%20private%20server">Virtual private server</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Walking%20Dead">Walking Dead</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Web%20hosting">Web hosting</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/YUI">YUI</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Zend">Zend</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/adwhirl">adwhirl</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/adwords">adwords</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/aiaio">aiaio</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/ajax">ajax</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/alfred">alfred</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/analytics">analytics</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/angularjs">angularjs</a></span>
+            &nbsp;
+        <span class="tag size4"><a href="/blog/tags/appengine">appengine</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/apple">apple</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/applepay">applepay</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/apps">apps</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/autocomplete">autocomplete</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/automation">automation</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/beta">beta</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/bit.ly">bit.ly</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/blackberry">blackberry</a></span>
+            &nbsp;
+        <span class="tag size4"><a href="/blog/tags/blogger">blogger</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/bookmarks">bookmarks</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/brightkite">brightkite</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/calendar">calendar</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/chrome">chrome</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/coffee">coffee</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/css">css</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/debug">debug</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/digg">digg</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/django">django</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/drafts">drafts</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/dropbox">dropbox</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/encryption">encryption</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/engagement">engagement</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/events">events</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/facebook">facebook</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/firefox">firefox</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/friendfeed">friendfeed</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/gadgets">gadgets</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/gchat">gchat</a></span>
+            &nbsp;
+        <span class="tag size4"><a href="/blog/tags/gdata">gdata</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/gdrive">gdrive</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/gears">gears</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/git">git</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/github">github</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/gmail">gmail</a></span>
+            &nbsp;
+        <span class="tag size5"><a href="/blog/tags/gpowered.net">gpowered.net</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/greasemonkey">greasemonkey</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/groups">groups</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/homebrew">homebrew</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/instapaper">instapaper</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/interfacebuilder">interfacebuilder</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/ios">ios</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/ipad">ipad</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/iphone">iphone</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/javascript">javascript</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/jira">jira</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/jquery">jquery</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/json">json</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/kids">kids</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/laravel">laravel</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/launch%20center%20pro">launch center pro</a></span>
+            &nbsp;
+        <span class="tag size5"><a href="/blog/tags/magento">magento</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/maps">maps</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/mercurial">mercurial</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/mock">mock</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/mongodb">mongodb</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/music">music</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/mysql">mysql</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/netbook">netbook</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/nosql">nosql</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/objective%20c">objective c</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/oil">oil</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/omnifocus">omnifocus</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/opensocial">opensocial</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/opensource">opensource</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/os">os</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/osx">osx</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/pesto">pesto</a></span>
+            &nbsp;
+        <span class="tag size7"><a href="/blog/tags/php">php</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/picasa%20web">picasa web</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/podcasts">podcasts</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/powershell">powershell</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/primal">primal</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/productivity">productivity</a></span>
+            &nbsp;
+        <span class="tag size6"><a href="/blog/tags/python">python</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/pythonista">pythonista</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/quick">quick</a></span>
+            &nbsp;
+        <span class="tag size4"><a href="/blog/tags/reader">reader</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/realm">realm</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/regex">regex</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/running">running</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/search">search</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/security">security</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/seo">seo</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/sketch">sketch</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/skynet">skynet</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/sleep">sleep</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/socialgraph">socialgraph</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/solr">solr</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/startup">startup</a></span>
+            &nbsp;
+        <span class="tag size4"><a href="/blog/tags/swift">swift</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/testing">testing</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/textmate">textmate</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/timbroder.com">timbroder.com</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/todoist">todoist</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/twitter">twitter</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/twitter2gTalk">twitter2gTalk</a></span>
+            &nbsp;
+        <span class="tag size6"><a href="/blog/tags/ubuntu">ubuntu</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/urls">urls</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/vagrant">vagrant</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/varnish">varnish</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/virtualenv">virtualenv</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/winamp">winamp</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/windows">windows</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/wordpress">wordpress</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/xbox">xbox</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/xcode">xcode</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/xml">xml</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/yahoo%20pipes">yahoo pipes</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/youtube">youtube</a></span>
+            &nbsp;
+    
+    </section>
+    <section class="copyright">
+        Copyright &copy; 2007-2018 -
+         Tim Broder -         <span class="credit">Powered by <a href="http://sculpin.io">Sculpin</a></span>
+    </section>
+</footer>
+                <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="https://www.timbroder.com/themes/broderboy/deadfish/assets/js/index.js"></script>
+<script type="text/javascript" src="https://www.timbroder.com/themes/broderboy/deadfish/assets/js/rainbow.min.js"></script>
+<script type="text/javascript" src="https://www.timbroder.com/themes/broderboy/deadfish/assets/js/rlns.min.js"></script>
+
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'timbrodercom'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-17099661-1', 'auto');
+    ga('send', 'pageview');
+
+</script>    </div>
+</body>
+</html>

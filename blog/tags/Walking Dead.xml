@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[timbroder.com]]></title>
+    <link href="https://www.timbroder.com/blog/tags/Walking Dead.xml" rel="self"/>
+    <link href="https://www.timbroder.com/"/>
+    <updated>2018-09-09T12:21:33+00:00</updated>
+    <id>https://www.timbroder.com/</id>
+            <author>
+            <name><![CDATA[Tim Broder]]></name>            <email><![CDATA[timothy.broder@gmail.com]]></email>        </author>
+        <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[AMC&#039;S THE WALKING DEAD Trailer]]></title>
+            <link href="https://www.timbroder.com/2010/08/amcs-the-walking-dead-trailer.html"/>
+            <updated>2010-08-24T17:53:49+00:00</updated>
+            <id>https://www.timbroder.com/2010/08/amcs-the-walking-dead-trailer.html</id>
+            <content type="html"><![CDATA[<p>Very excited for this!</p>
+]]></content>
+        </entry>
+    </feed>

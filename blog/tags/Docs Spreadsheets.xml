@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[timbroder.com]]></title>
+    <link href="https://www.timbroder.com/blog/tags/Docs Spreadsheets.xml" rel="self"/>
+    <link href="https://www.timbroder.com/"/>
+    <updated>2018-09-09T12:21:33+00:00</updated>
+    <id>https://www.timbroder.com/</id>
+            <author>
+            <name><![CDATA[Tim Broder]]></name>            <email><![CDATA[timothy.broder@gmail.com]]></email>        </author>
+        <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[Google I/O session videos posted with slides]]></title>
+            <link href="https://www.timbroder.com/2008/06/google-io-session-videos-posted-with.html"/>
+            <updated>2008-06-16T19:11:00+00:00</updated>
+            <id>https://www.timbroder.com/2008/06/google-io-session-videos-posted-with.html</id>
+            <content type="html"><![CDATA[<p>As I said <a href="http://blog.gpowered.net/2008/04/select-google-io-sessions-to-be-posted.html">earlier</a>, Quite a few presentations from Google I/O have
+been <a href="http://sites.google.com/site/io/">posted</a> for your viewing pleasure.
+I'll be glued to these this weekend while I'm on call.</p>
+
+<p>Topics include<br />
+Ajax<br />
+KML<br />
+Sketchup<br />
+Android<br />
+OpenSocial<br />
+Appengine<br />
+Data APIs<br />
+Theory Talks<br />
+Youtube<br />
+Gears<br />
+Mashups<br />
+Maps<br />
+and more!</p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[October Speedlinking]]></title>
+            <link href="https://www.timbroder.com/2007/11/october-speedlinking.html"/>
+            <updated>2007-11-05T23:17:00+00:00</updated>
+            <id>https://www.timbroder.com/2007/11/october-speedlinking.html</id>
+            <content type="html"><![CDATA[<p>I haven't been able to post as often or as in depth as I'd like to have this
+past month. I chalk it up mostly to work, we all love 12 hour days right? But
+now that sign-off has passed and our last release of 2007 is calmly
+approaching (its on Friday), things have settled down a bit. Below are some
+great links from October, most of which I wanted to mention at some point and
+haven't gotten a chance to until now. Enjoy.</p>
+
+<ul>
+<li><p>The <a href="http://googlemashupeditor.blogspot.com/2007/09/authenticated-calendar-support-via-new.html">JavaScript Library</a> for Google Calendar was released. This allows for authenticated, cross domain access. Hopefully Picasa Web will follow suit.</p></li>
+<li><p><a href="http://googlewebtoolkit.blogspot.com/2007/09/gwt-application-development-for-iphone.html">GWT</a> goes to the iPhone</p></li>
+<li><p>The <a href="http://googledataapis.blogspot.com/2007/09/python-client-library-same-great-taste.html">Python Client Library</a> came out with version 1.0.8</p></li>
+<li><p>The <a href="http://gearsblog.blogspot.com/2007/09/digg-oracle-using-workerpool-as-well-as.html">Digg Oracle</a> demonstrates Gears' Worker Pool</p></li>
+<li><p>Google's <a href="http://googlified.com/2007google-stock-passes-600-mark/#comment-17313">Stock broke $600</a>. It is now well over $700</p></li>
+<li><p><a href="http://mashable.com/2007/10/08/orkut/">Orkut</a> ramps up for a US push</p></li>
+<li><p><a href="http://gearsblog.blogspot.com/2007/10/vortex-simple-new-offline-and-sync.html">Vortex</a> combines the know-how of Dojo and Gears</p></li>
+<li><p><a href="http://googlemapsapi.blogspot.com/2007/10/labeledmarker-v11-now-supporting-marker.html">LabeledMarker v1.1</a> in Google Maps comes out with Marker and Label toggling</p></li>
+<li><p>Google Reader comes out with <a href="http://googlesystem.blogspot.com/2007/10/find-number-of-google-subscribers-for.html">Subscriber stats</a>. Read about the controversy <a href="http://blog.gpowered.net/2007/10/google-reader-stats-out-of-wack.html">here</a>. Google responds <a href="http://googlereader.blogspot.com/2007/10/subscriber-stats-summed-up.html">here</a></p></li>
+<li><p><a href="http://googlesystem.blogspot.com/2007/10/google-maps-becomes-social.html">Google Maps Goes Social</a></p></li>
+<li><p>The <a href="http://googleajaxsearchapi.blogspot.com/2007/10/direct-access-to-youtube-channels.html">AJAX Search API</a> gives direct access to YouTube Channels</p></li>
+<li><p>Blogger GData JavaScript client library released with <a href="http://google-code-updates.blogspot.com/2007/10/blogger-gdata-javascript-client-library.html">offline Blogger client example</a></p></li>
+<li><p>Google Code Search <a href="http://google-code-updates.blogspot.com/2007/10/tell-us-about-code-on-your-site-with.html">goes to SiteMaps</a></p></li>
+<li><p>The Ajax API gets <a href="http://googleajaxsearchapi.blogspot.com/2007/10/ajax-feed-api-addition-dynamic-feed.html">Dynamic Feed Control</a></p></li>
+<li><p>You can now play <a href="http://google-latlong.blogspot.com/2007/10/now-playing-youtube-videos-in-google.html">Youtube videos in Google Earth</a></p></li>
+<li><p>Summer of code wrapped up with <a href="http://google-code-updates.blogspot.com/2007/10/wrapping-up-our-third-summer-of-code.html">Graduation</a></p></li>
+<li><p><a href="http://mashable.com/2007/10/24/google-finance-gadgets/">Google Finance adds new Gadgets and an API</a></p></li>
+<li><p>YouTubes player becomes <a href="http://googlesystem.blogspot.com/2007/10/customize-youtubes-player.html">Customizable</a></p></li>
+<li><p>A Greasemonkey script lets you have <a href="http://googlesystem.blogspot.com/2007/10/nested-folders-in-gmail.html">nested folders</a> in Gmail</p></li>
+<li><p>Blogger adds <a href="http://buzz.blogger.com/2007/10/subscribe-to-comments-by-email.html">Comment Notification</a></p></li>
+<li><p>Google <a href="http://www.entrepreneurs-journey.com/864/possible-explanations-for-the-pagerank-penalty-sweep/"> cracks down</a> on pages selling PageRank links</p></li>
+<li><p>Google contributes to <a href="http://mashable.com/2007/10/25/mysql-google/">MySQL</a></p></li>
+<li><p>Google Mac <a href="http://googlemac.blogspot.com/2007/10/google-desktop-update-for-leopard.html">updates Leopard</a></p></li>
+<li><p>Gmail <a href="http://gmailblog.blogspot.com/2007/10/sync-your-inbox-across-devices-with.html">enables IMAP</a></p></li>
+<li><p>Google Maps gets <a href="http://googlemapsapi.blogspot.com/2007/10/clickable-polys-old-school-image-maps.html">Clickable Polygons</a></p></li>
+<li><p>There is now a wizard for adding <a href="http://bloggerindraft.blogspot.com/2007/10/new-feature-gadgets-for-your-blog.html">Google Gadgets to your blog</a></p></li>
+<li><p>Webmaster central fixes the <a href="http://googlewebmastercentral.blogspot.com/2007/10/dealing-with-sitemap-cross-submissions.html">Cross Domain Sitemap errors</a></p></li>
+<li><p>Google maps <a href="http://feeds.feedburner.com/~r/OfficialGoogleMapsApiBlog/~3/174019883/make-your-kml-flash-y.html">adds Flash Content</a> into KLM</p></li>
+<li><p><a href="http://googlesystem.blogspot.com/2007/11/google-notebook-adds-labels-and.html">Google Notebook adds labels and bookmarks</a></p></li>
+<li><p>Blog Search is <a href="http://googlesystem.blogspot.com/2007/11/blog-search-included-in-google-history.html">now included</a> in Google History</p></li>
+<li><p>A cheap "<a href="http://googlesystem.blogspot.com/2007/11/tentative-google-pc.html">Google PC</a>" is on the market</p></li>
+<li><p>A new <a href="http://googlesystem.blogspot.com/2007/10/google-photo-picker.html">Photo Picker</a> for Gmail and Orkut pulls from Picasa</p></li>
+<li><p>GTalk may soon be able to <a href="http://googlesystem.blogspot.com/2007/10/google-to-connect-to-other-im-networks.html">connect to other networks</a> like AIM and Yahoo! Talk</p></li>
+<li><p>The <a href="http://googlesystem.blogspot.com/2007/10/gmails-new-version-is-now-available.html">new version</a> of Gmail comes out</p></li>
+<li><p>Google Code gets a <a href="http://googlified.com/2007new-google-code/">facelift</a></p></li>
+<li><p>Webmaster Tools gets <a href="http://googlified.com/2007set-geographic-target-in-webmaster-tools/">Geographic Targeting</a></p></li>
+<li><p>The Google Gadget Directory gets a <a href="http://blogoscoped.com/archive/2007-11-01-n78.html">facelift</a></p></li>
+<li><p>Microsoft is going to release the <a href="http://mashable.com/2007/11/04/microsoft-sync-framework/">Microsoft Sync Framework</a> to compete with Gears</p></li>
+<li><p>Picasa Web gets <a href="http://googlephotos.blogspot.com/2007/11/better-connections-with-picasa-web.html">opened</a>. (Flikr can transfer a picasa album to itself)</p></li>
+<li><p>Webmasters can now <a href="http://googlewebmastercentral.blogspot.com/2007/10/webmasters-can-now-provide-feedback-on.html">provide feedback</a> on sitelinks</p></li>
+<li><p><a href="http://gearsblog.blogspot.com/2007/10/bloggears-offline-blogger-client.html">Blog.gears</a> comes out</p></li>
+<li><p>Mapplets gets a documentation and example <a href="http://googlemapsapi.blogspot.com/2007/10/updated-documentation-examples-for.html">update</a></p></li>
+<li><p>New articles are posted for <a href="http://googlemapsapi.blogspot.com/2007/10/kml-articles-abound-its-about-time.html">KML</a></p></li>
+<li><p>The Ajax slideshow gets a full <a href="http://googleajaxsearchapi.blogspot.com/2007/10/slide-show-update-full-control-panel.html">Control Panel</a></p></li>
+<li><p><a href="http://googlemapsapi.blogspot.com/2007/10/map-of-dead-screen-overlayed-shoot-em_31.html">Map of the Dead!!</a> Google Maps overlay shooting game!</p></li>
+</ul>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[My First Google API ticket has been fixed]]></title>
+            <link href="https://www.timbroder.com/2007/10/my-first-google-api-ticket-has-been.html"/>
+            <updated>2007-10-17T02:57:00+00:00</updated>
+            <id>https://www.timbroder.com/2007/10/my-first-google-api-ticket-has-been.html</id>
+            <content type="html"><![CDATA[<p>My first <a href="http://code.google.com/p/gdata-issues/issues/detail?id=44">ticket</a>
+for the Google Document List API has been fixed. As I posted about
+[before](http://gpowered.blogspot.com/2007/08/quick-docs-api-example-
+python.html), the Document List API did not have the ability to just retrieve
+the documents from a given folder or tag. This has now been made possible,
+thanks API team!</p>
+
+<p>Original ticket:</p>
+
+<blockquote>
+  <p>It would be ideal if we could pull back a list of documents from a certain
+  folder. This would give more functionality and make the size of the data
+  smaller if you only needed to grab a list of file from a certain folder.</p>
+</blockquote>
+
+<p>Possibly something like: <code>gdata.docs.service.DocumentQuery(folder=['myfolder1'])</code>
+or <code>gdata.docs.service.DocumentQuery(folders=['myfolder1','folder2'])</code></p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Zoho Writer using Gears (cont&#039;d)]]></title>
+            <link href="https://www.timbroder.com/2007/08/zoho-writer-using-gears-contd.html"/>
+            <updated>2007-08-28T01:45:00+00:00</updated>
+            <id>https://www.timbroder.com/2007/08/zoho-writer-using-gears-contd.html</id>
+            <content type="html"><![CDATA[<p>In a quick follow-up to my <a href="http://blog.gpowered.net/2007/08/google-get-in-gear.html">previous article</a>; Google <a href="http://google-code-updates.blogspot.com/2007/08/weekly-google-code-roundup-reaching-sky.html">code blog</a>
+posted a <a href="http://gearsblog.blogspot.com/2007/08/gearing-up-with-zoho-offline.html">video talk</a> about the experience the Zoho team had in incorporating
+Gears with their Writer.</p>
+
+<p>I hate to bring it up again, but like I said before, the Docs team better get
+moving... a Google product competitor using Google Gears first?</p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[C&#039;mon Google! Get in Gear!!]]></title>
+            <link href="https://www.timbroder.com/2007/08/google-get-in-gear.html"/>
+            <updated>2007-08-22T02:34:00+00:00</updated>
+            <id>https://www.timbroder.com/2007/08/google-get-in-gear.html</id>
+            <content type="html"><![CDATA[<p>As of this morning (or at least sometime before lunch), <a href="http://writer.zoho.com/index.do">Zoho
+Writer</a> turned on offline mode with Google
+Gears. If you haven't heard about Gears yet is a small application (and
+framework for developers) to enable Ajax applications to go offline. It uses a
+very small local server and database to grab all the data you would need
+should the application go offline (this has to be set up by the developers of
+the application). There is a great podcast about it [here](http://google-code-
+updates.blogspot.com/2007/06/google-developer-podcast-episode-three.html) from
+the Google Developer Podcast. The first Google product to use it was Google
+Reader which I though was pretty nifty. Before you go on a trip, just hit "Go
+Offline" and it will download all of your unread posts... get on the plane and
+shazam, all your reading to keep you busy.</p>
+
+<p>Zoho currently only supports offline read which I assume means Gears will grab
+all of your documents and you can read them over. Zoho says they will be
+adding read/write functionality in 3-4 weeks.</p>
+
+<p>I must say though, I'm very disappointed that Google got beat to having this
+in Docs and Spreadsheets first. I'm sure it would help a great deal with the
+Google Office Hacks <a href="http://blogoscoped.com/archive/2007-08-08-n90.html">book</a>
+that Philipp Lenssen is writing. C'mon Google, GET IN GEAR(S)!!</p>
+
+<p><img src="http://lh6.google.com/timothy.broder/RsugnJE6BMI/AAAAAAAAKmo/W349O0lJ6LU/s400/zoho_gears1.jpg?imgdl=1" alt="" /></p>
+
+<p><img src="http://lh3.google.com/timothy.broder/RsugnZE6BNI/AAAAAAAAKmw/ts_cV14F9LI/s400/zoho_gears2.jpg?imgdl=1" alt="" /></p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Quick Docs Api Example (python)]]></title>
+            <link href="https://www.timbroder.com/2007/08/quick-docs-api-example-python.html"/>
+            <updated>2007-08-10T03:04:00+00:00</updated>
+            <id>https://www.timbroder.com/2007/08/quick-docs-api-example-python.html</id>
+            <content type="html"><![CDATA[<p>To use the gdata docs python client you need to upgrade to
+<a href="http://code.google.com/p/gdata-python-client/downloads/list">1.0.7</a> or
+higher. First thing is to import the modules you'll need.</p>
+
+<pre><code data-language="python">import gdata.docs.service
+import gdata.docs
+</code></pre>
+
+<p>Then, set up the usual authentication parameters for the client.</p>
+
+<pre><code data-language="python">gd_client = gdata.docs.service.DocsService()
+gd_client.email = 'timothy.broder'
+gd_client.password = '*****'
+gd_client.source = 'gpowered-docs-list-ex'
+gd_client.ProgrammaticLogin()
+</code></pre>
+
+<p>The most basic query will just return all of your documents</p>
+
+<pre><code data-language="python">feed = gd_client.GetDocumentListFeed()
+</code></pre>
+
+<p>However, if we want to display just the spreadsheets, we build the query like
+this:</p>
+
+<pre><code data-language="python">q = gdata.docs.service.DocumentQuery(categories=['spreadsheet'])
+feed = gd_client.Query(q.ToUri())
+</code></pre>
+
+<p>Finally, we output the titles</p>
+
+<pre><code data-language="python">if(len(feed.entry) == 0):
+        print 'No entries in feed.\n'
+for i, entry in enumerate(feed.entry):
+        print '%s %s (%s)' % (i+1, entry.title.text.encode('UTF-8'))
+</code></pre>
+
+<p>If we wanted to, we could also import the DateTime library and show when the
+document was last updated</p>
+
+<pre><code data-language="python">import gdata.docs.service
+import gdata.docs
+
+from mx import DateTime
+
+gd_client = gdata.docs.service.DocsService()
+gd_client.email = 'timothy.broder'
+gd_client.password = '*****'
+gd_client.source = 'gpowered-docs-list-ex'
+gd_client.ProgrammaticLogin()
+
+q = gdata.docs.service.DocumentQuery(categories=['spreadsheet'])
+#feed = gd_client.GetDocumentListFeed()
+feed = gd_client.Query(q.ToUri())
+
+if(len(feed.entry) == 0):
+        print 'No entries in feed.\n'
+for i, entry in enumerate(feed.entry):
+        dt = DateTime.ISO.ParseDateTimeUTC(entry.updated.text)
+        print '%s %s (%s)' % (i+1, entry.title.text.encode('UTF-8'), dt.strftime('%m/%d/%Y %I:%M %p'))
+</code></pre>
+
+<p>For me this outputs:</p>
+
+<pre><code>1 TDP2006 Contact Info (11/18/2006 05:41 AM)
+2 contact info (07/23/2006 08:15 PM)
+3 Tim and Rob (08/09/2007 10:18 PM)
+4 nyc happy hour spreadsheet (07/04/2007 08:25 PM)
+5 public_spring_2006_roster (10/16/2006 12:40 AM)
+6 dax2006 (11/12/2006 11:23 PM)
+7 project dream (07/13/2007 03:54 AM)
+8 Stuff Tim should get (06/13/2007 01:53 AM)
+9 Erg Test Results - 9/26 (10/15/2006 01:02 AM)
+10 Head of the Charles Regatta Itineary (10/17/2006 04:54 PM)
+11 tvshows (11/02/2006 11:44 PM)
+12 HF (10/01/2006 03:36 PM)
+</code></pre>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[New Documents List API]]></title>
+            <link href="https://www.timbroder.com/2007/08/new-documents-list-api.html"/>
+            <updated>2007-08-06T23:46:00+00:00</updated>
+            <id>https://www.timbroder.com/2007/08/new-documents-list-api.html</id>
+            <content type="html"><![CDATA[<p><a href="http://googledataapis.blogspot.com/2007/08/new-api-it-slices-it-dices-it-uploads.html">Google Data API posts</a> now you can import your spreadsheets and word
+processor documents into <a href="http://docs.google.com/">Google Documents</a> using the
+new Documents List API.</p>
+
+<p>Until I write up a tutorial, check out the <a href="http://code.google.com/apis/documents/developers_guide_protocol.html">Documents List
+API</a></p>
+]]></content>
+        </entry>
+    </feed>

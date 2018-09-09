@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[timbroder.com]]></title>
+    <link href="https://www.timbroder.com/blog/tags/vagrant.xml" rel="self"/>
+    <link href="https://www.timbroder.com/"/>
+    <updated>2018-09-09T12:21:33+00:00</updated>
+    <id>https://www.timbroder.com/</id>
+            <author>
+            <name><![CDATA[Tim Broder]]></name>            <email><![CDATA[timothy.broder@gmail.com]]></email>        </author>
+        <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[PHP7 Vagrant Box]]></title>
+            <link href="https://www.timbroder.com/2015/03/php7-vagrant-box.html"/>
+            <updated>2015-03-07T16:13:24+00:00</updated>
+            <id>https://www.timbroder.com/2015/03/php7-vagrant-box.html</id>
+            <content type="html"><![CDATA[<p>I’m keeping a close eye (or as much as I can anyway) on PHP7 and what it means
+for the future of the language. Installing in your local dev machine is risky,
+especially if you have ongoing work. As usual, Vagrant comes to the rescue!</p>
+
+<p><a href="https://twitter.com/rasmus/">Rasmus Lerdorf</a> has put together a Vagrant box
+to ease in the setup and isolate your testing.</p>
+
+<p>If you use Atlas, check out the box
+<a href="https://atlas.hashicorp.com/rasmus/boxes/php7dev">here</a>. Otherwise, the
+readme is available on
+<a href="https://github.com/rlerdorf/php7dev/blob/master/README.md">Github</a></p>
+]]></content>
+        </entry>
+    </feed>

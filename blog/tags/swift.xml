@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[timbroder.com]]></title>
+    <link href="https://www.timbroder.com/blog/tags/swift.xml" rel="self"/>
+    <link href="https://www.timbroder.com/"/>
+    <updated>2018-09-09T12:21:33+00:00</updated>
+    <id>https://www.timbroder.com/</id>
+            <author>
+            <name><![CDATA[Tim Broder]]></name>            <email><![CDATA[timothy.broder@gmail.com]]></email>        </author>
+        <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[Using an Encrypted Realm in a background or notification processes?]]></title>
+            <link href="https://www.timbroder.com/2016/10/Using-an-Encrypted-Realm-with-background-or-notificatio-processes.html"/>
+            <updated>2016-10-30T13:54:00+00:00</updated>
+            <id>https://www.timbroder.com/2016/10/Using-an-Encrypted-Realm-with-background-or-notificatio-processes.html</id>
+            <content type="html"><![CDATA[<p><em>Note: This post's primary purpose is to help me think through this problem. I have no prescribed solution at the end of it. The conversation will continue on <a href="http://stackoverflow.com/q/40332246/647343" title="Stack Overflow">Stack Overflow</a>. I will update this post once I have a final approach.</em></p>
+
+<p>Realm has a great <a href="https://realm.io/docs/swift/latest/#encryption" title="write up">write up</a> and <a href="https://github.com/realm/realm-cocoa/blob/master/examples/ios/swift-2.2/Encryption/ViewController.swift" title="sample code">sample code</a> for encrypting your database. This documentation and sample work as intended, until you try to decrypt realm when:</p>
+
+<ol>
+<li>A user has a password on their phone</li>
+<li>The device is locked</li>
+<li>Your app is trying to do work with Realm when a remote notification comes in</li>
+</ol>
+
+<p>This happens because we can't access the keychain to get (or create) the key to en/decrypt the Realm. The default <code>kSecAttrAccessible</code> value is <code>kSecAttrAccessibleWhenUnlocked</code></p>
+
+<p>There are a few options as I see them:</p>
+
+<ol>
+<li>Change <code>kSecAttrAccessible</code> to <code>kSecAttrAccessibleAlways</code>. I don't like this because it's a) too open and b) it was <a href="http://stackoverflow.com/questions/32112678/ksecattraccessiblealways-deprecated-in-ios-9#comment53491023_32600761" title="slated to be deprecated in iOS 9">slated to be deprecated in iOS 9</a></li>
+<li>Change <code>kSecAttrAccessible</code> to <code>kSecAttrAccessibleAfterFirstUnlock</code> or <code>kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly</code>. This is better but still feels too open to <em>me</em>, even though the <a href="https://developer.apple.com/reference/security/ksecattraccessibleafterfirstunlockthisdeviceonly" title="docs">docs</a> state: <em>This is recommended for items that need to be accessed by background applications</em></li>
+<li>Create a second, non-encrypted Realm to use as a staging database. Store notification data here, then when the app wakes up from user interaction (the device would be unlocked), move the data from the staging Realm into the encrypted real one. This doesn't feel right either, as we'll have data temporarily not encrypted</li>
+<li>Combine 2 and 3 and encrypt the staging Realm, and protect it's key with <code>kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly</code></li>
+<li>??</li>
+</ol>
+
+<p>I'm currently trying to decide if #2, if #3 is worth putting the time into, or if I can come up with a #5</p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Testing UIViewController Transitions with Quick and Swift]]></title>
+            <link href="https://www.timbroder.com/2016/01/testing-uiviewcontroller-transitions.html"/>
+            <updated>2016-01-31T14:57:00+00:00</updated>
+            <id>https://www.timbroder.com/2016/01/testing-uiviewcontroller-transitions.html</id>
+            <content type="html"><![CDATA[<p><em>The examples below are using the <a href="https://github.com/Quick/Quick" title="Quick">Quick</a> test framework, but the principals we're going to talk about can be used in any setup.</em></p>
+
+<p>We have some complicated logic further down our user registration flow. I want to make sure that the right UIViewControllers are appearing when they are supposed to. I've been reading a <a href="http://swiftandpainless.com/testing-if-a-view-controller-got-pushed/" title="few">few</a> <a href="https://www.natashatherobot.com/ios-testing-view-controllers-swift/" title="different">different</a> <a href="http://www.iosmike.com/2014/08/unit-testing-viewcontrollers-in-swift.html" title="approaches">approaches</a> on how to handle this. Below is where I've ended up, and I'm pretty happy with it.</p>
+
+<p>For simplicity's sake, I'm going to show how to test if the user has tapped "Login" or "Register" on our opening screen. We can assume we have a LoadingViewController which represents the first screen. On this screens are two buttons, which correspond to these actions:</p>
+
+<pre><code data-language="swift">@IBAction func tapLogin(sender: AnyObject) {
+    self.navigationController?.pushViewController(self.storyboard?.instantiateViewControllerWithIdentifier("loginview") as! LoginViewController, animated: true)
+}
+
+@IBAction func tapRegister(sender: AnyObject) {
+    self.navigationController?.pushViewController(self.storyboard?.instantiateViewControllerWithIdentifier("registerview") as! RegisterViewController, animated: true)
+}
+</code></pre>
+
+<p>We also have a UINavigationController taking care of the view hierarchy. I also want to use the transitions and IDs already set up in the Storyboard.</p>
+
+<p>Let's start by referencing the UINavigationController and the UIViewController we're going to start with.</p>
+
+<pre><code data-language="swift">class LandingScreenUITests: QuickSpec {
+    override func spec() {
+        describe("Landing Screen") {
+
+            var viewController: LoadingViewController!
+            var navigationController: UINavigationController!
+
+
+        }
+    }
+}
+</code></pre>
+
+<p>Next, we're going to instantiate the storyboard, both controllers, and push the VC onto the view hierarchy</p>
+
+<pre><code data-language="swift">beforeEach {
+    let storyboard = UIStoryboard(name: "Main", bundle: NSBundle(forClass: self.dynamicType))
+    viewController = storyboard.instantiateViewControllerWithIdentifier("loadingview") as! LoadingViewController
+    navigationController = storyboard.instantiateViewControllerWithIdentifier("navigationcontroller") as! UINavigationController
+
+    navigationController.pushViewController(viewController, animated: false)
+
+    let _ =  viewController.view
+}
+</code></pre>
+
+<p>Two gotchas to watch out for here:</p>
+
+<ol>
+<li>Make sure Main.Storyboard is available in your Test target</li>
+<li>Make sure to use the <code>self.dynamicType</code> bundle above</li>
+</ol>
+
+<p>Missing either of these may result in a weird casting error:</p>
+
+<pre><code>Could not cast value of type 'MyApp.LoadingViewController' (0x10b9f5e50) to MyAppUITests.LoadingViewController' (0x11f894370).
+</code></pre>
+
+<p>Finally, lets call the appropriate methods on our initial UIViewController, and test the type of the UIViewController that has been put on the top of the hierarchy. <em>Note: I use <code>toEventually</code> here to wait for the transition animation</em></p>
+
+<pre><code data-language="swift">describe("User wants to log in") {
+    it("taps Login") {
+        viewController.tapLogin(self)
+        expect(navigationController.visibleViewController).toEventually(beAKindOf(LoginViewController))
+    }
+}
+
+describe("User wants to register") {
+    it("taps Register") {
+        viewController.tapRegister(self)
+        expect(navigationController.visibleViewController).toEventually(beAKindOf(RegisterViewController))
+    }
+}
+</code></pre>
+
+<p>For reference, here is the whole test class together:</p>
+
+<pre><code data-language="swift">import Foundation
+import Quick
+import Nimble
+@testable import MyApp
+
+class LandingScreenUITests: QuickSpec {
+    override func spec() {
+        describe("Landing Screen") {
+
+            var viewController: LoadingViewController!
+            var navigationController: UINavigationController!
+
+            beforeEach {
+                let storyboard = UIStoryboard(name: "Main", bundle: NSBundle(forClass: self.dynamicType))
+                viewController = storyboard.instantiateViewControllerWithIdentifier("loadingview") as! LoadingViewController
+                navigationController = storyboard.instantiateViewControllerWithIdentifier("navigationcontroller") as! UINavigationController
+
+                navigationController.pushViewController(viewController, animated: false)
+
+                let _ =  viewController.view
+            }
+
+            describe("User wants to log in") {
+                it("taps Login") {
+                    viewController.tapLogin(self)
+                    expect(navigationController.visibleViewController).toEventually(beAKindOf(LoginViewController))
+                }
+            }
+
+            describe("User wants to register") {
+                it("taps Register") {
+                    viewController.tapRegister(self)
+                    expect(navigationController.visibleViewController).toEventually(beAKindOf(RegisterViewController))
+                }
+            }
+        }
+    }
+}
+</code></pre>
+
+<p><em>Many thanks to the blog posts referenced at the top of this post</em></p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[UITableViewCell Action Swiping in iOS8 and Swift]]></title>
+            <link href="https://www.timbroder.com/2014/08/uitableviewcell-action-swiping-in-ios8-and-swift.html"/>
+            <updated>2014-08-09T20:43:58+00:00</updated>
+            <id>https://www.timbroder.com/2014/08/uitableviewcell-action-swiping-in-ios8-and-swift.html</id>
+            <content type="html"><![CDATA[<p>Mail.app in iOS7 brought swiping cells to the inbox. The iOS8 beta added a 3rd
+button to it.  Apple has also introduced an API to assist with creating this
+effect: <a href="https://developer.apple.com/library/prerelease/ios/documentation/UIKit/Reference/UITableViewRowAction_class/index.html">UITableViewRowAction</a>.
+Prior to this, I used
+<a href="https://github.com/CEWendel/SWTableViewCell">SWTableViewCell</a>.</p>
+
+<p><img src="/images/2014-08-09-uitableviewcell-action-swiping-in-ios8-and-swift/14870105002_77af4bf515_b.jpg" alt="" /></p>
+
+<p>Below is how to get the basic functionality working. Please note that you have
+to implement the 2nd function whether it has a body or not</p>
+
+<pre><code data-language="swift">class TIMUITableViewDelegate: NSObject, UITableViewDelegate {
+    func tableView(tableView: UITableView!, editActionsForRowAtIndexPath indexPath: NSIndexPath!) -&amp;gt; [AnyObject]! {
+        var shareAction = UITableViewRowAction(style: .Normal, title: "Share") { (action, indexPath) -&amp;gt; Void in
+            tableView.editing = false
+            println("shareAction")
+        }
+        shareAction.backgroundColor = UIColor.grayColor()
+
+        var doneAction = UITableViewRowAction(style: .Default, title: "Done") { (action, indexPath) -&amp;gt; Void in
+            tableView.editing = false
+            println("readAction")
+        }
+        doneAction.backgroundColor = UIColor.greenColor()
+
+        var deleteAction = UITableViewRowAction(style: .Default, title: "Delete") { (action, indexPath) -&amp;gt; Void in
+            tableView.editing = false
+            println("deleteAction")
+        }
+
+        return [deleteAction, doneAction, shareAction]
+    }
+
+    func tableView(tableView: UITableView!, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath!) {
+    }
+
+}
+</code></pre>
+
+<p>I can’t get the (-) delete indicator to appear when I put the table into edit
+mode though. Setting UITableViewCell.shouldIndentWhileEditing = NO is supposed
+to disable this effect. I’ve tried setting it in 3 places:</p>
+
+<ul>
+<li>On the cell directly </li>
+<li>In interface builder: <a href="http://screencast.com/t/TUg7To46vKd0">http://screencast.com/t/TUg7To46vKd0 </a></li>
+<li>In the appropriate delegate method</li>
+</ul>
+
+<p>I’ve had to add some workarounds to deal with this for now.  I’ve filed
+<a href="http://openradar.appspot.com/17969970">rdar://17969970</a> against this. For
+now, this is how I’m handling by checking if I’m already in edit mode when I
+build out the actions array. This isn’t ideal at all. I don’t even want to be
+able to delete when I’m in edit mode, just reorder. Apologies for switching
+back to obj-c. The delegate I’m working in is older.</p>
+
+<pre><code data-language="swift">- (void) endEditing
+{
+    self.editMode = NO;
+    self.editControlButton.title = @"Reorder";
+    [self setEditing:NO animated:YES];
+    //[self.tableView reloadData];
+}
+
+- (void) startEditing
+{
+    self.editMode = YES;
+    self.editControlButton.title = @"Done";
+    [self.tableView setEditing:YES animated:YES];
+}
+
+#pragma - mark UITableViewDelegate
+
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+    return YES;
+}
+
+- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return UITableViewCellEditingStyleDelete;
+}
+
+- (BOOL)tableView:(UITableView *)tableview shouldIndentWhileEditingRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSLog(@"shouldIndentWhileEditingRowAtIndexPath");
+    return NO;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    TCORead *item = [self.fetchedResultsControllerDataSource selectedItem];
+    manager.currentRead = item;
+}
+
+- (NSArray *)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewRowAction *deleteAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDestructive title:@"Delete" handler:^(UITableViewRowAction *action, NSIndexPath *indexPath){
+        [self.tableView setEditing:NO];
+    }];
+
+    //workaround, rdar://17969970
+    //normally don't want to be able to get into this menu when reordering
+    if (!self.editMode) {
+        UITableViewRowAction *shareAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleNormal title:@"Share" handler:^(UITableViewRowAction *action, NSIndexPath *indexPath){
+            [self.tableView setEditing:NO];
+        }];
+        shareAction.backgroundColor = [UIColor grayColor];
+
+        UITableViewRowAction *doneAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDestructive title:@"Done" handler:^(UITableViewRowAction *action, NSIndexPath *indexPath){
+            [self.tableView setEditing:NO];
+        }];
+        doneAction.backgroundColor = [UIColor greenColor];
+
+        [self startEditing];
+        return @[deleteAction, doneAction, shareAction];
+    }
+
+    return @[deleteAction];
+}
+
+- (void)tableView:(UITableView *)tableView didEndEditingRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [self endEditing];
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    //empty on purpose
+}
+</code></pre>
+
+<p>This post and the Radar helped me collect my thoughts to post on <a href="http://stackoverflow.com/questions/25222872/uitableviewcell-not-respecting-shouldindentwhileediting-no">Stack</a>. I’ve been afraid of backlash or Noob. Time to get over it.</p>
+
+<p><strong>Update 2014-09-11</strong></p>
+
+<p><a href="http://timbroder.com/2014/08/uitableviewcell-action-swiping-in-ios8-and-swift.html#comment-1565598353">Vanyas</a> has a great sample application that addresses what I’m trying to do.  I was forcing the delete button on the right hand side myself.  Updating editingStyleForRowAtIndexPath to the below fixed my issue:</p>
+
+<pre><code data-language="c">- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    //return UITableViewCellEditingStyleDelete;
+    return tableView.isEditing ? UITableViewCellEditingStyleNone: UITableViewCellEditingStyleDelete;
+}
+</code></pre>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Dismiss a Modal UIViewController created in Interface Builder]]></title>
+            <link href="https://www.timbroder.com/2014/07/dismiss-a-modal-uiviewcontroller-created-in-interface-builder.html"/>
+            <updated>2014-07-27T22:31:11+00:00</updated>
+            <id>https://www.timbroder.com/2014/07/dismiss-a-modal-uiviewcontroller-created-in-interface-builder.html</id>
+            <content type="html"><![CDATA[<p>There are a <a href="http://stackoverflow.com/questions/2796438/uibarbuttonitem-target-action-not-working">number</a> of posts on this
+<a href="http://stackoverflow.com/questions/7719237/add-a-custom-selector-to-a-uibarbuttonitem">subject</a> on Stack. They involve re-instantiating (this seems
+slower to me) or yanking the view from a UIButton (this feels dirty).</p>
+
+<p>I’d rather just update the UIBarButtonItem that I already have:</p>
+
+<p><a href="https://www.flickr.com/photos/timothybroder/14575059147" title="View
+'2014-07-27_1826' on Flickr.com"><img src="https://farm6.staticflickr.com/5566/14575059147_d33d111203_b.jpg" alt="2014-07-27_1826" /></a></p>
+
+<p>All I needed to do, was attach the appropriate target and action to the
+UIBarButtonItem:</p>
+
+<pre><code data-language="swift">class SettingsTableViewController : UITableViewController {
+
+    @IBOutlet weak var doneBarButton: UIBarButtonItem!
+
+    init(coder aDecoder: NSCoder!) {
+        super.init(coder: aDecoder)
+    }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        doneBarButton.target = self
+        doneBarButton.action = "donePressed:"
+    }
+
+    @IBAction func donePressed(b:UIBarButtonItem) {
+        self.dismissViewControllerAnimated(true, completion: {})
+    }
+}
+</code></pre>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Using PonyDebugger on a device]]></title>
+            <link href="https://www.timbroder.com/2014/07/using-ponydebugger-on-a-device.html"/>
+            <updated>2014-07-27T20:25:59+00:00</updated>
+            <id>https://www.timbroder.com/2014/07/using-ponydebugger-on-a-device.html</id>
+            <content type="html"><![CDATA[<p>PonyDebugger is awesome. I use it mostly for Core Data debugging. Most of the
+time, I find it easier then firing up <a href="https://itunes.apple.com/us/app/sqlite-professional-sql-coredata/id586001240?mt=12&amp;at=11laRZ&amp;ct=pro">SQLite
+Professional</a>.</p>
+
+<p>When using the simulator, hitting localhost:9000 is fine. On a device, not so
+much; you need to hit your machine. <a href="http://xip.io/">xip.io</a>to the rescue!
+What it is: xip.io is a magic domain name that provides wildcard DNS for any
+IP address. We use this heavily at work if the machine we’re on isn’t hooked
+up to a subdomain or [Vagrant Share](https://www.vagrantup.com/blog/feature-
+preview-vagrant-1-5-share.html).</p>
+
+<p>We can use this wildcard to have our iPhone hit our laptop’s instance of
+PonyDebugger.</p>
+
+<p>First, get your IP. I use
+<a href="https://www.dropbox.com/s/mngjeqwe64z5zkl/MyIP.alfredworkflow">this</a> Alfred
+workflow. Take note of your local IP.</p>
+
+<p>Start PonyDebugger listening on that IP:</p>
+
+<p><code>bashponyd serve —listen-interface=192.168.1.10</code></p>
+
+<p>For handy access, alias this command:</p>
+
+<p><code>bashalias pony="ponyd serve --listen-interface=192.168.1.10"</code></p>
+
+<p>Load Pony in your browser by appending your IP to the a xip.io URL:
+<a href="http://192.168.1.10.xip.io:9000/">http://192.168.1.10.xip.io:9000/</a></p>
+
+<p>To access via the simulator or a device:</p>
+
+<p><code>swiftlet pony = PDDebugger.defaultInstance()
+pony.connectToURL(NSURL.URLWithString("ws://192.168.1.10.xip.io:9000/device"))
+pony.enableNetworkTrafficDebugging() pony.enableCoreDataDebugging()</code></p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[UITapGestureRecognizer in Swift]]></title>
+            <link href="https://www.timbroder.com/2014/07/uitapgesturerecognizer-in-swift.html"/>
+            <updated>2014-07-27T14:47:33+00:00</updated>
+            <id>https://www.timbroder.com/2014/07/uitapgesturerecognizer-in-swift.html</id>
+            <content type="html"><![CDATA[<p>I have a subclass of UIView that has a label:</p>
+
+<pre><code data-language="swift">class PlayerView : UIView {
+    @IBOutlet weak var playLabel: UILabel!
+}
+</code></pre>
+
+<p>I want to attach a Tap Gesture to it:</p>
+
+<pre><code data-language="swift">class PlayerView : UIView {
+    @IBOutlet weak var playLabel: UILabel!
+}
+</code></pre>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Creating a conforming delegate (UITableViewDelegate) in Swift]]></title>
+            <link href="https://www.timbroder.com/2014/07/creating-a-conforming-delegate-uitableviewdelegate-in-swift.html"/>
+            <updated>2014-07-27T02:11:16+00:00</updated>
+            <id>https://www.timbroder.com/2014/07/creating-a-conforming-delegate-uitableviewdelegate-in-swift.html</id>
+            <content type="html"><![CDATA[<p>This tripped me up for a bit so I hope this helps someone.</p>
+
+<p>I started out with this class, thinking I could just continue on my merry way.
+This errors in Xcode with: "<em>class does not conform to NSObjectProtocol</em>”</p>
+
+<pre><code data-language="swift">class FastListUITableViewDelegate : UITableViewDelegate { }
+ ```
+
+Hmm ok, but much there yet, what did I miss? This should definitely be a
+class; not a protocol (I have methods to implement), not a @class_protocol
+(wrong use, based on the docs), hmm.
+
+This obviously behaves different than in objective-c. What is inherent in the
+obj-c version of this that would conform to NSObjectProtocol? NSObject. Every
+class and C eventually rolls up to this…
+
+This is working so far:
+
+```swift 
+class FastListUITableViewDelegate : NSObject, UITableViewDelegate { }
+</code></pre>
+
+<p>I’ll report back here if this solution changes</p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Looping through subviews and downcasting in Swift]]></title>
+            <link href="https://www.timbroder.com/2014/07/looping-subviews-downcasting-swift.html"/>
+            <updated>2014-07-22T23:23:27+00:00</updated>
+            <id>https://www.timbroder.com/2014/07/looping-subviews-downcasting-swift.html</id>
+            <content type="html"><![CDATA[<p>I've been playing around with Auto-Layout. This snippet was helpful to see
+what constraints were set on what views in my View Hierarchy.</p>
+
+<p>Getting the downcast right on the subviews Array took a few tries:</p>
+
+<p>```swift
+func showAL(view: UIView) {
+    println(&quot;!&quot;)
+    println(view)
+    println(view.constraints())
+}</p>
+
+<pre><code>for view in self.subviews as [UIView] {
+    showAL(view)
+    for subview in view.subviews as [UIView] {
+        showAL(subview)
+    }
+}
+```
+</code></pre>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Functions or Read-Only Properties in Swift?]]></title>
+            <link href="https://www.timbroder.com/2014/07/functions-vs-read-properties-swift.html"/>
+            <updated>2014-07-12T23:22:03+00:00</updated>
+            <id>https://www.timbroder.com/2014/07/functions-vs-read-properties-swift.html</id>
+            <content type="html"><![CDATA[<p>I’m not sure which is better.  If it's returning something that is directly
+tied to the class: a slice/dice of properties is already has, I'm leaning
+towards properties. Because of the many examples I <em>feel</em> like read-only
+properties are the way to do.  I’m not the only person
+[wondering](http://stackoverflow.com/questions/24035276/computed-read-only-
+property-vs-function-in-swift), so that’s validating.</p>
+
+<p>Property:</p>
+
+<pre><code data-language="c">extension String {
+    var fullSentences: [String] {
+        // stuff
+    }
+}
+</code></pre>
+
+<p>Function:</p>
+
+<pre><code data-language="c">extension String {
+    func fullSentences() -&amp;gt; [String] {
+        // stuff
+    }
+}
+</code></pre>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Playgrounds in Swift are Awesome]]></title>
+            <link href="https://www.timbroder.com/2014/07/playgrounds-in-swift-are-awesome.html"/>
+            <updated>2014-07-12T23:19:42+00:00</updated>
+            <id>https://www.timbroder.com/2014/07/playgrounds-in-swift-are-awesome.html</id>
+            <content type="html"><![CDATA[<p>Man alive, I missed this from Python.  More live editing, less edit+build+run.</p>
+
+<p><a href="https://www.flickr.com/photos/timothybroder/14451913518" title="View
+'2014-07-12_1822' on Flickr.com"><img src="https://farm6.staticflickr.com/5483/14451913518_c2ef7c5358_b.jpg" alt="2014-07-12_1822" /></a></p>
+
+<p><img src="http://sd.keepcalm-o-matic.co.uk/i/everything-is-awesome-6.png" alt="" /></p>
+]]></content>
+        </entry>
+    </feed>

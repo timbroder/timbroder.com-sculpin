@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[timbroder.com]]></title>
+    <link href="https://www.timbroder.com/blog/tags/regex.xml" rel="self"/>
+    <link href="https://www.timbroder.com/"/>
+    <updated>2018-09-09T12:21:33+00:00</updated>
+    <id>https://www.timbroder.com/</id>
+            <author>
+            <name><![CDATA[Tim Broder]]></name>            <email><![CDATA[timothy.broder@gmail.com]]></email>        </author>
+        <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[How to Remove or Change the way Wordpress Links to Images in Posts]]></title>
+            <link href="https://www.timbroder.com/2012/12/how-to-remove-or-change-the-way-wordpress-links-to-images-in-posts.html"/>
+            <updated>2012-12-24T20:34:43+00:00</updated>
+            <id>https://www.timbroder.com/2012/12/how-to-remove-or-change-the-way-wordpress-links-to-images-in-posts.html</id>
+            <content type="html"><![CDATA[<p>By default, WordPress will link directly to an image in the category or post view.  In a project I was working on today I wanted to change that. On the category view I wanted the image just to link to the post, and in the post, I didn’t want a link at all. Useful trick I found below:</p>
+
+<pre><code data-language="PHP">function change_image_permalink($content){
+    $format = get_post_format();
+
+    //category listing page. link image to post
+    if (is_single() === FALSE AND $format == 'image'){
+        $content =
+        preg_replace(
+            array('{&lt;a(.*?)(wp-att|wp-content/uploads)[^&gt;]*&gt;&lt;img}','{ wp-image-[0-9]*&amp;quot; /&gt;&lt;/a&gt;}'),
+            array('&lt;a href=&amp;quot;' . get_permalink() . '&amp;quot;&gt;&lt;img','&amp;quot; /&gt;&lt;/a&gt;'),
+            $content
+        );
+    }
+
+    //post page. remove link
+    else if ($format == 'image'){
+        $content =
+            preg_replace(
+                array('{&lt;a(.*?)(wp-att|wp-content/uploads)[^&gt;]*&gt;&lt;img}','{ wp-image-[0-9]*&amp;quot; /&gt;&lt;/a&gt;}'),
+                array('&lt;img','&amp;quot; /&gt;'),
+                $content
+            );
+    }
+
+    return $content;
+}
+add_filter('the_content', 'change_image_permalink');
+</code></pre>
+]]></content>
+        </entry>
+    </feed>

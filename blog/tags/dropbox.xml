@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[timbroder.com]]></title>
+    <link href="https://www.timbroder.com/blog/tags/dropbox.xml" rel="self"/>
+    <link href="https://www.timbroder.com/"/>
+    <updated>2018-09-09T12:21:33+00:00</updated>
+    <id>https://www.timbroder.com/</id>
+            <author>
+            <name><![CDATA[Tim Broder]]></name>            <email><![CDATA[timothy.broder@gmail.com]]></email>        </author>
+        <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[Get 18+ Gigs on a Free Dropbox account for $10-$20]]></title>
+            <link href="https://www.timbroder.com/2012/08/get-18-gigs-on-a-free-dropbox-account-for-10-20.html"/>
+            <updated>2012-08-29T14:03:28+00:00</updated>
+            <id>https://www.timbroder.com/2012/08/get-18-gigs-on-a-free-dropbox-account-for-10-20.html</id>
+            <content type="html"><![CDATA[<p>Dropbox recently raised the cap on it's free tier to 18 gigs. But, you only
+get 2 gigs out of the gate. The rest is easy to get, but takes a little leg
+work. [![](http://timbroder.com/wp-
+content/uploads/2012/08/dropbox01.png)](http://timbroder.com/wp-
+content/uploads/2012/08/dropbox01.png) First, log into Dropbox and click on
+"Get free space!" at the top right. Then, do all the Facebook/twitter/social
+offers to get free space.</p>
+
+<p>Really bumping up your space involves Google
+<a href="https://adwords.google.com">Adwords</a>.  You can max out your space by putting
+your referral link on Dropbox ads that will show up in Google. How much this
+will end up costing you can vary. One of my coworkers spent $7, another $11,
+and I spent $19. If you set it up like I show below, you don't even have to
+think about it.</p>
+
+<p>Log into AdWords, create a new campaign and copy the below settings: (Click to
+zoom in)</p>
+
+<p><a href="/images/2012/08/dropbox1.png"><img src="/images/2012/08/dropbox1.png" alt="" /></a>
+<a href="/images/2012/08/dropbox2.png"><img src="/images/2012/08/dropbox2.png" alt="" /></a>
+<a href="/images/2012/08/dropbox3.png"><img src="/images/2012/08/dropbox3.png" alt="" /></a>
+<a href="/images/2012/08/dropbox4.png"><img src="/images/2012/08/dropbox4.png" alt="" /></a>
+<a href="/images/2012/08/dropbox5.png"><img src="/images/2012/08/dropbox5.png" alt="" /></a></p>
+
+<p>After this the campaign should be approved and you are all set. Keep an eye on
+it at the end of every day and see if you want to continue it to keep getting
+more space</p>
+
+<p>Get free space!</p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Where the new Ice Cream Sandwich build of dropbox stores files]]></title>
+            <link href="https://www.timbroder.com/2011/12/where-the-new-ice-cream-sandwich-build-of-dropbox-stores-files.html"/>
+            <updated>2011-12-24T16:21:12+00:00</updated>
+            <id>https://www.timbroder.com/2011/12/where-the-new-ice-cream-sandwich-build-of-dropbox-stores-files.html</id>
+            <content type="html"><![CDATA[<p>In the old version of dropbox, you used to be able to long press > download
+a file.  This has been replaced by "favorite". Instead of going to:
+<code>/sdcard/dropbox</code> These files are now stored in: <code>/sdcard/Android/data/com.dropbox.android/files/scratch</code></p>
+]]></content>
+        </entry>
+    </feed>

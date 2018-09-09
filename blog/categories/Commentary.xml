@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[timbroder.com]]></title>
+    <link href="https://www.timbroder.com/blog/categories/Commentary.xml" rel="self"/>
+    <link href="https://www.timbroder.com/"/>
+    <updated>2018-09-09T12:21:32+00:00</updated>
+    <id>https://www.timbroder.com/</id>
+            <author>
+            <name><![CDATA[Tim Broder]]></name>            <email><![CDATA[timothy.broder@gmail.com]]></email>        </author>
+        <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[Apple Music Followup: Part 1]]></title>
+            <link href="https://www.timbroder.com/2015/07/apple-music-followup-part-1.html"/>
+            <updated>2015-07-26T21:55:00+00:00</updated>
+            <id>https://www.timbroder.com/2015/07/apple-music-followup-part-1.html</id>
+            <content type="html"><![CDATA[<p>A few new articles popped up in my RSS feed since I <a href="http://www.timbroder.com/2015/07/apple-music-is-a-nightmare-and-i%E2%80%99m-done-with-it.html">mentioned</a> Apple Music</p>
+
+<p><a href="http://www.loopinsight.com/2015/07/24/i-got-my-music-back-at-least-most-of-it/">I got my music back. At least most of it</a></p>
+
+<blockquote>
+  <p>At this point, I’m just glad to have most of music back, but I still have no idea what happened to the other songs, for sure.</p>
+</blockquote>
+
+<p>Jim was able to meet with Apple privately and investigate a lot of his issues. Check out his post for the full story</p>
+
+<p><a href="http://www.loopinsight.com/2015/07/24/dave-mark-why-im-not-done-with-apple-music/">Dave Mark: Why I’m not done with Apple Music</a></p>
+
+<blockquote>
+  <p>My Mac and iOS devices might as well be on different planets. When I search for a song on my iPhone, I can tap the Apple Music tab and, assuming the song is available on the Apple Music library, I can add the song to my current playlist, download it to my device for offline play, and mark it with a For You heart. Easy peasy.</p>
+  
+  <p>On my Mac, not so simple. Unlike the iOS universe, there is no Apple Music application on my Mac. On my iOS device, things are clear cut. There’s the iTunes Store app for buying music and the Apple Music app for streaming.</p>
+  
+  <p>So all this said, why am I still pushing on? Why don’t I make the move to Spotify?</p>
+  
+  <p>It’s all about potential.</p>
+</blockquote>
+
+<p>Click through to continue</p>
+
+<p><a href="http://morrick.me/archives/7371">Apple Music ought to be better than this</a></p>
+
+<blockquote>
+  <p>Mark is not the only one willing to cut Apple some slack. I’ve heard other people — satisfied enough with Apple Music — sharing this kind of forgiving attitude.</p>
+  
+  <p>Well, I don’t agree with it. I think people should expect better from Apple. A better service. Better quality, and yes, from day one. Apple has the resources to make it happen. Apple is a bigger company than any other in the music streaming industry. Apple has the advantage of its ecosystem, not to mention the data already accumulated through the Genius algorithm within iTunes. Yet Apple Music feels more rushed, more confusing, feels like a patchwork of different ideas and directions, and it ultimately feels more ‘beta’ than other competing apps and services when these first launched.</p>
+</blockquote>
+
+<p>As I said last time. I expected more. A higher quality</p>
+
+<blockquote>
+  <p>The problems with iTunes 12.2, iCloud Music Library, etc., give me the impression that Apple Music’s features have been hurriedly bolted on the already pachydermic, bloated, jack-of-all-trades iTunes app, and shipped without extensive, thorough testing.</p>
+</blockquote>
+
+<p>​</p>
+
+<blockquote>
+  <p>Would people be equally forgiving if third-party paid music streaming apps and services caused the same mess Apple Music did for a lot of users? Would they talk of ‘potential’, or things getting better with the next version/iteration? I’m not so sure.</p>
+</blockquote>
+
+<p>​</p>
+
+<blockquote>
+  <p>A few people wrote me that I was “crazy” for not dropping Spotify and instantly switch to Apple Music like they did; none of them said exactly why I should do so, the only vague criticism towards Spotify being “It’s just a mess” (huh?)</p>
+</blockquote>
+
+<p>I don't understand this</p>
+
+<p><a href="http://www.marco.org/2015/07/26/dont-order-the-fish">Don’t order the fish – Marco.org</a></p>
+
+<blockquote>
+  <p>But the iTunes Store back-end is a toxic hellstew of unreliability. Everything that touches the iTunes Store has a spotty record for me and almost every Mac owner I know.</p>
+  
+  <p>And the iTunes app itself is the toxic hellstew. iTunes has an impossible combination of tasks on its plate that cannot be done well. iTunes is the definition of cruft and technical debt. It was an early version of iTunes that demonstrated the first software bugs to Grace Hopper in 1946.</p>
+</blockquote>
+
+<p>​</p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Open-Sourcing Jewelbots]]></title>
+            <link href="https://www.timbroder.com/2015/05/open-sourcing-jewelbots.html"/>
+            <updated>2015-05-02T17:08:34+00:00</updated>
+            <id>https://www.timbroder.com/2015/05/open-sourcing-jewelbots.html</id>
+            <content type="html"><![CDATA[<blockquote>
+  <p>I’ve always wondered why companies (and individuals) don’t put more of their
+  source code out there</p>
+</blockquote>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Games I was addicted to in 2014]]></title>
+            <link href="https://www.timbroder.com/2015/03/games-i-was-addicted-to-in-2014.html"/>
+            <updated>2015-03-10T14:03:30+00:00</updated>
+            <id>https://www.timbroder.com/2015/03/games-i-was-addicted-to-in-2014.html</id>
+            <content type="html"><![CDATA[<p>I posted on <a href="http://tekside.net/iphonaddict/2015/1/11/games-i-was-addicted-to-in-20">TekSide</a>:</p>
+
+<p>I don't consider myself a gamer anymore. I used to be.
+Countless, countless hours in Final Fantasy 6-9, Zelda, Tetris, Alleyway,
+Neverwinter, Halo, Fallout, Half life, Oblivion. The list goes on. I cut my
+teeth on a gameboy and SNES and kept going. Things dropped off after Halo 2. I
+surfaced for Halo  3 (a lot) and 4 (less so). I didn't play much on my phone
+during my years on Android; the games really weren't that great or polished.</p>
+
+<p>Part of my commute is a 10 minute subway ride. Something quick to play is
+appreciated, but I've been looking for something a little more immersive.
+Something I can sit and get lost in for a few hours. The other part of my
+commute is a 30 min commuter train ride where I'm either reading instapaper,
+napping, or playing a game while listening to podcasts.</p>
+
+<p><strong><a href="http://apple.co/1DzraiL">Baldur's Gate</a></strong> - I
+found this very late in the year. In fact I think I installed it at my in-laws
+on Christmas morning. I had never played either of the originals and was
+curious. It was one of the few games that consistently showed up on "best iOS
+RPG" when I was searching for something to play. The face that it looked like
+Neverwinter was a huge bonus for me. The tutorial for this game is very, very
+buggy and was very off-putting. Once I got past that though, everything
+changed. The game mechanics started making sense: pinching and zooming the map
+is fluid and tapping on your party to direct their targets just felt
+completely natural. The story quickly swept me in and I started questing. When
+I play RPGs, I try to do all the side quests. Baldur's Gate is no different.
+I'm currently grinding my way through a number of maps looking for someone's
+lost cloak. Perfect gameplay for listening to podcasts on the train. Outside
+of that though the music and sound effects are top notch. If you were ever a
+fan of D&amp;D style point+click RPGs, this will feel right at home. If you've
+never tried them, I can't recommend this game enough.</p>
+
+<p><a href="/images/2015/03/1.png"><img src="/images/2015/03/1-1024x768.png" alt="1" /></a></p>
+
+<p><strong><a href="http://apple.co/1Dzrkql">Tiny Tower</a> &amp; <a href="http://apple.co/1LGeXPK">Pocket Trains</a></strong> &#45; I put
+these games together because while very different games, they have similar
+gameplay mechanics. Build out your empire! In Tiny Tower, this takes the form
+of expanding a single tower. Inside this tower are all your Bitizens live:
+Where they eat, where they work, and where they have fun. Ala Sim City, but in
+an enclosed environment. In Pocket trains, you expand your train line, going
+for a trans-continental goal. Pick the cargo for your trains, build tracks,
+repair the engines, and race against the clock. Both games have IAP to buy
+coins and bucks to get you through the game faster. I've never used real world
+money in either and it's just as enjoyable</p>
+
+<p><strong><a href="http://apple.co/1LGeYmQ">RGB Express</a></strong> &#45; This is a good
+puzzle game where you draw routes for your drivers, picking up packages and
+making sure that every house receives the correct package. Setup your route,
+press play, watch your trucks zoom, and hope you didn't create any collisions!
+Pro Tip: You can set the playback to run the trucks at a faster speed. Kudos
+to the iOSDocked crew for making this the GameCenter Showdown in episode 77.</p>
+
+<p><strong><a href="http://apple.co/1Dzrxdd">Threes</a></strong> - Threes is a tiny puzzle that grows on you. It looks simple at
+first. But at some point you figure out you need a strategy to go higher.
+Match the same number, it triples and collapses. Keep going. Build higher and
+higher. Compete with your friends. It gets harder the higher you go and
+becomes addicting trying to get to that next score. I play tower defense
+style: Building into one of the top two corners and slowly growing numbers in
+those directions. What's your high score?</p>
+
+<p><a href="/images/2015/03/2.png"><img src="/images/2015/03/2.png" alt="2" /></a></p>
+
+<p><strong><a href="http://apple.co/1LGf2Dc">2048</a></strong> &#45; This game is very similar to threes
+(maybe too much so). But, it's still fun. I keep this one around because it
+takes a little less concentration than threes. It's more mindless and good for
+when I'm tired or need to think. It's a good distraction. 2048 is my checkers
+to my Threes chess.</p>
+
+<p><a href="/images/2015/03/3.png"><img src="/images/2015/03/3.png" alt="3" /></a></p>
+
+<p><strong><a href="http://apple.co/1DzrKgm">Honorable Mention: Monument Valley</a></strong> &#45; I
+can't stress enough that you NEED to go play this game. There is no other
+experience like it on iOS. Control your character through immersive M.C.
+Escher-like paintings. The levels are gorgeous. You'll spend time just staring
+at them, moving pieces around just to see what they do. It only gets Honorable
+Mention because of replay value. I played through it once in a few hours and
+that was that. But, it's magical. Everyone should play it</p>
+
+<p><a href="/images/2015/03/4.jpeg"><img src="/images/2015/03/4.jpeg" alt="4" /></a></p>
+
+<p><a href="/images/2015/03/5.jpeg"><img src="/images/2015/03/5.jpeg" alt="5" /></a></p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Beyond UXKit - Robert Böhnke]]></title>
+            <link href="https://www.timbroder.com/2015/02/beyond-uxkit-robert-bohnke.html"/>
+            <updated>2015-02-07T15:46:33+00:00</updated>
+            <id>https://www.timbroder.com/2015/02/beyond-uxkit-robert-bohnke.html</id>
+            <content type="html"><![CDATA[<p>Robert Böhnke wrote a good [piece](http://robb.is/thinking-about/beyond-
+uxkit/) on what UXKit could mean for the future of iOS/Mac UI Engineering</p>
+
+<blockquote>
+  <p>The new Photos for Mac is based on a new private framework in 10.10.3,
+  UXKit. It is essentially a replica of UIKit, based on top of AppKit.</p>
+</blockquote>
+
+<p>He also comments on what something like react native could mean for engineers,
+and the attitude the community has had around other “non-native” in the past</p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Mongular, a Content Delivery System]]></title>
+            <link href="https://www.timbroder.com/2015/02/mongular-content-delivery-system.html"/>
+            <updated>2015-02-06T16:03:23+00:00</updated>
+            <id>https://www.timbroder.com/2015/02/mongular-content-delivery-system.html</id>
+            <content type="html"><![CDATA[<p>Mongular is something to keep a close eye on. We’ve had a number of projects
+at <a href="http://www.alexanderinteractive.com">work</a> where we might want something…
+other than a CMS. Where content is king and that content is decoupled from the
+system using or displaying it.  Other solutions that we’re excited about are
+<a href="https://prismic.io/">Prismic</a> and <a href="https://www.contentful.com/">Contentful</a>.</p>
+
+<p>Systems like this would let us do <strong>whatever</strong> we wanted with the site. Not
+being tied to the confines of a particular CMS’ way of doing things could be
+freeing. These systems offer much more powerful ways to relate content or
+parts of content to each other. Going far beyond just weighted tags.</p>
+
+<blockquote>
+  <p>What is Mongular?</p>
+</blockquote>
+
+<p>></p>
+
+<blockquote>
+  <p>Mongular is a Content Delivery System (Framework?... not really) built to
+  take advantage of all the tools available to speed up the delivery of your
+  content to users, and reduce server load.</p>
+</blockquote>
+
+<p>></p>
+
+<blockquote>
+  <p>Content Delivery System?</p>
+</blockquote>
+
+<p>></p>
+
+<blockquote>
+  <p>Mongular wasn't built to be a Content Management System, even though with
+  enough development it could probably be built to do just that.</p>
+</blockquote>
+
+<p>></p>
+
+<blockquote>
+  <p>Mongular was built to deliver content in an easy, efficient and extendable
+  manner. Where developers take it, is up to them.</p>
+</blockquote>
+
+<p>Related reading:</p>
+
+<ul>
+<li><a href="https://blog.prismic.io/UyheDQEAAIYqPg5V/structured-text-a-cleaner-way-to-deal-with-rich-text-in-manageable-content">Structured Text: A cleaner way to deal with Rich Text in Manageable Content</a></li>
+<li><a href="https://blog.prismic.io/VD0Bdi8AADEA8qOm/experiments-compare-content-variations-efficacy-on-a-blog-or-page">Experiments: compare content variations efficacy on a blog or page</a></li>
+<li><a href="http://www.theguardian.com/open-platform/blog/what-is-powering-the-content-api">What's powering the Content API? - The Guardian speaks at Lucene Eurocon 2010</a></li>
+</ul>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[My $2375 Amazon EC2 Mistake]]></title>
+            <link href="https://www.timbroder.com/2015/01/my-2375-amazon-ec2-mistake.html"/>
+            <updated>2015-01-07T16:02:04+00:00</updated>
+            <id>https://www.timbroder.com/2015/01/my-2375-amazon-ec2-mistake.html</id>
+            <content type="html"><![CDATA[<p>A word of warning: Know what your modules/extensions/pods/plugins are doing,
+<strong>especially</strong> if they use any of your credentials.</p>
+
+<p>I’m actually surprised that this actually was up that long. I accidentally did
+this once and Amazon was on the phone with me 10 mins later.</p>
+
+<blockquote>
+  <p>Turns out through the S3 API you can actually spin up EC2 instances, and my
+  key had been spotted by a bot that continually searches GitHub for API keys.
+  Amazon AWS customer support informed me this happens a lot recently, hackers
+  have created an algorithm that searches GitHub 24 hours per day for API keys…
+  Once it finds one it spins up max instances of EC2 servers to farm itself
+  bitcoins…</p>
+  
+  <p>Boom! A $2375 bill in the morning. Just for trying to learn rails.</p>
+</blockquote>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Integrated Automation for iOS 8]]></title>
+            <link href="https://www.timbroder.com/2014/12/integrated-automation-for-ios-8.html"/>
+            <updated>2014-12-20T21:34:24+00:00</updated>
+            <id>https://www.timbroder.com/2014/12/integrated-automation-for-ios-8.html</id>
+            <content type="html"><![CDATA[<p>I can't wait to play with
+<a href="https://appsto.re/us/2IzJ2.i&amp;at=11laRZ&amp;ct=LCP">Workflow</a> more over the
+holidays</p>
+
+<blockquote>
+  <p>“Workflow – first teased by Ari Weinstein and team in January 2014 – takes
+  another approach: instead of relying heavily on a specific functionality (such
+  as text editing) or third-party apps and services (like IFTTT and Dropbox),
+  Workflow is primarily aimed at automating native iOS apps and features.</p>
+</blockquote>
+
+<p>></p>
+
+<blockquote>
+  <p>Workflow can automate Calendar events and Reminders, it can parse and
+  extract data from webpages in Safari, and it has full support for Photos and
+  sharing services. It even works with iCloud Drive and extensions. Workflow’s
+  first version lacks some obvious features like backup and sync, but what it
+  does today is an extremely powerful proposition – from both practical and
+  conceptual standpoints.”</p>
+</blockquote>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Facebook, you creepy piece of sh*t]]></title>
+            <link href="https://www.timbroder.com/2014/11/facebook-creepy-piece-sht.html"/>
+            <updated>2014-11-09T02:04:35+00:00</updated>
+            <id>https://www.timbroder.com/2014/11/facebook-creepy-piece-sht.html</id>
+            <content type="html"><![CDATA[<p>I debated posting this for a few days. I’m deciding to because when I was
+googling for something. I found nothing. I hope this helps someone:</p>
+
+<p>A lot of
+people don't talk about this. Some do. Most don't. I'm not sure why. Maybe
+embarrassment. Maybe fear. Maybe they think they are alone. You aren't. It
+happens. It's real. I've talked to some people and we aren't alone.</p>
+
+<p>Laura and
+I have been trying to conceive for a bit. I won't go into how long, at least
+not right now, so don't ask. Talking to some people has helped. But, only a
+little. The internet, as far as we have found (Googled) doesn't have much
+info.</p>
+
+<p>"Just stop trying, it will happen"</p>
+
+<p>"It's so much fun!"</p>
+
+<p>"It just
+happened!!"</p>
+
+<p>I'm happy for these people? I really am. But at the same time F**K
+YOU, it’s just not that way for us.</p>
+
+<p>2 things have happened recently that have
+set me over the edge. We took a break this month, just casually "trying"
+without any kind of schedule. We randomly thought we had a bite on the line so
+I went to the pharmacy to buy a test. The cashier wished me congratulations
+when I checked out. Then she asked me if I was excited. There are so many
+things wrong with this type of person doing this. I had a few friends in high
+school that worked as a cashier at a pharmacy. They aren’t supposed to ask
+personal questions. If they see a classmate buying something like condoms they
+aren’t supposed to say anything about it to anyone. It’s private. Ok, back to
+the present. First of all, f<strong>k you. Second, that’s so dangerous. My response
+was “hopeful.” That’s about all I could get out without leaping over the
+register. It’s annoying enough that that is in no way shape or form the
+“congratulations” part of the timeline. You don’t know yet, that’s why you are
+getting the TEST. Second, can you imagine if we weren’t trying and something
+happened and this was completely unexpected. What would have been going
+through my head and then to hear those words? The response would have been:
+“Terrified, you b</strong>ch”</p>
+
+<p>The second thing happened this morning, and what
+spurned this post. I was still asleep. Laura was on Facebook. Facebook served
+her an adoption ad. Facebook, you fucking sleazy, creepy, f**king awful piece
+of sh*t. I don’t even want to know how you have the data to correlate that. I
+could probably figure it out, but that would probably end in me canceling my
+account. If you are going to show an ad like that (at least on Facebook), you
+need to KNOW that the person is looking to adopt. Not just something like “the
+person got married,” then “googled something baby,” and now months later,
+hasn’t googled “stroller”. Showing an ad like that to someone who is trying is
+beyond fucked up.</p>
+
+<p>Facebook: For what you did to my wife this morning, if you
+were a person, I would have found you, and I would have hurt you.</p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Twitter is not a replacement for blogs]]></title>
+            <link href="https://www.timbroder.com/2014/11/twitter-is-not-a-replacement-for-blogs-marco-org.html"/>
+            <updated>2014-11-04T15:21:15+00:00</updated>
+            <id>https://www.timbroder.com/2014/11/twitter-is-not-a-replacement-for-blogs-marco-org.html</id>
+            <content type="html"><![CDATA[<blockquote>
+  <p>Too much of my writing in the last few years has gone exclusively into
+  Twitter. I need to find a better balance.</p>
+</blockquote>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Meet Magento 2014 New York – a Personal Summary]]></title>
+            <link href="https://www.timbroder.com/2014/10/meet-magento-2014-new-york-a-personal-summary.html"/>
+            <updated>2014-10-05T22:56:35+00:00</updated>
+            <id>https://www.timbroder.com/2014/10/meet-magento-2014-new-york-a-personal-summary.html</id>
+            <content type="html"><![CDATA[<p>Alan Kent, Chief Architect of Magento 2 has a great write up of Meet Magento
+NY</p>
+
+<blockquote>
+  <p>Tim Broder of Alexander Interactive talked about his use of Vagrant to build
+  standard images, ensuring more consistent development environments for all
+  users. He pointed out you can have a Vagrant container mount a file system
+  from your local laptop so you can use a local IDE while having the files run
+  in a standard Vagrant environment image. In development you may mount it
+  read/write and in production read-only. The idea was to ensure all developers
+  had a consistent supported environment. Oh, and he mentioned a few times
+  “Vagrant Share” which allows you to share your environment with anyone in the
+  world. This looked really useful when collaborating with clients as you can
+  guarantee they have the same set up as you are using to develop the code.</p>
+</blockquote>
+]]></content>
+        </entry>
+    </feed>

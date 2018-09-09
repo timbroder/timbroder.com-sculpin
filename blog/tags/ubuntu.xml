@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[timbroder.com]]></title>
+    <link href="https://www.timbroder.com/blog/tags/ubuntu.xml" rel="self"/>
+    <link href="https://www.timbroder.com/"/>
+    <updated>2018-09-09T12:21:33+00:00</updated>
+    <id>https://www.timbroder.com/</id>
+            <author>
+            <name><![CDATA[Tim Broder]]></name>            <email><![CDATA[timothy.broder@gmail.com]]></email>        </author>
+        <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[The author of the Windows file copy dialog visits some friends]]></title>
+            <link href="https://www.timbroder.com/2009/07/author-of-windows-file-copy-dialog.html"/>
+            <updated>2009-07-20T13:40:00+00:00</updated>
+            <id>https://www.timbroder.com/2009/07/author-of-windows-file-copy-dialog.html</id>
+            <content type="html"><![CDATA[<p><a href="http://imgs.xkcd.com/comics/estimation.png"><img src="http://imgs.xkcd.com/comics/estimation.png" alt="" /></a></p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Installing Ubuntu Netbook Remix (with Jaunty) on an MSI Wind]]></title>
+            <link href="https://www.timbroder.com/2009/02/installing-ubuntu-netbook-remix-with.html"/>
+            <updated>2009-02-25T20:51:00+00:00</updated>
+            <id>https://www.timbroder.com/2009/02/installing-ubuntu-netbook-remix-with.html</id>
+            <content type="html"><![CDATA[<p>I recently picked up a MSI Wind Netbook and love the damn thing. <a href="http://www.canonical.com/projects/ubuntu/unr">Ubuntu
+Netbook Remix</a> brings in a great
+UI which makes navigating on the small screen much easier.I used Ubuntu Jaunty
+Jackalope Alpha 4 as the base install, mainly because I didn't want to go
+through the trouble of converting my ext3 partitions to ext4 when it comes out
+on April 23rd, and the driver support is more complete.  I haven't had many
+problems with it aside from a few random firefox crashes.</p>
+
+<p><img src="http://1.bp.blogspot.com/_Ng3QbVQfLZ8/SaWunIJBkfI/AAAAAAAAa7c/XG8CFukv18E/s1600-h/Screenshot1.png" alt="" /></p>
+
+<p><img src="http://3.bp.blogspot.com/_Ng3QbVQfLZ8/SaYPBBQ2EmI/AAAAAAAAa74/DBWWqZQOEko/s1600-h/partitions.png" alt="" /></p>
+
+<ol>
+<li><p>We're going to make a bootable USB stick to install Ubuntu</p></li>
+<li><p>On a separate machine, <a href="http://www.ubuntu.com/testing/jaunty/alpha4#Download%20Alpha%204">Download </a>the cd image.  If you want to use 8.10, get the iso <a href="http://www.ubuntu.com/getubuntu/download">here</a></p></li>
+<li><p>if you are already using an Ubuntu install of 8.10 or higher, skip to step 11</p></li>
+<li><p>burn the image to a cd</p></li>
+<li><p>Boot to the cd, do not install, load the demo OS</p></li>
+<li>click System-&gt;Administration-&gt;Create a USB startup disk</li>
+<li>point it to either the cd in your drive, or the iso</li>
+<li>point to the correct USB stick</li>
+<li>the rest of the settings can stay default</li>
+<li>click Make Startup Disk</li>
+<li>Insert the usb drive into your wind, power it on, and hit delete to go into the bios, change the first boot device to USB Drive</li>
+<li>save and exit the bios</li>
+<li>If the wind boots off of the USB stick correctly, you should see the same screen as when you had booted off the cd</li>
+<li><a href="https://help.ubuntu.com/community/GraphicalInstall">Install </a>Ubuntu</li>
+<li><p>I made my partitions as follows:<br />
+|30 gig recovery partition|20 gig XP partition|15 Gig Ext4 Ubuntu Partition|4
+gig swap partition|the rest of the drive as an ext4 partition<br />
+![](http://3.bp.blogspot.com/_Ng3QbVQfLZ8/SaYPBBQ2EmI/AAAAA
+AAAa74/DBWWqZQOEko/s1600-h/partitions.png)</p></li>
+<li><p>That last partition is where I will mount my home directory, as well as mount from windows xp using <a href="http://www.fs-driver.org/faq.html">ext2fs </a>(I havn't actually tried this yet)</p></li>
+<li><p>Add the netbook remix repositories to your system.  This can be be done in synaptic or by typing the following into a terminal<br />
+sudo gedit /etc/apt/sources.list</p></li>
+<li><p>add the following:<br />
+deb http://ppa.launchpad.net/netbook-remix-team/ubuntu intrepid main<br />
+deb-src http://ppa.launchpad.net/netbook-remix-team/ubuntu intrepid main</p></li>
+<li><p>sudo apt-get update</p></li>
+<li><p>sudo apt-get install go-home-applet<br />
+sudo apt-get install window-picker-applet<br />
+sudo apt-get install maximus<br />
+sudo apt-get install human-netbook-theme</p></li>
+<li><p>Select the "Human Netbook Theme" in System Preferences&gt;Apperance</p></li>
+<li><p>go into System Preferences-&gt; sessions-&gt;startup programs and confirm that "Maximus" and "window-picker-applet" are thre</p></li>
+<li><p><strong>Disable Compiz Effects</strong> System Preferences-&gt;Appearance-&gt;None</p>
+
+<p>This is what is required to get netbook remix running, I continued with the
+following to tweak it some more</p></li>
+<li><p>Delete the bottom panel by right clicking on it</p></li>
+<li><p>Delete all the applets on the top panel by right clicking on them</p></li>
+<li><p>Add applets to the top panel so it ends up like:<br />
+Window Picker Applet | Trash Can |Notification Area | MixerApplet | Clock</p></li>
+<li><p>I also made alt+q the hotkey to show the desktop, makes navigating to it faster. Another option is the show desktop applet button that can be added to the top bar.  Preferences-&gt;keyboard shortcuts-&gt;"Hide all normal windows....."</p></li>
+</ol>
+
+<p>More info is available
+<a href="http://wiki.msiwind.net/index.php/Ubuntu_8.04_Hardy_Heron">here</a>.</p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[The Matrix Runs on Windows]]></title>
+            <link href="https://www.timbroder.com/2009/01/matrix-runs-on-windows.html"/>
+            <updated>2009-01-28T19:39:00+00:00</updated>
+            <id>https://www.timbroder.com/2009/01/matrix-runs-on-windows.html</id>
+            <content type="html"><![CDATA[<p>See more <a href="http://www.collegehumor.com/videos">funny videos</a> and <a href="http://www.collegehumor.com/pictures">funny
+pictures</a> at
+<a href="http://www.collegehumor.com/">CollegeHumor</a>.</p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Set / Change / Reset the MySQL root password on Ubuntu Linux (Ubuntu)]]></title>
+            <link href="https://www.timbroder.com/2008/11/set-change-reset-mysql-root-password-on.html"/>
+            <updated>2008-11-24T23:53:00+00:00</updated>
+            <id>https://www.timbroder.com/2008/11/set-change-reset-mysql-root-password-on.html</id>
+            <content type="html"><![CDATA[<p>This came in veeeerrryyy handy just now...</p>
+
+<ol>
+<li><p>Stop the MySQL Server</p>
+
+<p>sudo /etc/init.d/mysql stop</p></li>
+<li><p>Start the mysqld config</p>
+
+<p>sudo mysqld --skip-grant-tables &amp;</p></li>
+<li><p>Login to the server as root</p>
+
+<p>mysql -u root mysql</p></li>
+<li><p>Ser your NEWPASSWORD</p>
+
+<p>UPDATE user SET Password=PASSWORD('NEWPASSWORD') WHERE</p>
+
+<p>User='root'; FLUSH</p>
+
+<p>PRIVILEGES; exit;</p></li>
+</ol>
+
+<p><a href="https://altezza.travel/groups.php">туры на майские праздники
+днепропетровск</a><a href="http://purmedispa.com/dengi-v-dolg-chastnoe-litso.php" title="потребительский
+кредит под залог недвижимости сбербанк">взять денег в долг
+срочно</a></p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[How to stream video to an Xbox 360 from linux]]></title>
+            <link href="https://www.timbroder.com/2008/09/how-to-stream-video-to-xbox-360-from.html"/>
+            <updated>2008-09-22T22:05:00+00:00</updated>
+            <id>https://www.timbroder.com/2008/09/how-to-stream-video-to-xbox-360-from.html</id>
+            <content type="html"><![CDATA[<p>There are a couple of different methods floating around to do this, but I
+think this is the quickest and easiest to get set up. So far, I like this
+better then FTP'ing files over to my old modded xbox. Some notes about further
+investigating will be at the bottom. Note: this was tested on an Ubuntu
+machine.</p>
+
+<ul>
+<li>Make sure your 360 has all the current updates</li>
+<li>Install ushare <strong>"sudo apt-get install ushare"</strong></li>
+<li><p>if ushare complains about a missing libdlna dependency, get it from here: **"wget http://www.geexbox.org/debian/pool/main/libdlna/libdlna0_0.2.3-0ubuntu1_i386.deb" **</p>
+
+<ul>
+<li>Edit the ushare configuration <strong>"sudo vim /etc/ushare.conf"</strong> update any ports or network devices you need to (I changed mine to eth1 so it would just use the wireless) as well as what folder to scan </li>
+<li>There is a mime-type you need to update <strong>"sudo vim /usr/share/mime/packages/freedesktop.org.xml"</strong> change <strong>mime-type type="video/x-msvideo"</strong> to <strong>mime-type type="video/x-ms-wmv"</strong></li>
+<li>restart gnome (<strong>ctrl + alt + backspace)</strong></li>
+<li>start ushare with <strong>"ushare -x"</strong></li>
+<li>Go to the media blade on your 360 dashboard</li>
+<li>Press 'X' to change the source</li>
+<li>You should see uShare (or whatever you named the share to in the configuration)</li>
+<li>play videos!</li>
+<li>note: **to play a .mkv file, rename it to .m4v **
+To Do:</li>
+</ul></li>
+<li><p>get uShare to automatically rescan the directory (currently if I add a video to the folder, the 360 will not see it until i restart uShare)</p></li>
+<li>get 1080p HD content to stream. I have tried a few re-encapsulation methods so far, nothing working yet</li>
+<li>this is an xbox thing, that hopefully will be fixed in the fall update, but navigating large folder trees can get annoying </li>
+</ul>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Adobe AIR Beta Now Available for Linux]]></title>
+            <link href="https://www.timbroder.com/2008/09/adobe-air-beta-now-available-for-linux.html"/>
+            <updated>2008-09-17T20:00:00+00:00</updated>
+            <id>https://www.timbroder.com/2008/09/adobe-air-beta-now-available-for-linux.html</id>
+            <content type="html"><![CDATA[<p>Adobe air is out of alpha and can be downloaded
+<a href="http://labs.adobe.com/downloads/air_linux.html">here</a>. Also check out Life
+Hacker's <a href="http://lifehacker.com/396393/top-10-apps-worth-installing-adobe-air-for">top 10</a> apps worth installing Adobe AIR for</p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Wine 1.0 has been released]]></title>
+            <link href="https://www.timbroder.com/2008/06/wine-10-has-been-released.html"/>
+            <updated>2008-06-17T15:37:00+00:00</updated>
+            <id>https://www.timbroder.com/2008/06/wine-10-has-been-released.html</id>
+            <content type="html"><![CDATA[<p><a href="http://www.winehq.org/">Big Day</a> for software</p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Distributing Ubuntu]]></title>
+            <link href="https://www.timbroder.com/2008/04/distributing-ubuntu.html"/>
+            <updated>2008-04-29T20:39:00+00:00</updated>
+            <id>https://www.timbroder.com/2008/04/distributing-ubuntu.html</id>
+            <content type="html"><![CDATA[<p>... is much better then Windows ;-)</p>
+
+<p><a href="http://farm3.static.flickr.com/2031/2428594983_fe30642b19_o.jpg"><img src="http://farm3.static.flickr.com/2031/2428594983_fe30642b19_o.jpg" alt="" /></a> In other news: I
+<a href="https://shipit.ubuntu.com/">requested</a> my Hardy Heron dvd =)</p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Fixing Nvidia 8600 GT on Hardy Heron]]></title>
+            <link href="https://www.timbroder.com/2008/04/fixing-nvidia-8600-gt-on-hardy-heron.html"/>
+            <updated>2008-04-26T19:22:00+00:00</updated>
+            <id>https://www.timbroder.com/2008/04/fixing-nvidia-8600-gt-on-hardy-heron.html</id>
+            <content type="html"><![CDATA[<p>After updating to Hardy I got a white screen of death upon rebooting. After
+some research it turned out that this was more of an Nvidia driver issue
+rather then Ubuntu. This may not have been the most correct way to fix it, but
+it worked for me.</p>
+
+<ol>
+<li><p>Completely remove nvidia-glx-new</p></li>
+<li><p>Remove nvidia-kernel-common (this also removes linux-restricted-modules), (I am not sure if step 2 is required)</p></li>
+<li><p>install build-essentials</p></li>
+<li><p>Download the Nvidia beta driver that came out on April 10. You can get it <a href="http://www.nvidia.com/object/linux_display_ia32_173.08.html">here</a></p></li>
+<li><p>hit ctrl + alt + f1 to break out of gnome</p></li>
+<li><p>"sudo /etc/init.d/gdm stop" to shutdown the X server</p></li>
+<li><p>sudo sh NVIDIA-Linux-x86-173.08-pkg1.run to install the driver. If it asks you to update you're xorg.conf file, let it.</p></li>
+<li><p>Reboot. ("sudo reboot") You should now be able to enable Desktop effects. YAY FISH!</p></li>
+</ol>
+
+<p>This issue has also been addressed on the <a href="http://ubuntuforums.org/showthread.php?t=712479">Ubuntu
+Forums</a> and on
+<a href="https://bugs.launchpad.net/ubuntu/+source/linux-restricted-modules-2.6.24/+bug/208718">launchpad</a></p>
+
+<p><em>Note: I have a Dell XPS M1530</em></p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Upgrade Ubuntu to 8.04 Hardy Heron]]></title>
+            <link href="https://www.timbroder.com/2008/04/upgrade-ubuntu-to-804-hardy-heron.html"/>
+            <updated>2008-04-24T14:09:00+00:00</updated>
+            <id>https://www.timbroder.com/2008/04/upgrade-ubuntu-to-804-hardy-heron.html</id>
+            <content type="html"><![CDATA[<p>Hardy Heron came out this morning and ubuntu.com is very much down for the
+count</p>
+
+<p>You can Still update though, click <a href="http://72.14.205.104/search?q=cache:maBlktBTwPAJ:www.ubuntu.com/getubuntu/upgrading+upgrade+ubuntu&amp;hl=en&amp;ct=clnk&amp;cd=1&amp;gl=us&amp;client=firefox-a">here</a> for the Google Cache version.</p>
+
+<p>Happy Updating!</p>
+
+<p>New Features in this release:</p>
+
+<p><a href="https://wiki.ubuntu.com/UbiquityPreserveHome">Install on an existing filesystem without overwriting
+/home</a><br />
+When I moved from feisty to gutsy, I decided to do a fresh install. One of the
+things I had to do was back up my home folder, and when I finished installing
+gutsy I just copied it back onto my computer. This new feature will allow
+people to install the new version of Ubuntu without it overwriting their home
+folder.I'm sure this will come in very handy for people who like trying out
+different distro's.</p>
+
+<p><a href="https://wiki.ubuntu.com/DesktopTeam/Specs/HardyHardwareDetection">Hardy Hardware
+Detection</a><br />
+This is more of a bug fix than a new feature. Gutsy already has excellent
+hardware support and the plan for hardy is even better and more robust
+detection of hardware. Sounds good to me.</p>
+
+<p><a href="https://wiki.ubuntu.com/DesktopTeam/Specs/GdmFaceBrowser">GDM Face Browser</a><br />
+One of the changes I made to my gutsy is the GDM. I replaced the old one with
+something that allows me to just click on a picture of my username and login.
+This will hopefully be the default for hardy.</p>
+
+<p><a href="https://wiki.ubuntu.com/X/AutodetectMonitorFrequency">Auto Detection of Monitor
+Frequency</a><br />
+While I was testing gutsy beta I had to manually configure xorg.conf to get it
+to the right resolution. It wasn't fun. This should be a thing of the past
+with hardy as it will automatically detect everything for you. Huzzah!</p>
+
+<p><a href="https://wiki.ubuntu.com/AptAuthenticationReliability">Apt Authentication
+Reliability</a><br />
+Have you ever had an update fail for no reason? Well it actually fails because
+of 'transient network failures'. The aim is to make hardy more robust against
+these errors.</p>
+
+<p><a href="https://wiki.ubuntu.com/DesktopTeam/Specs/RestrictedManagerRewrite">Redesign Restricted-Manager
+Code</a><br />
+They want to expand the role of the restricted manager and change it so that
+other distro's can share the joy.<br />
+<a href="https://wiki.ubuntu.com/HardyFullDiskHandling"><br />
+Handling Full Disks</a><br />
+I've never had this problem with Ubuntu, but if your disk gets full, things
+can get quite ugly. They plan to add a notification and disk clean-up tool
+when your running low on space.</p>
+
+<p><a href="https://wiki.ubuntu.com/DesktopTeam/Specs/HardyDesktopEffects">Desktop
+Effects</a><br />
+Make compiz fusion more robust and easier to use.</p>
+
+<p><a href="https://wiki.ubuntu.com/DesktopTeam/Specs/HardyTheme">New Theme</a><br />
+Hardy Heron will be getting a shiny new theme, I hope they move away from the
+brown theme and choose something lighter and more fresh.</p>
+
+<p><a href="https://wiki.ubuntu.com/EasyFileSharing">Easy File Sharing</a><br />
+To allow people to easily share files over a network. Not more I can say about
+this.</p>
+
+<p><a href="https://blueprints.launchpad.net/ubuntu/+spec/multi-monitor-config">Dual/Multi Monitor Support</a><br />
+Currently you have to manually tweak Ubuntu if you want to use more than one
+monitor. They want to fix this for hardy.</p>
+
+<p><a href="https://wiki.ubuntu.com/DesktopTeam/Specs/Prefetch">Integrate Prefetch into
+Ubuntu</a><br />
+I noticed a slightly increased start up time in gutsy compared to feisty.
+Hardy will use file prefetch and other optimisations to speed up boot time.</p>
+
+<p><a href="https://wiki.ubuntu.com/Automatix/Ubuntu_Team_Collaboration?highlight=%20automatix%20#81830218674224151">Automatix-Ubuntu Team Collaboration</a><br />
+Automatix was extremely helpful for me in feisty. Although I don't use it in
+gutsy, its good that they are collaborating with the automatix team.</p>
+
+<p><a href="https://wiki.ubuntu.com/SingleClickInstall">Single Click Install</a><br />
+Installing software is already pretty straightforward in Ubuntu. They want to
+make it even easier to install third party applications. I'm not complaining.</p>
+
+<p><a href="https://wiki.ubuntu.com/HardyAppArmor">Apparmor Integration</a><br />
+This is already a part of gutsy, the plan is to increase integration to make
+Ubuntu even safer.</p>
+
+<p><a href="https://blueprints.launchpad.net/ubuntu/+spec/ubuntu-firewall">Firewall</a><br />
+Make it easier for users to configure their firewall.</p>
+
+<p><a href="https://blueprints.launchpad.net/ubuntu/+spec/third-party-apt">Third Party Apt</a><br />
+Now when you install third party apps, you have to manually add the software
+repository to the sources.list. This spec makes it easy for users to install
+third party software and have it update automatically.</p>
+
+<p><a href="https://wiki.ubuntu.com/DesktopTeam/Specs/ExitStrategy"><strong>Revamped Logout
+Screen</strong></a><br />
+They want to streamline the options you have when you click that big red
+button, to make things less confusing.</p>
+
+<p>[Better Integrated Wine](https://blueprints.launchpad.net/ubuntu/+spec/better-
+integrated-wine)<br />
+Better Wine will make it easier for Windows users to convert, thus helping to
+solve <a href="https://blueprints.launchpad.net/bugs/1">bug #1</a>.</p>
+
+<p><a href="https://wiki.ubuntu.com/Xorg7.3Integration">Xorg 7.3</a><br />
+This is one of the features that missed the gutsy deadline. This should make
+manual configuration of xorg.conf obsolete. Another much anticipated feature
+is Bullet Proof X, which will go into a graphical safe mode if anything goes
+wrong with X.</p>
+
+<p><a href="https://wiki.ubuntu.com/SlickBoot">Slick Boot</a><br />
+To improve the boot and shutdown process and also make the things look nicer.</p>
+]]></content>
+        </entry>
+    </feed>

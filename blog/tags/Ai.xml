@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[timbroder.com]]></title>
+    <link href="https://www.timbroder.com/blog/tags/Ai.xml" rel="self"/>
+    <link href="https://www.timbroder.com/"/>
+    <updated>2018-09-09T12:21:33+00:00</updated>
+    <id>https://www.timbroder.com/</id>
+            <author>
+            <name><![CDATA[Tim Broder]]></name>            <email><![CDATA[timothy.broder@gmail.com]]></email>        </author>
+        <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[Jack Vs Spider and Happy Holidays]]></title>
+            <link href="https://www.timbroder.com/2009/12/jack-vs-spider-and-happy-holidays.html"/>
+            <updated>2009-12-24T15:46:00+00:00</updated>
+            <id>https://www.timbroder.com/2009/12/jack-vs-spider-and-happy-holidays.html</id>
+            <content type="html"><![CDATA[<p>Happy Holidays and thanks everyone for a great year.</p>
+
+<p>Check out my company's holiday E-card
+<a href="http://www.alexanderinteractive.com/holiday/2009/">here</a></p>
+
+<p>Our VP of Security takes on an 8 legged intruder</p>
+
+<p><a href="http://www.youtube.com/watch?v=HZB3N9bqBSg"><img src="http://img.youtube.com/vi/HZB3N9bqBSg/0.jpg" alt="" /></a></p>
+]]></content>
+        </entry>
+    </feed>

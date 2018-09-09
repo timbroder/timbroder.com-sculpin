@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[timbroder.com]]></title>
+    <link href="https://www.timbroder.com/blog/tags/os.xml" rel="self"/>
+    <link href="https://www.timbroder.com/"/>
+    <updated>2018-09-09T12:21:33+00:00</updated>
+    <id>https://www.timbroder.com/</id>
+            <author>
+            <name><![CDATA[Tim Broder]]></name>            <email><![CDATA[timothy.broder@gmail.com]]></email>        </author>
+        <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[Animate an AdWhirlView from the Bottom of the Screen]]></title>
+            <link href="https://www.timbroder.com/2012/08/animate-adwhirl-bottom.html"/>
+            <updated>2012-08-18T00:50:47+00:00</updated>
+            <id>https://www.timbroder.com/2012/08/animate-adwhirl-bottom.html</id>
+            <content type="html"><![CDATA[<p>If you are using <a href="https://www.adwhirl.com/">AdWhirl</a> and want the ad to slide
+in from the bottom of the screen when your View loads, use this snippet:</p>
+
+<pre><code data-language="c">- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    AdWhirlView *adWhirlView = [AdWhirlView requestAdWhirlViewWithDelegate:self];
+    adWhirlView.delegate = self;
+    adWhirlView.frame = CGRectMake(0, 430+kAdWhirlViewHeight, kAdWhirlViewWidth, kAdWhirlViewHeight);
+    [self.parentViewController.view insertSubview:adWhirlView belowSubview:self.view];
+
+    [UIView beginAnimations:@&amp;quot;AdWhirlIn&amp;quot; context:nil];
+    [UIView setAnimationDuration:.5];
+    [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
+    adWhirlView.frame = CGRectMake(0, 430, kAdWhirlViewWidth, kAdWhirlViewHeight);
+    [UIView commitAnimations];
+}
+</code></pre>
+]]></content>
+        </entry>
+    </feed>

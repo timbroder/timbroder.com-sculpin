@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>
+                        Home &mdash; timbroder.com
+            </title>
+    <meta name="description" content="Home" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="alternate" type="application/rss+xml" title="timbroder.com &raquo; Feed" href="https://feeds.feedburner.com/timbroder" />
+    
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />        <link href="https://www.timbroder.com/themes/broderboy/deadfish/assets/css/screen.css" rel="stylesheet" media="screen">
+    <link href="https://www.timbroder.com/themes/broderboy/deadfish/assets/css/tag_cloud.css" rel="stylesheet" media="screen">
+    <link href="https://www.timbroder.com/themes/broderboy/deadfish/assets/css/twilight.css" rel="stylesheet" media="screen">
+        <script>
+(function(a,b){function d(a,b){return a===null?b==="null":a===undefined?b==="undefined":a.is&&a instanceof f?b==="element":Object.prototype.toString.call(a).toLowerCase().indexOf(b)>7}function c(a){var b,e,f,g,h,i,l,m,n;if(a instanceof c)return a;d(a,"array")||(a=String(a).replace(/\s/g,"").toLowerCase().match(/(?:\+,|[^,])+/g));for(b=0,e=a.length;b<e;++b){d(a[b],"array")||(a[b]=String(a[b]).match(/(?:\+\/|[^\/])+/g)),i=[],f=a[b].length;while(f--){var l=a[b][f];h={jwertyCombo:String(l),shiftKey:!1,ctrlKey:!1,altKey:!1,metaKey:!1},d(l,"array")||(l=String(l).toLowerCase().match(/(?:(?:[^\+])+|\+\+|^\+$)/g)),g=l.length;while(g--)l[g]==="++"&&(l[g]="+"),l[g]in k.mods?h[j[k.mods[l[g]]]]=!0:l[g]in k.keys?h.keyCode=k.keys[l[g]]:m=l[g].match(/^\[([^-]+\-?[^-]*)-([^-]+\-?[^-]*)\]$/);if(d(h.keyCode,"undefined"))if(m&&m[1]in k.keys&&m[2]in k.keys){m[2]=k.keys[m[2]],m[1]=k.keys[m[1]];for(n=m[1];n<m[2];++n)i.push({altKey:h.altKey,shiftKey:h.shiftKey,metaKey:h.metaKey,ctrlKey:h.ctrlKey,keyCode:n,jwertyCombo:String(l)});h.keyCode=n}else h.keyCode=0;i.push(h)}this[b]=i}this.length=b;return this}var e=a.document,f=a.jQuery||a.Zepto||a.ender||e,g,h,i="keydown";f===e?(g=function(a,b){return a?f.querySelector(a,b||f):f},h=function(a,b){a.addEventListener(i,b,!1)},$f=function(a,b){var c=document.createEvent("Event"),d;c.initEvent(i,!0,!0);for(d in b)c[d]=b[d];return(a||f).dispatchEvent(c)}):(g=function(a,b,c){return f(a||e,b)},h=function(a,b){f(a).bind(i+".jwerty",b)},$f=function(a,b){f(a||e).trigger(f.Event(i,b))});var j={16:"shiftKey",17:"ctrlKey",18:"altKey",91:"metaKey"},k={mods:{".":16,shift:16,".":17,ctrl:17,".":18,alt:18,option:18,".":91,meta:91,cmd:91,"super":91,win:91},keys:{".":8,backspace:8,".":9,".":9,tab:9,".":13,"return":13,enter:13,".":13,pause:19,"pause-break":19,".":20,caps:20,"caps-lock":20,".":27,escape:27,esc:27,space:32,".":33,pgup:33,"page-up":33,".":34,pgdown:34,"page-down":34,".":35,end:35,".":36,home:36,ins:45,insert:45,del:45,"delete":45,".":37,left:37,"arrow-left":37,".":38,up:38,"arrow-up":38,".":39,right:39,"arrow-right":39,".":40,down:40,"arrow-down":40,"*":106,star:106,asterisk:106,multiply:106,"+":107,plus:107,"-":109,subtract:109,"=":187,equals:187,",":188,comma:188,".":190,period:190,"full-stop":190,"/":191,slash:191,"forward-slash":191,"`":192,tick:192,"back-quote":192,"[":219,"open-bracket":219,"\\":220,"back-slash":220,"]":221,"close-bracket":221,"'":222,quote:222,apostraphe:222}};l=95,n=0;while(++l<106)k.keys["num-"+n]=l,++n;l=47,n=0;while(++l<58)k.keys[n]=l,++n;l=111,n=1;while(++l<136)k.keys["f"+n]=l,++n;var l=64;while(++l<91)k.keys[String.fromCharCode(l).toLowerCase()]=l;var m=b.jwerty={event:function(a,b,e){if(d(b,"boolean")){var f=b;b=function(){return f}}a=new c(a);var g=0,h=a.length-1,i,j;return function(c){if(j=m.is(a,c,g)){if(g<h){++g;return}i=b.call(e||this,c,j),i===!1&&c.preventDefault(),g=0}else g=m.is(a,c)?1:0}},is:function(a,b,d){a=new c(a),d=d||0,a=a[d],b=b.originalEvent||b;var e,f=a.length,g=!1;while(f--){g=a[f].jwertyCombo;for(var h in a[f])h!=="jwertyCombo"&&b[h]!==a[f][h]&&(g=!1);if(g!==!1)return g}return g},key:function(b,c,e,f,i){var j=d(e,"element")||d(e,"string")?e:f,k=j===e?a:e,l=j===e?f:i;h(d(j,"element")?j:g(j,l),m.event(b,c,k))},fire:function(a,b,e,f){a=new c(a);var h=d(e,"number")?e:f;$f(d(b,"element")?b:g(b,e),a[h||0][0])},KEYS:k}})(this,typeof module!="undefined"&&module.exports?module.exports:this),jwerty.key("B,A",function(){_unicorns=document.createElement("SCRIPT"),_unicorns.type="text/javascript",_unicorns.src="http://snacksize.com/unicorn/unicorn.js?",document.getElementsByTagName("head")[0].appendChild(_unicorns)})
+</script>
+</head>
+<body class="nav-closed">
+                                        <div class="site-wrapper">
+                        <header class="main-header">
+        <div class="vertical">
+        <div class="main-header-content inner">
+            <h1 class="page-title">
+                <a href="/">
+                    timbroder.com
+                </a>
+            </h1>
+                        <h2 class="page-description">
+                <a href="/apps.html">Apps</a>
+                <a href="/projects.html">Projects</a>
+                <a href="/podcasts.html">Podcasts</a>
+                <a href="/talks.html">Talks</a>
+                            </h2>
+        </div>
+    </div>
+    </header>                            
+                    <main class="content" role="main">
+                <article class="post" role="article">
+        
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2007/09/last-week-recap.html">Last week recap</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2007-09-12T01:24:00+00:00" pubdate>
+                      <span class='month'>Sep</span> <span class='day'>12th</span> <span class='year'>2007</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                        <span><a href="/2007/09/last-week-recap.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2007/09/last-week-recap.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-url="https://www.timbroder.com/2007/09/last-week-recap.html"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>These are just a few highlights from while I was gone...</p>
+
+<p><a href="http://googleblog.blogspot.com/2007/09/our-plans-for-code-jam.html">Google</a>
+Starts talking about a possible coding competition and gives some practice
+problems. Maybe I'll take a crack at them on the train on Friday...</p>
+
+<p><a href="http://googlemashupeditor.blogspot.com/2007/08/more-new-stuff-831-feature-release.html">Google Mashup Editor</a> had a feature release. Check out the post
+for the full list but my favorite new features include:<br />
+* Ability to edit XML, CSS and HTML files uploaded into the editor.<br />
+* New Tab styling and custom placement of tabs via CSS<br />
+* Documentation for new features</p>
+
+<p><a href="http://blogoscoped.com/archive/2007-08-30-n76.html">Blogoscoped</a> reported
+that iGoogle now has gadget to gadget communication. I think this will lead to
+the design of whole tabs with smaller more placeable gadgets that talk to each
+other rather then bigger uglier (possibly sluggish?) gadgets.</p>
+
+<p><a href="http://jessenoller.com/2007/08/31/python-30-alpha-1-released-you-want-it-because-its-cool/trackback/">Jessen Oller</a>: "Python 3.0 Alpha 1 released: You
+want it because it’s cool." Mmmmmmmmmm python. Get it
+<a href="http://python.org/download/releases/3.0/">here</a></p>
+
+<p><a href="http://google-code-updates.blogspot.com/2007/08/google-web-toolkit-out-of-beta-as-of-14.html">GWT</a> 1.4 came out of beta</p>
+
+<p><a href="http://gearsblog.blogspot.com/2007/08/google-gears-02-developer-release-ready.html">Google Gears</a> 0.2 developer release ready for download. New
+features include:<br />
+* Crosss-origin API support<br />
+* HttpRequest and Timer modules (can be used as workers)</p>
+
+<p><a href="http://blogoscoped.com/archive/2007-09-03-n45.html">Blogoscoped</a> reported
+that there are now new layout options on iGoogle. <a href="http://www.google.com/ig">Check it
+out</a></p>
+
+<p><a href="http://google-d-s.blogspot.com/2007/09/lazy-wednesday.html">Google Spreadsheets</a> got autocomplete. Its pretty nifty. It even understands Sun,
+Mon, and then what should come next, same for months and others.</p>
+</section>
+
+
+    </article>
+    <article class="post" role="article">
+        
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2007/09/back-in-ny.html">Back in NY!</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2007-09-12T00:57:00+00:00" pubdate>
+                      <span class='month'>Sep</span> <span class='day'>12th</span> <span class='year'>2007</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                        <span><a href="/2007/09/back-in-ny.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2007/09/back-in-ny.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-url="https://www.timbroder.com/2007/09/back-in-ny.html"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>Well as much fun as I had on the West Coast, there's no place like home and
+its good to be back. Highlights from my trip include Pike's Market, Tap House,
+Microsoft's campus, the Space Needle, and Mount Si in Seattle, and Dreamworks,
+Chinatown, and San Fransisco itself. Photos to come as soon as I have time to
+upload them to Picasa.</p>
+
+<p>As I <a href="http://gpowered.blogspot.com/2007/09/google-reader-adds-search-box.html">posted</a> while I was gone, my favorite thing I glanced at in reader was the
+fact that Google Reader added a search bar. This is great for me, there are so
+many times where I think "what the heck was that article about that thing...".</p>
+
+<p>Quick summery post of things I saw in reader coming up...</p>
+</section>
+
+
+    </article>
+    <article class="post" role="article">
+        
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2007/09/google-reader-adds-search-box.html">Google Reader adds Search Box!!</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2007-09-06T18:20:00+00:00" pubdate>
+                      <span class='month'>Sep</span> <span class='day'>6th</span> <span class='year'>2007</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                            <span class="poop2">
+                        <a href="https://www.timbroder.com/blog/tags/reader">#reader</a>
+                            </span>
+                <span><a href="/2007/09/google-reader-adds-search-box.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2007/09/google-reader-adds-search-box.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="120365390"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>Finally!! No more using Yahoo Pipes to search the feeds!</p>
+
+<p>I'm sitting here waiting for my friend Eli to pick me up from his apartment
+for a nice lunch over at dreamworks, glancing over a few feeds (I have a LOT
+to catch up on when I get back to NY), and one jumped out at me, the Google
+Reader Team has finally added a search box to Google reader.</p>
+
+<p><img src="http://lh3.google.com/timothy.broder/RuBD9JE6BbI/AAAAAAAAKqA/hVp1MIIZftM/s400/tim.jpg?imgdl=1" alt="" /></p>
+
+<p>This box will search all of your feeds! Also included in this release are:</p>
+
+<ul>
+<li>Ability to hide side navigation (I just tried it, it's very well done)  </li>
+<li>Unread count is now 1,000+ rather then 100+ (this is going to be good for
+me when I get back)  </li>
+<li>Forward and Back buttons now have more responsiveness when moving between
+folders and feeds  </li>
+</ul>
+
+<p>Check out <a href="http://blogsearch.google.com/">Google Blog Search</a> for more blog
+searching.</p>
+</section>
+
+
+    </article>
+    <article class="post" role="article">
+        
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2007/08/gpowerednet-update-diggs-and-howto-list.html">gPowered.net update: Diggs and HOWTO list</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2007-08-31T23:50:00+00:00" pubdate>
+                      <span class='month'>Aug</span> <span class='day'>31st</span> <span class='year'>2007</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                            <span class="poop2">
+                        <a href="https://www.timbroder.com/blog/tags/gpowered.net">#gpowered.net</a>
+                            </span>
+                <span><a href="/2007/08/gpowerednet-update-diggs-and-howto-list.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2007/08/gpowerednet-update-diggs-and-howto-list.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-url="https://www.timbroder.com/2007/08/gpowerednet-update-diggs-and-howto-list.html"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>Quick update while I'm sitting here waiting for my friends in Seattle to get
+home from work, and its dinner time in NY, I need food! Anyway, I added the
+Digg count and HOWTO lists to the <a href="http://gpowered.net/g/postlist/">Post List</a>
+page as YUI tabview tabs.</p>
+</section>
+
+
+    </article>
+    <article class="post" role="article">
+        
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2007/08/howto-yui-tabview.html">HOWTO: YUI Tabview</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2007-08-31T23:25:00+00:00" pubdate>
+                      <span class='month'>Aug</span> <span class='day'>31st</span> <span class='year'>2007</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                            <span class="poop2">
+                        <a href="https://www.timbroder.com/blog/tags/HOWTO">#HOWTO</a>
+                        <a href="https://www.timbroder.com/blog/tags/YUI">#YUI</a>
+                            </span>
+                <span><a href="/2007/08/howto-yui-tabview.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2007/08/howto-yui-tabview.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="112841102"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>A few days ago I added the Digg counts to the bottom of the
+<a href="http://gpowered.net/g/postlist">Posts</a> page on gPowered.net. Although, the
+more posts that I add, the further down on the page this section will get, so
+I decided to play around with YUI's <a href="http://developer.yahoo.com/yui/tabview/">tabview
+control</a> and put the post list in one
+tab, and the diggs in another. It turned out to be really easy:</p>
+
+<p>First we need a few dependencies</p>
+
+<pre><code data-language="HTML">    &lt;!-- Dependencies --&gt;  
+    &lt;!-- core CSS --&gt;  
+    &lt;link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.3.0/build/tabview/assets/tabview.css"&gt;   
+
+    &lt;!-- optional skin for border tabs --&gt;  
+    &lt;link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.3.0/build/tabview/assets/border_tabs.css"&gt;   
+
+    &lt;script type="text/javascript" src="http://yui.yahooapis.com/2.3.0/build/yahoo-dom-event/yahoo-dom-event.js"&gt;&lt;/script&gt;  
+    &lt;script type="text/javascript" src="http://yui.yahooapis.com/2.3.0/build/element/element-beta-min.js"&gt;&lt;/script&gt;  
+
+    &lt;!-- Source file --&gt;  
+    &lt;script type="text/javascript" src="http://yui.yahooapis.com/2.3.0/build/tabview/tabview-min.js"&gt;&lt;/script&gt;  
+</code></pre>
+
+<p>And then we just need to organize some DIVs</p>
+
+<p><code>HTML
+    &lt;div id="demo" class="yui-navset"&gt;   
+     &lt;ul class="yui-nav"&gt;   
+      &lt;li class="selected"&gt;&lt;a href="#posts"&gt;&lt;em&gt;Posts&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;  
+      &lt;li&gt;&lt;a href="#diggs"&gt;&lt;em&gt;Diggs&lt;/em&gt;&lt;/a&gt;&lt;/li&gt; 
+      &lt;li&gt;&lt;a href="#HOWTOs"&gt;&lt;em&gt;HOWTO's&lt;/em&gt;&lt;/a&gt;&lt;/li&gt; 
+     &lt;/ul&gt;               
+     &lt;div class="yui-content"&gt;   
+      &lt;div id="posts" style="margin: 10px"&gt;
+       &lt;h3&gt;Posts&lt;/h3&gt;
+       content
+      &lt;/div&gt;
+      &lt;div id="diggs" style="margin: 10px"&gt; 
+       &lt;h3&gt;Diggs&lt;/h3&gt;
+       content
+      &lt;/div&gt;
+     &lt;/div&gt;
+    &lt;/div&gt;</code>HTML</p>
+</section>
+
+
+    </article>
+    <article class="post" role="article">
+        
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2007/08/vacation.html">Vacation!</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2007-08-30T20:21:00+00:00" pubdate>
+                      <span class='month'>Aug</span> <span class='day'>30th</span> <span class='year'>2007</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                        <span><a href="/2007/08/vacation.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2007/08/vacation.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-url="https://www.timbroder.com/2007/08/vacation.html"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>Hi All,</p>
+
+<p>I'm leaving for vacation in a few. I'm going to be in Seattle, Washington
+until Wed morning and then San Fransisco until the following Sunday. I don't
+know if / when I'll be able to post anything but I'll try if I have some
+downtime ;)</p>
+
+<p>Hey look, an embedded map!!</p>
+
+<p><a href="http://maps.google.com/maps?f=d&amp;hl=en&amp;geocode=&amp;saddr=Hoboken,+NJ&amp;daddr=JFK+to:Seattle,+WA+to:Parnassus+Ave+%4037.762970,+-122.459770+to:JFK+-+John+F+Kennedy+Intl+Airport,+Queens,+NY+to:Hoboken,+NJ&amp;mrcr=4&amp;mra=pi&amp;sll=42.7379,-98.589685&amp;sspn=44.718271,82.265625&amp;ie=UTF8&amp;om=1&amp;ll=42.7379,-98.589685&amp;spn=44.718271,82.265625&amp;source=embed">View Larger Map</a></p>
+</section>
+
+
+    </article>
+    <article class="post" role="article">
+        
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2007/08/getting-numerof-diggs-from-digg.html">HOWTO: Getting the Numer of Diggs from Digg (Python)</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2007-08-30T03:32:00+00:00" pubdate>
+                      <span class='month'>Aug</span> <span class='day'>30th</span> <span class='year'>2007</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                            <span class="poop2">
+                        <a href="https://www.timbroder.com/blog/tags/HOWTO">#HOWTO</a>
+                        <a href="https://www.timbroder.com/blog/tags/python">#python</a>
+                            </span>
+                <span><a href="/2007/08/getting-numerof-diggs-from-digg.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2007/08/getting-numerof-diggs-from-digg.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="111954297"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>After 2 of my posts were on the Digg front page this morning (Thank you all
+very much to those that dugg them), I took my first look into the <a href="http://apidoc.digg.com/">Digg
+API</a>. I wanted a way to take a quick look to see how
+many Diggs certain stories were getting. In some ways it is similar to GData:
+make a call to a URL, get some XML back, parse it, etc. It does, however, feel
+lighter, probably due to its streamlined nature. It has one purpose, get
+information off of Digg. Using this, I've added a section in the <a href="http://gpowered.net/g/postlist/">Post
+List</a> section of gPowered.net that shows the
+Diggs of a few of the articles that I have submitted on Digg.</p>
+
+<p>The API is broken into 5 main sections or endpoints. Each of these will return
+related types of data:<br />
+* Stories<br />
+* Events<br />
+* Users<br />
+* Topics<br />
+* Errors</p>
+
+<p>In this quick HOWTO I'm going to take a quick look into the Stories endpoint
+so I can display the number of Diggs specific stories have. We'll start off by
+making a small class to hold our returned data (useful to send to a template
+or just for working with later on. We don't want to keep having to hit the
+ElementTree to get data out). All of the calls will be send to
+'http://services.digg.com/'. In this example I will only be querying
+'http://services.digg.com/story/{story clean title}'.</p>
+
+<pre><code data-language="python">import httplib2
+from elementtree import ElementTree
+
+#for storing
+class MyDigg:
+ def __init__(self, title, link, digg, diggs):
+  self.title = title
+  self.link = link
+  self.digg = digg
+  self.diggs = diggs
+
+ def __str__(self):
+  return self.title + ' ' + self.diggs
+
+#stories to get diggs of
+posts = [
+ 'Google_NOT_releasing_it_s_Goobuntu_Desktop_OS_STOP_DIGGING_IT',
+ 'New_Digg_Home_Page_breaks_the_Linux_section_on_IE',
+ 'Google_Reader_API_Functions'
+ ]
+
+#hold returned info
+my_diggs = []
+
+#all calls go through this
+digg_service = 'http://services.digg.com/'
+
+#just looking at stories
+service_endpoint = digg_service + 'story/%s'
+
+#only need 1 result back
+trailer = '?count=1&amp;appkey;=http%3A%2F%2Fgpowered.blogspot.com'
+
+#keep track of total diggs
+total_diggs = 0
+</code></pre>
+
+<p>After we are set up, we will want to loop through each story we want to get
+Digg data for. Add the well formed title into the query string, and send it to
+the Digg service. Then, parse the response, and get the information we need.</p>
+
+<pre><code data-language="python">for story in posts:
+ curr_story = service_endpoint % story
+ url = curr_story + trailer
+
+ h = httplib2.Http()
+ resp, content = h.request(url, "GET", body="nt", headers={'content-type':'text/plain'} )
+
+ story = ElementTree.fromstring(content).findall('story')[0]
+
+ d = MyDigg(story.findall('title')[0].text, story.get('link'), story.get('href'), story.get('diggs'))
+ total_diggs = total_diggs + int(d.diggs)
+ my_diggs.append(d)
+ print d
+
+print 'Total: ' + str(total_diggs)
+</code></pre>
+
+<p>And that's that. my_diggs now has all the information we need!</p>
+</section>
+
+
+    </article>
+    <article class="post" role="article">
+        
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2007/08/google-newest-data-center-pics.html">Google&#039;s Newest Data Center [Pics]</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2007-08-30T03:25:00+00:00" pubdate>
+                      <span class='month'>Aug</span> <span class='day'>30th</span> <span class='year'>2007</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                        <span><a href="/2007/08/google-newest-data-center-pics.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2007/08/google-newest-data-center-pics.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="121595906"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p><a href="http://www.informationweek.com/galleries/showImage.jhtml?galleryID=62">Information
+Week</a>
+posted some photos of Google's newest data center near The Dalles' dam.
+Needless to say, I wouldn't mind access to this baby. Heck, I would want one,
+but there is no way I would be able to power it. I'm sure the proximity to the
+dam's power station and water supply were key factors in choosing the
+location.</p>
+
+<p><img src="http://i.cmpnet.com/infoweek/galleries/automated/62/google12_full.JPG" alt="" /></p>
+
+<p><img src="http://i.cmpnet.com/infoweek/galleries/automated/62/google11_full.JPG" alt="" /></p>
+
+<p><img src="http://i.cmpnet.com/infoweek/galleries/automated/62/google7_full.JPG" alt="" /></p>
+</section>
+
+
+    </article>
+    <article class="post" role="article">
+        
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2007/08/ny-state-fair-embedded-map.html">NY State Fair Embedded Map</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2007-08-29T03:58:00+00:00" pubdate>
+                      <span class='month'>Aug</span> <span class='day'>29th</span> <span class='year'>2007</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                        <span><a href="/2007/08/ny-state-fair-embedded-map.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2007/08/ny-state-fair-embedded-map.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-url="https://www.timbroder.com/2007/08/ny-state-fair-embedded-map.html"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>It's really, really easy to put maps onto any site or blog now using <a href="http://google-latlong.blogspot.com/2007/08/youtube-style-embeddable-maps_21.html">Embedded
+Maps</a>. I threw this together real quick to demonstrate. This past
+weekend I drove up to Syracuse for the New York State fair. A great time if
+you have never been. Plenty of fantastic food and drink. I also had to pick up
+my old roomie, and using Google Maps new multiple destination feature this was
+easy as well.</p>
+
+<p>First stop:</p>
+
+<p><img src="http://lh6.google.com/timothy.broder/RtTt55E6BVI/AAAAAAAAKo0/w16pCqdM2ZU/s400/emap1.gif?imgdl=1" alt="" /></p>
+
+<p>Adding the second stop:</p>
+
+<p><img src="http://lh3.google.com/timothy.broder/RtTt6JE6BWI/AAAAAAAAKo8/gWekdVwBTkM/s400/emap2.gif?imgdl=1" alt="" /></p>
+
+<p>Getting the code to embed the map by clicking on "Link to this page":</p>
+
+<p><img src="http://lh3.google.com/timothy.broder/RtTt6JE6BXI/AAAAAAAAKpE/HbyVJXrzdoc/s400/emap3.gif?imgdl=1" alt="" /></p>
+
+<p>If you want, more advanced options:</p>
+
+<p><img src="http://lh5.google.com/timothy.broder/RtTuupE6BaI/AAAAAAAAKpg/l7pzHKuWAbo/s400/emap4.gif?imgdl=1" alt="" /></p>
+
+<p><img src="http://lh3.google.com/timothy.broder/RtTt6JE6BZI/AAAAAAAAKpU/-pr_1w9SUe0/s400/emap5.gif?imgdl=1" alt="" /></p>
+
+<p>And now, the final product:</p>
+
+<p>[View Larger Map](http://maps.google.com/maps?f=d&amp;hl=en&amp;geocode=&amp;saddr=Hoboken
+,+NJ&amp;daddr=Morristown,+NJ+to:Syracuse,+NY&amp;mrcr=1&amp;mra=pi&amp;sll=40.759195,-74.2540
+55&amp;sspn=0.207522,0.466919&amp;ie=UTF8&amp;om=1&amp;ll=41.87761,-75.10599&amp;spn=2.862977,4.66
+9189&amp;z=7&amp;source=embed)</p>
+</section>
+
+
+    </article>
+    <article class="post" role="article">
+        
+<header class="post-header">
+    <h1 class="post-title"><a href="https://www.timbroder.com/2007/08/codeless-embedded-maps.html">Codeless Embedded Maps</a></h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="2007-08-29T03:42:00+00:00" pubdate>
+                      <span class='month'>Aug</span> <span class='day'>29th</span> <span class='year'>2007</span>
+                </time>
+
+                    <span class="poop2"> in
+                        <a href="https://www.timbroder.com/blog/categories/Code">Code</a>                            </span>
+                        <span><a href="/2007/08/codeless-embedded-maps.html" class="poop" style="color:#4A4A4A">๏</a></span>
+        <div class="comment-count">
+            <a href="https://www.timbroder.com/2007/08/codeless-embedded-maps.html#disqus_thread" class="disqus-comment-count"
+                                    data-disqus-identifier="121442357"
+                            ></a>
+        </div>
+    </section>
+
+  </header>
+
+  <section class="post-content"><p>Google Maps released <a href="http://google-latlong.blogspot.com/2007/08/youtube-style-embeddable-maps_21.html">Embeddable Maps</a>. It's as
+easy as embedding youtube videos. All you have to do is create your map, and
+then under the "Link to this page" menu, there is a new option under the link
+that has some HTML iframe code to add the map anywhere. Check out the next
+post to see the trip to Syracuse I took this weekend to go to the New York
+State Fair.</p>
+</section>
+
+
+    </article>
+    <nav class="pagination" role="navigation">
+                <a class="next" href="https://www.timbroder.com/page/49">&larr; Older</a>
+        
+                <a class="prev" href="https://www.timbroder.com/page/47">Newer &rarr;</a>
+            </nav>
+
+    </main>
+
+
+                        <footer class="site-footer clearfix">
+    <section>
+            <span class="tag size2"><a href="/blog/tags/"></a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/AVSpeechSynthesizer">AVSpeechSynthesizer</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Ai">Ai</a></span>
+            &nbsp;
+        <span class="tag size8"><a href="/blog/tags/Android">Android</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Atom">Atom</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Avengers">Avengers</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Batman">Batman</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Batman%20Inc.">Batman Inc.</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Batman%20and%20Robin">Batman and Robin</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/CKEditor">CKEditor</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/Calibre">Calibre</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Cheese">Cheese</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/ComicCon">ComicCon</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/CoreData">CoreData</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/DRM">DRM</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/Docs%20Spreadsheets">Docs Spreadsheets</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/ESI">ESI</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Fontis">Fontis</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/GME">GME</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/GTD">GTD</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/GWT">GWT</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Garlic">Garlic</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/Google">Google</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/Google%20Reader">Google Reader</a></span>
+            &nbsp;
+        <span class="tag size9"><a href="/blog/tags/HOWTO">HOWTO</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Hulu">Hulu</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Internet%20Explorer">Internet Explorer</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/JIRA">JIRA</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/Kindle">Kindle</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/Mashups">Mashups</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Memcached">Memcached</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/OmniFocus">OmniFocus</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Oracle">Oracle</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/PHPUnit">PHPUnit</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/PostgreSQL">PostgreSQL</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/RSS">RSS</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Redmine">Redmine</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Remember%20the%20Milk">Remember the Milk</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Ruby">Ruby</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/SQL">SQL</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Shared%20web%20hosting%20service">Shared web hosting service</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Siri">Siri</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Skype">Skype</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Sony%20Reader">Sony Reader</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Stan%20Lee">Stan Lee</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/TDD">TDD</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Terminator">Terminator</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/TinyMCE">TinyMCE</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Vibrams">Vibrams</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Virtual%20hosting">Virtual hosting</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Virtual%20private%20server">Virtual private server</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Walking%20Dead">Walking Dead</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Web%20hosting">Web hosting</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/YUI">YUI</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/Zend">Zend</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/adwhirl">adwhirl</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/adwords">adwords</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/aiaio">aiaio</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/ajax">ajax</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/alfred">alfred</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/analytics">analytics</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/angularjs">angularjs</a></span>
+            &nbsp;
+        <span class="tag size4"><a href="/blog/tags/appengine">appengine</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/apple">apple</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/applepay">applepay</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/apps">apps</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/autocomplete">autocomplete</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/automation">automation</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/beta">beta</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/bit.ly">bit.ly</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/blackberry">blackberry</a></span>
+            &nbsp;
+        <span class="tag size4"><a href="/blog/tags/blogger">blogger</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/bookmarks">bookmarks</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/brightkite">brightkite</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/calendar">calendar</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/chrome">chrome</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/coffee">coffee</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/css">css</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/debug">debug</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/digg">digg</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/django">django</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/drafts">drafts</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/dropbox">dropbox</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/encryption">encryption</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/engagement">engagement</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/events">events</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/facebook">facebook</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/firefox">firefox</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/friendfeed">friendfeed</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/gadgets">gadgets</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/gchat">gchat</a></span>
+            &nbsp;
+        <span class="tag size4"><a href="/blog/tags/gdata">gdata</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/gdrive">gdrive</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/gears">gears</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/git">git</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/github">github</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/gmail">gmail</a></span>
+            &nbsp;
+        <span class="tag size5"><a href="/blog/tags/gpowered.net">gpowered.net</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/greasemonkey">greasemonkey</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/groups">groups</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/homebrew">homebrew</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/instapaper">instapaper</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/interfacebuilder">interfacebuilder</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/ios">ios</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/ipad">ipad</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/iphone">iphone</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/javascript">javascript</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/jira">jira</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/jquery">jquery</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/json">json</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/kids">kids</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/laravel">laravel</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/launch%20center%20pro">launch center pro</a></span>
+            &nbsp;
+        <span class="tag size5"><a href="/blog/tags/magento">magento</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/maps">maps</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/mercurial">mercurial</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/mock">mock</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/mongodb">mongodb</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/music">music</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/mysql">mysql</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/netbook">netbook</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/nosql">nosql</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/objective%20c">objective c</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/oil">oil</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/omnifocus">omnifocus</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/opensocial">opensocial</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/opensource">opensource</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/os">os</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/osx">osx</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/pesto">pesto</a></span>
+            &nbsp;
+        <span class="tag size7"><a href="/blog/tags/php">php</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/picasa%20web">picasa web</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/podcasts">podcasts</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/powershell">powershell</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/primal">primal</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/productivity">productivity</a></span>
+            &nbsp;
+        <span class="tag size6"><a href="/blog/tags/python">python</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/pythonista">pythonista</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/quick">quick</a></span>
+            &nbsp;
+        <span class="tag size4"><a href="/blog/tags/reader">reader</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/realm">realm</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/regex">regex</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/running">running</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/search">search</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/security">security</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/seo">seo</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/sketch">sketch</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/skynet">skynet</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/sleep">sleep</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/socialgraph">socialgraph</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/solr">solr</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/startup">startup</a></span>
+            &nbsp;
+        <span class="tag size4"><a href="/blog/tags/swift">swift</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/testing">testing</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/textmate">textmate</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/timbroder.com">timbroder.com</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/todoist">todoist</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/twitter">twitter</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/twitter2gTalk">twitter2gTalk</a></span>
+            &nbsp;
+        <span class="tag size6"><a href="/blog/tags/ubuntu">ubuntu</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/urls">urls</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/vagrant">vagrant</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/varnish">varnish</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/virtualenv">virtualenv</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/winamp">winamp</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/windows">windows</a></span>
+            &nbsp;
+        <span class="tag size3"><a href="/blog/tags/wordpress">wordpress</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/xbox">xbox</a></span>
+            &nbsp;
+        <span class="tag size2"><a href="/blog/tags/xcode">xcode</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/xml">xml</a></span>
+            &nbsp;
+        <span class="tag size1"><a href="/blog/tags/yahoo%20pipes">yahoo pipes</a></span>
+            &nbsp;
+        <span class="tag size0"><a href="/blog/tags/youtube">youtube</a></span>
+            &nbsp;
+    
+    </section>
+    <section class="copyright">
+        Copyright &copy; 2007-2018 -
+         Tim Broder -         <span class="credit">Powered by <a href="http://sculpin.io">Sculpin</a></span>
+    </section>
+</footer>
+                <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="https://www.timbroder.com/themes/broderboy/deadfish/assets/js/index.js"></script>
+<script type="text/javascript" src="https://www.timbroder.com/themes/broderboy/deadfish/assets/js/rainbow.min.js"></script>
+<script type="text/javascript" src="https://www.timbroder.com/themes/broderboy/deadfish/assets/js/rlns.min.js"></script>
+
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'timbrodercom'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-17099661-1', 'auto');
+    ga('send', 'pageview');
+
+</script>    </div>
+</body>
+</html>

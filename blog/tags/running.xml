@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[timbroder.com]]></title>
+    <link href="https://www.timbroder.com/blog/tags/running.xml" rel="self"/>
+    <link href="https://www.timbroder.com/"/>
+    <updated>2018-09-09T12:21:33+00:00</updated>
+    <id>https://www.timbroder.com/</id>
+            <author>
+            <name><![CDATA[Tim Broder]]></name>            <email><![CDATA[timothy.broder@gmail.com]]></email>        </author>
+        <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[Front Runners New York Lesbian and Gay Pride Run (5M)]]></title>
+            <link href="https://www.timbroder.com/2010/07/front-runners-new-york-lesbian-and-gay-pride-run-5m.html"/>
+            <updated>2010-07-06T22:03:12+00:00</updated>
+            <id>https://www.timbroder.com/2010/07/front-runners-new-york-lesbian-and-gay-pride-run-5m.html</id>
+            <content type="html"><![CDATA[<p>Was hot, humid, and I was still tired from Thursday night's Wallstreet race,
+but a good time nevertheless  <img src="/images/2010/07/2010-07-06_1800.png" alt="" /></p>
+]]></content>
+        </entry>
+    </feed>

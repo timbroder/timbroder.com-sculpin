@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[timbroder.com]]></title>
+    <link href="https://www.timbroder.com/blog/tags/instapaper.xml" rel="self"/>
+    <link href="https://www.timbroder.com/"/>
+    <updated>2018-09-09T12:21:33+00:00</updated>
+    <id>https://www.timbroder.com/</id>
+            <author>
+            <name><![CDATA[Tim Broder]]></name>            <email><![CDATA[timothy.broder@gmail.com]]></email>        </author>
+        <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[My URL Schemes for Posting Links From My iPhone and iPad Using Poster]]></title>
+            <link href="https://www.timbroder.com/2014/01/my-url-schemes-for-posting-links-from-my-iphone-and-ipad-using-poster.html"/>
+            <updated>2014-01-26T20:39:57+00:00</updated>
+            <id>https://www.timbroder.com/2014/01/my-url-schemes-for-posting-links-from-my-iphone-and-ipad-using-poster.html</id>
+            <content type="html"><![CDATA[<blockquote>
+  <p>Instapaper → Drafts → Poster</p>
+</blockquote>
+
+<p>This is awesome. Since I do most of my internet reading on iOS these days,
+maybe this wil convince me to blog more. Huge thanks to Shawn Blanc for
+posting this!</p>
+]]></content>
+        </entry>
+    </feed>

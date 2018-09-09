@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[timbroder.com]]></title>
+    <link href="https://www.timbroder.com/blog/tags/Stan Lee.xml" rel="self"/>
+    <link href="https://www.timbroder.com/"/>
+    <updated>2018-09-09T12:21:33+00:00</updated>
+    <id>https://www.timbroder.com/</id>
+            <author>
+            <name><![CDATA[Tim Broder]]></name>            <email><![CDATA[timothy.broder@gmail.com]]></email>        </author>
+        <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[Fake Stan Lee vs. Comic Con 2009 ]]></title>
+            <link href="https://www.timbroder.com/2010/08/fake-stan-lee-vs-comic-con-2009.html"/>
+            <updated>2010-08-05T15:01:33+00:00</updated>
+            <id>https://www.timbroder.com/2010/08/fake-stan-lee-vs-comic-con-2009.html</id>
+            <content type="html"><![CDATA[<p><a href="http://www.youtube.com/watch?v=6RX-gNBRgqc"><img src="http://img.youtube.com/vi/6RX-gNBRgqc/0.jpg" alt="" /></a></p>
+]]></content>
+        </entry>
+    </feed>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[timbroder.com]]></title>
+    <link href="https://www.timbroder.com/blog/tags/JIRA.xml" rel="self"/>
+    <link href="https://www.timbroder.com/"/>
+    <updated>2018-09-09T12:21:33+00:00</updated>
+    <id>https://www.timbroder.com/</id>
+            <author>
+            <name><![CDATA[Tim Broder]]></name>            <email><![CDATA[timothy.broder@gmail.com]]></email>        </author>
+        <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[Jira Tabs: Open all those Jira&#039;s at once! ]]></title>
+            <link href="https://www.timbroder.com/2011/04/jira-tabs-open-all-those-jiras-at-once.html"/>
+            <updated>2011-04-22T18:21:22+00:00</updated>
+            <id>https://www.timbroder.com/2011/04/jira-tabs-open-all-those-jiras-at-once.html</id>
+            <content type="html"><![CDATA[<p>Update: Code lives on <a href="https://github.com/broderboy/jira-tabs" title="GitHub">GitHub</a></p>
+
+<p>Ever want to open all the Jira’s on the screen in new tabs? Jess does, I do,
+and you should too! For firefox and chrome we now have the JiraTabs bookmark
+button. Go to <a href="http://broderboy.github.io/jira-tabs/" title="this page">this page</a> and drag the link up to your bookmarks bar. Then, whenever you are
+on a filter or search view of Jira's, click the button and all the jira's on
+your screen will open up in new tabs</p>
+
+<p>Demo:</p>
+
+<p><a href="http://www.youtube.com/watch?v=PltTkfuhKfM"><img src="http://img.youtube.com/vi/PltTkfuhKfM/0.jpg" alt="" /></a></p>
+]]></content>
+        </entry>
+    </feed>

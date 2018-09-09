@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[timbroder.com]]></title>
+    <link href="https://www.timbroder.com/blog/tags/aiaio.xml" rel="self"/>
+    <link href="https://www.timbroder.com/"/>
+    <updated>2018-09-09T12:21:33+00:00</updated>
+    <id>https://www.timbroder.com/</id>
+            <author>
+            <name><![CDATA[Tim Broder]]></name>            <email><![CDATA[timothy.broder@gmail.com]]></email>        </author>
+        <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[gpowered.net is now timbroder.com]]></title>
+            <link href="https://www.timbroder.com/2010/07/gpowered-net-is-now-timbroder-com.html"/>
+            <updated>2010-07-23T19:48:27+00:00</updated>
+            <id>https://www.timbroder.com/2010/07/gpowered-net-is-now-timbroder-com.html</id>
+            <content type="html"><![CDATA[<p>Hi all, some of you may have noticed this site is no longer on the
+gpowered.net domain.  I've been wanting to move onto wordpress for a while now
+and also do some additional writing beyond code stuffs which would be outside
+of the scope of gpowered.  I also unfortunately (or fortunately because I love
+my <a href="http://www.alexanderinteractive.com/">job</a>) don't have as much time as I
+used to to research and post how to's.  Heavy django and magento going on
+lately, I'll try to post about those. There are two RSS links at the top, RSS
+has everything on this site including gpowered.  the gpowered RSS will
+continue to contain only tech articles. Let me know of any issues on the new
+site</p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Lazy bum]]></title>
+            <link href="https://www.timbroder.com/2010/06/lazy-bum.html"/>
+            <updated>2010-06-03T17:49:39+00:00</updated>
+            <id>https://www.timbroder.com/2010/06/lazy-bum.html</id>
+            <content type="html"><![CDATA[<p><img src="/images/2010/06/wpid-IMAG0048.jpg" alt="image" /> Jack guards the office</p>
+]]></content>
+        </entry>
+    </feed>

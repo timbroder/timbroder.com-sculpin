@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[timbroder.com]]></title>
+    <link href="https://www.timbroder.com/blog/tags/beta.xml" rel="self"/>
+    <link href="https://www.timbroder.com/"/>
+    <updated>2018-09-09T12:21:33+00:00</updated>
+    <id>https://www.timbroder.com/</id>
+            <author>
+            <name><![CDATA[Tim Broder]]></name>            <email><![CDATA[timothy.broder@gmail.com]]></email>        </author>
+        <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[Kidfund is on Betalist!]]></title>
+            <link href="https://www.timbroder.com/2017/02/Kidfund-is-on-Betalist!.html"/>
+            <updated>2017-02-24T09:31:00+00:00</updated>
+            <id>https://www.timbroder.com/2017/02/Kidfund-is-on-Betalist!.html</id>
+            <content type="html"><![CDATA[<p>My startup, Kidfund has been <a href="https://betalist.com/startups/kidfund" title="featured on Betalist">featured on Betalist</a>!!</p>
+
+<p>It would be a HUGE help to us if you could "<a href="https://betalist.com/startups/kidfund" title="heart">heart</a>" it.
+Doubly so if you could share on social media!</p>
+]]></content>
+        </entry>
+    </feed>
